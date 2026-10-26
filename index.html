@@ -133,51 +133,126 @@
     }
     
     /* ========================================================
-       LIGHT GLASSMORPHISM EDITION (Bạch Ngọc Thủy Tinh Quang Học)
+       APPLE LIQUID DESIGN SYSTEM (Fluid Organic Glass & Liquid Retina)
        ======================================================== */
-    .glass-panel {
-      background: rgba(255, 255, 255, 0.76);
+    @keyframes liquidMorph {
+      0% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; transform: rotate(0deg) scale(1); }
+      50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; transform: rotate(180deg) scale(1.05); }
+      100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; transform: rotate(360deg) scale(1); }
+    }
+    
+    @keyframes liquidPulse {
+      0%, 100% { opacity: 0.35; transform: scale(1); }
+      50% { opacity: 0.55; transform: scale(1.06); }
+    }
+
+    .liquid-morph-1 {
+      animation: liquidMorph 18s ease-in-out infinite alternate;
+    }
+    .liquid-morph-2 {
+      animation: liquidMorph 24s ease-in-out infinite alternate-reverse;
+    }
+
+    .liquid-panel, .glass-panel {
+      background: rgba(255, 255, 255, 0.78);
+      backdrop-filter: blur(32px) saturate(210%);
+      -webkit-backdrop-filter: blur(32px) saturate(210%);
+      border: 1px solid rgba(255, 255, 255, 0.9);
+      box-shadow: 
+        0 4px 6px -1px rgba(0, 0, 0, 0.02),
+        0 20px 40px -15px rgba(11, 123, 138, 0.06),
+        inset 0 1.5px 2px 0 rgba(255, 255, 255, 1),
+        inset 0 -1px 2px 0 rgba(11, 123, 138, 0.04);
+      border-radius: 28px;
+    }
+
+    .liquid-card, .glass-card {
+      background: rgba(255, 255, 255, 0.75);
+      backdrop-filter: blur(28px) saturate(200%);
+      -webkit-backdrop-filter: blur(28px) saturate(200%);
+      border: 1px solid rgba(255, 255, 255, 0.92);
+      box-shadow: 
+        0 4px 6px -1px rgba(0, 0, 0, 0.02),
+        0 16px 32px -8px rgba(15, 23, 42, 0.04),
+        inset 0 1.5px 2px 0 rgba(255, 255, 255, 1);
+      border-radius: 24px;
+      transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+    }
+
+    .liquid-card:hover, .glass-card:hover {
+      background: rgba(255, 255, 255, 0.94);
+      transform: translateY(-5px) scale(1.008);
+      border-color: rgba(11, 123, 138, 0.35);
+      box-shadow: 
+        0 25px 50px -12px rgba(11, 123, 138, 0.15),
+        0 0 0 1px rgba(11, 123, 138, 0.15),
+        inset 0 1.5px 2px 0 rgba(255, 255, 255, 1);
+    }
+
+    .liquid-pill, .glass-pill {
+      background: rgba(255, 255, 255, 0.85);
       backdrop-filter: blur(20px) saturate(180%);
       -webkit-backdrop-filter: blur(20px) saturate(180%);
-      border: 1px solid rgba(255, 255, 255, 0.9);
-      box-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.05), 0 0 0 1px rgba(226, 232, 240, 0.6), inset 0 1px 1px 0 rgba(255, 255, 255, 0.95);
-    }
-    .glass-card {
-      background: rgba(255, 255, 255, 0.72);
-      backdrop-filter: blur(16px) saturate(170%);
-      -webkit-backdrop-filter: blur(16px) saturate(170%);
-      border: 1px solid rgba(255, 255, 255, 0.85);
-      box-shadow: 0 8px 24px -4px rgba(15, 23, 42, 0.05), inset 0 1px 1px 0 rgba(255, 255, 255, 0.95);
+      border: 1px solid rgba(255, 255, 255, 0.95);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03), inset 0 1px 1px rgba(255, 255, 255, 1);
+      border-radius: 9999px;
       transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     }
-    .glass-card:hover {
-      background: rgba(255, 255, 255, 0.92);
-      border-color: rgba(11, 123, 138, 0.35);
-      transform: translateY(-4px);
-      box-shadow: 0 20px 35px -5px rgba(11, 123, 138, 0.12), inset 0 1px 1px 0 rgba(255, 255, 255, 1);
+
+    .liquid-pill:hover, .glass-pill:hover {
+      background: #FFFFFF;
+      box-shadow: 0 4px 16px rgba(11, 123, 138, 0.12), inset 0 1px 1px #fff;
+      transform: translateY(-1px);
     }
-    .glass-pill {
-      background: rgba(255, 255, 255, 0.85);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.9);
-      box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03);
+
+    .liquid-btn-primary {
+      background: linear-gradient(180deg, #0B7B8A 0%, #086370 100%);
+      color: #FFFFFF;
+      border-radius: 9999px;
+      box-shadow: 0 4px 14px rgba(11, 123, 138, 0.28), inset 0 1px 1px rgba(255, 255, 255, 0.35);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     }
-    .glass-input {
+    .liquid-btn-primary:hover {
+      background: linear-gradient(180deg, #0D8C9C 0%, #0B7B8A 100%);
+      transform: translateY(-1px) scale(1.02);
+      box-shadow: 0 8px 20px rgba(11, 123, 138, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.5);
+    }
+
+    .liquid-btn-secondary {
       background: rgba(255, 255, 255, 0.85);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border: 1px solid #CBD5E1;
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.95);
+      border-radius: 9999px;
       color: #0F172A;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04), inset 0 1px 1px #fff;
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     }
-    .glass-input:focus {
+    .liquid-btn-secondary:hover {
+      background: #FFFFFF;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08), inset 0 1px 1px #fff;
+    }
+
+    .liquid-input, .glass-input {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid #CBD5E1;
+      border-radius: 16px;
+      color: #0F172A;
+      transition: all 0.3s ease;
+    }
+    .liquid-input:focus, .glass-input:focus {
       background: #FFFFFF;
       border-color: #0B7B8A;
       outline: none;
-      box-shadow: 0 0 0 3px rgba(11, 123, 138, 0.15);
+      box-shadow: 0 0 0 3px rgba(11, 123, 138, 0.15), 0 2px 8px rgba(11, 123, 138, 0.08);
     }
-    .glass-shimmer {
-      background: linear-gradient(135deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 60%);
+
+    .liquid-shimmer, .glass-shimmer {
+      background: linear-gradient(120deg, rgba(255,255,255,0) 30%, rgba(255,255,255,0.7) 50%, rgba(255,255,255,0) 70%);
+      background-size: 200% 100%;
     }
 
     /* Custom Scrollbar */
@@ -265,7 +340,7 @@
           </button>
           <button id="btn-tab-glass" onclick="switchMainTab('glass')" class="px-3 py-1 rounded-md text-xs font-semibold flex items-center gap-1.5 text-cyan-300 hover:text-white hover:bg-cyan-950/60 border border-cyan-500/40 font-rocky-condensed transition-all">
             <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
-            <span>Giao diện 3: Glassmorphism Nền Sáng</span>
+            <span>Giao diện 3: Apple Liquid Style</span>
           </button>
         </div>
 
@@ -2231,144 +2306,157 @@
 
   <!-- ========================================================================= -->
     <!-- ========================================================================= -->
-  <!-- VIEW 3: LIGHT GLASSMORPHISM EDITION (Bạch Ngọc Thủy Tinh Quang Học)       -->
+    <!-- ========================================================================= -->
+  <!-- VIEW 3: APPLE LIQUID OPTICAL EDITION (Fluid Organic Glass & Liquid Retina)  -->
   <!-- ========================================================================= -->
-  <div id="view-glass" class="hidden min-h-screen bg-gradient-to-br from-[#F8FAFC] via-[#F1F5F9] to-[#EBF6F8] text-slate-800 relative overflow-hidden">
+  <div id="view-glass" class="hidden min-h-screen bg-[#F5F5F7] text-slate-800 relative overflow-hidden">
     
-    <!-- Luminous Ambient Optical Glow Orbs (Soft Pastel Refractions) -->
-    <div class="absolute -top-40 -left-40 w-[650px] h-[650px] bg-teal-200/40 rounded-full blur-[140px] pointer-events-none"></div>
-    <div class="absolute top-1/4 -right-40 w-[600px] h-[600px] bg-cyan-200/35 rounded-full blur-[150px] pointer-events-none"></div>
-    <div class="absolute top-2/3 left-1/3 w-[700px] h-[700px] bg-sky-200/30 rounded-full blur-[160px] pointer-events-none"></div>
-    <div class="absolute -bottom-40 right-10 w-[550px] h-[550px] bg-emerald-200/25 rounded-full blur-[140px] pointer-events-none"></div>
+    <!-- Apple Liquid Morphing Canvas Orbs -->
+    <div class="absolute -top-32 -left-32 w-[650px] h-[650px] bg-gradient-to-tr from-teal-200/40 via-cyan-200/30 to-sky-200/40 rounded-full blur-[100px] liquid-morph-1 pointer-events-none"></div>
+    <div class="absolute top-1/4 -right-32 w-[600px] h-[600px] bg-gradient-to-bl from-cyan-200/35 via-teal-100/35 to-blue-200/30 rounded-full blur-[110px] liquid-morph-2 pointer-events-none"></div>
+    <div class="absolute top-2/3 left-1/4 w-[700px] h-[700px] bg-gradient-to-tr from-emerald-200/30 via-teal-200/25 to-sky-100/30 rounded-full blur-[120px] liquid-morph-1 pointer-events-none"></div>
+    <div class="absolute -bottom-32 right-10 w-[550px] h-[550px] bg-gradient-to-br from-teal-200/35 via-cyan-100/30 to-blue-100/30 rounded-full blur-[100px] liquid-morph-2 pointer-events-none"></div>
     
-    <!-- Optical Grid Matrix Background -->
-    <div class="absolute inset-0 bg-[radial-gradient(#0B7B8A_1px,transparent_1px)] [background-size:32px_32px] opacity-[0.04] pointer-events-none"></div>
+    <!-- Subtle Optical Fluid Grid -->
+    <div class="absolute inset-0 bg-[radial-gradient(#0B7B8A_1px,transparent_1px)] [background-size:32px_32px] opacity-[0.035] pointer-events-none"></div>
 
     <div class="relative z-10">
 
-      <!-- LIGHT GLASS NAVBAR -->
-      <nav class="sticky top-12 z-40 px-4 sm:px-6 lg:px-8 py-3">
-        <div class="max-w-7xl mx-auto glass-panel rounded-2xl px-6 py-3 flex flex-wrap items-center justify-between gap-4 border border-white/90 shadow-md">
+      <!-- APPLE FLUID NAVBAR -->
+      <nav class="sticky top-10 z-40 px-4 sm:px-6 lg:px-8 py-3">
+        <div class="max-w-7xl mx-auto liquid-panel px-6 py-2.5 flex flex-wrap items-center justify-between gap-4 border border-white/90 shadow-md">
           
-          <!-- Logo Glass Card -->
+          <!-- Logo Pill Container -->
           <div class="flex items-center gap-3">
-            <div class="bg-white/95 backdrop-blur-md px-3 py-1.5 rounded-xl shadow-xs border border-slate-200/80 flex items-center">
-              <img src="assets/logo_rocky_transparent.png" alt="Rocky Canada Opticians" class="h-10 sm:h-11 w-auto object-contain">
+            <div class="bg-white/95 backdrop-blur-md px-3.5 py-1.5 rounded-full shadow-xs border border-slate-200/80 flex items-center">
+              <img src="assets/logo_rocky_transparent.png" alt="Rocky Canada Opticians" class="h-9 w-auto object-contain">
             </div>
             <div class="hidden md:block pl-2 border-l border-slate-300">
-              <span class="text-[11px] font-bold text-[#0B7B8A] tracking-widest uppercase block font-rocky-condensed">Light Glassmorphism Lab</span>
-              <span class="text-[10px] text-slate-500 block">CanRx Digital Lab &bull; Precision Freeform</span>
+              <span class="text-[11px] font-bold text-[#0B7B8A] tracking-wider uppercase block font-rocky-condensed">Apple Liquid Edition</span>
+              <span class="text-[10px] text-slate-500 block">Fluid Monomer Resin &bull; 0.01D Precision</span>
             </div>
           </div>
 
-          <!-- Glass Nav Links -->
-          <div class="hidden lg:flex items-center gap-1 text-xs font-semibold">
-            <a href="#glass-hero" class="px-3.5 py-2 rounded-xl text-[#0B7B8A] bg-white border border-teal-100 shadow-xs">Trang Chủ Glass</a>
-            <a href="#glass-matrix" class="px-3.5 py-2 rounded-xl text-slate-600 hover:text-[#0B7B8A] hover:bg-white/70">Trạm Khúc Xạ</a>
-            <a href="#glass-products" class="px-3.5 py-2 rounded-xl text-slate-600 hover:text-[#0B7B8A] hover:bg-white/70">6 Dòng Tròng Cao Cấp</a>
-            <a href="#glass-quote" class="px-3.5 py-2 rounded-xl text-slate-600 hover:text-[#0B7B8A] hover:bg-white/70">Báo Giá Đại Lý</a>
+          <!-- Capsule Nav Links -->
+          <div class="hidden lg:flex items-center gap-1.5 text-xs font-semibold">
+            <a href="#glass-hero" class="px-4 py-2 rounded-full text-white bg-[#0B7B8A] shadow-xs transition-all">Liquid Vision</a>
+            <a href="#glass-matrix" class="px-4 py-2 rounded-full text-slate-600 hover:text-slate-900 hover:bg-white/70 transition-all">Trạm Khúc Xạ</a>
+            <a href="#glass-products" class="px-4 py-2 rounded-full text-slate-600 hover:text-slate-900 hover:bg-white/70 transition-all">6 Dòng Tròng Liquid</a>
+            <a href="#glass-quote" class="px-4 py-2 rounded-full text-slate-600 hover:text-slate-900 hover:bg-white/70 transition-all">Báo Giá Đại Lý</a>
           </div>
 
-          <!-- Glass Action -->
+          <!-- Capsule Action -->
           <div class="flex items-center gap-3">
             <a href="tel:0933102653" class="hidden sm:inline-flex items-center gap-1.5 text-xs text-slate-700 hover:text-[#0B7B8A] font-semibold">
               <svg class="w-3.5 h-3.5 text-[#0B7B8A]" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"/></svg>
               <span>0933 102 653</span>
             </a>
-            <button onclick="openLeadModal('Báo giá sỉ Light Glassmorphism')" class="px-4 py-2 rounded-xl bg-[#0B7B8A] hover:bg-[#086370] text-white font-bold text-xs shadow-md shadow-teal-700/20 transition-all">
-              Báo Giá Thủy Tinh
+            <button onclick="openLeadModal('Báo giá sỉ Apple Liquid Edition')" class="liquid-btn-primary px-5 py-2 text-xs font-bold shadow-md">
+              Báo Giá Liquid
             </button>
           </div>
 
         </div>
       </nav>
 
-      <!-- LIGHT GLASS HERO SECTION -->
-      <section id="glass-hero" class="pt-10 pb-16 px-4 sm:px-6 lg:px-8">
+      <!-- APPLE LIQUID HERO SECTION -->
+      <section id="glass-hero" class="pt-8 pb-16 px-4 sm:px-6 lg:px-8">
         <div class="max-w-7xl mx-auto">
           
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             
-            <!-- Left: High-Tech Copy (Concise & Punchy) -->
+            <!-- Left: Apple-Style Confident Copy -->
             <div class="lg:col-span-7 space-y-5">
               
-              <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-pill border border-teal-200/80 text-[#0B7B8A] text-xs font-semibold">
+              <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full liquid-pill text-[#0B7B8A] text-xs font-bold">
                 <span class="w-2 h-2 rounded-full bg-[#0B7B8A] animate-pulse"></span>
-                <span class="font-rocky-condensed uppercase tracking-wider">LIGHT GLASSMORPHISM &bull; CANRX DIGITAL LAB</span>
+                <span class="font-rocky-condensed uppercase tracking-wider">APPLE LIQUID DESIGN &bull; CANRX FLUID LAB</span>
               </div>
 
               <div class="space-y-2">
-                <h1 class="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight leading-tight uppercase font-rocky-condensed">
-                  Thủy Tinh Quang Học Tinh Khiết &bull; Chuẩn Xác 0.01 Diop
+                <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-tight uppercase font-rocky-condensed">
+                  Rocky Liquid Lens &bull; Thị Lực Thuần Khiết
                 </h1>
                 <p class="text-xs sm:text-sm font-bold text-[#0B7B8A] uppercase tracking-wide font-rocky-condensed">
-                  Gia Công Freeform Kỹ Thuật Số Canada &bull; Váng Phủ Crystal Sapphire AR 99.8%
+                  Trạng Thái Lỏng Hoàn Hảo Mitsui Monomer &bull; Gia Công Bề Mặt Vi Điểm 0.01 Diop
                 </p>
               </div>
 
               <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                Chế tác từ monomer Mitsui Nhật Bản cùng công nghệ mài kỹ thuật số Canada, <strong>Rocky Lens Glass Edition</strong> đem lại độ trong suốt pha lê, triệt tiêu quang sai rìa kính và bảo vệ thị lực tối đa.
+                Lấy cảm hứng từ chất lỏng khúc xạ nguyên bản của monomer Mitsui Nhật Bản, <strong>Rocky Liquid Edition</strong> mang đến thị lực mượt mà, triệt tiêu mọi quang sai góc nghiêng và trong suốt 99.8% như giọt sương mai.
               </p>
 
-              <!-- 3 Glass Highlights (Short 1-line each) -->
+              <!-- 3 Fluid Feature Cards -->
               <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
-                <div class="p-3.5 rounded-2xl glass-card space-y-1">
-                  <div class="text-[#0B7B8A] font-bold text-xs uppercase font-rocky-condensed">Monomer MR™ Japan</div>
-                  <p class="text-[11px] text-slate-600 leading-snug">Dẻo dai cơ học gấp 10 lần, nhẹ êm ái trên sống mũi.</p>
+                <div class="p-4 rounded-[22px] liquid-card space-y-1">
+                  <div class="text-[#0B7B8A] font-bold text-xs uppercase font-rocky-condensed">Liquid Monomer MR™</div>
+                  <p class="text-[11px] text-slate-600 leading-snug">Đúc từ trạng thái lỏng tinh khiết, dẻo dai cơ học gấp 10 lần.</p>
                 </div>
-                <div class="p-3.5 rounded-2xl glass-card space-y-1">
-                  <div class="text-teal-700 font-bold text-xs uppercase font-rocky-condensed">Freeform HD 24H</div>
-                  <p class="text-[11px] text-slate-600 leading-snug">Mài vi điểm kỹ thuật số triệt tiêu quang sai rìa kính.</p>
+                <div class="p-4 rounded-[22px] liquid-card space-y-1">
+                  <div class="text-teal-700 font-bold text-xs uppercase font-rocky-condensed">Fluid Freeform 24H</div>
+                  <p class="text-[11px] text-slate-600 leading-snug">Bề mặt uốn lượn đa chiều 0.01D, dòng quang học không méo rìa.</p>
                 </div>
-                <div class="p-3.5 rounded-2xl glass-card space-y-1">
-                  <div class="text-emerald-700 font-bold text-xs uppercase font-rocky-condensed">Sapphire AR 99.8%</div>
-                  <p class="text-[11px] text-slate-600 leading-snug">Chống lóa đèn pha đêm, trượt nước hạt sen và lọc UV420.</p>
+                <div class="p-4 rounded-[22px] liquid-card space-y-1">
+                  <div class="text-emerald-700 font-bold text-xs uppercase font-rocky-condensed">Liquid Sapphire Shield</div>
+                  <p class="text-[11px] text-slate-600 leading-snug">Hiệu ứng trượt nước siêu tốc, kháng trầy 9H và chống chói đêm.</p>
                 </div>
               </div>
 
-              <!-- CTA Buttons -->
+              <!-- Action Buttons (Fluid Capsule Pills) -->
               <div class="flex flex-wrap items-center gap-3 pt-2">
-                <button onclick="openLeadModal('Đăng ký B2B Glass Edition')" class="px-6 py-3 rounded-xl bg-[#0B7B8A] hover:bg-[#086370] text-white font-bold text-xs sm:text-sm shadow-md shadow-teal-700/25 transition-all">
-                  Nhận Báo Giá Sỉ Glass Edition
+                <button onclick="openLeadModal('Đăng ký B2B Apple Liquid Edition')" class="liquid-btn-primary px-6 py-3 font-bold text-xs sm:text-sm shadow-md">
+                  Nhận Báo Giá Sỉ Liquid Edition
                 </button>
-                <a href="#glass-matrix" class="px-6 py-3 rounded-xl glass-panel hover:bg-white text-slate-800 font-bold text-xs sm:text-sm border border-white/90 shadow-xs transition-all flex items-center gap-2">
-                  <span>Trạm Khúc Xạ Thủy Tinh</span>
+                <a href="#glass-matrix" class="liquid-btn-secondary px-6 py-3 font-bold text-xs sm:text-sm flex items-center gap-2">
+                  <span>Khám Phá Trạm Khúc Xạ Liquid</span>
                   <svg class="w-4 h-4 text-[#0B7B8A]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                 </a>
               </div>
 
             </div>
 
-            <!-- Right: 3D Floating Lens with Frosted Glass Widgets -->
+            <!-- Right: 3D Floating Lens with Fluid Capsule Indicators -->
             <div class="lg:col-span-5 relative flex justify-center items-center py-6">
               
-              <!-- Caustic glow ring -->
-              <div class="w-72 h-72 sm:w-88 sm:h-88 rounded-full bg-teal-200/40 blur-2xl absolute animate-pulse"></div>
+              <!-- Caustic morphing glow halo -->
+              <div class="w-80 h-80 sm:w-96 sm:h-96 rounded-full bg-gradient-to-tr from-teal-200/50 via-cyan-200/40 to-sky-200/50 blur-3xl absolute liquid-morph-1 pointer-events-none"></div>
               
               <div class="relative z-10 flex flex-col items-center">
                 
-                <img src="assets/lens_transparent.png" alt="Rocky Glass Lens 3D" 
-                     class="max-h-[340px] sm:max-h-[420px] w-auto object-contain drop-shadow-[0_15px_35px_rgba(11,123,138,0.25)] animate-float-lens">
+                <img src="assets/lens_transparent.png" alt="Rocky Liquid Lens 3D" 
+                     class="max-h-[350px] sm:max-h-[430px] w-auto object-contain drop-shadow-[0_20px_40px_rgba(11,123,138,0.22)] animate-float-lens">
                 
-                <!-- Floating Frosted Glass Widgets (Light Background) -->
-                <div class="absolute -top-3 -left-4 glass-panel px-3.5 py-2 rounded-2xl border border-white/90 text-xs shadow-md animate-bounce-slight">
-                  <div class="text-[10px] text-[#0B7B8A] uppercase font-bold tracking-wider">Chiết Suất Siêu Mỏng</div>
-                  <div class="text-slate-900 font-black text-sm font-rocky-condensed">1.56 &bull; 1.60 &bull; 1.67 &bull; 1.74</div>
+                <!-- 4 Apple Fluid Capsule Pills -->
+                <div class="absolute -top-3 -left-4 liquid-pill px-4 py-2 text-xs shadow-md animate-bounce-slight flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-[#0B7B8A]"></span>
+                  <div>
+                    <div class="text-[10px] text-[#0B7B8A] uppercase font-bold tracking-wider">Chiết Suất Siêu Mỏng</div>
+                    <div class="text-slate-900 font-black text-sm font-rocky-condensed">1.56 &bull; 1.60 &bull; 1.67 &bull; 1.74</div>
+                  </div>
                 </div>
 
-                <div class="absolute top-1/3 -right-6 glass-panel px-3.5 py-2 rounded-2xl border border-white/90 text-xs shadow-md">
-                  <div class="text-[10px] text-teal-700 uppercase font-bold tracking-wider">Truyền Quang AR</div>
-                  <div class="text-slate-900 font-black text-sm font-rocky-condensed">99.8% Crystal Sapphire</div>
+                <div class="absolute top-1/3 -right-6 liquid-pill px-4 py-2 text-xs shadow-md flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-teal-600"></span>
+                  <div>
+                    <div class="text-[10px] text-teal-700 uppercase font-bold tracking-wider">Độ Truyền Quang</div>
+                    <div class="text-slate-900 font-black text-sm font-rocky-condensed">99.8% Liquid Crystal</div>
+                  </div>
                 </div>
 
-                <div class="absolute -bottom-5 -left-3 glass-panel px-3.5 py-2 rounded-2xl border border-white/90 text-xs shadow-md">
-                  <div class="text-[10px] text-emerald-700 uppercase font-bold tracking-wider">Độ Sắc Nét Quang Sai</div>
-                  <div class="text-slate-900 font-black text-sm font-rocky-condensed">ABBE 58 High-Definition</div>
+                <div class="absolute -bottom-5 -left-3 liquid-pill px-4 py-2 text-xs shadow-md flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+                  <div>
+                    <div class="text-[10px] text-emerald-700 uppercase font-bold tracking-wider">Độ Sắc Nét Quang Sai</div>
+                    <div class="text-slate-900 font-black text-sm font-rocky-condensed">ABBE 58 HD Retina</div>
+                  </div>
                 </div>
 
-                <div class="absolute -bottom-3 -right-3 glass-panel px-3.5 py-2 rounded-2xl border border-white/90 text-xs shadow-md">
-                  <div class="text-[10px] text-blue-700 uppercase font-bold tracking-wider">Bảo Hành Lớp Phủ</div>
-                  <div class="text-slate-900 font-black text-sm font-rocky-condensed">24 Tháng Điện Tử</div>
+                <div class="absolute -bottom-3 -right-3 liquid-pill px-4 py-2 text-xs shadow-md flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+                  <div>
+                    <div class="text-[10px] text-blue-700 uppercase font-bold tracking-wider">Bảo Hành Điện Tử</div>
+                    <div class="text-slate-900 font-black text-sm font-rocky-condensed">24 Tháng 1 Đổi 1</div>
+                  </div>
                 </div>
 
               </div>
@@ -2380,12 +2468,12 @@
         </div>
       </section>
 
-      <!-- GLASS REFRACTIVE MATRIX BENCH -->
+      <!-- LIQUID REFRACTIVE MATRIX BENCH -->
       <section id="glass-matrix" class="py-14 px-4 sm:px-6 lg:px-8 border-t border-b border-slate-200/80 relative">
         <div class="max-w-7xl mx-auto space-y-8">
           
           <div class="text-center max-w-3xl mx-auto space-y-2">
-            <span class="text-xs font-bold uppercase tracking-widest text-[#0B7B8A] block font-rocky-condensed">TRẠM PHÂN TÍCH KHÚC XẠ THỦY TINH QUANG HỌC</span>
+            <span class="text-xs font-bold uppercase tracking-widest text-[#0B7B8A] block font-rocky-condensed">TRẠM PHÂN TÍCH KHÚC XẠ CHẤT LỎNG QUANG HỌC</span>
             <h2 class="text-2xl sm:text-3xl font-black text-slate-900 uppercase font-rocky-condensed">
               So Sánh Đặc Tính Vật Liệu &amp; Chiết Suất Rocky Lens
             </h2>
@@ -2394,28 +2482,28 @@
             </p>
           </div>
 
-          <!-- Glass Index Switcher Tabs -->
+          <!-- Liquid Index Switcher Tabs -->
           <div class="flex flex-wrap items-center justify-center gap-2.5">
-            <button onclick="selectGlassIndex('156')" id="btn-gidx-156" class="gidx-btn px-4 py-2 rounded-xl text-xs font-semibold glass-pill text-slate-700 hover:text-slate-900 hover:bg-white transition-all">
+            <button onclick="selectGlassIndex('156')" id="btn-gidx-156" class="gidx-btn px-5 py-2.5 rounded-full text-xs font-semibold liquid-pill text-slate-700 hover:text-slate-900 transition-all">
               Chiết Suất 1.56 (Cơ Bản)
             </button>
-            <button onclick="selectGlassIndex('160')" id="btn-gidx-160" class="gidx-btn px-4 py-2 rounded-xl text-xs font-semibold glass-pill text-slate-700 hover:text-slate-900 hover:bg-white transition-all">
+            <button onclick="selectGlassIndex('160')" id="btn-gidx-160" class="gidx-btn px-5 py-2.5 rounded-full text-xs font-semibold liquid-pill text-slate-700 hover:text-slate-900 transition-all">
               Chiết Suất 1.60 (MR-8 Kính Khoan)
             </button>
-            <button onclick="selectGlassIndex('167')" id="btn-gidx-167" class="gidx-btn px-4 py-2 rounded-xl text-xs font-bold bg-[#0B7B8A] text-white shadow-md border border-[#0B7B8A] transition-all">
+            <button onclick="selectGlassIndex('167')" id="btn-gidx-167" class="gidx-btn px-5 py-2.5 rounded-full text-xs font-bold bg-[#0B7B8A] text-white shadow-md border border-[#0B7B8A] transition-all">
               Chiết Suất 1.67 (MR-7 Siêu Mỏng)
             </button>
-            <button onclick="selectGlassIndex('174')" id="btn-gidx-174" class="gidx-btn px-4 py-2 rounded-xl text-xs font-semibold glass-pill text-slate-700 hover:text-slate-900 hover:bg-white transition-all">
+            <button onclick="selectGlassIndex('174')" id="btn-gidx-174" class="gidx-btn px-5 py-2.5 rounded-full text-xs font-semibold liquid-pill text-slate-700 hover:text-slate-900 transition-all">
               Chiết Suất 1.74 (MR-174 Cực Mỏng)
             </button>
           </div>
 
-          <!-- Dynamic Frosted Glass Metrics Display -->
-          <div class="glass-panel rounded-3xl p-6 sm:p-8 border border-white/90 shadow-lg relative overflow-hidden">
+          <!-- Dynamic Apple Liquid Metrics Display -->
+          <div class="liquid-panel rounded-[32px] p-6 sm:p-8 border border-white/95 shadow-lg relative overflow-hidden">
             <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
               
               <div class="md:col-span-5 space-y-3">
-                <span class="px-3 py-1 rounded-full bg-teal-50 text-[#0B7B8A] text-xs font-bold border border-teal-200/80 uppercase font-rocky-condensed">
+                <span class="px-3.5 py-1 rounded-full bg-teal-50 text-[#0B7B8A] text-xs font-bold border border-teal-200/80 uppercase font-rocky-condensed">
                   THÔNG SỐ PHÒNG LAB CANRX
                 </span>
                 <h3 id="glass-spec-name" class="text-xl sm:text-2xl font-black text-slate-900 font-rocky-condensed">
@@ -2425,7 +2513,7 @@
                   Dòng tròng siêu mỏng bán chạy nhất cho độ cận từ -3.00 đến -10.00. Phôi monomer Mitsui MR-7 Nhật Bản trong suốt pha lê và dẻo dai cơ học.
                 </p>
                 <div class="pt-1">
-                  <button onclick="openLeadModal('Báo giá chiết suất đang chọn')" class="px-5 py-2.5 rounded-xl bg-[#0B7B8A] hover:bg-[#086370] text-white font-bold text-xs shadow-md shadow-teal-700/20">
+                  <button onclick="openLeadModal('Báo giá chiết suất đang chọn')" class="liquid-btn-primary px-5 py-2.5 text-xs font-bold shadow-md">
                     Nhận Bảng Giá Chiết Suất Này
                   </button>
                 </div>
@@ -2433,36 +2521,36 @@
 
               <div class="md:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                 
-                <div class="p-4 rounded-2xl glass-card space-y-1">
+                <div class="p-4 rounded-[20px] liquid-card space-y-1">
                   <span class="text-[10px] text-[#0B7B8A] uppercase font-bold tracking-wider">Độ Mỏng So Với 1.50</span>
                   <div id="glass-spec-thinness" class="text-xl font-black text-slate-900 font-rocky-condensed">Mỏng hơn 35% - 40%</div>
                   <p class="text-[11px] text-slate-500">Giảm độ dày mép tròng tối đa cho thẩm mỹ cao.</p>
                 </div>
 
-                <div class="p-4 rounded-2xl glass-card space-y-1">
+                <div class="p-4 rounded-[20px] liquid-card space-y-1">
                   <span class="text-[10px] text-teal-700 uppercase font-bold tracking-wider">Giảm Trọng Lượng</span>
                   <div id="glass-spec-weight" class="text-xl font-black text-slate-900 font-rocky-condensed">Giảm 35% trọng lượng</div>
                   <p class="text-[11px] text-slate-500">Êm ái, không gây tì đè sống mũi khi đeo cả ngày.</p>
                 </div>
 
-                <div class="p-4 rounded-2xl glass-card space-y-1">
+                <div class="p-4 rounded-[20px] liquid-card space-y-1">
                   <span class="text-[10px] text-emerald-700 uppercase font-bold tracking-wider">Hệ Số Tán Sắc ABBE</span>
                   <div id="glass-spec-abbe" class="text-xl font-black text-slate-900 font-rocky-condensed">32 (Độ trong trẻo cao)</div>
                   <p class="text-[11px] text-slate-500">Khắc phục viền tím quang sai khi nhìn vật thể sáng.</p>
                 </div>
 
-                <div class="p-4 rounded-2xl glass-card space-y-1">
+                <div class="p-4 rounded-[20px] liquid-card space-y-1">
                   <span class="text-[10px] text-purple-700 uppercase font-bold tracking-wider">Dải Độ Khuyên Dùng</span>
                   <div id="glass-spec-range" class="text-base font-bold text-slate-900 font-rocky-condensed">Cận -3.00 đến -10.00</div>
                   <p class="text-[11px] text-slate-500">Loạn thị đến -3.00 Diop.</p>
                 </div>
 
-                <div class="sm:col-span-2 p-3.5 rounded-2xl glass-card flex items-center justify-between gap-4">
+                <div class="sm:col-span-2 p-3.5 rounded-[20px] liquid-card flex items-center justify-between gap-4">
                   <div>
                     <span class="text-[10px] text-amber-700 uppercase font-bold tracking-wider block">Gọng Kính Tương Thích Tốt Nhất</span>
                     <div id="glass-spec-frames" class="text-xs font-semibold text-slate-800">Mọi loại gọng: gọng thời trang, gọng mỏng, gọng titan</div>
                   </div>
-                  <span class="text-[#0B7B8A] font-bold text-xs bg-teal-50 px-2.5 py-1 rounded-lg border border-teal-200">ISO 13485</span>
+                  <span class="text-[#0B7B8A] font-bold text-xs bg-teal-50 px-3 py-1 rounded-full border border-teal-200">ISO 13485</span>
                 </div>
 
               </div>
@@ -2473,12 +2561,12 @@
         </div>
       </section>
 
-      <!-- GLASS PRODUCTS MATRIX: 6 FLAGSHIP TECHNOLOGIES -->
+      <!-- LIQUID PRODUCTS: 6 FLAGSHIP TECHNOLOGIES -->
       <section id="glass-products" class="py-14 px-4 sm:px-6 lg:px-8">
         <div class="max-w-7xl mx-auto space-y-8">
           
           <div class="text-center max-w-3xl mx-auto space-y-2">
-            <span class="text-xs font-bold uppercase tracking-widest text-[#0B7B8A] block font-rocky-condensed">DANH MỤC TRÒNG KÍNH THỦY TINH QUANG HỌC KTS</span>
+            <span class="text-xs font-bold uppercase tracking-widest text-[#0B7B8A] block font-rocky-condensed">DANH MỤC TRÒNG KÍNH LIQUID QUANG HỌC KTS</span>
             <h2 class="text-2xl sm:text-3xl font-black text-slate-900 uppercase font-rocky-condensed">
               6 Dòng Tròng Kính Trọng Tâm Rocky Lens
             </h2>
@@ -2490,133 +2578,133 @@
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             
             <!-- Card 1: DriveShield Ruby -->
-            <div class="glass-card rounded-3xl p-5 space-y-3.5 flex flex-col justify-between">
+            <div class="liquid-card rounded-[26px] p-5 space-y-3.5 flex flex-col justify-between">
               <div class="space-y-2.5">
                 <div class="flex items-center justify-between text-xs">
-                  <span class="px-2.5 py-0.5 rounded-full bg-rose-50 text-rose-700 border border-rose-200 font-bold font-rocky-condensed uppercase">Lái Xe Đêm</span>
+                  <span class="px-3 py-0.5 rounded-full bg-rose-50 text-rose-700 border border-rose-200 font-bold font-rocky-condensed uppercase">Lái Xe Đêm</span>
                   <span class="text-[#0B7B8A] font-bold font-rocky-condensed">1.56 / 1.61</span>
                 </div>
                 <h4 class="text-base font-black text-slate-900 font-rocky-condensed">Rocky DriveShield Ruby AR</h4>
                 <p class="text-xs text-slate-600 leading-relaxed">
                   Lớp phủ Ruby AR triệt tiêu ánh sáng chói từ đèn pha LED ngược chiều, tăng tương phản 35% khi lái xe trời mưa hoặc đêm.
                 </p>
-                <div class="p-3 rounded-xl bg-slate-50/80 border border-slate-200/80 space-y-1 text-[11px] text-slate-600">
+                <div class="p-3 rounded-2xl bg-slate-50/80 border border-slate-200/80 space-y-1 text-[11px] text-slate-600">
                   <div class="flex justify-between"><span>Lớp phủ:</span><strong class="text-slate-900">Ruby AR Night-Vision</strong></div>
                   <div class="flex justify-between"><span>Truyền quang:</span><strong class="text-[#0B7B8A]">99.8% Transmittance</strong></div>
                   <div class="flex justify-between"><span>Bảo hành:</span><strong class="text-slate-900">12 - 24 Tháng</strong></div>
                 </div>
               </div>
-              <button onclick="openLeadModal('Báo giá sỉ DriveShield Ruby')" class="w-full py-2.5 rounded-xl bg-slate-900 hover:bg-[#0B7B8A] text-white font-bold text-xs transition-colors">
+              <button onclick="openLeadModal('Báo giá sỉ DriveShield Ruby')" class="w-full py-2.5 rounded-full bg-slate-900 hover:bg-[#0B7B8A] text-white font-bold text-xs transition-colors shadow-xs">
                 Báo Giá Đại Lý DriveShield
               </button>
             </div>
 
             <!-- Card 2: BlueCut UV420 -->
-            <div class="glass-card rounded-3xl p-5 space-y-3.5 flex flex-col justify-between">
+            <div class="liquid-card rounded-[26px] p-5 space-y-3.5 flex flex-col justify-between">
               <div class="space-y-2.5">
                 <div class="flex items-center justify-between text-xs">
-                  <span class="px-2.5 py-0.5 rounded-full bg-teal-50 text-teal-700 border border-teal-200 font-bold font-rocky-condensed uppercase">Văn Phòng &bull; Digital</span>
+                  <span class="px-3 py-0.5 rounded-full bg-teal-50 text-teal-700 border border-teal-200 font-bold font-rocky-condensed uppercase">Văn Phòng &bull; Digital</span>
                   <span class="text-[#0B7B8A] font-bold font-rocky-condensed">1.56 / 1.67</span>
                 </div>
                 <h4 class="text-base font-black text-slate-900 font-rocky-condensed">Rocky BlueCut UV420 SHMC</h4>
                 <p class="text-xs text-slate-600 leading-relaxed">
                   Lọc 98% ánh sáng xanh tím có hại từ màn hình số, chống mỏi mắt và đau đầu. Lớp phủ siêu trơn trượt nước hạt sen.
                 </p>
-                <div class="p-3 rounded-xl bg-slate-50/80 border border-slate-200/80 space-y-1 text-[11px] text-slate-600">
+                <div class="p-3 rounded-2xl bg-slate-50/80 border border-slate-200/80 space-y-1 text-[11px] text-slate-600">
                   <div class="flex justify-between"><span>Tính năng:</span><strong class="text-slate-900">Lọc 98% Blue Violet</strong></div>
                   <div class="flex justify-between"><span>Lớp phủ:</span><strong class="text-[#0B7B8A]">SHMC Super Hydrophobic</strong></div>
                   <div class="flex justify-between"><span>Chống bám nước:</span><strong class="text-slate-900">Góc trượt nước 115°</strong></div>
                 </div>
               </div>
-              <button onclick="openLeadModal('Báo giá sỉ BlueCut UV420')" class="w-full py-2.5 rounded-xl bg-slate-900 hover:bg-[#0B7B8A] text-white font-bold text-xs transition-colors">
+              <button onclick="openLeadModal('Báo giá sỉ BlueCut UV420')" class="w-full py-2.5 rounded-full bg-slate-900 hover:bg-[#0B7B8A] text-white font-bold text-xs transition-colors shadow-xs">
                 Báo Giá Đại Lý BlueCut
               </button>
             </div>
 
             <!-- Card 3: Spin-Coat Photochromic -->
-            <div class="glass-card rounded-3xl p-5 space-y-3.5 flex flex-col justify-between">
+            <div class="liquid-card rounded-[26px] p-5 space-y-3.5 flex flex-col justify-between">
               <div class="space-y-2.5">
                 <div class="flex items-center justify-between text-xs">
-                  <span class="px-2.5 py-0.5 rounded-full bg-amber-50 text-amber-700 border border-amber-200 font-bold font-rocky-condensed uppercase">Đổi Màu Siêu Tốc</span>
+                  <span class="px-3 py-0.5 rounded-full bg-amber-50 text-amber-700 border border-amber-200 font-bold font-rocky-condensed uppercase">Đổi Màu Siêu Tốc</span>
                   <span class="text-[#0B7B8A] font-bold font-rocky-condensed">1.56 / 1.60</span>
                 </div>
                 <h4 class="text-base font-black text-slate-900 font-rocky-condensed">Rocky Fast-Change Photochromic</h4>
                 <p class="text-xs text-slate-600 leading-relaxed">
                   Công nghệ phủ ly tâm Spin-Coating đổi màu râm thời trang trong 15s ngoài nắng, nhả màu trong suốt nhanh chóng khi vào nhà.
                 </p>
-                <div class="p-3 rounded-xl bg-slate-50/80 border border-slate-200/80 space-y-1 text-[11px] text-slate-600">
+                <div class="p-3 rounded-2xl bg-slate-50/80 border border-slate-200/80 space-y-1 text-[11px] text-slate-600">
                   <div class="flex justify-between"><span>Màu sắc:</span><strong class="text-slate-900">Khói Xám, Trà, Sapphire</strong></div>
                   <div class="flex justify-between"><span>Tốc độ:</span><strong class="text-amber-600">15 Giây phản ứng UV</strong></div>
                   <div class="flex justify-between"><span>Độ đậm màu:</span><strong class="text-slate-900">Cat. 3 (75% - 80%)</strong></div>
                 </div>
               </div>
-              <button onclick="openLeadModal('Báo giá sỉ Photochromic')" class="w-full py-2.5 rounded-xl bg-slate-900 hover:bg-[#0B7B8A] text-white font-bold text-xs transition-colors">
+              <button onclick="openLeadModal('Báo giá sỉ Photochromic')" class="w-full py-2.5 rounded-full bg-slate-900 hover:bg-[#0B7B8A] text-white font-bold text-xs transition-colors shadow-xs">
                 Báo Giá Đại Lý Đổi Màu
               </button>
             </div>
 
             <!-- Card 4: Ultra-Thin 1.74 Aspheric -->
-            <div class="glass-card rounded-3xl p-5 space-y-3.5 flex flex-col justify-between">
+            <div class="liquid-card rounded-[26px] p-5 space-y-3.5 flex flex-col justify-between">
               <div class="space-y-2.5">
                 <div class="flex items-center justify-between text-xs">
-                  <span class="px-2.5 py-0.5 rounded-full bg-purple-50 text-purple-700 border border-purple-200 font-bold font-rocky-condensed uppercase">Cận Nặng Siêu Mỏng</span>
+                  <span class="px-3 py-0.5 rounded-full bg-purple-50 text-purple-700 border border-purple-200 font-bold font-rocky-condensed uppercase">Cận Nặng Siêu Mỏng</span>
                   <span class="text-[#0B7B8A] font-bold font-rocky-condensed">Index 1.74</span>
                 </div>
                 <h4 class="text-base font-black text-slate-900 font-rocky-condensed">Rocky Ultra-Thin Aspheric 1.74</h4>
                 <p class="text-xs text-slate-600 leading-relaxed">
                   Thiết kế phi cầu Aspheric mỏng hơn 45% so với tròng thường. Triệt tiêu méo rìa tròng và giải phóng trọng lượng cho độ cận từ -5.00 đến -16.00.
                 </p>
-                <div class="p-3 rounded-xl bg-slate-50/80 border border-slate-200/80 space-y-1 text-[11px] text-slate-600">
+                <div class="p-3 rounded-2xl bg-slate-50/80 border border-slate-200/80 space-y-1 text-[11px] text-slate-600">
                   <div class="flex justify-between"><span>Phôi:</span><strong class="text-slate-900">Mitsui MR-174 Japan</strong></div>
                   <div class="flex justify-between"><span>Độ mỏng:</span><strong class="text-purple-700">Mỏng hơn 45%</strong></div>
                   <div class="flex justify-between"><span>Bề mặt:</span><strong class="text-slate-900">Aspheric 2 mặt</strong></div>
                 </div>
               </div>
-              <button onclick="openLeadModal('Báo giá sỉ 1.74 Ultra-Thin')" class="w-full py-2.5 rounded-xl bg-slate-900 hover:bg-[#0B7B8A] text-white font-bold text-xs transition-colors">
+              <button onclick="openLeadModal('Báo giá sỉ 1.74 Ultra-Thin')" class="w-full py-2.5 rounded-full bg-slate-900 hover:bg-[#0B7B8A] text-white font-bold text-xs transition-colors shadow-xs">
                 Báo Giá Đại Lý 1.74
               </button>
             </div>
 
             <!-- Card 5: Defocus 360° MyoControl -->
-            <div class="glass-card rounded-3xl p-5 space-y-3.5 flex flex-col justify-between">
+            <div class="liquid-card rounded-[26px] p-5 space-y-3.5 flex flex-col justify-between">
               <div class="space-y-2.5">
                 <div class="flex items-center justify-between text-xs">
-                  <span class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 font-bold font-rocky-condensed uppercase">Kiểm Soát Cận Thị</span>
+                  <span class="px-3 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 font-bold font-rocky-condensed uppercase">Kiểm Soát Cận Thị</span>
                   <span class="text-[#0B7B8A] font-bold font-rocky-condensed">1.164 Micro-Lens</span>
                 </div>
                 <h4 class="text-base font-black text-slate-900 font-rocky-condensed">Rocky Defocus 360° MyoControl</h4>
                 <p class="text-xs text-slate-600 leading-relaxed">
                   Ma trận 1.164 vi thấu kính phân tán chu biên tạo tín hiệu làm chậm sự dài ra của trục nhãn cầu, giảm tiến triển cận thị học đường 60%.
                 </p>
-                <div class="p-3 rounded-xl bg-slate-50/80 border border-slate-200/80 space-y-1 text-[11px] text-slate-600">
+                <div class="p-3 rounded-2xl bg-slate-50/80 border border-slate-200/80 space-y-1 text-[11px] text-slate-600">
                   <div class="flex justify-between"><span>Công nghệ:</span><strong class="text-slate-900">Defocus Ring 360°</strong></div>
                   <div class="flex justify-between"><span>Hiệu quả:</span><strong class="text-emerald-700">Chậm tăng độ 59-67%</strong></div>
                   <div class="flex justify-between"><span>Chất liệu:</span><strong class="text-slate-900">Polycarbonate chống vỡ</strong></div>
                 </div>
               </div>
-              <button onclick="openLeadModal('Báo giá sỉ Defocus Trẻ Em')" class="w-full py-2.5 rounded-xl bg-slate-900 hover:bg-[#0B7B8A] text-white font-bold text-xs transition-colors">
+              <button onclick="openLeadModal('Báo giá sỉ Defocus Trẻ Em')" class="w-full py-2.5 rounded-full bg-slate-900 hover:bg-[#0B7B8A] text-white font-bold text-xs transition-colors shadow-xs">
                 Báo Giá Đại Lý Defocus
               </button>
             </div>
 
             <!-- Card 6: CanRx Freeform 4K -->
-            <div class="glass-card rounded-3xl p-5 space-y-3.5 flex flex-col justify-between">
+            <div class="liquid-card rounded-[26px] p-5 space-y-3.5 flex flex-col justify-between">
               <div class="space-y-2.5">
                 <div class="flex items-center justify-between text-xs">
-                  <span class="px-2.5 py-0.5 rounded-full bg-blue-50 text-blue-700 border border-blue-200 font-bold font-rocky-condensed uppercase">Đa Tròng KTS</span>
+                  <span class="px-3 py-0.5 rounded-full bg-blue-50 text-blue-700 border border-blue-200 font-bold font-rocky-condensed uppercase">Đa Tròng KTS</span>
                   <span class="text-[#0B7B8A] font-bold font-rocky-condensed">Precision 0.01D</span>
                 </div>
                 <h4 class="text-base font-black text-slate-900 font-rocky-condensed">CanRx Ultraview Freeform 4K</h4>
                 <p class="text-xs text-slate-600 leading-relaxed">
                   Đa tròng Freeform kỹ thuật số mặt sau cá nhân hóa cho người trên 40 tuổi. Chuyển tiếp êm dịu 3 khoảng cách Xa - Trung Gian - Gần, không bị bồng bềnh.
                 </p>
-                <div class="p-3 rounded-xl bg-slate-50/80 border border-slate-200/80 space-y-1 text-[11px] text-slate-600">
+                <div class="p-3 rounded-2xl bg-slate-50/80 border border-slate-200/80 space-y-1 text-[11px] text-slate-600">
                   <div class="flex justify-between"><span>Gia công:</span><strong class="text-slate-900">Lab CanRx 24H</strong></div>
                   <div class="flex justify-between"><span>Vùng nhìn:</span><strong class="text-blue-700">Mở rộng 40% hành lang</strong></div>
                   <div class="flex justify-between"><span>Đơn kính:</span><strong class="text-slate-900">Cá nhân hóa theo gọng</strong></div>
                 </div>
               </div>
-              <button onclick="openLeadModal('Báo giá sỉ Đa Tròng Freeform')" class="w-full py-2.5 rounded-xl bg-slate-900 hover:bg-[#0B7B8A] text-white font-bold text-xs transition-colors">
+              <button onclick="openLeadModal('Báo giá sỉ Đa Tròng Freeform')" class="w-full py-2.5 rounded-full bg-slate-900 hover:bg-[#0B7B8A] text-white font-bold text-xs transition-colors shadow-xs">
                 Báo Giá Đại Lý Đa Tròng
               </button>
             </div>
@@ -2626,14 +2714,14 @@
         </div>
       </section>
 
-      <!-- GLASS B2B QUOTE & PARTNER PORTAL -->
+      <!-- LIQUID B2B QUOTE & PARTNER PORTAL -->
       <section id="glass-quote" class="py-14 px-4 sm:px-6 lg:px-8 border-t border-slate-200/80">
-        <div class="max-w-5xl mx-auto glass-panel rounded-3xl p-6 sm:p-10 border border-white/90 shadow-xl relative overflow-hidden">
+        <div class="max-w-5xl mx-auto liquid-panel rounded-[32px] p-6 sm:p-10 border border-white/95 shadow-xl relative overflow-hidden">
           
           <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
             
             <div class="md:col-span-5 space-y-3.5">
-              <span class="px-3 py-1 rounded-full bg-teal-50 text-[#0B7B8A] text-xs font-bold border border-teal-200 uppercase font-rocky-condensed">
+              <span class="px-3.5 py-1 rounded-full bg-teal-50 text-[#0B7B8A] text-xs font-bold border border-teal-200 uppercase font-rocky-condensed">
                 HỢP TÁC B2B &bull; ROCKY OPTICS
               </span>
               <h3 class="text-2xl font-black text-slate-900 uppercase font-rocky-condensed">
@@ -2659,29 +2747,29 @@
               </div>
             </div>
 
-            <div class="md:col-span-7 bg-white/90 p-6 rounded-2xl border border-slate-200/80 shadow-xs space-y-3.5">
+            <div class="md:col-span-7 bg-white/90 p-6 rounded-[24px] border border-slate-200/80 shadow-xs space-y-3.5">
               <h4 class="text-sm font-bold text-slate-900 uppercase tracking-wider font-rocky-condensed">Gửi Yêu Cầu Nhận Báo Giá Sỉ</h4>
               
               <form onsubmit="submitGlassQuote(event)" class="space-y-3 text-xs">
                 <div>
                   <label class="block text-slate-700 mb-1 font-medium">Tên cửa hàng / Phòng khám *</label>
-                  <input type="text" id="gquote-store" required placeholder="Ví dụ: Kính Mắt Sài Gòn Optic" class="w-full px-3.5 py-2.5 rounded-xl glass-input text-xs">
+                  <input type="text" id="gquote-store" required placeholder="Ví dụ: Kính Mắt Sài Gòn Optic" class="w-full px-4 py-2.5 rounded-2xl liquid-input text-xs">
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div>
                     <label class="block text-slate-700 mb-1 font-medium">Số điện thoại *</label>
-                    <input type="tel" id="gquote-phone" required placeholder="09xx xxx xxx" class="w-full px-3.5 py-2.5 rounded-xl glass-input text-xs">
+                    <input type="tel" id="gquote-phone" required placeholder="09xx xxx xxx" class="w-full px-4 py-2.5 rounded-2xl liquid-input text-xs">
                   </div>
                   <div>
                     <label class="block text-slate-700 mb-1 font-medium">Khu vực *</label>
-                    <input type="text" id="gquote-area" required placeholder="Hà Nội, TP.HCM, Đà Nẵng..." class="w-full px-3.5 py-2.5 rounded-xl glass-input text-xs">
+                    <input type="text" id="gquote-area" required placeholder="Hà Nội, TP.HCM, Đà Nẵng..." class="w-full px-4 py-2.5 rounded-2xl liquid-input text-xs">
                   </div>
                 </div>
 
                 <div>
                   <label class="block text-slate-700 mb-1 font-medium">Dòng tròng kính quan tâm</label>
-                  <select id="gquote-product" class="w-full px-3.5 py-2.5 rounded-xl glass-input text-xs bg-white text-slate-900">
+                  <select id="gquote-product" class="w-full px-4 py-2.5 rounded-2xl liquid-input text-xs bg-white text-slate-900">
                     <option value="all">Tất cả danh mục tròng Rocky</option>
                     <option value="driveshield">Rocky DriveShield Lái Xe Đêm</option>
                     <option value="bluecut">Rocky BlueCut UV420 ASX</option>
@@ -2692,7 +2780,7 @@
                   </select>
                 </div>
 
-                <button type="submit" class="w-full py-3 rounded-xl bg-[#0B7B8A] hover:bg-[#086370] text-white font-black text-xs sm:text-sm tracking-wide shadow-md shadow-teal-700/20 transition-all mt-1">
+                <button type="submit" class="liquid-btn-primary w-full py-3 text-xs sm:text-sm font-black tracking-wide shadow-md mt-1">
                   Gửi Yêu Cầu &bull; Nhận Báo Giá Trong 15 Phút
                 </button>
               </form>
@@ -2703,23 +2791,23 @@
         </div>
       </section>
 
-      <!-- LIGHT GLASS FOOTER -->
+      <!-- APPLE LIQUID FOOTER -->
       <footer class="py-8 px-4 sm:px-6 lg:px-8 border-t border-slate-200/80 bg-white/60 text-xs text-slate-600">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
           <div class="flex items-center gap-3">
-            <div class="bg-white p-1.5 rounded-lg border border-slate-200 shadow-xs inline-block">
+            <div class="bg-white p-1.5 rounded-full border border-slate-200 shadow-xs inline-block">
               <img src="assets/logo_rocky_transparent.png" alt="Rocky Canada Opticians" class="h-8 w-auto object-contain">
             </div>
             <div>
               <span class="text-slate-900 font-bold block text-xs">ROCKY LENS CANADA OPTICIANS</span>
-              <span class="text-[11px] text-slate-500">Digital Lab &bull; Freeform Optical System &bull; ISO 13485:2016</span>
+              <span class="text-[11px] text-slate-500">Fluid Resin Lab &bull; Freeform Optical System &bull; ISO 13485:2016</span>
             </div>
           </div>
 
-          <div class="flex flex-wrap items-center justify-center gap-3 text-[11px]">
-            <span class="px-2.5 py-1 rounded-full bg-white border border-slate-200 text-slate-700 shadow-xs">ISO 13485:2016</span>
-            <span class="px-2.5 py-1 rounded-full bg-white border border-slate-200 text-slate-700 shadow-xs">FDA Approved</span>
-            <span class="px-2.5 py-1 rounded-full bg-white border border-slate-200 text-slate-700 shadow-xs">CE Conformity</span>
+          <div class="flex flex-wrap items-center justify-center gap-2.5 text-[11px]">
+            <span class="px-3.5 py-1 rounded-full liquid-pill text-slate-700">ISO 13485:2016</span>
+            <span class="px-3.5 py-1 rounded-full liquid-pill text-slate-700">FDA Approved</span>
+            <span class="px-3.5 py-1 rounded-full liquid-pill text-slate-700">CE Conformity</span>
           </div>
 
           <div class="text-[11px] text-slate-500">
@@ -3091,9 +3179,9 @@
         const btn = document.getElementById('btn-gidx-' + i);
         if (btn) {
           if (i === idx) {
-            btn.className = 'gidx-btn px-4 py-2 rounded-xl text-xs font-bold bg-[#0B7B8A] text-white shadow-md border border-[#0B7B8A] transition-all';
+            btn.className = 'gidx-btn px-5 py-2.5 rounded-full text-xs font-bold bg-[#0B7B8A] text-white shadow-md border border-[#0B7B8A] transition-all';
           } else {
-            btn.className = 'gidx-btn px-4 py-2 rounded-xl text-xs font-semibold glass-pill text-slate-700 hover:text-slate-900 hover:bg-white transition-all';
+            btn.className = 'gidx-btn px-5 py-2.5 rounded-full text-xs font-semibold liquid-pill text-slate-700 hover:text-slate-900 transition-all';
           }
         }
       });
