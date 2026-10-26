@@ -175,8 +175,12 @@ npm run build
 
 ## 6. LƯU Ý KỸ THUẬT QUAN TRỌNG (TECHNICAL GOTCHAS)
 
-1. **`package.json` bắt buộc là `"type": "module"`**: Tất cả mã nguồn sử dụng cú pháp ESM (`import` / `export`).
-2. **Metadata Routes (`src/app/robots.ts`, `src/app/sitemap.ts`)**: Bắt buộc phải có dòng `export const dynamic = 'force-static';` để Next.js hỗ trợ static export.
-3. **Trang chi tiết động (`[slug]`)**: Phải luôn xuất khẩu hàm `generateStaticParams()` để sinh trước toàn bộ trang HTML.
-4. **Client Components**: Chỉ dùng `'use client'` khi có tương tác người dùng (ví dụ: bộ lọc `ProductCatalogView`, menu di động `MobileNavigation`). Khi dùng `useSearchParams()`, phải bọc trong `<Suspense>`.
-5. **Assets tĩnh**: Tất cả hình ảnh phải đặt trong `public/` (không đặt trong thư mục `assets/` ngoài root) và được gọi qua đường dẫn tuyệt đối bắt đầu bằng `/images/...`.
+1. **GitHub Pages Live Hosting (`25phongsusu.github.io/rockylens/`)**:
+   - Kho chứa này được cấu hình GitHub Pages chạy trực tiếp từ nhánh `main` thư mục gốc `/`.
+   - File `index.html` và thư mục `assets/` tại thư mục gốc **BẮT BUỘC PHẢI ĐƯỢC GIỮ NGUYÊN** để đảm bảo đường link GitHub Pages luôn hoạt động trực tiếp, không bao giờ bị rơi về hiển thị file `README.md`.
+   - File `.nojekyll` tại thư mục gốc giúp GitHub Pages không chặn các thư mục tĩnh.
+2. **`package.json` bắt buộc là `"type": "module"`**: Tất cả mã nguồn sử dụng cú pháp ESM (`import` / `export`).
+3. **Metadata Routes (`src/app/robots.ts`, `src/app/sitemap.ts`)**: Bắt buộc phải có dòng `export const dynamic = 'force-static';` để Next.js hỗ trợ static export.
+4. **Trang chi tiết động (`[slug]`)**: Phải luôn xuất khẩu hàm `generateStaticParams()` để sinh trước toàn bộ trang HTML.
+5. **Client Components**: Chỉ dùng `'use client'` khi có tương tác người dùng (ví dụ: bộ lọc `ProductCatalogView`, menu di động `MobileNavigation`). Khi dùng `useSearchParams()`, phải bọc trong `<Suspense>`.
+6. **Assets tĩnh Next.js**: Đặt trong `public/images/` và `public/documents/`.
