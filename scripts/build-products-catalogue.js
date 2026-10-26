@@ -242,6 +242,122 @@ const html = `<!DOCTYPE html>
     </div>
   </section>
 
+  <!-- BẢNG PHÂN TÍCH & SO SÁNH CHIẾT SUẤT VẬT LIỆU (TÍCH HỢP Ở DƯỚI CATALOGUE TRÒNG KÍNH) -->
+  <section class="py-20 px-6 bg-white">
+    <div class="max-w-7xl mx-auto space-y-12">
+      
+      <div class="max-w-3xl motion-item">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0E253A] tracking-tight">
+          So Sánh Chiết Suất Vật Liệu (Refractive Index)
+        </h2>
+        <p class="text-slate-600 text-base sm:text-lg mt-3">
+          Lựa chọn chiết suất phù hợp giữa độ mỏng nhẹ, độ sắc nét quang sai Abbe và kết cấu gọng kính của khách hàng.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- 1.56 -->
+        <div class="bg-[#F5F5F7] p-6 rounded-3xl space-y-4 motion-item">
+          <div class="flex items-center justify-between">
+            <span class="text-3xl font-black text-[#0B7B8A]">1.56</span>
+            <span class="text-sm font-semibold text-slate-700 bg-white px-3 py-1 rounded-full">Phổ thông</span>
+          </div>
+          <h3 class="text-xl font-bold text-[#0E253A]">Hard Resin Tiêu Chuẩn</h3>
+          <div class="space-y-2 text-base bg-white p-4 rounded-2xl">
+            <div class="flex justify-between">
+              <span class="text-slate-600">Độ Abbe:</span>
+              <span class="font-bold text-[#0E253A]">36</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-600">Độ mỏng:</span>
+              <span class="font-bold text-[#0E253A]">Tiêu chuẩn cơ sở</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-600">Dải độ tối ưu:</span>
+              <span class="font-bold text-[#0E253A]">Dưới 3.00D</span>
+            </div>
+          </div>
+          <p class="text-base text-slate-700">Phù hợp gọng nguyên khung kim loại hoặc nhựa acetat có viền dày.</p>
+        </div>
+
+        <!-- 1.60 MR-8 -->
+        <div class="bg-[#F5F5F7] p-6 rounded-3xl space-y-4 motion-item">
+          <div class="flex items-center justify-between">
+            <span class="text-3xl font-black text-[#0B7B8A]">1.60</span>
+            <span class="text-sm font-semibold text-teal-900 bg-teal-100 px-3 py-1 rounded-full">Bền dẻo cao</span>
+          </div>
+          <h3 class="text-xl font-bold text-[#0E253A]">Monomer Mitsui MR-8™</h3>
+          <div class="space-y-2 text-base bg-white p-4 rounded-2xl">
+            <div class="flex justify-between">
+              <span class="text-slate-600">Độ Abbe:</span>
+              <span class="font-bold text-[#0E253A]">41 (Rất nét)</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-600">Độ mỏng:</span>
+              <span class="font-bold text-[#0E253A]">Mỏng hơn 15%</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-600">Dải độ tối ưu:</span>
+              <span class="font-bold text-[#0E253A]">Từ 2.00D đến 5.00D</span>
+            </div>
+          </div>
+          <p class="text-base text-slate-700">Độ dẻo dai cao, đặc biệt khuyên dùng cho gọng xẻ cước và gọng bắt ốc không viền.</p>
+        </div>
+
+        <!-- 1.67 MR-7 -->
+        <div class="bg-[#F5F5F7] p-6 rounded-3xl space-y-4 motion-item">
+          <div class="flex items-center justify-between">
+            <span class="text-3xl font-black text-[#0B7B8A]">1.67</span>
+            <span class="text-sm font-semibold text-slate-700 bg-white px-3 py-1 rounded-full">Siêu mỏng nhẹ</span>
+          </div>
+          <h3 class="text-xl font-bold text-[#0E253A]">Monomer Mitsui MR-7™</h3>
+          <div class="space-y-2 text-base bg-white p-4 rounded-2xl">
+            <div class="flex justify-between">
+              <span class="text-slate-600">Độ Abbe:</span>
+              <span class="font-bold text-[#0E253A]">32</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-600">Độ mỏng:</span>
+              <span class="font-bold text-[#0E253A]">Mỏng hơn 25%</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-600">Dải độ tối ưu:</span>
+              <span class="font-bold text-[#0E253A]">Từ 4.00D đến 8.00D</span>
+            </div>
+          </div>
+          <p class="text-base text-slate-700">Giảm trọng lượng đáng kể trên sống mũi, thẩm mỹ cao cho người cận độ vừa đến cao.</p>
+        </div>
+
+        <!-- 1.74 MR-174 -->
+        <div class="bg-[#F5F5F7] p-6 rounded-3xl space-y-4 motion-item">
+          <div class="flex items-center justify-between">
+            <span class="text-3xl font-black text-[#0B7B8A]">1.74</span>
+            <span class="text-sm font-semibold text-amber-950 bg-amber-100 px-3 py-1 rounded-full">Mỏng nhất</span>
+          </div>
+          <h3 class="text-xl font-bold text-[#0E253A]">Monomer Mitsui MR-174™</h3>
+          <div class="space-y-2 text-base bg-white p-4 rounded-2xl">
+            <div class="flex justify-between">
+              <span class="text-slate-600">Độ Abbe:</span>
+              <span class="font-bold text-[#0E253A]">33</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-600">Độ mỏng:</span>
+              <span class="font-bold text-[#0E253A]">Mỏng hơn 40%</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-600">Dải độ tối ưu:</span>
+              <span class="font-bold text-[#0E253A]">Trên 7.00D</span>
+            </div>
+          </div>
+          <p class="text-base text-slate-700">Mép kính mỏng phẳng hoàn hảo, thích hợp người cận nặng mong muốn tính thẩm mỹ tối đa.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
   <!-- QUICK CONSULT CTA -->
   <section class="py-16 px-6 bg-[#0E253A] text-white">
     <div class="max-w-4xl mx-auto text-center space-y-6">

@@ -1,22 +1,23 @@
 {
  "url": "trong-kinh/index.html",
- "at": "2026-10-26T10:19:25.022Z",
+ "at": "2026-10-26T10:27:33.716Z",
  "allow": [],
  "viewports": [
   {
    "width": 1440,
    "height": 900,
    "load": "load",
-   "screens": 4,
+   "screens": 5,
    "filled": [
     0.56,
     0.74,
     0.84,
-    0.88
+    0.82,
+    0.87
    ],
    "motion": {
-    "elements": 15,
-    "css": 15,
+    "elements": 20,
+    "css": 20,
     "transitions": 0,
     "scripted": 0,
     "videos": 0,
@@ -28,14 +29,14 @@
      "h": 900
     },
     "page": {
-     "height": 3460,
-     "screens": 3.8,
-     "words": 783,
+     "height": 4208,
+     "screens": 4.7,
+     "words": 972,
      "img": 14,
      "video": 0,
      "canvas": 0,
      "svg": 0,
-     "sections": 3,
+     "sections": 4,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
@@ -131,6 +132,111 @@
       "kind": "heading"
      },
      {
+      "text": "So Sánh Chiết Suất Vật Liệu (Refractive Index)",
+      "words": 8,
+      "chars": 46,
+      "lines": 2,
+      "size": 48,
+      "vw": 3.3,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.53,
+      "top": 3076,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "1.56",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.04,
+      "top": 3312,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "1.60",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.04,
+      "top": 3312,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "1.67",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.04,
+      "top": 3312,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "1.74",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.04,
+      "top": 3312,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
       "text": "Bạn Cần Báo Giá Sỉ Cho Đại Lý?",
       "words": 8,
       "chars": 30,
@@ -147,18 +253,18 @@
       "align": "center",
       "position": "center",
       "widthRatio": 0.62,
-      "top": 3060,
+      "top": 3808,
       "tag": "h2",
       "kind": "heading"
      }
     ],
     "headingSummary": {
-     "count": 3,
+     "count": 8,
      "maxLines": 2,
      "over2Lines": 0,
      "statements": 0,
      "centered": 2,
-     "medianWords": 8,
+     "medianWords": 1,
      "mixedFontHeadings": 0
     },
     "type": {
@@ -175,10 +281,12 @@
       16,
       18,
       20,
+      30,
       36,
+      48,
       72
      ],
-     "sizeCount": 6,
+     "sizeCount": 8,
      "notLoaded": [],
      "body": {
       "font": "SF Pro Display",
@@ -203,7 +311,7 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.21,
+     "centerShare": 0.17,
      "smallText": 0
     },
     "eyebrows": [],
@@ -218,8 +326,17 @@
      "dark": false,
      "sectionBgs": [
       {
-       "color": "#0e253a",
+       "color": "#ffffff",
        "top": 2996,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#0e253a",
+       "top": 3744,
        "hsl": {
         "h": 209,
         "s": 0.61,
@@ -234,19 +351,19 @@
       },
       {
        "color": "#334155",
-       "share": 0.19
+       "share": 0.23
       },
       {
        "color": "#0e253a",
-       "share": 0.19
+       "share": 0.21
       },
       {
        "color": "#ffffff",
-       "share": 0.18
+       "share": 0.14
       },
       {
        "color": "#5eead4",
-       "share": 0.07
+       "share": 0.06
       }
      ],
      "button": {
@@ -290,7 +407,7 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 1,
-     "roundedBoxes": 13,
+     "roundedBoxes": 21,
      "boxRadius": 24,
      "squareMedia": 0,
      "roundedMedia": 12,
@@ -302,6 +419,12 @@
        "iconTopped": false,
        "rounded": true,
        "top": 632
+      },
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 3288
       }
      ]
     },
@@ -322,7 +445,7 @@
      "w": 1440,
      "h": 900
     },
-    "pageH": 3460,
+    "pageH": 4208,
     "margins": {
      "left": 80,
      "right": 108
@@ -375,9 +498,32 @@
       "pinned": false
      },
      {
-      "sel": "section.py-16.px-6",
+      "sel": "section.py-20.px-6",
       "tag": "section",
       "top": 2996,
+      "height": 748,
+      "words": 182,
+      "media": 0,
+      "middle": 84,
+      "heading": {
+       "text": "So Sánh Chiết Suất Vật Liệu (Refractive Index)",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 80,
+      "right": 104,
+      "textLeft": 80,
+      "textRight": 104,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.py-16.px-6",
+      "tag": "section",
+      "top": 3744,
       "height": 336,
       "words": 40,
       "media": 0,
@@ -400,7 +546,7 @@
      {
       "sel": "footer.bg-[#071521].text-white",
       "tag": "footer",
-      "top": 3332,
+      "top": 4080,
       "height": 128,
       "words": 17,
       "media": 0,
@@ -430,7 +576,7 @@
     "edges": [
      {
       "x": 104,
-      "n": 8
+      "n": 10
      },
      {
       "x": 541,
@@ -442,10 +588,22 @@
      },
      {
       "x": 80,
+      "n": 4
+     },
+     {
+      "x": 430,
+      "n": 2
+     },
+     {
+      "x": 756,
+      "n": 2
+     },
+     {
+      "x": 1082,
       "n": 2
      }
     ],
-    "leftBlocks": 26,
+    "leftBlocks": 36,
     "bodySize": 16,
     "stage": false,
     "explains": true,
@@ -465,17 +623,18 @@
    "width": 768,
    "height": 1024,
    "load": "load",
-   "screens": 5,
+   "screens": 6,
    "filled": [
     0.65,
     0.87,
     0.88,
     0.82,
-    0.88
+    0.74,
+    0.72
    ],
    "motion": {
-    "elements": 15,
-    "css": 15,
+    "elements": 20,
+    "css": 20,
     "transitions": 0,
     "scripted": 0,
     "videos": 0,
@@ -487,14 +646,14 @@
      "h": 1024
     },
     "page": {
-     "height": 5042,
-     "screens": 4.9,
-     "words": 766,
+     "height": 6062,
+     "screens": 5.9,
+     "words": 955,
      "img": 14,
      "video": 0,
      "canvas": 0,
      "svg": 0,
-     "sections": 3,
+     "sections": 4,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
@@ -590,6 +749,111 @@
       "kind": "heading"
      },
      {
+      "text": "So Sánh Chiết Suất Vật Liệu (Refractive Index)",
+      "words": 8,
+      "chars": 46,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": -0.025,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 4658,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "1.56",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.08,
+      "top": 4838,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "1.60",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.08,
+      "top": 4838,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "1.67",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.07,
+      "top": 5190,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "1.74",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.07,
+      "top": 5190,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
       "text": "Bạn Cần Báo Giá Sỉ Cho Đại Lý?",
       "words": 8,
       "chars": 30,
@@ -606,18 +870,18 @@
       "align": "center",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 4642,
+      "top": 5662,
       "tag": "h2",
       "kind": "heading"
      }
     ],
     "headingSummary": {
-     "count": 3,
+     "count": 8,
      "maxLines": 1,
      "over2Lines": 0,
      "statements": 0,
      "centered": 2,
-     "medianWords": 8,
+     "medianWords": 1,
      "mixedFontHeadings": 0
     },
     "type": {
@@ -634,10 +898,11 @@
       16,
       18,
       20,
+      30,
       36,
       48
      ],
-     "sizeCount": 6,
+     "sizeCount": 7,
      "notLoaded": [],
      "body": {
       "font": "SF Pro Display",
@@ -662,7 +927,7 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.22,
+     "centerShare": 0.18,
      "smallText": 0
     },
     "eyebrows": [],
@@ -677,8 +942,17 @@
      "dark": false,
      "sectionBgs": [
       {
-       "color": "#0e253a",
+       "color": "#ffffff",
        "top": 4578,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#0e253a",
+       "top": 5598,
        "hsl": {
         "h": 209,
         "s": 0.61,
@@ -693,19 +967,19 @@
       },
       {
        "color": "#334155",
-       "share": 0.2
+       "share": 0.24
       },
       {
        "color": "#0e253a",
-       "share": 0.19
+       "share": 0.21
       },
       {
        "color": "#ffffff",
-       "share": 0.18
+       "share": 0.15
       },
       {
        "color": "#5eead4",
-       "share": 0.07
+       "share": 0.06
       }
      ],
      "button": {
@@ -749,7 +1023,7 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 1,
-     "roundedBoxes": 13,
+     "roundedBoxes": 21,
      "boxRadius": 24,
      "squareMedia": 0,
      "roundedMedia": 12,
@@ -761,6 +1035,12 @@
        "iconTopped": false,
        "rounded": true,
        "top": 760
+      },
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 4814
       }
      ]
     },
@@ -781,10 +1061,10 @@
      "w": 768,
      "h": 1024
     },
-    "pageH": 5042,
+    "pageH": 6062,
     "margins": {
      "left": 24,
-     "right": 41
+     "right": 35
     },
     "sections": [
      {
@@ -834,9 +1114,32 @@
       "pinned": false
      },
      {
-      "sel": "section.py-16.px-6",
+      "sel": "section.py-20.px-6",
       "tag": "section",
       "top": 4578,
+      "height": 1020,
+      "words": 182,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "So Sánh Chiết Suất Vật Liệu (Refractive Index)",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 31,
+      "textLeft": 24,
+      "textRight": 31,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.py-16.px-6",
+      "tag": "section",
+      "top": 5598,
       "height": 336,
       "words": 40,
       "media": 0,
@@ -859,7 +1162,7 @@
      {
       "sel": "footer.bg-[#071521].text-white",
       "tag": "footer",
-      "top": 4914,
+      "top": 5934,
       "height": 128,
       "words": 17,
       "media": 0,
@@ -889,18 +1192,18 @@
     "edges": [
      {
       "x": 48,
-      "n": 12
+      "n": 16
      },
      {
-      "x": 424,
-      "n": 12
+      "x": 420,
+      "n": 16
      },
      {
       "x": 24,
-      "n": 2
+      "n": 4
      }
     ],
-    "leftBlocks": 26,
+    "leftBlocks": 36,
     "bodySize": 16,
     "stage": false,
     "explains": true,
@@ -915,7 +1218,7 @@
    "width": 390,
    "height": 844,
    "load": "load",
-   "screens": 11,
+   "screens": 12,
    "filled": [
     0.65,
     0.82,
@@ -927,11 +1230,12 @@
     0.91,
     0.86,
     0.8,
-    0.86
+    0.8,
+    0.55
    ],
    "motion": {
-    "elements": 15,
-    "css": 15,
+    "elements": 20,
+    "css": 20,
     "transitions": 0,
     "scripted": 0,
     "videos": 0,
@@ -943,14 +1247,14 @@
      "h": 844
     },
     "page": {
-     "height": 9112,
-     "screens": 10.8,
-     "words": 759,
+     "height": 10884,
+     "screens": 12.9,
+     "words": 948,
      "img": 14,
      "video": 0,
      "canvas": 0,
      "svg": 0,
-     "sections": 3,
+     "sections": 4,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
@@ -1046,6 +1350,111 @@
       "kind": "heading"
      },
      {
+      "text": "So Sánh Chiết Suất Vật Liệu (Refractive Index)",
+      "words": 8,
+      "chars": 46,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 8550,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "1.56",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.15,
+      "top": 8778,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "1.60",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.15,
+      "top": 9130,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "1.67",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.15,
+      "top": 9482,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "1.74",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.14,
+      "top": 9834,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
       "text": "Bạn Cần Báo Giá Sỉ Cho Đại Lý?",
       "words": 8,
       "chars": 30,
@@ -1062,18 +1471,18 @@
       "align": "center",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 8534,
+      "top": 10306,
       "tag": "h2",
       "kind": "heading"
      }
     ],
     "headingSummary": {
-     "count": 3,
+     "count": 8,
      "maxLines": 2,
      "over2Lines": 0,
      "statements": 0,
      "centered": 2,
-     "medianWords": 8,
+     "medianWords": 1,
      "mixedFontHeadings": 0
     },
     "type": {
@@ -1118,7 +1527,7 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.22,
+     "centerShare": 0.18,
      "smallText": 0
     },
     "eyebrows": [],
@@ -1142,8 +1551,17 @@
        }
       },
       {
+       "color": "#f5f5f7",
+       "top": 8754,
+       "hsl": {
+        "h": 240,
+        "s": 0.11,
+        "l": 0.96
+       }
+      },
+      {
        "color": "#0e253a",
-       "top": 8470,
+       "top": 10242,
        "hsl": {
         "h": 209,
         "s": 0.61,
@@ -1154,23 +1572,23 @@
      "textColors": [
       {
        "color": "#475569",
-       "share": 0.28
+       "share": 0.27
       },
       {
        "color": "#334155",
-       "share": 0.2
+       "share": 0.24
       },
       {
        "color": "#0e253a",
-       "share": 0.2
+       "share": 0.22
       },
       {
        "color": "#ffffff",
-       "share": 0.18
+       "share": 0.15
       },
       {
        "color": "#5eead4",
-       "share": 0.07
+       "share": 0.06
       }
      ],
      "button": {
@@ -1214,7 +1632,7 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 1,
-     "roundedBoxes": 13,
+     "roundedBoxes": 21,
      "boxRadius": 24,
      "squareMedia": 0,
      "roundedMedia": 12,
@@ -1226,6 +1644,12 @@
        "iconTopped": false,
        "rounded": true,
        "top": 935
+      },
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 8754
       }
      ]
     },
@@ -1246,10 +1670,10 @@
      "w": 390,
      "h": 844
     },
-    "pageH": 9112,
+    "pageH": 10884,
     "margins": {
      "left": 24,
-     "right": 29
+     "right": 30
     },
     "sections": [
      {
@@ -1299,9 +1723,32 @@
       "pinned": false
      },
      {
-      "sel": "section.py-16.px-6",
+      "sel": "section.py-20.px-6",
       "tag": "section",
       "top": 8470,
+      "height": 1772,
+      "words": 182,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "So Sánh Chiết Suất Vật Liệu (Refractive Index)",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 30,
+      "textLeft": 24,
+      "textRight": 30,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.py-16.px-6",
+      "tag": "section",
+      "top": 10242,
       "height": 462,
       "words": 40,
       "media": 0,
@@ -1324,7 +1771,7 @@
      {
       "sel": "footer.bg-[#071521].text-white",
       "tag": "footer",
-      "top": 8932,
+      "top": 10704,
       "height": 180,
       "words": 17,
       "media": 0,
@@ -1354,14 +1801,14 @@
     "edges": [
      {
       "x": 48,
-      "n": 24
+      "n": 32
      },
      {
       "x": 24,
-      "n": 2
+      "n": 4
      }
     ],
-    "leftBlocks": 26,
+    "leftBlocks": 36,
     "bodySize": 16,
     "stage": false,
     "explains": true,
@@ -1376,6 +1823,17 @@
  "findings": [
   {
    "level": "WARN",
+   "id": "card-rows",
+   "width": 1440,
+   "message": "2 rows of identical boxed cards.",
+   "fix": "Vary the composition; not every section is a card grid.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
    "id": "no-footage",
    "width": 1440,
    "message": "No video anywhere on the page.",
@@ -1386,17 +1844,7 @@
    "id": "off-centre",
    "width": 1440,
    "message": "The margins differ: 80px on the left, 108px on the right, at 1440px.",
-   "fix": "Put the navigation and the content on one pair of margins; check for padding on one side only, a scrollbar gutter, or a header on another inset than the page.",
-   "alsoAt": [
-    768
-   ]
-  },
-  {
-   "level": "WARN",
-   "id": "still-page",
-   "width": 1440,
-   "message": "Little motion: 15 element(s) moved while the page loaded and scrolled.",
-   "fix": "Give every section an entrance for its parts (not one fade of the whole block) and add one moving picture: a looping clip or a slow move on a photograph."
+   "fix": "Put the navigation and the content on one pair of margins; check for padding on one side only, a scrollbar gutter, or a header on another inset than the page."
   }
  ],
  "images": [
@@ -1405,7 +1853,8 @@
    "width": 1440,
    "fold": "C:\\Users\\phong\\Desktop\\Rocky\\.taste-skill\\inspect\\desktop-fold.jpg",
    "pages": [
-    "C:\\Users\\phong\\Desktop\\Rocky\\.taste-skill\\inspect\\desktop-page-01.jpg"
+    "C:\\Users\\phong\\Desktop\\Rocky\\.taste-skill\\inspect\\desktop-page-01.jpg",
+    "C:\\Users\\phong\\Desktop\\Rocky\\.taste-skill\\inspect\\desktop-page-02.jpg"
    ],
    "film": []
   },

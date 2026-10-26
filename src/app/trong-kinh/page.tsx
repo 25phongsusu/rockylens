@@ -68,6 +68,76 @@ export default function ProductsPage() {
             ))}
           </div>
         </section>
+
+        {/* Section 6: So Sánh Chiết Suất Vật Liệu (Refractive Index) */}
+        <section className="mt-20 pt-12 border-t border-slate-200">
+          <div className="mb-8">
+            <h2 className="text-2xl sm:text-3xl font-black text-[#0E253A] tracking-tight">
+              So Sánh Chiết Suất Vật Liệu (Refractive Index)
+            </h2>
+            <p className="text-slate-600 text-sm sm:text-base mt-2">
+              Lựa chọn chiết suất phù hợp giữa độ mỏng nhẹ, độ sắc nét quang sai Abbe và kết cấu gọng kính của khách hàng.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-white p-6 rounded-2xl border border-slate-200 space-y-3">
+              <div className="flex items-center justify-between">
+                <span className="text-2xl font-black text-[#0B7B8A]">1.56</span>
+                <span className="text-xs font-semibold text-slate-700 bg-slate-100 px-2.5 py-0.5 rounded-full">Phổ thông</span>
+              </div>
+              <h3 className="text-base font-bold text-[#0E253A]">Hard Resin Tiêu Chuẩn</h3>
+              <div className="space-y-1.5 text-xs bg-slate-50 p-3 rounded-xl">
+                <div className="flex justify-between"><span className="text-slate-500">Độ Abbe:</span><span className="font-bold">36</span></div>
+                <div className="flex justify-between"><span className="text-slate-500">Độ mỏng:</span><span className="font-bold">Tiêu chuẩn</span></div>
+                <div className="flex justify-between"><span className="text-slate-500">Dải độ tối ưu:</span><span className="font-bold">Dưới 3.00D</span></div>
+              </div>
+              <p className="text-xs text-slate-600">Phù hợp gọng nguyên khung kim loại hoặc nhựa acetat có viền dày.</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-slate-200 space-y-3">
+              <div className="flex items-center justify-between">
+                <span className="text-2xl font-black text-[#0B7B8A]">1.60</span>
+                <span className="text-xs font-semibold text-teal-900 bg-teal-100 px-2.5 py-0.5 rounded-full">Bền dẻo cao</span>
+              </div>
+              <h3 className="text-base font-bold text-[#0E253A]">Monomer Mitsui MR-8™</h3>
+              <div className="space-y-1.5 text-xs bg-slate-50 p-3 rounded-xl">
+                <div className="flex justify-between"><span className="text-slate-500">Độ Abbe:</span><span className="font-bold">41 (Rất nét)</span></div>
+                <div className="flex justify-between"><span className="text-slate-500">Độ mỏng:</span><span className="font-bold">Mỏng hơn 15%</span></div>
+                <div className="flex justify-between"><span className="text-slate-500">Dải độ tối ưu:</span><span className="font-bold">2.00D - 5.00D</span></div>
+              </div>
+              <p className="text-xs text-slate-600">Độ dẻo dai cao, đặc biệt khuyên dùng cho gọng xẻ cước và gọng bắt ốc không viền.</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-slate-200 space-y-3">
+              <div className="flex items-center justify-between">
+                <span className="text-2xl font-black text-[#0B7B8A]">1.67</span>
+                <span className="text-xs font-semibold text-slate-700 bg-slate-100 px-2.5 py-0.5 rounded-full">Siêu mỏng nhẹ</span>
+              </div>
+              <h3 className="text-base font-bold text-[#0E253A]">Monomer Mitsui MR-7™</h3>
+              <div className="space-y-1.5 text-xs bg-slate-50 p-3 rounded-xl">
+                <div className="flex justify-between"><span className="text-slate-500">Độ Abbe:</span><span className="font-bold">32</span></div>
+                <div className="flex justify-between"><span className="text-slate-500">Độ mỏng:</span><span className="font-bold">Mỏng hơn 25%</span></div>
+                <div className="flex justify-between"><span className="text-slate-500">Dải độ tối ưu:</span><span className="font-bold">4.00D - 8.00D</span></div>
+              </div>
+              <p className="text-xs text-slate-600">Giảm trọng lượng đáng kể trên sống mũi, thẩm mỹ cao cho người cận độ vừa đến cao.</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-slate-200 space-y-3">
+              <div className="flex items-center justify-between">
+                <span className="text-2xl font-black text-[#0B7B8A]">1.74</span>
+                <span className="text-xs font-semibold text-amber-950 bg-amber-100 px-2.5 py-0.5 rounded-full">Mỏng nhất</span>
+              </div>
+              <h3 className="text-base font-bold text-[#0E253A]">Monomer Mitsui MR-174™</h3>
+              <div className="space-y-1.5 text-xs bg-slate-50 p-3 rounded-xl">
+                <div className="flex justify-between"><span className="text-slate-500">Độ Abbe:</span><span className="font-bold">33</span></div>
+                <div className="flex justify-between"><span className="text-slate-500">Độ mỏng:</span><span className="font-bold">Mỏng hơn 40%</span></div>
+                <div className="flex justify-between"><span className="text-slate-500">Dải độ tối ưu:</span><span className="font-bold">Trên 7.00D</span></div>
+              </div>
+              <p className="text-xs text-slate-600">Mép kính mỏng phẳng hoàn hảo, thích hợp người cận nặng mong muốn tính thẩm mỹ tối đa.</p>
+            </div>
+          </div>
+        </section>
       </div>
 
       {/* Section 6: Contact CTA */}
