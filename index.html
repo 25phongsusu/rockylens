@@ -245,7 +245,7 @@
 <body id="app-body" class="bg-[#F8FAFC] text-slate-800 antialiased font-sans">
 
   <!-- TOP APP SWITCHER BAR & LOGO BACKGROUND INSPECTOR (Fixed Top Notification & Controls) -->
-  <div class="bg-slate-900 text-white text-xs px-4 py-2 border-b border-slate-800 sticky top-0 z-50 shadow-md">
+  <div class="bg-slate-900 text-white text-xs px-4 py-1.5 border-b border-slate-800 relative z-50">
     <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
       
       <!-- Left: File Source & Tab Switcher -->
@@ -304,65 +304,62 @@
   <!-- ========================================================================= -->
   <div id="view-b2b" class="block">
     
-    <!-- Top Utility Bar (Contact & Channels) -->
-    <header id="header-container" class="bg-white border-b border-slate-200 transition-colors duration-300">
+    <!-- Top Utility Bar (Contact & Channels) - Ultra-Slim & Pure Web Matching Color -->
+    <header id="header-container" class="bg-white border-b border-slate-200/90 transition-colors duration-300 sticky top-0 z-40 shadow-xs">
       
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <!-- Row 1: Logo, Search & Contact Badges -->
-        <div class="py-3 flex flex-col md:flex-row items-center justify-between gap-4">
+        <!-- Row 1: Logo, Search & Contact Badges (Ultra-Slim py-1.5) -->
+        <div class="py-1.5 flex flex-col md:flex-row items-center justify-between gap-2.5">
           
           <!-- Logo Rocky with dynamic background handler -->
-          <div class="flex items-center gap-3">
-            <div id="logo-wrapper" class="p-2 rounded-xl transition-all duration-300 flex items-center">
+          <div class="flex items-center gap-2.5">
+            <div id="logo-wrapper" class="p-0.5 rounded-lg transition-all duration-300 flex items-center">
               <a href="#" class="flex items-center gap-2 group">
-                <img id="main-logo-img" src="assets/logo_rocky_transparent.png" alt="Rocky Lens - Canada Opticians" class="h-12 sm:h-14 w-auto object-contain transition-transform group-hover:scale-[1.02]">
+                <img id="main-logo-img" src="assets/logo_rocky_transparent.png" alt="Rocky Lens - Canada Opticians" class="h-8 sm:h-9 w-auto object-contain transition-transform group-hover:scale-[1.02]">
               </a>
             </div>
             
-            <div class="hidden lg:block border-l border-slate-200 pl-3">
-              <span class="text-[11px] font-bold text-[#0B7B8A] tracking-wider uppercase block font-rocky-condensed">Canada Opticians</span>
-              <span class="text-[10px] font-bold text-[#0B7B8A] tracking-wider uppercase block font-rocky-condensed">Precision Optics for Life</span>
+            <div class="hidden lg:block border-l border-slate-200 pl-2">
+              <span class="text-[9.5px] font-bold text-[#0B7B8A] tracking-wider uppercase block font-rocky-condensed">Canada Opticians</span>
+              <span class="text-[8.5px] font-bold text-slate-400 tracking-wider uppercase block font-rocky-condensed">Precision Optics for Life</span>
             </div>
           </div>
 
           <!-- Live Search Bar -->
-          <div class="relative w-full md:w-80 lg:w-96">
+          <div class="relative w-full md:w-64 lg:w-72">
             <div class="relative">
-              <input type="text" id="b2b-search-input" placeholder="Tìm mã tròng: 1.56, 1.60, 1.67, 1.74, BlueCut, Đổi màu..." 
-                     class="w-full pl-3.5 pr-10 py-2 text-xs bg-slate-50 border border-slate-200 rounded-full focus:outline-none focus:border-[#0B7B8A] focus:bg-white text-slate-700 shadow-inner">
-              <button class="absolute right-3 top-2.5 text-slate-400 hover:text-[#0B7B8A]">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+              <input type="text" id="b2b-search-input" placeholder="Tìm nhanh: 1.56, 1.60, 1.67, 1.74, BlueCut, Đổi màu..." 
+                     class="w-full pl-3 pr-7 py-1 text-xs bg-slate-50 border border-slate-200 rounded-full focus:outline-none focus:border-[#0B7B8A] focus:bg-white text-slate-700 shadow-inner transition-colors">
+              <button class="absolute right-2 top-1.5 text-slate-400 hover:text-[#0B7B8A]">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
               </button>
             </div>
           </div>
 
-          <!-- Utility Badges & Communication Channels -->
-          <div class="flex flex-wrap items-center justify-end gap-2 text-xs">
-            <a href="#products-section" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full border border-slate-300 text-slate-700 hover:bg-slate-100 font-medium">
-              <svg class="w-3.5 h-3.5 text-[#0B7B8A]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
-              Catalog B2B 2026
+          <!-- Utility Badges & Communication Channels (Streamlined Single Row) -->
+          <div class="flex items-center gap-1.5 text-xs">
+            <a href="#products-section" class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full border border-slate-200 text-slate-700 hover:bg-slate-50 font-medium text-[11px] transition-colors">
+              <svg class="w-3 h-3 text-[#0B7B8A]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+              Catalog B2B
             </a>
             
-            <button onclick="scrollToRegistration()" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full border border-[#0B7B8A] text-[#0B7B8A] hover:bg-[#0B7B8A]/10 font-semibold">
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-              Báo Giá Sỉ (Quote)
+            <button onclick="scrollToRegistration()" class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full border border-[#0B7B8A] text-[#0B7B8A] hover:bg-[#0B7B8A]/10 font-bold text-[11px] transition-colors">
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              Báo Giá Sỉ
             </button>
 
-            <a href="tel:0933102653" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#164E63] text-white font-semibold hover:bg-[#0E3847] shadow-sm">
-              <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"/></svg>
-              (+84) 933 102 653
+            <a href="tel:0933102653" class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-800 font-bold hover:bg-slate-200 text-[11px] transition-colors">
+              <svg class="w-3 h-3 text-[#0B7B8A]" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"/></svg>
+              0933 102 653
             </a>
 
-            <div class="flex items-center gap-1">
-              <a href="https://wa.me/84933102653" target="_blank" class="px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 hover:bg-emerald-100 font-medium text-[11px] flex items-center gap-1">
-                <span class="w-2 h-2 rounded-full bg-emerald-500"></span> WhatsApp
+            <div class="hidden sm:flex items-center gap-1">
+              <a href="https://wa.me/84933102653" target="_blank" class="px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 hover:bg-emerald-100 font-medium text-[10px] flex items-center gap-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> WhatsApp
               </a>
-              <span class="px-2.5 py-1 rounded-full bg-green-50 text-green-700 border border-green-200 font-medium text-[11px] flex items-center gap-1">
-                WeChat
-              </span>
-              <a href="https://zalo.me/0933102653" target="_blank" class="px-2.5 py-1 rounded-full bg-sky-50 text-sky-700 border border-sky-200 hover:bg-sky-100 font-medium text-[11px] flex items-center gap-1">
-                <span class="w-2 h-2 rounded-full bg-sky-500"></span> Zalo B2B
+              <a href="https://zalo.me/0933102653" target="_blank" class="px-2 py-0.5 rounded-full bg-sky-50 text-sky-700 border border-sky-200 hover:bg-sky-100 font-medium text-[10px] flex items-center gap-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-sky-500"></span> Zalo
               </a>
             </div>
 
@@ -372,62 +369,66 @@
 
       </div>
 
-      <!-- Row 2: Deep Teal Navigation Bar -->
-      <nav class="bg-[#1C5D6B] text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between">
+      <!-- Row 2: Slim & Clean Navigation Bar (Matching Web Background, Strict 1-Line Layout) -->
+      <nav class="bg-white border-t border-slate-100 text-slate-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-3 py-1 overflow-x-auto lg:overflow-visible">
           
-          <div class="flex items-center">
+          <div class="flex items-center gap-1 shrink-0">
             
             <!-- Category Mega Dropdown Trigger -->
             <div class="relative group">
-              <button class="bg-[#164954] hover:bg-[#123C46] px-5 py-3.5 text-xs font-bold uppercase tracking-wider flex items-center gap-2 border-r border-[#266E7D]">
-                <svg class="w-4 h-4 text-teal-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
-                <span>Danh Mục Tròng Kính B2B</span>
-                <svg class="w-3.5 h-3.5 text-teal-300 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              <button class="bg-slate-50 hover:bg-slate-100 text-slate-800 border border-slate-200 px-2.5 py-1 text-xs font-bold uppercase tracking-wider flex items-center gap-1.5 rounded-md transition-colors whitespace-nowrap">
+                <svg class="w-3.5 h-3.5 text-[#0B7B8A]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                <span>Danh Mục Tròng Kính</span>
+                <svg class="w-3 h-3 text-slate-400 group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
               </button>
 
               <!-- Dropdown Menu -->
-              <div class="absolute left-0 top-full hidden group-hover:block w-72 bg-white text-slate-800 shadow-2xl rounded-b-xl border border-slate-200 z-40 py-2">
-                <a href="#products-section" class="flex items-center justify-between px-4 py-2.5 text-xs hover:bg-teal-50 hover:text-[#0B7B8A] font-medium border-b border-slate-100">
+              <div class="absolute left-0 top-full hidden group-hover:block w-72 bg-white text-slate-800 shadow-xl rounded-xl border border-slate-200 z-50 py-2 mt-1">
+                <a href="#products-section" class="flex items-center justify-between px-4 py-2 text-xs hover:bg-teal-50 hover:text-[#0B7B8A] font-medium border-b border-slate-100">
                   <span>Tròng Stock 1.56, 1.60, 1.67, 1.74</span>
-                  <span class="text-[10px] bg-teal-100 text-[#0B7B8A] px-1.5 py-0.5 rounded">Sẵn kho</span>
+                  <span class="text-[10px] bg-teal-100 text-[#0B7B8A] px-1.5 py-0.5 rounded font-bold">Sẵn kho</span>
                 </a>
-                <a href="#products-section" class="flex items-center justify-between px-4 py-2.5 text-xs hover:bg-teal-50 hover:text-[#0B7B8A] font-medium border-b border-slate-100">
-                  <span>Tròng Đổi Màu Spin-Coat (Trendy & Smart)</span>
-                  <span class="text-[10px] bg-amber-100 text-amber-700 px-1.5 py-0.5 rounded">Fast-Tint</span>
+                <a href="#products-section" class="flex items-center justify-between px-4 py-2 text-xs hover:bg-teal-50 hover:text-[#0B7B8A] font-medium border-b border-slate-100">
+                  <span>Tròng Đổi Màu Spin-Coat UV420</span>
+                  <span class="text-[10px] bg-amber-100 text-amber-700 px-1.5 py-0.5 rounded font-bold">Fast-Tint</span>
                 </a>
-                <a href="#products-section" class="flex items-center justify-between px-4 py-2.5 text-xs hover:bg-teal-50 hover:text-[#0B7B8A] font-medium border-b border-slate-100">
+                <a href="#audience-section" class="flex items-center justify-between px-4 py-2 text-xs hover:bg-teal-50 hover:text-[#0B7B8A] font-medium border-b border-slate-100">
                   <span>CanRx Lab Freeform Gia Công KTS</span>
-                  <span class="text-[10px] bg-purple-100 text-purple-700 px-1.5 py-0.5 rounded">Lab 24h</span>
+                  <span class="text-[10px] bg-purple-100 text-purple-700 px-1.5 py-0.5 rounded font-bold">Lab 24h</span>
                 </a>
-                <a href="#audience-section" class="flex items-center justify-between px-4 py-2.5 text-xs hover:bg-teal-50 hover:text-[#0B7B8A] font-medium">
+                <a href="#audience-section" class="flex items-center justify-between px-4 py-2 text-xs hover:bg-teal-50 hover:text-[#0B7B8A] font-medium">
                   <span>Tròng Lái Xe DriveShield Ruby</span>
-                  <span class="text-[10px] bg-rose-100 text-rose-700 px-1.5 py-0.5 rounded">Night-Vision</span>
+                  <span class="text-[10px] bg-rose-100 text-rose-700 px-1.5 py-0.5 rounded font-bold">Night-Vision</span>
                 </a>
               </div>
             </div>
 
-            <!-- Main Nav Links -->
-            <div class="hidden md:flex items-center text-xs font-semibold">
-              <a href="#" class="px-4 py-3.5 border-b-2 border-teal-300 text-white bg-black/10">Trang Chủ B2B</a>
-              <a href="#products-section" class="px-4 py-3.5 text-slate-100 hover:text-white hover:bg-white/5">Tròng Kính Stock</a>
-              <a href="#audience-section" class="px-4 py-3.5 text-slate-100 hover:text-white hover:bg-white/5">Phòng Lab Gia Công RX</a>
-              <a href="#registration-section" class="px-4 py-3.5 text-slate-100 hover:text-white hover:bg-white/5">Chính Sách Đại Lý & Chiết Khấu</a>
-              <a href="#spec-lookup" class="px-4 py-3.5 text-slate-100 hover:text-white hover:bg-white/5 inline-flex items-center gap-1">
-                <span>Tra Cứu Thông Số Phôi</span>
-                <svg class="w-3 h-3 text-teal-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            <!-- Main Nav Links (Matching Web Color, Clean & Slim) -->
+            <div class="hidden md:flex items-center gap-0.5 text-xs font-semibold whitespace-nowrap">
+              <a href="#" class="px-2.5 py-1 text-[#0B7B8A] font-bold bg-teal-50/70 rounded-md">Trang Chủ</a>
+              <a href="#why-rocky" class="px-2.5 py-1 text-slate-600 hover:text-[#0B7B8A] hover:bg-slate-50 rounded-md transition-colors flex items-center gap-1">
+                <span>Vì Sao Chọn Rocky?</span>
+                <span class="text-[9px] bg-amber-100 text-amber-700 px-1 rounded font-bold">5 Điểm Chạm</span>
               </a>
-              <a href="#certifications-section" class="px-4 py-3.5 text-slate-100 hover:text-white hover:bg-white/5">Chứng Nhận FDA/CE/ISO</a>
-              <a href="#blog-section" class="px-4 py-3.5 text-slate-100 hover:text-white hover:bg-white/5">Tin Tức B2B</a>
+              <a href="#products-section" class="px-2.5 py-1 text-slate-600 hover:text-[#0B7B8A] hover:bg-slate-50 rounded-md transition-colors">Tròng Stock</a>
+              <a href="#audience-section" class="px-2.5 py-1 text-slate-600 hover:text-[#0B7B8A] hover:bg-slate-50 rounded-md transition-colors">Lab RX 24h</a>
+              <a href="#registration-section" class="px-2.5 py-1 text-slate-600 hover:text-[#0B7B8A] hover:bg-slate-50 rounded-md transition-colors">Bảng Chiết Khấu</a>
+              <a href="#spec-lookup" class="px-2.5 py-1 text-slate-600 hover:text-[#0B7B8A] hover:bg-slate-50 rounded-md transition-colors inline-flex items-center gap-1">
+                <span>Tra Cứu Phôi</span>
+                <svg class="w-3 h-3 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+              <a href="#certifications-section" class="px-2.5 py-1 text-slate-600 hover:text-[#0B7B8A] hover:bg-slate-50 rounded-md transition-colors">Chứng Nhận FDA/CE</a>
+              <a href="#blog-section" class="px-2.5 py-1 text-slate-600 hover:text-[#0B7B8A] hover:bg-slate-50 rounded-md transition-colors">Tin Tức B2B</a>
             </div>
 
           </div>
 
-          <!-- Right Action: Cổng Báo Giá Đại Lý -->
-          <div class="py-2">
-            <button onclick="scrollToRegistration()" class="px-3.5 py-1.5 rounded bg-white text-[#1C5D6B] hover:bg-teal-50 text-xs font-bold flex items-center gap-1.5 shadow">
-              <svg class="w-3.5 h-3.5 text-[#0B7B8A]" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"/><path fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clip-rule="evenodd"/></svg>
-              <span>Cổng Báo Giá Đại Lý</span>
+          <!-- Right Action: Cổng Báo Giá Đại Lý (High-Converting Pill, Strictly on Same Row) -->
+          <div class="shrink-0">
+            <button onclick="scrollToRegistration()" class="px-3.5 py-1 rounded-full bg-[#0B7B8A] hover:bg-[#086370] text-white text-xs font-bold flex items-center gap-1.5 shadow-sm transition-all hover:scale-[1.02] whitespace-nowrap">
+              <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"/><path fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clip-rule="evenodd"/></svg>
+              <span>Cổng Báo Giá Sỉ Đại Lý</span>
             </button>
           </div>
 
@@ -436,8 +437,8 @@
 
     </header>
 
-    <!-- HERO SECTION (From web.psd Chunk 1) -->
-    <section class="relative bg-gradient-to-b from-white via-slate-50 to-teal-50/30 pt-10 pb-16 overflow-hidden border-b border-slate-200">
+    <!-- HERO SECTION (High-Converting B2B Optical Copywriting) -->
+    <section class="relative bg-gradient-to-b from-white via-slate-50/70 to-teal-50/20 pt-8 pb-14 overflow-hidden border-b border-slate-200">
       
       <!-- Background subtle graphics -->
       <div class="absolute -top-40 -right-40 w-96 h-96 bg-teal-100/40 rounded-full blur-3xl pointer-events-none"></div>
@@ -448,75 +449,93 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           
           <!-- Left Column: Copy & Value Propositions -->
-          <div class="lg:col-span-7 space-y-5">
+          <div class="lg:col-span-7 space-y-4">
             
             <!-- Category Badge -->
-            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-teal-50 border border-teal-200 text-[#0B7B8A] text-xs font-semibold">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-50 border border-teal-200/80 text-[#0B7B8A] text-xs font-bold">
               <span class="w-2 h-2 rounded-full bg-[#0B7B8A] animate-pulse"></span>
-              <span class="font-rocky-condensed tracking-wider uppercase font-bold">Nhà Phân Phối Tròng Kính Cấp 1 &amp; Optical Lab Kỹ Thuật Số</span>
+              <span class="font-rocky-condensed tracking-wider uppercase">NHÀ PHÂN PHỐI TRÒNG KÍNH CẤP 1 &bull; CANADIAN OPTICAL LAB</span>
             </div>
 
-            <!-- Main Heading with Script accent -->
+            <!-- Main Heading -->
             <div>
-              
-              <h1 class="font-rocky-condensed text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-tight uppercase">
-                Rocky Lens - Chuyên phân phối tròng kính B2B
+              <h1 class="font-rocky-condensed text-3xl sm:text-4xl lg:text-[42px] font-black text-slate-900 tracking-tight leading-tight uppercase">
+                Đồng Hành Cùng 1.200+ Tiệm Kính Thuốc<br class="hidden sm:inline"> Nâng Tầm Biên Lợi Nhuận &amp; Tốc Độ Cung Ứng
               </h1>
             </div>
 
-            <!-- Subheading -->
-            <p class="text-sm sm:text-base font-semibold text-[#0B7B8A] font-rocky-condensed tracking-wide uppercase">
-              Giải Pháp Tròng Kính Khúc Xạ Công Nghệ Cao Cho Đại Lý &amp; Bệnh Viện Mắt
+            <!-- Strategic Subheading -->
+            <p class="text-xs sm:text-sm font-bold text-[#0B7B8A] font-rocky-condensed tracking-wide uppercase">
+              Phôi Tròng Sẵn Kho Giao 2 Giờ &bull; Lab Freeform RX Trả Đơn 24 Giờ &bull; Chiết Khấu Cấp 1 Tối Ưu Dòng Vốn
             </p>
 
-            <!-- Description -->
+            <!-- Narrative Description -->
             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed text-justify">
-              <strong>Rocky Lens</strong> là trung tâm phân phối tròng kính khúc xạ B2B và gia công lab kỹ thuật số công suất lớn tại Việt Nam. Chúng tôi cung ứng trọn gói phôi tròng kính, tròng kính hoàn thiện (1.56, 1.60, 1.67, 1.74), tròng kính đổi màu Spin-Coat, tròng lọc ánh sáng xanh và đơn thuốc RX cá nhân hóa cho hơn <strong>1.200 cửa hàng mắt kính</strong> và phòng khám trên cả nước.
+              <strong>Rocky Lens</strong> là trung tâm phân phối sỉ tròng kính khúc xạ và gia công kỹ thuật số Freeform công nghệ Canada cho hơn <strong>1.200 cửa hàng mắt kính và phòng khám khúc xạ</strong> toàn quốc. Chúng tôi cung ứng trọn gói phôi tròng 1.56, 1.60, 1.67, 1.74, tròng đổi màu Spin-Coat, tròng lọc ánh sáng xanh UV420 và đơn thuốc RX cá nhân hóa — cam kết giải quyết triệt để rào cản đọng vốn tồn kho, trễ hẹn giao hàng và tỷ lệ bong tróc váng phủ.
             </p>
 
-            <!-- Key Checkmarks (Exact from web.psd) -->
-            <div class="space-y-3 pt-2">
-              <div class="flex items-start gap-3">
-                <div class="w-5 h-5 rounded-full bg-teal-100 text-[#0B7B8A] flex items-center justify-center shrink-0 mt-0.5">
-                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+            <!-- 4 High-Trust Metrics Strip -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-1">
+              <div class="bg-white p-2.5 rounded-xl border border-slate-200/80 shadow-xs">
+                <div class="text-lg sm:text-xl font-black text-[#0B7B8A] font-rocky-condensed">1.200+</div>
+                <div class="text-[11px] text-slate-600 font-medium leading-tight">Cửa hàng &amp; Phòng khám</div>
+              </div>
+              <div class="bg-white p-2.5 rounded-xl border border-slate-200/80 shadow-xs">
+                <div class="text-lg sm:text-xl font-black text-[#0B7B8A] font-rocky-condensed">2 Giờ</div>
+                <div class="text-[11px] text-slate-600 font-medium leading-tight">Giao hỏa tốc HN-ĐN-HCM</div>
+              </div>
+              <div class="bg-white p-2.5 rounded-xl border border-slate-200/80 shadow-xs">
+                <div class="text-lg sm:text-xl font-black text-[#0B7B8A] font-rocky-condensed">24 Giờ</div>
+                <div class="text-[11px] text-slate-600 font-medium leading-tight">Trả đơn Lab RX Freeform</div>
+              </div>
+              <div class="bg-white p-2.5 rounded-xl border border-slate-200/80 shadow-xs">
+                <div class="text-lg sm:text-xl font-black text-amber-600 font-rocky-condensed">1 ĐỔI 1</div>
+                <div class="text-[11px] text-slate-600 font-medium leading-tight">Thu đổi tồn &amp; BH 12-24T</div>
+              </div>
+            </div>
+
+            <!-- Key Checkmarks -->
+            <div class="space-y-2 pt-1">
+              <div class="flex items-start gap-2.5">
+                <div class="w-4 h-4 rounded-full bg-teal-100 text-[#0B7B8A] flex items-center justify-center shrink-0 mt-0.5">
+                  <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
                 </div>
-                <p class="text-xs text-slate-700"><strong>Công nghệ chuyển giao từ Canada</strong> sản xuất tròng kính kỹ thuật cao, hướng đến chất lượng gia công và độ chính xác vượt trội.</p>
+                <p class="text-xs text-slate-700"><strong>100% Monomer Mitsui Nhật Bản (MR Series):</strong> Độ truyền quang 99.8%, quang sai cực thấp (Abbe 42-58), chịu lực va đập vượt chuẩn FDA ANSI Z80.3.</p>
               </div>
 
-              <div class="flex items-start gap-3">
-                <div class="w-5 h-5 rounded-full bg-teal-100 text-[#0B7B8A] flex items-center justify-center shrink-0 mt-0.5">
+              <div class="flex items-start gap-2.5">
+                <div class="w-4 h-4 rounded-full bg-teal-100 text-[#0B7B8A] flex items-center justify-center shrink-0 mt-0.5">
                   <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
                 </div>
-                <p class="text-xs text-slate-700"><strong>Danh mục sản phẩm đa dạng</strong> dòng tròng kính, phân khúc và giải pháp thị lực, hỗ trợ cửa hàng đáp ứng nhiều nhu cầu khách hàng.</p>
+                <p class="text-xs text-slate-700"><strong>Trung tâm CanRx Lab Freeform kỹ thuật số:</strong> Gia công đơn thuốc khúc xạ độ cao, đa tròng lũy tiến cá nhân hóa, giao trả đơn trong 24 giờ.</p>
               </div>
 
-              <div class="flex items-start gap-3">
-                <div class="w-5 h-5 rounded-full bg-teal-100 text-[#0B7B8A] flex items-center justify-center shrink-0 mt-0.5">
+              <div class="flex items-start gap-2.5">
+                <div class="w-4 h-4 rounded-full bg-teal-100 text-[#0B7B8A] flex items-center justify-center shrink-0 mt-0.5">
                   <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
                 </div>
-                <p class="text-xs text-slate-700"><strong>Quản lý đơn hàng thông minh qua App</strong> dễ dàng tra cứu, theo dõi tiến độ đơn hàng và quản lý thông tin tập trung trên một nền tảng.</p>
-              </div>
-
-              <div class="flex items-start gap-3">
-                <div class="w-5 h-5 rounded-full bg-teal-100 text-[#0B7B8A] flex items-center justify-center shrink-0 mt-0.5">
-                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
-                </div>
-                <p class="text-xs text-slate-700"><strong>Hỗ trợ trọn gói vật phẩm Marketing</strong>, giá kệ trưng bày, máy test ánh sáng xanh & nhận OEM bao bì đại lý.</p>
+                <p class="text-xs text-slate-700"><strong>Tài trợ trọn gói bộ POSM &amp; Demo Kit tại quầy:</strong> Đèn laser UV420 bước sóng chuẩn, máy test tròng đổi màu, khay so sánh độ mỏng phôi và kịch bản tư vấn chốt sales.</p>
               </div>
             </div>
 
             <!-- Action Buttons -->
-            <div class="flex flex-wrap items-center gap-3 pt-4">
-              <button onclick="scrollToRegistration()" class="px-6 py-3 rounded-lg bg-[#0B7B8A] hover:bg-[#086370] text-white text-xs sm:text-sm font-bold shadow-lg shadow-teal-700/20 flex items-center gap-2">
+            <div class="flex flex-wrap items-center gap-3 pt-2">
+              <button onclick="scrollToRegistration()" class="px-5 py-2.5 rounded-lg bg-[#0B7B8A] hover:bg-[#086370] text-white text-xs sm:text-sm font-bold shadow-md shadow-teal-700/20 flex items-center gap-2 transition-transform hover:scale-[1.01]">
                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/><path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"/></svg>
-                Nhận Báo Giá Đại Lý (Get B2B Quote)
+                Tải Báo Giá Sỉ &amp; Chính Sách Đại Lý 2026
               </button>
 
-              <button onclick="openLeadModal('Đăng ký nhận bộ tròng mẫu')" class="px-6 py-3 rounded-lg bg-white border border-[#0B7B8A] text-[#0B7B8A] hover:bg-teal-50 text-xs sm:text-sm font-bold shadow-sm flex items-center gap-2">
+              <button onclick="openLeadModal('Đăng ký nhận bộ tròng mẫu test tại quầy')" class="px-5 py-2.5 rounded-lg bg-white border border-[#0B7B8A] text-[#0B7B8A] hover:bg-teal-50 text-xs sm:text-sm font-bold shadow-xs flex items-center gap-2 transition-colors">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
-                Đăng Ký Nhận Bộ Tròng Mẫu (Request Sample Kit)
+                Nhận Bộ Kit Tròng Mẫu Tại Tiệm (Miễn Phí)
               </button>
             </div>
+
+            <!-- Micro-Reassurance Note -->
+            <p class="text-[11px] text-slate-500 flex items-center gap-1.5 pt-0.5">
+              <svg class="w-3.5 h-3.5 text-emerald-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <span>Bảo mật 100% dữ liệu đại lý &bull; Phản hồi báo giá trong 15 phút &bull; Giao mẫu phôi tận nơi trong 24h</span>
+            </p>
 
           </div>
 
@@ -524,24 +543,276 @@
           <div class="lg:col-span-5 flex justify-center relative">
             
             <!-- Glow background -->
-            <div class="w-72 h-72 sm:w-80 sm:h-80 bg-gradient-to-tr from-teal-200 to-sky-100 rounded-full blur-2xl opacity-60 absolute"></div>
+            <div class="w-72 h-72 sm:w-80 sm:h-80 bg-gradient-to-tr from-teal-200/60 to-sky-100/60 rounded-full blur-2xl opacity-60 absolute"></div>
             
             <div class="relative z-10 flex flex-col items-center">
               <img src="assets/lens_transparent.png" alt="Rocky High Precision Lens 3D" 
-                   class="max-h-[380px] sm:max-h-[460px] w-auto object-contain drop-shadow-2xl animate-float-lens">
+                   class="max-h-[360px] sm:max-h-[420px] w-auto object-contain drop-shadow-2xl animate-float-lens">
               
-              <!-- Floating spec tags -->
-              <div class="absolute -bottom-2 -left-4 bg-white/95 backdrop-blur-md px-3.5 py-2 rounded-xl shadow-lg border border-slate-200 text-slate-800 text-[11px] font-semibold flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
-                <span>Chiết suất: 1.56 - 1.74 MR-7 / MR-174</span>
+              <!-- Floating spec tags (High-Tech Proof Points) -->
+              <div class="absolute -bottom-2 -left-2 bg-white/95 backdrop-blur-md px-3 py-1.5 rounded-xl shadow-md border border-slate-200 text-slate-800 text-[11px] font-semibold flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                <span>100% Monomer Mitsui Nhật Bản MR-Series</span>
               </div>
 
-              <div class="absolute top-10 -right-4 bg-white/95 backdrop-blur-md px-3.5 py-2 rounded-xl shadow-lg border border-slate-200 text-slate-800 text-[11px] font-semibold flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-[#0B7B8A]"></span>
-                <span>Phủ Crystal Sapphire AR 99.8%</span>
+              <div class="absolute top-6 -right-2 bg-white/95 backdrop-blur-md px-3 py-1.5 rounded-xl shadow-md border border-slate-200 text-slate-800 text-[11px] font-semibold flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-[#0B7B8A]"></span>
+                <span>Nano Sapphire AR 99.8% (Kháng trầy 9H)</span>
+              </div>
+
+              <div class="absolute top-1/2 -left-4 -translate-y-1/2 bg-white/95 backdrop-blur-md px-3 py-1.5 rounded-xl shadow-md border border-slate-200 text-slate-800 text-[11px] font-semibold flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+                <span>Đổi màu Spin-Coat UV420 siêu tốc 3s</span>
               </div>
             </div>
 
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- SECTION: WHY ROCKY LENS? (5 ĐIỂM CHẠM KHÁCH HÀNG / GIẢI QUYẾT TRIỆT ĐỂ NỖI ĐAU ĐẠI LÝ) -->
+    <!-- ========================================================================= -->
+    <section id="why-rocky" class="py-16 bg-white border-b border-slate-200 relative overflow-hidden">
+      
+      <!-- Subtle ambient background shapes -->
+      <div class="absolute top-0 right-1/4 w-96 h-96 bg-teal-50/60 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute bottom-0 left-10 w-80 h-80 bg-slate-100/60 rounded-full blur-2xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-50 border border-teal-200 text-[#0B7B8A] text-xs font-semibold mb-3">
+            <svg class="w-3.5 h-3.5 text-[#0B7B8A]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            <span class="font-rocky-condensed uppercase tracking-wider font-bold">GIÁ TRỊ CỐT LÕI DÀNH CHO ĐỐI TÁC B2B</span>
+          </span>
+          
+          <h2 class="font-rocky-condensed text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 uppercase tracking-tight">
+            Vì Sao 1.200+ Cửa Hàng &amp; Bác Sĩ Khúc Xạ Chọn Rocky Lens?
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed">
+            Chúng tôi thấu hiểu sâu sắc thực tế kinh doanh kính mắt: Không chỉ là sản phẩm tròng kính, điều quyết định sự tồn tại và tăng trưởng của một cửa hàng là <strong>dòng vốn, tốc độ phục vụ khách lẻ và uy tín thương hiệu</strong>. Dưới đây là 5 điểm chạm cam kết giải quyết triệt để 5 nỗi đau lớn nhất của bạn:
+          </p>
+        </div>
+
+        <!-- 5 Touchpoint Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Touchpoint 1: Margin & Cashflow -->
+          <div class="bg-gradient-to-b from-slate-50/80 to-white rounded-2xl border border-slate-200/90 p-6 shadow-sm hover:shadow-md hover:border-teal-300 transition-all flex flex-col justify-between group">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="w-11 h-11 rounded-xl bg-teal-500/10 text-[#0B7B8A] flex items-center justify-center font-black text-lg group-hover:bg-[#0B7B8A] group-hover:text-white transition-colors">
+                  01
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 text-[11px] font-bold">
+                  Biên Lợi Nhuận &bull; 45% - 55%
+                </span>
+              </div>
+              
+              <h3 class="text-base font-bold text-slate-900 mb-3 font-rocky-condensed uppercase tracking-wide">
+                Tối Ưu Biên Lợi Nhuận &amp; Linh Hoạt Dòng Vốn
+              </h3>
+
+              <!-- Pain point -->
+              <div class="bg-rose-50/70 border-l-2 border-rose-400 p-2.5 rounded-r-lg mb-3">
+                <div class="text-[10px] font-bold text-rose-800 uppercase tracking-wider mb-0.5">Nỗi đau của đại lý:</div>
+                <p class="text-xs text-rose-900 leading-snug">Nhập tròng ngoại bị ép chỉ tiêu doanh số cao, chiết khấu thực nhận chỉ 25-30%, ôm phôi lệch độ tồn kho chôn vốn hàng chục triệu đồng.</p>
+              </div>
+
+              <!-- Solution -->
+              <div class="bg-teal-50/70 border-l-2 border-[#0B7B8A] p-2.5 rounded-r-lg">
+                <div class="text-[10px] font-bold text-[#0B7B8A] uppercase tracking-wider mb-0.5">Giải pháp Rocky Lens:</div>
+                <p class="text-xs text-slate-700 leading-snug">Chiết khấu Cấp 1 trực tiếp 45% - 55% không áp đặt số lượng; Chính sách hỗ trợ <strong>thu đổi 1:1 phôi đọng vốn</strong>; Hạn mức công nợ gối đầu 30-45 ngày cho đại lý uy tín.</p>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+              <span class="text-slate-500 font-medium">Hiệu quả trực tiếp:</span>
+              <span class="font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">+25% - 30% Lợi Nhuận Ròng</span>
+            </div>
+          </div>
+
+          <!-- Touchpoint 2: Delivery Speed -->
+          <div class="bg-gradient-to-b from-slate-50/80 to-white rounded-2xl border border-slate-200/90 p-6 shadow-sm hover:shadow-md hover:border-teal-300 transition-all flex flex-col justify-between group">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="w-11 h-11 rounded-xl bg-teal-500/10 text-[#0B7B8A] flex items-center justify-center font-black text-lg group-hover:bg-[#0B7B8A] group-hover:text-white transition-colors">
+                  02
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full bg-sky-50 text-sky-700 border border-sky-200 text-[11px] font-bold">
+                  Hỏa Tốc 2H &bull; Lab RX 24H
+                </span>
+              </div>
+              
+              <h3 class="text-base font-bold text-slate-900 mb-3 font-rocky-condensed uppercase tracking-wide">
+                Tốc Độ Cung Ứng Hỏa Tốc - Giữ Chân Khách Mua Ngay
+              </h3>
+
+              <!-- Pain point -->
+              <div class="bg-rose-50/70 border-l-2 border-rose-400 p-2.5 rounded-r-lg mb-3">
+                <div class="text-[10px] font-bold text-rose-800 uppercase tracking-wider mb-0.5">Nỗi đau của đại lý:</div>
+                <p class="text-xs text-rose-900 leading-snug">Khách lẻ vào tiệm có độ cận loạn cao muốn lấy kính gấp trong ngày. Tiệm thiếu tròng chờ đặt hãng 3-5 ngày khiến khách mất kiên nhẫn, hủy đơn sang đối thủ.</p>
+              </div>
+
+              <!-- Solution -->
+              <div class="bg-teal-50/70 border-l-2 border-[#0B7B8A] p-2.5 rounded-r-lg">
+                <div class="text-[10px] font-bold text-[#0B7B8A] uppercase tracking-wider mb-0.5">Giải pháp Rocky Lens:</div>
+                <p class="text-xs text-slate-700 leading-snug">3 tổng kho tại <strong>Hà Nội, Đà Nẵng, TP.HCM</strong> lưu trữ 150.000+ phôi sẵn sàng ship hỏa tốc trong 2 giờ. Trung tâm Lab CanRx Freeform kỹ thuật số trả đơn RX trong 24 giờ.</p>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+              <span class="text-slate-500 font-medium">Hiệu quả trực tiếp:</span>
+              <span class="font-bold text-sky-700 bg-sky-50 px-2 py-0.5 rounded">Giữ 100% Khách Lấy Gấp</span>
+            </div>
+          </div>
+
+          <!-- Touchpoint 3: Zero-Defect Quality & Warranty -->
+          <div class="bg-gradient-to-b from-slate-50/80 to-white rounded-2xl border border-slate-200/90 p-6 shadow-sm hover:shadow-md hover:border-teal-300 transition-all flex flex-col justify-between group">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="w-11 h-11 rounded-xl bg-teal-500/10 text-[#0B7B8A] flex items-center justify-center font-black text-lg group-hover:bg-[#0B7B8A] group-hover:text-white transition-colors">
+                  03
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full bg-amber-50 text-amber-700 border border-amber-200 text-[11px] font-bold">
+                  Bảo Hành Điện Tử 1:1 &bull; 12-24T
+                </span>
+              </div>
+              
+              <h3 class="text-base font-bold text-slate-900 mb-3 font-rocky-condensed uppercase tracking-wide">
+                Chất Lượng Phôi Mitsui &amp; Bảo Hành Điện Tử 1:1
+              </h3>
+
+              <!-- Pain point -->
+              <div class="bg-rose-50/70 border-l-2 border-rose-400 p-2.5 rounded-r-lg mb-3">
+                <div class="text-[10px] font-bold text-rose-800 uppercase tracking-wider mb-0.5">Nỗi đau của đại lý:</div>
+                <p class="text-xs text-rose-900 leading-snug">Tròng giá rẻ không rõ nguồn gốc dễ ố vàng, bong tróc nứt váng sau vài tháng. Khách quay lại khiếu nại làm tổn hại nghiêm trọng uy tín phòng khám / tiệm kính.</p>
+              </div>
+
+              <!-- Solution -->
+              <div class="bg-teal-50/70 border-l-2 border-[#0B7B8A] p-2.5 rounded-r-lg">
+                <div class="text-[10px] font-bold text-[#0B7B8A] uppercase tracking-wider mb-0.5">Giải pháp Rocky Lens:</div>
+                <p class="text-xs text-slate-700 leading-snug">100% phôi tròng đúc từ <strong>Monomer Mitsui Nhật Bản</strong> (MR-7, MR-8, MR-174). Váng phủ Nano Sapphire AR kháng trầy 9H. Kích hoạt bảo hành điện tử QR Code 12 - 24 tháng 1 đổi 1 ngay tại quầy.</p>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+              <span class="text-slate-500 font-medium">Tỷ lệ lỗi quang học:</span>
+              <span class="font-bold text-teal-700 bg-teal-50 px-2 py-0.5 rounded">&lt; 0.1% Zero Defect</span>
+            </div>
+          </div>
+
+          <!-- Touchpoint 4: In-Store Conversion Sales Kit -->
+          <div class="bg-gradient-to-b from-slate-50/80 to-white rounded-2xl border border-slate-200/90 p-6 shadow-sm hover:shadow-md hover:border-teal-300 transition-all flex flex-col justify-between group">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="w-11 h-11 rounded-xl bg-teal-500/10 text-[#0B7B8A] flex items-center justify-center font-black text-lg group-hover:bg-[#0B7B8A] group-hover:text-white transition-colors">
+                  04
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full bg-purple-50 text-purple-700 border border-purple-200 text-[11px] font-bold">
+                  Tài Trợ 100% &bull; POSM Kit
+                </span>
+              </div>
+              
+              <h3 class="text-base font-bold text-slate-900 mb-3 font-rocky-condensed uppercase tracking-wide">
+                Trợ Lực Chốt Đơn Tại Quầy (POSM &amp; Demo Kit)
+              </h3>
+
+              <!-- Pain point -->
+              <div class="bg-rose-50/70 border-l-2 border-rose-400 p-2.5 rounded-r-lg mb-3">
+                <div class="text-[10px] font-bold text-rose-800 uppercase tracking-wider mb-0.5">Nỗi đau của đại lý:</div>
+                <p class="text-xs text-rose-900 leading-snug">Nhân viên tư vấn tại tiệm khó thuyết phục khách chi trả thêm cho tròng lọc ánh sáng xanh, đổi màu hay chiết suất cao vì chỉ tư vấn bằng lời nói suông không có công cụ trực quan.</p>
+              </div>
+
+              <!-- Solution -->
+              <div class="bg-teal-50/70 border-l-2 border-[#0B7B8A] p-2.5 rounded-r-lg">
+                <div class="text-[10px] font-bold text-[#0B7B8A] uppercase tracking-wider mb-0.5">Giải pháp Rocky Lens:</div>
+                <p class="text-xs text-slate-700 leading-snug">Tài trợ 100% công cụ thực nghiệm tại quầy: <strong>Đèn laser UV420 chuẩn bước sóng, Máy test đổi màu siêu tốc, Khay so sánh độ mỏng 1.56 - 1.74</strong> và kịch bản chốt sales 3 phút chuẩn khúc xạ.</p>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+              <span class="text-slate-500 font-medium">Tỷ lệ nâng cấp tròng:</span>
+              <span class="font-bold text-purple-700 bg-purple-50 px-2 py-0.5 rounded">+42% Upsell Tại Quầy</span>
+            </div>
+          </div>
+
+          <!-- Touchpoint 5: Territory & Price Protection -->
+          <div class="bg-gradient-to-b from-slate-50/80 to-white rounded-2xl border border-slate-200/90 p-6 shadow-sm hover:shadow-md hover:border-teal-300 transition-all flex flex-col justify-between group">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="w-11 h-11 rounded-xl bg-teal-500/10 text-[#0B7B8A] flex items-center justify-center font-black text-lg group-hover:bg-[#0B7B8A] group-hover:text-white transition-colors">
+                  05
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full bg-indigo-50 text-indigo-700 border border-indigo-200 text-[11px] font-bold">
+                  Bảo Hộ Vùng &bull; Chống Phá Giá
+                </span>
+              </div>
+              
+              <h3 class="text-base font-bold text-slate-900 mb-3 font-rocky-condensed uppercase tracking-wide">
+                Bảo Hộ Khu Vực &amp; Chống Phá Giá Thị Trường
+              </h3>
+
+              <!-- Pain point -->
+              <div class="bg-rose-50/70 border-l-2 border-rose-400 p-2.5 rounded-r-lg mb-3">
+                <div class="text-[10px] font-bold text-rose-800 uppercase tracking-wider mb-0.5">Nỗi đau của đại lý:</div>
+                <p class="text-xs text-rose-900 leading-snug">Bán các dòng tròng đại trà dễ bị đối thủ cùng tuyến phố hoặc gian hàng thương mại điện tử cắt máu bán phá giá, khiến tiệm mang tiếng đắt đỏ và mất khách quen.</p>
+              </div>
+
+              <!-- Solution -->
+              <div class="bg-teal-50/70 border-l-2 border-[#0B7B8A] p-2.5 rounded-r-lg">
+                <div class="text-[10px] font-bold text-[#0B7B8A] uppercase tracking-wider mb-0.5">Giải pháp Rocky Lens:</div>
+                <p class="text-xs text-slate-700 leading-snug">Cam kết <strong>bảo hộ độc quyền bán kính khu vực</strong> cho đại lý đạt chuẩn; Kiểm soát nghiêm ngặt giá bán lẻ niêm yết toàn quốc; Cắt nguồn cung vĩnh viễn với bất kỳ đơn vị nào vi phạm quy chế giá.</p>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+              <span class="text-slate-500 font-medium">Bảo vệ đối tác:</span>
+              <span class="font-bold text-indigo-700 bg-indigo-50 px-2 py-0.5 rounded">100% An Toàn Lợi Nhuận</span>
+            </div>
+          </div>
+
+          <!-- Touchpoint 6: Risk-Free Trial Callout -->
+          <div class="bg-gradient-to-br from-[#0B7B8A] to-[#085A65] rounded-2xl p-6 text-white shadow-lg flex flex-col justify-between">
+            <div>
+              <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white/20 text-white text-[11px] font-bold mb-4">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                <span>CHÍNH SÁCH ĐỐI TÁC MỚI</span>
+              </div>
+
+              <h3 class="text-xl font-black font-rocky-condensed uppercase tracking-wide mb-3">
+                Trải Nghiệm Thử Nghiệm Không Ép Doanh Số
+              </h3>
+
+              <p class="text-xs text-teal-100 leading-relaxed mb-4">
+                Đăng ký ngay hôm nay để nhận bảng giá sỉ chiết khấu Cấp 1, bộ tròng mẫu phôi thực tế và chính sách <strong>được đổi trả 100% trong 30 ngày đầu tiên</strong> nếu chất lượng không đạt như cam kết.
+              </p>
+
+              <div class="space-y-1.5 text-xs text-teal-100 mb-6">
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-emerald-300" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span>Không yêu cầu số lượng tối thiểu đơn đầu</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-emerald-300" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span>Gửi mẫu tròng và catalog tận tiệm miễn phí</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-emerald-300" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span>Chuyên viên B2B tư vấn 1-kèm-1 trong 15 phút</span>
+                </div>
+              </div>
+            </div>
+
+            <button onclick="scrollToRegistration()" class="w-full py-2.5 rounded-xl bg-white text-[#0B7B8A] hover:bg-teal-50 font-bold text-xs shadow-md transition-colors flex items-center justify-center gap-2">
+              <span>Đăng Ký Làm Đại Lý Ngay</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </button>
           </div>
 
         </div>
