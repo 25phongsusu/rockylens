@@ -1,0 +1,85 @@
+{
+  "id": "prod-005",
+  "slug": "rocky-trendy-photochromic-grey",
+  "status": "published",
+  "name": "Tròng Đổi Màu Nhanh Rocky Trendy Smart Khói 1.56 / 1.60",
+  "tagline": "Tự động kích hoạt đổi màu râm thời trang khi tiếp xúc tia tử ngoại ngoài trời",
+  "brandId": "rocky-lens",
+  "categoryIds": [
+    "doi-mau",
+    "don-trong"
+  ],
+  "technologyIds": [
+    "photochromic-fast",
+    "nano-shmc",
+    "uv420-bluecut"
+  ],
+  "refractiveIndex": "1.56 / 1.60",
+  "images": [
+    "/images/products/category-solution-8.png",
+    "/images/products/lens-nen trang.jpg",
+    "/images/technologies/Artboard_8_photochromic.png"
+  ],
+  "featuredImage": "/images/products/category-solution-8.png",
+  "badge": "Đổi Màu Thế Hệ Mới",
+  "shortDescription": "Tròng kính tích hợp phân tử đổi màu thế hệ thứ 7, chuyển từ trong suốt trong nhà sang màu xám khói râm mát ngoài trời nắng gắt trong vòng 30 giây.",
+  "targetAudience": [
+    "Người thường xuyên di chuyển giữa văn phòng trong nhà và hoạt động ngoài trời",
+    "Người có mắt nhạy cảm với ánh sáng chói, sợ lóa mắt khi đi xe máy",
+    "Khách hàng muốn kết hợp kính cận và kính râm tiện lợi 2 trong 1"
+  ],
+  "benefits": [
+    {
+      "title": "Đổi Màu Nhanh 30 Giây",
+      "description": "Phản ứng quang hóa nhạy bén, đậm màu đều và nhả lại màu trong suốt nhanh chóng khi bước vào nhà.",
+      "icon": "SunMedium"
+    },
+    {
+      "title": "Màu Xám Khói Thời Trang",
+      "description": "Tông màu thời thượng, giữ nguyên độ chân thực màu sắc cảnh vật tự nhiên xung quanh.",
+      "icon": "Sparkles"
+    },
+    {
+      "title": "Chống 100% Tia Cực Tím UVA/UVB",
+      "description": "Bảo vệ toàn diện giác mạc và ngăn ngừa đục thủy tinh thể do tia tử ngoại.",
+      "icon": "ShieldCheck"
+    }
+  ],
+  "specifications": {
+    "refractiveIndex": "1.56 / 1.60 (Tùy chọn phôi)",
+    "designType": "Aspheric Surface Matrix",
+    "sphRange": "-8.00 đến +4.00",
+    "cylRange": "0.00 đến -2.00",
+    "diameter": "70mm / 75mm",
+    "coating": "Photochromic Matrix + Nano SHMC",
+    "material": "Fast Reaction Optical Polymer",
+    "abbeValue": "38 / 41",
+    "uvProtection": "UV400 100%",
+    "sku": "RL-TR-GREY"
+  },
+  "documents": [
+    {
+      "title": "Catalogue Tròng Đổi Màu Rocky Trendy 2025",
+      "url": "/documents/Rocky_Lens_Catalogue_2025.pdf",
+      "size": "4.2 MB",
+      "type": "PDF"
+    }
+  ],
+  "relatedArticleIds": [
+    "co-che-hoat-dong-trong-doi-mau",
+    "so-sanh-chiet-suat-trong-kinh"
+  ],
+  "relatedProductIds": [
+    "rocky-trendy-photochromic-brown",
+    "rocky-156-bluecut-shmc"
+  ],
+  "seo": {
+    "title": "Tròng Kính Đổi Màu Rocky Trendy Smart Khói | Rocky Lens",
+    "description": "Tròng kính đổi màu nhanh Rocky Trendy Smart màu khói, đổi màu nhạy theo tia UV, trong suốt trong nhà và râm mát ngoài trời.",
+    "keywords": [
+      "tròng kính đổi màu",
+      "tròng đổi màu khói",
+      "rocky trendy đổi màu"
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #0B7B8A;
+  --color-primary-hover: #096370;
+  --color-primary-light: #EBF7F9;
+  --color-navy: #050E10;
+  --color-gold: #D97706;
+  --color-gold-light: #FEF3C7;
+  --color-bg-light: #F8FAFC;
+  --color-text-main: #0F172A;
+  --color-text-muted: #64748B;
+  --color-border: #E2E8F0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+body {
+  color: var(--color-text-main);
+  background-color: #FFFFFF;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: #0B7B8A;
+  color: #FFFFFF;
+}
+
+/* Custom optical subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

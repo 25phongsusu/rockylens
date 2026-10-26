@@ -1,0 +1,83 @@
+{
+  "id": "prod-011",
+  "slug": "rocky-myocontrol-dims-kids",
+  "status": "published",
+  "name": "Tròng Kính Kiểm Soát Cận Thị Học Đường Rocky MyoControl D.I.M.S",
+  "tagline": "Giải pháp quang học y khoa làm chậm tiến triển tăng độ cận cho trẻ em",
+  "brandId": "rocky-lens",
+  "categoryIds": [
+    "kiem-soat-can-thi",
+    "don-trong"
+  ],
+  "technologyIds": [
+    "myocontrol-dims",
+    "mr8-high-toughness",
+    "nano-shmc"
+  ],
+  "refractiveIndex": "1.59 Poly / 1.60 MR-8",
+  "images": [
+    "/images/products/category-solution-7.png",
+    "/images/articles/myopia 1.png",
+    "/images/technologies/Artboard_7_myopia.png"
+  ],
+  "featuredImage": "/images/products/category-solution-7.png",
+  "badge": "Kiểm Soát Cận Thị",
+  "shortDescription": "Cấu trúc hàng trăm vi thấu kính phân kỳ chu biên D.I.M.S bao quanh tâm nhìn rõ, gửi tín hiệu hãm trục nhãn cầu kéo dài, giảm tới 60% tốc độ tăng độ cận ở trẻ em từ 6-16 tuổi.",
+  "targetAudience": [
+    "Trẻ em và học sinh từ 6 đến 16 tuổi có độ cận tăng nhanh từ 0.75 Diop trở lên mỗi năm",
+    "Trẻ có bố mẹ cận thị nặng, có nguy cơ di truyền cận thị tiến triển",
+    "Phụ huynh tìm kiếm giải pháp kiểm soát cận thị an toàn không xâm lấn (không dùng kính áp tròng ban đêm Ortho-K)"
+  ],
+  "benefits": [
+    {
+      "title": "Cơ Chế Phân Kỳ Chu Biên D.I.M.S",
+      "description": "Hình thành tín hiệu quang học ngăn chặn võng mạc dài ra phía sau, bảo tồn thị lực lâu dài.",
+      "icon": "Eye"
+    },
+    {
+      "title": "Chống Va Đập Tuyệt Đối",
+      "description": "Phôi Polycarbonate / MR-8 siêu bền chịu lực va đập khi trẻ vui chơi chạy nhảy thể thao.",
+      "icon": "Award"
+    },
+    {
+      "title": "Trẻ Dễ Chấp Nhận & Thoải Mái",
+      "description": "Đeo như kính thuốc thông thường, thích nghi sau vài giờ và duy trì tầm nhìn học tập sắc nét.",
+      "icon": "Sparkles"
+    }
+  ],
+  "specifications": {
+    "refractiveIndex": "1.59 Polycarbonate / 1.60 MR-8",
+    "designType": "D.I.M.S Micro-Lens Array Matrix",
+    "sphRange": "-0.50 đến -8.00",
+    "cylRange": "0.00 đến -3.00",
+    "diameter": "65mm / 70mm",
+    "coating": "Kid-Shield Scratch Resistant + Nano SHMC",
+    "material": "Impact Resistant Polycarbonate / MR-8",
+    "abbeValue": "41",
+    "uvProtection": "UV400 100%",
+    "sku": "RL-MYO-DIMS"
+  },
+  "documents": [
+    {
+      "title": "Báo Cáo Nghiên Cứu Lâm Sàng MyoControl",
+      "url": "/documents/Rocky_Lens_Catalogue_2025.pdf",
+      "size": "4.2 MB",
+      "type": "PDF"
+    }
+  ],
+  "relatedArticleIds": [
+    "kiem-soat-can-thi-tre-em-myocontrol"
+  ],
+  "relatedProductIds": [
+    "rocky-160-mr8-aspheric"
+  ],
+  "seo": {
+    "title": "Tròng Kiểm Soát Cận Thị Rocky MyoControl D.I.M.S | Rocky Lens",
+    "description": "Tròng kính làm chậm tăng độ cận thị cho trẻ em Rocky MyoControl D.I.M.S, công nghệ vi thấu kính hiện đại từ Canada.",
+    "keywords": [
+      "kiểm soát cận thị",
+      "tròng kính cận trẻ em",
+      "rocky myocontrol dims"
+    ]
+  }
+}

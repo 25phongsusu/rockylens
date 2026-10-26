@@ -9,6 +9,13 @@ psd_structure.json
 psd_summary.txt
 rockylens_font_report.json
 preview_sections/
+scratch/
+
+# Next.js & Node
+node_modules/
+.next/
+out/
+next-env.d.ts
 
 # OS Files
 .DS_Store

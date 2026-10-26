@@ -1,0 +1,84 @@
+{
+  "id": "prod-003",
+  "slug": "rocky-167-ultra-thin-bluecut",
+  "status": "published",
+  "name": "Tròng Siêu Mỏng Rocky 1.67 Aspheric BlueCut UV420",
+  "tagline": "Mỏng nhẹ vượt trội, thẩm mỹ đỉnh cao cho người có tật khúc xạ cận độ cao",
+  "brandId": "rocky-lens",
+  "categoryIds": [
+    "don-trong"
+  ],
+  "technologyIds": [
+    "ultra-high-index-174",
+    "uv420-bluecut",
+    "nano-shmc"
+  ],
+  "refractiveIndex": "1.67",
+  "images": [
+    "/images/products/category-solution-1.png",
+    "/images/products/lens-lão thị.jpg",
+    "/images/technologies/sol_anh_sang_xanh.png"
+  ],
+  "featuredImage": "/images/products/category-solution-1.png",
+  "badge": "Siêu Mỏng",
+  "shortDescription": "Tròng kính chiết suất cao 1.67 Aspheric, mỏng hơn 35% so với tròng 1.56 thông thường, tích hợp công nghệ chống ánh sáng xanh và lớp phủ siêu trơn trượt nước Nano SHMC.",
+  "targetAudience": [
+    "Người có độ cận cao từ -4.00 đến -10.00 Diop hoặc độ loạn từ -1.50 trở lên",
+    "Người yêu cầu tính thẩm mỹ viền tròng không bị dày cộm chìa ra ngoài gọng kim loại",
+    "Chuyên gia làm việc văn phòng, tài chính và lập trình viên cần bảo vệ mắt toàn diện"
+  ],
+  "benefits": [
+    {
+      "title": "Giảm 35% Độ Dày Rìa",
+      "description": "Thẩm mỹ tinh tế, giấu viền tròng kính hoàn hảo ngay cả trên các khung gọng thanh mảnh.",
+      "icon": "Layers"
+    },
+    {
+      "title": "Thiết Kế Phi Cầu Aspheric Phẳng",
+      "description": "Khắc phục hiện tượng mắt bị biến dạng bé đi khi đeo kính cận nặng, tăng tự tin giao tiếp.",
+      "icon": "Eye"
+    },
+    {
+      "title": "Chống Bám Hơi Nước & Vân Tay",
+      "description": "Lớp phủ đa tầng cao cấp giúp mắt kính luôn trong suốt, nhanh tan sương khi đi mưa hoặc đeo khẩu trang.",
+      "icon": "Sparkles"
+    }
+  ],
+  "specifications": {
+    "refractiveIndex": "1.67",
+    "designType": "Double Surface Aspheric (Bi-ASP)",
+    "sphRange": "-10.00 đến +6.00",
+    "cylRange": "0.00 đến -3.00",
+    "diameter": "70mm / 75mm",
+    "coating": "Nano SHMC BlueCut",
+    "material": "Mitsui MR-7 High Index Monomer",
+    "abbeValue": "32",
+    "uvProtection": "UV400 & UV420 100%",
+    "sku": "RL-167-BC"
+  },
+  "documents": [
+    {
+      "title": "Thông Tin Kỹ Thuật Rocky 1.67 Ultra-Thin",
+      "url": "/documents/Rocky_Lens_Catalogue_2025.pdf",
+      "size": "4.2 MB",
+      "type": "PDF"
+    }
+  ],
+  "relatedArticleIds": [
+    "so-sanh-chiet-suat-trong-kinh",
+    "giai-phap-chong-anh-sang-xanh-uv420"
+  ],
+  "relatedProductIds": [
+    "rocky-160-mr8-aspheric",
+    "rocky-174-ultra-high-index"
+  ],
+  "seo": {
+    "title": "Tròng Kính Siêu Mỏng Rocky 1.67 Aspheric BlueCut | Rocky Lens",
+    "description": "Tròng kính 1.67 Rocky Lens siêu mỏng nhẹ cho người cận nặng, tích hợp lọc ánh sáng xanh UV420 bảo vệ mắt tối đa.",
+    "keywords": [
+      "tròng kính 1.67",
+      "tròng cận siêu mỏng",
+      "rocky 1.67 bluecut"
+    ]
+  }
+}

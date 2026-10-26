@@ -1,0 +1,84 @@
+{
+  "id": "prod-008",
+  "slug": "rocky-progressive-short-corridor",
+  "status": "published",
+  "name": "Kính Đa Tròng Hành Lang Ngắn Rocky Compact Pro 1.67",
+  "tagline": "Tối ưu hóa riêng cho các dáng gọng thời trang khung nhỏ với chiết suất siêu mỏng 1.67",
+  "brandId": "rocky-lens",
+  "categoryIds": [
+    "da-trong"
+  ],
+  "technologyIds": [
+    "freeform-hd",
+    "ultra-high-index-174",
+    "nano-shmc"
+  ],
+  "refractiveIndex": "1.67",
+  "images": [
+    "/images/products/category-solution-2.png",
+    "/images/products/lens-Artboard 1 (3).png",
+    "/images/technologies/Artboard_2_progressive.png"
+  ],
+  "featuredImage": "/images/products/category-solution-2.png",
+  "badge": "Cho Gọng Khung Nhỏ",
+  "shortDescription": "Thiết kế hành lang ngắn (Short Corridor 11mm - 13mm) cho phép lắp đặt vừa vặn trên các gọng kính thời trang cá tính mà vẫn đảm bảo đầy đủ trường nhìn đọc sách và máy tính.",
+  "targetAudience": [
+    "Người lão thị yêu thích kiểu dáng gọng nhỏ thanh lịch, gọng kim loại mắt hẹp",
+    "Khách hàng có độ cận hoặc viễn cao cần độ mỏng 1.67",
+    "Người thường xuyên làm việc với smartphone và văn bản"
+  ],
+  "benefits": [
+    {
+      "title": "Hành Lang Ngắn Linh Hoạt",
+      "description": "Chiều cao tâm chỉ từ 14mm, không lo bị cắt xén vùng đọc sách khi ráp gọng nhỏ.",
+      "icon": "Cpu"
+    },
+    {
+      "title": "Chiết Suất Siêu Mỏng 1.67",
+      "description": "Viền mỏng nhẹ thanh thoát, tính thẩm mỹ vượt trội.",
+      "icon": "Layers"
+    },
+    {
+      "title": "Độ Tinh Chỉnh Cá Nhân Hóa",
+      "description": "Gia công Lab RX theo khoảng cách đồng tử (PD) và góc nghiêng gọng kính thực tế.",
+      "icon": "Award"
+    }
+  ],
+  "specifications": {
+    "refractiveIndex": "1.67",
+    "designType": "Short Corridor Freeform HD",
+    "sphRange": "-10.00 đến +6.00",
+    "cylRange": "0.00 đến -3.00",
+    "addRange": "+0.75 đến +3.50",
+    "diameter": "70mm / 75mm",
+    "coating": "Satin Nano SHMC",
+    "material": "Mitsui MR-7 High Index",
+    "abbeValue": "32",
+    "uvProtection": "UV400 100%",
+    "sku": "RL-PROG-COMPACT"
+  },
+  "documents": [
+    {
+      "title": "Thông Số Ráp Kính Đa Tròng Gọng Nhỏ",
+      "url": "/documents/Rocky_Lens_Catalogue_2025.pdf",
+      "size": "4.2 MB",
+      "type": "PDF"
+    }
+  ],
+  "relatedArticleIds": [
+    "khi-nao-nen-dung-kinh-da-trong"
+  ],
+  "relatedProductIds": [
+    "rocky-freeform-progressive-hd",
+    "rocky-167-ultra-thin-bluecut"
+  ],
+  "seo": {
+    "title": "Đa Tròng Hành Lang Ngắn Rocky Compact Pro 1.67 | Rocky Lens",
+    "description": "Kính đa tròng hành lang ngắn 1.67 Rocky Compact Pro cho gọng nhỏ thời trang, gia công kỹ thuật số Freeform chính xác.",
+    "keywords": [
+      "đa tròng gọng nhỏ",
+      "kính đa tròng 1.67",
+      "rocky compact pro"
+    ]
+  }
+}

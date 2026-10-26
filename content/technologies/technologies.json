@@ -1,0 +1,74 @@
+[
+  {
+    "id": "uv420-bluecut",
+    "name": "Công nghệ Lọc Ánh Sáng Xanh UV420",
+    "badge": "BlueCut UV420",
+    "shortDescription": "Hấp thụ triệt để ánh sáng xanh tím có hại (400 - 420nm) ngay từ trong phôi tròng mà vẫn giữ độ trong suốt tự nhiên, không ám vàng.",
+    "icon": "ShieldCheck",
+    "image": "/images/technologies/Artboard_1_4_bluecut.png",
+    "relatedArticleSlug": "giai-phap-chong-anh-sang-xanh-uv420"
+  },
+  {
+    "id": "photochromic-fast",
+    "name": "Công nghệ Đổi Màu Phân Tử Trendy Smart",
+    "badge": "Photochromic 7G",
+    "shortDescription": "Cấu trúc phân tử quang học phủ xoay Spin-Coating đổi màu siêu tốc chỉ sau 30 giây khi tiếp xúc tia tử ngoại và nhả màu nhanh khi vào nhà.",
+    "icon": "SunMedium",
+    "image": "/images/technologies/Artboard_8_photochromic.png",
+    "relatedArticleSlug": "co-che-hoat-dong-trong-doi-mau"
+  },
+  {
+    "id": "freeform-hd",
+    "name": "Gia Công Mặt Sau Kỹ Thuật Số Freeform HD",
+    "badge": "Digital Freeform 3D",
+    "shortDescription": "Tính toán 40.000 điểm quang sai trên bề mặt tròng kính theo độ cong mắt cầu và thông số gọng, mở rộng vùng nhìn rõ nét thêm 40%.",
+    "icon": "Cpu",
+    "image": "/images/technologies/Artboard_2_progressive.png",
+    "relatedArticleSlug": "khi-nao-nen-dung-kinh-da-trong"
+  },
+  {
+    "id": "driveshield",
+    "name": "Bộ Lọc Quang Phổ Ban Đêm DriveShield",
+    "badge": "Night Driving Filter",
+    "shortDescription": "Giảm độ chói gắt từ hệ thống đèn pha LED và Xenon xe đối diện, tăng cường tương phản thị giác trong điều kiện sương mù và mưa đêm.",
+    "icon": "Car",
+    "image": "/images/technologies/Artboard_3_driving.png",
+    "relatedArticleSlug": "cong-nghe-kinh-lai-xe-driveshield"
+  },
+  {
+    "id": "myocontrol-dims",
+    "name": "Vi Thấu Kính Kiểm Soát Cận Thị D.I.M.S",
+    "badge": "MyoControl DIMS",
+    "shortDescription": "Cơ chế tạo phân kỳ chu biên đồng thời duy trì tiêu điểm trung tâm, hỗ trợ kìm hãm sự dài ra của trục nhãn cầu ở trẻ em.",
+    "icon": "Eye",
+    "image": "/images/technologies/Artboard_7_myopia.png",
+    "relatedArticleSlug": "kiem-soat-can-thi-tre-em-myocontrol"
+  },
+  {
+    "id": "mr8-high-toughness",
+    "name": "Vật Liệu Chống Va Đập Cao Cấp MR-8",
+    "badge": "High Toughness MR-8",
+    "shortDescription": "Monomer quang học polyurethane dẻo dai đàn hồi vượt trội, an toàn tuyệt đối khi lắp ráp các mẫu gọng bắt ốc, gọng xẻ cước.",
+    "icon": "Award",
+    "image": "/images/technologies/Artboard_4_rimless_tough.png",
+    "relatedArticleSlug": "so-sanh-chiet-suat-trong-kinh"
+  },
+  {
+    "id": "nano-shmc",
+    "name": "Lớp Phủ Váng Dầu Siêu Kỵ Nước Nano SHMC",
+    "badge": "Super Hydrophobic",
+    "shortDescription": "Góc tiếp xúc giọt nước đạt 115 độ, chống trầy xước cấp độ cao, kháng tĩnh điện đẩy bụi bẩn và dễ dàng lau chùi vệ sinh.",
+    "icon": "Sparkles",
+    "image": "/images/products/category-solution-1.png",
+    "relatedArticleSlug": "huong-dan-ve-sinh-bao-quan-trong-kinh"
+  },
+  {
+    "id": "ultra-high-index-174",
+    "name": "Chiết Suất Siêu Mỏng 1.74 Aspheric",
+    "badge": "Ultra Thin 1.74",
+    "shortDescription": "Độ mỏng tối ưu giảm tới 45% bề dày và 35% trọng lượng cho người có tật khúc xạ cao từ -6.00 đến -12.00 Diop.",
+    "icon": "Layers",
+    "image": "/images/technologies/sol_anh_sang_xanh.png",
+    "relatedArticleSlug": "so-sanh-chiet-suat-trong-kinh"
+  }
+]

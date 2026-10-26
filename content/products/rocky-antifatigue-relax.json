@@ -1,0 +1,85 @@
+{
+  "id": "prod-010",
+  "slug": "rocky-antifatigue-relax",
+  "status": "published",
+  "name": "Tròng Kính Hỗ Trợ Điều Tiết Chống Mỏi Rocky Digital Relax",
+  "tagline": "Trợ lực điều tiết vùng nhìn gần (+0.60 ADD), bảo vệ mắt cho thế hệ làm việc số",
+  "brandId": "rocky-lens",
+  "categoryIds": [
+    "ho-tro-dieu-tiet",
+    "don-trong"
+  ],
+  "technologyIds": [
+    "uv420-bluecut",
+    "freeform-hd",
+    "nano-shmc"
+  ],
+  "refractiveIndex": "1.56 / 1.60",
+  "images": [
+    "/images/products/category-solution-5.png",
+    "/images/products/lens-AdobeStock_420698433_Preview.jpeg",
+    "/images/technologies/sol_hai_trong.png"
+  ],
+  "featuredImage": "/images/products/category-solution-5.png",
+  "badge": "Chống Mỏi Mắt Số",
+  "shortDescription": "Thiết kế bổ sung vùng trợ lực +0.60 Diop ở phần dưới tròng kính, giúp cơ thể mi của mắt thư giãn khi đọc tài liệu và nhìn máy tính liên tục trong nhiều giờ liền.",
+  "targetAudience": [
+    "Độ tuổi từ 18 đến 38 thường xuyên nhìn màn hình máy tính từ 6 đến 12 tiếng mỗi ngày",
+    "Người hay bị đau đầu, căng cơ mắt, mỏi mắt vào cuối ngày làm việc",
+    "Dân công nghệ, coder, designer, kế toán và sinh viên mùa thi cử"
+  ],
+  "benefits": [
+    {
+      "title": "Giảm Áp Lực Cơ Thể Mi",
+      "description": "Vùng trợ lực nhẹ nhàng nâng đỡ mắt khi nhìn gần, hạn chế co thắt điều tiết dẫn đến tăng độ cận giả.",
+      "icon": "Eye"
+    },
+    {
+      "title": "Tích Hợp Lọc Ánh Sáng Xanh UV420",
+      "description": "Ngăn ngừa tình trạng rối loạn giấc ngủ sinh học và thoái hóa hoàng điểm do ánh sáng màn hình.",
+      "icon": "ShieldCheck"
+    },
+    {
+      "title": "Cảm Giác Tự Nhiên Tuyệt Đối",
+      "description": "Không có cảm giác chao đảo, tầm nhìn xa rõ nét như kính đơn tròng thông thường.",
+      "icon": "Sparkles"
+    }
+  ],
+  "specifications": {
+    "refractiveIndex": "1.56 / 1.60",
+    "designType": "Asymmetric Boost Freeform",
+    "sphRange": "-8.00 đến +4.00",
+    "cylRange": "0.00 đến -2.00",
+    "addRange": "+0.50 đến +0.88 Diop",
+    "diameter": "70mm / 75mm",
+    "coating": "Digital BlueShield Nano SHMC",
+    "material": "High Optical Purity Polymer",
+    "abbeValue": "38 / 41",
+    "uvProtection": "UV420 BlueCut",
+    "sku": "RL-RELAX-DIGI"
+  },
+  "documents": [
+    {
+      "title": "Tài Liệu Hội Chứng Thị Giác Màn Hình & Tròng Relax",
+      "url": "/documents/Rocky_Lens_Catalogue_2025.pdf",
+      "size": "4.2 MB",
+      "type": "PDF"
+    }
+  ],
+  "relatedArticleIds": [
+    "giai-phap-chong-anh-sang-xanh-uv420"
+  ],
+  "relatedProductIds": [
+    "rocky-156-bluecut-shmc",
+    "rocky-freeform-progressive-hd"
+  ],
+  "seo": {
+    "title": "Tròng Hỗ Trợ Điều Tiết Chống Mỏi Mắt Rocky Digital Relax | Rocky Lens",
+    "description": "Tròng kính chống mỏi mắt kỹ thuật số Rocky Digital Relax, có vùng trợ lực nhìn gần và lọc ánh sáng xanh UV420.",
+    "keywords": [
+      "tròng chống mỏi mắt",
+      "tròng hỗ trợ điều tiết",
+      "rocky digital relax"
+    ]
+  }
+}

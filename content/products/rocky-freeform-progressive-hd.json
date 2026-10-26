@@ -1,0 +1,85 @@
+{
+  "id": "prod-007",
+  "slug": "rocky-freeform-progressive-hd",
+  "status": "published",
+  "name": "Kính Đa Tròng Rocky Freeform HD Wide View 1.56 / 1.60",
+  "tagline": "Tầm nhìn chuyển tiếp êm ái, xóa bỏ ranh giới nhìn xa - trung - gần cho người lão thị",
+  "brandId": "rocky-lens",
+  "categoryIds": [
+    "da-trong"
+  ],
+  "technologyIds": [
+    "freeform-hd",
+    "nano-shmc",
+    "uv420-bluecut"
+  ],
+  "refractiveIndex": "1.56 / 1.60",
+  "images": [
+    "/images/products/category-solution-2.png",
+    "/images/products/lens-lão thị.jpg",
+    "/images/technologies/Artboard_2_progressive.png"
+  ],
+  "featuredImage": "/images/products/category-solution-2.png",
+  "badge": "Đa Tròng Kỹ Thuật Số",
+  "shortDescription": "Sử dụng công nghệ tính toán bề mặt mặt sau Freeform 3D, tối ưu hóa vùng nhìn trung gian và vùng nhìn gần, giúp người mới đeo đa tròng dễ dàng thích nghi sau 24 giờ.",
+  "targetAudience": [
+    "Người từ 40 tuổi trở lên bắt đầu gặp hiện tượng lão thị (khó đọc sách, nhìn chữ điện thoại)",
+    "Doanh nhân, nhà quản lý, bác sĩ, giáo viên cần chuyển đổi liên tục giữa nhìn bảng/máy tính và tài liệu",
+    "Người từng đeo đa tròng truyền thống bị chóng mặt, cảm giác chao lắc khi di chuyển"
+  ],
+  "benefits": [
+    {
+      "title": "Vùng Nhìn Mở Rộng 40%",
+      "description": "Hạn chế tối đa hiện tượng méo hình biên, chuyển đổi thị giác êm dịu mượt mà.",
+      "icon": "Eye"
+    },
+    {
+      "title": "Dễ Thích Nghi Ngay Lần Đầu",
+      "description": "Hành lang điều tiết được tính toán mềm mại, chỉ mất 1-3 ngày làm quen thay vì nhiều tuần.",
+      "icon": "Cpu"
+    },
+    {
+      "title": "Thẩm Mỹ Không Vạch Phân Cách",
+      "description": "Bề mặt trơn láng như kính đơn tròng thông thường, không ai nhận ra bạn đang đeo kính lão.",
+      "icon": "Sparkles"
+    }
+  ],
+  "specifications": {
+    "refractiveIndex": "1.56 / 1.60 (RX Lab)",
+    "designType": "Back Surface Digital Freeform Progressive",
+    "sphRange": "-8.00 đến +6.00",
+    "cylRange": "0.00 đến -3.00",
+    "addRange": "+0.75 đến +3.50",
+    "diameter": "70mm / 75mm",
+    "coating": "Nano SHMC BlueCut",
+    "material": "Optical Resin / Mitsui MR-8",
+    "abbeValue": "38 / 41",
+    "uvProtection": "UV400 & BlueCut UV420",
+    "sku": "RL-PROG-HD"
+  },
+  "documents": [
+    {
+      "title": "Cẩm Nang Thích Nghi Đa Tròng Rocky Freeform",
+      "url": "/documents/Rocky_Lens_Catalogue_2025.pdf",
+      "size": "4.2 MB",
+      "type": "PDF"
+    }
+  ],
+  "relatedArticleIds": [
+    "khi-nao-nen-dung-kinh-da-trong",
+    "so-sanh-chiet-suat-trong-kinh"
+  ],
+  "relatedProductIds": [
+    "rocky-progressive-short-corridor",
+    "rocky-antifatigue-relax"
+  ],
+  "seo": {
+    "title": "Kính Đa Tròng Rocky Freeform HD Wide View | Rocky Lens",
+    "description": "Kính đa tròng kỹ thuật số Rocky Freeform HD chính hãng Canada, tầm nhìn rộng 3 cự ly không vạch phân cách, êm ái dễ thích nghi.",
+    "keywords": [
+      "kính đa tròng",
+      "đa tròng freeform",
+      "rocky lens đa tròng"
+    ]
+  }
+}

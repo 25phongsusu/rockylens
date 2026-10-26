@@ -1,0 +1,84 @@
+{
+  "id": "prod-001",
+  "slug": "rocky-156-bluecut-shmc",
+  "status": "published",
+  "name": "Tròng Kính Đơn Tròng Rocky 1.56 BlueCut UV420 SHMC",
+  "tagline": "Bảo vệ mắt toàn diện trước màn hình kỹ thuật số và ánh sáng mặt trời",
+  "brandId": "rocky-lens",
+  "categoryIds": [
+    "don-trong"
+  ],
+  "technologyIds": [
+    "uv420-bluecut",
+    "nano-shmc"
+  ],
+  "refractiveIndex": "1.56",
+  "images": [
+    "/images/products/category-solution-1.png",
+    "/images/products/lens-shutterstock_2365473935.jpg",
+    "/images/technologies/Artboard_1_4_bluecut.png"
+  ],
+  "featuredImage": "/images/products/category-solution-1.png",
+  "badge": "Bán Chạy Nhất",
+  "shortDescription": "Tròng kính đơn tròng chiết suất tiêu chuẩn 1.56, tích hợp công nghệ monomer ngăn ngừa tia UV420 và ánh sáng xanh có hại, phủ váng siêu kỵ nước Nano SHMC.",
+  "targetAudience": [
+    "Người thường xuyên làm việc trước máy tính, laptop và điện thoại thông minh",
+    "Học sinh, sinh viên và nhân viên văn phòng có độ cận - viễn nhẹ đến trung bình (0.00 đến -4.00 Diop)",
+    "Người muốn tìm kiếm giải pháp tròng kính kinh tế nhưng đầy đủ tính năng bảo vệ quang học"
+  ],
+  "benefits": [
+    {
+      "title": "Ngăn Ánh Sáng Xanh UV420",
+      "description": "Lọc chọn lọc bước sóng 400 - 420nm phát ra từ đèn LED và màn hình thiết bị, giảm khô mỏi mắt rõ rệt.",
+      "icon": "ShieldCheck"
+    },
+    {
+      "title": "Lớp Phủ Váng Dầu Nano SHMC",
+      "description": "Bề mặt trơn láng chống bám nước mưa, hạn chế tối đa bám dính vân tay và bụi bẩn khi sử dụng hàng ngày.",
+      "icon": "Sparkles"
+    },
+    {
+      "title": "Độ Truyền Quang Cao 98.5%",
+      "description": "Cho hình ảnh trong vắt tự nhiên, không bị ố vàng gây sai lệch màu sắc khi thiết kế hoặc nhìn thực tế.",
+      "icon": "Eye"
+    }
+  ],
+  "specifications": {
+    "refractiveIndex": "1.56",
+    "designType": "Spherical / Single Vision (SV)",
+    "sphRange": "-6.00 đến +4.00",
+    "cylRange": "0.00 đến -2.00",
+    "diameter": "65mm / 70mm",
+    "coating": "Nano SHMC (Super Hydrophobic Multi-Coated)",
+    "material": "High Performance Optical Resin NK-55",
+    "abbeValue": "38",
+    "uvProtection": "UV400 & BlueCut UV420",
+    "sku": "RL-156-BC"
+  },
+  "documents": [
+    {
+      "title": "Catalogue & Bảng Thông Số Rocky 1.56 BlueCut",
+      "url": "/documents/Rocky_Lens_Catalogue_2025.pdf",
+      "size": "4.2 MB",
+      "type": "PDF"
+    }
+  ],
+  "relatedArticleIds": [
+    "giai-phap-chong-anh-sang-xanh-uv420",
+    "so-sanh-chiet-suat-trong-kinh"
+  ],
+  "relatedProductIds": [
+    "rocky-160-mr8-aspheric",
+    "rocky-167-ultra-thin-bluecut"
+  ],
+  "seo": {
+    "title": "Tròng Kính Rocky 1.56 BlueCut UV420 SHMC | Rocky Lens",
+    "description": "Tròng đơn tròng Rocky 1.56 BlueCut chống ánh sáng xanh UV420 chính hãng Canada Opticians. Phủ Nano SHMC chống bám nước trơn láng.",
+    "keywords": [
+      "tròng kính 1.56",
+      "rocky lens 1.56",
+      "bluecut uv420",
+      "tròng chống ánh sáng xanh"
+    ]
+  }
+}
