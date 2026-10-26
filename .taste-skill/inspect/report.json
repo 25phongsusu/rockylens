@@ -1,25 +1,27 @@
 {
  "url": "index.html",
- "at": "2026-10-26T09:46:10.212Z",
+ "at": "2026-10-26T09:56:07.027Z",
  "allow": [],
  "viewports": [
   {
    "width": 1440,
    "height": 900,
    "load": "load",
-   "screens": 7,
+   "screens": 9,
    "filled": [
     0.6,
+    0.65,
     0.84,
-    0.58,
-    0.7,
-    0.81,
+    0.76,
+    0.74,
+    0.73,
     1,
-    1
+    0.68,
+    0.81
    ],
    "motion": {
-    "elements": 15,
-    "css": 15,
+    "elements": 16,
+    "css": 16,
     "transitions": 0,
     "scripted": 0,
     "videos": 0,
@@ -31,30 +33,30 @@
      "h": 900
     },
     "page": {
-     "height": 5490,
-     "screens": 6.1,
-     "words": 1273,
-     "img": 13,
+     "height": 8039,
+     "screens": 8.9,
+     "words": 1780,
+     "img": 14,
      "video": 0,
      "canvas": 0,
      "svg": 0,
-     "sections": 6,
+     "sections": 10,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 11,
+     "realPictures": 12,
      "videoCount": 0,
      "uiPictures": 0,
      "pictureSamples": [
       "lens_transparent.png",
+      "event_seminar.jpg",
       "driveshield_night.jpg",
       "sol_anh_sang_xanh.png",
       "sol_doi_mau.png",
       "6.jpg",
       "myopia_defocus_diagram.png",
-      "sol_da_trong.png",
-      "diploma_ontario.png"
+      "sol_da_trong.png"
      ],
      "blendText": 0,
      "sideScrollers": 0,
@@ -113,9 +115,30 @@
       "kind": "heading"
      },
      {
-      "text": "Khám Phá Dòng Tròng Kính",
-      "words": 5,
-      "chars": 24,
+      "text": "Giới Thiệu Doanh Nghiệp",
+      "words": 4,
+      "chars": 23,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.5,
+      "top": 917,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Danh Mục Tròng Kính",
+      "words": 4,
+      "chars": 19,
       "lines": 1,
       "size": 48,
       "vw": 3.3,
@@ -129,7 +152,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.53,
-      "top": 896,
+      "top": 1492,
       "tag": "h2",
       "kind": "heading"
      },
@@ -150,7 +173,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.39,
-      "top": 1388,
+      "top": 1984,
       "tag": "h3",
       "kind": "heading"
      },
@@ -171,13 +194,13 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.39,
-      "top": 1388,
+      "top": 1984,
       "tag": "h3",
       "kind": "heading"
      },
      {
-      "text": "Khoa Học Vật Liệu & Chế Tác",
-      "words": 7,
+      "text": "So Sánh Chiết Suất Vật Liệu",
+      "words": 6,
       "chars": 27,
       "lines": 1,
       "size": 48,
@@ -192,28 +215,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.53,
-      "top": 2282,
-      "tag": "h2",
-      "kind": "heading"
-     },
-     {
-      "text": "So Sánh Đặc Tính Vật Liệu",
-      "words": 6,
-      "chars": 25,
-      "lines": 1,
-      "size": 48,
-      "vw": 3.3,
-      "font": "SF Pro Display",
-      "weight": 900,
-      "tracking": -0.025,
-      "leading": 1,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.53,
-      "top": 2830,
+      "top": 2850,
       "tag": "h2",
       "kind": "heading"
      },
@@ -234,7 +236,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.04,
-      "top": 3018,
+      "top": 3038,
       "tag": "span",
       "kind": "heading"
      },
@@ -255,7 +257,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.04,
-      "top": 3018,
+      "top": 3038,
       "tag": "span",
       "kind": "heading"
      },
@@ -276,7 +278,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.04,
-      "top": 3018,
+      "top": 3038,
       "tag": "span",
       "kind": "heading"
      },
@@ -297,8 +299,113 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.04,
-      "top": 3018,
+      "top": 3038,
       "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Khoa Học Vật Liệu & Chế Tác",
+      "words": 7,
+      "chars": 27,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.53,
+      "top": 3550,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Kiến Thức & Công Nghệ",
+      "words": 5,
+      "chars": 21,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.53,
+      "top": 4098,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "1.74",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.25,
+      "top": 4286,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "UV420",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": 0,
+      "leading": 1,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.25,
+      "top": 4286,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "9H",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.25,
+      "top": 4286,
+      "tag": "div",
       "kind": "heading"
      },
      {
@@ -318,7 +425,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.53,
-      "top": 3530,
+      "top": 4806,
       "tag": "h2",
       "kind": "heading"
      },
@@ -339,18 +446,60 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.5,
-      "top": 4290,
+      "top": 5566,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Đăng Ký Đại Lý & Báo Giá Sỉ",
+      "words": 8,
+      "chars": 27,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.62,
+      "top": 6390,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Liên Hệ & Hỗ Trợ Kỹ Thuật",
+      "words": 7,
+      "chars": 25,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.53,
+      "top": 7159,
       "tag": "h2",
       "kind": "heading"
      }
     ],
     "headingSummary": {
-     "count": 12,
+     "count": 19,
      "maxLines": 1,
      "over2Lines": 0,
      "statements": 0,
-     "centered": 0,
-     "medianWords": 6,
+     "centered": 1,
+     "medianWords": 5,
      "mixedFontHeadings": 0
     },
     "type": {
@@ -379,9 +528,9 @@
       "leading": 1.63,
       "weight": 400,
       "tracking": 0,
-      "contrast": 9.5
+      "contrast": 10.4
      },
-     "measureChars": 75,
+     "measureChars": 81,
      "max": {
       "size": 76,
       "vw": 5.3,
@@ -396,7 +545,7 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.05,
+     "centerShare": 0.07,
      "smallText": 0
     },
     "eyebrows": [],
@@ -421,7 +570,7 @@
       },
       {
        "color": "#f5f5f7",
-       "top": 2202,
+       "top": 1412,
        "hsl": {
         "h": 240,
         "s": 0.11,
@@ -430,7 +579,7 @@
       },
       {
        "color": "#0e253a",
-       "top": 4210,
+       "top": 5486,
        "hsl": {
         "h": 209,
         "s": 0.61,
@@ -439,7 +588,7 @@
       },
       {
        "color": "#071521",
-       "top": 5034,
+       "top": 7583,
        "hsl": {
         "h": 208,
         "s": 0.65,
@@ -450,23 +599,23 @@
      "textColors": [
       {
        "color": "#334155",
-       "share": 0.34
+       "share": 0.35
       },
       {
        "color": "#475569",
-       "share": 0.18
-      },
-      {
-       "color": "#cbd5e1",
-       "share": 0.12
+       "share": 0.2
       },
       {
        "color": "#0e253a",
-       "share": 0.12
+       "share": 0.14
+      },
+      {
+       "color": "#cbd5e1",
+       "share": 0.09
       },
       {
        "color": "#e2e8f0",
-       "share": 0.11
+       "share": 0.08
       }
      ],
      "button": {
@@ -481,7 +630,7 @@
      "lowContrast": []
     },
     "buttons": {
-     "count": 5,
+     "count": 6,
      "inHero": 3,
      "radius": "pill",
      "height": 52,
@@ -490,9 +639,9 @@
      "mono": 0,
      "upper": 0,
      "heroLabels": [
-      "Liên hệ đại lý",
-      "Khám phá 6 dòng tròng kính",
-      "Chính sách đối tác B2B"
+      "Báo giá đại lý",
+      "Khám phá danh mục tròng kính",
+      "Chính sách hợp tác đại lý B2B"
      ]
     },
     "surfaces": {
@@ -508,10 +657,10 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 1,
-     "roundedBoxes": 33,
+     "roundedBoxes": 47,
      "boxRadius": 24,
      "squareMedia": 1,
-     "roundedMedia": 9,
+     "roundedMedia": 10,
      "mediaRadius": 24,
      "textShadow": 0,
      "cardRows": [
@@ -522,34 +671,46 @@
        "top": 583
       },
       {
-       "count": 4,
+       "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 1676
+       "top": 1185
       },
       {
        "count": 4,
        "iconTopped": false,
        "rounded": true,
-       "top": 2446
+       "top": 2272
       },
       {
        "count": 4,
        "iconTopped": false,
        "rounded": true,
-       "top": 2994
+       "top": 3014
+      },
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 3714
       },
       {
        "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 3694
+       "top": 4262
+      },
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 4970
       },
       {
        "count": 4,
        "iconTopped": false,
        "rounded": true,
-       "top": 4558
+       "top": 5834
       }
      ]
     },
@@ -560,7 +721,7 @@
      }
     ],
     "nav": {
-     "links": 7,
+     "links": 8,
      "fixed": true,
      "height": 76,
      "floatingPill": false,
@@ -575,10 +736,10 @@
      "w": 1440,
      "h": 900
     },
-    "pageH": 5490,
+    "pageH": 8039,
     "margins": {
      "left": 73,
-     "right": 88
+     "right": 107
     },
     "sections": [
      {
@@ -586,16 +747,16 @@
       "tag": "section",
       "top": 120,
       "height": 696,
-      "words": 107,
+      "words": 109,
       "media": 1,
-      "middle": 156,
+      "middle": 154,
       "heading": {
        "text": "Quang Học Canada",
        "size": 76,
        "tag": "h1"
       },
       "left": 73,
-      "right": 146,
+      "right": 145,
       "textLeft": 73,
       "textRight": 182,
       "fullBleed": false,
@@ -605,15 +766,38 @@
       "pinned": false
      },
      {
-      "sel": "section#kham-pha.py-20.px-6",
+      "sel": "section#ve-chung-toi.py-20.px-6",
       "tag": "section",
       "top": 816,
-      "height": 1386,
-      "words": 267,
+      "height": 596,
+      "words": 122,
+      "media": 1,
+      "middle": 109,
+      "heading": {
+       "text": "Giới Thiệu Doanh Nghiệp",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 73,
+      "right": 140,
+      "textLeft": 73,
+      "textRight": 149,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#trong-kinh.py-20.px-6",
+      "tag": "section",
+      "top": 1412,
+      "height": 1358,
+      "words": 264,
       "media": 6,
       "middle": 0,
       "heading": {
-       "text": "Khám Phá Dòng Tròng Kính",
+       "text": "Danh Mục Tròng Kính",
        "size": 48,
        "tag": "h2"
       },
@@ -628,9 +812,32 @@
       "pinned": false
      },
      {
-      "sel": "section#khoa-hoc.py-20.px-6",
+      "sel": "section.py-20.px-6",
       "tag": "section",
-      "top": 2202,
+      "top": 2770,
+      "height": 700,
+      "words": 179,
+      "media": 0,
+      "middle": 72,
+      "heading": {
+       "text": "So Sánh Chiết Suất Vật Liệu",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 73,
+      "right": 112,
+      "textLeft": 73,
+      "textRight": 112,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.py-20.px-6",
+      "tag": "section",
+      "top": 3470,
       "height": 548,
       "words": 161,
       "media": 0,
@@ -651,22 +858,22 @@
       "pinned": false
      },
      {
-      "sel": "section#chiet-suat.py-20.px-6",
+      "sel": "section#kham-pha-kien-thuc.py-20.px-6",
       "tag": "section",
-      "top": 2750,
-      "height": 700,
-      "words": 179,
+      "top": 4018,
+      "height": 708,
+      "words": 133,
       "media": 0,
-      "middle": 72,
+      "middle": 90,
       "heading": {
-       "text": "So Sánh Đặc Tính Vật Liệu",
+       "text": "Kiến Thức & Công Nghệ",
        "size": 48,
        "tag": "h2"
       },
       "left": 73,
-      "right": 112,
+      "right": 123,
       "textLeft": 73,
-      "textRight": 112,
+      "textRight": 123,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -674,9 +881,9 @@
       "pinned": false
      },
      {
-      "sel": "section#chung-nhan.py-20.px-6",
+      "sel": "section.py-20.px-6",
       "tag": "section",
-      "top": 3450,
+      "top": 4726,
       "height": 760,
       "words": 106,
       "media": 3,
@@ -697,11 +904,11 @@
       "pinned": false
      },
      {
-      "sel": "section#dai-ly.py-20.px-6",
+      "sel": "section#doi-tac.py-20.px-6",
       "tag": "section",
-      "top": 4210,
+      "top": 5486,
       "height": 824,
-      "words": 191,
+      "words": 193,
       "media": 1,
       "middle": 114,
       "heading": {
@@ -720,11 +927,57 @@
       "pinned": false
      },
      {
+      "sel": "section#bao-gia.py-20.px-6",
+      "tag": "section",
+      "top": 6310,
+      "height": 769,
+      "words": 76,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Đăng Ký Đại Lý & Báo Giá Sỉ",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 279,
+      "right": 294,
+      "textLeft": 279,
+      "textRight": 294,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#lien-he.py-20.px-6",
+      "tag": "section",
+      "top": 7079,
+      "height": 504,
+      "words": 100,
+      "media": 0,
+      "middle": 167,
+      "heading": {
+       "text": "Liên Hệ & Hỗ Trợ Kỹ Thuật",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 73,
+      "right": 217,
+      "textLeft": 73,
+      "textRight": 217,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
       "sel": "footer.bg-[#071521].text-slate-300",
       "tag": "footer",
-      "top": 5034,
+      "top": 7583,
       "height": 456,
-      "words": 148,
+      "words": 156,
       "media": 0,
       "middle": 136,
       "heading": null,
@@ -752,11 +1005,11 @@
     "edges": [
      {
       "x": 73,
-      "n": 13
+      "n": 20
      },
      {
       "x": 93,
-      "n": 10
+      "n": 12
      },
      {
       "x": 423,
@@ -771,37 +1024,37 @@
       "n": 6
      },
      {
+      "x": 534,
+      "n": 5
+     },
+     {
+      "x": 971,
+      "n": 5
+     },
+     {
       "x": 105,
-      "n": 2
+      "n": 3
      },
      {
       "x": 464,
       "n": 2
      },
      {
-      "x": 534,
-      "n": 2
-     },
-     {
       "x": 761,
-      "n": 2
-     },
-     {
-      "x": 971,
       "n": 2
      }
     ],
-    "leftBlocks": 51,
+    "leftBlocks": 67,
     "bodySize": 16,
     "stage": false,
     "explains": true,
     "slivers": [],
-    "voidShare": 0.13,
+    "voidShare": 0.2,
     "voidBox": {
      "x": 0,
      "y": 720,
      "w": 1440,
-     "h": 120
+     "h": 180
     }
    },
    "app": null,
@@ -811,21 +1064,24 @@
    "width": 768,
    "height": 1024,
    "load": "load",
-   "screens": 9,
+   "screens": 12,
    "filled": [
-    0.51,
-    0.81,
-    0.75,
-    0.69,
+    0.59,
+    0.73,
     0.74,
-    0.72,
+    0.79,
+    0.76,
+    0.63,
+    0.83,
+    0.68,
     1,
-    1,
-    1
+    0.73,
+    0.81,
+    0.84
    ],
    "motion": {
-    "elements": 15,
-    "css": 15,
+    "elements": 16,
+    "css": 16,
     "transitions": 0,
     "scripted": 0,
     "videos": 0,
@@ -837,30 +1093,30 @@
      "h": 1024
     },
     "page": {
-     "height": 8322,
-     "screens": 8.1,
-     "words": 1273,
-     "img": 13,
+     "height": 11521,
+     "screens": 11.3,
+     "words": 1763,
+     "img": 14,
      "video": 0,
      "canvas": 0,
      "svg": 0,
-     "sections": 6,
+     "sections": 10,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 11,
+     "realPictures": 12,
      "videoCount": 0,
      "uiPictures": 0,
      "pictureSamples": [
       "lens_transparent.png",
+      "event_seminar.jpg",
       "driveshield_night.jpg",
       "sol_anh_sang_xanh.png",
       "sol_doi_mau.png",
       "6.jpg",
       "myopia_defocus_diagram.png",
-      "sol_da_trong.png",
-      "diploma_ontario.png"
+      "sol_da_trong.png"
      ],
      "blendText": 0,
      "sideScrollers": 0,
@@ -885,7 +1141,7 @@
      "align": "left",
      "position": "center",
      "widthRatio": 0.92,
-     "top": 232,
+     "top": 184,
      "tag": "h1",
      "kind": "heading"
     },
@@ -914,14 +1170,14 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 232,
+      "top": 184,
       "tag": "h1",
       "kind": "heading"
      },
      {
-      "text": "Khám Phá Dòng Tròng Kính",
-      "words": 5,
-      "chars": 24,
+      "text": "Giới Thiệu Doanh Nghiệp",
+      "words": 4,
+      "chars": 23,
       "lines": 1,
       "size": 36,
       "vw": 4.7,
@@ -935,7 +1191,28 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 1474,
+      "top": 1426,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Danh Mục Tròng Kính",
+      "words": 4,
+      "chars": 19,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": -0.025,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 2456,
       "tag": "h2",
       "kind": "heading"
      },
@@ -956,7 +1233,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.83,
-      "top": 1958,
+      "top": 2940,
       "tag": "h3",
       "kind": "heading"
      },
@@ -977,13 +1254,13 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.83,
-      "top": 2518,
+      "top": 3500,
       "tag": "h3",
       "kind": "heading"
      },
      {
-      "text": "Khoa Học Vật Liệu & Chế Tác",
-      "words": 7,
+      "text": "So Sánh Chiết Suất Vật Liệu",
+      "words": 6,
       "chars": 27,
       "lines": 1,
       "size": 36,
@@ -998,28 +1275,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 3778,
-      "tag": "h2",
-      "kind": "heading"
-     },
-     {
-      "text": "So Sánh Đặc Tính Vật Liệu",
-      "words": 6,
-      "chars": 25,
-      "lines": 1,
-      "size": 36,
-      "vw": 4.7,
-      "font": "SF Pro Display",
-      "weight": 900,
-      "tracking": -0.025,
-      "leading": 1.11,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.92,
-      "top": 4518,
+      "top": 4760,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1040,7 +1296,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.08,
-      "top": 4698,
+      "top": 4940,
       "tag": "span",
       "kind": "heading"
      },
@@ -1061,7 +1317,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.08,
-      "top": 4698,
+      "top": 4940,
       "tag": "span",
       "kind": "heading"
      },
@@ -1082,7 +1338,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.08,
-      "top": 5050,
+      "top": 5292,
       "tag": "span",
       "kind": "heading"
      },
@@ -1103,8 +1359,113 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.08,
-      "top": 5050,
+      "top": 5292,
       "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Khoa Học Vật Liệu & Chế Tác",
+      "words": 7,
+      "chars": 27,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": -0.025,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 5780,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Kiến Thức & Công Nghệ",
+      "words": 5,
+      "chars": 21,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": -0.025,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 6520,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "1.74",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 48,
+      "vw": 6.3,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.22,
+      "top": 6700,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "UV420",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 48,
+      "vw": 6.3,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": 0,
+      "leading": 1,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.22,
+      "top": 6700,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "9H",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 48,
+      "vw": 6.3,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.22,
+      "top": 6700,
+      "tag": "div",
       "kind": "heading"
      },
      {
@@ -1124,7 +1485,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 5538,
+      "top": 7344,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1145,18 +1506,60 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 6390,
+      "top": 8196,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Đăng Ký Đại Lý & Báo Giá Sỉ",
+      "words": 8,
+      "chars": 27,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": -0.025,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 9496,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Liên Hệ & Hỗ Trợ Kỹ Thuật",
+      "words": 7,
+      "chars": 25,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": -0.025,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 10257,
       "tag": "h2",
       "kind": "heading"
      }
     ],
     "headingSummary": {
-     "count": 12,
+     "count": 19,
      "maxLines": 1,
      "over2Lines": 0,
      "statements": 0,
-     "centered": 0,
-     "medianWords": 6,
+     "centered": 1,
+     "medianWords": 5,
      "mixedFontHeadings": 0
     },
     "type": {
@@ -1175,9 +1578,10 @@
       24,
       30,
       36,
+      48,
       60
      ],
-     "sizeCount": 7,
+     "sizeCount": 8,
      "notLoaded": [],
      "body": {
       "font": "SF Pro Display",
@@ -1185,9 +1589,9 @@
       "leading": 1.63,
       "weight": 400,
       "tracking": 0,
-      "contrast": 9.5
+      "contrast": 10.4
      },
-     "measureChars": 75,
+     "measureChars": 78,
      "max": {
       "size": 60,
       "vw": 7.8,
@@ -1202,7 +1606,7 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.05,
+     "centerShare": 0.07,
      "smallText": 0
     },
     "eyebrows": [],
@@ -1218,7 +1622,7 @@
      "sectionBgs": [
       {
        "color": "#ffffff",
-       "top": 762,
+       "top": 714,
        "hsl": {
         "h": 0,
         "s": 0,
@@ -1227,7 +1631,7 @@
       },
       {
        "color": "#f5f5f7",
-       "top": 1638,
+       "top": 2376,
        "hsl": {
         "h": 240,
         "s": 0.11,
@@ -1236,7 +1640,7 @@
       },
       {
        "color": "#0e253a",
-       "top": 6310,
+       "top": 8116,
        "hsl": {
         "h": 209,
         "s": 0.61,
@@ -1245,7 +1649,7 @@
       },
       {
        "color": "#071521",
-       "top": 7610,
+       "top": 10809,
        "hsl": {
         "h": 208,
         "s": 0.65,
@@ -1256,23 +1660,23 @@
      "textColors": [
       {
        "color": "#334155",
-       "share": 0.34
+       "share": 0.35
       },
       {
        "color": "#475569",
-       "share": 0.18
-      },
-      {
-       "color": "#cbd5e1",
-       "share": 0.12
+       "share": 0.21
       },
       {
        "color": "#0e253a",
-       "share": 0.12
+       "share": 0.15
+      },
+      {
+       "color": "#cbd5e1",
+       "share": 0.1
       },
       {
        "color": "#e2e8f0",
-       "share": 0.11
+       "share": 0.08
       }
      ],
      "button": {
@@ -1287,8 +1691,8 @@
      "lowContrast": []
     },
     "buttons": {
-     "count": 4,
-     "inHero": 2,
+     "count": 6,
+     "inHero": 3,
      "radius": "pill",
      "height": 52,
      "withShadow": 0,
@@ -1296,8 +1700,9 @@
      "mono": 0,
      "upper": 0,
      "heroLabels": [
-      "Khám phá 6 dòng tròng kính",
-      "Chính sách đối tác B2B"
+      "Báo giá đại lý",
+      "Khám phá danh mục tròng kính",
+      "Chính sách hợp tác đại lý B2B"
      ]
     },
     "surfaces": {
@@ -1313,10 +1718,10 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 1,
-     "roundedBoxes": 33,
+     "roundedBoxes": 47,
      "boxRadius": 24,
      "squareMedia": 1,
-     "roundedMedia": 7,
+     "roundedMedia": 8,
      "mediaRadius": 24,
      "textShadow": 0,
      "cardRows": [
@@ -1324,50 +1729,62 @@
        "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 588
-      },
-      {
-       "count": 4,
-       "iconTopped": false,
-       "rounded": true,
-       "top": 2782
-      },
-      {
-       "count": 4,
-       "iconTopped": false,
-       "rounded": true,
-       "top": 3934
-      },
-      {
-       "count": 4,
-       "iconTopped": false,
-       "rounded": true,
-       "top": 4674
+       "top": 540
       },
       {
        "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 5694
+       "top": 1686
       },
       {
        "count": 4,
        "iconTopped": false,
        "rounded": true,
-       "top": 6650
+       "top": 3764
+      },
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 4916
+      },
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 5936
+      },
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 6676
+      },
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 7500
+      },
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 8456
       }
      ]
     },
     "heroMedia": [
      {
       "type": "img",
-      "ratio": 0.12
+      "ratio": 0.14
      }
     ],
     "nav": {
-     "links": 7,
+     "links": 2,
      "fixed": true,
-     "height": 124,
+     "height": 76,
      "floatingPill": false,
      "blur": true
     },
@@ -1380,37 +1797,18 @@
      "w": 768,
      "h": 1024
     },
-    "pageH": 8322,
+    "pageH": 11521,
     "margins": {
      "left": 24,
      "right": 39
     },
     "sections": [
      {
-      "sel": "header.sticky.top-0",
-      "tag": "header",
-      "top": 44,
-      "height": 124,
-      "words": 23,
-      "media": 0,
-      "middle": 53,
-      "heading": null,
-      "left": 103,
-      "right": 63,
-      "textLeft": 103,
-      "textRight": 63,
-      "fullBleed": false,
-      "footer": false,
-      "hero": true,
-      "continues": false,
-      "pinned": true
-     },
-     {
       "sel": "section.pt-12.sm:pt-16",
       "tag": "section",
-      "top": 168,
+      "top": 120,
       "height": 1226,
-      "words": 107,
+      "words": 109,
       "media": 1,
       "middle": 0,
       "heading": {
@@ -1429,15 +1827,38 @@
       "pinned": false
      },
      {
-      "sel": "section#kham-pha.py-20.px-6",
+      "sel": "section#ve-chung-toi.py-20.px-6",
       "tag": "section",
-      "top": 1394,
+      "top": 1346,
+      "height": 1030,
+      "words": 122,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Giới Thiệu Doanh Nghiệp",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 42,
+      "textLeft": 24,
+      "textRight": 42,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#trong-kinh.py-20.px-6",
+      "tag": "section",
+      "top": 2376,
       "height": 2304,
-      "words": 267,
+      "words": 264,
       "media": 6,
       "middle": 0,
       "heading": {
-       "text": "Khám Phá Dòng Tròng Kính",
+       "text": "Danh Mục Tròng Kính",
        "size": 36,
        "tag": "h2"
       },
@@ -1452,9 +1873,32 @@
       "pinned": false
      },
      {
-      "sel": "section#khoa-hoc.py-20.px-6",
+      "sel": "section.py-20.px-6",
       "tag": "section",
-      "top": 3698,
+      "top": 4680,
+      "height": 1020,
+      "words": 179,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "So Sánh Chiết Suất Vật Liệu",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 56,
+      "textLeft": 24,
+      "textRight": 56,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.py-20.px-6",
+      "tag": "section",
+      "top": 5700,
       "height": 740,
       "words": 161,
       "media": 0,
@@ -1475,22 +1919,22 @@
       "pinned": false
      },
      {
-      "sel": "section#chiet-suat.py-20.px-6",
+      "sel": "section#kham-pha-kien-thuc.py-20.px-6",
       "tag": "section",
-      "top": 4438,
-      "height": 1020,
-      "words": 179,
+      "top": 6440,
+      "height": 824,
+      "words": 133,
       "media": 0,
       "middle": 0,
       "heading": {
-       "text": "So Sánh Đặc Tính Vật Liệu",
-       "size": 36,
-       "tag": "h2"
+       "text": "1.74",
+       "size": 48,
+       "tag": "span"
       },
       "left": 24,
-      "right": 56,
+      "right": 44,
       "textLeft": 24,
-      "textRight": 56,
+      "textRight": 44,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1498,9 +1942,9 @@
       "pinned": false
      },
      {
-      "sel": "section#chung-nhan.py-20.px-6",
+      "sel": "section.py-20.px-6",
       "tag": "section",
-      "top": 5458,
+      "top": 7264,
       "height": 852,
       "words": 106,
       "media": 3,
@@ -1521,11 +1965,11 @@
       "pinned": false
      },
      {
-      "sel": "section#dai-ly.py-20.px-6",
+      "sel": "section#doi-tac.py-20.px-6",
       "tag": "section",
-      "top": 6310,
+      "top": 8116,
       "height": 1300,
-      "words": 191,
+      "words": 193,
       "media": 1,
       "middle": 0,
       "heading": {
@@ -1544,18 +1988,64 @@
       "pinned": false
      },
      {
-      "sel": "footer.bg-[#071521].text-slate-300",
-      "tag": "footer",
-      "top": 7610,
-      "height": 712,
-      "words": 148,
+      "sel": "section#bao-gia.py-20.px-6",
+      "tag": "section",
+      "top": 9416,
+      "height": 761,
+      "words": 76,
       "media": 0,
       "middle": 0,
+      "heading": {
+       "text": "Đăng Ký Đại Lý & Báo Giá Sỉ",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 30,
+      "right": 45,
+      "textLeft": 30,
+      "textRight": 45,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#lien-he.py-20.px-6",
+      "tag": "section",
+      "top": 10177,
+      "height": 632,
+      "words": 100,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Liên Hệ & Hỗ Trợ Kỹ Thuật",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 0,
+      "textLeft": 24,
+      "textRight": -11,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.bg-[#071521].text-slate-300",
+      "tag": "footer",
+      "top": 10809,
+      "height": 712,
+      "words": 156,
+      "media": 0,
+      "middle": 13,
       "heading": null,
       "left": 24,
-      "right": 74,
+      "right": 52,
       "textLeft": 24,
-      "textRight": 74,
+      "textRight": 52,
       "fullBleed": false,
       "footer": true,
       "hero": false,
@@ -1568,38 +2058,38 @@
      {
       "text": "Quang Học Canada",
       "size": 60,
-      "top": 232,
+      "top": 184,
       "firstScreen": true
      }
     ],
     "edgeText": [],
     "edges": [
      {
+      "x": 24,
+      "n": 20
+     },
+     {
       "x": 44,
-      "n": 16
+      "n": 18
      },
      {
       "x": 405,
       "n": 14
      },
      {
-      "x": 24,
-      "n": 13
-     },
-     {
       "x": 56,
-      "n": 4
+      "n": 5
      },
      {
       "x": 294,
-      "n": 2
+      "n": 5
      },
      {
       "x": 539,
-      "n": 2
+      "n": 5
      }
     ],
-    "leftBlocks": 51,
+    "leftBlocks": 67,
     "bodySize": 16,
     "stage": false,
     "explains": true,
@@ -1616,22 +2106,22 @@
    "load": "load",
    "screens": 12,
    "filled": [
-    0.62,
-    0.73,
-    0.84,
-    0.73,
-    0.8,
+    0.64,
+    0.86,
+    0.64,
     0.69,
-    0.54,
+    0.82,
+    0.86,
+    0.85,
     0.8,
-    0.56,
-    0.59,
-    0.91,
-    0.81
+    0.61,
+    0.72,
+    0.61,
+    0.7
    ],
    "motion": {
-    "elements": 15,
-    "css": 15,
+    "elements": 16,
+    "css": 16,
     "transitions": 0,
     "scripted": 0,
     "videos": 0,
@@ -1643,30 +2133,30 @@
      "h": 844
     },
     "page": {
-     "height": 12935,
-     "screens": 15.3,
-     "words": 1247,
-     "img": 13,
+     "height": 18294,
+     "screens": 21.7,
+     "words": 1756,
+     "img": 14,
      "video": 0,
      "canvas": 0,
      "svg": 0,
-     "sections": 6,
+     "sections": 10,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 11,
+     "realPictures": 12,
      "videoCount": 0,
      "uiPictures": 0,
      "pictureSamples": [
       "lens_transparent.png",
+      "event_seminar.jpg",
       "driveshield_night.jpg",
       "sol_anh_sang_xanh.png",
       "sol_doi_mau.png",
       "6.jpg",
       "myopia_defocus_diagram.png",
-      "sol_da_trong.png",
-      "diploma_ontario.png"
+      "sol_da_trong.png"
      ],
      "blendText": 0,
      "sideScrollers": 0,
@@ -1739,8 +2229,8 @@
       "italic": false,
       "mono": false,
       "align": "left",
-      "position": "left",
-      "widthRatio": 0.16,
+      "position": "center",
+      "widthRatio": 0.77,
       "top": 747,
       "tag": "div",
       "kind": "heading"
@@ -1761,8 +2251,8 @@
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 0.16,
-      "top": 747,
+      "widthRatio": 0.77,
+      "top": 889,
       "tag": "div",
       "kind": "heading"
      },
@@ -1770,7 +2260,7 @@
       "text": "18 Lớp",
       "words": 2,
       "chars": 6,
-      "lines": 2,
+      "lines": 1,
       "size": 24,
       "vw": 6.2,
       "font": "SF Pro Display",
@@ -1781,17 +2271,17 @@
       "italic": false,
       "mono": false,
       "align": "left",
-      "position": "right",
-      "widthRatio": 0.16,
-      "top": 747,
+      "position": "center",
+      "widthRatio": 0.77,
+      "top": 1031,
       "tag": "div",
       "kind": "heading"
      },
      {
-      "text": "Khám Phá Dòng Tròng Kính",
-      "words": 5,
-      "chars": 24,
-      "lines": 2,
+      "text": "Giới Thiệu Doanh Nghiệp",
+      "words": 4,
+      "chars": 23,
+      "lines": 1,
       "size": 30,
       "vw": 7.7,
       "font": "SF Pro Display",
@@ -1804,7 +2294,91 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 1765,
+      "top": 1921,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "500+",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.77,
+      "top": 2295,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "24 Giờ",
+      "words": 2,
+      "chars": 6,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.77,
+      "top": 2437,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "1 Đổi 1",
+      "words": 3,
+      "chars": 7,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.77,
+      "top": 2579,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Danh Mục Tròng Kính",
+      "words": 4,
+      "chars": 19,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 3353,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1825,7 +2399,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.71,
-      "top": 2309,
+      "top": 3861,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1846,13 +2420,13 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.71,
-      "top": 2997,
+      "top": 4549,
       "tag": "h3",
       "kind": "heading"
      },
      {
-      "text": "Khoa Học Vật Liệu & Chế Tác",
-      "words": 7,
+      "text": "So Sánh Chiết Suất Vật Liệu",
+      "words": 6,
       "chars": 27,
       "lines": 2,
       "size": 30,
@@ -1867,28 +2441,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 5221,
-      "tag": "h2",
-      "kind": "heading"
-     },
-     {
-      "text": "So Sánh Đặc Tính Vật Liệu",
-      "words": 6,
-      "chars": 25,
-      "lines": 2,
-      "size": 30,
-      "vw": 7.7,
-      "font": "SF Pro Display",
-      "weight": 900,
-      "tracking": -0.025,
-      "leading": 1.2,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.88,
-      "top": 6469,
+      "top": 6773,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1909,7 +2462,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.16,
-      "top": 6709,
+      "top": 7013,
       "tag": "span",
       "kind": "heading"
      },
@@ -1930,7 +2483,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.16,
-      "top": 7061,
+      "top": 7365,
       "tag": "span",
       "kind": "heading"
      },
@@ -1951,7 +2504,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.15,
-      "top": 7413,
+      "top": 7717,
       "tag": "span",
       "kind": "heading"
      },
@@ -1972,8 +2525,113 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.15,
-      "top": 7765,
+      "top": 8069,
       "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Khoa Học Vật Liệu & Chế Tác",
+      "words": 7,
+      "chars": 27,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 8557,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Kiến Thức & Công Nghệ",
+      "words": 5,
+      "chars": 21,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 9805,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "1.74",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 48,
+      "vw": 12.3,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 10009,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "UV420",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 48,
+      "vw": 12.3,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": 0,
+      "leading": 1,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 10449,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "9H",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 48,
+      "vw": 12.3,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 10889,
+      "tag": "div",
       "kind": "heading"
      },
      {
@@ -1993,7 +2651,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 8253,
+      "top": 11433,
       "tag": "h2",
       "kind": "heading"
      },
@@ -2014,18 +2672,123 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 10053,
+      "top": 13233,
       "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Đăng Ký Đại Lý & Báo Giá Sỉ",
+      "words": 8,
+      "chars": 27,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 15015,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Liên Hệ & Hỗ Trợ Kỹ Thuật",
+      "words": 7,
+      "chars": 25,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 16080,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "0933 102 653",
+      "words": 3,
+      "chars": 12,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.71,
+      "top": 16404,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "Zalo 0933 102 653",
+      "words": 4,
+      "chars": 17,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.71,
+      "top": 16644,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "info@rockylens.com",
+      "words": 1,
+      "chars": 18,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.71,
+      "top": 16884,
+      "tag": "a",
       "kind": "heading"
      }
     ],
     "headingSummary": {
-     "count": 15,
+     "count": 28,
      "maxLines": 2,
      "over2Lines": 0,
      "statements": 0,
-     "centered": 0,
-     "medianWords": 5,
+     "centered": 1,
+     "medianWords": 3,
      "mixedFontHeadings": 0
     },
     "type": {
@@ -2070,7 +2833,7 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.05,
+     "centerShare": 0.07,
      "smallText": 0
     },
     "eyebrows": [],
@@ -2086,7 +2849,7 @@
      "sectionBgs": [
       {
        "color": "#ffffff",
-       "top": 1029,
+       "top": 1185,
        "hsl": {
         "h": 0,
         "s": 0,
@@ -2095,7 +2858,7 @@
       },
       {
        "color": "#f5f5f7",
-       "top": 1989,
+       "top": 2733,
        "hsl": {
         "h": 240,
         "s": 0.11,
@@ -2104,7 +2867,7 @@
       },
       {
        "color": "#0e253a",
-       "top": 9973,
+       "top": 13153,
        "hsl": {
         "h": 209,
         "s": 0.61,
@@ -2113,7 +2876,7 @@
       },
       {
        "color": "#163652",
-       "top": 11215,
+       "top": 14395,
        "hsl": {
         "h": 208,
         "s": 0.58,
@@ -2122,7 +2885,7 @@
       },
       {
        "color": "#071521",
-       "top": 11755,
+       "top": 17064,
        "hsl": {
         "h": 208,
         "s": 0.65,
@@ -2137,19 +2900,19 @@
       },
       {
        "color": "#475569",
-       "share": 0.18
+       "share": 0.21
       },
       {
        "color": "#0e253a",
-       "share": 0.12
+       "share": 0.15
       },
       {
        "color": "#cbd5e1",
-       "share": 0.12
+       "share": 0.09
       },
       {
        "color": "#e2e8f0",
-       "share": 0.11
+       "share": 0.08
       }
      ],
      "button": {
@@ -2164,7 +2927,7 @@
      "lowContrast": []
     },
     "buttons": {
-     "count": 5,
+     "count": 6,
      "inHero": 3,
      "radius": "pill",
      "height": 52,
@@ -2173,9 +2936,9 @@
      "mono": 0,
      "upper": 0,
      "heroLabels": [
-      "Liên hệ đại lý",
-      "Khám phá 6 dòng tròng kính",
-      "Chính sách đối tác B2B"
+      "Báo giá đại lý",
+      "Khám phá danh mục tròng kính",
+      "Chính sách hợp tác đại lý B2B"
      ]
     },
     "surfaces": {
@@ -2191,42 +2954,60 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 1,
-     "roundedBoxes": 30,
+     "roundedBoxes": 48,
      "boxRadius": 24,
      "squareMedia": 1,
-     "roundedMedia": 9,
+     "roundedMedia": 10,
      "mediaRadius": 24,
      "textShadow": 0,
      "cardRows": [
       {
-       "count": 4,
+       "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 3389
-      },
-      {
-       "count": 4,
-       "iconTopped": false,
-       "rounded": true,
-       "top": 5437
-      },
-      {
-       "count": 4,
-       "iconTopped": false,
-       "rounded": true,
-       "top": 6685
+       "top": 727
       },
       {
        "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 8497
+       "top": 2275
       },
       {
        "count": 4,
        "iconTopped": false,
        "rounded": true,
-       "top": 10383
+       "top": 4941
+      },
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 6989
+      },
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 8773
+      },
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 9985
+      },
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 11677
+      },
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 13563
       }
      ]
     },
@@ -2247,7 +3028,7 @@
      "w": 390,
      "h": 844
     },
-    "pageH": 12935,
+    "pageH": 18294,
     "margins": {
      "left": 24,
      "right": 24
@@ -2257,8 +3038,8 @@
       "sel": "section.pt-12.sm:pt-16",
       "tag": "section",
       "top": 144,
-      "height": 1541,
-      "words": 107,
+      "height": 1697,
+      "words": 109,
       "media": 1,
       "middle": 0,
       "heading": {
@@ -2277,15 +3058,38 @@
       "pinned": false
      },
      {
-      "sel": "section#kham-pha.py-20.px-6",
+      "sel": "section#ve-chung-toi.py-20.px-6",
       "tag": "section",
-      "top": 1685,
-      "height": 3456,
-      "words": 267,
+      "top": 1841,
+      "height": 1432,
+      "words": 122,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Giới Thiệu Doanh Nghiệp",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 25,
+      "textLeft": 24,
+      "textRight": 25,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#trong-kinh.py-20.px-6",
+      "tag": "section",
+      "top": 3273,
+      "height": 3420,
+      "words": 264,
       "media": 6,
       "middle": 0,
       "heading": {
-       "text": "Khám Phá Dòng Tròng Kính",
+       "text": "Danh Mục Tròng Kính",
        "size": 30,
        "tag": "h2"
       },
@@ -2300,9 +3104,32 @@
       "pinned": false
      },
      {
-      "sel": "section#khoa-hoc.py-20.px-6",
+      "sel": "section.py-20.px-6",
       "tag": "section",
-      "top": 5141,
+      "top": 6693,
+      "height": 1784,
+      "words": 179,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "So Sánh Chiết Suất Vật Liệu",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 36,
+      "textLeft": 24,
+      "textRight": 36,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.py-20.px-6",
+      "tag": "section",
+      "top": 8477,
       "height": 1248,
       "words": 161,
       "media": 0,
@@ -2323,22 +3150,22 @@
       "pinned": false
      },
      {
-      "sel": "section#chiet-suat.py-20.px-6",
+      "sel": "section#kham-pha-kien-thuc.py-20.px-6",
       "tag": "section",
-      "top": 6389,
-      "height": 1784,
-      "words": 179,
+      "top": 9725,
+      "height": 1628,
+      "words": 133,
       "media": 0,
       "middle": 0,
       "heading": {
-       "text": "So Sánh Đặc Tính Vật Liệu",
-       "size": 30,
-       "tag": "h2"
+       "text": "1.74",
+       "size": 48,
+       "tag": "span"
       },
       "left": 24,
-      "right": 36,
+      "right": 32,
       "textLeft": 24,
-      "textRight": 36,
+      "textRight": 32,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -2346,9 +3173,9 @@
       "pinned": false
      },
      {
-      "sel": "section#chung-nhan.py-20.px-6",
+      "sel": "section.py-20.px-6",
       "tag": "section",
-      "top": 8173,
+      "top": 11353,
       "height": 1800,
       "words": 106,
       "media": 3,
@@ -2369,11 +3196,11 @@
       "pinned": false
      },
      {
-      "sel": "section#dai-ly.py-20.px-6",
+      "sel": "section#doi-tac.py-20.px-6",
       "tag": "section",
-      "top": 9973,
+      "top": 13153,
       "height": 1782,
-      "words": 191,
+      "words": 193,
       "media": 1,
       "middle": 0,
       "heading": {
@@ -2392,18 +3219,64 @@
       "pinned": false
      },
      {
+      "sel": "section#bao-gia.py-20.px-6",
+      "tag": "section",
+      "top": 14935,
+      "height": 1065,
+      "words": 76,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Đăng Ký Đại Lý & Báo Giá Sỉ",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 30,
+      "right": 30,
+      "textLeft": 30,
+      "textRight": 30,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#lien-he.py-20.px-6",
+      "tag": "section",
+      "top": 16000,
+      "height": 1064,
+      "words": 100,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Liên Hệ & Hỗ Trợ Kỹ Thuật",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 38,
+      "textLeft": 24,
+      "textRight": 38,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
       "sel": "footer.bg-[#071521].text-slate-300",
       "tag": "footer",
-      "top": 11755,
-      "height": 1180,
-      "words": 148,
+      "top": 17064,
+      "height": 1230,
+      "words": 156,
       "media": 0,
       "middle": 0,
       "heading": null,
       "left": 24,
-      "right": 30,
+      "right": 25,
       "textLeft": 24,
-      "textRight": 30,
+      "textRight": 25,
       "fullBleed": false,
       "footer": true,
       "hero": false,
@@ -2424,18 +3297,18 @@
     "edges": [
      {
       "x": 44,
-      "n": 34
+      "n": 40
      },
      {
       "x": 24,
-      "n": 13
+      "n": 20
      },
      {
       "x": 56,
-      "n": 4
+      "n": 7
      }
     ],
-    "leftBlocks": 51,
+    "leftBlocks": 67,
     "bodySize": 16,
     "stage": false,
     "explains": true,
@@ -2452,7 +3325,7 @@
    "level": "WARN",
    "id": "card-rows",
    "width": 1440,
-   "message": "6 rows of identical boxed cards.",
+   "message": "8 rows of identical boxed cards.",
    "fix": "Vary the composition; not every section is a card grid.",
    "alsoAt": [
     768,
@@ -2468,17 +3341,17 @@
   },
   {
    "level": "WARN",
-   "id": "ragged-edges",
+   "id": "off-centre",
    "width": 1440,
-   "message": "Left-aligned text starts at 10 different lines (73px, 93px, 423px, 749px, 1075px, 105px, 464px); the three most used hold only 57% of it.",
-   "fix": "Pick two or three anchor lines from the grid and start every heading and paragraph on one of them."
+   "message": "The margins differ: 73px on the left, 107px on the right, at 1440px.",
+   "fix": "Put the navigation and the content on one pair of margins; check for padding on one side only, a scrollbar gutter, or a header on another inset than the page."
   },
   {
    "level": "WARN",
-   "id": "still-page",
+   "id": "ragged-edges",
    "width": 1440,
-   "message": "Little motion: 15 element(s) moved while the page loaded and scrolled.",
-   "fix": "Give every section an entrance for its parts (not one fade of the whole block) and add one moving picture: a looping clip or a slow move on a photograph."
+   "message": "Left-aligned text starts at 10 different lines (73px, 93px, 423px, 749px, 1075px, 534px, 971px); the three most used hold only 57% of it.",
+   "fix": "Pick two or three anchor lines from the grid and start every heading and paragraph on one of them."
   }
  ],
  "images": [
@@ -2488,7 +3361,8 @@
    "fold": "C:\\Users\\phong\\Desktop\\Rocky\\.taste-skill\\inspect\\desktop-fold.jpg",
    "pages": [
     "C:\\Users\\phong\\Desktop\\Rocky\\.taste-skill\\inspect\\desktop-page-01.jpg",
-    "C:\\Users\\phong\\Desktop\\Rocky\\.taste-skill\\inspect\\desktop-page-02.jpg"
+    "C:\\Users\\phong\\Desktop\\Rocky\\.taste-skill\\inspect\\desktop-page-02.jpg",
+    "C:\\Users\\phong\\Desktop\\Rocky\\.taste-skill\\inspect\\desktop-page-03.jpg"
    ],
    "film": []
   },
