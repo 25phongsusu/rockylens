@@ -4,6 +4,9 @@ Website thương hiệu, giới thiệu năng lực phân phối và catalogue t
 
 Dự án được xây dựng theo chuẩn **MASTER PROMPT V3**, lấy định hướng **B2B-first** (cung ứng cửa hàng kính mắt, phòng khám nhãn khoa, chuỗi bán lẻ) song song với khu vực **Kiến thức B2C** (giáo dục thị trường, hướng dẫn chọn tròng cho người tiêu dùng).
 
+> 🤖 **Dành cho AI Agent & Developer:** Trước khi cập nhật hoặc chỉnh sửa dự án, hãy đọc kỹ tài liệu:  
+> 👉 [**AI_AGENT_INSTRUCTIONS.md**](AI_AGENT_INSTRUCTIONS.md) (Quy tắc bất biến, cấu trúc dữ liệu, cách thêm sản phẩm/bài viết và quy trình kiểm thử).
+
 ---
 
 ## 1. Công Nghệ Sử Dụng (Tech Stack)
