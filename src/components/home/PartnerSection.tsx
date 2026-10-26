@@ -1,141 +1,134 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowRight, CheckCircle2, Factory, Headphones, TrendingUp, FileSpreadsheet, Building2, ShieldCheck } from 'lucide-react';
-import SectionHeading from '@/components/shared/SectionHeading';
+import { ArrowRight, CheckCircle2, Factory, Headphones, TrendingUp, Building2, ShieldCheck, Download } from 'lucide-react';
 import { siteConfig } from '@/config/site';
 
 const partnerValues = [
   {
     icon: <Factory className="w-5 h-5 text-[#0B7B8A]" />,
-    title: 'Hệ Thống Lab RX Kỹ Thuật Số',
-    description: 'Chủ động gia công độ khó, độ loạn cao và đa tròng Freeform với thời gian hoàn thiện chỉ từ 24 - 48 giờ.',
+    title: 'Phôi Tròng Sẵn Kho Giao 2H',
+    description: 'Duy trì hơn 200.000 cặp phôi đủ dải độ từ 0.00 đến -16.00D tại 3 tổng kho (Hà Nội, Đà Nẵng, TP.HCM). Giao hỏa tốc 2 giờ nội thành.',
   },
   {
-    icon: <TrendingUp className="w-5 h-5 text-[#D97706]" />,
-    title: 'Biên Độ Chiết Khấu Hấp Dẫn',
-    description: 'Chính sách đại lý linh hoạt theo bậc doanh số, bảo vệ vùng thị trường và hỗ trợ công nợ minh bạch.',
+    icon: <TrendingUp className="w-5 h-5 text-teal-600" />,
+    title: 'Phòng Lab Freeform KTS 24H',
+    description: 'Gia công đơn kính thuốc theo đơn bác sĩ trên hệ máy Schneider (Đức), xử lý chuẩn xác độ khó, độ lệch lớn và hoàn thiện trả đơn trong 24 giờ.',
   },
   {
-    icon: <Building2 className="w-5 h-5 text-teal-600" />,
-    title: 'Trọn Bộ POSM & Khay Trưng Bày',
-    description: 'Cung cấp kệ mica cao cấp, khay demo đổi màu nhanh, đèn test ánh sáng xanh UV420 và catalogue in màu.',
+    icon: <Building2 className="w-5 h-5 text-amber-600" />,
+    title: 'Tài Trợ 100% Kệ Trưng Bày LED',
+    description: 'Cung cấp miễn phí tủ trưng bày Rocky LED cao cấp, máy đo UV420 và đèn thử đổi màu laser, gia tăng uy tín điểm bán lập tức.',
   },
   {
-    icon: <Headphones className="w-5 h-5 text-indigo-600" />,
-    title: 'Hỗ Trợ Đào Tạo Kỹ Thuật Bác Sĩ & KTV',
-    description: 'Tập huấn kỹ năng tư vấn đa tròng, đo khoảng cách đồng tử PD, ráp kính gọng khoan không nứt mẻ.',
+    icon: <Headphones className="w-5 h-5 text-slate-800" />,
+    title: 'Chính Sách Luân Chuyển Tồn Kho',
+    description: 'Đổi trả các số độ chậm bán trong 90 ngày. Bảo hiểm đổi độ đa tròng miễn phí trong 30 ngày cho khách hàng nếu khó thích nghi.',
   },
 ];
 
 export default function PartnerSection() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white border-b border-slate-200/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          {/* Left Column: Values */}
+          
+          {/* Left Column: Values & Executive Pillars */}
           <div className="lg:col-span-7 space-y-6">
             <div>
-              <span className="inline-block text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-3 bg-teal-50 text-[#0B7B8A] border border-teal-200">
-                Giải Pháp Doanh Nghiệp B2B
+              <span className="inline-block text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full liquid-pill text-[#0B7B8A] mb-3">
+                Giải Pháp Cung Ứng &amp; Lab RX B2B
               </span>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
-                Đồng Hành Cùng Các Cửa Hàng & Chuỗi Kính Mắt Toàn Quốc
+                Đồng Hành Phát Triển Cùng Các Cửa Hàng &amp; Phòng Khám Khúc Xạ
               </h2>
-              <p className="mt-4 text-slate-600 text-sm sm:text-base leading-relaxed">
-                Rocky Lens thiết lập mạng lưới cung ứng tròng kính thuốc ổn định, cam kết chuẩn xác quang sai từng độ cầu và hỗ trợ tối đa doanh thu cho đối tác quang học.
+              <p className="mt-3 text-slate-600 text-sm sm:text-base leading-relaxed">
+                Rocky Lens thiết lập giải pháp cung ứng tròng kính thuốc ổn định, cam kết chuẩn xác quang sai từng độ cầu và tối ưu hiệu quả vận hành cho đối tác khúc xạ.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 pt-2">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1">
               {partnerValues.map((val, idx) => (
                 <div
                   key={idx}
-                  className="p-4 rounded-xl border border-slate-200 bg-slate-50/60 hover:bg-white hover:border-teal-300 transition-all"
+                  className="p-5 rounded-2xl liquid-card flex flex-col justify-between"
                 >
-                  <div className="w-9 h-9 rounded-lg bg-white border border-slate-200 flex items-center justify-center mb-3 shadow-xs">
-                    {val.icon}
+                  <div>
+                    <div className="w-10 h-10 rounded-xl bg-white border border-slate-200 flex items-center justify-center mb-3 shadow-xs">
+                      {val.icon}
+                    </div>
+                    <h3 className="text-sm font-bold text-slate-900 mb-1.5">{val.title}</h3>
+                    <p className="text-xs text-slate-600 leading-relaxed">{val.description}</p>
                   </div>
-                  <h3 className="text-sm font-bold text-slate-900 mb-1">{val.title}</h3>
-                  <p className="text-xs text-slate-600 leading-relaxed">{val.description}</p>
                 </div>
               ))}
             </div>
 
-            <div className="pt-4 flex flex-wrap items-center gap-4">
+            <div className="pt-2 flex flex-wrap items-center gap-3.5">
               <Link
                 href="/danh-cho-doi-tac/"
-                className="inline-flex items-center space-x-2 px-6 py-3.5 rounded-xl text-sm font-bold bg-[#0B7B8A] hover:bg-[#096370] text-white shadow-md transition-all"
+                className="liquid-btn-primary px-6 py-3 text-xs sm:text-sm font-bold shadow-md flex items-center space-x-2"
               >
-                <span>Tìm Hiểu Chính Sách Hợp Tác B2B</span>
+                <span>Xem Chi Tiết Chính Sách B2B</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <a
                 href={siteConfig.zalo.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center space-x-2 px-6 py-3.5 rounded-xl text-sm font-semibold bg-slate-100 hover:bg-slate-200 text-slate-800 transition-all"
+                className="liquid-btn-secondary px-5 py-3 text-xs sm:text-sm font-bold shadow-xs hover:shadow"
               >
-                <span>Tư Vấn Zalo Đại Lý</span>
+                <span>Tư Vấn Zalo Đại Lý (24/7)</span>
               </a>
             </div>
           </div>
 
-          {/* Right Column: Visual Box */}
+          {/* Right Column: Visual Box with Real Store Showcase */}
           <div className="lg:col-span-5">
-            <div className="bg-gradient-to-br from-[#050E10] to-[#0A1B22] rounded-3xl p-6 text-white relative overflow-hidden shadow-2xl border border-slate-800">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-[#0B7B8A]/20 rounded-full blur-3xl pointer-events-none" />
+            <div className="liquid-panel rounded-[32px] p-6 border border-white/95 shadow-xl relative overflow-hidden">
+              <div className="relative aspect-4/3 rounded-2xl overflow-hidden mb-5">
+                <Image
+                  src="/images/real/rocky_store_showcase.jpg"
+                  alt="Tủ trưng bày Rocky Lens tại cửa hàng"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 400px"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent" />
+                <span className="absolute bottom-3 left-3 text-white text-xs font-bold font-rocky-condensed">
+                  Tài Trợ 100% Điểm Bán &bull; Tủ LED &bull; Bộ Test UV
+                </span>
+              </div>
 
-              <div className="relative z-10 space-y-6">
-                <div className="flex items-center justify-between border-b border-slate-800 pb-4">
-                  <div>
-                    <div className="text-xs text-teal-400 font-bold uppercase tracking-wider">Mạng Lưới Đối Tác</div>
-                    <div className="text-lg font-bold text-white">Canada Opticians Network</div>
-                  </div>
-                  <ShieldCheck className="w-6 h-6 text-[#D97706]" />
+              <div className="space-y-2.5 text-xs text-slate-700">
+                <div className="flex items-center space-x-2 font-semibold">
+                  <CheckCircle2 className="w-4 h-4 text-[#0B7B8A] shrink-0" />
+                  <span>Sẵn kho hơn 200.000 cặp tròng tại Hà Nội, Đà Nẵng, TP.HCM</span>
                 </div>
+                <div className="flex items-center space-x-2 font-semibold">
+                  <CheckCircle2 className="w-4 h-4 text-[#0B7B8A] shrink-0" />
+                  <span>Phòng Lab Freeform RX trả đơn nhanh trong 24 giờ</span>
+                </div>
+                <div className="flex items-center space-x-2 font-semibold">
+                  <CheckCircle2 className="w-4 h-4 text-[#0B7B8A] shrink-0" />
+                  <span>Chính sách đổi trả số độ chậm bán trong 90 ngày</span>
+                </div>
+                <div className="flex items-center space-x-2 font-semibold">
+                  <CheckCircle2 className="w-4 h-4 text-[#0B7B8A] shrink-0" />
+                  <span>Bảo hành điện tử QR chính hãng 12 - 24 tháng 1 đổi 1</span>
+                </div>
+              </div>
 
-                <div className="space-y-3 text-xs text-slate-300">
-                  <div className="flex items-center space-x-2">
-                    <CheckCircle2 className="w-4 h-4 text-teal-400 shrink-0" />
-                    <span>Hơn 500+ đại lý và phòng khám khúc xạ hợp tác</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <CheckCircle2 className="w-4 h-4 text-teal-400 shrink-0" />
-                    <span>Kho vận trung tâm tại TP.HCM & Hà Nội giao nhanh</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <CheckCircle2 className="w-4 h-4 text-teal-400 shrink-0" />
-                    <span>Gia công phay mặt sau Freeform chuẩn xác đến 0.01D</span>
-                  </div>
-                </div>
-
-                {/* Partner Logo Marquee / Grid Sample */}
-                <div className="pt-2">
-                  <div className="text-[11px] text-slate-400 mb-3 font-semibold uppercase tracking-wider">
-                    Đối tác chuỗi bệnh viện & nhãn khoa
-                  </div>
-                  <div className="grid grid-cols-3 gap-2">
-                    {[1, 2, 3, 4, 5, 6].map((i) => (
-                      <div
-                        key={i}
-                        className="h-12 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center p-2"
-                      >
-                        <Image
-                          src={`/images/brands/partner_1.png`}
-                          alt={`Đối tác Rocky Lens ${i}`}
-                          width={80}
-                          height={30}
-                          className="object-contain filter grayscale invert opacity-70 hover:opacity-100 transition-opacity"
-                        />
-                      </div>
-                    ))}
-                  </div>
-                </div>
+              <div className="mt-5 pt-4 border-t border-slate-200/80 flex items-center justify-between text-xs">
+                <span className="text-slate-500">Hotline B2B: <strong className="text-slate-900">{siteConfig.phones.office}</strong></span>
+                <span className="text-[#0B7B8A] font-bold">Clearly Vietnam Co., LTD</span>
               </div>
             </div>
           </div>
+
         </div>
+
       </div>
     </section>
   );

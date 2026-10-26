@@ -1,102 +1,132 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowRight, ShieldCheck, Award, Eye, Sparkles } from 'lucide-react';
-import { siteConfig } from '@/config/site';
+import { ArrowRight, ShieldCheck, Award, Eye, Sparkles, ChevronDown } from 'lucide-react';
 
 export default function HeroSection() {
   return (
-    <section className="relative bg-gradient-to-br from-[#050E10] via-[#081C24] to-[#0A2631] text-white overflow-hidden py-16 sm:py-24 lg:py-28">
-      {/* Background Optical Accent Gradients */}
-      <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-[#0B7B8A]/15 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-0 left-10 w-96 h-96 bg-[#D97706]/10 rounded-full blur-[100px] pointer-events-none" />
+    <section className="relative overflow-hidden py-16 sm:py-24 lg:py-28 bg-[#F5F5F7] text-slate-800">
+      {/* Apple Liquid Caustic Light Orbs */}
+      <div className="absolute -top-32 -left-32 w-[600px] h-[600px] bg-gradient-to-tr from-teal-200/40 via-cyan-100/30 to-sky-200/40 rounded-full blur-[100px] liquid-morph-1 pointer-events-none" />
+      <div className="absolute top-1/4 -right-32 w-[550px] h-[550px] bg-gradient-to-bl from-teal-100/35 via-cyan-100/30 to-blue-100/30 rounded-full blur-[110px] liquid-morph-2 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-          {/* Left Column: Positioning & CTAs */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          {/* Left Column: Product Discovery Journey Hero Narrative */}
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
-            {/* Tagline Badge */}
-            <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-slate-800/80 border border-teal-500/30 text-teal-300 text-xs font-semibold backdrop-blur-xs">
-              <Sparkles className="w-3.5 h-3.5 text-[#D97706]" />
-              <span>Tiêu Chuẩn Quang Học Canada Opticians</span>
+            
+            {/* Apple-style Capsule Badge */}
+            <div className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full liquid-pill text-[#0B7B8A] text-xs font-bold shadow-xs">
+              <span className="w-2 h-2 rounded-full bg-[#0B7B8A]" />
+              <span className="tracking-wide uppercase font-semibold">Thương Hiệu Tròng Kính Canada Opticians</span>
             </div>
 
-            {/* Main Headline */}
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black tracking-tight leading-[1.15]">
-              GIẢI PHÁP TRÒNG KÍNH CHO <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-teal-100 to-amber-200">TẦM NHÌN HIỆN ĐẠI</span>
+            {/* Main Headline (Discovery & Visual Clarity) */}
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.12] text-slate-900 uppercase">
+              Tầm Nhìn Thuần Khiết. <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0B7B8A] to-teal-600">Nghệ Thuật Quang Học.</span>
             </h1>
 
-            {/* Subheadline */}
-            <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              Khám phá các dòng tròng kính kỹ thuật số và công nghệ quang học tiên tiến, đồng thời kết nối giải pháp sản phẩm và dịch vụ Lab RX chuyên nghiệp dành cho đối tác ngành mắt kính.
+            {/* Subheadline (Job-to-be-done for the wearer) */}
+            <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
+              Khám phá thế hệ tròng kính kỹ thuật số chế tác từ phôi monomer Mitsui Nhật Bản. Chuẩn xác từng độ cầu, siêu mỏng nhẹ và bảo vệ thị lực toàn diện trong mọi khoảnh khắc sống.
             </p>
 
-            {/* Dual CTAs (B2C & B2B) */}
-            <div className="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-4">
+            {/* 3 Apple Liquid Spec Cards */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 text-left">
+              <div className="p-4 rounded-2xl liquid-card">
+                <div className="text-xs font-bold text-[#0B7B8A] uppercase">Mitsui Monomer MR™</div>
+                <div className="text-sm font-black text-slate-900 mt-1">Trong Suốt 99.8%</div>
+                <div className="text-[11px] text-slate-500 mt-0.5">Không quang sai màu, dẻo dai cơ học</div>
+              </div>
+
+              <div className="p-4 rounded-2xl liquid-card">
+                <div className="text-xs font-bold text-teal-700 uppercase">Nano Sapphire 9H</div>
+                <div className="text-sm font-black text-slate-900 mt-1">Trượt Nước &gt;115°</div>
+                <div className="text-[11px] text-slate-500 mt-0.5">Kháng trầy xước, không đọng nước mưa</div>
+              </div>
+
+              <div className="p-4 rounded-2xl liquid-card">
+                <div className="text-xs font-bold text-slate-800 uppercase">CanRx Freeform 4K</div>
+                <div className="text-sm font-black text-slate-900 mt-1">Sai Số &lt; 0.01 Diop</div>
+                <div className="text-[11px] text-slate-500 mt-0.5">Gia công kỹ thuật số cá nhân hóa</div>
+              </div>
+            </div>
+
+            {/* Action Buttons (Product Exploration First) */}
+            <div className="pt-3 flex flex-wrap items-center justify-center lg:justify-start gap-3.5">
               <Link
                 href="/trong-kinh/"
-                className="inline-flex items-center space-x-2.5 px-6 py-3.5 rounded-xl text-sm font-bold bg-[#0B7B8A] hover:bg-[#096370] text-white shadow-lg shadow-[#0B7B8A]/30 transition-all transform hover:-translate-y-0.5"
+                className="liquid-btn-primary px-7 py-3.5 text-xs sm:text-sm font-bold shadow-md flex items-center space-x-2"
               >
-                <span>Khám Phá Sản Phẩm</span>
+                <span>Khám Phá Các Dòng Tròng</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
 
               <Link
-                href="/danh-cho-doi-tac/"
-                className="inline-flex items-center space-x-2 px-6 py-3.5 rounded-xl text-sm font-semibold bg-white/10 hover:bg-white/15 text-white border border-white/20 backdrop-blur-xs transition-all"
+                href="/kham-pha-trong-kinh/"
+                className="liquid-btn-secondary px-6 py-3.5 text-xs sm:text-sm font-bold flex items-center space-x-2"
               >
-                <span>Dành Cho Đối Tác B2B</span>
+                <span>Cẩm Nang Chọn Tròng Kính</span>
               </Link>
             </div>
 
-            {/* Trust Badges */}
-            <div className="pt-6 border-t border-slate-800/80 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0 text-left">
-              <div>
-                <div className="text-lg sm:text-xl font-bold text-teal-400">100%</div>
-                <div className="text-[11px] text-slate-400">Phôi MR Nhập Khẩu</div>
-              </div>
-              <div>
-                <div className="text-lg sm:text-xl font-bold text-teal-400">Freeform 3D</div>
-                <div className="text-[11px] text-slate-400">Công Nghệ Gia Công Lab</div>
-              </div>
-              <div>
-                <div className="text-lg sm:text-xl font-bold text-teal-400">ISO 9001</div>
-                <div className="text-[11px] text-slate-400">Kiểm Định Quốc Tế</div>
-              </div>
+            {/* Micro Trust Indicators */}
+            <div className="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-4 text-xs text-slate-500 font-medium">
+              <span className="flex items-center gap-1.5">
+                <Award className="w-4 h-4 text-[#0B7B8A]" />
+                <span>Ontario Opticians No. 6181</span>
+              </span>
+              <span>&bull;</span>
+              <span className="flex items-center gap-1.5">
+                <ShieldCheck className="w-4 h-4 text-emerald-600" />
+                <span>ISO 13485:2016 Medical Quality</span>
+              </span>
+              <span>&bull;</span>
+              <span>Bảo hành điện tử 1 đổi 1 24T</span>
             </div>
+
           </div>
 
-          {/* Right Column: Hero Visual Asset */}
+          {/* Right Column: Hero Visual Asset with Apple Liquid Frosted Depth */}
           <div className="lg:col-span-5 relative flex items-center justify-center">
-            <div className="relative w-full max-w-md aspect-square rounded-3xl bg-gradient-to-tr from-[#0B7B8A]/20 via-slate-800/30 to-amber-500/10 p-4 border border-teal-500/20 backdrop-blur-xs shadow-2xl flex items-center justify-center">
-              <div className="relative w-full h-full rounded-2xl overflow-hidden flex items-center justify-center">
+            
+            {/* Ambient Caustic Halo */}
+            <div className="w-80 h-80 sm:w-96 sm:h-96 rounded-full bg-gradient-to-tr from-teal-200/50 via-cyan-100/40 to-sky-200/50 blur-3xl absolute liquid-morph-1 pointer-events-none" />
+
+            <div className="relative z-10 w-full max-w-md aspect-square rounded-[36px] liquid-panel p-6 border border-white/95 shadow-xl flex items-center justify-center">
+              
+              <div className="relative w-full h-full flex items-center justify-center">
                 <Image
                   src="/images/banners/hero-banner.png"
                   alt="Tròng kính quang học Rocky Lens Canada"
                   fill
                   priority
-                  className="object-contain p-4 transition-transform duration-700 hover:scale-105"
+                  className="object-contain p-2 transition-transform duration-700 hover:scale-105"
                   sizes="(max-width: 1024px) 100vw, 450px"
                 />
               </div>
 
-              {/* Floating feature pills */}
-              <div className="absolute -bottom-4 -left-4 bg-[#050E10]/90 border border-teal-500/40 px-4 py-2.5 rounded-xl shadow-lg backdrop-blur-md flex items-center space-x-2.5">
-                <div className="w-8 h-8 rounded-lg bg-teal-500/20 flex items-center justify-center text-teal-400">
+              {/* Floating Apple Liquid Pill Badges */}
+              <div className="absolute -bottom-3 -left-4 liquid-pill px-4 py-2 shadow-md flex items-center space-x-2.5">
+                <div className="w-8 h-8 rounded-full bg-teal-50 flex items-center justify-center text-[#0B7B8A] shrink-0">
                   <ShieldCheck className="w-4 h-4" />
                 </div>
-                <div>
-                  <div className="text-xs font-bold text-white">Nano SHMC</div>
-                  <div className="text-[10px] text-slate-400">Chống bám nước & tia UV</div>
+                <div className="text-left">
+                  <div className="text-xs font-bold text-slate-900">Chiết Suất Siêu Mỏng</div>
+                  <div className="text-[10px] text-slate-500">1.56 &bull; 1.60 &bull; 1.67 &bull; 1.74</div>
                 </div>
               </div>
 
-              <div className="absolute -top-3 -right-3 bg-[#050E10]/90 border border-amber-500/40 px-3.5 py-2 rounded-xl shadow-lg backdrop-blur-md flex items-center space-x-2">
+              <div className="absolute -top-3 -right-3 liquid-pill px-3.5 py-1.5 shadow-md flex items-center space-x-1.5">
                 <Award className="w-4 h-4 text-[#D97706]" />
-                <span className="text-xs font-bold text-amber-200">Canada Standard</span>
+                <span className="text-[11px] font-bold text-slate-900">Canada Certified</span>
               </div>
+
             </div>
+
           </div>
+
         </div>
       </div>
     </section>
