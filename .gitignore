@@ -1,0 +1,16 @@
+# Large Local Archive Folders (>3GB raw dump)
+ROCKY LƯU TRỮ/
+ROCKY LUU TRU/
+LOGO ROCKY/
+
+# Scratch & Temporary Analysis Files
+archive_files.txt
+psd_structure.json
+psd_summary.txt
+rockylens_font_report.json
+preview_sections/
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
