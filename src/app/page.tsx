@@ -4,7 +4,6 @@ import ProductCategories from '@/components/home/ProductCategories';
 import TechnologyHighlights from '@/components/home/TechnologyHighlights';
 import EducationPreview from '@/components/home/EducationPreview';
 import PartnerSection from '@/components/home/PartnerSection';
-import CompanyPreview from '@/components/home/CompanyPreview';
 import ContactSection from '@/components/home/ContactSection';
 import { getAllArticles } from '@/features/articles/article-service';
 
@@ -13,10 +12,10 @@ export default function HomePage() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Section 01: Hero Banner */}
+      {/* Section 01: Hero Banner (Integrated Trust & Metrics) */}
       <HeroSection />
 
-      {/* Section 02: Danh Mục Tròng Kính */}
+      {/* Section 02: Danh Mục Tròng Kính (3 cards per row with hover specs) */}
       <ProductCategories />
 
       {/* Section 03: Công Nghệ Nổi Bật */}
@@ -28,10 +27,7 @@ export default function HomePage() {
       {/* Section 05: Giải Pháp Dành Cho Đối Tác (B2B Focus) */}
       <PartnerSection />
 
-      {/* Section 06: Về Doanh Nghiệp */}
-      <CompanyPreview />
-
-      {/* Section 07: Liên Hệ Và Kết Nối */}
+      {/* Section 06: Liên Hệ Và Kết Nối */}
       <ContactSection />
     </div>
   );

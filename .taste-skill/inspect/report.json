@@ -1,23 +1,27 @@
 {
- "url": "trong-kinh/index.html",
- "at": "2026-10-26T10:27:33.716Z",
+ "url": "index.html",
+ "at": "2026-10-26T11:02:27.508Z",
  "allow": [],
  "viewports": [
   {
    "width": 1440,
    "height": 900,
    "load": "load",
-   "screens": 5,
+   "screens": 9,
    "filled": [
-    0.56,
-    0.74,
-    0.84,
+    0.61,
+    0.78,
+    0.76,
+    0.66,
+    0.64,
+    0.93,
     0.82,
-    0.87
+    0.82,
+    0.81
    ],
    "motion": {
-    "elements": 20,
-    "css": 20,
+    "elements": 16,
+    "css": 16,
     "transitions": 0,
     "scripted": 0,
     "videos": 0,
@@ -29,30 +33,30 @@
      "h": 900
     },
     "page": {
-     "height": 4208,
-     "screens": 4.7,
-     "words": 972,
-     "img": 14,
+     "height": 7251,
+     "screens": 8.1,
+     "words": 1609,
+     "img": 13,
      "video": 0,
      "canvas": 0,
-     "svg": 0,
-     "sections": 4,
+     "svg": 1,
+     "sections": 8,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 12,
+     "realPictures": 11,
      "videoCount": 0,
      "uiPictures": 0,
      "pictureSamples": [
-      "category-solution-1.png",
-      "category-solution-4.png",
-      "category-solution-1.png",
-      "category-solution-1.png",
-      "category-solution-5.png",
-      "category-solution-3.png",
-      "category-solution-2.png",
-      "category-solution-7.png"
+      "lens_transparent.png",
+      "sol_kinh_lai_xe.png",
+      "sol_chong_tia_uv.png",
+      "sol_doi_mau.png",
+      "sol_kinh_khoan_va_dap.png",
+      "sol_da_trong.png",
+      "sol_kiem_soat_can_thi.png",
+      "diploma_ontario.png"
      ],
      "blendText": 0,
      "sideScrollers": 0,
@@ -61,12 +65,12 @@
      "videosNoPoster": 0
     },
     "hero": {
-     "text": "Catalogue Tròng Kính Rocky",
-     "words": 4,
-     "chars": 26,
-     "lines": 2,
-     "size": 72,
-     "vw": 5,
+     "text": "Quang Học Canada",
+     "words": 3,
+     "chars": 16,
+     "lines": 1,
+     "size": 76,
+     "vw": 5.3,
      "font": "SF Pro Display",
      "weight": 900,
      "tracking": -0.025,
@@ -76,26 +80,26 @@
      "mono": false,
      "align": "left",
      "position": "left",
-     "widthRatio": 0.59,
+     "widthRatio": 0.5,
      "top": 184,
      "tag": "h1",
      "kind": "heading"
     },
     "h1": {
-     "text": "Catalogue Tròng Kính Rocky",
-     "words": 4,
-     "lines": 2,
-     "size": 72,
+     "text": "Quang Học Canada",
+     "words": 3,
+     "lines": 1,
+     "size": 76,
      "font": "SF Pro Display"
     },
     "headings": [
      {
-      "text": "Catalogue Tròng Kính Rocky",
-      "words": 4,
-      "chars": 26,
-      "lines": 2,
-      "size": 72,
-      "vw": 5,
+      "text": "Quang Học Canada",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 76,
+      "vw": 5.3,
       "font": "SF Pro Display",
       "weight": 900,
       "tracking": -0.025,
@@ -105,37 +109,16 @@
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.59,
+      "widthRatio": 0.5,
       "top": 184,
       "tag": "h1",
       "kind": "heading"
      },
      {
-      "text": "12 Dòng Tròng",
-      "words": 3,
-      "chars": 13,
+      "text": "Khám phá giải pháp khúc xạ",
+      "words": 6,
+      "chars": 26,
       "lines": 1,
-      "size": 36,
-      "vw": 2.5,
-      "font": "SF Pro Display",
-      "weight": 900,
-      "tracking": 0,
-      "leading": 1.11,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "center",
-      "position": "right",
-      "widthRatio": 0.25,
-      "top": 256,
-      "tag": "span",
-      "kind": "heading"
-     },
-     {
-      "text": "So Sánh Chiết Suất Vật Liệu (Refractive Index)",
-      "words": 8,
-      "chars": 46,
-      "lines": 2,
       "size": 48,
       "vw": 3.3,
       "font": "SF Pro Display",
@@ -148,71 +131,50 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.53,
-      "top": 3076,
+      "top": 930,
       "tag": "h2",
       "kind": "heading"
      },
      {
-      "text": "1.56",
-      "words": 1,
-      "chars": 4,
+      "text": "Khoa Học Vật Liệu & Chế Tác",
+      "words": 7,
+      "chars": 27,
       "lines": 1,
-      "size": 30,
-      "vw": 2.1,
+      "size": 48,
+      "vw": 3.3,
       "font": "SF Pro Display",
       "weight": 900,
-      "tracking": 0,
-      "leading": 1.2,
+      "tracking": -0.025,
+      "leading": 1,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.04,
-      "top": 3312,
-      "tag": "span",
+      "widthRatio": 0.53,
+      "top": 2762,
+      "tag": "h2",
       "kind": "heading"
      },
      {
-      "text": "1.60",
-      "words": 1,
-      "chars": 4,
+      "text": "Kiến Thức & Công Nghệ",
+      "words": 5,
+      "chars": 21,
       "lines": 1,
-      "size": 30,
-      "vw": 2.1,
+      "size": 48,
+      "vw": 3.3,
       "font": "SF Pro Display",
       "weight": 900,
-      "tracking": 0,
-      "leading": 1.2,
+      "tracking": -0.025,
+      "leading": 1,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.04,
-      "top": 3312,
-      "tag": "span",
-      "kind": "heading"
-     },
-     {
-      "text": "1.67",
-      "words": 1,
-      "chars": 4,
-      "lines": 1,
-      "size": 30,
-      "vw": 2.1,
-      "font": "SF Pro Display",
-      "weight": 900,
-      "tracking": 0,
-      "leading": 1.2,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.04,
-      "top": 3312,
-      "tag": "span",
+      "widthRatio": 0.53,
+      "top": 3310,
+      "tag": "h2",
       "kind": "heading"
      },
      {
@@ -220,51 +182,156 @@
       "words": 1,
       "chars": 4,
       "lines": 1,
-      "size": 30,
-      "vw": 2.1,
+      "size": 48,
+      "vw": 3.3,
       "font": "SF Pro Display",
       "weight": 900,
       "tracking": 0,
-      "leading": 1.2,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.25,
+      "top": 3498,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "UV420",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": 0,
+      "leading": 1,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.25,
+      "top": 3498,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "9H",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": 0,
+      "leading": 1,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "right",
-      "widthRatio": 0.04,
-      "top": 3312,
-      "tag": "span",
+      "widthRatio": 0.25,
+      "top": 3498,
+      "tag": "div",
       "kind": "heading"
      },
      {
-      "text": "Bạn Cần Báo Giá Sỉ Cho Đại Lý?",
-      "words": 8,
-      "chars": 30,
+      "text": "Chứng Nhận Canada & Y Tế",
+      "words": 6,
+      "chars": 24,
       "lines": 1,
-      "size": 36,
-      "vw": 2.5,
+      "size": 48,
+      "vw": 3.3,
       "font": "SF Pro Display",
       "weight": 900,
       "tracking": -0.025,
-      "leading": 1.11,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.53,
+      "top": 4018,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Hợp Tác Phát Triển Đại Lý",
+      "words": 6,
+      "chars": 25,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.5,
+      "top": 4778,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Đăng Ký Đại Lý & Báo Giá Sỉ",
+      "words": 8,
+      "chars": 27,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": -0.025,
+      "leading": 1,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "center",
       "position": "center",
       "widthRatio": 0.62,
-      "top": 3808,
+      "top": 5602,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Liên Hệ & Hỗ Trợ Kỹ Thuật",
+      "words": 7,
+      "chars": 25,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.53,
+      "top": 6371,
       "tag": "h2",
       "kind": "heading"
      }
     ],
     "headingSummary": {
-     "count": 8,
-     "maxLines": 2,
+     "count": 11,
+     "maxLines": 1,
      "over2Lines": 0,
      "statements": 0,
-     "centered": 2,
-     "medianWords": 1,
+     "centered": 1,
+     "medianWords": 6,
      "mixedFontHeadings": 0
     },
     "type": {
@@ -281,12 +348,11 @@
       16,
       18,
       20,
-      30,
-      36,
+      24,
       48,
-      72
+      76
      ],
-     "sizeCount": 8,
+     "sizeCount": 7,
      "notLoaded": [],
      "body": {
       "font": "SF Pro Display",
@@ -294,14 +360,14 @@
       "leading": 1.63,
       "weight": 400,
       "tracking": 0,
-      "contrast": 7.6
+      "contrast": 7
      },
-     "measureChars": 77,
+     "measureChars": 75,
      "max": {
-      "size": 72,
-      "vw": 5,
+      "size": 76,
+      "vw": 5.3,
       "font": "SF Pro Display",
-      "text": "Catalogue Tròng Kính Rocky"
+      "text": "Quang Học Canada"
      },
      "monoShare": 0,
      "monoProseShare": 0,
@@ -311,7 +377,7 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.17,
+     "centerShare": 0.08,
      "smallText": 0
     },
     "eyebrows": [],
@@ -326,8 +392,17 @@
      "dark": false,
      "sectionBgs": [
       {
+       "color": "#f5f5f7",
+       "top": 120,
+       "hsl": {
+        "h": 240,
+        "s": 0.11,
+        "l": 0.96
+       }
+      },
+      {
        "color": "#ffffff",
-       "top": 2996,
+       "top": 850,
        "hsl": {
         "h": 0,
         "s": 0,
@@ -336,34 +411,43 @@
       },
       {
        "color": "#0e253a",
-       "top": 3744,
+       "top": 4698,
        "hsl": {
         "h": 209,
         "s": 0.61,
         "l": 0.14
        }
+      },
+      {
+       "color": "#071521",
+       "top": 6795,
+       "hsl": {
+        "h": 208,
+        "s": 0.65,
+        "l": 0.08
+       }
       }
      ],
      "textColors": [
       {
-       "color": "#475569",
+       "color": "#334155",
        "share": 0.27
       },
       {
-       "color": "#334155",
-       "share": 0.23
+       "color": "#475569",
+       "share": 0.25
       },
       {
        "color": "#0e253a",
-       "share": 0.21
+       "share": 0.12
       },
       {
-       "color": "#ffffff",
-       "share": 0.14
+       "color": "#cbd5e1",
+       "share": 0.11
       },
       {
-       "color": "#5eead4",
-       "share": 0.06
+       "color": "#e2e8f0",
+       "share": 0.09
       }
      ],
      "button": {
@@ -378,8 +462,8 @@
      "lowContrast": []
     },
     "buttons": {
-     "count": 22,
-     "inHero": 8,
+     "count": 19,
+     "inHero": 3,
      "radius": "pill",
      "height": 52,
      "withShadow": 0,
@@ -388,10 +472,8 @@
      "upper": 0,
      "heroLabels": [
       "Báo giá đại lý",
-      "Tất cả (12)",
-      "Đơn tròng (4)",
-      "Đa tròng Freeform (3)",
-      "Lọc ánh sáng xanh (3)"
+      "Khám phá giải pháp thị lực",
+      "Tư vấn chuyên gia: 0933 102 653"
      ]
     },
     "surfaces": {
@@ -407,28 +489,63 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 1,
-     "roundedBoxes": 21,
+     "roundedBoxes": 35,
      "boxRadius": 24,
-     "squareMedia": 0,
-     "roundedMedia": 12,
-     "mediaRadius": 24,
+     "squareMedia": 1,
+     "roundedMedia": 9,
+     "mediaRadius": 16,
      "textShadow": 0,
      "cardRows": [
       {
-       "count": 12,
+       "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 632
+       "top": 644
+      },
+      {
+       "count": 6,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 1110
       },
       {
        "count": 4,
        "iconTopped": false,
        "rounded": true,
-       "top": 3288
+       "top": 2926
+      },
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 3474
+      },
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 4182
+      },
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 5046
+      },
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 6507
       }
      ]
     },
-    "heroMedia": [],
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.12
+     }
+    ],
     "nav": {
      "links": 8,
      "fixed": true,
@@ -445,117 +562,209 @@
      "w": 1440,
      "h": 900
     },
-    "pageH": 4208,
+    "pageH": 7251,
     "margins": {
-     "left": 80,
-     "right": 108
+     "left": 73,
+     "right": 107
     },
     "sections": [
      {
       "sel": "section.pt-12.sm:pt-16",
       "tag": "section",
       "top": 120,
-      "height": 512,
-      "words": 87,
-      "media": 0,
-      "middle": 8,
+      "height": 730,
+      "words": 145,
+      "media": 1,
+      "middle": 131,
       "heading": {
-       "text": "Catalogue Tròng Kính Rocky",
-       "size": 72,
+       "text": "Quang Học Canada",
+       "size": 76,
        "tag": "h1"
       },
-      "left": 80,
-      "right": 146,
-      "textLeft": 80,
-      "textRight": 146,
+      "left": 73,
+      "right": 145,
+      "textLeft": 73,
+      "textRight": 155,
       "fullBleed": false,
       "footer": false,
       "hero": true,
-      "continues": false,
+      "continues": true,
       "pinned": false
      },
      {
-      "sel": "section.pb-20.px-6",
+      "sel": "section#trong-kinh.py-20.px-6",
       "tag": "section",
-      "top": 632,
-      "height": 2364,
-      "words": 584,
-      "media": 12,
-      "middle": 84,
+      "top": 850,
+      "height": 1832,
+      "words": 354,
+      "media": 6,
+      "middle": 14,
       "heading": {
-       "text": "Tròng Kính Đơn Tròng Rocky 1.56 BlueCut UV420 SHMC",
-       "size": 20,
-       "tag": "h3"
+       "text": "Khám phá giải pháp khúc xạ",
+       "size": 48,
+       "tag": "h2"
       },
-      "left": 104,
-      "right": 108,
-      "textLeft": 104,
-      "textRight": 108,
+      "left": 73,
+      "right": 104,
+      "textLeft": 73,
+      "textRight": 131,
       "fullBleed": false,
       "footer": false,
       "hero": false,
-      "continues": false,
+      "continues": true,
       "pinned": false
      },
      {
       "sel": "section.py-20.px-6",
       "tag": "section",
-      "top": 2996,
-      "height": 748,
-      "words": 182,
+      "top": 2682,
+      "height": 548,
+      "words": 161,
       "media": 0,
-      "middle": 84,
+      "middle": 81,
       "heading": {
-       "text": "So Sánh Chiết Suất Vật Liệu (Refractive Index)",
+       "text": "Khoa Học Vật Liệu & Chế Tác",
        "size": 48,
        "tag": "h2"
       },
-      "left": 80,
-      "right": 104,
-      "textLeft": 80,
-      "textRight": 104,
+      "left": 73,
+      "right": 137,
+      "textLeft": 73,
+      "textRight": 137,
       "fullBleed": false,
       "footer": false,
       "hero": false,
-      "continues": false,
+      "continues": true,
       "pinned": false
      },
      {
-      "sel": "section.py-16.px-6",
+      "sel": "section#kham-pha-kien-thuc.py-20.px-6",
       "tag": "section",
-      "top": 3744,
-      "height": 336,
-      "words": 40,
+      "top": 3230,
+      "height": 708,
+      "words": 133,
+      "media": 0,
+      "middle": 90,
+      "heading": {
+       "text": "Kiến Thức & Công Nghệ",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 73,
+      "right": 123,
+      "textLeft": 73,
+      "textRight": 123,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.py-20.px-6",
+      "tag": "section",
+      "top": 3938,
+      "height": 760,
+      "words": 106,
+      "media": 3,
+      "middle": 83,
+      "heading": {
+       "text": "Chứng Nhận Canada & Y Tế",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 73,
+      "right": 118,
+      "textLeft": 73,
+      "textRight": 118,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#doi-tac.py-20.px-6",
+      "tag": "section",
+      "top": 4698,
+      "height": 824,
+      "words": 193,
+      "media": 1,
+      "middle": 114,
+      "heading": {
+       "text": "Hợp Tác Phát Triển Đại Lý",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 73,
+      "right": 132,
+      "textLeft": 73,
+      "textRight": 154,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#bao-gia.py-20.px-6",
+      "tag": "section",
+      "top": 5522,
+      "height": 769,
+      "words": 76,
       "media": 0,
       "middle": 0,
       "heading": {
-       "text": "Bạn Cần Báo Giá Sỉ Cho Đại Lý?",
-       "size": 36,
+       "text": "Đăng Ký Đại Lý & Báo Giá Sỉ",
+       "size": 48,
        "tag": "h2"
       },
-      "left": 385,
-      "right": 385,
-      "textLeft": 385,
-      "textRight": 385,
+      "left": 279,
+      "right": 294,
+      "textLeft": 279,
+      "textRight": 294,
       "fullBleed": false,
       "footer": false,
       "hero": false,
-      "continues": false,
+      "continues": true,
       "pinned": false
      },
      {
-      "sel": "footer.bg-[#071521].text-white",
-      "tag": "footer",
-      "top": 4080,
-      "height": 128,
-      "words": 17,
+      "sel": "section#lien-he.py-20.px-6",
+      "tag": "section",
+      "top": 6291,
+      "height": 504,
+      "words": 100,
       "media": 0,
-      "middle": 606,
+      "middle": 167,
+      "heading": {
+       "text": "Liên Hệ & Hỗ Trợ Kỹ Thuật",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 73,
+      "right": 217,
+      "textLeft": 73,
+      "textRight": 217,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.bg-[#071521].text-slate-300",
+      "tag": "footer",
+      "top": 6795,
+      "height": 456,
+      "words": 156,
+      "media": 0,
+      "middle": 136,
       "heading": null,
-      "left": 156,
-      "right": 80,
-      "textLeft": 156,
-      "textRight": 80,
+      "left": 73,
+      "right": 88,
+      "textLeft": 73,
+      "textRight": 88,
       "fullBleed": false,
       "footer": true,
       "hero": false,
@@ -566,8 +775,8 @@
     "gaps": [],
     "h1s": [
      {
-      "text": "Catalogue Tròng Kính Rocky",
-      "size": 72,
+      "text": "Quang Học Canada",
+      "size": 76,
       "top": 184,
       "firstScreen": true
      }
@@ -575,45 +784,53 @@
     "edgeText": [],
     "edges": [
      {
-      "x": 104,
-      "n": 10
+      "x": 73,
+      "n": 16
      },
      {
-      "x": 541,
-      "n": 8
+      "x": 93,
+      "n": 12
      },
      {
-      "x": 979,
-      "n": 8
+      "x": 534,
+      "n": 9
      },
      {
-      "x": 80,
-      "n": 4
+      "x": 971,
+      "n": 9
      },
      {
-      "x": 430,
+      "x": 423,
       "n": 2
      },
      {
-      "x": 756,
+      "x": 464,
       "n": 2
      },
      {
-      "x": 1082,
+      "x": 749,
       "n": 2
+     },
+     {
+      "x": 1075,
+      "n": 2
+     },
+     {
+      "x": 105,
+      "n": 1
      }
     ],
-    "leftBlocks": 36,
+    "leftBlocks": 55,
     "bodySize": 16,
     "stage": false,
     "explains": true,
     "slivers": [],
-    "voidShare": 0.08,
+    "voidShare": 0.13,
     "voidBox": {
-     "x": 840,
-     "y": 360,
-     "w": 600,
-     "h": 180
+     "x": 0,
+     "y": 780,
+     "w": 1440,
+     "h": 120
     }
    },
    "app": null,
@@ -623,18 +840,22 @@
    "width": 768,
    "height": 1024,
    "load": "load",
-   "screens": 6,
+   "screens": 10,
    "filled": [
-    0.65,
-    0.87,
-    0.88,
-    0.82,
-    0.74,
-    0.72
+    0.53,
+    0.8,
+    0.6,
+    0.69,
+    0.73,
+    0.62,
+    0.83,
+    0.93,
+    0.56,
+    0.84
    ],
    "motion": {
-    "elements": 20,
-    "css": 20,
+    "elements": 16,
+    "css": 16,
     "transitions": 0,
     "scripted": 0,
     "videos": 0,
@@ -646,30 +867,30 @@
      "h": 1024
     },
     "page": {
-     "height": 6062,
-     "screens": 5.9,
-     "words": 955,
-     "img": 14,
+     "height": 9933,
+     "screens": 9.7,
+     "words": 1592,
+     "img": 13,
      "video": 0,
      "canvas": 0,
-     "svg": 0,
-     "sections": 4,
+     "svg": 1,
+     "sections": 8,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 12,
+     "realPictures": 11,
      "videoCount": 0,
      "uiPictures": 0,
      "pictureSamples": [
-      "category-solution-1.png",
-      "category-solution-4.png",
-      "category-solution-1.png",
-      "category-solution-1.png",
-      "category-solution-5.png",
-      "category-solution-3.png",
-      "category-solution-2.png",
-      "category-solution-7.png"
+      "lens_transparent.png",
+      "sol_kinh_lai_xe.png",
+      "sol_chong_tia_uv.png",
+      "sol_doi_mau.png",
+      "sol_kinh_khoan_va_dap.png",
+      "sol_da_trong.png",
+      "sol_kiem_soat_can_thi.png",
+      "diploma_ontario.png"
      ],
      "blendText": 0,
      "sideScrollers": 0,
@@ -678,12 +899,12 @@
      "videosNoPoster": 0
     },
     "hero": {
-     "text": "Catalogue Tròng Kính Rocky",
-     "words": 4,
-     "chars": 26,
+     "text": "Quang Học Canada",
+     "words": 3,
+     "chars": 16,
      "lines": 1,
-     "size": 48,
-     "vw": 6.3,
+     "size": 60,
+     "vw": 7.8,
      "font": "SF Pro Display",
      "weight": 900,
      "tracking": -0.025,
@@ -693,26 +914,26 @@
      "mono": false,
      "align": "left",
      "position": "center",
-     "widthRatio": 0.94,
+     "widthRatio": 0.92,
      "top": 184,
      "tag": "h1",
      "kind": "heading"
     },
     "h1": {
-     "text": "Catalogue Tròng Kính Rocky",
-     "words": 4,
+     "text": "Quang Học Canada",
+     "words": 3,
      "lines": 1,
-     "size": 48,
+     "size": 60,
      "font": "SF Pro Display"
     },
     "headings": [
      {
-      "text": "Catalogue Tròng Kính Rocky",
-      "words": 4,
-      "chars": 26,
+      "text": "Quang Học Canada",
+      "words": 3,
+      "chars": 16,
       "lines": 1,
-      "size": 48,
-      "vw": 6.3,
+      "size": 60,
+      "vw": 7.8,
       "font": "SF Pro Display",
       "weight": 900,
       "tracking": -0.025,
@@ -722,36 +943,15 @@
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 0.94,
+      "widthRatio": 0.92,
       "top": 184,
       "tag": "h1",
       "kind": "heading"
      },
      {
-      "text": "12 Dòng Tròng",
-      "words": 3,
-      "chars": 13,
-      "lines": 1,
-      "size": 36,
-      "vw": 4.7,
-      "font": "SF Pro Display",
-      "weight": 900,
-      "tracking": 0,
-      "leading": 1.11,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "center",
-      "position": "center",
-      "widthRatio": 0.88,
-      "top": 388,
-      "tag": "span",
-      "kind": "heading"
-     },
-     {
-      "text": "So Sánh Chiết Suất Vật Liệu (Refractive Index)",
-      "words": 8,
-      "chars": 46,
+      "text": "Khám phá giải pháp khúc xạ",
+      "words": 6,
+      "chars": 26,
       "lines": 1,
       "size": 36,
       "vw": 4.7,
@@ -764,72 +964,51 @@
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 0.94,
-      "top": 4658,
+      "widthRatio": 0.92,
+      "top": 1498,
       "tag": "h2",
       "kind": "heading"
      },
      {
-      "text": "1.56",
-      "words": 1,
-      "chars": 4,
+      "text": "Khoa Học Vật Liệu & Chế Tác",
+      "words": 7,
+      "chars": 27,
       "lines": 1,
-      "size": 30,
-      "vw": 3.9,
+      "size": 36,
+      "vw": 4.7,
       "font": "SF Pro Display",
       "weight": 900,
-      "tracking": 0,
-      "leading": 1.2,
+      "tracking": -0.025,
+      "leading": 1.11,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
-      "position": "left",
-      "widthRatio": 0.08,
-      "top": 4838,
-      "tag": "span",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 4192,
+      "tag": "h2",
       "kind": "heading"
      },
      {
-      "text": "1.60",
-      "words": 1,
-      "chars": 4,
+      "text": "Kiến Thức & Công Nghệ",
+      "words": 5,
+      "chars": 21,
       "lines": 1,
-      "size": 30,
-      "vw": 3.9,
+      "size": 36,
+      "vw": 4.7,
       "font": "SF Pro Display",
       "weight": 900,
-      "tracking": 0,
-      "leading": 1.2,
+      "tracking": -0.025,
+      "leading": 1.11,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
-      "position": "right",
-      "widthRatio": 0.08,
-      "top": 4838,
-      "tag": "span",
-      "kind": "heading"
-     },
-     {
-      "text": "1.67",
-      "words": 1,
-      "chars": 4,
-      "lines": 1,
-      "size": 30,
-      "vw": 3.9,
-      "font": "SF Pro Display",
-      "weight": 900,
-      "tracking": 0,
-      "leading": 1.2,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.07,
-      "top": 5190,
-      "tag": "span",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 4932,
+      "tag": "h2",
       "kind": "heading"
      },
      {
@@ -837,26 +1016,110 @@
       "words": 1,
       "chars": 4,
       "lines": 1,
-      "size": 30,
-      "vw": 3.9,
+      "size": 48,
+      "vw": 6.3,
       "font": "SF Pro Display",
       "weight": 900,
       "tracking": 0,
-      "leading": 1.2,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.22,
+      "top": 5112,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "UV420",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 48,
+      "vw": 6.3,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": 0,
+      "leading": 1,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.22,
+      "top": 5112,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "9H",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 48,
+      "vw": 6.3,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": 0,
+      "leading": 1,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "right",
-      "widthRatio": 0.07,
-      "top": 5190,
-      "tag": "span",
+      "widthRatio": 0.22,
+      "top": 5112,
+      "tag": "div",
       "kind": "heading"
      },
      {
-      "text": "Bạn Cần Báo Giá Sỉ Cho Đại Lý?",
+      "text": "Chứng Nhận Canada & Y Tế",
+      "words": 6,
+      "chars": 24,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": -0.025,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 5756,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Hợp Tác Phát Triển Đại Lý",
+      "words": 6,
+      "chars": 25,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": -0.025,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 6608,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Đăng Ký Đại Lý & Báo Giá Sỉ",
       "words": 8,
-      "chars": 30,
+      "chars": 27,
       "lines": 1,
       "size": 36,
       "vw": 4.7,
@@ -869,19 +1132,40 @@
       "mono": false,
       "align": "center",
       "position": "center",
-      "widthRatio": 0.94,
-      "top": 5662,
+      "widthRatio": 0.92,
+      "top": 7908,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Liên Hệ & Hỗ Trợ Kỹ Thuật",
+      "words": 7,
+      "chars": 25,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": -0.025,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 8669,
       "tag": "h2",
       "kind": "heading"
      }
     ],
     "headingSummary": {
-     "count": 8,
+     "count": 11,
      "maxLines": 1,
      "over2Lines": 0,
      "statements": 0,
-     "centered": 2,
-     "medianWords": 1,
+     "centered": 1,
+     "medianWords": 6,
      "mixedFontHeadings": 0
     },
     "type": {
@@ -898,11 +1182,12 @@
       16,
       18,
       20,
-      30,
+      24,
       36,
-      48
+      48,
+      60
      ],
-     "sizeCount": 7,
+     "sizeCount": 8,
      "notLoaded": [],
      "body": {
       "font": "SF Pro Display",
@@ -910,14 +1195,14 @@
       "leading": 1.63,
       "weight": 400,
       "tracking": 0,
-      "contrast": 7.6
+      "contrast": 7
      },
-     "measureChars": 72,
+     "measureChars": 75,
      "max": {
-      "size": 48,
-      "vw": 6.3,
+      "size": 60,
+      "vw": 7.8,
       "font": "SF Pro Display",
-      "text": "Catalogue Tròng Kính Rocky"
+      "text": "Quang Học Canada"
      },
      "monoShare": 0,
      "monoProseShare": 0,
@@ -927,7 +1212,7 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.18,
+     "centerShare": 0.08,
      "smallText": 0
     },
     "eyebrows": [],
@@ -942,8 +1227,17 @@
      "dark": false,
      "sectionBgs": [
       {
+       "color": "#f5f5f7",
+       "top": 120,
+       "hsl": {
+        "h": 240,
+        "s": 0.11,
+        "l": 0.96
+       }
+      },
+      {
        "color": "#ffffff",
-       "top": 4578,
+       "top": 802,
        "hsl": {
         "h": 0,
         "s": 0,
@@ -952,34 +1246,43 @@
       },
       {
        "color": "#0e253a",
-       "top": 5598,
+       "top": 6528,
        "hsl": {
         "h": 209,
         "s": 0.61,
         "l": 0.14
        }
+      },
+      {
+       "color": "#071521",
+       "top": 9221,
+       "hsl": {
+        "h": 208,
+        "s": 0.65,
+        "l": 0.08
+       }
       }
      ],
      "textColors": [
       {
-       "color": "#475569",
+       "color": "#334155",
        "share": 0.27
       },
       {
-       "color": "#334155",
-       "share": 0.24
+       "color": "#475569",
+       "share": 0.26
       },
       {
        "color": "#0e253a",
-       "share": 0.21
+       "share": 0.12
       },
       {
-       "color": "#ffffff",
-       "share": 0.15
+       "color": "#cbd5e1",
+       "share": 0.11
       },
       {
-       "color": "#5eead4",
-       "share": 0.06
+       "color": "#e2e8f0",
+       "share": 0.09
       }
      ],
      "button": {
@@ -994,8 +1297,8 @@
      "lowContrast": []
     },
     "buttons": {
-     "count": 22,
-     "inHero": 8,
+     "count": 19,
+     "inHero": 3,
      "radius": "pill",
      "height": 52,
      "withShadow": 0,
@@ -1004,10 +1307,8 @@
      "upper": 0,
      "heroLabels": [
       "Báo giá đại lý",
-      "Tất cả (12)",
-      "Đơn tròng (4)",
-      "Đa tròng Freeform (3)",
-      "Lọc ánh sáng xanh (3)"
+      "Khám phá giải pháp thị lực",
+      "Tư vấn chuyên gia: 0933 102 653"
      ]
     },
     "surfaces": {
@@ -1023,28 +1324,63 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 1,
-     "roundedBoxes": 21,
+     "roundedBoxes": 35,
      "boxRadius": 24,
-     "squareMedia": 0,
-     "roundedMedia": 12,
-     "mediaRadius": 24,
+     "squareMedia": 1,
+     "roundedMedia": 7,
+     "mediaRadius": 16,
      "textShadow": 0,
      "cardRows": [
       {
-       "count": 12,
+       "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 760
+       "top": 628
+      },
+      {
+       "count": 6,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 1670
       },
       {
        "count": 4,
        "iconTopped": false,
        "rounded": true,
-       "top": 4814
+       "top": 4348
+      },
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 5088
+      },
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 5912
+      },
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 6868
+      },
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 8797
       }
      ]
     },
-    "heroMedia": [],
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.1
+     }
+    ],
     "nav": {
      "links": 2,
      "fixed": true,
@@ -1061,117 +1397,209 @@
      "w": 768,
      "h": 1024
     },
-    "pageH": 6062,
+    "pageH": 9933,
     "margins": {
      "left": 24,
-     "right": 35
+     "right": 51
     },
     "sections": [
      {
       "sel": "section.pt-12.sm:pt-16",
       "tag": "section",
       "top": 120,
-      "height": 640,
-      "words": 87,
-      "media": 0,
+      "height": 1298,
+      "words": 145,
+      "media": 1,
       "middle": 0,
       "heading": {
-       "text": "Catalogue Tròng Kính Rocky",
-       "size": 48,
+       "text": "Quang Học Canada",
+       "size": 60,
        "tag": "h1"
       },
       "left": 24,
-      "right": 26,
+      "right": 43,
       "textLeft": 24,
-      "textRight": 26,
+      "textRight": 43,
       "fullBleed": false,
       "footer": false,
       "hero": true,
-      "continues": false,
+      "continues": true,
       "pinned": false
      },
      {
-      "sel": "section.pb-20.px-6",
+      "sel": "section#trong-kinh.py-20.px-6",
       "tag": "section",
-      "top": 760,
-      "height": 3818,
-      "words": 584,
-      "media": 12,
-      "middle": 83,
+      "top": 1418,
+      "height": 2694,
+      "words": 354,
+      "media": 6,
+      "middle": 0,
       "heading": {
-       "text": "Tròng Kính Đơn Tròng Rocky 1.56 BlueCut UV420 SHMC",
-       "size": 20,
-       "tag": "h3"
+       "text": "Khám phá giải pháp khúc xạ",
+       "size": 36,
+       "tag": "h2"
       },
-      "left": 48,
-      "right": 49,
-      "textLeft": 48,
-      "textRight": 49,
+      "left": 24,
+      "right": 55,
+      "textLeft": 24,
+      "textRight": 65,
       "fullBleed": false,
       "footer": false,
       "hero": false,
-      "continues": false,
+      "continues": true,
       "pinned": false
      },
      {
       "sel": "section.py-20.px-6",
       "tag": "section",
-      "top": 4578,
-      "height": 1020,
-      "words": 182,
+      "top": 4112,
+      "height": 740,
+      "words": 161,
       "media": 0,
       "middle": 0,
       "heading": {
-       "text": "So Sánh Chiết Suất Vật Liệu (Refractive Index)",
+       "text": "Khoa Học Vật Liệu & Chế Tác",
        "size": 36,
        "tag": "h2"
       },
       "left": 24,
-      "right": 31,
+      "right": 65,
       "textLeft": 24,
-      "textRight": 31,
+      "textRight": 65,
       "fullBleed": false,
       "footer": false,
       "hero": false,
-      "continues": false,
+      "continues": true,
       "pinned": false
      },
      {
-      "sel": "section.py-16.px-6",
+      "sel": "section#kham-pha-kien-thuc.py-20.px-6",
       "tag": "section",
-      "top": 5598,
-      "height": 336,
-      "words": 40,
+      "top": 4852,
+      "height": 824,
+      "words": 133,
       "media": 0,
       "middle": 0,
       "heading": {
-       "text": "Bạn Cần Báo Giá Sỉ Cho Đại Lý?",
-       "size": 36,
-       "tag": "h2"
+       "text": "1.74",
+       "size": 48,
+       "tag": "span"
       },
-      "left": 49,
-      "right": 49,
-      "textLeft": 49,
-      "textRight": 49,
+      "left": 24,
+      "right": 44,
+      "textLeft": 24,
+      "textRight": 44,
       "fullBleed": false,
       "footer": false,
       "hero": false,
-      "continues": false,
+      "continues": true,
       "pinned": false
      },
      {
-      "sel": "footer.bg-[#071521].text-white",
-      "tag": "footer",
-      "top": 5934,
-      "height": 128,
-      "words": 17,
+      "sel": "section.py-20.px-6",
+      "tag": "section",
+      "top": 5676,
+      "height": 852,
+      "words": 106,
+      "media": 3,
+      "middle": 0,
+      "heading": {
+       "text": "Chứng Nhận Canada & Y Tế",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 51,
+      "textLeft": 24,
+      "textRight": 51,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#doi-tac.py-20.px-6",
+      "tag": "section",
+      "top": 6528,
+      "height": 1300,
+      "words": 193,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Hợp Tác Phát Triển Đại Lý",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 61,
+      "textLeft": 24,
+      "textRight": 61,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#bao-gia.py-20.px-6",
+      "tag": "section",
+      "top": 7828,
+      "height": 761,
+      "words": 76,
       "media": 0,
-      "middle": 46,
+      "middle": 0,
+      "heading": {
+       "text": "Đăng Ký Đại Lý & Báo Giá Sỉ",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 30,
+      "right": 45,
+      "textLeft": 30,
+      "textRight": 45,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#lien-he.py-20.px-6",
+      "tag": "section",
+      "top": 8589,
+      "height": 632,
+      "words": 100,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Liên Hệ & Hỗ Trợ Kỹ Thuật",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 0,
+      "textLeft": 24,
+      "textRight": -11,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.bg-[#071521].text-slate-300",
+      "tag": "footer",
+      "top": 9221,
+      "height": 712,
+      "words": 156,
+      "media": 0,
+      "middle": 13,
       "heading": null,
-      "left": 100,
-      "right": 24,
-      "textLeft": 100,
-      "textRight": 24,
+      "left": 24,
+      "right": 52,
+      "textLeft": 24,
+      "textRight": 52,
       "fullBleed": false,
       "footer": true,
       "hero": false,
@@ -1182,8 +1610,8 @@
     "gaps": [],
     "h1s": [
      {
-      "text": "Catalogue Tròng Kính Rocky",
-      "size": 48,
+      "text": "Quang Học Canada",
+      "size": 60,
       "top": 184,
       "firstScreen": true
      }
@@ -1191,19 +1619,35 @@
     "edgeText": [],
     "edges": [
      {
-      "x": 48,
-      "n": 16
-     },
-     {
-      "x": 420,
-      "n": 16
-     },
-     {
       "x": 24,
-      "n": 4
+      "n": 16
+     },
+     {
+      "x": 44,
+      "n": 16
+     },
+     {
+      "x": 405,
+      "n": 6
+     },
+     {
+      "x": 421,
+      "n": 6
+     },
+     {
+      "x": 294,
+      "n": 5
+     },
+     {
+      "x": 539,
+      "n": 5
+     },
+     {
+      "x": 56,
+      "n": 1
      }
     ],
-    "leftBlocks": 36,
+    "leftBlocks": 55,
     "bodySize": 16,
     "stage": false,
     "explains": true,
@@ -1220,22 +1664,22 @@
    "load": "load",
    "screens": 12,
    "filled": [
-    0.65,
-    0.82,
-    0.86,
-    0.86,
-    0.86,
-    0.92,
-    0.86,
+    0.66,
+    0.89,
     0.91,
-    0.86,
-    0.8,
-    0.8,
-    0.55
+    0.64,
+    0.78,
+    0.76,
+    0.63,
+    0.63,
+    0.84,
+    0.79,
+    0.59,
+    0.79
    ],
    "motion": {
-    "elements": 20,
-    "css": 20,
+    "elements": 16,
+    "css": 16,
     "transitions": 0,
     "scripted": 0,
     "videos": 0,
@@ -1247,30 +1691,30 @@
      "h": 844
     },
     "page": {
-     "height": 10884,
-     "screens": 12.9,
-     "words": 948,
-     "img": 14,
+     "height": 16184,
+     "screens": 19.2,
+     "words": 1585,
+     "img": 13,
      "video": 0,
      "canvas": 0,
-     "svg": 0,
-     "sections": 4,
+     "svg": 1,
+     "sections": 8,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 12,
+     "realPictures": 11,
      "videoCount": 0,
      "uiPictures": 0,
      "pictureSamples": [
-      "category-solution-1.png",
-      "category-solution-4.png",
-      "category-solution-1.png",
-      "category-solution-1.png",
-      "category-solution-5.png",
-      "category-solution-3.png",
-      "category-solution-2.png",
-      "category-solution-7.png"
+      "lens_transparent.png",
+      "sol_kinh_lai_xe.png",
+      "sol_chong_tia_uv.png",
+      "sol_doi_mau.png",
+      "sol_kinh_khoan_va_dap.png",
+      "sol_da_trong.png",
+      "sol_kiem_soat_can_thi.png",
+      "diploma_ontario.png"
      ],
      "blendText": 0,
      "sideScrollers": 0,
@@ -1279,45 +1723,45 @@
      "videosNoPoster": 0
     },
     "hero": {
-     "text": "12 Dòng Tròng",
+     "text": "Quang Học Canada",
      "words": 3,
-     "chars": 13,
-     "lines": 1,
-     "size": 36,
-     "vw": 9.2,
+     "chars": 16,
+     "lines": 2,
+     "size": 48,
+     "vw": 12.3,
      "font": "SF Pro Display",
      "weight": 900,
-     "tracking": 0,
-     "leading": 1.11,
+     "tracking": -0.025,
+     "leading": 1.06,
      "upper": false,
      "italic": false,
      "mono": false,
-     "align": "center",
+     "align": "left",
      "position": "center",
-     "widthRatio": 0.75,
-     "top": 475,
-     "tag": "span",
+     "widthRatio": 0.88,
+     "top": 192,
+     "tag": "h1",
      "kind": "heading"
     },
     "h1": {
-     "text": "Catalogue Tròng Kính Rocky",
-     "words": 4,
+     "text": "Quang Học Canada",
+     "words": 3,
      "lines": 2,
-     "size": 30,
+     "size": 48,
      "font": "SF Pro Display"
     },
     "headings": [
      {
-      "text": "Catalogue Tròng Kính Rocky",
-      "words": 4,
-      "chars": 26,
+      "text": "Quang Học Canada",
+      "words": 3,
+      "chars": 16,
       "lines": 2,
-      "size": 30,
-      "vw": 7.7,
+      "size": 48,
+      "vw": 12.3,
       "font": "SF Pro Display",
       "weight": 900,
       "tracking": -0.025,
-      "leading": 1.08,
+      "leading": 1.06,
       "upper": false,
       "italic": false,
       "mono": false,
@@ -1329,30 +1773,72 @@
       "kind": "heading"
      },
      {
-      "text": "12 Dòng Tròng",
-      "words": 3,
-      "chars": 13,
+      "text": "500+",
+      "words": 1,
+      "chars": 4,
       "lines": 1,
-      "size": 36,
-      "vw": 9.2,
+      "size": 24,
+      "vw": 6.2,
       "font": "SF Pro Display",
       "weight": 900,
       "tracking": 0,
-      "leading": 1.11,
+      "leading": 1.33,
       "upper": false,
       "italic": false,
       "mono": false,
-      "align": "center",
+      "align": "left",
       "position": "center",
-      "widthRatio": 0.75,
-      "top": 475,
-      "tag": "span",
+      "widthRatio": 0.77,
+      "top": 825,
+      "tag": "div",
       "kind": "heading"
      },
      {
-      "text": "So Sánh Chiết Suất Vật Liệu (Refractive Index)",
-      "words": 8,
-      "chars": 46,
+      "text": "0.01D",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.77,
+      "top": 967,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "1 Đổi 1",
+      "words": 3,
+      "chars": 7,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.77,
+      "top": 1109,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Khám phá giải pháp khúc xạ",
+      "words": 6,
+      "chars": 26,
       "lines": 2,
       "size": 30,
       "vw": 7.7,
@@ -1366,71 +1852,176 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 8550,
+      "top": 1959,
       "tag": "h2",
       "kind": "heading"
      },
      {
-      "text": "1.56",
-      "words": 1,
-      "chars": 4,
+      "text": "Kính Lái Xe Ban Đêm",
+      "words": 5,
+      "chars": 19,
       "lines": 1,
-      "size": 30,
-      "vw": 7.7,
+      "size": 24,
+      "vw": 6.2,
       "font": "SF Pro Display",
-      "weight": 900,
+      "weight": 700,
       "tracking": 0,
-      "leading": 1.2,
+      "leading": 1.33,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
-      "position": "left",
-      "widthRatio": 0.15,
-      "top": 8778,
-      "tag": "span",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 2499,
+      "tag": "h3",
       "kind": "heading"
      },
      {
-      "text": "1.60",
-      "words": 1,
-      "chars": 4,
+      "text": "Bảo Vệ Thị Lực Số",
+      "words": 5,
+      "chars": 17,
       "lines": 1,
-      "size": 30,
-      "vw": 7.7,
+      "size": 24,
+      "vw": 6.2,
       "font": "SF Pro Display",
-      "weight": 900,
+      "weight": 700,
       "tracking": 0,
-      "leading": 1.2,
+      "leading": 1.33,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
-      "position": "left",
-      "widthRatio": 0.15,
-      "top": 9130,
-      "tag": "span",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 3145,
+      "tag": "h3",
       "kind": "heading"
      },
      {
-      "text": "1.67",
-      "words": 1,
-      "chars": 4,
+      "text": "Kính Đổi Màu Thông Minh",
+      "words": 5,
+      "chars": 23,
       "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "SF Pro Display",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 3791,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Kính Khoan & Chống Va Đập",
+      "words": 6,
+      "chars": 25,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "SF Pro Display",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 4437,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Kính Đa Tròng Kỹ Thuật Số",
+      "words": 6,
+      "chars": 25,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "SF Pro Display",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 5115,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Kiểm Soát Cận Thị Học Đường",
+      "words": 6,
+      "chars": 27,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "SF Pro Display",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 5761,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Khoa Học Vật Liệu & Chế Tác",
+      "words": 7,
+      "chars": 27,
+      "lines": 2,
       "size": 30,
       "vw": 7.7,
       "font": "SF Pro Display",
       "weight": 900,
-      "tracking": 0,
+      "tracking": -0.025,
       "leading": 1.2,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
-      "position": "left",
-      "widthRatio": 0.15,
-      "top": 9482,
-      "tag": "span",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 6447,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Kiến Thức & Công Nghệ",
+      "words": 5,
+      "chars": 21,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 7695,
+      "tag": "h2",
       "kind": "heading"
      },
      {
@@ -1438,26 +2029,110 @@
       "words": 1,
       "chars": 4,
       "lines": 1,
+      "size": 48,
+      "vw": 12.3,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 7899,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "UV420",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 48,
+      "vw": 12.3,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": 0,
+      "leading": 1,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 8339,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "9H",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 48,
+      "vw": 12.3,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 8779,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Chứng Nhận Canada & Y Tế",
+      "words": 6,
+      "chars": 24,
+      "lines": 2,
       "size": 30,
       "vw": 7.7,
       "font": "SF Pro Display",
       "weight": 900,
-      "tracking": 0,
+      "tracking": -0.025,
       "leading": 1.2,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
-      "position": "left",
-      "widthRatio": 0.14,
-      "top": 9834,
-      "tag": "span",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 9323,
+      "tag": "h2",
       "kind": "heading"
      },
      {
-      "text": "Bạn Cần Báo Giá Sỉ Cho Đại Lý?",
+      "text": "Hợp Tác Phát Triển Đại Lý",
+      "words": 6,
+      "chars": 25,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 11123,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Đăng Ký Đại Lý & Báo Giá Sỉ",
       "words": 8,
-      "chars": 30,
+      "chars": 27,
       "lines": 2,
       "size": 30,
       "vw": 7.7,
@@ -1471,18 +2146,102 @@
       "align": "center",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 10306,
+      "top": 12905,
       "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Liên Hệ & Hỗ Trợ Kỹ Thuật",
+      "words": 7,
+      "chars": 25,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 13970,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "0933 102 653",
+      "words": 3,
+      "chars": 12,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.71,
+      "top": 14294,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "Zalo 0933 102 653",
+      "words": 4,
+      "chars": 17,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.71,
+      "top": 14534,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "info@rockylens.com",
+      "words": 1,
+      "chars": 18,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.71,
+      "top": 14774,
+      "tag": "a",
       "kind": "heading"
      }
     ],
     "headingSummary": {
-     "count": 8,
+     "count": 23,
      "maxLines": 2,
      "over2Lines": 0,
      "statements": 0,
-     "centered": 2,
-     "medianWords": 1,
+     "centered": 1,
+     "medianWords": 5,
      "mixedFontHeadings": 0
     },
     "type": {
@@ -1499,10 +2258,11 @@
       16,
       18,
       20,
+      24,
       30,
-      36
+      48
      ],
-     "sizeCount": 6,
+     "sizeCount": 7,
      "notLoaded": [],
      "body": {
       "font": "SF Pro Display",
@@ -1510,14 +2270,14 @@
       "leading": 1.63,
       "weight": 400,
       "tracking": 0,
-      "contrast": 7.6
+      "contrast": 9.5
      },
-     "measureChars": 38,
+     "measureChars": 43,
      "max": {
-      "size": 36,
-      "vw": 9.2,
+      "size": 48,
+      "vw": 12.3,
       "font": "SF Pro Display",
-      "text": "12 Dòng Tròng"
+      "text": "Quang Học Canada"
      },
      "monoShare": 0,
      "monoProseShare": 0,
@@ -1527,7 +2287,7 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.18,
+     "centerShare": 0.08,
      "smallText": 0
     },
     "eyebrows": [],
@@ -1542,17 +2302,8 @@
      "dark": false,
      "sectionBgs": [
       {
-       "color": "#ffffff",
-       "top": 935,
-       "hsl": {
-        "h": 0,
-        "s": 0,
-        "l": 1
-       }
-      },
-      {
        "color": "#f5f5f7",
-       "top": 8754,
+       "top": 144,
        "hsl": {
         "h": 240,
         "s": 0.11,
@@ -1560,35 +2311,62 @@
        }
       },
       {
+       "color": "#ffffff",
+       "top": 1263,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
        "color": "#0e253a",
-       "top": 10242,
+       "top": 11043,
        "hsl": {
         "h": 209,
         "s": 0.61,
         "l": 0.14
        }
+      },
+      {
+       "color": "#163652",
+       "top": 12285,
+       "hsl": {
+        "h": 208,
+        "s": 0.58,
+        "l": 0.2
+       }
+      },
+      {
+       "color": "#071521",
+       "top": 14954,
+       "hsl": {
+        "h": 208,
+        "s": 0.65,
+        "l": 0.08
+       }
       }
      ],
      "textColors": [
       {
-       "color": "#475569",
-       "share": 0.27
+       "color": "#334155",
+       "share": 0.28
       },
       {
-       "color": "#334155",
-       "share": 0.24
+       "color": "#475569",
+       "share": 0.26
       },
       {
        "color": "#0e253a",
-       "share": 0.22
+       "share": 0.12
       },
       {
-       "color": "#ffffff",
-       "share": 0.15
+       "color": "#cbd5e1",
+       "share": 0.1
       },
       {
-       "color": "#5eead4",
-       "share": 0.06
+       "color": "#e2e8f0",
+       "share": 0.09
       }
      ],
      "button": {
@@ -1603,8 +2381,8 @@
      "lowContrast": []
     },
     "buttons": {
-     "count": 22,
-     "inHero": 7,
+     "count": 19,
+     "inHero": 3,
      "radius": "pill",
      "height": 52,
      "withShadow": 0,
@@ -1613,10 +2391,8 @@
      "upper": 0,
      "heroLabels": [
       "Báo giá đại lý",
-      "Tất cả (12)",
-      "Đơn tròng (4)",
-      "Đa tròng Freeform (3)",
-      "Lọc ánh sáng xanh (3)"
+      "Khám phá giải pháp thị lực",
+      "Tư vấn chuyên gia: 0933 102 653"
      ]
     },
     "surfaces": {
@@ -1632,24 +2408,54 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 1,
-     "roundedBoxes": 21,
+     "roundedBoxes": 37,
      "boxRadius": 24,
-     "squareMedia": 0,
-     "roundedMedia": 12,
-     "mediaRadius": 24,
+     "squareMedia": 1,
+     "roundedMedia": 9,
+     "mediaRadius": 16,
      "textShadow": 0,
      "cardRows": [
       {
-       "count": 12,
+       "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 935
+       "top": 805
+      },
+      {
+       "count": 6,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 2219
       },
       {
        "count": 4,
        "iconTopped": false,
        "rounded": true,
-       "top": 8754
+       "top": 6663
+      },
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 7875
+      },
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 9567
+      },
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 11453
+      },
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 14186
       }
      ]
     },
@@ -1670,117 +2476,209 @@
      "w": 390,
      "h": 844
     },
-    "pageH": 10884,
+    "pageH": 16184,
     "margins": {
      "left": 24,
-     "right": 30
+     "right": 28
     },
     "sections": [
      {
       "sel": "section.pt-12.sm:pt-16",
       "tag": "section",
       "top": 144,
-      "height": 791,
-      "words": 87,
-      "media": 0,
+      "height": 1735,
+      "words": 145,
+      "media": 1,
       "middle": 0,
       "heading": {
-       "text": "12 Dòng Tròng",
-       "size": 36,
-       "tag": "span"
+       "text": "Quang Học Canada",
+       "size": 48,
+       "tag": "h1"
       },
       "left": 24,
-      "right": 24,
+      "right": 25,
       "textLeft": 24,
-      "textRight": 41,
+      "textRight": 25,
       "fullBleed": false,
       "footer": false,
       "hero": true,
-      "continues": false,
+      "continues": true,
       "pinned": false
      },
      {
-      "sel": "section.pb-20.px-6",
+      "sel": "section#trong-kinh.py-20.px-6",
       "tag": "section",
-      "top": 935,
-      "height": 7535,
-      "words": 584,
-      "media": 12,
+      "top": 1879,
+      "height": 4488,
+      "words": 354,
+      "media": 6,
       "middle": 0,
       "heading": {
-       "text": "Tròng Kính Đơn Tròng Rocky 1.56 BlueCut UV420 SHMC",
-       "size": 20,
-       "tag": "h3"
+       "text": "Khám phá giải pháp khúc xạ",
+       "size": 30,
+       "tag": "h2"
       },
-      "left": 48,
-      "right": 48,
-      "textLeft": 48,
-      "textRight": 48,
+      "left": 24,
+      "right": 28,
+      "textLeft": 24,
+      "textRight": 28,
       "fullBleed": false,
       "footer": false,
       "hero": false,
-      "continues": false,
+      "continues": true,
       "pinned": false
      },
      {
       "sel": "section.py-20.px-6",
       "tag": "section",
-      "top": 8470,
-      "height": 1772,
-      "words": 182,
+      "top": 6367,
+      "height": 1248,
+      "words": 161,
       "media": 0,
       "middle": 0,
       "heading": {
-       "text": "So Sánh Chiết Suất Vật Liệu (Refractive Index)",
+       "text": "Khoa Học Vật Liệu & Chế Tác",
        "size": 30,
        "tag": "h2"
       },
       "left": 24,
-      "right": 30,
+      "right": 35,
       "textLeft": 24,
+      "textRight": 35,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#kham-pha-kien-thuc.py-20.px-6",
+      "tag": "section",
+      "top": 7615,
+      "height": 1628,
+      "words": 133,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "1.74",
+       "size": 48,
+       "tag": "span"
+      },
+      "left": 24,
+      "right": 32,
+      "textLeft": 24,
+      "textRight": 32,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.py-20.px-6",
+      "tag": "section",
+      "top": 9243,
+      "height": 1800,
+      "words": 106,
+      "media": 3,
+      "middle": 0,
+      "heading": {
+       "text": "Chứng Nhận Canada & Y Tế",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 35,
+      "textLeft": 24,
+      "textRight": 35,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#doi-tac.py-20.px-6",
+      "tag": "section",
+      "top": 11043,
+      "height": 1782,
+      "words": 193,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Hợp Tác Phát Triển Đại Lý",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 25,
+      "textLeft": 24,
+      "textRight": 25,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#bao-gia.py-20.px-6",
+      "tag": "section",
+      "top": 12825,
+      "height": 1065,
+      "words": 76,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Đăng Ký Đại Lý & Báo Giá Sỉ",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 30,
+      "right": 30,
+      "textLeft": 30,
       "textRight": 30,
       "fullBleed": false,
       "footer": false,
       "hero": false,
-      "continues": false,
+      "continues": true,
       "pinned": false
      },
      {
-      "sel": "section.py-16.px-6",
+      "sel": "section#lien-he.py-20.px-6",
       "tag": "section",
-      "top": 10242,
-      "height": 462,
-      "words": 40,
+      "top": 13890,
+      "height": 1064,
+      "words": 100,
       "media": 0,
       "middle": 0,
       "heading": {
-       "text": "Bạn Cần Báo Giá Sỉ Cho Đại Lý?",
+       "text": "Liên Hệ & Hỗ Trợ Kỹ Thuật",
        "size": 30,
        "tag": "h2"
       },
       "left": 24,
-      "right": 24,
+      "right": 38,
       "textLeft": 24,
-      "textRight": 24,
+      "textRight": 38,
       "fullBleed": false,
       "footer": false,
       "hero": false,
-      "continues": false,
+      "continues": true,
       "pinned": false
      },
      {
-      "sel": "footer.bg-[#071521].text-white",
+      "sel": "footer.bg-[#071521].text-slate-300",
       "tag": "footer",
-      "top": 10704,
-      "height": 180,
-      "words": 17,
+      "top": 14954,
+      "height": 1230,
+      "words": 156,
       "media": 0,
-      "middle": 13,
+      "middle": 0,
       "heading": null,
-      "left": 29,
-      "right": 29,
-      "textLeft": 29,
-      "textRight": 29,
+      "left": 24,
+      "right": 25,
+      "textLeft": 24,
+      "textRight": 25,
       "fullBleed": false,
       "footer": true,
       "hero": false,
@@ -1791,8 +2689,8 @@
     "gaps": [],
     "h1s": [
      {
-      "text": "Catalogue Tròng Kính Rocky",
-      "size": 30,
+      "text": "Quang Học Canada",
+      "size": 48,
       "top": 192,
       "firstScreen": true
      }
@@ -1800,15 +2698,19 @@
     "edgeText": [],
     "edges": [
      {
-      "x": 48,
-      "n": 32
+      "x": 44,
+      "n": 36
      },
      {
       "x": 24,
-      "n": 4
+      "n": 16
+     },
+     {
+      "x": 56,
+      "n": 3
      }
     ],
-    "leftBlocks": 36,
+    "leftBlocks": 55,
     "bodySize": 16,
     "stage": false,
     "explains": true,
@@ -1825,7 +2727,7 @@
    "level": "WARN",
    "id": "card-rows",
    "width": 1440,
-   "message": "2 rows of identical boxed cards.",
+   "message": "7 rows of identical boxed cards.",
    "fix": "Vary the composition; not every section is a card grid.",
    "alsoAt": [
     768,
@@ -1843,8 +2745,11 @@
    "level": "WARN",
    "id": "off-centre",
    "width": 1440,
-   "message": "The margins differ: 80px on the left, 108px on the right, at 1440px.",
-   "fix": "Put the navigation and the content on one pair of margins; check for padding on one side only, a scrollbar gutter, or a header on another inset than the page."
+   "message": "The margins differ: 73px on the left, 107px on the right, at 1440px.",
+   "fix": "Put the navigation and the content on one pair of margins; check for padding on one side only, a scrollbar gutter, or a header on another inset than the page.",
+   "alsoAt": [
+    768
+   ]
   }
  ],
  "images": [
@@ -1854,7 +2759,8 @@
    "fold": "C:\\Users\\phong\\Desktop\\Rocky\\.taste-skill\\inspect\\desktop-fold.jpg",
    "pages": [
     "C:\\Users\\phong\\Desktop\\Rocky\\.taste-skill\\inspect\\desktop-page-01.jpg",
-    "C:\\Users\\phong\\Desktop\\Rocky\\.taste-skill\\inspect\\desktop-page-02.jpg"
+    "C:\\Users\\phong\\Desktop\\Rocky\\.taste-skill\\inspect\\desktop-page-02.jpg",
+    "C:\\Users\\phong\\Desktop\\Rocky\\.taste-skill\\inspect\\desktop-page-03.jpg"
    ],
    "film": []
   },
@@ -1863,7 +2769,8 @@
    "width": 768,
    "fold": "C:\\Users\\phong\\Desktop\\Rocky\\.taste-skill\\inspect\\tablet-fold.jpg",
    "pages": [
-    "C:\\Users\\phong\\Desktop\\Rocky\\.taste-skill\\inspect\\tablet-page-01.jpg"
+    "C:\\Users\\phong\\Desktop\\Rocky\\.taste-skill\\inspect\\tablet-page-01.jpg",
+    "C:\\Users\\phong\\Desktop\\Rocky\\.taste-skill\\inspect\\tablet-page-02.jpg"
    ],
    "film": []
   },
