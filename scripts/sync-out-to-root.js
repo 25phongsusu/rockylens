@@ -103,4 +103,13 @@ if (fs.existsSync(path.resolve('404.html'))) {
   }
 }
 
+if (fs.existsSync(path.resolve('out/index.html'))) {
+  const original = fs.readFileSync(path.resolve('out/index.html'), 'utf8');
+  const fixed = fixAssetPaths(original);
+  if (fixed !== original) {
+    fs.writeFileSync(path.resolve('out/index.html'), fixed, 'utf8');
+    console.log('✓ Fixed asset paths in out/index.html for GitHub Pages');
+  }
+}
+
 console.log('Successfully synced and patched static pages for GitHub Pages hosting!');

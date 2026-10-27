@@ -109,7 +109,7 @@ export default function HeroSection() {
                   alt="Tròng kính quang học Rocky Lens Canada"
                   fill
                   priority
-                  className="object-contain p-2 transition-transform duration-700 hover:scale-105"
+                  className="object-contain p-2 transition-transform duration-700 hover:scale-105 drop-shadow-[0_15px_30px_rgba(11,123,138,0.25)]"
                   sizes="(max-width: 1024px) 100vw, 450px"
                 />
               </div>
