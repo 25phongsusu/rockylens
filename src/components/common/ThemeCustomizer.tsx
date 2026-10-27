@@ -160,6 +160,14 @@ export default function ThemeCustomizer() {
     }
   }, []);
 
+  // Close panel on outside click
+  useEffect(() => {
+    if (!isOpen) return;
+    const handleOutsideClick = () => setIsOpen(false);
+    window.addEventListener('click', handleOutsideClick);
+    return () => window.removeEventListener('click', handleOutsideClick);
+  }, [isOpen]);
+
   const handleColorChange = (key: keyof ThemeColors, value: string) => {
     const updated = { ...colors, [key]: value };
     setColors(updated);
@@ -232,10 +240,16 @@ export default function ThemeCustomizer() {
   return (
     <>
       {/* Floating Toggle Button */}
-      <div className="fixed bottom-6 right-6 z-40 print:hidden">
+      <div
+        className="print:hidden pointer-events-auto"
+        style={{ position: 'fixed', bottom: '24px', right: '24px', zIndex: 99998 }}
+      >
         <button
           type="button"
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={(e) => {
+            e.stopPropagation();
+            setIsOpen((prev) => !prev);
+          }}
           className="group flex items-center space-x-2.5 px-4 py-3 rounded-full bg-white text-slate-900 border border-slate-200/90 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer backdrop-blur-md"
           title="Tùy biến bảng màu giao diện (Color Customizer)"
         >
@@ -251,7 +265,11 @@ export default function ThemeCustomizer() {
 
       {/* Floating Customizer Drawer / Modal */}
       {isOpen && (
-        <div className="fixed bottom-22 right-6 z-50 w-[360px] sm:w-[420px] max-w-[calc(100vw-2rem)] max-h-[80vh] flex flex-col bg-white/95 backdrop-blur-xl rounded-3xl border border-slate-200/90 shadow-2xl overflow-hidden animate-in fade-in slide-in-from-bottom-4 duration-200">
+        <div
+          style={{ position: 'fixed', bottom: '84px', right: '24px', zIndex: 99999 }}
+          onClick={(e) => e.stopPropagation()}
+          className="w-[360px] sm:w-[420px] max-w-[calc(100vw-2rem)] max-h-[80vh] flex flex-col bg-white/95 backdrop-blur-xl rounded-3xl border border-slate-200/90 shadow-2xl overflow-hidden pointer-events-auto shadow-slate-900/10"
+        >
           
           {/* Header */}
           <div className="p-4 sm:p-5 border-b border-slate-100 flex items-center justify-between bg-slate-50/80">

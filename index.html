@@ -458,7 +458,7 @@
     }
   </style>
 </head>
-<body class="bg-[var(--site-bg-start)] text-[#0F172A] selection:bg-[var(--color-primary)] selection:text-white">
+<body class="bg-[var(--site-bg-start)] text-heading selection:bg-[var(--color-primary)] selection:text-white">
 
   <!-- TOP SLIM BAR: OFFICIAL IDENTITY & CONTACT -->
   <div class="bg-[var(--b2b-end)] text-white py-2.5 px-6 text-base">
@@ -1509,7 +1509,7 @@
     <!-- Mục tiêu: Mở ra cơ hội hợp tác cho cửa hàng, đại lý, lab -->
     <!-- Giọng văn chuyên nghiệp, không công khai giá sỉ/chiết khấu -->
     <!-- ========================================================= -->
-    <section id="doi-tac" class="relative py-24 px-6 bg-gradient-to-b var(--gradient-b2b) text-white overflow-hidden">
+    <section id="doi-tac" class="relative py-24 px-6 b2b-gradient text-white overflow-hidden">
       <!-- Ambient Blur Caustic Overlays (Smooth Section Blending) -->
       <div class="absolute -top-28 left-1/2 -translate-x-1/2 w-[700px] h-56 bg-[var(--color-primary)]/25 rounded-full blur-3xl pointer-events-none"></div>
       <div class="absolute -bottom-28 left-1/2 -translate-x-1/2 w-[700px] h-56 bg-[var(--color-primary)]/25 rounded-full blur-3xl pointer-events-none"></div>
@@ -1532,29 +1532,29 @@
             </p>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-              <div class="bg-[#163652] p-5 rounded-2xl space-y-2">
+              <div class="bg-white/10 backdrop-blur-md border border-white/15 p-5 rounded-2xl space-y-2 hover:bg-white/15 transition-all">
                 <span class="text-base font-bold text-white block">Lab RX Freeform Kỹ Thuật Số</span>
                 <p class="text-base text-slate-200">Xử lý các đơn hàng độ khó, loạn cao và đa tròng cá nhân hóa được gia công và kiểm định chuẩn xác trong 24 giờ.</p>
               </div>
-              <div class="bg-[#163652] p-5 rounded-2xl space-y-2">
+              <div class="bg-white/10 backdrop-blur-md border border-white/15 p-5 rounded-2xl space-y-2 hover:bg-white/15 transition-all">
                 <span class="text-base font-bold text-white block">Tổng Kho Sẵn Sàng 24/7</span>
                 <p class="text-base text-slate-200">Đầy đủ các dãy độ và chiết suất 1.56, 1.60, 1.67, 1.74, BlueCut và đổi màu, giao nhanh nội thành trong 2 giờ.</p>
               </div>
-              <div class="bg-[#163652] p-5 rounded-2xl space-y-2">
+              <div class="bg-white/10 backdrop-blur-md border border-white/15 p-5 rounded-2xl space-y-2 hover:bg-white/15 transition-all">
                 <span class="text-base font-bold text-white block">Chính Sách Bảo Hành Đồng Hành</span>
                 <p class="text-base text-slate-200">Chính sách bảo hành điện tử chính hãng 1 đổi 1 trong 24 tháng hỗ trợ đại lý an tâm về sự hài lòng của khách hàng.</p>
               </div>
-              <div class="bg-[#163652] p-5 rounded-2xl space-y-2">
+              <div class="bg-white/10 backdrop-blur-md border border-white/15 p-5 rounded-2xl space-y-2 hover:bg-white/15 transition-all">
                 <span class="text-base font-bold text-white block">Tài Liệu &amp; Công Cụ Trưng Bày</span>
                 <p class="text-base text-slate-200">Cung cấp trọn bộ kit đèn test UV420, phôi mẫu so sánh chiết suất và tài liệu đào tạo khúc xạ chuyên sâu tại điểm bán.</p>
               </div>
             </div>
 
             <div class="pt-4 flex flex-wrap items-center gap-4">
-              <button type="button" onclick="openB2BQuoteModal()" class="px-7 py-3.5 rounded-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold text-base transition-colors text-center cursor-pointer shadow-xs">
+              <button type="button" onclick="openB2BQuoteModal()" class="button-primary px-7 py-3.5 rounded-full text-base transition-colors text-center cursor-pointer shadow-xs">
                 Nhận Báo Giá Cho Đại Lý
               </button>
-              <a href="danh-cho-doi-tac/" class="px-7 py-3.5 rounded-full bg-[#163652] hover:bg-[#1c4568] text-white font-bold text-base transition-colors text-center">
+              <a href="danh-cho-doi-tac/" class="px-7 py-3.5 rounded-full bg-white/15 hover:bg-white/25 border border-white/20 text-white font-bold text-base transition-colors text-center">
                 Chính Sách Hợp Tác
               </a>
               <a href="https://zalo.me/0933102653" target="_blank" rel="noopener noreferrer" class="px-7 py-3.5 rounded-full bg-white hover:bg-slate-100 text-heading font-bold text-base transition-colors text-center">
@@ -1570,7 +1570,7 @@
 
           <!-- Real Optical Store Showcase Image -->
           <div class="lg:col-span-5 flex justify-center">
-            <div class="bg-[#163652] p-4 rounded-3xl max-w-md w-full overflow-hidden">
+            <div class="bg-white/10 backdrop-blur-md border border-white/20 p-4 rounded-3xl max-w-md w-full overflow-hidden shadow-xl">
               <img src="assets/images/real/rocky_store_showcase.jpg" alt="Showcase đại lý Rocky Lens" class="w-full h-80 object-cover rounded-2xl">
               <div class="p-4 text-center">
                 <span class="text-base font-bold text-white block">Mạng Lưới Đối Tác Toàn Quốc</span>
@@ -2172,11 +2172,31 @@
       } catch (err) {}
     }
 
-    function toggleCustomizer() {
+    function toggleCustomizer(e) {
+      if (e && e.stopPropagation) e.stopPropagation();
       var panel = document.getElementById('themeCustomizerPanel');
       if (!panel) return;
-      panel.classList.toggle('hidden');
+      if (panel.style.display === 'none' || panel.style.display === '' || panel.classList.contains('hidden')) {
+        panel.classList.remove('hidden');
+        panel.style.display = 'flex';
+      } else {
+        panel.style.display = 'none';
+      }
     }
+    window.toggleCustomizer = toggleCustomizer;
+    window.applyPreset = applyPreset;
+    window.resetCustomTheme = resetCustomTheme;
+    window.onCustomColorChange = onCustomColorChange;
+    window.copyThemeCSS = copyThemeCSS;
+
+    document.addEventListener('click', function(e) {
+      var panel = document.getElementById('themeCustomizerPanel');
+      var btn = document.getElementById('themeCustomizerToggleBtn');
+      if (!panel || panel.style.display === 'none') return;
+      if (!panel.contains(e.target) && (!btn || !btn.contains(e.target))) {
+        panel.style.display = 'none';
+      }
+    });
 
     function onCustomColorChange(key, val) {
       if (!val) return;
@@ -2251,8 +2271,8 @@
   </script>
 
   <!-- FLOATING THEME CUSTOMIZER WIDGET (MASTER TEMPLATE) -->
-  <div class="fixed bottom-6 right-6 z-40 print:hidden">
-    <button type="button" onclick="toggleCustomizer()" class="flex items-center space-x-2.5 px-4 py-3 rounded-full bg-white text-slate-900 border border-slate-200/90 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer backdrop-blur-md">
+  <div class="print:hidden pointer-events-auto" style="position: fixed; bottom: 24px; right: 24px; z-index: 99998;">
+    <button id="themeCustomizerToggleBtn" type="button" onclick="toggleCustomizer(event)" class="group flex items-center space-x-2.5 px-4 py-3 rounded-full bg-white text-slate-900 border border-slate-200/90 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer backdrop-blur-md">
       <div class="w-6 h-6 rounded-full flex items-center justify-center text-white" style="background: var(--gradient-button);">
         <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.563-2.512 5.563-5.563C22 6.5 17.5 2 12 2Z"/></svg>
       </div>
@@ -2262,14 +2282,14 @@
   </div>
 
   <!-- FLOATING CUSTOMIZER PANEL -->
-  <div id="themeCustomizerPanel" class="hidden fixed bottom-22 right-6 z-50 w-[360px] sm:w-[420px] max-w-[calc(100vw-2rem)] max-h-[80vh] flex-col bg-white/95 backdrop-blur-xl rounded-3xl border border-slate-200/90 shadow-2xl overflow-hidden">
+  <div id="themeCustomizerPanel" onclick="event.stopPropagation()" style="position: fixed; bottom: 84px; right: 24px; z-index: 99999; display: none;" class="w-[360px] sm:w-[420px] max-w-[calc(100vw-2rem)] max-h-[80vh] flex flex-col bg-white/95 backdrop-blur-xl rounded-3xl border border-slate-200/90 shadow-2xl overflow-hidden pointer-events-auto shadow-slate-900/10">
     <!-- Header -->
     <div class="p-4 sm:p-5 border-b border-slate-100 flex items-center justify-between bg-slate-50/80">
       <div>
         <h3 class="text-sm font-extrabold text-slate-900">Tùy Biến Màu Giao Diện</h3>
         <p class="text-[11px] text-slate-500">Kéo thanh màu hoặc nhập mã HEX trực tiếp</p>
       </div>
-      <button type="button" onclick="toggleCustomizer()" class="p-1.5 rounded-lg text-slate-400 hover:text-slate-700 hover:bg-slate-200/60 transition-colors">
+      <button type="button" onclick="toggleCustomizer(event)" class="p-1.5 rounded-lg text-slate-400 hover:text-slate-700 hover:bg-slate-200/60 transition-colors cursor-pointer">
         <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
       </button>
     </div>
