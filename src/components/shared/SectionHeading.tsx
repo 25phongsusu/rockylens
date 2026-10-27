@@ -27,8 +27,8 @@ export default function SectionHeading({
         <span
           className={`inline-block text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-3 ${
             dark
-              ? 'bg-[#0B7B8A]/20 text-teal-300 border border-[#0B7B8A]/40'
-              : 'bg-teal-50 text-[#0B7B8A] border border-teal-200'
+              ? 'bg-[var(--button-middle)]/20 text-[var(--button-start)] border border-[var(--button-middle)]/40'
+              : 'bg-[var(--site-bg-middle)]/50 text-[var(--color-primary)] border border-[var(--color-border)]'
           }`}
         >
           {badge}
@@ -36,7 +36,7 @@ export default function SectionHeading({
       )}
       <h2
         className={`text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight leading-tight ${
-          dark ? 'text-white' : 'text-slate-900'
+          dark ? 'text-white' : 'text-heading'
         }`}
       >
         {title}
@@ -44,7 +44,7 @@ export default function SectionHeading({
       {description && (
         <p
           className={`mt-4 text-sm sm:text-base leading-relaxed ${
-            dark ? 'text-slate-400' : 'text-slate-600'
+            dark ? 'text-slate-300' : 'text-brand-muted'
           }`}
         >
           {description}

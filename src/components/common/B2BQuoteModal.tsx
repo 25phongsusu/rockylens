@@ -38,7 +38,7 @@ export default function B2BQuoteModal({ isOpen, onClose }: B2BQuoteModalProps) {
 
   return (
     <div
-      className="fixed inset-0 z-50 bg-[#071521]/80 backdrop-blur-md flex items-center justify-center p-4 sm:p-6 transition-all duration-300"
+      className="fixed inset-0 z-50 bg-[var(--b2b-end)]/80 backdrop-blur-md flex items-center justify-center p-4 sm:p-6 transition-all duration-300"
       role="dialog"
       aria-modal="true"
       onClick={onClose}
@@ -59,13 +59,13 @@ export default function B2BQuoteModal({ isOpen, onClose }: B2BQuoteModalProps) {
 
         {/* Header */}
         <div className="space-y-2 pr-8">
-          <span className="px-3.5 py-1.5 rounded-full bg-teal-50 text-[#086370] text-sm font-bold inline-block">
+          <span className="px-3.5 py-1.5 rounded-full bg-[var(--site-bg-start)] text-[var(--color-primary)] text-sm font-bold inline-block border border-[var(--color-border)]">
             Dành Cho Cửa Hàng &amp; Đại Lý Mắt Kính
           </span>
-          <h3 className="text-2xl sm:text-3xl font-black text-[#0E253A] tracking-tight leading-snug">
+          <h3 className="text-2xl sm:text-3xl font-black text-heading tracking-tight leading-snug">
             Nhận Báo Giá Đại Lý &amp; Chính Sách Chiết Khấu
           </h3>
-          <p className="text-slate-600 text-sm leading-relaxed">
+          <p className="text-brand-muted text-sm leading-relaxed">
             Bảng giá sỉ các dòng tròng Rocky sẵn kho và chính sách hợp tác Lab RX Freeform kỹ thuật số được gửi trực tiếp, bảo mật cho đối tác kinh doanh.
           </p>
         </div>
@@ -76,7 +76,7 @@ export default function B2BQuoteModal({ isOpen, onClose }: B2BQuoteModalProps) {
             href="https://zalo.me/0933102653"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full py-3.5 px-6 rounded-2xl bg-[#0B7B8A] hover:bg-[#086370] text-white font-bold text-base flex items-center justify-center gap-3 transition-colors shadow-sm cursor-pointer"
+            className="button-primary w-full py-3.5 px-6 rounded-2xl text-base flex items-center justify-center gap-3 shadow-sm cursor-pointer"
           >
             <MessageSquare className="w-5 h-5 fill-current" />
             <span>Nhận Báo Giá File PDF Qua Zalo Ngay</span>
@@ -84,9 +84,9 @@ export default function B2BQuoteModal({ isOpen, onClose }: B2BQuoteModalProps) {
 
           <a
             href="tel:0933102653"
-            className="w-full py-3 px-6 rounded-2xl bg-slate-100 hover:bg-slate-200 text-[#0E253A] font-bold text-base flex items-center justify-center gap-3 transition-colors cursor-pointer"
+            className="button-secondary w-full py-3 px-6 rounded-2xl text-base flex items-center justify-center gap-3 cursor-pointer"
           >
-            <Phone className="w-5 h-5 text-[#0B7B8A]" />
+            <Phone className="w-5 h-5 text-[var(--color-primary)]" />
             <span>Hotline Phụ Trách B2B: 0933 102 653</span>
           </a>
         </div>
@@ -99,7 +99,7 @@ export default function B2BQuoteModal({ isOpen, onClose }: B2BQuoteModalProps) {
 
           {isSubmitted ? (
             <div className="p-4 rounded-2xl bg-teal-50 text-teal-800 text-sm flex items-start gap-3 border border-teal-100">
-              <CheckCircle className="w-5 h-5 text-[#0B7B8A] shrink-0 mt-0.5" />
+              <CheckCircle className="w-5 h-5 text-[var(--color-primary)] shrink-0 mt-0.5" />
               <div>
                 <strong>Cảm ơn Quý đối tác!</strong> Bộ phận B2B Rocky Lens sẽ gửi bảng giá chiết khấu và liên hệ hỗ trợ trong 15 phút.
               </div>
@@ -113,7 +113,7 @@ export default function B2BQuoteModal({ isOpen, onClose }: B2BQuoteModalProps) {
                   placeholder="Tên Cửa hàng mắt kính / Đơn vị (*)"
                   value={formData.storeName}
                   onChange={(e) => setFormData({ ...formData, storeName: e.target.value })}
-                  className="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-[#0B7B8A] focus:outline-none text-sm text-[#0E253A] bg-slate-50 focus:bg-white transition-colors"
+                  className="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-[var(--color-primary)] focus:outline-none text-sm text-heading bg-slate-50 focus:bg-white transition-colors"
                 />
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -123,7 +123,7 @@ export default function B2BQuoteModal({ isOpen, onClose }: B2BQuoteModalProps) {
                   placeholder="Số điện thoại / Zalo (*)"
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  className="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-[#0B7B8A] focus:outline-none text-sm text-[#0E253A] bg-slate-50 focus:bg-white transition-colors"
+                  className="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-[var(--color-primary)] focus:outline-none text-sm text-heading bg-slate-50 focus:bg-white transition-colors"
                 />
                 <input
                   type="text"
@@ -131,12 +131,12 @@ export default function B2BQuoteModal({ isOpen, onClose }: B2BQuoteModalProps) {
                   placeholder="Tỉnh / Thành phố (*)"
                   value={formData.city}
                   onChange={(e) => setFormData({ ...formData, city: e.target.value })}
-                  className="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-[#0B7B8A] focus:outline-none text-sm text-[#0E253A] bg-slate-50 focus:bg-white transition-colors"
+                  className="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-[var(--color-primary)] focus:outline-none text-sm text-heading bg-slate-50 focus:bg-white transition-colors"
                 />
               </div>
               <button
                 type="submit"
-                className="w-full py-3 rounded-xl bg-[#0E253A] hover:bg-[#0B7B8A] text-white font-bold text-sm transition-colors cursor-pointer flex items-center justify-center gap-2"
+                className="button-b2b w-full py-3 rounded-xl text-sm cursor-pointer flex items-center justify-center gap-2"
               >
                 <span>Gửi Yêu Cầu Nhận Báo Giá &amp; Catalog</span>
               </button>

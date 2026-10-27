@@ -22,7 +22,7 @@ export default function MobileNavigation() {
         onClick={toggleOpen}
         aria-label={isOpen ? 'Đóng menu' : 'Mở menu điều hướng'}
         aria-expanded={isOpen}
-        className="p-2.5 rounded-lg text-slate-700 hover:text-[#0B7B8A] hover:bg-slate-100 transition-colors focus:outline-none focus:ring-2 focus:ring-[#0B7B8A]"
+        className="p-2.5 rounded-lg text-slate-700 hover:text-[var(--color-primary)] hover:bg-[var(--site-bg-start)] transition-colors focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
       >
         {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
       </button>
@@ -43,10 +43,10 @@ export default function MobileNavigation() {
         }`}
       >
         {/* Drawer Header */}
-        <div className="p-5 border-b border-slate-100 flex items-center justify-between bg-slate-50">
+        <div className="p-5 border-b border-[var(--color-border)]/40 flex items-center justify-between bg-[var(--site-bg-start)]">
           <Link href="/" onClick={closeMenu} className="flex items-center space-x-2">
-            <span className="text-xl font-bold tracking-tight text-[#0B7B8A]">ROCKY LENS</span>
-            <span className="text-xs font-semibold px-2 py-0.5 rounded bg-teal-100 text-[#0B7B8A]">B2B Đại Lý</span>
+            <span className="text-xl font-bold tracking-tight text-heading">ROCKY LENS</span>
+            <span className="text-xs font-semibold px-2 py-0.5 rounded bg-[var(--site-bg-middle)] text-heading border border-[var(--color-border)]/50">B2B Đại Lý</span>
           </Link>
           <button
             onClick={closeMenu}
@@ -68,8 +68,8 @@ export default function MobileNavigation() {
                   onClick={closeMenu}
                   className={`flex items-center justify-between px-3.5 py-3 rounded-lg font-medium text-base transition-colors ${
                     isActive
-                      ? 'bg-teal-50 text-[#0B7B8A] font-semibold'
-                      : 'text-slate-700 hover:bg-slate-50 hover:text-[#0B7B8A]'
+                      ? 'bg-[var(--site-bg-middle)]/60 text-heading font-semibold'
+                      : 'text-slate-700 hover:bg-[var(--site-bg-start)] hover:text-[var(--color-primary)]'
                   }`}
                 >
                   <span>{item.title}</span>
@@ -77,13 +77,13 @@ export default function MobileNavigation() {
                 </Link>
                 {/* Sub-items if any */}
                 {item.children && (
-                  <div className="pl-4 pr-1 py-1 space-y-0.5 border-l-2 border-slate-100 ml-4 mt-1">
+                  <div className="pl-4 pr-1 py-1 space-y-0.5 border-l-2 border-[var(--color-border)]/40 ml-4 mt-1">
                     {item.children.slice(0, 4).map((sub) => (
                       <Link
                         key={sub.href}
                         href={sub.href}
                         onClick={closeMenu}
-                        className="block px-3 py-2 text-xs text-slate-600 hover:text-[#0B7B8A] rounded hover:bg-slate-50"
+                        className="block px-3 py-2 text-xs text-slate-600 hover:text-[var(--color-primary)] rounded hover:bg-[var(--site-bg-start)]"
                       >
                         {sub.title}
                       </Link>
@@ -96,21 +96,21 @@ export default function MobileNavigation() {
         </nav>
 
         {/* Drawer Footer Actions */}
-        <div className="p-4 border-t border-slate-100 bg-slate-50 space-y-2.5">
+        <div className="p-4 border-t border-[var(--color-border)]/40 bg-[var(--site-bg-start)] space-y-2.5">
           <a
             href={siteConfig.zalo.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full flex items-center justify-center space-x-2 py-2.5 px-4 bg-[#0B7B8A] text-white rounded-lg text-sm font-medium hover:bg-[#096370] shadow-xs transition-colors"
+            className="w-full flex items-center justify-center space-x-2 py-2.5 px-4 button-primary"
           >
             <span>Zalo Tiếp Nhận Đại Lý</span>
             <ArrowRight className="w-4 h-4" />
           </a>
           <a
             href={`tel:${siteConfig.phones.hotline}`}
-            className="w-full flex items-center justify-center space-x-2 py-2.5 px-4 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:border-[#0B7B8A] hover:text-[#0B7B8A] transition-colors"
+            className="w-full flex items-center justify-center space-x-2 py-2.5 px-4 bg-white border border-[var(--color-border)] text-heading rounded-xl text-sm font-medium hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] transition-colors"
           >
-            <Phone className="w-4 h-4 text-[#0B7B8A]" />
+            <Phone className="w-4 h-4 text-[var(--color-primary)]" />
             <span>Hotline B2B: {siteConfig.phones.hotlineDisplay}</span>
           </a>
         </div>

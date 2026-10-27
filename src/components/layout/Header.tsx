@@ -29,23 +29,23 @@ export default function Header() {
   return (
     <>
       {/* TOP SLIM BAR: OFFICIAL IDENTITY & CONTACT (MATCHES HOME EXACTLY) */}
-      <div className="bg-[#0E253A] text-white py-2.5 px-6 text-base">
+      <div className="bg-[var(--b2b-end)] text-white py-2.5 px-6 text-base">
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <span className="text-teal-300 font-semibold text-base">Rocky Lens Canada</span>
+            <span className="text-[var(--button-start)] font-semibold text-base">Rocky Lens Canada</span>
             <span className="text-slate-300 font-medium text-base hidden sm:inline">
               Phân phối độc quyền bởi Clearly Vietnam
             </span>
           </div>
           <div className="flex items-center gap-6 text-base font-medium">
-            <a href="tel:0933102653" className="text-white hover:text-teal-300 transition-colors">
+            <a href="tel:0933102653" className="text-white hover:text-[var(--button-start)] transition-colors">
               Hotline B2B: 0933 102 653
             </a>
             <a
               href="https://zalo.me/0933102653"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-teal-300 hover:text-white transition-colors"
+              className="text-[var(--button-start)] hover:text-white transition-colors"
             >
               Zalo B2B Đại Lý
             </a>
@@ -54,7 +54,7 @@ export default function Header() {
       </div>
 
       {/* APPLE FLUID NAVIGATION: STICKY FROSTED GLASS (MATCHES HOME EXACTLY) */}
-      <header className="sticky top-0 z-40 bg-[#F5F5F7]/90 backdrop-blur-md border-b border-slate-200/80 transition-shadow">
+      <header className="sticky top-0 z-40 bg-[var(--site-bg-start)]/90 backdrop-blur-md border-b border-[var(--color-border)] transition-shadow">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-6">
           
           {/* Brand Logo with Real Rocky Image */}
@@ -75,7 +75,7 @@ export default function Header() {
                   key={item.href}
                   href={item.href}
                   className={`transition-colors ${
-                    active ? 'text-[#0B7B8A] font-bold' : 'hover:text-[#0B7B8A]'
+                    active ? 'text-[var(--color-primary)] font-bold' : 'hover:text-[var(--color-primary)]'
                   }`}
                 >
                   {item.title}
@@ -89,7 +89,7 @@ export default function Header() {
             <button
               type="button"
               onClick={() => setIsB2BModalOpen(true)}
-              className="hidden sm:inline-block px-5 py-2.5 rounded-full bg-[#0B7B8A] hover:bg-[#086370] text-white font-bold text-base transition-all text-center cursor-pointer shadow-xs hover:shadow-md active:scale-95"
+              className="button-primary hidden sm:inline-block px-5 py-2.5 rounded-full text-base transition-all text-center cursor-pointer shadow-xs hover:shadow-md active:scale-95"
             >
               Nhận Báo Giá Đại Lý
             </button>
@@ -109,7 +109,7 @@ export default function Header() {
 
         {/* Mobile Navigation Drawer */}
         {isMobileOpen && (
-          <div className="lg:hidden border-t border-slate-200 bg-[#F5F5F7] px-6 py-5 space-y-4 shadow-xl">
+          <div className="lg:hidden border-t border-[var(--color-border)] bg-[var(--site-bg-start)] px-6 py-5 space-y-4 shadow-xl">
             <nav className="flex flex-col space-y-3">
               {mainNavigation.map((item) => {
                 const active = isActive(item.href);
@@ -119,7 +119,7 @@ export default function Header() {
                     href={item.href}
                     onClick={() => setIsMobileOpen(false)}
                     className={`flex items-center justify-between py-2 text-base font-semibold ${
-                      active ? 'text-[#0B7B8A] font-bold' : 'text-slate-800'
+                      active ? 'text-[var(--color-primary)] font-bold' : 'text-slate-800'
                     }`}
                   >
                     <span>{item.title}</span>
@@ -129,27 +129,27 @@ export default function Header() {
               })}
             </nav>
 
-            <div className="pt-3 border-t border-slate-200 space-y-3">
+            <div className="pt-3 border-t border-[var(--color-border)] space-y-3">
               <button
                 type="button"
                 onClick={() => {
                   setIsMobileOpen(false);
                   setIsB2BModalOpen(true);
                 }}
-                className="w-full py-3 rounded-full bg-[#0B7B8A] hover:bg-[#086370] text-white font-bold text-base text-center transition-all cursor-pointer"
+                className="button-primary w-full py-3 rounded-full text-base text-center transition-all cursor-pointer"
               >
                 Nhận Báo Giá Đại Lý
               </button>
               <div className="flex items-center justify-around text-sm font-medium text-slate-600 pt-1">
-                <a href="tel:0933102653" className="flex items-center gap-1.5 hover:text-[#0B7B8A]">
-                  <Phone className="w-4 h-4 text-[#0B7B8A]" />
+                <a href="tel:0933102653" className="flex items-center gap-1.5 hover:text-[var(--color-primary)]">
+                  <Phone className="w-4 h-4 text-[var(--color-primary)]" />
                   <span>Hotline B2B: 0933 102 653</span>
                 </a>
                 <a
                   href="https://zalo.me/0933102653"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1.5 text-teal-600 hover:text-teal-700"
+                  className="flex items-center gap-1.5 text-[var(--color-primary)] hover:text-[var(--color-primary-hover)]"
                 >
                   <MessageSquare className="w-4 h-4" />
                   <span>Zalo B2B Đại Lý</span>

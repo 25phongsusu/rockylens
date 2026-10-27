@@ -11,7 +11,7 @@ interface ArticleCardProps {
 
 export default function ArticleCard({ article }: ArticleCardProps) {
   return (
-    <article className="group bg-white rounded-2xl border border-slate-200/80 hover:border-teal-300 shadow-xs hover:shadow-xl hover:shadow-teal-900/5 transition-all duration-300 flex flex-col overflow-hidden">
+    <article className="group card-surface rounded-2xl hover:border-[var(--button-middle)] shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden">
       {/* Cover Image */}
       <Link
         href={`/kham-pha-trong-kinh/bai-viet/${article.slug}/`}
@@ -24,7 +24,7 @@ export default function ArticleCard({ article }: ArticleCardProps) {
           className="object-cover transition-transform duration-500 group-hover:scale-105"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
-        <span className="absolute top-3 left-3 px-2.5 py-1 rounded-md text-[11px] font-bold bg-[#0B7B8A] text-white shadow-xs">
+        <span className="absolute top-3 left-3 px-2.5 py-1 rounded-md text-[11px] font-bold bg-[var(--button-middle)] text-white shadow-xs">
           {article.categoryName}
         </span>
       </Link>
@@ -44,13 +44,13 @@ export default function ArticleCard({ article }: ArticleCardProps) {
             </span>
           </div>
 
-          <h3 className="font-bold text-base text-slate-900 group-hover:text-[#0B7B8A] transition-colors line-clamp-2 leading-snug">
+          <h3 className="font-bold text-base text-heading group-hover:text-primary transition-colors line-clamp-2 leading-snug">
             <Link href={`/kham-pha-trong-kinh/bai-viet/${article.slug}/`}>
               {article.title}
             </Link>
           </h3>
 
-          <p className="mt-2 text-xs text-slate-600 line-clamp-2 leading-relaxed">
+          <p className="mt-2 text-xs text-brand-muted line-clamp-2 leading-relaxed">
             {article.description}
           </p>
         </div>
@@ -61,10 +61,10 @@ export default function ArticleCard({ article }: ArticleCardProps) {
           </span>
           <Link
             href={`/kham-pha-trong-kinh/bai-viet/${article.slug}/`}
-            className="inline-flex items-center space-x-1 text-xs font-semibold text-[#0B7B8A] group-hover:text-[#096370] transition-colors"
+            className="inline-flex items-center space-x-1 text-xs font-semibold text-primary group-hover:text-[var(--color-primary-hover)] transition-colors"
           >
             <span>Đọc Tiếp</span>
-            <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+            <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform ml-1" />
           </Link>
         </div>
       </div>

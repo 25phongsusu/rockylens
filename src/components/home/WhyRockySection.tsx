@@ -72,11 +72,11 @@ export default function WhyRockySection() {
   }, [selectedCertIndex]);
 
   return (
-    <section id="vi-sao-rocky" className="relative py-24 px-6 bg-gradient-to-b from-[#F5F5F7] via-[#F5F5F7] via-80% to-[#0E253A] overflow-hidden">
+    <section id="vi-sao-rocky" className="relative py-24 px-6 bg-gradient-to-b from-[var(--site-bg-start)] via-[var(--site-bg-start)] via-80% to-[var(--b2b-end)] overflow-hidden">
       {/* Ambient Blur Caustic Overlays (Smooth Section Blending) */}
-      <div className="absolute inset-x-0 -top-12 h-24 bg-gradient-to-b from-[#F5F5F7] to-transparent blur-xl pointer-events-none opacity-80" />
-      <div className="absolute -top-24 right-1/3 w-[500px] h-48 bg-teal-500/5 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute inset-x-0 -bottom-16 h-32 bg-gradient-to-b from-transparent via-[#0E253A]/60 to-[#0E253A] blur-xl pointer-events-none opacity-90" />
+      <div className="absolute inset-x-0 -top-12 h-24 bg-gradient-to-b from-[var(--site-bg-start)] to-transparent blur-xl pointer-events-none opacity-80" />
+      <div className="absolute -top-24 right-1/3 w-[500px] h-48 bg-[var(--site-bg-end)]/20 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute inset-x-0 -bottom-16 h-32 bg-gradient-to-b from-transparent via-[var(--b2b-end)]/60 to-[var(--b2b-end)] blur-xl pointer-events-none opacity-90" />
 
       <div className="max-w-7xl mx-auto space-y-16 relative z-10">
         
@@ -85,7 +85,7 @@ export default function WhyRockySection() {
           
           {/* Left Column: Brand Story & Values */}
           <div className="lg:col-span-5 space-y-6">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0E253A] tracking-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-heading tracking-tight">
               Rocky Canada Opticians
             </h2>
             <div className="space-y-4 text-slate-700 text-base leading-relaxed">
@@ -100,15 +100,15 @@ export default function WhyRockySection() {
             {/* 4 Value Points */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
               {brandValues.map((val, idx) => (
-                <div key={idx} className="p-4 rounded-2xl bg-white flex items-center gap-3 shadow-xs">
-                  <span className="w-2.5 h-2.5 rounded-full bg-[#0B7B8A] shrink-0" />
-                  <span className="text-sm font-bold text-[#0E253A]">{val}</span>
+                <div key={idx} className="p-4 rounded-2xl card-surface flex items-center gap-3 shadow-xs">
+                  <span className="w-2.5 h-2.5 rounded-full bg-[var(--button-middle)] shrink-0" />
+                  <span className="text-sm font-bold text-heading">{val}</span>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Right Column: Certificates & Awards (Enlarged + Interactive Click to Zoom) */}
+          {/* Right Column: Certificates & Awards */}
           <div className="lg:col-span-7 space-y-8">
             
             {/* Group 1: Canada Optician Certificates (Indices 0 - 5) */}
@@ -127,15 +127,15 @@ export default function WhyRockySection() {
                       className="object-cover rounded-xl group-hover:scale-105 transition-transform duration-300"
                       sizes="(max-width: 768px) 50vw, 16vw"
                     />
-                    <div className="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
-                      <div className="w-9 h-9 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
-                        <ZoomIn className="w-5 h-5 text-[#0B7B8A]" />
+                    <div className="absolute inset-0 bg-[var(--b2b-end)]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
+                      <div className="w-9 h-9 rounded-full bg-white/95 text-primary flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
+                        <ZoomIn className="w-5 h-5 text-primary" />
                       </div>
                     </div>
                   </div>
                 ))}
               </div>
-              <p className="text-center text-sm font-bold text-[#0E253A]">
+              <p className="text-center text-sm font-bold text-heading">
                 Đội ngũ nhân sự tốt nghiệp và có chứng chỉ hành nghề tại Canada (Bấm vào để xem lớn)
               </p>
             </div>
@@ -156,15 +156,15 @@ export default function WhyRockySection() {
                       className="object-cover rounded-xl group-hover:scale-105 transition-transform duration-300"
                       sizes="(max-width: 768px) 50vw, 25vw"
                     />
-                    <div className="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
-                      <div className="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
-                        <ZoomIn className="w-5 h-5 text-[#0B7B8A]" />
+                    <div className="absolute inset-0 bg-[var(--b2b-end)]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
+                      <div className="w-10 h-10 rounded-full bg-white/95 text-primary flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
+                        <ZoomIn className="w-5 h-5 text-primary" />
                       </div>
                     </div>
                   </div>
                 ))}
               </div>
-              <p className="text-center text-sm font-bold text-[#0E253A]">
+              <p className="text-center text-sm font-bold text-heading">
                 Sản phẩm đạt Tiêu chuẩn quốc tế và vinh dự đạt giải thưởng chất lượng châu Á
               </p>
             </div>
@@ -185,15 +185,15 @@ export default function WhyRockySection() {
                       className="object-cover rounded-xl group-hover:scale-105 transition-transform duration-300"
                       sizes="(max-width: 768px) 100vw, 33vw"
                     />
-                    <div className="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
-                      <div className="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
-                        <ZoomIn className="w-5 h-5 text-[#0B7B8A]" />
+                    <div className="absolute inset-0 bg-[var(--b2b-end)]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
+                      <div className="w-10 h-10 rounded-full bg-white/95 text-primary flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
+                        <ZoomIn className="w-5 h-5 text-primary" />
                       </div>
                     </div>
                   </div>
                 ))}
               </div>
-              <p className="text-center text-sm font-bold text-[#0E253A]">
+              <p className="text-center text-sm font-bold text-heading">
                 Tích cực tham gia hoạt động vì cộng đồng
               </p>
             </div>
@@ -202,28 +202,28 @@ export default function WhyRockySection() {
 
         </div>
 
-        {/* Part B: Đối tác của chúng tôi (Larger Logos & Infinite Marquee Moving Right to Left) */}
+        {/* Part B: Đối tác của chúng tôi */}
         <div className="pt-12 space-y-6">
           <div className="text-center space-y-2">
-            <h3 className="text-2xl sm:text-3xl font-black text-[#0E253A] tracking-tight">
+            <h3 className="text-2xl sm:text-3xl font-black text-heading tracking-tight">
               Đối tác của chúng tôi
             </h3>
-            <p className="text-slate-600 text-sm max-w-xl mx-auto">
+            <p className="text-brand-muted text-sm max-w-xl mx-auto">
               Đồng hành cùng hệ thống các chuỗi mắt kính và phòng khám khúc xạ uy tín trên toàn quốc
             </p>
           </div>
 
           {/* Infinite Marquee Track Moving Slowly from Right to Left */}
           <div className="relative w-full overflow-hidden py-4">
-            <div className="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-28 bg-gradient-to-r from-[#F5F5F7] to-transparent z-10" />
-            <div className="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-28 bg-gradient-to-l from-[#F5F5F7] to-transparent z-10" />
+            <div className="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-28 bg-gradient-to-r from-[var(--site-bg-start)] to-transparent z-10" />
+            <div className="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-28 bg-gradient-to-l from-[var(--site-bg-start)] to-transparent z-10" />
 
             <div className="flex items-center gap-6 w-max animate-marquee hover:[animation-play-state:paused]">
               {/* Set 1 */}
               {partnerLogos.map((p, idx) => (
                 <div
                   key={`p1-${idx}`}
-                  className="bg-white px-8 py-5 rounded-2xl shadow-xs flex items-center justify-center h-24 sm:h-28 min-w-[200px] sm:min-w-[240px] group hover:shadow-md transition-all shrink-0"
+                  className="bg-white px-8 py-5 rounded-2xl shadow-xs flex items-center justify-center h-24 sm:h-28 min-w-[200px] sm:min-w-[240px] group hover:shadow-md transition-all shrink-0 border border-[var(--color-border)]/60"
                 >
                   <div className="relative w-36 sm:w-44 h-14 sm:h-16">
                     <Image
@@ -240,7 +240,7 @@ export default function WhyRockySection() {
               {partnerLogos.map((p, idx) => (
                 <div
                   key={`p2-${idx}`}
-                  className="bg-white px-8 py-5 rounded-2xl shadow-xs flex items-center justify-center h-24 sm:h-28 min-w-[200px] sm:min-w-[240px] group hover:shadow-md transition-all shrink-0"
+                  className="bg-white px-8 py-5 rounded-2xl shadow-xs flex items-center justify-center h-24 sm:h-28 min-w-[200px] sm:min-w-[240px] group hover:shadow-md transition-all shrink-0 border border-[var(--color-border)]/60"
                 >
                   <div className="relative w-36 sm:w-44 h-14 sm:h-16">
                     <Image
@@ -262,7 +262,7 @@ export default function WhyRockySection() {
       {/* Interactive Lightbox Modal */}
       {selectedCertIndex !== null && (
         <div
-          className="fixed inset-0 z-50 bg-[#071521]/95 backdrop-blur-md flex items-center justify-center p-4 sm:p-8"
+          className="fixed inset-0 z-50 bg-[var(--b2b-end)]/95 backdrop-blur-md flex items-center justify-center p-4 sm:p-8"
           onClick={() => setSelectedCertIndex(null)}
         >
           {/* Close Button */}
@@ -311,7 +311,7 @@ export default function WhyRockySection() {
               <div className="text-base sm:text-lg font-bold text-white max-w-2xl px-4">
                 {allCerts[selectedCertIndex].title}
               </div>
-              <div className="text-sm font-semibold text-teal-300">
+              <div className="text-sm font-semibold text-[var(--button-start)]">
                 Chứng nhận {selectedCertIndex + 1} / {allCerts.length}
               </div>
             </div>

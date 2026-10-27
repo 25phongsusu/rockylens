@@ -159,17 +159,28 @@
         extend: {
           colors: {
             rocky: {
-              teal: '#0B7B8A',
-              tealDark: '#086370',
-              tealDeep: '#164E63',
-              tealLight: '#E6F4F6',
-              navy: '#0E253A',
-              navyDark: '#071521',
-              ground: '#F5F5F7',
-              card: '#FFFFFF',
-              ink: '#0F172A',
-              muted: '#334155'
-            }
+              teal: 'var(--button-middle)',
+              tealDark: 'var(--button-end)',
+              tealDeep: 'var(--b2b-middle)',
+              tealLight: 'var(--site-bg-start)',
+              navy: 'var(--b2b-end)',
+              navyDark: 'var(--b2b-end)',
+              ground: 'var(--site-bg-start)',
+              card: 'var(--color-surface)',
+              ink: 'var(--color-text)',
+              muted: 'var(--color-muted)'
+            },
+            primary: 'var(--button-middle)',
+            'primary-hover': 'var(--button-end)',
+            heading: 'var(--color-heading)',
+            muted: 'var(--color-muted)',
+            surface: 'var(--color-surface)',
+            'b2b-start': 'var(--b2b-start)',
+            'b2b-middle': 'var(--b2b-middle)',
+            'b2b-end': 'var(--b2b-end)',
+            'site-bg-start': 'var(--site-bg-start)',
+            'site-bg-middle': 'var(--site-bg-middle)',
+            'site-bg-end': 'var(--site-bg-end)'
           },
           fontFamily: {
             sans: ["'SF Pro Display'", "-apple-system", "BlinkMacSystemFont", "'Segoe UI'", "Roboto", "sans-serif"],
@@ -181,6 +192,142 @@
   </script>
 
   <style>
+    /* ========================================================
+       ROCKYLENS GLOBAL DESIGN SYSTEM — SINGLE SOURCE OF TRUTH
+       ======================================================== */
+    :root {
+      /* A. Website Background Tokens */
+      --site-bg-start: #F4FCFE;
+      --site-bg-middle: #D7F4FA;
+      --site-bg-end: #A2E2EE;
+
+      /* B. Button Colors Tokens */
+      --button-start: #5BCDE5;
+      --button-middle: #00A2CC;
+      --button-end: #317F93;
+
+      /* C. B2B Premium Tokens */
+      --b2b-start: #00A2CC;
+      --b2b-middle: #007A99;
+      --b2b-end: #003B50;
+
+      /* D. Semantic Tokens */
+      --color-heading: var(--b2b-end);
+      --color-text: var(--b2b-end);
+      --color-muted: #476773;
+      --color-surface: #FFFFFF;
+      --color-border: var(--site-bg-end);
+
+      /* Primary Brand Shortcuts */
+      --color-primary: var(--button-middle);
+      --color-primary-hover: var(--button-end);
+      --color-primary-light: var(--site-bg-start);
+
+      /* E. Global Gradients */
+      --gradient-site: linear-gradient(
+        135deg,
+        var(--site-bg-start) 0%,
+        var(--site-bg-middle) 55%,
+        var(--site-bg-end) 100%
+      );
+
+      --gradient-button: linear-gradient(
+        110deg,
+        var(--button-start) 0%,
+        var(--button-middle) 50%,
+        var(--button-end) 100%
+      );
+
+      --gradient-b2b: linear-gradient(
+        120deg,
+        var(--b2b-start) 0%,
+        var(--b2b-middle) 50%,
+        var(--b2b-end) 100%
+      );
+    }
+
+    /* Global Design System Utilities */
+    .site-background {
+      background: var(--gradient-site);
+    }
+    .section-background {
+      background: var(--gradient-site);
+    }
+    .section-background-light {
+      background: linear-gradient(180deg, var(--site-bg-start) 0%, rgba(255, 255, 255, 0.95) 100%);
+    }
+    .card-surface {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      box-shadow: 0 4px 20px -2px rgba(0, 59, 80, 0.05);
+    }
+    .text-heading {
+      color: var(--color-heading);
+    }
+    .text-brand-muted {
+      color: var(--color-muted);
+    }
+    .b2b-gradient {
+      background: var(--gradient-b2b);
+      color: #FFFFFF;
+    }
+    .button-primary {
+      background: var(--gradient-button);
+      color: #FFFFFF;
+      font-weight: 700;
+      text-shadow: 0 1px 2px rgba(0, 59, 80, 0.7);
+      box-shadow: 0 4px 14px rgba(0, 162, 204, 0.32), inset 0 1px 1px rgba(255, 255, 255, 0.4);
+      border: 1px solid rgba(49, 127, 147, 0.35);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: pointer;
+    }
+    .button-primary:hover {
+      filter: brightness(1.08);
+      transform: translateY(-1.5px);
+      box-shadow: 0 8px 22px rgba(0, 162, 204, 0.42);
+    }
+    .button-primary:active {
+      transform: translateY(0);
+      filter: brightness(0.96);
+    }
+    .button-primary:focus-visible {
+      outline: 2px solid var(--button-middle);
+      outline-offset: 2px;
+    }
+    .button-secondary {
+      background: var(--color-surface);
+      color: var(--color-heading);
+      border: 1px solid var(--color-border);
+      font-weight: 700;
+      box-shadow: 0 2px 8px rgba(0, 59, 80, 0.05);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: pointer;
+    }
+    .button-secondary:hover {
+      background: var(--site-bg-start);
+      border-color: var(--button-middle);
+      color: var(--button-middle);
+      transform: translateY(-1.5px);
+      box-shadow: 0 6px 16px rgba(0, 162, 204, 0.16);
+    }
+    .button-b2b {
+      background: var(--gradient-b2b);
+      color: #FFFFFF;
+      font-weight: 700;
+      box-shadow: 0 4px 14px rgba(0, 59, 80, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.25);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: pointer;
+    }
     @font-face {
       font-family: "SF Pro Display";
       src: url("assets/fonts/sf-pro-display/SF-Pro-Display-Regular.woff2") format("woff2"),
@@ -311,10 +458,10 @@
     }
   </style>
 </head>
-<body class="bg-[#F5F5F7] text-[#0F172A] selection:bg-[#0B7B8A] selection:text-white">
+<body class="bg-[var(--site-bg-start)] text-[#0F172A] selection:bg-[var(--color-primary)] selection:text-white">
 
   <!-- TOP SLIM BAR: OFFICIAL IDENTITY & CONTACT -->
-  <div class="bg-[#0E253A] text-white py-2.5 px-6 text-base">
+  <div class="bg-[var(--b2b-end)] text-white py-2.5 px-6 text-base">
     <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
       <div class="flex items-center gap-3">
         <span class="text-teal-300 font-semibold text-base">Rocky Lens Canada</span>
@@ -338,16 +485,16 @@
 
       <!-- Primary Multi-Page Navigation Items -->
       <nav class="hidden lg:flex items-center gap-8 text-base font-semibold text-slate-800">
-        <a href="index.html" class="text-[#0B7B8A] font-bold">Trang chủ</a>
-        <a href="trong-kinh/" class="hover:text-[#0B7B8A] transition-colors">Sản Phẩm</a>
-        <a href="kham-pha-trong-kinh/" class="hover:text-[#0B7B8A] transition-colors">Công Nghệ</a>
-        <a href="blog/" class="hover:text-[#0B7B8A] transition-colors">Blog</a>
-        <a href="danh-cho-doi-tac/" class="hover:text-[#0B7B8A] transition-colors">Đối tác</a>
+        <a href="index.html" class="text-[var(--color-primary)] font-bold">Trang chủ</a>
+        <a href="trong-kinh/" class="hover:text-[var(--color-primary)] transition-colors">Sản Phẩm</a>
+        <a href="kham-pha-trong-kinh/" class="hover:text-[var(--color-primary)] transition-colors">Công Nghệ</a>
+        <a href="blog/" class="hover:text-[var(--color-primary)] transition-colors">Blog</a>
+        <a href="danh-cho-doi-tac/" class="hover:text-[var(--color-primary)] transition-colors">Đối tác</a>
       </nav>
 
       <!-- Action Button: Open B2B Dealer Quote Modal -->
       <div class="flex items-center gap-3">
-        <button type="button" onclick="openB2BQuoteModal()" class="px-5 py-2.5 rounded-full bg-[#0B7B8A] hover:bg-[#086370] text-white font-bold text-base transition-all text-center cursor-pointer shadow-xs hover:shadow-md active:scale-95">
+        <button type="button" onclick="openB2BQuoteModal()" class="px-5 py-2.5 rounded-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold text-base transition-all text-center cursor-pointer shadow-xs hover:shadow-md active:scale-95">
           Nhận Báo Giá Cho Đại Lý
         </button>
       </div>
@@ -361,14 +508,14 @@
     <!-- Mục tiêu: Thu hút sự chú ý, giới thiệu Rocky, tạo động lực khám phá -->
     <!-- CTA chính: Khám phá tròng kính | CTA phụ: Tìm đại lý     -->
     <!-- ========================================================= -->
-    <section class="pt-12 sm:pt-16 pb-20 px-6 bg-[#F5F5F7]">
+    <section class="pt-12 sm:pt-16 pb-20 px-6 bg-[var(--site-bg-start)]">
       <div class="max-w-6xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
           
           <!-- Left Column: Display Typography & Brand Value -->
           <div class="lg:col-span-7 space-y-6">
             
-            <h1 class="text-4xl sm:text-6xl lg:text-[72px] font-black text-[#0E253A] tracking-tight leading-[1.08] motion-1">
+            <h1 class="text-4xl sm:text-6xl lg:text-[72px] font-black text-heading tracking-tight leading-[1.08] motion-1">
               Rõ tầm nhìn, <br class="hidden sm:inline" />trọn cuộc sống.
             </h1>
 
@@ -378,10 +525,10 @@
 
             <!-- Dual CTAs: Khám phá tròng kính & Nhận Báo Giá Đại Lý -->
             <div class="flex flex-wrap items-center gap-4 pt-2 motion-3">
-              <a href="#trong-kinh" class="px-7 py-3.5 rounded-full bg-[#0B7B8A] hover:bg-[#086370] text-white font-bold text-base transition-colors text-center shadow-sm">
+              <a href="#trong-kinh" class="px-7 py-3.5 rounded-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold text-base transition-colors text-center shadow-sm">
                 Khám phá tròng kính
               </a>
-              <button type="button" onclick="openB2BQuoteModal()" class="px-7 py-3.5 rounded-full bg-white hover:bg-slate-100 text-[#0E253A] font-bold text-base transition-colors text-center cursor-pointer shadow-sm">
+              <button type="button" onclick="openB2BQuoteModal()" class="px-7 py-3.5 rounded-full bg-white hover:bg-slate-100 text-heading font-bold text-base transition-colors text-center cursor-pointer shadow-sm">
                 Nhận Báo Giá Đại Lý
               </button>
             </div>
@@ -389,7 +536,7 @@
             <!-- Micro Trust Indicators -->
             <div class="pt-4 flex flex-wrap items-center gap-4 text-xs text-slate-500 font-medium motion-4">
               <span class="flex items-center gap-1.5 text-slate-700">
-                <span class="w-2 h-2 rounded-full bg-[#0B7B8A]"></span>
+                <span class="w-2 h-2 rounded-full bg-[var(--color-primary)]"></span>
                 <span>Ontario Opticians No. 6181</span>
               </span>
               <span>&bull;</span>
@@ -413,7 +560,7 @@
                 <img src="assets/h-lens3.png" alt="Tròng kính quang học Rocky Lens Canada" class="w-full max-h-[380px] object-contain animate-float-lens drop-shadow-[0_20px_35px_rgba(11,123,138,0.22)]">
               </div>
               <div class="mt-4 text-center w-full">
-                <span class="text-base font-bold text-[#0E253A] block">Thương Hiệu Tròng Kính Rocky</span>
+                <span class="text-base font-bold text-heading block">Thương Hiệu Tròng Kính Rocky</span>
                 <span class="text-base text-slate-600 block mt-1">Phân phối chính hãng bởi Clearly Vietnam &bull; Tiêu chuẩn ISO 13485</span>
               </div>
             </div>
@@ -445,20 +592,20 @@
                 <img src="assets/images/company/about-6.jpg" alt="Trải nghiệm thị giác tròng kính Rocky" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
               </div>
               <div class="absolute top-4 left-4">
-                <span class="px-3.5 py-1.5 rounded-full bg-white text-[#0E253A] text-sm font-bold">
+                <span class="px-3.5 py-1.5 rounded-full bg-white text-heading text-sm font-bold">
                   Trải Nghiệm Thị Giác &bull; Canada Standards
                 </span>
               </div>
               <div class="p-4 sm:p-5 bg-white flex items-center justify-between text-sm font-semibold text-slate-800">
                 <span>Tối ưu trường nhìn tự nhiên</span>
-                <span class="text-[#086370] font-bold">Thích nghi êm dịu</span>
+                <span class="text-[var(--color-primary-hover)] font-bold">Thích nghi êm dịu</span>
               </div>
             </div>
           </div>
 
           <!-- Right Column: Editorial Typography & Philosophy -->
           <div class="lg:col-span-7 order-1 lg:order-2 space-y-6">
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0E253A] tracking-tight leading-[1.15]">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-heading tracking-tight leading-[1.15]">
               Cuộc sống có biết bao điều đáng nhìn ngắm.
             </h2>
 
@@ -470,25 +617,25 @@
 
             <!-- 3 Value Cards (Chuyển từ Hero xuống) -->
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
-              <div class="bg-[#F5F5F7] p-5 rounded-2xl text-center sm:text-left transition-transform hover:-translate-y-1">
-                <div class="text-base font-black text-[#0B7B8A]">Trong Suốt Tự Nhiên</div>
+              <div class="bg-[var(--site-bg-start)] p-5 rounded-2xl text-center sm:text-left transition-transform hover:-translate-y-1">
+                <div class="text-base font-black text-[var(--color-primary)]">Trong Suốt Tự Nhiên</div>
                 <div class="text-sm font-semibold text-slate-800 mt-1">Hạn chế quang sai</div>
                 <p class="text-xs text-slate-600 mt-1 leading-relaxed">Vật liệu tròng kính trong suốt, màu sắc trung thực</p>
               </div>
-              <div class="bg-[#F5F5F7] p-5 rounded-2xl text-center sm:text-left transition-transform hover:-translate-y-1">
-                <div class="text-base font-black text-[#0B7B8A]">Chuẩn Xác Từng Điểm</div>
+              <div class="bg-[var(--site-bg-start)] p-5 rounded-2xl text-center sm:text-left transition-transform hover:-translate-y-1">
+                <div class="text-base font-black text-[var(--color-primary)]">Chuẩn Xác Từng Điểm</div>
                 <div class="text-sm font-semibold text-slate-800 mt-1">Thích nghi êm dịu</div>
                 <p class="text-xs text-slate-600 mt-1 leading-relaxed">Chú trọng độ chính xác trong quá trình chế tác</p>
               </div>
-              <div class="bg-[#F5F5F7] p-5 rounded-2xl text-center sm:text-left transition-transform hover:-translate-y-1">
-                <div class="text-base font-black text-[#0B7B8A]">Chất Lượng Kiểm Chứng</div>
+              <div class="bg-[var(--site-bg-start)] p-5 rounded-2xl text-center sm:text-left transition-transform hover:-translate-y-1">
+                <div class="text-base font-black text-[var(--color-primary)]">Chất Lượng Kiểm Chứng</div>
                 <div class="text-sm font-semibold text-slate-800 mt-1">An tâm sử dụng</div>
                 <p class="text-xs text-slate-600 mt-1 leading-relaxed">Tiêu chuẩn ISO 13485 và bảo hành chính hãng</p>
               </div>
             </div>
 
             <div class="pt-2">
-              <a href="#trong-kinh" class="inline-flex items-center gap-2 text-[#0B7B8A] hover:text-[#086370] font-bold text-base transition-colors group">
+              <a href="#trong-kinh" class="inline-flex items-center gap-2 text-[var(--color-primary)] hover:text-[var(--color-primary-hover)] font-bold text-base transition-colors group">
                 <span>Khám phá các giải pháp tròng kính theo nhu cầu</span>
                 <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
               </a>
@@ -505,15 +652,15 @@
     <!-- Mục tiêu: Giúp người tiêu dùng khám phá theo nhu cầu      -->
     <!-- Bố cục: 6 Card lớn (3 ô / hàng), hover specs, CTA rõ ràng -->
     <!-- ========================================================= -->
-    <section id="trong-kinh" class="relative py-24 px-6 bg-[#F5F5F7] overflow-hidden">
+    <section id="trong-kinh" class="relative py-24 px-6 bg-[var(--site-bg-start)] overflow-hidden">
       <!-- Ambient Blur Caustic Overlays (Smooth Section Blending) -->
       <div class="absolute inset-x-0 -top-12 h-24 bg-gradient-to-b from-[#F5F5F7] to-transparent blur-xl pointer-events-none opacity-80"></div>
-      <div class="absolute -top-24 left-1/3 w-[500px] h-48 bg-[#0B7B8A]/5 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -top-24 left-1/3 w-[500px] h-48 bg-[var(--color-primary)]/5 rounded-full blur-3xl pointer-events-none"></div>
 
       <div class="max-w-7xl mx-auto space-y-16 relative z-10">
         
         <div class="max-w-3xl">
-          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0E253A] tracking-tight">
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-heading tracking-tight">
             Mỗi nhu cầu, một lựa chọn phù hợp.
           </h2>
           <p class="text-slate-700 text-lg sm:text-xl mt-3 leading-relaxed motion-9">
@@ -529,12 +676,12 @@
             <div>
               <div class="h-64 sm:h-72 bg-slate-900/5 overflow-hidden flex items-center justify-center p-4 relative">
                 <img src="assets/uploads/solutions/sol_kinh_lai_xe.png" alt="Tròng kính lái xe ban đêm DriveShield" class="w-full h-full object-contain rounded-2xl transition-transform duration-500 group-hover:scale-105">
-                <span class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-[#0B7B8A] text-xs sm:text-sm font-bold border border-slate-200/80 shadow-xs">
+                <span class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-[var(--color-primary)] text-xs sm:text-sm font-bold border border-slate-200/80 shadow-xs">
                   Lái Xe Ban Đêm & Mưa
                 </span>
               </div>
               <div class="p-6 sm:p-7 space-y-3">
-                <h3 class="text-2xl font-bold text-[#0E253A] group-hover:text-[#0B7B8A] transition-colors">
+                <h3 class="text-2xl font-bold text-heading group-hover:text-[var(--color-primary)] transition-colors">
                   Tầm Nhìn Êm Dịu Khi Lái Xe
                 </h3>
                 <p class="text-slate-600 text-base leading-relaxed">
@@ -548,46 +695,46 @@
               </div>
             </div>
             <div class="p-6 sm:p-7 pt-0">
-              <a href="trong-kinh/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-full border border-slate-700 hover:border-[#0B7B8A] hover:bg-[#0B7B8A] hover:text-white text-slate-800 font-semibold text-base transition-colors block text-center">
+              <a href="trong-kinh/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-full border border-slate-700 hover:border-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-white text-slate-800 font-semibold text-base transition-colors block text-center">
                 Khám phá ngay
               </a>
             </div>
 
             <!-- Hover Specs Overlay (Layer 3: Professional Technical Details) -->
-            <div class="absolute inset-0 bg-white/98 backdrop-blur-md text-[#0E253A] p-6 sm:p-7 rounded-3xl flex flex-col justify-between opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-20 shadow-2xl">
+            <div class="absolute inset-0 bg-white/98 backdrop-blur-md text-heading p-6 sm:p-7 rounded-3xl flex flex-col justify-between opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-20 shadow-2xl">
               <div class="space-y-4">
                 <div class="flex items-center justify-between">
-                  <span class="px-3 py-1 rounded-full bg-teal-50 text-[#0B7B8A] text-[13px] font-bold">
+                  <span class="px-3 py-1 rounded-full bg-teal-50 text-[var(--color-primary)] text-[13px] font-bold">
                     Thông Tin Sản Phẩm
                   </span>
                   <span class="text-sm text-slate-500 font-semibold">Tầm Nhìn Lái Xe</span>
                 </div>
-                <h4 class="text-2xl font-black text-[#0E253A]">DriveShield Ruby AR</h4>
+                <h4 class="text-2xl font-black text-heading">DriveShield Ruby AR</h4>
                 <div class="space-y-2 text-base pt-2">
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
+                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
                     <span class="text-slate-600 font-medium">Tính năng nổi bật:</span>
-                    <span class="font-bold text-[#0B7B8A] text-right ml-2">Giảm chói đèn xe &amp; trượt nước mưa</span>
+                    <span class="font-bold text-[var(--color-primary)] text-right ml-2">Giảm chói đèn xe &amp; trượt nước mưa</span>
                   </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
+                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
                     <span class="text-slate-600 font-medium">Công nghệ xử lý:</span>
-                    <span class="font-bold text-[#0E253A] text-right ml-2">Phủ phân cực lọc ánh sáng chói</span>
+                    <span class="font-bold text-heading text-right ml-2">Phủ phân cực lọc ánh sáng chói</span>
                   </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
+                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
                     <span class="text-slate-600 font-medium">Trải nghiệm thị giác:</span>
-                    <span class="font-bold text-[#0E253A] text-right ml-2">Tầm nhìn êm dịu, tăng tương phản đêm</span>
+                    <span class="font-bold text-heading text-right ml-2">Tầm nhìn êm dịu, tăng tương phản đêm</span>
                   </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
+                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
                     <span class="text-slate-600 font-medium">Tùy chọn chiết suất:</span>
-                    <span class="font-bold text-[#0E253A] text-right ml-2">1.56 | 1.60 | 1.67</span>
+                    <span class="font-bold text-heading text-right ml-2">1.56 | 1.60 | 1.67</span>
                   </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
+                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
                     <span class="text-slate-600 font-medium">Chính sách bảo hành:</span>
-                    <span class="font-bold text-[#0E253A] text-right ml-2">24 tháng chính hãng</span>
+                    <span class="font-bold text-heading text-right ml-2">24 tháng chính hãng</span>
                   </div>
                 </div>
               </div>
               <div class="pt-4">
-                <a href="trong-kinh/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-full bg-[#0B7B8A] hover:bg-[#086370] text-white font-bold text-base transition-colors block text-center">
+                <a href="trong-kinh/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold text-base transition-colors block text-center">
                   Xem chi tiết dòng tròng &rarr;
                 </a>
               </div>
@@ -599,12 +746,12 @@
             <div>
               <div class="h-64 sm:h-72 bg-slate-900/5 overflow-hidden flex items-center justify-center p-4 relative">
                 <img src="assets/uploads/solutions/sol_chong_tia_uv.png" alt="Tròng kính lọc ánh sáng xanh BlueCut" class="w-full h-full object-contain rounded-2xl transition-transform duration-500 group-hover:scale-105">
-                <span class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-[#0B7B8A] text-xs sm:text-sm font-bold border border-slate-200/80 shadow-xs">
+                <span class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-[var(--color-primary)] text-xs sm:text-sm font-bold border border-slate-200/80 shadow-xs">
                   Cho Ngày Dài Làm Việc
                 </span>
               </div>
               <div class="p-6 sm:p-7 space-y-3">
-                <h3 class="text-2xl font-bold text-[#0E253A] group-hover:text-[#0B7B8A] transition-colors">
+                <h3 class="text-2xl font-bold text-heading group-hover:text-[var(--color-primary)] transition-colors">
                   Bảo Vệ Thị Lực Khi Làm Việc Số
                 </h3>
                 <p class="text-slate-600 text-base leading-relaxed">
@@ -618,46 +765,46 @@
               </div>
             </div>
             <div class="p-6 sm:p-7 pt-0">
-              <a href="trong-kinh/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-full border border-slate-700 hover:border-[#0B7B8A] hover:bg-[#0B7B8A] hover:text-white text-slate-800 font-semibold text-base transition-colors block text-center">
+              <a href="trong-kinh/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-full border border-slate-700 hover:border-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-white text-slate-800 font-semibold text-base transition-colors block text-center">
                 Khám phá ngay
               </a>
             </div>
 
             <!-- Hover Specs Overlay -->
-            <div class="absolute inset-0 bg-white/98 backdrop-blur-md text-[#0E253A] p-6 sm:p-7 rounded-3xl flex flex-col justify-between opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-20 shadow-2xl">
+            <div class="absolute inset-0 bg-white/98 backdrop-blur-md text-heading p-6 sm:p-7 rounded-3xl flex flex-col justify-between opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-20 shadow-2xl">
               <div class="space-y-4">
                 <div class="flex items-center justify-between">
-                  <span class="px-3 py-1 rounded-full bg-teal-50 text-[#0B7B8A] text-[13px] font-bold">
+                  <span class="px-3 py-1 rounded-full bg-teal-50 text-[var(--color-primary)] text-[13px] font-bold">
                     Thông Tin Sản Phẩm
                   </span>
                   <span class="text-sm text-slate-500 font-semibold">Bảo Vệ Mắt Điện Tử</span>
                 </div>
-                <h4 class="text-2xl font-black text-[#0E253A]">BlueCut UV420 Relax</h4>
+                <h4 class="text-2xl font-black text-heading">BlueCut UV420 Relax</h4>
                 <div class="space-y-2 text-base pt-2">
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
+                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
                     <span class="text-slate-600 font-medium">Tính năng nổi bật:</span>
-                    <span class="font-bold text-[#0B7B8A] text-right ml-2">Ngăn ánh sáng xanh màn hình số</span>
+                    <span class="font-bold text-[var(--color-primary)] text-right ml-2">Ngăn ánh sáng xanh màn hình số</span>
                   </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
+                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
                     <span class="text-slate-600 font-medium">Công nghệ xử lý:</span>
-                    <span class="font-bold text-[#0E253A] text-right ml-2">Phủ chân không Nano BlueCut UV420</span>
+                    <span class="font-bold text-heading text-right ml-2">Phủ chân không Nano BlueCut UV420</span>
                   </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
+                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
                     <span class="text-slate-600 font-medium">Trải nghiệm thị giác:</span>
-                    <span class="font-bold text-[#0E253A] text-right ml-2">Màu sắc tự nhiên, giảm mỏi mắt</span>
+                    <span class="font-bold text-heading text-right ml-2">Màu sắc tự nhiên, giảm mỏi mắt</span>
                   </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
+                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
                     <span class="text-slate-600 font-medium">Tùy chọn chiết suất:</span>
-                    <span class="font-bold text-[#0E253A] text-right ml-2">1.56 | 1.60 | 1.67 | 1.74</span>
+                    <span class="font-bold text-heading text-right ml-2">1.56 | 1.60 | 1.67 | 1.74</span>
                   </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
+                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
                     <span class="text-slate-600 font-medium">Chính sách bảo hành:</span>
-                    <span class="font-bold text-[#0E253A] text-right ml-2">24 tháng chính hãng</span>
+                    <span class="font-bold text-heading text-right ml-2">24 tháng chính hãng</span>
                   </div>
                 </div>
               </div>
               <div class="pt-4">
-                <a href="trong-kinh/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-full bg-[#0B7B8A] hover:bg-[#086370] text-white font-bold text-base transition-colors block text-center">
+                <a href="trong-kinh/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold text-base transition-colors block text-center">
                   Xem chi tiết dòng tròng &rarr;
                 </a>
               </div>
@@ -669,12 +816,12 @@
             <div>
               <div class="h-64 sm:h-72 bg-slate-900/5 overflow-hidden flex items-center justify-center p-4 relative">
                 <img src="assets/uploads/solutions/sol_doi_mau.png" alt="Tròng kính đổi màu ngoài trời Fast-Change" class="w-full h-full object-contain rounded-2xl transition-transform duration-500 group-hover:scale-105">
-                <span class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-[#0B7B8A] text-xs sm:text-sm font-bold border border-slate-200/80 shadow-xs">
+                <span class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-[var(--color-primary)] text-xs sm:text-sm font-bold border border-slate-200/80 shadow-xs">
                   Cho Những Ngày Đầy Nắng
                 </span>
               </div>
               <div class="p-6 sm:p-7 space-y-3">
-                <h3 class="text-2xl font-bold text-[#0E253A] group-hover:text-[#0B7B8A] transition-colors">
+                <h3 class="text-2xl font-bold text-heading group-hover:text-[var(--color-primary)] transition-colors">
                   Tròng Kính Đổi Màu Tiện Lợi
                 </h3>
                 <p class="text-slate-600 text-base leading-relaxed">
@@ -688,46 +835,46 @@
               </div>
             </div>
             <div class="p-6 sm:p-7 pt-0">
-              <a href="trong-kinh/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-full border border-slate-700 hover:border-[#0B7B8A] hover:bg-[#0B7B8A] hover:text-white text-slate-800 font-semibold text-base transition-colors block text-center">
+              <a href="trong-kinh/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-full border border-slate-700 hover:border-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-white text-slate-800 font-semibold text-base transition-colors block text-center">
                 Khám phá ngay
               </a>
             </div>
 
             <!-- Hover Specs Overlay -->
-            <div class="absolute inset-0 bg-white/98 backdrop-blur-md text-[#0E253A] p-6 sm:p-7 rounded-3xl flex flex-col justify-between opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-20 shadow-2xl">
+            <div class="absolute inset-0 bg-white/98 backdrop-blur-md text-heading p-6 sm:p-7 rounded-3xl flex flex-col justify-between opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-20 shadow-2xl">
               <div class="space-y-4">
                 <div class="flex items-center justify-between">
-                  <span class="px-3 py-1 rounded-full bg-teal-50 text-[#0B7B8A] text-[13px] font-bold">
+                  <span class="px-3 py-1 rounded-full bg-teal-50 text-[var(--color-primary)] text-[13px] font-bold">
                     Thông Tin Sản Phẩm
                   </span>
                   <span class="text-sm text-slate-500 font-semibold">Đổi Màu Tiện Lợi</span>
                 </div>
-                <h4 class="text-2xl font-black text-[#0E253A]">Fast-Change Spin-Coat</h4>
+                <h4 class="text-2xl font-black text-heading">Fast-Change Spin-Coat</h4>
                 <div class="space-y-2 text-base pt-2">
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
+                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
                     <span class="text-slate-600 font-medium">Tính năng nổi bật:</span>
-                    <span class="font-bold text-[#0B7B8A] text-right ml-2">Đổi màu râm linh hoạt khi ra nắng</span>
+                    <span class="font-bold text-[var(--color-primary)] text-right ml-2">Đổi màu râm linh hoạt khi ra nắng</span>
                   </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
+                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
                     <span class="text-slate-600 font-medium">Công nghệ xử lý:</span>
-                    <span class="font-bold text-[#0E253A] text-right ml-2">Phủ đổi màu bề mặt Spin-Coat UV</span>
+                    <span class="font-bold text-heading text-right ml-2">Phủ đổi màu bề mặt Spin-Coat UV</span>
                   </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
+                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
                     <span class="text-slate-600 font-medium">Trải nghiệm thị giác:</span>
-                    <span class="font-bold text-[#0E253A] text-right ml-2">Dịu mắt ngoài trời, trong suốt trong nhà</span>
+                    <span class="font-bold text-heading text-right ml-2">Dịu mắt ngoài trời, trong suốt trong nhà</span>
                   </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
+                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
                     <span class="text-slate-600 font-medium">Tùy chọn chiết suất:</span>
-                    <span class="font-bold text-[#0E253A] text-right ml-2">1.56 | 1.60 | 1.67</span>
+                    <span class="font-bold text-heading text-right ml-2">1.56 | 1.60 | 1.67</span>
                   </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
+                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
                     <span class="text-slate-600 font-medium">Chính sách bảo hành:</span>
-                    <span class="font-bold text-[#0E253A] text-right ml-2">24 tháng chính hãng</span>
+                    <span class="font-bold text-heading text-right ml-2">24 tháng chính hãng</span>
                   </div>
                 </div>
               </div>
               <div class="pt-4">
-                <a href="trong-kinh/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-full bg-[#0B7B8A] hover:bg-[#086370] text-white font-bold text-base transition-colors block text-center">
+                <a href="trong-kinh/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold text-base transition-colors block text-center">
                   Xem chi tiết dòng tròng &rarr;
                 </a>
               </div>
@@ -739,12 +886,12 @@
             <div>
               <div class="h-64 sm:h-72 bg-slate-900/5 overflow-hidden flex items-center justify-center p-4 relative">
                 <img src="assets/uploads/solutions/sol_kinh_khoan_va_dap.png" alt="Tròng kính mỏng nhẹ chống va đập" class="w-full h-full object-contain rounded-2xl transition-transform duration-500 group-hover:scale-105">
-                <span class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-[#0B7B8A] text-xs sm:text-sm font-bold border border-slate-200/80 shadow-xs">
+                <span class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-[var(--color-primary)] text-xs sm:text-sm font-bold border border-slate-200/80 shadow-xs">
                   Gọn Nhẹ & Bền Bỉ
                 </span>
               </div>
               <div class="p-6 sm:p-7 space-y-3">
-                <h3 class="text-2xl font-bold text-[#0E253A] group-hover:text-[#0B7B8A] transition-colors">
+                <h3 class="text-2xl font-bold text-heading group-hover:text-[var(--color-primary)] transition-colors">
                   Cho Chiếc Kính Mỏng Nhẹ Hơn
                 </h3>
                 <p class="text-slate-600 text-base leading-relaxed">
@@ -758,46 +905,46 @@
               </div>
             </div>
             <div class="p-6 sm:p-7 pt-0">
-              <a href="trong-kinh/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-full border border-slate-700 hover:border-[#0B7B8A] hover:bg-[#0B7B8A] hover:text-white text-slate-800 font-semibold text-base transition-colors block text-center">
+              <a href="trong-kinh/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-full border border-slate-700 hover:border-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-white text-slate-800 font-semibold text-base transition-colors block text-center">
                 Khám phá ngay
               </a>
             </div>
 
             <!-- Hover Specs Overlay -->
-            <div class="absolute inset-0 bg-white/98 backdrop-blur-md text-[#0E253A] p-6 sm:p-7 rounded-3xl flex flex-col justify-between opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-20 shadow-2xl">
+            <div class="absolute inset-0 bg-white/98 backdrop-blur-md text-heading p-6 sm:p-7 rounded-3xl flex flex-col justify-between opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-20 shadow-2xl">
               <div class="space-y-4">
                 <div class="flex items-center justify-between">
-                  <span class="px-3 py-1 rounded-full bg-teal-50 text-[#0B7B8A] text-[13px] font-bold">
+                  <span class="px-3 py-1 rounded-full bg-teal-50 text-[var(--color-primary)] text-[13px] font-bold">
                     Thông Tin Sản Phẩm
                   </span>
                   <span class="text-sm text-slate-500 font-semibold">Gọn Nhẹ &amp; Bền Bỉ</span>
                 </div>
-                <h4 class="text-2xl font-black text-[#0E253A]">Tough Aspheric MR Series</h4>
+                <h4 class="text-2xl font-black text-heading">Tough Aspheric MR Series</h4>
                 <div class="space-y-2 text-base pt-2">
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
+                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
                     <span class="text-slate-600 font-medium">Tính năng nổi bật:</span>
-                    <span class="font-bold text-[#0B7B8A] text-right ml-2">Tối ưu độ mỏng &amp; chịu lực va đập</span>
+                    <span class="font-bold text-[var(--color-primary)] text-right ml-2">Tối ưu độ mỏng &amp; chịu lực va đập</span>
                   </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
+                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
                     <span class="text-slate-600 font-medium">Công nghệ xử lý:</span>
-                    <span class="font-bold text-[#0E253A] text-right ml-2">Phôi vật liệu dẻo dai MR Series</span>
+                    <span class="font-bold text-heading text-right ml-2">Phôi vật liệu dẻo dai MR Series</span>
                   </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
+                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
                     <span class="text-slate-600 font-medium">Trải nghiệm thị giác:</span>
-                    <span class="font-bold text-[#0E253A] text-right ml-2">Nhẹ nhàng, triệt tiêu quang sai biên</span>
+                    <span class="font-bold text-heading text-right ml-2">Nhẹ nhàng, triệt tiêu quang sai biên</span>
                   </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
+                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
                     <span class="text-slate-600 font-medium">Tùy chọn chiết suất:</span>
-                    <span class="font-bold text-[#0E253A] text-right ml-2">1.60 | 1.67 | 1.74 siêu mỏng</span>
+                    <span class="font-bold text-heading text-right ml-2">1.60 | 1.67 | 1.74 siêu mỏng</span>
                   </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
+                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
                     <span class="text-slate-600 font-medium">Chính sách bảo hành:</span>
-                    <span class="font-bold text-[#0E253A] text-right ml-2">24 tháng chính hãng</span>
+                    <span class="font-bold text-heading text-right ml-2">24 tháng chính hãng</span>
                   </div>
                 </div>
               </div>
               <div class="pt-4">
-                <a href="trong-kinh/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-full bg-[#0B7B8A] hover:bg-[#086370] text-white font-bold text-base transition-colors block text-center">
+                <a href="trong-kinh/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold text-base transition-colors block text-center">
                   Xem chi tiết dòng tròng &rarr;
                 </a>
               </div>
@@ -809,12 +956,12 @@
             <div>
               <div class="h-64 sm:h-72 bg-slate-900/5 overflow-hidden flex items-center justify-center p-4 relative">
                 <img src="assets/uploads/solutions/sol_da_trong.png" alt="Tròng kính đa tròng kỹ thuật số CanRx" class="w-full h-full object-contain rounded-2xl transition-transform duration-500 group-hover:scale-105">
-                <span class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-[#0B7B8A] text-xs sm:text-sm font-bold border border-slate-200/80 shadow-xs">
+                <span class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-[var(--color-primary)] text-xs sm:text-sm font-bold border border-slate-200/80 shadow-xs">
                   Nhìn Rõ Nhiều Khoảng Cách
                 </span>
               </div>
               <div class="p-6 sm:p-7 space-y-3">
-                <h3 class="text-2xl font-bold text-[#0E253A] group-hover:text-[#0B7B8A] transition-colors">
+                <h3 class="text-2xl font-bold text-heading group-hover:text-[var(--color-primary)] transition-colors">
                   Cho Nhu Cầu Nhìn Gần Và Xa
                 </h3>
                 <p class="text-slate-600 text-base leading-relaxed">
@@ -828,46 +975,46 @@
               </div>
             </div>
             <div class="p-6 sm:p-7 pt-0">
-              <a href="trong-kinh/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-full border border-slate-700 hover:border-[#0B7B8A] hover:bg-[#0B7B8A] hover:text-white text-slate-800 font-semibold text-base transition-colors block text-center">
+              <a href="trong-kinh/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-full border border-slate-700 hover:border-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-white text-slate-800 font-semibold text-base transition-colors block text-center">
                 Khám phá ngay
               </a>
             </div>
 
             <!-- Hover Specs Overlay -->
-            <div class="absolute inset-0 bg-white/98 backdrop-blur-md text-[#0E253A] p-6 sm:p-7 rounded-3xl flex flex-col justify-between opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-20 shadow-2xl">
+            <div class="absolute inset-0 bg-white/98 backdrop-blur-md text-heading p-6 sm:p-7 rounded-3xl flex flex-col justify-between opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-20 shadow-2xl">
               <div class="space-y-4">
                 <div class="flex items-center justify-between">
-                  <span class="px-3 py-1 rounded-full bg-teal-50 text-[#0B7B8A] text-[13px] font-bold">
+                  <span class="px-3 py-1 rounded-full bg-teal-50 text-[var(--color-primary)] text-[13px] font-bold">
                     Thông Tin Sản Phẩm
                   </span>
                   <span class="text-sm text-slate-500 font-semibold">Đa Khoảng Cách</span>
                 </div>
-                <h4 class="text-2xl font-black text-[#0E253A]">CanRx Freeform HD</h4>
+                <h4 class="text-2xl font-black text-heading">CanRx Freeform HD</h4>
                 <div class="space-y-2 text-base pt-2">
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
+                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
                     <span class="text-slate-600 font-medium">Tính năng nổi bật:</span>
-                    <span class="font-bold text-[#0B7B8A] text-right ml-2">Nhìn rõ mọi cự ly Xa - Trung - Gần</span>
+                    <span class="font-bold text-[var(--color-primary)] text-right ml-2">Nhìn rõ mọi cự ly Xa - Trung - Gần</span>
                   </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
+                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
                     <span class="text-slate-600 font-medium">Công nghệ xử lý:</span>
-                    <span class="font-bold text-[#0E253A] text-right ml-2">Mài vi điểm kỹ thuật số Freeform HD</span>
+                    <span class="font-bold text-heading text-right ml-2">Mài vi điểm kỹ thuật số Freeform HD</span>
                   </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
+                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
                     <span class="text-slate-600 font-medium">Trải nghiệm thị giác:</span>
-                    <span class="font-bold text-[#0E253A] text-right ml-2">Vùng nhìn liền mạch, thích nghi nhanh</span>
+                    <span class="font-bold text-heading text-right ml-2">Vùng nhìn liền mạch, thích nghi nhanh</span>
                   </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
+                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
                     <span class="text-slate-600 font-medium">Tùy chọn chiết suất:</span>
-                    <span class="font-bold text-[#0E253A] text-right ml-2">1.56 | 1.60 | 1.67</span>
+                    <span class="font-bold text-heading text-right ml-2">1.56 | 1.60 | 1.67</span>
                   </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
+                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
                     <span class="text-slate-600 font-medium">Chính sách bảo hành:</span>
-                    <span class="font-bold text-[#0E253A] text-right ml-2">24 tháng chính hãng</span>
+                    <span class="font-bold text-heading text-right ml-2">24 tháng chính hãng</span>
                   </div>
                 </div>
               </div>
               <div class="pt-4">
-                <a href="trong-kinh/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-full bg-[#0B7B8A] hover:bg-[#086370] text-white font-bold text-base transition-colors block text-center">
+                <a href="trong-kinh/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold text-base transition-colors block text-center">
                   Xem chi tiết dòng tròng &rarr;
                 </a>
               </div>
@@ -879,12 +1026,12 @@
             <div>
               <div class="h-64 sm:h-72 bg-slate-900/5 overflow-hidden flex items-center justify-center p-4 relative">
                 <img src="assets/uploads/solutions/sol_kiem_soat_can_thi.png" alt="Tròng kính chăm sóc thị lực học đường" class="w-full h-full object-contain rounded-2xl transition-transform duration-500 group-hover:scale-105">
-                <span class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-[#0B7B8A] text-xs sm:text-sm font-bold border border-slate-200/80 shadow-xs">
+                <span class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-[var(--color-primary)] text-xs sm:text-sm font-bold border border-slate-200/80 shadow-xs">
                   Học Sinh & Trẻ Em
                 </span>
               </div>
               <div class="p-6 sm:p-7 space-y-3">
-                <h3 class="text-2xl font-bold text-[#0E253A] group-hover:text-[#0B7B8A] transition-colors">
+                <h3 class="text-2xl font-bold text-heading group-hover:text-[var(--color-primary)] transition-colors">
                   Đồng Hành Cùng Thị Lực Học Đường
                 </h3>
                 <p class="text-slate-600 text-base leading-relaxed">
@@ -898,46 +1045,46 @@
               </div>
             </div>
             <div class="p-6 sm:p-7 pt-0">
-              <a href="trong-kinh/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-full border border-slate-700 hover:border-[#0B7B8A] hover:bg-[#0B7B8A] hover:text-white text-slate-800 font-semibold text-base transition-colors block text-center">
+              <a href="trong-kinh/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-full border border-slate-700 hover:border-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-white text-slate-800 font-semibold text-base transition-colors block text-center">
                 Khám phá ngay
               </a>
             </div>
 
             <!-- Hover Specs Overlay -->
-            <div class="absolute inset-0 bg-white/98 backdrop-blur-md text-[#0E253A] p-6 sm:p-7 rounded-3xl flex flex-col justify-between opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-20 shadow-2xl">
+            <div class="absolute inset-0 bg-white/98 backdrop-blur-md text-heading p-6 sm:p-7 rounded-3xl flex flex-col justify-between opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-20 shadow-2xl">
               <div class="space-y-4">
                 <div class="flex items-center justify-between">
-                  <span class="px-3 py-1 rounded-full bg-teal-50 text-[#0B7B8A] text-[13px] font-bold">
+                  <span class="px-3 py-1 rounded-full bg-teal-50 text-[var(--color-primary)] text-[13px] font-bold">
                     Thông Tin Sản Phẩm
                   </span>
                   <span class="text-sm text-slate-500 font-semibold">Thị Lực Học Đường</span>
                 </div>
-                <h4 class="text-2xl font-black text-[#0E253A]">Defocus MyoControl HD</h4>
+                <h4 class="text-2xl font-black text-heading">Defocus MyoControl HD</h4>
                 <div class="space-y-2 text-base pt-2">
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
+                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
                     <span class="text-slate-600 font-medium">Tính năng nổi bật:</span>
-                    <span class="font-bold text-[#0B7B8A] text-right ml-2">Chăm sóc thị lực lứa tuổi học sinh</span>
+                    <span class="font-bold text-[var(--color-primary)] text-right ml-2">Chăm sóc thị lực lứa tuổi học sinh</span>
                   </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
+                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
                     <span class="text-slate-600 font-medium">Công nghệ xử lý:</span>
-                    <span class="font-bold text-[#0E253A] text-right ml-2">Vi thấu kính phân tán chu biên hội tụ</span>
+                    <span class="font-bold text-heading text-right ml-2">Vi thấu kính phân tán chu biên hội tụ</span>
                   </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
+                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
                     <span class="text-slate-600 font-medium">Trải nghiệm thị giác:</span>
-                    <span class="font-bold text-[#0E253A] text-right ml-2">Sắc nét trung tâm, giảm mỏi điều tiết</span>
+                    <span class="font-bold text-heading text-right ml-2">Sắc nét trung tâm, giảm mỏi điều tiết</span>
                   </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
+                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
                     <span class="text-slate-600 font-medium">Tùy chọn chiết suất:</span>
-                    <span class="font-bold text-[#0E253A] text-right ml-2">1.56 | 1.60 | 1.67</span>
+                    <span class="font-bold text-heading text-right ml-2">1.56 | 1.60 | 1.67</span>
                   </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
+                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
                     <span class="text-slate-600 font-medium">Chính sách bảo hành:</span>
-                    <span class="font-bold text-[#0E253A] text-right ml-2">24 tháng chính hãng</span>
+                    <span class="font-bold text-heading text-right ml-2">24 tháng chính hãng</span>
                   </div>
                 </div>
               </div>
               <div class="pt-4">
-                <a href="trong-kinh/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-full bg-[#0B7B8A] hover:bg-[#086370] text-white font-bold text-base transition-colors block text-center">
+                <a href="trong-kinh/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold text-base transition-colors block text-center">
                   Xem chi tiết dòng tròng &rarr;
                 </a>
               </div>
@@ -948,7 +1095,7 @@
 
         <!-- Action Button: Xem Thêm Toàn Bộ Catalogue -->
         <div class="flex flex-col sm:flex-row items-center justify-center pt-4">
-          <a href="trong-kinh/" target="_blank" rel="noopener noreferrer" class="group inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#0E253A] hover:bg-[#0B7B8A] text-white font-bold text-base sm:text-lg transition-colors duration-200">
+          <a href="trong-kinh/" target="_blank" rel="noopener noreferrer" class="group inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[var(--b2b-end)] hover:bg-[var(--color-primary)] text-white font-bold text-base sm:text-lg transition-colors duration-200">
             <span>Khám Phá Tất Cả Tròng Kính & Lựa Chọn Độ Mỏng</span>
             <svg class="w-5 h-5 transition-transform duration-200 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -969,12 +1116,12 @@
       <div class="absolute inset-x-0 -top-12 h-24 bg-gradient-to-b from-[#F5F5F7] to-transparent blur-xl pointer-events-none opacity-80"></div>
       <div class="absolute -top-24 left-10 w-96 h-48 bg-teal-500/10 rounded-full blur-3xl pointer-events-none"></div>
       <div class="absolute inset-x-0 -bottom-12 h-24 bg-gradient-to-t from-[#F5F5F7] to-transparent blur-xl pointer-events-none opacity-80"></div>
-      <div class="absolute -bottom-24 right-10 w-96 h-48 bg-[#0B7B8A]/5 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -bottom-24 right-10 w-96 h-48 bg-[var(--color-primary)]/5 rounded-full blur-3xl pointer-events-none"></div>
 
       <div class="max-w-7xl mx-auto space-y-12 relative z-10">
         
         <div class="max-w-3xl">
-          <h2 class="text-2xl sm:text-4xl lg:text-5xl font-black text-[#0E253A] tracking-tight">
+          <h2 class="text-2xl sm:text-4xl lg:text-5xl font-black text-heading tracking-tight">
             Công nghệ và tiêu chuẩn chất lượng
           </h2>
           <p class="text-slate-600 text-lg mt-3">
@@ -984,60 +1131,60 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           
-          <div class="bg-[#F5F5F7] p-5 sm:p-6 rounded-3xl space-y-4 flex flex-col justify-between group motion-float-1">
+          <div class="bg-[var(--site-bg-start)] p-5 sm:p-6 rounded-3xl space-y-4 flex flex-col justify-between group motion-float-1">
             <div class="space-y-4">
               <div class="aspect-[16/10] w-full rounded-2xl overflow-hidden bg-slate-200 relative">
                 <img src="assets/images/company/about-1.jpg" alt="Kho phôi và vật liệu quang học Rocky" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[#0E253A] text-[13px] font-bold">
+                <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-heading text-[13px] font-bold">
                   Phôi Monomer Quang Học
                 </span>
               </div>
-              <h3 class="text-xl font-bold text-[#0E253A]">Lựa Chọn Vật Liệu Phù Hợp</h3>
+              <h3 class="text-xl font-bold text-heading">Lựa Chọn Vật Liệu Phù Hợp</h3>
               <p class="text-slate-700 text-sm leading-relaxed">
                 Vật liệu và cấu trúc phôi quyết định độ trong suốt, trọng lượng nhẹ và độ bền cơ học của tròng kính, mang lại cảm giác thoải mái khi bạn đeo kính suốt ngày dài.
               </p>
             </div>
           </div>
 
-          <div class="bg-[#F5F5F7] p-5 sm:p-6 rounded-3xl space-y-4 flex flex-col justify-between group motion-float-2">
+          <div class="bg-[var(--site-bg-start)] p-5 sm:p-6 rounded-3xl space-y-4 flex flex-col justify-between group motion-float-2">
             <div class="space-y-4">
               <div class="aspect-[16/10] w-full rounded-2xl overflow-hidden bg-slate-200 relative">
                 <img src="assets/images/technologies/bui.png" alt="Công nghệ phủ chân không đa tầng chống trầy xước" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[#0E253A] text-[13px] font-bold">
+                <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-heading text-[13px] font-bold">
                   Phủ Chân Không Nano
                 </span>
               </div>
-              <h3 class="text-xl font-bold text-[#0E253A]">Hạn Chế Bám Bẩn, Dễ Vệ Sinh</h3>
+              <h3 class="text-xl font-bold text-heading">Hạn Chế Bám Bẩn, Dễ Vệ Sinh</h3>
               <p class="text-slate-700 text-sm leading-relaxed">
                 Các lớp phủ bề mặt chuyên biệt giúp hạn chế trầy xước trong quá trình lau chùi, trượt hạt nước mưa khi đi đường và giúp bạn dễ dàng làm sạch tròng kính.
               </p>
             </div>
           </div>
 
-          <div class="bg-[#F5F5F7] p-5 sm:p-6 rounded-3xl space-y-4 flex flex-col justify-between group motion-float-3">
+          <div class="bg-[var(--site-bg-start)] p-5 sm:p-6 rounded-3xl space-y-4 flex flex-col justify-between group motion-float-3">
             <div class="space-y-4">
               <div class="aspect-[16/10] w-full rounded-2xl overflow-hidden bg-slate-200 relative">
                 <img src="assets/images/technologies/do-kinh.jpg" alt="Dây chuyền mài kỹ thuật số Freeform CNC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[#0E253A] text-[13px] font-bold">
+                <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-heading text-[13px] font-bold">
                   Gia Công KTS Freeform
                 </span>
               </div>
-              <h3 class="text-xl font-bold text-[#0E253A]">Chú Trọng Độ Chính Xác</h3>
+              <h3 class="text-xl font-bold text-heading">Chú Trọng Độ Chính Xác</h3>
               <p class="text-slate-700 text-sm leading-relaxed">
                 Công nghệ gia công kỹ thuật số tính toán mài vi điểm theo từng số độ và thông số gọng thực tế, mở rộng vùng nhìn rõ và giúp đôi mắt thích nghi tự nhiên hơn.
               </p>
             </div>
           </div>
 
-          <div class="bg-[#F5F5F7] p-5 sm:p-6 rounded-3xl space-y-4 flex flex-col justify-between group motion-float-4">
+          <div class="bg-[var(--site-bg-start)] p-5 sm:p-6 rounded-3xl space-y-4 flex flex-col justify-between group motion-float-4">
             <div class="space-y-4">
               <div class="aspect-[16/10] w-full rounded-2xl overflow-hidden bg-slate-200 relative">
                 <img src="assets/images/company/about-3.jpg" alt="Quy trình kiểm soát chất lượng quang sai từng tròng" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[#0E253A] text-[13px] font-bold">
+                <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-heading text-[13px] font-bold">
                   Kiểm Định KCS Tiêu Chuẩn
                 </span>
               </div>
-              <h3 class="text-xl font-bold text-[#0E253A]">Quy Chuẩn Chất Lượng Quốc Tế</h3>
+              <h3 class="text-xl font-bold text-heading">Quy Chuẩn Chất Lượng Quốc Tế</h3>
               <p class="text-slate-700 text-sm leading-relaxed">
                 Quy trình sản xuất tuân thủ hệ thống quản lý chất lượng thiết bị y tế quốc tế ISO 13485:2016 cùng tiêu chuẩn chuyên môn của chuyên gia khúc xạ nhãn khoa.
               </p>
@@ -1048,7 +1195,7 @@
 
         <!-- CTA Link -->
         <div class="pt-4 flex justify-center sm:justify-start">
-          <a href="kham-pha-trong-kinh/" class="inline-flex items-center gap-2 text-[#0B7B8A] hover:text-[#086370] font-bold text-base transition-colors">
+          <a href="kham-pha-trong-kinh/" class="inline-flex items-center gap-2 text-[var(--color-primary)] hover:text-[var(--color-primary-hover)] font-bold text-base transition-colors">
             <span>Tìm hiểu công nghệ Rocky</span>
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -1064,11 +1211,11 @@
     <!-- Mục tiêu: Trả lời câu hỏi vì sao tôi nên cân nhắc Rocky   -->
     <!-- Sự an tâm & thông tin rõ ràng, không lặp lại công nghệ    -->
     <!-- ========================================================= -->
-    <section id="vi-sao-rocky" class="relative py-24 px-6 bg-gradient-to-b from-[#F5F5F7] via-[#F5F5F7] via-80% to-[#0E253A] overflow-hidden">
+    <section id="vi-sao-rocky" class="relative py-24 px-6 bg-gradient-to-b from-[var(--site-bg-start)] via-[var(--site-bg-middle)] via-80% to-[var(--b2b-end)] overflow-hidden">
       <!-- Ambient Blur Caustic Overlays (Smooth Section Blending) -->
-      <div class="absolute inset-x-0 -top-12 h-24 bg-gradient-to-b from-[#F5F5F7] to-transparent blur-xl pointer-events-none opacity-80"></div>
+      <div className="absolute inset-x-0 -top-12 h-24 bg-gradient-to-b from-[var(--site-bg-start)] to-transparent blur-xl pointer-events-none opacity-80"></div>
       <div class="absolute -top-24 right-1/3 w-[500px] h-48 bg-teal-500/5 rounded-full blur-3xl pointer-events-none"></div>
-      <div class="absolute inset-x-0 -bottom-16 h-32 bg-gradient-to-b from-transparent via-[#0E253A]/60 to-[#0E253A] blur-xl pointer-events-none opacity-90"></div>
+      <div class="absolute inset-x-0 -bottom-16 h-32 bg-gradient-to-b from-transparent via-[var(--b2b-end)]/60 to-[var(--b2b-end)] blur-xl pointer-events-none opacity-90"></div>
 
       <div class="max-w-7xl mx-auto space-y-16 relative z-10">
         
@@ -1077,7 +1224,7 @@
           
           <!-- Left Column (5 cols): Brand Narrative & 4 Value Icons -->
           <div class="lg:col-span-5 space-y-6">
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0E253A] tracking-tight">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-heading tracking-tight">
               Rocky Canada Opticians
             </h2>
             <div class="space-y-4 text-slate-700 text-base leading-relaxed">
@@ -1092,20 +1239,20 @@
             <!-- 4 Value Points in Clean Typographic Box -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
               <div class="p-4 rounded-2xl bg-white flex items-center gap-3 shadow-xs motion-float-5">
-                <span class="w-2.5 h-2.5 rounded-full bg-[#0B7B8A] shrink-0"></span>
-                <span class="text-sm font-bold text-[#0E253A]">Tính năng ưu việt bảo vệ mắt toàn diện</span>
+                <span class="w-2.5 h-2.5 rounded-full bg-[var(--color-primary)] shrink-0"></span>
+                <span class="text-sm font-bold text-heading">Tính năng ưu việt bảo vệ mắt toàn diện</span>
               </div>
               <div class="p-4 rounded-2xl bg-white flex items-center gap-3 shadow-xs motion-float-6">
-                <span class="w-2.5 h-2.5 rounded-full bg-[#0B7B8A] shrink-0"></span>
-                <span class="text-sm font-bold text-[#0E253A]">Đáp ứng toàn diện mọi nhu cầu thị lực</span>
+                <span class="w-2.5 h-2.5 rounded-full bg-[var(--color-primary)] shrink-0"></span>
+                <span class="text-sm font-bold text-heading">Đáp ứng toàn diện mọi nhu cầu thị lực</span>
               </div>
               <div class="p-4 rounded-2xl bg-white flex items-center gap-3 shadow-xs motion-float-7">
-                <span class="w-2.5 h-2.5 rounded-full bg-[#0B7B8A] shrink-0"></span>
-                <span class="text-sm font-bold text-[#0E253A]">Giải pháp thị lực ở mọi phân khúc giá</span>
+                <span class="w-2.5 h-2.5 rounded-full bg-[var(--color-primary)] shrink-0"></span>
+                <span class="text-sm font-bold text-heading">Giải pháp thị lực ở mọi phân khúc giá</span>
               </div>
               <div class="p-4 rounded-2xl bg-white flex items-center gap-3 shadow-xs motion-float-8">
-                <span class="w-2.5 h-2.5 rounded-full bg-[#0B7B8A] shrink-0"></span>
-                <span class="text-sm font-bold text-[#0E253A]">Sản phẩm đạt chất lượng quốc tế</span>
+                <span class="w-2.5 h-2.5 rounded-full bg-[var(--color-primary)] shrink-0"></span>
+                <span class="text-sm font-bold text-heading">Sản phẩm đạt chất lượng quốc tế</span>
               </div>
             </div>
 
@@ -1119,8 +1266,8 @@
               <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">
                 <div class="rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(0)">
                   <img src="assets/images/bangkhen/11.jpg" alt="The College of Opticians of Ontario - Optician Certificate" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
-                  <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
-                    <div class="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
+                  <div class="absolute inset-0 bg-[var(--b2b-end)]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
+                    <div class="w-10 h-10 rounded-full bg-white/95 text-[var(--color-primary)] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
                       </svg>
@@ -1129,8 +1276,8 @@
                 </div>
                 <div class="rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(1)">
                   <img src="assets/images/bangkhen/12.jpg" alt="The College of Opticians of Ontario - Optician Certificate" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
-                  <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
-                    <div class="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
+                  <div class="absolute inset-0 bg-[var(--b2b-end)]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
+                    <div class="w-10 h-10 rounded-full bg-white/95 text-[var(--color-primary)] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
                       </svg>
@@ -1139,8 +1286,8 @@
                 </div>
                 <div class="rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(2)">
                   <img src="assets/images/bangkhen/13.jpg" alt="The College of Opticians of Ontario - Optician Certificate" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
-                  <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
-                    <div class="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
+                  <div class="absolute inset-0 bg-[var(--b2b-end)]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
+                    <div class="w-10 h-10 rounded-full bg-white/95 text-[var(--color-primary)] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
                       </svg>
@@ -1149,8 +1296,8 @@
                 </div>
                 <div class="rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(3)">
                   <img src="assets/images/bangkhen/14.jpg" alt="The College of Opticians of Ontario - Optician Certificate" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
-                  <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
-                    <div class="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
+                  <div class="absolute inset-0 bg-[var(--b2b-end)]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
+                    <div class="w-10 h-10 rounded-full bg-white/95 text-[var(--color-primary)] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
                       </svg>
@@ -1159,8 +1306,8 @@
                 </div>
                 <div class="rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(4)">
                   <img src="assets/images/bangkhen/15.jpg" alt="Georgian College - Optician Diploma" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
-                  <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
-                    <div class="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
+                  <div class="absolute inset-0 bg-[var(--b2b-end)]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
+                    <div class="w-10 h-10 rounded-full bg-white/95 text-[var(--color-primary)] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
                       </svg>
@@ -1169,8 +1316,8 @@
                 </div>
                 <div class="rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(5)">
                   <img src="assets/images/bangkhen/16.jpg" alt="National Association of Canadian Optician Regulators" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
-                  <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
-                    <div class="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
+                  <div class="absolute inset-0 bg-[var(--b2b-end)]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
+                    <div class="w-10 h-10 rounded-full bg-white/95 text-[var(--color-primary)] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
                       </svg>
@@ -1178,7 +1325,7 @@
                   </div>
                 </div>
               </div>
-              <p class="text-center text-sm font-bold text-[#0E253A]">
+              <p class="text-center text-sm font-bold text-heading">
                 Đội ngũ nhân sự tốt nghiệp và có chứng chỉ hành nghề tại Canada (Bấm vào để xem lớn)
               </p>
             </div>
@@ -1188,8 +1335,8 @@
               <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
                 <div class="rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(6)">
                   <img src="assets/images/bangkhen/1.jpg" alt="Giấy chứng nhận ISO 13485:2016 Rocky Lens" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
-                  <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
-                    <div class="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
+                  <div class="absolute inset-0 bg-[var(--b2b-end)]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
+                    <div class="w-10 h-10 rounded-full bg-white/95 text-[var(--color-primary)] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
                       </svg>
@@ -1198,8 +1345,8 @@
                 </div>
                 <div class="rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(7)">
                   <img src="assets/images/bangkhen/2.jpg" alt="Thương hiệu uy tín hội nhập Châu Á 2024" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
-                  <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
-                    <div class="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
+                  <div class="absolute inset-0 bg-[var(--b2b-end)]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
+                    <div class="w-10 h-10 rounded-full bg-white/95 text-[var(--color-primary)] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
                       </svg>
@@ -1208,8 +1355,8 @@
                 </div>
                 <div class="rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(8)">
                   <img src="assets/images/bangkhen/3.jpg" alt="Sản phẩm dịch vụ chất lượng Châu Á 2024" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
-                  <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
-                    <div class="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
+                  <div class="absolute inset-0 bg-[var(--b2b-end)]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
+                    <div class="w-10 h-10 rounded-full bg-white/95 text-[var(--color-primary)] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
                       </svg>
@@ -1218,8 +1365,8 @@
                 </div>
                 <div class="rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(9)">
                   <img src="assets/images/bangkhen/4.jpg" alt="The Best of Vietnam 2024 - Top 20 Sản phẩm tốt nhất" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
-                  <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
-                    <div class="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
+                  <div class="absolute inset-0 bg-[var(--b2b-end)]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
+                    <div class="w-10 h-10 rounded-full bg-white/95 text-[var(--color-primary)] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
                       </svg>
@@ -1227,7 +1374,7 @@
                   </div>
                 </div>
               </div>
-              <p class="text-center text-sm font-bold text-[#0E253A]">
+              <p class="text-center text-sm font-bold text-heading">
                 Sản phẩm đạt Tiêu chuẩn quốc tế và vinh dự đạt giải thưởng chất lượng châu Á
               </p>
             </div>
@@ -1237,8 +1384,8 @@
               <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 <div class="rounded-2xl shadow-xs aspect-[4/3] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(10)">
                   <img src="assets/images/bangkhen/31.jpg" alt="Giấy khen Hội cứu trợ trẻ em tàn tật Việt Nam" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
-                  <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
-                    <div class="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
+                  <div class="absolute inset-0 bg-[var(--b2b-end)]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
+                    <div class="w-10 h-10 rounded-full bg-white/95 text-[var(--color-primary)] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
                       </svg>
@@ -1247,8 +1394,8 @@
                 </div>
                 <div class="rounded-2xl shadow-xs aspect-[4/3] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(11)">
                   <img src="assets/images/bangkhen/32.jpg" alt="Giấy khen Hội nạn nhân chất độc da cam / Dioxin" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
-                  <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
-                    <div class="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
+                  <div class="absolute inset-0 bg-[var(--b2b-end)]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
+                    <div class="w-10 h-10 rounded-full bg-white/95 text-[var(--color-primary)] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
                       </svg>
@@ -1257,8 +1404,8 @@
                 </div>
                 <div class="rounded-2xl shadow-xs aspect-[4/3] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(12)">
                   <img src="assets/images/bangkhen/33.jpg" alt="Kỷ niệm chương Tấm lòng nhân ái" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
-                  <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
-                    <div class="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
+                  <div class="absolute inset-0 bg-[var(--b2b-end)]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
+                    <div class="w-10 h-10 rounded-full bg-white/95 text-[var(--color-primary)] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
                       </svg>
@@ -1266,7 +1413,7 @@
                   </div>
                 </div>
               </div>
-              <p class="text-center text-sm font-bold text-[#0E253A]">
+              <p class="text-center text-sm font-bold text-heading">
                 Tích cực tham gia hoạt động vì cộng đồng
               </p>
             </div>
@@ -1278,7 +1425,7 @@
         <!-- Part B: Đối tác của chúng tôi (Larger Logos & Infinite Marquee Moving Right to Left) -->
         <div class="pt-12 space-y-6">
           <div class="text-center space-y-2">
-            <h3 class="text-2xl sm:text-3xl font-black text-[#0E253A] tracking-tight">
+            <h3 class="text-2xl sm:text-3xl font-black text-heading tracking-tight">
               Đối tác của chúng tôi
             </h3>
             <p class="text-slate-600 text-sm max-w-xl mx-auto">
@@ -1362,10 +1509,10 @@
     <!-- Mục tiêu: Mở ra cơ hội hợp tác cho cửa hàng, đại lý, lab -->
     <!-- Giọng văn chuyên nghiệp, không công khai giá sỉ/chiết khấu -->
     <!-- ========================================================= -->
-    <section id="doi-tac" class="relative py-24 px-6 bg-gradient-to-b from-[#0E253A] via-[#102B42] to-[#0E253A] text-white overflow-hidden">
+    <section id="doi-tac" class="relative py-24 px-6 bg-gradient-to-b var(--gradient-b2b) text-white overflow-hidden">
       <!-- Ambient Blur Caustic Overlays (Smooth Section Blending) -->
-      <div class="absolute -top-28 left-1/2 -translate-x-1/2 w-[700px] h-56 bg-[#0B7B8A]/25 rounded-full blur-3xl pointer-events-none"></div>
-      <div class="absolute -bottom-28 left-1/2 -translate-x-1/2 w-[700px] h-56 bg-[#0B7B8A]/25 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -top-28 left-1/2 -translate-x-1/2 w-[700px] h-56 bg-[var(--color-primary)]/25 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -bottom-28 left-1/2 -translate-x-1/2 w-[700px] h-56 bg-[var(--color-primary)]/25 rounded-full blur-3xl pointer-events-none"></div>
 
       <div class="max-w-7xl mx-auto space-y-14 relative z-10">
         
@@ -1404,13 +1551,13 @@
             </div>
 
             <div class="pt-4 flex flex-wrap items-center gap-4">
-              <button type="button" onclick="openB2BQuoteModal()" class="px-7 py-3.5 rounded-full bg-[#0B7B8A] hover:bg-[#086370] text-white font-bold text-base transition-colors text-center cursor-pointer shadow-xs">
+              <button type="button" onclick="openB2BQuoteModal()" class="px-7 py-3.5 rounded-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold text-base transition-colors text-center cursor-pointer shadow-xs">
                 Nhận Báo Giá Cho Đại Lý
               </button>
               <a href="danh-cho-doi-tac/" class="px-7 py-3.5 rounded-full bg-[#163652] hover:bg-[#1c4568] text-white font-bold text-base transition-colors text-center">
                 Chính Sách Hợp Tác
               </a>
-              <a href="https://zalo.me/0933102653" target="_blank" rel="noopener noreferrer" class="px-7 py-3.5 rounded-full bg-white hover:bg-slate-100 text-[#0E253A] font-bold text-base transition-colors text-center">
+              <a href="https://zalo.me/0933102653" target="_blank" rel="noopener noreferrer" class="px-7 py-3.5 rounded-full bg-white hover:bg-slate-100 text-heading font-bold text-base transition-colors text-center">
                 Kết nối Zalo B2B: 0933 102 653
               </a>
             </div>
@@ -1442,16 +1589,16 @@
     <!-- Mục tiêu: Chia sẻ kiến thức thị giác theo insight khách hàng -->
     <!-- 3 bài mẫu: Văn phòng, Lái xe đêm mưa, Trẻ em cận tiến triển -->
     <!-- ========================================================= -->
-    <section id="blog-insights" class="relative py-24 px-6 bg-gradient-to-b from-[#F5F5F7] via-[#F8F9FA] to-[#071521] overflow-hidden">
+    <section id="blog-insights" class="relative py-24 px-6 bg-gradient-to-b from-[var(--site-bg-start)] via-[var(--site-bg-middle)] to-[var(--b2b-end)] overflow-hidden">
       <!-- Ambient Blur Caustic Overlays (Smooth Section Blending) -->
-      <div class="absolute inset-x-0 -top-12 h-24 bg-gradient-to-b from-[#0E253A]/10 to-transparent blur-xl pointer-events-none"></div>
+      <div class="absolute inset-x-0 -top-12 h-24 bg-gradient-to-b from-[var(--b2b-end)]/10 to-transparent blur-xl pointer-events-none"></div>
       <div class="absolute -top-24 right-1/4 w-96 h-48 bg-teal-500/5 rounded-full blur-3xl pointer-events-none"></div>
 
       <div class="max-w-7xl mx-auto space-y-12 relative z-10">
         
         <!-- Section Header -->
         <div class="max-w-3xl space-y-3">
-          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0E253A] tracking-tight">
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-heading tracking-tight">
             Góc nhìn &amp; insight thị giác.
           </h2>
           <p class="text-slate-600 text-lg leading-relaxed mt-3">
@@ -1467,7 +1614,7 @@
             <div>
               <div class="h-56 sm:h-64 bg-slate-100 overflow-hidden relative">
                 <img src="assets/images/products/category-solution-2.png" alt="Giải pháp chống ánh sáng xanh UV420 không ám vàng" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                <span class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-[#0B7B8A] text-xs font-bold border border-slate-200/80 shadow-xs">
+                <span class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-[var(--color-primary)] text-xs font-bold border border-slate-200/80 shadow-xs">
                   Công Nghệ Tròng Kính
                 </span>
               </div>
@@ -1477,7 +1624,7 @@
                   <span>&bull;</span>
                   <span>5 phút đọc</span>
                 </div>
-                <h3 class="text-xl font-bold text-[#0E253A] group-hover:text-[#0B7B8A] transition-colors leading-snug line-clamp-2">
+                <h3 class="text-xl font-bold text-heading group-hover:text-[var(--color-primary)] transition-colors leading-snug line-clamp-2">
                   <a href="blog/giai-phap-chong-anh-sang-xanh-uv420/">
                     Ánh Sáng Xanh Có Thực Sự Gây Hại? Bí Quyết Chống Mỏi Mắt Màn Hình Không Ám Vàng
                   </a>
@@ -1488,7 +1635,7 @@
               </div>
             </div>
             <div class="p-6 sm:p-7 pt-0">
-              <a href="blog/giai-phap-chong-anh-sang-xanh-uv420/" class="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full bg-[#0B7B8A] hover:bg-[#086370] text-white font-bold text-sm transition-all shadow-xs">
+              <a href="blog/giai-phap-chong-anh-sang-xanh-uv420/" class="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold text-sm transition-all shadow-xs">
                 <span>Đọc bài viết chi tiết</span>
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
               </a>
@@ -1500,7 +1647,7 @@
             <div>
               <div class="h-56 sm:h-64 bg-slate-100 overflow-hidden relative">
                 <img src="assets/images/products/category-solution-1.png" alt="Kính lái xe ban đêm DriveShield chống lóa đèn pha" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                <span class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-[#0B7B8A] text-xs font-bold border border-slate-200/80 shadow-xs">
+                <span class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-[var(--color-primary)] text-xs font-bold border border-slate-200/80 shadow-xs">
                   Công Nghệ Tròng Kính
                 </span>
               </div>
@@ -1510,7 +1657,7 @@
                   <span>&bull;</span>
                   <span>6 phút đọc</span>
                 </div>
-                <h3 class="text-xl font-bold text-[#0E253A] group-hover:text-[#0B7B8A] transition-colors leading-snug line-clamp-2">
+                <h3 class="text-xl font-bold text-heading group-hover:text-[var(--color-primary)] transition-colors leading-snug line-clamp-2">
                   <a href="blog/cong-nghe-kinh-lai-xe-driveshield/">
                     Lái Xe Ban Đêm &amp; Đi Mưa: Bí Quyết Triệt Tiêu Lóa Đèn Pha Cho Bác Tài Vững Lái
                   </a>
@@ -1521,7 +1668,7 @@
               </div>
             </div>
             <div class="p-6 sm:p-7 pt-0">
-              <a href="blog/cong-nghe-kinh-lai-xe-driveshield/" class="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full bg-[#0B7B8A] hover:bg-[#086370] text-white font-bold text-sm transition-all shadow-xs">
+              <a href="blog/cong-nghe-kinh-lai-xe-driveshield/" class="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold text-sm transition-all shadow-xs">
                 <span>Đọc bài viết chi tiết</span>
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
               </a>
@@ -1533,7 +1680,7 @@
             <div>
               <div class="h-56 sm:h-64 bg-slate-100 overflow-hidden relative">
                 <img src="assets/images/products/category-solution-7.png" alt="Kiểm soát cận thị tiến triển Defocus MyoControl" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                <span class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-[#0B7B8A] text-xs font-bold border border-slate-200/80 shadow-xs">
+                <span class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-[var(--color-primary)] text-xs font-bold border border-slate-200/80 shadow-xs">
                   Kiến Thức Quang Học
                 </span>
               </div>
@@ -1543,7 +1690,7 @@
                   <span>&bull;</span>
                   <span>7 phút đọc</span>
                 </div>
-                <h3 class="text-xl font-bold text-[#0E253A] group-hover:text-[#0B7B8A] transition-colors leading-snug line-clamp-2">
+                <h3 class="text-xl font-bold text-heading group-hover:text-[var(--color-primary)] transition-colors leading-snug line-clamp-2">
                   <a href="blog/kiem-soat-can-thi-tre-em-myocontrol/">
                     Kiểm Soát Tăng Độ Cận Ở Trẻ Em: Những Điều Ba Mẹ Cần Biết Về Defocus MyoControl
                   </a>
@@ -1551,7 +1698,7 @@
               </div>
             </div>
             <div class="p-6 sm:p-7 pt-0">
-              <a href="blog/kiem-soat-can-thi-tre-em-myocontrol/" class="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full bg-[#0B7B8A] hover:bg-[#086370] text-white font-bold text-sm transition-all shadow-xs">
+              <a href="blog/kiem-soat-can-thi-tre-em-myocontrol/" class="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold text-sm transition-all shadow-xs">
                 <span>Đọc bài viết chi tiết</span>
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
               </a>
@@ -1562,7 +1709,7 @@
 
         <!-- Big Action Button to Full Blog Page -->
         <div class="flex flex-col sm:flex-row items-center justify-center pt-4">
-          <a href="blog/" class="group inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#0B7B8A] hover:bg-[#086370] text-white font-bold text-base sm:text-lg transition-colors duration-200 shadow-sm">
+          <a href="blog/" class="group inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold text-base sm:text-lg transition-colors duration-200 shadow-sm">
             <span>Khám Phá Tất Cả Bài Viết &amp; Insight Thị Giác</span>
             <svg class="w-5 h-5 transition-transform duration-200 group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -1578,7 +1725,7 @@
   <!-- ========================================================= -->
   <!-- OFFICIAL FOOTER                                           -->
   <!-- ========================================================= -->
-  <footer class="bg-[#071521] text-slate-600 font-medium py-16 px-6 text-base">
+  <footer class="bg-[var(--b2b-end)] text-slate-600 font-medium py-16 px-6 text-base">
     <div class="max-w-7xl mx-auto space-y-12">
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -1650,7 +1797,7 @@
   <!-- ========================================================= -->
   <!-- CERTIFICATE LIGHTBOX MODAL (INTERACTIVE CLICK TO ZOOM)    -->
   <!-- ========================================================= -->
-  <div id="certModal" class="fixed inset-0 z-50 bg-[#071521]/95 backdrop-blur-md hidden items-center justify-center p-4 sm:p-6 transition-all duration-300 opacity-0" role="dialog" aria-modal="true" aria-label="Phóng to bằng khen và chứng chỉ">
+  <div id="certModal" class="fixed inset-0 z-50 bg-[var(--b2b-end)]/95 backdrop-blur-md hidden items-center justify-center p-4 sm:p-6 transition-all duration-300 opacity-0" role="dialog" aria-modal="true" aria-label="Phóng to bằng khen và chứng chỉ">
     
     <!-- Top Bar: Title & Counter & Close Button -->
     <div class="absolute top-4 inset-x-4 sm:inset-x-8 flex items-center justify-between text-white z-20 pointer-events-auto">
@@ -1697,7 +1844,7 @@
   <!-- ========================================================= -->
   <!-- B2B DEALER QUOTE MODAL (INTERACTIVE POPUP)                -->
   <!-- ========================================================= -->
-  <div id="b2bQuoteModal" class="fixed inset-0 z-50 bg-[#071521]/80 backdrop-blur-md hidden items-center justify-center p-4 sm:p-6 transition-all duration-300 opacity-0" role="dialog" aria-modal="true" aria-labelledby="b2bModalTitle">
+  <div id="b2bQuoteModal" class="fixed inset-0 z-50 bg-[var(--b2b-end)]/80 backdrop-blur-md hidden items-center justify-center p-4 sm:p-6 transition-all duration-300 opacity-0" role="dialog" aria-modal="true" aria-labelledby="b2bModalTitle">
     <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative border border-slate-100 text-left space-y-6" onclick="event.stopPropagation()">
       
       <!-- Close Button -->
@@ -1709,10 +1856,10 @@
 
       <!-- Header -->
       <div class="space-y-2 pr-8">
-        <span class="px-3.5 py-1.5 rounded-full bg-teal-50 text-[#086370] text-sm font-bold inline-block">
+        <span class="px-3.5 py-1.5 rounded-full bg-teal-50 text-[var(--color-primary-hover)] text-sm font-bold inline-block">
           Dành Cho Cửa Hàng &amp; Đại Lý Mắt Kính
         </span>
-        <h3 id="b2bModalTitle" class="text-2xl sm:text-3xl font-black text-[#0E253A] tracking-tight leading-snug">
+        <h3 id="b2bModalTitle" class="text-2xl sm:text-3xl font-black text-heading tracking-tight leading-snug">
           Nhận Báo Giá Đại Lý &amp; Chính Sách Chiết Khấu
         </h3>
         <p class="text-slate-600 text-sm leading-relaxed">
@@ -1722,15 +1869,15 @@
 
       <!-- Quick 1-Click Action Buttons -->
       <div class="space-y-3 pt-1">
-        <a href="https://zalo.me/0933102653" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 px-6 rounded-2xl bg-[#0B7B8A] hover:bg-[#086370] text-white font-bold text-base flex items-center justify-center gap-3 transition-colors shadow-sm cursor-pointer">
+        <a href="https://zalo.me/0933102653" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 px-6 rounded-2xl bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold text-base flex items-center justify-center gap-3 transition-colors shadow-sm cursor-pointer">
           <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
             <path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.38A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"/>
           </svg>
           <span>Nhận Báo Giá File PDF Qua Zalo Ngay</span>
         </a>
 
-        <a href="tel:0933102653" class="w-full py-3 px-6 rounded-2xl bg-slate-100 hover:bg-slate-200 text-[#0E253A] font-bold text-base flex items-center justify-center gap-3 transition-colors cursor-pointer">
-          <svg class="w-5 h-5 text-[#0B7B8A]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <a href="tel:0933102653" class="w-full py-3 px-6 rounded-2xl bg-slate-100 hover:bg-slate-200 text-heading font-bold text-base flex items-center justify-center gap-3 transition-colors cursor-pointer">
+          <svg class="w-5 h-5 text-[var(--color-primary)]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
           </svg>
           <span>Hotline Phụ Trách B2B: 0933 102 653</span>
@@ -1744,13 +1891,13 @@
         </div>
         <form id="b2bQuickForm" onsubmit="handleB2BSubmit(event)" class="space-y-3">
           <div>
-            <input type="text" id="b2bStoreName" required placeholder="Tên Cửa hàng mắt kính / Đơn vị (*)" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-[#0B7B8A] focus:outline-none text-sm text-[#0E253A] bg-slate-50 focus:bg-white transition-colors">
+            <input type="text" id="b2bStoreName" required placeholder="Tên Cửa hàng mắt kính / Đơn vị (*)" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-[var(--color-primary)] focus:outline-none text-sm text-heading bg-slate-50 focus:bg-white transition-colors">
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            <input type="tel" id="b2bPhone" required placeholder="Số điện thoại / Zalo (*)" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-[#0B7B8A] focus:outline-none text-sm text-[#0E253A] bg-slate-50 focus:bg-white transition-colors">
-            <input type="text" id="b2bCity" required placeholder="Tỉnh / Thành phố (*)" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-[#0B7B8A] focus:outline-none text-sm text-[#0E253A] bg-slate-50 focus:bg-white transition-colors">
+            <input type="tel" id="b2bPhone" required placeholder="Số điện thoại / Zalo (*)" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-[var(--color-primary)] focus:outline-none text-sm text-heading bg-slate-50 focus:bg-white transition-colors">
+            <input type="text" id="b2bCity" required placeholder="Tỉnh / Thành phố (*)" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-[var(--color-primary)] focus:outline-none text-sm text-heading bg-slate-50 focus:bg-white transition-colors">
           </div>
-          <button type="submit" class="w-full py-3 rounded-xl bg-[#0E253A] hover:bg-[#0B7B8A] text-white font-bold text-sm transition-colors cursor-pointer">
+          <button type="submit" class="w-full py-3 rounded-xl bg-[var(--b2b-end)] hover:bg-[var(--color-primary)] text-white font-bold text-sm transition-colors cursor-pointer">
             Gửi Yêu Cầu Nhận Báo Giá &amp; Catalog
           </button>
         </form>

@@ -64,14 +64,14 @@ export async function generateMetadata({
 }
 
 const benefitIconMap: Record<string, React.ReactNode> = {
-  ShieldCheck: <ShieldCheck className="w-5 h-5 text-[#0B7B8A]" />,
-  Sparkles: <Sparkles className="w-5 h-5 text-[#D97706]" />,
-  Eye: <Eye className="w-5 h-5 text-teal-600" />,
-  Award: <Award className="w-5 h-5 text-[#D97706]" />,
-  Layers: <Layers className="w-5 h-5 text-indigo-600" />,
-  SunMedium: <SunMedium className="w-5 h-5 text-[#D97706]" />,
-  Cpu: <Cpu className="w-5 h-5 text-[#0B7B8A]" />,
-  Car: <Car className="w-5 h-5 text-teal-600" />,
+  ShieldCheck: <ShieldCheck className="w-5 h-5 text-[var(--color-primary)]" />,
+  Sparkles: <Sparkles className="w-5 h-5 text-[var(--button-middle)]" />,
+  Eye: <Eye className="w-5 h-5 text-[var(--color-primary)]" />,
+  Award: <Award className="w-5 h-5 text-[var(--button-middle)]" />,
+  Layers: <Layers className="w-5 h-5 text-[var(--color-primary)]" />,
+  SunMedium: <SunMedium className="w-5 h-5 text-[var(--button-middle)]" />,
+  Cpu: <Cpu className="w-5 h-5 text-[var(--color-primary)]" />,
+  Car: <Car className="w-5 h-5 text-[var(--color-primary)]" />,
 };
 
 export default async function ProductDetailPage({ params }: ProductDetailPageProps) {
@@ -110,14 +110,14 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           {/* 2. Hình ảnh sản phẩm (Left) */}
           <div className="lg:col-span-5 space-y-4">
-            <div className="relative aspect-square rounded-3xl bg-slate-50 border border-slate-200/80 p-8 flex items-center justify-center overflow-hidden shadow-xs">
+            <div className="relative aspect-square rounded-3xl bg-slate-50 border border-[var(--color-border)]/50 p-8 flex items-center justify-center overflow-hidden shadow-xs">
               {product.badge && (
-                <span className="absolute top-4 left-4 z-10 px-3 py-1 rounded-md text-xs font-bold tracking-wide uppercase bg-[#0B7B8A] text-white shadow-xs">
+                <span className="absolute top-4 left-4 z-10 px-3 py-1 rounded-md text-xs font-bold tracking-wide uppercase button-primary">
                   {product.badge}
                 </span>
               )}
               {product.refractiveIndex && (
-                <span className="absolute top-4 right-4 z-10 px-2.5 py-1 rounded-md text-xs font-bold bg-[#0E253A] text-white shadow-xs">
+                <span className="absolute top-4 right-4 z-10 px-2.5 py-1 rounded-md text-xs font-bold bg-[var(--b2b-end)] text-white shadow-xs">
                   Index {product.refractiveIndex}
                 </span>
               )}
@@ -140,7 +140,7 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
                 {product.images.map((img, idx) => (
                   <div
                     key={idx}
-                    className="relative w-20 h-20 rounded-xl bg-slate-50 border border-slate-200 overflow-hidden p-2"
+                    className="relative w-20 h-20 rounded-xl bg-slate-50 border border-[var(--color-border)]/50 overflow-hidden p-2"
                   >
                     <Image
                       src={img}
@@ -154,11 +154,11 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
             )}
 
             {/* Quick B2B Direct Action Box - Light & Fresh Modern Theme */}
-            <div className="p-5 rounded-2xl bg-gradient-to-br from-teal-50/90 via-white to-slate-50 border border-teal-100/90 shadow-sm space-y-3">
-              <div className="text-xs font-bold text-[#0B7B8A] uppercase tracking-wider">
+            <div className="p-5 rounded-2xl section-background border border-[var(--color-border)]/60 shadow-sm space-y-3">
+              <div className="text-xs font-bold text-heading uppercase tracking-wider">
                 Kết Nối Đại Lý Kính Mắt &amp; Lab RX
               </div>
-              <p className="text-xs text-slate-600 leading-relaxed font-medium">
+              <p className="text-xs text-[var(--color-muted)] leading-relaxed font-medium">
                 Đăng ký nhận bảng giá sỉ và danh mục phôi tròng kính Rocky Lens chính hãng.
               </p>
               <div className="flex gap-3 pt-1">
@@ -166,14 +166,14 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
                   href={siteConfig.zalo.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 inline-flex items-center justify-center space-x-1.5 py-2.5 px-4 rounded-xl text-xs font-bold bg-[#0B7B8A] hover:bg-[#086370] text-white transition-all shadow-xs hover:shadow"
+                  className="flex-1 inline-flex items-center justify-center space-x-1.5 py-2.5 px-4 rounded-xl text-xs font-bold button-primary"
                 >
                   <span>Nhắn Zalo Đại Lý</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </a>
                 <a
                   href={`tel:${siteConfig.phones.hotline}`}
-                  className="inline-flex items-center justify-center py-2.5 px-3 rounded-xl text-xs font-semibold bg-white border border-slate-200 hover:border-teal-300 text-[#0B7B8A] hover:bg-teal-50 transition-colors shadow-xs"
+                  className="inline-flex items-center justify-center py-2.5 px-3 rounded-xl text-xs font-semibold bg-white border border-[var(--color-border)] hover:border-[var(--color-primary)] text-heading hover:bg-[var(--site-bg-start)] transition-colors shadow-xs"
                   title="Gọi Hotline B2B"
                 >
                   <Phone className="w-3.5 h-3.5" />
@@ -186,29 +186,29 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
           <div className="lg:col-span-7 space-y-8">
             <div>
               {/* 3. Tên sản phẩm */}
-              <div className="inline-block text-xs font-semibold uppercase tracking-wider text-[#0B7B8A] bg-teal-50 px-3 py-1 rounded-full mb-3">
+              <div className="inline-block text-xs font-semibold uppercase tracking-wider text-[var(--color-primary)] bg-[var(--site-bg-middle)]/60 px-3 py-1 rounded-full mb-3 border border-[var(--color-border)]/40">
                 Canada Opticians Official
               </div>
-              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-heading tracking-tight leading-tight">
                 {product.name}
               </h1>
 
               {product.tagline && (
-                <p className="mt-2 text-sm sm:text-base font-medium text-slate-600">
+                <p className="mt-2 text-sm sm:text-base font-medium text-[var(--color-muted)]">
                   {product.tagline}
                 </p>
               )}
 
               {/* 4. Mô tả ngắn dễ hiểu */}
-              <div className="mt-4 p-4 rounded-xl bg-slate-50 border border-slate-200/80 text-xs sm:text-sm text-slate-700 leading-relaxed">
+              <div className="mt-4 p-4 rounded-xl bg-[var(--site-bg-start)]/60 border border-[var(--color-border)]/50 text-xs sm:text-sm text-heading leading-relaxed">
                 {product.shortDescription}
               </div>
             </div>
 
             {/* 5. Lợi ích và đặc điểm nổi bật (B2C) */}
             <div>
-              <h2 className="text-lg font-bold text-slate-900 mb-4 flex items-center space-x-2">
-                <Sparkles className="w-5 h-5 text-[#D97706]" />
+              <h2 className="text-lg font-bold text-heading mb-4 flex items-center space-x-2">
+                <Sparkles className="w-5 h-5 text-[var(--button-middle)]" />
                 <span>Lợi Ích Và Đặc Điểm Nổi Bật</span>
               </h2>
 
@@ -216,17 +216,17 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
                 {product.benefits.map((benefit, idx) => (
                   <div
                     key={idx}
-                    className="p-4 rounded-xl border border-slate-200 bg-white shadow-2xs hover:border-teal-300 transition-colors"
+                    className="p-4 rounded-xl border border-[var(--color-border)]/50 bg-white shadow-2xs hover:border-[var(--color-primary)] transition-colors"
                   >
                     <div className="flex items-center space-x-2.5 mb-2">
-                      <div className="w-8 h-8 rounded-lg bg-teal-50 flex items-center justify-center">
+                      <div className="w-8 h-8 rounded-lg bg-[var(--site-bg-middle)]/50 flex items-center justify-center">
                         {benefitIconMap[benefit.icon || 'ShieldCheck']}
                       </div>
-                      <h3 className="text-xs sm:text-sm font-bold text-slate-800">
+                      <h3 className="text-xs sm:text-sm font-bold text-heading">
                         {benefit.title}
                       </h3>
                     </div>
-                    <p className="text-xs text-slate-600 leading-relaxed">
+                    <p className="text-xs text-[var(--color-muted)] leading-relaxed">
                       {benefit.description}
                     </p>
                   </div>
@@ -236,15 +236,15 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
 
             {/* 8. Đối tượng và nhu cầu sử dụng phù hợp */}
             {product.targetAudience && product.targetAudience.length > 0 && (
-              <div className="p-5 rounded-2xl bg-teal-50/60 border border-teal-100">
-                <h3 className="text-sm font-bold text-[#0B7B8A] mb-3 flex items-center space-x-2">
-                  <CheckCircle className="w-4 h-4" />
+              <div className="p-5 rounded-2xl bg-[var(--site-bg-middle)]/30 border border-[var(--color-border)]/50">
+                <h3 className="text-sm font-bold text-heading mb-3 flex items-center space-x-2">
+                  <CheckCircle className="w-4 h-4 text-[var(--color-primary)]" />
                   <span>Đối Tượng Phù Hợp Sử Dụng</span>
                 </h3>
-                <ul className="space-y-2 text-xs text-slate-700">
+                <ul className="space-y-2 text-xs text-[var(--color-muted)]">
                   {product.targetAudience.map((aud, idx) => (
                     <li key={idx} className="flex items-start space-x-2">
-                      <span className="text-[#0B7B8A] font-bold mt-0.5">•</span>
+                      <span className="text-[var(--color-primary)] font-bold mt-0.5">•</span>
                       <span>{aud}</span>
                     </li>
                   ))}
@@ -254,8 +254,8 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
 
             {/* 7. Thông số kỹ thuật B2B */}
             <div>
-              <h2 className="text-lg font-bold text-slate-900 mb-4 flex items-center space-x-2">
-                <Layers className="w-5 h-5 text-[#0B7B8A]" />
+              <h2 className="text-lg font-bold text-heading mb-4 flex items-center space-x-2">
+                <Layers className="w-5 h-5 text-[var(--color-primary)]" />
                 <span>Thông Số Kỹ Thuật Chi Tiết (B2B Optical Data)</span>
               </h2>
               <ProductSpecifications specifications={product.specifications} />
@@ -263,14 +263,14 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
 
             {/* 9. Tài liệu catalogue nếu có */}
             {product.documents && product.documents.length > 0 && (
-              <div className="p-4 rounded-xl border border-slate-200 bg-slate-50 flex items-center justify-between">
+              <div className="p-4 rounded-xl border border-[var(--color-border)]/50 bg-white flex items-center justify-between">
                 <div className="flex items-center space-x-3">
-                  <FileText className="w-5 h-5 text-[#0B7B8A]" />
+                  <FileText className="w-5 h-5 text-[var(--color-primary)]" />
                   <div>
-                    <div className="text-xs font-bold text-slate-800">
+                    <div className="text-xs font-bold text-heading">
                       {product.documents[0].title}
                     </div>
-                    <div className="text-[11px] text-slate-500">
+                    <div className="text-[11px] text-[var(--color-muted)]">
                       Định dạng {product.documents[0].type} • {product.documents[0].size}
                     </div>
                   </div>
@@ -280,7 +280,7 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
                   href={product.documents[0].url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center space-x-1 px-3 py-1.5 rounded-lg text-xs font-semibold bg-[#0B7B8A] text-white hover:bg-[#096370] transition-colors"
+                  className="inline-flex items-center space-x-1 px-3 py-1.5 rounded-lg text-xs font-semibold button-primary"
                 >
                   <Download className="w-3.5 h-3.5" />
                   <span>Tải Về</span>
@@ -302,19 +302,19 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
 
         {/* 11. Sản phẩm liên quan */}
         {relatedProducts.length > 0 && (
-          <div className="mt-16 pt-12 border-t border-slate-200">
+          <div className="mt-16 pt-12 border-t border-[var(--color-border)]/40">
             <div className="flex items-center justify-between mb-8">
               <div>
-                <h3 className="text-xl font-bold text-slate-900">
+                <h3 className="text-xl font-bold text-heading">
                   Sản Phẩm Cùng Phân Khúc Quang Học
                 </h3>
-                <p className="text-xs text-slate-500 mt-1">
+                <p className="text-xs text-[var(--color-muted)] mt-1">
                   Khám phá thêm các tùy chọn chiết suất và công nghệ tương đương
                 </p>
               </div>
               <Link
                 href="/trong-kinh/"
-                className="text-xs font-semibold text-[#0B7B8A] hover:underline"
+                className="text-xs font-semibold text-[var(--color-primary)] hover:underline"
               >
                 Xem tất cả catalogue →
               </Link>

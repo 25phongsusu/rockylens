@@ -16,12 +16,12 @@ export default function ContactCTA({
   return (
     <section className="py-12 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="bg-[#F5F5F7] p-8 sm:p-10 rounded-3xl flex flex-col lg:flex-row items-center justify-between gap-8 border border-slate-200/60 shadow-xs">
+        <div className="bg-[var(--site-bg-start)] p-8 sm:p-10 rounded-3xl flex flex-col lg:flex-row items-center justify-between gap-8 border border-[var(--color-border)] shadow-xs">
           <div className="space-y-2 text-center lg:text-left">
-            <h2 className="text-2xl sm:text-3xl font-black text-[#0E253A] tracking-tight">
+            <h2 className="text-2xl sm:text-3xl font-black text-heading tracking-tight">
               {title}
             </h2>
-            <p className="text-slate-600 text-sm sm:text-base max-w-xl leading-relaxed">
+            <p className="text-brand-muted text-sm sm:text-base max-w-xl leading-relaxed">
               {description}
             </p>
           </div>
@@ -29,7 +29,7 @@ export default function ContactCTA({
             <button
               type="button"
               onClick={openB2BQuoteModal}
-              className="px-7 py-3.5 rounded-full bg-[#0B7B8A] hover:bg-[#086370] text-white font-bold text-base transition-colors text-center cursor-pointer shadow-xs"
+              className="button-primary px-7 py-3.5 rounded-full text-base text-center cursor-pointer shadow-xs"
             >
               Nhận Báo Giá Cho Đại Lý
             </button>
@@ -37,7 +37,7 @@ export default function ContactCTA({
               href={siteConfig.zalo.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-7 py-3.5 rounded-full bg-white hover:bg-slate-100 text-[#0E253A] font-bold text-base transition-colors text-center shadow-xs border border-slate-200/80"
+              className="button-secondary px-7 py-3.5 rounded-full text-base text-center shadow-xs"
             >
               Zalo B2B Đại Lý
             </a>

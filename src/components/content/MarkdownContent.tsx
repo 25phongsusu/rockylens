@@ -71,7 +71,7 @@ export default function MarkdownContent({ content }: MarkdownContentProps) {
     // H1
     if (line.startsWith('# ')) {
       elements.push(
-        <h1 key={i} className="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-8 mb-4 tracking-tight">
+        <h1 key={i} className="text-2xl sm:text-3xl font-extrabold text-heading mt-8 mb-4 tracking-tight">
           {line.replace('# ', '')}
         </h1>
       );
@@ -79,7 +79,7 @@ export default function MarkdownContent({ content }: MarkdownContentProps) {
     // H2
     else if (line.startsWith('## ')) {
       elements.push(
-        <h2 key={i} className="text-xl sm:text-2xl font-bold text-slate-900 mt-8 mb-3 tracking-tight border-b border-slate-100 pb-2">
+        <h2 key={i} className="text-xl sm:text-2xl font-bold text-heading mt-8 mb-3 tracking-tight border-b border-slate-100 pb-2">
           {line.replace('## ', '')}
         </h2>
       );
@@ -87,7 +87,7 @@ export default function MarkdownContent({ content }: MarkdownContentProps) {
     // H3
     else if (line.startsWith('### ')) {
       elements.push(
-        <h3 key={i} className="text-base sm:text-lg font-bold text-[#0B7B8A] mt-6 mb-2">
+        <h3 key={i} className="text-base sm:text-lg font-bold text-primary mt-6 mb-2">
           {line.replace('### ', '')}
         </h3>
       );

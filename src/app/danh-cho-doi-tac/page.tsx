@@ -52,25 +52,25 @@ const partnerFaqs = [
 
 export default function PartnerPage() {
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-[var(--site-bg-start)] min-h-screen">
       <Breadcrumbs items={[{ label: 'Dành cho đối tác B2B', href: '/danh-cho-doi-tac/' }]} />
 
       {/* 1. Hero — Giải pháp tròng kính dành cho cửa hàng mắt kính */}
-      <section className="bg-gradient-to-br from-[#050E10] via-[#0A1B22] to-[#0E2A36] text-white py-16 sm:py-24 px-4 sm:px-6 relative overflow-hidden">
-        <div className="absolute right-0 top-0 w-96 h-96 bg-[#0B7B8A]/20 rounded-full blur-3xl pointer-events-none" />
+      <section className="b2b-gradient text-white py-16 sm:py-24 px-4 sm:px-6 relative overflow-hidden">
+        <div className="absolute right-0 top-0 w-96 h-96 bg-[var(--button-start)]/20 rounded-full blur-3xl pointer-events-none" />
 
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="max-w-3xl space-y-6">
-            <span className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-slate-800/80 border border-teal-500/30 text-teal-300 text-xs font-semibold">
-              <ShieldCheck className="w-3.5 h-3.5 text-[#D97706]" />
+            <span className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/20 text-white text-xs font-semibold">
+              <ShieldCheck className="w-3.5 h-3.5 text-[var(--button-start)]" />
               <span>Chính Sách Hợp Tác Phân Phối B2B</span>
             </span>
 
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight">
-              GIẢI PHÁP TRÒNG KÍNH CHO CỬA HÀNG & PHÒNG KHÁM MẮT
+              GIẢI PHÁP TRÒNG KÍNH CHO CỬA HÀNG &amp; PHÒNG KHÁM MẮT
             </h1>
 
-            <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
+            <p className="text-slate-200 text-base sm:text-lg leading-relaxed">
               Thiết lập chuỗi cung ứng quang học tin cậy, chuẩn xác quang học từng micromet cùng dịch vụ Lab RX kỹ thuật số tốc độ cao, giúp đối tác gia tăng doanh thu và uy tín thương hiệu.
             </p>
 
@@ -81,19 +81,19 @@ export default function PartnerPage() {
                 href={siteConfig.zalo.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center space-x-2 px-6 py-3.5 rounded-xl text-sm font-semibold bg-white/10 hover:bg-white/15 text-white border border-white/20 transition-all"
+                className="inline-flex items-center space-x-2 px-6 py-3.5 rounded-xl text-sm font-semibold bg-white/15 hover:bg-white/25 text-white border border-white/25 transition-all"
               >
                 <span>Nhắn Zalo Đại Lý</span>
-                <ArrowUpRight className="w-4 h-4 text-teal-300" />
+                <ArrowUpRight className="w-4 h-4 text-[var(--button-start)]" />
               </a>
 
               <a
                 href="/documents/Rocky_Lens_Catalogue_2025.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center space-x-2 px-6 py-3.5 rounded-xl text-sm font-semibold bg-white/10 hover:bg-white/15 text-white border border-white/20 transition-all"
+                className="inline-flex items-center space-x-2 px-6 py-3.5 rounded-xl text-sm font-semibold bg-white/15 hover:bg-white/25 text-white border border-white/25 transition-all"
               >
-                <Download className="w-4 h-4 text-[#D97706]" />
+                <Download className="w-4 h-4 text-[var(--button-start)]" />
                 <span>Tải Bảng Giá &amp; Catalogue 2025</span>
               </a>
             </div>
@@ -102,29 +102,29 @@ export default function PartnerPage() {
       </section>
 
       {/* 2. Giới thiệu định hướng hợp tác */}
-      <section className="py-16 bg-slate-50 border-b border-slate-200">
+      <section className="py-16 bg-[var(--site-bg-start)] border-b border-[var(--color-border)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="p-6 rounded-2xl bg-white border border-slate-200">
-              <div className="text-[#0B7B8A] font-extrabold text-3xl mb-2">01</div>
-              <h3 className="text-base font-bold text-slate-900 mb-2">Nguồn Hàng Ổn Định</h3>
-              <p className="text-xs text-slate-600 leading-relaxed">
+            <div className="p-6 rounded-2xl card-surface">
+              <div className="text-primary font-extrabold text-3xl mb-2">01</div>
+              <h3 className="text-base font-bold text-heading mb-2">Nguồn Hàng Ổn Định</h3>
+              <p className="text-xs text-brand-muted leading-relaxed">
                 Kho vận trung tâm lưu trữ đầy đủ dải công suất SPH từ -15.00 đến +8.00 và CYL đến -4.00, hạn chế tối đa tình trạng đứt hàng gãy size.
               </p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-white border border-slate-200">
-              <div className="text-[#0B7B8A] font-extrabold text-3xl mb-2">02</div>
-              <h3 className="text-base font-bold text-slate-900 mb-2">Minh Bạch & Chuẩn Mực</h3>
-              <p className="text-xs text-slate-600 leading-relaxed">
+            <div className="p-6 rounded-2xl card-surface">
+              <div className="text-primary font-extrabold text-3xl mb-2">02</div>
+              <h3 className="text-base font-bold text-heading mb-2">Minh Bạch &amp; Chuẩn Mực</h3>
+              <p className="text-xs text-brand-muted leading-relaxed">
                 Đầy đủ hóa đơn chứng từ hải quan, chứng nhận chất lượng ISO 9001 và chứng nhận vật liệu phôi Mitsui Chemicals Nhật Bản.
               </p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-white border border-slate-200">
-              <div className="text-[#0B7B8A] font-extrabold text-3xl mb-2">03</div>
-              <h3 className="text-base font-bold text-slate-900 mb-2">Bảo Vệ Thị Trường Đại Lý</h3>
-              <p className="text-xs text-slate-600 leading-relaxed">
+            <div className="p-6 rounded-2xl card-surface">
+              <div className="text-primary font-extrabold text-3xl mb-2">03</div>
+              <h3 className="text-base font-bold text-heading mb-2">Bảo Vệ Thị Trường Đại Lý</h3>
+              <p className="text-xs text-brand-muted leading-relaxed">
                 Chính sách phân vùng khu vực rõ ràng, không cạnh tranh bán phá giá, hỗ trợ tối đa lợi nhuận biên cho cửa hàng đối tác.
               </p>
             </div>
@@ -143,18 +143,18 @@ export default function PartnerPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {CATEGORIES.map((cat) => (
-              <div key={cat.id} className="p-5 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between">
+              <div key={cat.id} className="p-5 rounded-2xl card-surface flex flex-col justify-between">
                 <div>
-                  <h3 className="text-sm font-bold text-slate-900 mb-2 text-[#0B7B8A]">
+                  <h3 className="text-sm font-bold mb-2 text-primary">
                     {cat.name}
                   </h3>
-                  <p className="text-xs text-slate-600 leading-relaxed">
+                  <p className="text-xs text-brand-muted leading-relaxed">
                     {cat.description}
                   </p>
                 </div>
-                <div className="mt-4 pt-3 border-t border-slate-200 flex justify-between items-center text-xs">
+                <div className="mt-4 pt-3 border-t border-[var(--color-border)] flex justify-between items-center text-xs">
                   <span className="text-slate-500 font-medium">Sẵn hàng kho</span>
-                  <Link href={`/trong-kinh/?category=${cat.id}`} className="font-semibold text-[#0B7B8A] hover:underline">
+                  <Link href={`/trong-kinh/?category=${cat.id}`} className="font-semibold text-primary hover:underline">
                     Xem mẫu →
                   </Link>
                 </div>
@@ -165,44 +165,44 @@ export default function PartnerPage() {
       </section>
 
       {/* 4. Giá trị doanh nghiệp mang lại cho đối tác */}
-      <section id="lab-rx" className="py-20 bg-slate-900 text-white relative overflow-hidden">
+      <section id="lab-rx" className="py-20 b2b-gradient text-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
           <SectionHeading
             badge="Giá Trị Hợp Tác"
-            title="Hệ Thống Dịch Vụ Hậu Cần & Kỹ Thuật Toàn Diện"
+            title="Hệ Thống Dịch Vụ Hậu Cần &amp; Kỹ Thuật Toàn Diện"
             description="Rocky Lens không chỉ cung cấp tròng kính, chúng tôi là đối tác kỹ thuật đứng sau thành công của cửa hàng bạn."
             dark
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="p-6 rounded-2xl bg-slate-800/80 border border-slate-700">
-              <Factory className="w-8 h-8 text-teal-400 mb-4" />
+            <div className="p-6 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15">
+              <Factory className="w-8 h-8 text-[var(--button-start)] mb-4" />
               <h3 className="text-base font-bold text-white mb-2">Gia Công Lab RX 24h</h3>
-              <p className="text-xs text-slate-400 leading-relaxed">
+              <p className="text-xs text-slate-200 leading-relaxed">
                 Máy phay kỹ thuật số mặt sau Freeform gia công chuẩn xác toa kính phức tạp trong 24h.
               </p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-slate-800/80 border border-slate-700">
-              <TrendingUp className="w-8 h-8 text-[#D97706] mb-4" />
+            <div className="p-6 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15">
+              <TrendingUp className="w-8 h-8 text-[var(--button-start)] mb-4" />
               <h3 className="text-base font-bold text-white mb-2">Chính Sách Chiết Khấu</h3>
-              <p className="text-xs text-slate-400 leading-relaxed">
+              <p className="text-xs text-slate-200 leading-relaxed">
                 Bảng giá sỉ bậc thang linh hoạt theo sản lượng tháng, thưởng quý và hỗ trợ công nợ đối tác uy tín.
               </p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-slate-800/80 border border-slate-700" id="ho-tro">
-              <Building2 className="w-8 h-8 text-teal-400 mb-4" />
+            <div className="p-6 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15" id="ho-tro">
+              <Building2 className="w-8 h-8 text-[var(--button-start)] mb-4" />
               <h3 className="text-base font-bold text-white mb-2">Gói Tài Trợ POSM</h3>
-              <p className="text-xs text-slate-400 leading-relaxed">
+              <p className="text-xs text-slate-200 leading-relaxed">
                 Cung cấp trọn bộ khay tròng mẫu, đèn test UV, máy kích hoạt đổi màu và biển hiệu điểm bán.
               </p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-slate-800/80 border border-slate-700">
-              <Headphones className="w-8 h-8 text-[#D97706] mb-4" />
+            <div className="p-6 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15">
+              <Headphones className="w-8 h-8 text-[var(--button-start)] mb-4" />
               <h3 className="text-base font-bold text-white mb-2">Đào Tạo Khúc Xạ</h3>
-              <p className="text-xs text-slate-400 leading-relaxed">
+              <p className="text-xs text-slate-200 leading-relaxed">
                 Tập huấn kỹ năng tư vấn đa tròng và kỹ thuật ráp kính gọng bắt ốc không nứt vỡ từ các chuyên gia.
               </p>
             </div>
@@ -211,7 +211,7 @@ export default function PartnerPage() {
       </section>
 
       {/* 7. Giải đáp các câu hỏi hợp tác phổ biến */}
-      <section className="py-20 bg-slate-50 border-b border-slate-200">
+      <section className="py-20 bg-[var(--site-bg-start)] border-b border-[var(--color-border)]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <SectionHeading
             badge="Hỏi Đáp B2B"
@@ -221,12 +221,12 @@ export default function PartnerPage() {
 
           <div className="space-y-4">
             {partnerFaqs.map((faq, idx) => (
-              <div key={idx} className="p-6 rounded-2xl bg-white border border-slate-200 shadow-2xs">
-                <h3 className="font-bold text-slate-900 text-sm mb-2 flex items-start space-x-2">
-                  <span className="text-[#0B7B8A] font-bold">Q:</span>
+              <div key={idx} className="p-6 rounded-2xl card-surface shadow-2xs">
+                <h3 className="font-bold text-heading text-sm mb-2 flex items-start space-x-2">
+                  <span className="text-primary font-bold">Q:</span>
                   <span>{faq.question}</span>
                 </h3>
-                <p className="text-xs text-slate-600 leading-relaxed pl-5">
+                <p className="text-xs text-brand-muted leading-relaxed pl-5">
                   {faq.answer}
                 </p>
               </div>

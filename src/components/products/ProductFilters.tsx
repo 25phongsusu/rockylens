@@ -71,7 +71,7 @@ export default function ProductFilters({
     filters.search.trim() !== '';
 
   return (
-    <div className="bg-white rounded-2xl border border-slate-200 p-5 shadow-xs space-y-5">
+    <div className="card-surface rounded-2xl p-5 shadow-xs space-y-5">
       {/* Search Input & Reset Button */}
       <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
         <div className="relative w-full sm:w-80">
@@ -81,13 +81,13 @@ export default function ProductFilters({
             value={filters.search}
             onChange={handleSearchChange}
             placeholder="Tìm theo tên tròng, mã, tính năng..."
-            className="w-full pl-10 pr-4 py-2 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0B7B8A] focus:border-transparent transition-all"
+            className="w-full pl-10 pr-4 py-2 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--button-middle)] focus:border-transparent transition-all"
           />
         </div>
 
         <div className="flex items-center space-x-3 w-full sm:w-auto justify-between sm:justify-end">
-          <span className="text-xs text-slate-500">
-            Hiển thị <strong className="text-slate-800">{totalResults}</strong> sản phẩm
+          <span className="text-xs text-brand-muted">
+            Hiển thị <strong className="text-heading">{totalResults}</strong> sản phẩm
           </span>
           {isFiltered && (
             <button
@@ -104,7 +104,7 @@ export default function ProductFilters({
       {/* Filter Category Tabs */}
       <div>
         <div className="text-xs font-semibold text-slate-700 mb-2 flex items-center space-x-1.5">
-          <Filter className="w-3.5 h-3.5 text-[#0B7B8A]" />
+          <Filter className="w-3.5 h-3.5 text-primary" />
           <span>Nhóm Danh Mục</span>
         </div>
         <div className="flex flex-wrap gap-2">
@@ -112,7 +112,7 @@ export default function ProductFilters({
             onClick={() => handleCategoryClick('all')}
             className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-colors ${
               filters.category === 'all'
-                ? 'bg-[#0B7B8A] text-white'
+                ? 'button-primary text-white shadow-xs'
                 : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
             }`}
           >
@@ -124,7 +124,7 @@ export default function ProductFilters({
               onClick={() => handleCategoryClick(cat.id)}
               className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-colors ${
                 filters.category === cat.id
-                  ? 'bg-[#0B7B8A] text-white'
+                  ? 'button-primary text-white shadow-xs'
                   : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
               }`}
             >
@@ -144,7 +144,7 @@ export default function ProductFilters({
               onClick={() => handleIndexClick('all')}
               className={`px-2.5 py-1 rounded text-xs transition-colors ${
                 filters.refractiveIndex === 'all'
-                  ? 'bg-slate-800 text-white font-medium'
+                  ? 'bg-[var(--b2b-end)] text-white font-medium'
                   : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
               }`}
             >
@@ -156,7 +156,7 @@ export default function ProductFilters({
                 onClick={() => handleIndexClick(idx)}
                 className={`px-2.5 py-1 rounded text-xs transition-colors ${
                   filters.refractiveIndex === idx
-                    ? 'bg-slate-800 text-white font-medium'
+                    ? 'bg-[var(--b2b-end)] text-white font-medium'
                     : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
                 }`}
               >
@@ -174,7 +174,7 @@ export default function ProductFilters({
               onClick={() => handleTechClick('all')}
               className={`px-2.5 py-1 rounded text-xs transition-colors ${
                 filters.technology === 'all'
-                  ? 'bg-slate-800 text-white font-medium'
+                  ? 'bg-[var(--b2b-end)] text-white font-medium'
                   : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
               }`}
             >

@@ -92,19 +92,19 @@ const discoverySolutions = [
 
 export default function ProductCategories() {
   return (
-    <section id="san-pham" className="relative py-24 px-6 bg-[#F5F5F7] overflow-hidden">
+    <section id="san-pham" className="relative py-24 px-6 section-background overflow-hidden">
       {/* Ambient Blur Caustic Overlays (Smooth Section Blending) */}
-      <div className="absolute inset-x-0 -top-12 h-24 bg-gradient-to-b from-[#F5F5F7] to-transparent blur-xl pointer-events-none opacity-80" />
-      <div className="absolute -top-24 left-1/3 w-[500px] h-48 bg-[#0B7B8A]/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute inset-x-0 -top-12 h-24 bg-gradient-to-b from-[var(--site-bg-start)] to-transparent blur-xl pointer-events-none opacity-80" />
+      <div className="absolute -top-24 left-1/3 w-[500px] h-48 bg-[var(--site-bg-end)]/20 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto space-y-12 relative z-10">
         
         {/* Section Heading focused on consumer wear needs */}
         <div className="max-w-3xl">
-          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-[#0E253A] tracking-tight">
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-heading tracking-tight">
             Mỗi nhu cầu, một lựa chọn phù hợp
           </h2>
-          <p className="text-slate-600 text-base sm:text-lg mt-3">
+          <p className="text-brand-muted text-base sm:text-lg mt-3">
             Từ những khoảnh khắc đời thường giản dị đến những chân trời rộng mở, tầm nhìn luôn là chiếc cầu nối để bạn trọn vẹn cảm nhận vẻ đẹp của thế giới.
           </p>
         </div>
@@ -114,7 +114,7 @@ export default function ProductCategories() {
           {discoverySolutions.map((sol) => (
             <div
               key={sol.id}
-              className="bg-white rounded-3xl p-6 shadow-sm hover:shadow-md transition-all duration-300 relative group overflow-hidden flex flex-col justify-between"
+              className="card-surface rounded-3xl p-6 shadow-sm hover:shadow-md transition-all duration-300 relative group overflow-hidden flex flex-col justify-between"
             >
               <div className="space-y-4">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden bg-slate-100 relative">
@@ -125,55 +125,55 @@ export default function ProductCategories() {
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
-                  <span className="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/90 backdrop-blur-md text-[#0E253A] text-xs font-bold">
+                  <span className="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/90 backdrop-blur-md text-heading text-xs font-bold">
                     {sol.tag}
                   </span>
                 </div>
 
                 <div className="space-y-2">
-                  <h3 className="text-xl font-bold text-[#0E253A] leading-snug">
+                  <h3 className="text-xl font-bold text-heading leading-snug">
                     {sol.heading}
                   </h3>
-                  <p className="text-slate-600 text-sm leading-relaxed">
+                  <p className="text-brand-muted text-sm leading-relaxed">
                     {sol.description}
                   </p>
                 </div>
               </div>
 
               {/* Layer 3 - Technical details on hover with WHITE BACKGROUND */}
-              <div className="absolute inset-0 bg-white/98 backdrop-blur-md p-5 sm:p-6 rounded-3xl text-[#0E253A] flex flex-col justify-between opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 z-10 border border-slate-200/90 shadow-2xl">
+              <div className="absolute inset-0 bg-white/98 backdrop-blur-md p-5 sm:p-6 rounded-3xl text-heading flex flex-col justify-between opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 z-10 border border-[var(--color-border)] shadow-2xl">
                 <div className="space-y-3">
                   <div className="flex items-center justify-between">
-                    <span className="px-3 py-1 rounded-full bg-teal-50 text-[#0B7B8A] text-xs font-bold border border-teal-200/60">
+                    <span className="px-3 py-1 rounded-full bg-[var(--site-bg-middle)]/50 text-primary text-xs font-bold border border-[var(--color-border)]">
                       Thông Tin Sản Phẩm
                     </span>
-                    <span className="text-xs text-slate-500 font-semibold">
+                    <span className="text-xs text-brand-muted font-semibold">
                       {sol.subTag}
                     </span>
                   </div>
-                  <h4 className="text-xl font-black text-[#0E253A]">
+                  <h4 className="text-xl font-black text-heading">
                     {sol.name}
                   </h4>
                   <div className="space-y-1.5 text-xs pt-1">
-                    <div className="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
-                      <span className="text-slate-600 font-medium">Tính năng nổi bật:</span>
-                      <span className="font-bold text-[#0B7B8A] text-right ml-2">{sol.keyFeature}</span>
+                    <div className="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
+                      <span className="text-brand-muted font-medium">Tính năng nổi bật:</span>
+                      <span className="font-bold text-primary text-right ml-2">{sol.keyFeature}</span>
                     </div>
-                    <div className="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
-                      <span className="text-slate-600 font-medium">Công nghệ xử lý:</span>
-                      <span className="font-bold text-[#0E253A] text-right ml-2">{sol.techProcess}</span>
+                    <div className="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
+                      <span className="text-brand-muted font-medium">Công nghệ xử lý:</span>
+                      <span className="font-bold text-heading text-right ml-2">{sol.techProcess}</span>
                     </div>
-                    <div className="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
-                      <span className="text-slate-600 font-medium">Trải nghiệm thị giác:</span>
-                      <span className="font-bold text-[#0E253A] text-right ml-2">{sol.visionExperience}</span>
+                    <div className="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
+                      <span className="text-brand-muted font-medium">Trải nghiệm thị giác:</span>
+                      <span className="font-bold text-heading text-right ml-2">{sol.visionExperience}</span>
                     </div>
-                    <div className="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
-                      <span className="text-slate-600 font-medium">Tùy chọn chiết suất:</span>
-                      <span className="font-bold text-[#0E253A] text-right ml-2">{sol.indexOption}</span>
+                    <div className="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
+                      <span className="text-brand-muted font-medium">Tùy chọn chiết suất:</span>
+                      <span className="font-bold text-heading text-right ml-2">{sol.indexOption}</span>
                     </div>
-                    <div className="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
-                      <span className="text-slate-600 font-medium">Chính sách bảo hành:</span>
-                      <span className="font-bold text-[#0E253A] text-right ml-2">24 tháng chính hãng</span>
+                    <div className="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
+                      <span className="text-brand-muted font-medium">Chính sách bảo hành:</span>
+                      <span className="font-bold text-heading text-right ml-2">24 tháng chính hãng</span>
                     </div>
                   </div>
                 </div>
@@ -181,7 +181,7 @@ export default function ProductCategories() {
                 <div className="pt-2">
                   <Link
                     href="/trong-kinh/"
-                    className="w-full py-2.5 rounded-xl bg-[#0B7B8A] hover:bg-[#086370] text-white text-xs font-bold transition-colors block text-center shadow-xs"
+                    className="button-primary w-full py-2.5 rounded-xl text-xs font-bold transition-colors block text-center shadow-xs"
                   >
                     Xem chi tiết dòng tròng &rarr;
                   </Link>
@@ -189,10 +189,10 @@ export default function ProductCategories() {
               </div>
 
               <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                <span className="text-xs font-semibold text-[#0B7B8A]">
+                <span className="text-xs font-semibold text-primary">
                   {sol.name}
                 </span>
-                <span className="text-xs font-bold text-slate-400 group-hover:text-[#0B7B8A] transition-colors">
+                <span className="text-xs font-bold text-slate-400 group-hover:text-primary transition-colors">
                   Chi tiết &rarr;
                 </span>
               </div>
@@ -204,10 +204,10 @@ export default function ProductCategories() {
         <div className="text-center pt-4">
           <Link
             href="/trong-kinh/"
-            className="inline-flex items-center space-x-2 px-8 py-4 rounded-full bg-[#0B7B8A] hover:bg-[#086370] text-white font-bold text-base transition-colors"
+            className="button-primary inline-flex items-center space-x-2 px-8 py-4 rounded-full text-base transition-colors"
           >
             <span>Khám phá tất cả tròng kính Rocky</span>
-            <ArrowRight className="w-5 h-5" />
+            <ArrowRight className="w-5 h-5 ml-2" />
           </Link>
         </div>
 

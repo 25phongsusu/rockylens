@@ -11,7 +11,7 @@ interface B2BQuoteButtonProps {
 }
 
 export default function B2BQuoteButton({
-  className = 'inline-flex items-center space-x-2 px-6 py-3.5 rounded-xl font-bold text-sm bg-[#0B7B8A] hover:bg-[#086370] text-white shadow-md shadow-[#0B7B8A]/20 transition-all cursor-pointer',
+  className = 'button-primary px-6 py-3.5 rounded-full font-bold text-sm shadow-md transition-all cursor-pointer',
   children = 'Nhận Báo Giá Cho Đại Lý',
   showIcon = true,
 }: B2BQuoteButtonProps) {
@@ -22,7 +22,7 @@ export default function B2BQuoteButton({
       className={className}
     >
       <span>{children}</span>
-      {showIcon && <ArrowUpRight className="w-4 h-4 shrink-0" />}
+      {showIcon && <ArrowUpRight className="w-4 h-4 shrink-0 ml-2" />}
     </button>
   );
 }

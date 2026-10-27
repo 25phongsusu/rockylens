@@ -16,15 +16,15 @@ export default function RelatedArticles({
   if (articles.length === 0) return null;
 
   return (
-    <div className="pt-10 border-t border-slate-200">
+    <div className="pt-10 border-t border-[var(--color-border)]">
       <div className="flex items-center justify-between mb-6">
         <div className="flex items-center space-x-2">
-          <BookOpen className="w-5 h-5 text-[#0B7B8A]" />
-          <h3 className="text-xl font-bold text-slate-900">{title}</h3>
+          <BookOpen className="w-5 h-5 text-primary" />
+          <h3 className="text-xl font-bold text-heading">{title}</h3>
         </div>
         <Link
           href="/kham-pha-trong-kinh/"
-          className="text-xs font-semibold text-[#0B7B8A] hover:underline inline-flex items-center space-x-1"
+          className="text-xs font-semibold text-primary hover:underline inline-flex items-center space-x-1"
         >
           <span>Xem tất cả kiến thức</span>
           <ArrowRight className="w-3.5 h-3.5" />

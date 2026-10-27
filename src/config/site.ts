@@ -68,10 +68,10 @@ export const siteConfig: SiteConfig = {
     },
   ],
   colors: {
-    primaryTeal: '#0B7B8A',
-    deepNavy: '#0E253A',
-    slateDark: '#071521',
-    accentGold: '#D97706',
+    primaryTeal: 'var(--button-middle)',
+    deepNavy: 'var(--b2b-end)',
+    slateDark: 'var(--b2b-end)',
+    accentGold: 'var(--button-start)',
   },
   social: {
     facebook: 'https://facebook.com/rockylensvietnam',

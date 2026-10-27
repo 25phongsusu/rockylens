@@ -32,7 +32,7 @@ export default function EducationPreview({ articles }: EducationPreviewProps) {
         <div className="mt-12 text-center">
           <Link
             href="/kham-pha-trong-kinh/"
-            className="inline-flex items-center space-x-2 px-6 py-3 rounded-xl text-sm font-semibold bg-[#0B7B8A] text-white hover:bg-[#096370] shadow-sm hover:shadow transition-all"
+            className="button-primary inline-flex items-center space-x-2"
           >
             <BookOpen className="w-4 h-4" />
             <span>Khám Phá Tất Cả Kiến Thức Tròng Kính</span>

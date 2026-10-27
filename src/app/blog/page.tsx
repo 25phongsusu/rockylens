@@ -19,21 +19,21 @@ export default function BlogIndexPage() {
   const articles = getAllArticles();
 
   return (
-    <div className="bg-[#F5F5F7] min-h-screen">
+    <div className="site-background min-h-screen">
       <Breadcrumbs items={[{ label: 'Blog & Insight Thị Giác', href: '/blog/' }]} />
 
       {/* Header Banner */}
-      <section className="bg-gradient-to-r from-[#0E253A] via-[#12314D] to-[#0A1B29] text-white py-16 px-6 relative overflow-hidden">
-        <div className="absolute right-0 top-0 w-96 h-96 bg-[#0B7B8A]/20 rounded-full blur-3xl pointer-events-none" />
+      <section className="b2b-gradient text-white py-16 px-6 relative overflow-hidden">
+        <div className="absolute right-0 top-0 w-96 h-96 bg-[var(--button-start)]/20 rounded-full blur-3xl pointer-events-none" />
 
         <div className="max-w-7xl mx-auto relative z-10 space-y-4">
-          <span className="inline-block text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full bg-[#0B7B8A]/30 text-teal-300 border border-[#0B7B8A]/50">
+          <span className="inline-block text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full bg-white/10 text-white border border-white/25">
             Góc Nhìn &amp; Insight Thị Giác
           </span>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-white">
             Kiến Thức Tròng Kính &amp; Câu Chuyện Thị Giác
           </h1>
-          <p className="text-slate-300 text-base sm:text-lg max-w-3xl leading-relaxed">
+          <p className="text-white/85 text-base sm:text-lg max-w-3xl leading-relaxed">
             Kho bài viết chuyên sâu phân tích nhu cầu thực tế của người đeo kính: từ dân văn phòng tiếp xúc màn hình máy tính, tài xế lái xe ban đêm đến trẻ em cần kiểm soát độ cận tiến triển.
           </p>
         </div>
@@ -43,16 +43,16 @@ export default function BlogIndexPage() {
       <section className="max-w-7xl mx-auto px-6 py-16 space-y-12">
         
         {/* Customer Insight Highlight Header */}
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-slate-200/80 pb-6">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-[var(--color-border)]/40 pb-6">
           <div>
-            <h2 className="text-2xl sm:text-3xl font-black text-[#0E253A] tracking-tight">
+            <h2 className="text-2xl sm:text-3xl font-black text-heading tracking-tight">
               Tất Cả Bài Viết Chuyên Đề
             </h2>
-            <p className="text-slate-600 text-sm mt-1">
+            <p className="text-[var(--color-muted)] text-sm mt-1">
               Khám phá giải pháp quang học tối ưu phù hợp với thói quen sinh hoạt và thị lực của bạn
             </p>
           </div>
-          <div className="text-sm font-semibold text-teal-700 bg-teal-50 px-4 py-2 rounded-full border border-teal-100 self-start sm:self-auto">
+          <div className="text-sm font-semibold text-heading bg-[var(--site-bg-middle)]/60 px-4 py-2 rounded-full border border-[var(--color-border)]/50 self-start sm:self-auto">
             {articles.length} bài viết xuất bản
           </div>
         </div>
@@ -62,7 +62,7 @@ export default function BlogIndexPage() {
           {articles.map((article) => (
             <article
               key={article.id}
-              className="group bg-white rounded-3xl overflow-hidden shadow-xs hover:shadow-xl hover:shadow-slate-900/5 transition-all duration-300 flex flex-col justify-between border border-slate-100"
+              className="group card-surface rounded-3xl overflow-hidden shadow-xs hover:shadow-xl hover:shadow-[var(--button-end)]/10 transition-all duration-300 flex flex-col justify-between border border-[var(--color-border)]/50"
             >
               <div>
                 {/* Cover Image */}
@@ -75,45 +75,45 @@ export default function BlogIndexPage() {
                     alt={article.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <span className="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-bold bg-[#0B7B8A] text-white shadow-xs">
+                  <span className="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-bold button-primary shadow-xs">
                     {article.categoryName}
                   </span>
                 </Link>
 
                 {/* Content */}
                 <div className="p-6 sm:p-7 space-y-3">
-                  <div className="flex items-center gap-3 text-xs font-semibold text-slate-500">
+                  <div className="flex items-center gap-3 text-xs font-semibold text-[var(--color-muted)]">
                     <span className="inline-flex items-center gap-1">
-                      <Calendar className="w-3.5 h-3.5" />
+                      <Calendar className="w-3.5 h-3.5 text-[var(--color-primary)]" />
                       <span>{formatDate(article.publishedAt)}</span>
                     </span>
                     <span>&bull;</span>
                     <span className="inline-flex items-center gap-1">
-                      <Clock className="w-3.5 h-3.5" />
+                      <Clock className="w-3.5 h-3.5 text-[var(--color-primary)]" />
                       <span>{article.readTime}</span>
                     </span>
                   </div>
 
-                  <h3 className="text-xl font-bold text-[#0E253A] group-hover:text-[#0B7B8A] transition-colors leading-snug line-clamp-2">
+                  <h3 className="text-xl font-bold text-heading group-hover:text-[var(--color-primary)] transition-colors leading-snug line-clamp-2">
                     <Link href={`/blog/${article.slug}/`}>
                       {article.title}
                     </Link>
                   </h3>
 
-                  <p className="text-slate-600 text-sm leading-relaxed line-clamp-3">
+                  <p className="text-[var(--color-muted)] text-sm leading-relaxed line-clamp-3">
                     {article.description}
                   </p>
                 </div>
               </div>
 
               {/* Card Footer CTA */}
-              <div className="p-6 sm:p-7 pt-0 border-t border-slate-50 mt-4 flex items-center justify-between">
-                <span className="text-xs font-medium text-slate-400">
+              <div className="p-6 sm:p-7 pt-0 border-t border-[var(--color-border)]/30 mt-4 flex items-center justify-between">
+                <span className="text-xs font-medium text-[var(--color-muted)]">
                   {article.readTime}
                 </span>
                 <Link
                   href={`/blog/${article.slug}/`}
-                  className="inline-flex items-center gap-1.5 text-sm font-bold text-[#0B7B8A] group-hover:text-[#086370] transition-colors"
+                  className="inline-flex items-center gap-1.5 text-sm font-bold text-[var(--color-primary)] group-hover:text-[var(--color-primary-hover)] transition-colors"
                 >
                   <span>Đọc bài</span>
                   <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
