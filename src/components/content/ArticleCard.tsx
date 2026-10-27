@@ -24,7 +24,7 @@ export default function ArticleCard({ article }: ArticleCardProps) {
           className="object-cover transition-transform duration-500 group-hover:scale-105"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
-        <span className="absolute top-3 left-3 px-2.5 py-1 rounded-md text-[11px] font-bold bg-[#050E10]/80 text-white backdrop-blur-xs">
+        <span className="absolute top-3 left-3 px-2.5 py-1 rounded-md text-[11px] font-bold bg-[#0B7B8A] text-white shadow-xs">
           {article.categoryName}
         </span>
       </Link>

@@ -117,7 +117,7 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
                 </span>
               )}
               {product.refractiveIndex && (
-                <span className="absolute top-4 right-4 z-10 px-2.5 py-1 rounded-md text-xs font-bold bg-[#050E10] text-white">
+                <span className="absolute top-4 right-4 z-10 px-2.5 py-1 rounded-md text-xs font-bold bg-[#0E253A] text-white shadow-xs">
                   Index {product.refractiveIndex}
                 </span>
               )}
@@ -153,12 +153,12 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
               </div>
             )}
 
-            {/* Quick B2B Direct Action Box */}
-            <div className="p-5 rounded-2xl bg-[#050E10] text-white space-y-3">
-              <div className="text-xs font-bold text-teal-400 uppercase tracking-wider">
-                Kết Nối Đại Lý Kính Mắt & Lab RX
+            {/* Quick B2B Direct Action Box - Light & Fresh Modern Theme */}
+            <div className="p-5 rounded-2xl bg-gradient-to-br from-teal-50/90 via-white to-slate-50 border border-teal-100/90 shadow-sm space-y-3">
+              <div className="text-xs font-bold text-[#0B7B8A] uppercase tracking-wider">
+                Kết Nối Đại Lý Kính Mắt &amp; Lab RX
               </div>
-              <p className="text-xs text-slate-300 leading-relaxed">
+              <p className="text-xs text-slate-600 leading-relaxed font-medium">
                 Đăng ký nhận bảng giá sỉ và danh mục phôi tròng kính Rocky Lens chính hãng.
               </p>
               <div className="flex gap-3 pt-1">
@@ -166,14 +166,15 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
                   href={siteConfig.zalo.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 inline-flex items-center justify-center space-x-1.5 py-2.5 px-4 rounded-xl text-xs font-bold bg-[#0B7B8A] hover:bg-[#096370] text-white transition-colors"
+                  className="flex-1 inline-flex items-center justify-center space-x-1.5 py-2.5 px-4 rounded-xl text-xs font-bold bg-[#0B7B8A] hover:bg-[#086370] text-white transition-all shadow-xs hover:shadow"
                 >
                   <span>Nhắn Zalo Đại Lý</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </a>
                 <a
                   href={`tel:${siteConfig.phones.hotline}`}
-                  className="inline-flex items-center justify-center py-2.5 px-3 rounded-xl text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-white transition-colors"
+                  className="inline-flex items-center justify-center py-2.5 px-3 rounded-xl text-xs font-semibold bg-white border border-slate-200 hover:border-teal-300 text-[#0B7B8A] hover:bg-teal-50 transition-colors shadow-xs"
+                  title="Gọi Hotline B2B"
                 >
                   <Phone className="w-3.5 h-3.5" />
                 </a>

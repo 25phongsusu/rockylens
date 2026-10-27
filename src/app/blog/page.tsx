@@ -75,7 +75,7 @@ export default function BlogIndexPage() {
                     alt={article.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <span className="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-bold bg-[#0E253A]/90 text-teal-300 backdrop-blur-md">
+                  <span className="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-bold bg-[#0B7B8A] text-white shadow-xs">
                     {article.categoryName}
                   </span>
                 </Link>

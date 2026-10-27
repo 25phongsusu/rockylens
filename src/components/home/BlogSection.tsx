@@ -81,7 +81,7 @@ export default function BlogSection() {
                       alt={title}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
-                    <span className="absolute top-4 left-4 px-3.5 py-1 rounded-full bg-[#0E253A] text-teal-300 text-xs font-bold shadow-sm">
+                    <span className="absolute top-4 left-4 px-3.5 py-1 rounded-full bg-[#0B7B8A] text-white text-xs font-bold shadow-sm">
                       {item.pill}
                     </span>
                   </div>
@@ -131,7 +131,7 @@ export default function BlogSection() {
         <div className="flex flex-col sm:flex-row items-center justify-center pt-4">
           <Link
             href="/blog/"
-            className="group inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#0E253A] hover:bg-[#0B7B8A] text-white font-bold text-base sm:text-lg transition-colors duration-200 shadow-sm"
+            className="group inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#0B7B8A] hover:bg-[#086370] text-white font-bold text-base sm:text-lg transition-colors duration-200 shadow-sm"
           >
             <span>Khám Phá Tất Cả Bài Viết &amp; Insight Thị Giác</span>
             <ArrowRight className="w-5 h-5 transition-transform duration-200 group-hover:translate-x-1" />

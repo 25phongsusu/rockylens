@@ -1379,7 +1379,7 @@ const html = `<!DOCTYPE html>
             <div>
               <div class="h-56 sm:h-64 bg-slate-100 overflow-hidden relative">
                 <img src="assets/images/products/category-solution-2.png" alt="Giải pháp chống ánh sáng xanh UV420 không ám vàng" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                <span class="absolute top-4 left-4 px-3.5 py-1 rounded-full bg-[#0E253A] text-teal-300 text-sm font-bold">
+                <span class="absolute top-4 left-4 px-3.5 py-1 rounded-full bg-[#0B7B8A] text-white text-sm font-bold shadow-sm">
                   Bảo Vệ Thị Lực Văn Phòng
                 </span>
               </div>
@@ -1412,7 +1412,7 @@ const html = `<!DOCTYPE html>
             <div>
               <div class="h-56 sm:h-64 bg-slate-100 overflow-hidden relative">
                 <img src="assets/images/products/category-solution-1.png" alt="Kính lái xe ban đêm DriveShield chống lóa đèn pha" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                <span class="absolute top-4 left-4 px-3.5 py-1 rounded-full bg-[#0E253A] text-teal-300 text-sm font-bold">
+                <span class="absolute top-4 left-4 px-3.5 py-1 rounded-full bg-[#0B7B8A] text-white text-sm font-bold shadow-sm">
                   Tầm Nhìn Lái Xe An Toàn
                 </span>
               </div>
@@ -1445,7 +1445,7 @@ const html = `<!DOCTYPE html>
             <div>
               <div class="h-56 sm:h-64 bg-slate-100 overflow-hidden relative">
                 <img src="assets/images/products/category-solution-7.png" alt="Kiểm soát cận thị tiến triển Defocus MyoControl" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                <span class="absolute top-4 left-4 px-3.5 py-1 rounded-full bg-[#0E253A] text-teal-300 text-sm font-bold">
+                <span class="absolute top-4 left-4 px-3.5 py-1 rounded-full bg-[#0B7B8A] text-white text-sm font-bold shadow-sm">
                   Chăm Sóc Mắt Học Đường
                 </span>
               </div>
@@ -1477,7 +1477,7 @@ const html = `<!DOCTYPE html>
 
         <!-- Big Action Button to Full Blog Page -->
         <div class="flex flex-col sm:flex-row items-center justify-center pt-4">
-          <a href="blog/" class="group inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#0E253A] hover:bg-[#0B7B8A] text-white font-bold text-base sm:text-lg transition-colors duration-200">
+          <a href="blog/" class="group inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#0B7B8A] hover:bg-[#086370] text-white font-bold text-base sm:text-lg transition-colors duration-200 shadow-sm">
             <span>Khám Phá Tất Cả Bài Viết &amp; Insight Thị Giác</span>
             <svg class="w-5 h-5 transition-transform duration-200 group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
