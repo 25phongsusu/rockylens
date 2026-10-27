@@ -25,13 +25,13 @@ export default function HeroSection() {
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.14] text-heading">
-              Thấy Rõ Hơn. <br className="hidden sm:inline" /><span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--button-start)] via-[var(--button-middle)] to-[var(--button-end)]">Sống Trọn Vẹn Từng Khoảnh Khắc.</span>
+            <h1 className="text-3xl sm:text-5xl lg:text-[54px] font-black tracking-tight leading-[1.15] text-heading">
+              Nhà phân phối tròng kính <br className="hidden sm:inline" /><span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--button-start)] via-[var(--button-middle)] to-[var(--button-end)]">nhập khẩu từ Canada</span>
             </h1>
 
             {/* Subheadline */}
             <p className="text-brand-muted text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              Bảo vệ đôi mắt bạn trước mọi rào cản—từ ánh sáng xanh màn hình, độ chói đèn xe ban đêm, đến tia UV gay gắt. Khám phá giải pháp tròng kính chuẩn Canada thiết kế riêng cho lối sống của bạn.
+              Mang đến các giải pháp tròng kính đa dạng, đáp ứng nhu cầu của hệ thống cửa hàng mắt kính và người sử dụng. Khám phá công nghệ, đặc điểm sản phẩm và những lựa chọn phù hợp với từng nhu cầu thị giác.
             </p>
 
             {/* 3 Apple Liquid Spec Cards */}
