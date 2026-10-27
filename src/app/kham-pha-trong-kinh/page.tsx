@@ -10,6 +10,7 @@ import {
   Compass,
 } from 'lucide-react';
 import Breadcrumbs from '@/components/shared/Breadcrumbs';
+import ContactCTA from '@/components/shared/ContactCTA';
 import { constructMetadata } from '@/lib/seo/metadata';
 import { ARTICLE_CATEGORIES } from '@/features/articles/article-types';
 
@@ -391,6 +392,9 @@ export default function KnowledgePage() {
             <ArrowRight className="w-4 h-4" />
           </Link>
         </section>
+
+        {/* 6. B2B DEALER BANNER */}
+        <ContactCTA />
 
       </div>
     </div>

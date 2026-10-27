@@ -72,10 +72,11 @@ export default function WhyRockySection() {
   }, [selectedCertIndex]);
 
   return (
-    <section id="vi-sao-rocky" className="relative py-24 px-6 bg-[#F5F5F7] overflow-hidden">
+    <section id="vi-sao-rocky" className="relative py-24 px-6 bg-gradient-to-b from-[#F5F5F7] via-[#F5F5F7] via-80% to-[#0E253A] overflow-hidden">
       {/* Ambient Blur Caustic Overlays (Smooth Section Blending) */}
       <div className="absolute inset-x-0 -top-12 h-24 bg-gradient-to-b from-[#F5F5F7] to-transparent blur-xl pointer-events-none opacity-80" />
       <div className="absolute -top-24 right-1/3 w-[500px] h-48 bg-teal-500/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute inset-x-0 -bottom-16 h-32 bg-gradient-to-b from-transparent via-[#0E253A]/60 to-[#0E253A] blur-xl pointer-events-none opacity-90" />
 
       <div className="max-w-7xl mx-auto space-y-16 relative z-10">
         

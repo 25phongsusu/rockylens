@@ -171,6 +171,9 @@ export default async function ArticleDetailPage({ params }: ArticlePageProps) {
           </div>
         )}
       </article>
+
+      {/* B2B Dealer Banner */}
+      <ContactCTA />
     </div>
   );
 }

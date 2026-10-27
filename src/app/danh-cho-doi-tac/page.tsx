@@ -236,10 +236,7 @@ export default function PartnerPage() {
       </section>
 
       {/* 8. CTA liên hệ trực tiếp */}
-      <ContactCTA
-        title="Đăng Ký Nhận Bảng Giá Sỉ & Mẫu Tròng Kính Thử Nghiệm"
-        description="Kết nối ngay với phòng phát triển kinh doanh B2B của Rocky Lens qua Hotline hoặc Zalo để được tư vấn chính sách đại lý phù hợp nhất."
-      />
+      <ContactCTA />
     </div>
   );
 }

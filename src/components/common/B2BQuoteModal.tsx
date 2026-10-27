@@ -143,16 +143,11 @@ export default function B2BQuoteModal({ isOpen, onClose }: B2BQuoteModalProps) {
             </form>
           )}
 
-          {/* Consumer Redirect Link matching screenshot */}
+          {/* Dealer Note */}
           <div className="text-center pt-2 border-t border-slate-100">
-            <a
-              href="#tim-dai-ly"
-              onClick={onClose}
-              className="text-sm text-slate-600 hover:text-[#0B7B8A] transition-colors"
-            >
-              Bạn là khách hàng cá nhân muốn cắt kính lẻ?{' '}
-              <span className="font-bold underline">Xem điểm bán gần nhất &rarr;</span>
-            </a>
+            <p className="text-xs text-slate-500">
+              * Rocky Lens phân phối độc quyền qua hệ thống đại lý &amp; phòng khám khúc xạ toàn quốc.
+            </p>
           </div>
         </div>
       </div>

@@ -4,7 +4,6 @@ import BrandPhilosophy from '@/components/home/BrandPhilosophy';
 import ProductCategories from '@/components/home/ProductCategories';
 import TechnologyHighlights from '@/components/home/TechnologyHighlights';
 import WhyRockySection from '@/components/home/WhyRockySection';
-import FindStoreSection from '@/components/home/FindStoreSection';
 import PartnerSection from '@/components/home/PartnerSection';
 import BlogSection from '@/components/home/BlogSection';
 
@@ -26,13 +25,10 @@ export default function HomePage() {
       {/* SECTION 5 — WHY ROCKY */}
       <WhyRockySection />
 
-      {/* SECTION 6 — FIND A STORE */}
-      <FindStoreSection />
-
-      {/* SECTION 7 — PARTNER WITH ROCKY */}
+      {/* SECTION 6 — PARTNER WITH ROCKY */}
       <PartnerSection />
 
-      {/* SECTION 8 — BLOG & CUSTOMER INSIGHTS */}
+      {/* SECTION 7 — BLOG & CUSTOMER INSIGHTS */}
       <BlogSection />
     </div>
   );

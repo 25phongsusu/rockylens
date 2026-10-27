@@ -325,10 +325,7 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
       </div>
 
       {/* 12. CTA liên hệ đại lý */}
-      <ContactCTA
-        title={`Tiếp Nhận Đại Lý & Báo Giá Sỉ Cho Dòng ${product.name}`}
-        description="Đội ngũ kỹ thuật viên Rocky Lens luôn sẵn sàng hỗ trợ các cửa hàng mắt kính và phòng khám khúc xạ tư vấn thông số kỹ thuật, gia công Lab RX và nhận chính sách chiết khấu tốt nhất."
-      />
+      <ContactCTA />
     </div>
   );
 }

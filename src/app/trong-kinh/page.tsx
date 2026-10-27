@@ -141,10 +141,7 @@ export default function ProductsPage() {
       </div>
 
       {/* Section 6: Contact CTA */}
-      <ContactCTA
-        title="Bạn Cần Báo Giá Đại Lý Hoặc Tư Vấn Kỹ Thuật Tròng Kính?"
-        description="Đội ngũ chuyên viên Rocky Lens hỗ trợ gửi bảng thông số chi tiết, giải pháp lắp ráp gọng khoan và báo giá đại lý trong vòng 15 phút."
-      />
+      <ContactCTA />
     </div>
   );
 }
