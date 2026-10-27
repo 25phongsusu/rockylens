@@ -1,34 +1,35 @@
 import React from 'react';
 import HeroSection from '@/components/home/HeroSection';
+import BrandPhilosophy from '@/components/home/BrandPhilosophy';
 import ProductCategories from '@/components/home/ProductCategories';
 import TechnologyHighlights from '@/components/home/TechnologyHighlights';
-import EducationPreview from '@/components/home/EducationPreview';
+import WhyRockySection from '@/components/home/WhyRockySection';
+import FindStoreSection from '@/components/home/FindStoreSection';
 import PartnerSection from '@/components/home/PartnerSection';
-import ContactSection from '@/components/home/ContactSection';
-import { getAllArticles } from '@/features/articles/article-service';
 
 export default function HomePage() {
-  const articles = getAllArticles();
-
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Section 01: Hero Banner (Integrated Trust & Metrics) */}
+      {/* SECTION 1 — BRAND HERO */}
       <HeroSection />
 
-      {/* Section 02: Danh Mục Tròng Kính (3 cards per row with hover specs) */}
+      {/* SECTION 2 — BRAND PHILOSOPHY */}
+      <BrandPhilosophy />
+
+      {/* SECTION 3 — EXPLORE ROCKY LENSES */}
       <ProductCategories />
 
-      {/* Section 03: Công Nghệ Nổi Bật */}
+      {/* SECTION 4 — TECHNOLOGY & QUALITY */}
       <TechnologyHighlights />
 
-      {/* Section 04: Khám Phá & Hiểu Về Tròng Kính (B2C Focus) */}
-      <EducationPreview articles={articles} />
+      {/* SECTION 5 — WHY ROCKY */}
+      <WhyRockySection />
 
-      {/* Section 05: Giải Pháp Dành Cho Đối Tác (B2B Focus) */}
+      {/* SECTION 6 — FIND A STORE */}
+      <FindStoreSection />
+
+      {/* SECTION 7 — PARTNER WITH ROCKY */}
       <PartnerSection />
-
-      {/* Section 06: Liên Hệ Và Kết Nối */}
-      <ContactSection />
     </div>
   );
 }
