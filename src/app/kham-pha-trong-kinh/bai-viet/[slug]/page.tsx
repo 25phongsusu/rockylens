@@ -176,11 +176,6 @@ export default async function ArticleDetailPage({ params }: ArticlePageProps) {
           </div>
         )}
       </article>
-
-      <ContactCTA
-        title="Bạn Cần Giải Đáp Thêm Về Chủ Đề Này?"
-        description="Gửi câu hỏi hoặc liên hệ trực tiếp đến các kỹ thuật viên khúc xạ của Rocky Lens để được hỗ trợ chuyên sâu."
-      />
     </div>
   );
 }

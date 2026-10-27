@@ -154,35 +154,6 @@ export default async function BlogArticleDetailPage({ params }: BlogArticlePageP
             </div>
           )}
 
-          {/* Consultation & Wholesale Inquire Box - Light & Fresh Modern Theme */}
-          <div className="mt-12 p-8 rounded-3xl bg-gradient-to-br from-teal-50/80 via-white to-slate-50 border border-teal-100/90 text-slate-800 space-y-4 shadow-sm">
-            <span className="text-[#0B7B8A] text-xs font-bold uppercase tracking-wider inline-block">
-              Tư Vấn Giải Pháp Quang Học Rocky
-            </span>
-            <h3 className="text-2xl font-bold text-[#0E253A]">
-              Bạn Cần Tư Vấn Tròng Kính Phù Hợp Với Đơn Kính Của Mình?
-            </h3>
-            <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-              Các chuyên viên khúc xạ Rocky Lens luôn sẵn sàng giải đáp mọi thắc mắc về lựa chọn độ mỏng chiết suất, tính năng chống ánh sáng xanh hay giải pháp cho người lái xe.
-            </p>
-            <div className="flex flex-wrap items-center gap-4 pt-2">
-              <a
-                href="https://zalo.me/0933102653"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-6 py-3 rounded-full bg-[#0B7B8A] hover:bg-[#086370] text-white font-bold text-sm transition-colors shadow-xs"
-              >
-                Nhận Báo Giá &amp; Tư Vấn Qua Zalo
-              </a>
-              <a
-                href="tel:0933102653"
-                className="px-6 py-3 rounded-full bg-white border border-slate-200 hover:border-teal-300 text-[#0E253A] font-bold text-sm transition-colors shadow-xs"
-              >
-                Hotline: 0933 102 653
-              </a>
-            </div>
-          </div>
-
         </div>
       </article>
 

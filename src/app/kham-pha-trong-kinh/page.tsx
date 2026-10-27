@@ -1,26 +1,15 @@
 import React from 'react';
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Image from 'next/image';
 import {
   BookOpen,
   Sparkles,
   HelpCircle,
-  Layers,
-  CheckCircle2,
   ArrowRight,
   Eye,
-  ShieldCheck,
-  Award,
-  Zap,
-  Glasses,
-  Sun,
-  Shield,
   Compass,
 } from 'lucide-react';
-import { getAllArticles, getArticlesByCategory } from '@/features/articles/article-service';
 import Breadcrumbs from '@/components/shared/Breadcrumbs';
-import ArticleGrid from '@/components/content/ArticleGrid';
 import { constructMetadata } from '@/lib/seo/metadata';
 import { ARTICLE_CATEGORIES } from '@/features/articles/article-types';
 
@@ -50,16 +39,11 @@ const faqs = [
 ];
 
 export default function KnowledgePage() {
-  const allArticles = getAllArticles();
-  const kienThucArticles = getArticlesByCategory('kien-thuc');
-  const congNgheArticles = getArticlesByCategory('cong-nghe');
-  const huongDanArticles = getArticlesByCategory('huong-dan');
-
   return (
     <div className="bg-slate-50/50 min-h-screen">
       <Breadcrumbs items={[{ label: 'Công nghệ & Kiến thức', href: '/kham-pha-trong-kinh/' }]} />
 
-      {/* 1. Hero giới thiệu (Light/Dark Gradient Apple Pro Style) */}
+      {/* 1. Hero giới thiệu */}
       <section className="bg-gradient-to-r from-[#050E10] via-[#081B22] to-[#0A2631] text-white py-14 sm:py-16 px-4 sm:px-6 relative overflow-hidden">
         <div className="absolute right-0 top-0 w-96 h-96 bg-[#0B7B8A]/20 rounded-full blur-3xl pointer-events-none" />
 
@@ -78,7 +62,7 @@ export default function KnowledgePage() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 space-y-20">
         
-        {/* 2. Điều hướng 3 nhóm chuyên mục lớn (Trực quan & Nút nhảy tới nội dung) */}
+        {/* 2. Điều hướng 3 nhóm chuyên mục lớn */}
         <div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {ARTICLE_CATEGORIES.map((cat) => {
@@ -186,14 +170,6 @@ export default function KnowledgePage() {
               </div>
             </div>
           </div>
-
-          {/* Danh sách bài viết Kiến thức quang học */}
-          <div>
-            <h4 className="text-base font-bold text-slate-800 mb-4">
-              Bài viết chuyên sâu về Kiến thức quang học:
-            </h4>
-            <ArticleGrid articles={kienThucArticles} />
-          </div>
         </section>
 
         {/* ========================================================= */}
@@ -283,14 +259,6 @@ export default function KnowledgePage() {
               </div>
             </div>
           </div>
-
-          {/* Danh sách bài viết Công nghệ tròng kính */}
-          <div>
-            <h4 className="text-base font-bold text-slate-800 mb-4">
-              Bài viết chuyên sâu về Công nghệ tròng kính:
-            </h4>
-            <ArticleGrid articles={congNgheArticles} />
-          </div>
         </section>
 
         {/* ========================================================= */}
@@ -363,14 +331,6 @@ export default function KnowledgePage() {
               </div>
             </div>
           </div>
-
-          {/* Danh sách bài viết Hướng dẫn & Tư vấn */}
-          <div>
-            <h4 className="text-base font-bold text-slate-800 mb-4">
-              Bài viết cẩm nang Hướng dẫn &amp; Tư vấn:
-            </h4>
-            <ArticleGrid articles={huongDanArticles} />
-          </div>
         </section>
 
         {/* ========================================================= */}
@@ -409,22 +369,27 @@ export default function KnowledgePage() {
         </section>
 
         {/* ========================================================= */}
-        {/* 5. TẤT CẢ BÀI VIẾT HƯỚNG DẪN & NGHIÊN CỨU (DỜI XUỐNG DƯỚI FAQ) */}
+        {/* 5. BANNER DẪN SANG CHUYÊN MỤC BLOG (ĐỒNG NHẤT TOÀN SITE) */}
         {/* ========================================================= */}
-        <section className="space-y-6 pt-4">
-          <div className="border-b border-slate-200/80 pb-4">
-            <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#0B7B8A] mb-1">
-              <Compass className="w-4 h-4" />
-              <span>Thư Viện Bài Viết</span>
-            </div>
+        <section className="bg-gradient-to-r from-teal-50 via-white to-slate-50 rounded-3xl p-8 sm:p-10 border border-teal-100 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xs">
+          <div className="space-y-2 text-center sm:text-left">
+            <span className="text-[#0B7B8A] text-xs font-bold uppercase tracking-wider">
+              Góc Nhìn &amp; Insight Thị Giác
+            </span>
             <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
-              Tất Cả Bài Viết Hướng Dẫn &amp; Nghiên Cứu
+              Khám Phá Toàn Bộ Bài Viết Tại Chuyên Mục Blog
             </h2>
-            <p className="text-slate-600 text-xs sm:text-sm mt-1">
-              Tổng hợp toàn bộ các bài phân tích chuyên sâu về chiết suất, công nghệ phôi và phương pháp chăm sóc mắt từ đội ngũ kỹ thuật Rocky Lens.
+            <p className="text-slate-600 text-sm max-w-2xl leading-relaxed">
+              Tổng hợp đầy đủ các bài phân tích chuyên sâu về chiết suất, công nghệ phôi và câu chuyện thực tế từ người đeo kính Rocky Lens.
             </p>
           </div>
-          <ArticleGrid articles={allArticles} />
+          <Link
+            href="/blog/"
+            className="shrink-0 px-8 py-3.5 rounded-full bg-[#0B7B8A] hover:bg-[#086370] text-white font-bold text-sm transition-all shadow-sm hover:shadow-md flex items-center gap-2"
+          >
+            <span>Đến Trang Blog</span>
+            <ArrowRight className="w-4 h-4" />
+          </Link>
         </section>
 
       </div>
