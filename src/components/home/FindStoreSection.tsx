@@ -5,8 +5,12 @@ import { openB2BQuoteModal } from '@/components/common/B2BQuoteModal';
 
 export default function FindStoreSection() {
   return (
-    <section id="tim-dai-ly" className="py-20 px-6 bg-white">
-      <div className="max-w-7xl mx-auto space-y-12">
+    <section id="tim-dai-ly" className="relative py-24 px-6 bg-gradient-to-b from-[#F5F5F7] via-white via-50% to-[#0E253A] overflow-hidden">
+      {/* Ambient Blur Caustic Overlays (Smooth Section Blending) */}
+      <div className="absolute inset-x-0 -top-12 h-24 bg-gradient-to-b from-[#F5F5F7] to-transparent blur-xl pointer-events-none opacity-80" />
+      <div className="absolute -top-24 left-1/4 w-96 h-48 bg-[#0B7B8A]/5 rounded-full blur-3xl pointer-events-none" />
+
+      <div className="max-w-7xl mx-auto space-y-12 relative z-10">
         
         <div className="max-w-3xl">
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-[#0E253A] tracking-tight">

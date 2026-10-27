@@ -8,8 +8,12 @@ export default function BlogSection() {
   const articles = getAllArticles().slice(0, 3);
 
   return (
-    <section id="blog-insights" className="py-20 px-6 bg-[#F5F5F7]">
-      <div className="max-w-7xl mx-auto space-y-12">
+    <section id="blog-insights" className="relative py-24 px-6 bg-gradient-to-b from-[#F5F5F7] via-[#F8F9FA] to-[#071521] overflow-hidden">
+      {/* Ambient Blur Caustic Overlays (Smooth Section Blending) */}
+      <div className="absolute inset-x-0 -top-12 h-24 bg-gradient-to-b from-[#0E253A]/10 to-transparent blur-xl pointer-events-none" />
+      <div className="absolute -top-24 right-1/4 w-96 h-48 bg-teal-500/5 rounded-full blur-3xl pointer-events-none" />
+
+      <div className="max-w-7xl mx-auto space-y-12 relative z-10">
         
         {/* Section Header */}
         <div className="max-w-3xl space-y-3">

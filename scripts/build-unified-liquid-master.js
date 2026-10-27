@@ -447,8 +447,14 @@ const html = `<!DOCTYPE html>
     <!-- Mục tiêu: Giúp người dùng hiểu Rocky đại diện cho điều gì -->
     <!-- Niềm tin, bản sắc & trải nghiệm thị giác                  -->
     <!-- ========================================================= -->
-    <section id="triet-ly" class="py-20 px-6 bg-white">
-      <div class="max-w-7xl mx-auto">
+    <section id="triet-ly" class="relative py-24 px-6 bg-gradient-to-b from-[#F5F5F7] via-white via-50% to-[#F5F5F7] overflow-hidden">
+      <!-- Ambient Blur Caustic Overlays (Smooth Section Blending) -->
+      <div class="absolute inset-x-0 -top-12 h-24 bg-gradient-to-b from-[#F5F5F7] to-transparent blur-xl pointer-events-none opacity-80"></div>
+      <div class="absolute -top-24 right-1/4 w-96 h-48 bg-teal-500/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute inset-x-0 -bottom-12 h-24 bg-gradient-to-t from-[#F5F5F7] to-transparent blur-xl pointer-events-none opacity-80"></div>
+      <div class="absolute -bottom-24 left-1/4 w-96 h-48 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto relative z-10">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
           <!-- Left Column: Visual Storytelling Art -->
@@ -518,8 +524,12 @@ const html = `<!DOCTYPE html>
     <!-- Mục tiêu: Giúp người tiêu dùng khám phá theo nhu cầu      -->
     <!-- Bố cục: 6 Card lớn (3 ô / hàng), hover specs, CTA rõ ràng -->
     <!-- ========================================================= -->
-    <section id="trong-kinh" class="py-20 px-6 bg-[#F5F5F7]">
-      <div class="max-w-7xl mx-auto space-y-16">
+    <section id="trong-kinh" class="relative py-24 px-6 bg-[#F5F5F7] overflow-hidden">
+      <!-- Ambient Blur Caustic Overlays (Smooth Section Blending) -->
+      <div class="absolute inset-x-0 -top-12 h-24 bg-gradient-to-b from-[#F5F5F7] to-transparent blur-xl pointer-events-none opacity-80"></div>
+      <div class="absolute -top-24 left-1/3 w-[500px] h-48 bg-[#0B7B8A]/5 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto space-y-16 relative z-10">
         
         <div class="max-w-3xl">
           <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0E253A] tracking-tight">
@@ -973,8 +983,14 @@ const html = `<!DOCTYPE html>
     <!-- Mục tiêu: Giúp khách hàng hiểu đặc tính tạo nên chất lượng -->
     <!-- Giải thích bằng ngôn ngữ phổ thông, không dùng cam kết quá đà -->
     <!-- ========================================================= -->
-    <section id="cong-nghe" class="py-20 px-6 bg-white">
-      <div class="max-w-7xl mx-auto space-y-12">
+    <section id="cong-nghe" class="relative py-24 px-6 bg-gradient-to-b from-[#F5F5F7] via-white via-50% to-[#F5F5F7] overflow-hidden">
+      <!-- Ambient Blur Caustic Overlays (Smooth Section Blending) -->
+      <div class="absolute inset-x-0 -top-12 h-24 bg-gradient-to-b from-[#F5F5F7] to-transparent blur-xl pointer-events-none opacity-80"></div>
+      <div class="absolute -top-24 left-10 w-96 h-48 bg-teal-500/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute inset-x-0 -bottom-12 h-24 bg-gradient-to-t from-[#F5F5F7] to-transparent blur-xl pointer-events-none opacity-80"></div>
+      <div class="absolute -bottom-24 right-10 w-96 h-48 bg-[#0B7B8A]/5 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto space-y-12 relative z-10">
         
         <div class="max-w-3xl">
           <h2 class="text-2xl sm:text-4xl lg:text-5xl font-black text-[#0E253A] tracking-tight">
@@ -1067,8 +1083,12 @@ const html = `<!DOCTYPE html>
     <!-- Mục tiêu: Trả lời câu hỏi vì sao tôi nên cân nhắc Rocky   -->
     <!-- Sự an tâm & thông tin rõ ràng, không lặp lại công nghệ    -->
     <!-- ========================================================= -->
-    <section id="vi-sao-rocky" class="py-20 px-6 bg-[#F5F5F7]">
-      <div class="max-w-7xl mx-auto space-y-16">
+    <section id="vi-sao-rocky" class="relative py-24 px-6 bg-[#F5F5F7] overflow-hidden">
+      <!-- Ambient Blur Caustic Overlays (Smooth Section Blending) -->
+      <div class="absolute inset-x-0 -top-12 h-24 bg-gradient-to-b from-[#F5F5F7] to-transparent blur-xl pointer-events-none opacity-80"></div>
+      <div class="absolute -top-24 right-1/3 w-[500px] h-48 bg-teal-500/5 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto space-y-16 relative z-10">
         
         <!-- Part A: Rocky Canada Opticians & Bằng chứng chất lượng -->
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
@@ -1360,8 +1380,12 @@ const html = `<!DOCTYPE html>
     <!-- Mục tiêu: Chuyển đổi B2C đến đại lý, đo khám thị lực      -->
     <!-- Hotline: 0933 102 653, Zalo tư vấn, KHÔNG công khai giá  -->
     <!-- ========================================================= -->
-    <section id="tim-dai-ly" class="py-20 px-6 bg-white">
-      <div class="max-w-7xl mx-auto space-y-12">
+    <section id="tim-dai-ly" class="relative py-24 px-6 bg-gradient-to-b from-[#F5F5F7] via-white via-50% to-[#0E253A] overflow-hidden">
+      <!-- Ambient Blur Caustic Overlays (Smooth Section Blending) -->
+      <div class="absolute inset-x-0 -top-12 h-24 bg-gradient-to-b from-[#F5F5F7] to-transparent blur-xl pointer-events-none opacity-80"></div>
+      <div class="absolute -top-24 left-1/4 w-96 h-48 bg-[#0B7B8A]/5 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto space-y-12 relative z-10">
         
         <div class="max-w-3xl">
           <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0E253A] tracking-tight">
@@ -1428,8 +1452,12 @@ const html = `<!DOCTYPE html>
     <!-- Mục tiêu: Mở ra cơ hội hợp tác cho cửa hàng, đại lý, lab -->
     <!-- Giọng văn chuyên nghiệp, không công khai giá sỉ/chiết khấu -->
     <!-- ========================================================= -->
-    <section id="doi-tac" class="py-20 px-6 bg-[#0E253A] text-white">
-      <div class="max-w-7xl mx-auto space-y-14">
+    <section id="doi-tac" class="relative py-24 px-6 bg-gradient-to-b from-[#0E253A] via-[#102B42] to-[#0E253A] text-white overflow-hidden">
+      <!-- Ambient Blur Caustic Overlays (Smooth Section Blending) -->
+      <div class="absolute -top-28 left-1/2 -translate-x-1/2 w-[700px] h-56 bg-[#0B7B8A]/25 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -bottom-28 left-1/2 -translate-x-1/2 w-[700px] h-56 bg-[#0B7B8A]/25 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto space-y-14 relative z-10">
         
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
@@ -1504,8 +1532,12 @@ const html = `<!DOCTYPE html>
     <!-- Mục tiêu: Chia sẻ kiến thức thị giác theo insight khách hàng -->
     <!-- 3 bài mẫu: Văn phòng, Lái xe đêm mưa, Trẻ em cận tiến triển -->
     <!-- ========================================================= -->
-    <section id="blog-insights" class="py-20 px-6 bg-[#F5F5F7]">
-      <div class="max-w-7xl mx-auto space-y-12">
+    <section id="blog-insights" class="relative py-24 px-6 bg-gradient-to-b from-[#F5F5F7] via-[#F8F9FA] to-[#071521] overflow-hidden">
+      <!-- Ambient Blur Caustic Overlays (Smooth Section Blending) -->
+      <div class="absolute inset-x-0 -top-12 h-24 bg-gradient-to-b from-[#0E253A]/10 to-transparent blur-xl pointer-events-none"></div>
+      <div class="absolute -top-24 right-1/4 w-96 h-48 bg-teal-500/5 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto space-y-12 relative z-10">
         
         <!-- Section Header -->
         <div class="max-w-3xl space-y-3">

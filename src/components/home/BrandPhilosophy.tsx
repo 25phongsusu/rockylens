@@ -2,8 +2,14 @@ import React from 'react';
 
 export default function BrandPhilosophy() {
   return (
-    <section id="triet-ly" className="py-20 px-6 bg-white">
-      <div className="max-w-7xl mx-auto">
+    <section id="triet-ly" className="relative py-24 px-6 bg-gradient-to-b from-[#F5F5F7] via-white via-50% to-[#F5F5F7] overflow-hidden">
+      {/* Ambient Blur Caustic Overlays (Smooth Section Blending) */}
+      <div className="absolute inset-x-0 -top-12 h-24 bg-gradient-to-b from-[#F5F5F7] to-transparent blur-xl pointer-events-none opacity-80" />
+      <div className="absolute -top-24 right-1/4 w-96 h-48 bg-teal-500/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute inset-x-0 -bottom-12 h-24 bg-gradient-to-t from-[#F5F5F7] to-transparent blur-xl pointer-events-none opacity-80" />
+      <div className="absolute -bottom-24 left-1/4 w-96 h-48 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
+
+      <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
           {/* Left Column: Visual Storytelling Art */}
@@ -31,7 +37,7 @@ export default function BrandPhilosophy() {
           {/* Right Column: Editorial Typography & Philosophy */}
           <div className="lg:col-span-7 order-1 lg:order-2 space-y-6">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0E253A] tracking-tight leading-[1.15]">
-              Cuộc sống có biết bao điều đáng nhìn ngắm.
+              Nhìn rõ từng chi tiết. Trọn vẹn mọi khoảnh khắc.
             </h2>
 
             <div className="space-y-4 text-slate-700 text-lg sm:text-xl font-medium leading-relaxed">

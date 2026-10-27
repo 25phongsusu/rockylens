@@ -37,7 +37,7 @@ const partnerLogos = [
 
 const brandValues = [
   'Tính năng ưu việt bảo vệ mắt toàn diện',
-  'Đa dạng hóa nhu cầu người tiêu dùng',
+  'Đáp ứng toàn diện mọi nhu cầu thị lực',
   'Giải pháp thị lực ở mọi phân khúc giá',
   'Sản phẩm đạt chất lượng quốc tế',
 ];
@@ -72,8 +72,12 @@ export default function WhyRockySection() {
   }, [selectedCertIndex]);
 
   return (
-    <section id="vi-sao-rocky" className="py-20 px-6 bg-[#F5F5F7]">
-      <div className="max-w-7xl mx-auto space-y-16">
+    <section id="vi-sao-rocky" className="relative py-24 px-6 bg-[#F5F5F7] overflow-hidden">
+      {/* Ambient Blur Caustic Overlays (Smooth Section Blending) */}
+      <div className="absolute inset-x-0 -top-12 h-24 bg-gradient-to-b from-[#F5F5F7] to-transparent blur-xl pointer-events-none opacity-80" />
+      <div className="absolute -top-24 right-1/3 w-[500px] h-48 bg-teal-500/5 rounded-full blur-3xl pointer-events-none" />
+
+      <div className="max-w-7xl mx-auto space-y-16 relative z-10">
         
         {/* Part A: Rocky Canada Opticians & Bằng chứng thương hiệu */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
