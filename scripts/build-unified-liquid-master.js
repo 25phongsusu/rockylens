@@ -535,17 +535,17 @@ const html = `<!DOCTYPE html>
           <div class="lg:col-span-7 space-y-6">
             
             <h1 class="text-4xl sm:text-6xl lg:text-[72px] font-black text-heading tracking-tight leading-[1.08] motion-1">
-              Rõ tầm nhìn, <br class="hidden sm:inline" />trọn cuộc sống.
+              Thấy Rõ Hơn. <br class="hidden sm:inline" />Sống Trọn Vẹn Từng Khoảnh Khắc.
             </h1>
 
             <p class="text-slate-700 text-lg sm:text-xl leading-relaxed max-w-xl motion-2">
-              Mỗi ngày có biết bao điều đáng để nhìn ngắm. Rocky mang đến những lựa chọn tròng kính đáp ứng nhu cầu học tập, làm việc và tận hưởng cuộc sống.
+              Bảo vệ đôi mắt bạn trước mọi rào cản—từ ánh sáng xanh màn hình, độ chói đèn xe ban đêm, đến tia UV gay gắt. Khám phá giải pháp tròng kính chuẩn Canada thiết kế riêng cho lối sống của bạn.
             </p>
 
-            <!-- Dual CTAs: Khám phá tròng kính & Nhận Báo Giá Đại Lý -->
+            <!-- Dual CTAs: Tìm Tròng Kính Phù Hợp Với Bạn & Nhận Báo Giá Đại Lý -->
             <div class="flex flex-wrap items-center gap-4 pt-2 motion-3">
               <a href="#trong-kinh" class="px-7 py-3.5 rounded-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold text-base transition-colors text-center shadow-sm">
-                Khám phá tròng kính
+                Tìm Tròng Kính Phù Hợp Với Bạn
               </a>
               <button type="button" onclick="openB2BQuoteModal()" class="px-7 py-3.5 rounded-full bg-white hover:bg-slate-100 text-heading font-bold text-base transition-colors text-center cursor-pointer shadow-sm">
                 Nhận Báo Giá Đại Lý
@@ -624,32 +624,32 @@ const html = `<!DOCTYPE html>
 
           <!-- Right Column: Editorial Typography & Philosophy -->
           <div class="lg:col-span-7 order-1 lg:order-2 space-y-6">
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-heading tracking-tight leading-[1.15]">
-              Cuộc sống có biết bao điều đáng nhìn ngắm.
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-heading tracking-tight leading-[1.18]">
+              Chúng tôi không chỉ bảo vệ đôi mắt, chúng tôi nâng niu cách bạn nhìn thế giới.
             </h2>
 
-            <div class="space-y-4 text-slate-700 text-lg sm:text-xl font-medium leading-relaxed">
-              <p class="text-slate-700 text-base sm:text-lg">
-                Tại Rocky, chúng tôi tin rằng một cặp tròng kính không chỉ đơn thuần là sản phẩm bổ trợ thị lực, mà là người bạn đồng hành chăm sóc thị giác mỗi ngày — mang đến sự êm dịu, rõ nét tự nhiên để bạn tự do tận hưởng từng khoảnh khắc đáng giá.
+            <div className="space-y-4 text-slate-700 text-lg sm:text-xl font-medium leading-relaxed">
+              <p class="text-slate-700 text-base sm:text-lg leading-relaxed">
+                Một cặp tròng kính hoàn hảo không chỉ để nhìn rõ những con số trên màn hình. Đó là để bạn trọn vẹn chiêm ngưỡng màu hoàng hôn rực rỡ, bắt trọn nụ cười của người thân yêu, hay vững tin chinh phục những chặng đường dài phía trước. Tại Rocky Lens, chúng tôi chế tác từng lăng kính bằng sự thấu hiểu đó — mang lại độ trong trẻo, êm ái tuyệt đối, để bạn tự do tận hưởng cuộc sống theo cách nguyên bản nhất.
               </p>
             </div>
 
-            <!-- 3 Value Cards (Chuyển từ Hero xuống) -->
+            <!-- 3 Value Cards (Customer-Centric) -->
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
               <div class="bg-[var(--site-bg-start)] p-5 rounded-2xl text-center sm:text-left transition-transform hover:-translate-y-1">
-                <div class="text-base font-black text-[var(--color-primary)]">Trong Suốt Tự Nhiên</div>
-                <div class="text-sm font-semibold text-slate-800 mt-1">Hạn chế quang sai</div>
-                <p class="text-xs text-slate-600 mt-1 leading-relaxed">Vật liệu tròng kính trong suốt, màu sắc trung thực</p>
+                <div class="text-base font-black text-[var(--color-primary)]">Trải Nghiệm Chân Thật</div>
+                <div class="text-sm font-semibold text-slate-800 mt-1">Xóa bỏ mọi góc mờ nhòe</div>
+                <p class="text-xs text-slate-600 mt-1 leading-relaxed">Trả lại tầm nhìn sắc nét với màu sắc chân thực sống động.</p>
               </div>
               <div class="bg-[var(--site-bg-start)] p-5 rounded-2xl text-center sm:text-left transition-transform hover:-translate-y-1">
-                <div class="text-base font-black text-[var(--color-primary)]">Chuẩn Xác Từng Điểm</div>
-                <div class="text-sm font-semibold text-slate-800 mt-1">Thích nghi êm dịu</div>
-                <p class="text-xs text-slate-600 mt-1 leading-relaxed">Chú trọng độ chính xác trong quá trình chế tác</p>
+                <div class="text-base font-black text-[var(--color-primary)]">Cá Nhân Hóa Tối Đa</div>
+                <div class="text-sm font-semibold text-slate-800 mt-1">Thích nghi êm dịu ngay từ lần đầu</div>
+                <p class="text-xs text-slate-600 mt-1 leading-relaxed">Cho từng tình trạng thị lực, mang lại cảm giác thích nghi êm dịu ngay từ lần đeo đầu tiên.</p>
               </div>
               <div class="bg-[var(--site-bg-start)] p-5 rounded-2xl text-center sm:text-left transition-transform hover:-translate-y-1">
-                <div class="text-base font-black text-[var(--color-primary)]">Chất Lượng Kiểm Chứng</div>
-                <div class="text-sm font-semibold text-slate-800 mt-1">An tâm sử dụng</div>
-                <p class="text-xs text-slate-600 mt-1 leading-relaxed">Tiêu chuẩn ISO 13485 và bảo hành chính hãng</p>
+                <div class="text-base font-black text-[var(--color-primary)]">Bảo Chứng An Tâm</div>
+                <div class="text-sm font-semibold text-slate-800 mt-1">Đồng hành bền bỉ</div>
+                <p class="text-xs text-slate-600 mt-1 leading-relaxed">An toàn với tiêu chuẩn y tế ISO 13485 và chính sách bảo hành chính hãng toàn diện.</p>
               </div>
             </div>
 
@@ -701,10 +701,10 @@ const html = `<!DOCTYPE html>
               </div>
               <div class="p-6 sm:p-7 space-y-3">
                 <h3 class="text-2xl font-bold text-heading group-hover:text-[var(--color-primary)] transition-colors">
-                  Tầm Nhìn Êm Dịu Khi Lái Xe
+                  Làm Chủ Mọi Cung Đường Đêm & Mưa.
                 </h3>
                 <p class="text-slate-600 text-base leading-relaxed">
-                  Hạn chế cảm giác chói lóa từ đèn xe đối diện và tăng độ tương phản khi trời mưa hoặc đêm tối, giúp bạn tự tin hơn trên mọi cung đường.
+                  Chấm dứt nỗi ám ảnh chói đèn pha và nhòe sương kính. DriveShield mang lại tầm nhìn sắc nét, êm dịu, giúp bạn vững tay lái và an tâm về nhà trong mọi điều kiện thời tiết.
                 </p>
                 <div class="pt-2 flex flex-wrap gap-2 text-sm font-semibold text-slate-700">
                   <span class="px-3 py-1 rounded-lg bg-slate-100">Dịu mắt ban đêm</span>
@@ -771,10 +771,10 @@ const html = `<!DOCTYPE html>
               </div>
               <div class="p-6 sm:p-7 space-y-3">
                 <h3 class="text-2xl font-bold text-heading group-hover:text-[var(--color-primary)] transition-colors">
-                  Bảo Vệ Thị Lực Khi Làm Việc Số
+                  Tạm Biệt Nhức Mỏi Mắt Mùa Chạy Deadline.
                 </h3>
                 <p class="text-slate-600 text-base leading-relaxed">
-                  Lựa chọn phù hợp khi bạn thường xuyên làm việc với máy tính và điện thoại, giúp mắt cảm thấy dễ chịu hơn mà vẫn giữ trọn màu sắc tự nhiên.
+                  8 tiếng nhìn màn hình không còn là rào cản. Tròng kính BlueCut chặn đứng ánh sáng xanh có hại, giữ màu sắc chân thực để đôi mắt luôn thư giãn dù bạn làm việc hay giải trí trọn ngày dài.
                 </p>
                 <div class="pt-2 flex flex-wrap gap-2 text-sm font-semibold text-slate-700">
                   <span class="px-3 py-1 rounded-lg bg-slate-100">Lọc ánh sáng xanh có hại</span>
@@ -841,10 +841,10 @@ const html = `<!DOCTYPE html>
               </div>
               <div class="p-6 sm:p-7 space-y-3">
                 <h3 class="text-2xl font-bold text-heading group-hover:text-[var(--color-primary)] transition-colors">
-                  Tròng Kính Đổi Màu Tiện Lợi
+                  1 Chiếc Kính. 2 Phong Cách. Tiện Lợi Tối Đa.
                 </h3>
                 <p class="text-slate-600 text-base leading-relaxed">
-                  Tự động chuyển màu râm khi ra ngoài trời nắng và trở lại trong suốt khi vào nhà. Tiện lợi 2 trong 1, giúp bạn thoải mái di chuyển cả ngày.
+                  Trong suốt khi ở nhà, tự động chuyển màu râm sành điệu khi ra nắng. Bảo vệ mắt toàn diện khỏi tia UV mà không cần lỉnh kỉnh đổi qua lại giữa kính cận và kính mát.
                 </p>
                 <div class="pt-2 flex flex-wrap gap-2 text-sm font-semibold text-slate-700">
                   <span class="px-3 py-1 rounded-lg bg-slate-100">Đổi màu râm khi ra nắng</span>
@@ -2070,7 +2070,358 @@ const html = `<!DOCTYPE html>
         nextCert();
       }
     });
+    // ========================================================
+    // THEME CUSTOMIZER LOGIC
+    // ========================================================
+    var customizerDefaults = {
+      siteBgStart: '#F4FCFE',
+      siteBgMiddle: '#D7F4FA',
+      siteBgEnd: '#A2E2EE',
+      buttonStart: '#5BCDE5',
+      buttonMiddle: '#00A2CC',
+      buttonEnd: '#317F93',
+      b2bStart: '#00A2CC',
+      b2bMiddle: '#007A99',
+      b2bEnd: '#003B50'
+    };
+
+    var customizerPresets = [
+      {
+        name: 'Rocky Canada Cyan',
+        colors: customizerDefaults
+      },
+      {
+        name: 'Deep Sapphire Ocean',
+        colors: {
+          siteBgStart: '#F0F7FF',
+          siteBgMiddle: '#D0E5FF',
+          siteBgEnd: '#8EC1FF',
+          buttonStart: '#38BDF8',
+          buttonMiddle: '#0284C7',
+          buttonEnd: '#0369A1',
+          b2bStart: '#0284C7',
+          b2bMiddle: '#0369A1',
+          b2bEnd: '#082F49'
+        }
+      },
+      {
+        name: 'Emerald Optical Health',
+        colors: {
+          siteBgStart: '#F0FDF4',
+          siteBgMiddle: '#DCFCE7',
+          siteBgEnd: '#86EFAC',
+          buttonStart: '#34D399',
+          buttonMiddle: '#059669',
+          buttonEnd: '#065F46',
+          b2bStart: '#059669',
+          b2bMiddle: '#065F46',
+          b2bEnd: '#064E3B'
+        }
+      },
+      {
+        name: 'Royal Amethyst',
+        colors: {
+          siteBgStart: '#FAF5FF',
+          siteBgMiddle: '#F3E8FF',
+          siteBgEnd: '#D8B4FE',
+          buttonStart: '#C084FC',
+          buttonMiddle: '#7E22CE',
+          buttonEnd: '#581C87',
+          b2bStart: '#7E22CE',
+          b2bMiddle: '#581C87',
+          b2bEnd: '#3B0764'
+        }
+      },
+      {
+        name: 'Titanium Apple Slate',
+        colors: {
+          siteBgStart: '#F8FAFC',
+          siteBgMiddle: '#E2E8F0',
+          siteBgEnd: '#CBD5E1',
+          buttonStart: '#64748B',
+          buttonMiddle: '#334155',
+          buttonEnd: '#1E293B',
+          b2bStart: '#334155',
+          b2bMiddle: '#1E293B',
+          b2bEnd: '#0F172A'
+        }
+      }
+    ];
+
+    var currentTheme = Object.assign({}, customizerDefaults);
+    var STORAGE_KEY = 'rockylens_custom_theme_colors';
+
+    function applyCustomTheme(colors) {
+      var root = document.documentElement;
+      root.style.setProperty('--site-bg-start', colors.siteBgStart);
+      root.style.setProperty('--site-bg-middle', colors.siteBgMiddle);
+      root.style.setProperty('--site-bg-end', colors.siteBgEnd);
+
+      root.style.setProperty('--button-start', colors.buttonStart);
+      root.style.setProperty('--button-middle', colors.buttonMiddle);
+      root.style.setProperty('--button-end', colors.buttonEnd);
+
+      root.style.setProperty('--b2b-start', colors.b2bStart);
+      root.style.setProperty('--b2b-middle', colors.b2bMiddle);
+      root.style.setProperty('--b2b-end', colors.b2bEnd);
+
+      root.style.setProperty('--color-heading', colors.b2bEnd);
+      root.style.setProperty('--color-text', colors.b2bEnd);
+      root.style.setProperty('--color-border', colors.siteBgEnd);
+      root.style.setProperty('--color-primary', colors.buttonMiddle);
+      root.style.setProperty('--color-primary-hover', colors.buttonEnd);
+      root.style.setProperty('--color-primary-light', colors.siteBgStart);
+
+      root.style.setProperty('--gradient-site', 'linear-gradient(135deg, ' + colors.siteBgStart + ' 0%, ' + colors.siteBgMiddle + ' 55%, ' + colors.siteBgEnd + ' 100%)');
+      root.style.setProperty('--gradient-button', 'linear-gradient(110deg, ' + colors.buttonStart + ' 0%, ' + colors.buttonMiddle + ' 50%, ' + colors.buttonEnd + ' 100%)');
+      root.style.setProperty('--gradient-b2b', 'linear-gradient(120deg, ' + colors.b2bStart + ' 0%, ' + colors.b2bMiddle + ' 50%, ' + colors.b2bEnd + ' 100%)');
+
+      // Sync form fields
+      var keys = Object.keys(colors);
+      for (var i = 0; i < keys.length; i++) {
+        var k = keys[i];
+        var pick = document.getElementById('pick_' + k);
+        var hex = document.getElementById('hex_' + k);
+        if (pick) pick.value = colors[k];
+        if (hex) hex.value = colors[k];
+      }
+
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(colors));
+      } catch (err) {}
+    }
+
+    function toggleCustomizer() {
+      var panel = document.getElementById('themeCustomizerPanel');
+      if (!panel) return;
+      panel.classList.toggle('hidden');
+    }
+
+    function onCustomColorChange(key, val) {
+      if (!val) return;
+      if (val.charAt(0) !== '#') val = '#' + val;
+      val = val.toUpperCase();
+      currentTheme[key] = val;
+      applyCustomTheme(currentTheme);
+    }
+
+    function applyPreset(idx) {
+      if (!customizerPresets[idx]) return;
+      currentTheme = Object.assign({}, customizerPresets[idx].colors);
+      applyCustomTheme(currentTheme);
+    }
+
+    function resetCustomTheme() {
+      currentTheme = Object.assign({}, customizerDefaults);
+      applyCustomTheme(currentTheme);
+      try {
+        localStorage.removeItem(STORAGE_KEY);
+      } catch (e) {}
+    }
+
+    function copyThemeCSS() {
+      var css = ':root {\\n' +
+        '  /* Website Background */\\n' +
+        '  --site-bg-start: ' + currentTheme.siteBgStart + ';\\n' +
+        '  --site-bg-middle: ' + currentTheme.siteBgMiddle + ';\\n' +
+        '  --site-bg-end: ' + currentTheme.siteBgEnd + ';\\n\\n' +
+        '  /* Button Colors */\\n' +
+        '  --button-start: ' + currentTheme.buttonStart + ';\\n' +
+        '  --button-middle: ' + currentTheme.buttonMiddle + ';\\n' +
+        '  --button-end: ' + currentTheme.buttonEnd + ';\\n\\n' +
+        '  /* B2B Colors */\\n' +
+        '  --b2b-start: ' + currentTheme.b2bStart + ';\\n' +
+        '  --b2b-middle: ' + currentTheme.b2bMiddle + ';\\n' +
+        '  --b2b-end: ' + currentTheme.b2bEnd + ';\\n\\n' +
+        '  --color-heading: var(--b2b-end);\\n' +
+        '  --color-text: var(--b2b-end);\\n' +
+        '  --color-muted: #476773;\\n' +
+        '  --color-surface: #FFFFFF;\\n' +
+        '  --color-border: var(--site-bg-end);\\n' +
+        '  --color-primary: var(--button-middle);\\n' +
+        '  --color-primary-hover: var(--button-end);\\n' +
+        '  --color-primary-light: var(--site-bg-start);\\n\\n' +
+        '  --gradient-site: linear-gradient(135deg, var(--site-bg-start) 0%, var(--site-bg-middle) 55%, var(--site-bg-end) 100%);\\n' +
+        '  --gradient-button: linear-gradient(110deg, var(--button-start) 0%, var(--button-middle) 50%, var(--button-end) 100%);\\n' +
+        '  --gradient-b2b: linear-gradient(120deg, var(--b2b-start) 0%, var(--b2b-middle) 50%, var(--b2b-end) 100%);\\n' +
+        '}';
+
+      if (navigator && navigator.clipboard) {
+        navigator.clipboard.writeText(css).then(function() {
+          var btn = document.getElementById('copyThemeBtn');
+          if (btn) {
+            btn.innerHTML = '<span>Đã Sao Chép :root!</span>';
+            setTimeout(function() {
+              btn.innerHTML = '<span>Sao Chép Mã CSS</span>';
+            }, 2500);
+          }
+        });
+      }
+    }
+
+    // Init theme from storage
+    try {
+      var savedTheme = localStorage.getItem(STORAGE_KEY);
+      if (savedTheme) {
+        currentTheme = JSON.parse(savedTheme);
+      }
+    } catch (e) {}
+    applyCustomTheme(currentTheme);
   </script>
+
+  <!-- FLOATING THEME CUSTOMIZER WIDGET (MASTER TEMPLATE) -->
+  <div class="fixed bottom-6 right-6 z-40 print:hidden">
+    <button type="button" onclick="toggleCustomizer()" class="flex items-center space-x-2.5 px-4 py-3 rounded-full bg-white text-slate-900 border border-slate-200/90 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer backdrop-blur-md">
+      <div class="w-6 h-6 rounded-full flex items-center justify-center text-white" style="background: var(--gradient-button);">
+        <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.563-2.512 5.563-5.563C22 6.5 17.5 2 12 2Z"/></svg>
+      </div>
+      <span class="text-xs font-bold text-slate-800 tracking-wide">Tùy Biến Màu Sắc</span>
+      <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+    </button>
+  </div>
+
+  <!-- FLOATING CUSTOMIZER PANEL -->
+  <div id="themeCustomizerPanel" class="hidden fixed bottom-22 right-6 z-50 w-[360px] sm:w-[420px] max-w-[calc(100vw-2rem)] max-h-[80vh] flex-col bg-white/95 backdrop-blur-xl rounded-3xl border border-slate-200/90 shadow-2xl overflow-hidden">
+    <!-- Header -->
+    <div class="p-4 sm:p-5 border-b border-slate-100 flex items-center justify-between bg-slate-50/80">
+      <div>
+        <h3 class="text-sm font-extrabold text-slate-900">Tùy Biến Màu Giao Diện</h3>
+        <p class="text-[11px] text-slate-500">Kéo thanh màu hoặc nhập mã HEX trực tiếp</p>
+      </div>
+      <button type="button" onclick="toggleCustomizer()" class="p-1.5 rounded-lg text-slate-400 hover:text-slate-700 hover:bg-slate-200/60 transition-colors">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <!-- Live Preview -->
+    <div class="p-4 bg-slate-50 border-b border-slate-100 space-y-2">
+      <div class="flex items-center justify-between text-[11px] font-semibold text-slate-600">
+        <span>Xem Trước Hiệu Ứng Trực Tiếp:</span>
+        <span class="text-[10px] text-emerald-600 font-bold bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">Live Active</span>
+      </div>
+      <div class="grid grid-cols-2 gap-2 text-xs">
+        <div class="h-10 rounded-xl flex items-center justify-center text-slate-800 font-bold border border-slate-200/60 shadow-2xs text-[11px]" style="background: var(--gradient-site);">
+          Nền Website
+        </div>
+        <div class="h-10 rounded-xl flex items-center justify-center text-white font-bold shadow-2xs text-[11px]" style="background: var(--gradient-button);">
+          Nút Bấm CTA
+        </div>
+      </div>
+    </div>
+
+    <!-- Presets Quick Select -->
+    <div class="p-4 border-b border-slate-100 space-y-2">
+      <div class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Chọn Bảng Màu Mẫu:</div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-1.5">
+        <button type="button" onclick="applyPreset(0)" class="p-2 rounded-xl border border-slate-200 hover:border-teal-400 text-left text-xs font-bold text-slate-800 bg-white shadow-2xs">
+          Rocky Cyan
+        </button>
+        <button type="button" onclick="applyPreset(1)" class="p-2 rounded-xl border border-slate-200 hover:border-blue-400 text-left text-xs font-bold text-slate-800 bg-white shadow-2xs">
+          Sapphire
+        </button>
+        <button type="button" onclick="applyPreset(2)" class="p-2 rounded-xl border border-slate-200 hover:border-emerald-400 text-left text-xs font-bold text-slate-800 bg-white shadow-2xs">
+          Emerald
+        </button>
+        <button type="button" onclick="applyPreset(3)" class="p-2 rounded-xl border border-slate-200 hover:border-purple-400 text-left text-xs font-bold text-slate-800 bg-white shadow-2xs">
+          Amethyst
+        </button>
+        <button type="button" onclick="applyPreset(4)" class="p-2 rounded-xl border border-slate-200 hover:border-slate-400 text-left text-xs font-bold text-slate-800 bg-white shadow-2xs">
+          Titanium
+        </button>
+      </div>
+    </div>
+
+    <!-- Interactive Pickers List -->
+    <div class="p-4 overflow-y-auto flex-1 max-h-[300px] space-y-3">
+      <!-- Group 1: Background -->
+      <div class="space-y-2">
+        <div class="text-[11px] font-bold text-slate-500 uppercase">1. Nền Website:</div>
+        <div class="flex items-center justify-between p-2 rounded-xl border border-slate-100 bg-white">
+          <span class="text-xs font-medium text-slate-700">Điểm Bắt Đầu</span>
+          <div class="flex items-center space-x-2">
+            <input type="color" id="pick_siteBgStart" onchange="onCustomColorChange('siteBgStart', this.value)" class="w-7 h-7 rounded border-0 cursor-pointer p-0">
+            <input type="text" id="hex_siteBgStart" onchange="onCustomColorChange('siteBgStart', this.value)" class="w-20 px-2 py-0.5 text-xs font-mono uppercase text-center border rounded">
+          </div>
+        </div>
+        <div class="flex items-center justify-between p-2 rounded-xl border border-slate-100 bg-white">
+          <span class="text-xs font-medium text-slate-700">Điểm Ở Giữa</span>
+          <div class="flex items-center space-x-2">
+            <input type="color" id="pick_siteBgMiddle" onchange="onCustomColorChange('siteBgMiddle', this.value)" class="w-7 h-7 rounded border-0 cursor-pointer p-0">
+            <input type="text" id="hex_siteBgMiddle" onchange="onCustomColorChange('siteBgMiddle', this.value)" class="w-20 px-2 py-0.5 text-xs font-mono uppercase text-center border rounded">
+          </div>
+        </div>
+        <div class="flex items-center justify-between p-2 rounded-xl border border-slate-100 bg-white">
+          <span class="text-xs font-medium text-slate-700">Điểm Kết Thúc</span>
+          <div class="flex items-center space-x-2">
+            <input type="color" id="pick_siteBgEnd" onchange="onCustomColorChange('siteBgEnd', this.value)" class="w-7 h-7 rounded border-0 cursor-pointer p-0">
+            <input type="text" id="hex_siteBgEnd" onchange="onCustomColorChange('siteBgEnd', this.value)" class="w-20 px-2 py-0.5 text-xs font-mono uppercase text-center border rounded">
+          </div>
+        </div>
+      </div>
+
+      <!-- Group 2: Button -->
+      <div class="space-y-2 pt-2 border-t border-slate-100">
+        <div class="text-[11px] font-bold text-slate-500 uppercase">2. Nút Bấm &amp; CTA:</div>
+        <div class="flex items-center justify-between p-2 rounded-xl border border-slate-100 bg-white">
+          <span class="text-xs font-medium text-slate-700">Điểm Bắt Đầu</span>
+          <div class="flex items-center space-x-2">
+            <input type="color" id="pick_buttonStart" onchange="onCustomColorChange('buttonStart', this.value)" class="w-7 h-7 rounded border-0 cursor-pointer p-0">
+            <input type="text" id="hex_buttonStart" onchange="onCustomColorChange('buttonStart', this.value)" class="w-20 px-2 py-0.5 text-xs font-mono uppercase text-center border rounded">
+          </div>
+        </div>
+        <div class="flex items-center justify-between p-2 rounded-xl border border-slate-100 bg-white">
+          <span class="text-xs font-medium text-slate-700">Màu Chủ Đạo (Solid)</span>
+          <div class="flex items-center space-x-2">
+            <input type="color" id="pick_buttonMiddle" onchange="onCustomColorChange('buttonMiddle', this.value)" class="w-7 h-7 rounded border-0 cursor-pointer p-0">
+            <input type="text" id="hex_buttonMiddle" onchange="onCustomColorChange('buttonMiddle', this.value)" class="w-20 px-2 py-0.5 text-xs font-mono uppercase text-center border rounded">
+          </div>
+        </div>
+        <div class="flex items-center justify-between p-2 rounded-xl border border-slate-100 bg-white">
+          <span class="text-xs font-medium text-slate-700">Điểm Kết Thúc (Hover)</span>
+          <div class="flex items-center space-x-2">
+            <input type="color" id="pick_buttonEnd" onchange="onCustomColorChange('buttonEnd', this.value)" class="w-7 h-7 rounded border-0 cursor-pointer p-0">
+            <input type="text" id="hex_buttonEnd" onchange="onCustomColorChange('buttonEnd', this.value)" class="w-20 px-2 py-0.5 text-xs font-mono uppercase text-center border rounded">
+          </div>
+        </div>
+      </div>
+
+      <!-- Group 3: B2B -->
+      <div class="space-y-2 pt-2 border-t border-slate-100">
+        <div class="text-[11px] font-bold text-slate-500 uppercase">3. B2B &amp; Tiêu Đề:</div>
+        <div class="flex items-center justify-between p-2 rounded-xl border border-slate-100 bg-white">
+          <span class="text-xs font-medium text-slate-700">Điểm Bắt Đầu</span>
+          <div class="flex items-center space-x-2">
+            <input type="color" id="pick_b2bStart" onchange="onCustomColorChange('b2bStart', this.value)" class="w-7 h-7 rounded border-0 cursor-pointer p-0">
+            <input type="text" id="hex_b2bStart" onchange="onCustomColorChange('b2bStart', this.value)" class="w-20 px-2 py-0.5 text-xs font-mono uppercase text-center border rounded">
+          </div>
+        </div>
+        <div class="flex items-center justify-between p-2 rounded-xl border border-slate-100 bg-white">
+          <span class="text-xs font-medium text-slate-700">Điểm Ở Giữa</span>
+          <div class="flex items-center space-x-2">
+            <input type="color" id="pick_b2bMiddle" onchange="onCustomColorChange('b2bMiddle', this.value)" class="w-7 h-7 rounded border-0 cursor-pointer p-0">
+            <input type="text" id="hex_b2bMiddle" onchange="onCustomColorChange('b2bMiddle', this.value)" class="w-20 px-2 py-0.5 text-xs font-mono uppercase text-center border rounded">
+          </div>
+        </div>
+        <div class="flex items-center justify-between p-2 rounded-xl border border-slate-100 bg-white">
+          <span class="text-xs font-medium text-slate-700">Đậm Nhất (Tiêu Đề)</span>
+          <div class="flex items-center space-x-2">
+            <input type="color" id="pick_b2bEnd" onchange="onCustomColorChange('b2bEnd', this.value)" class="w-7 h-7 rounded border-0 cursor-pointer p-0">
+            <input type="text" id="hex_b2bEnd" onchange="onCustomColorChange('b2bEnd', this.value)" class="w-20 px-2 py-0.5 text-xs font-mono uppercase text-center border rounded">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Actions -->
+    <div class="p-3.5 border-t border-slate-100 bg-slate-50 flex items-center justify-between gap-2">
+      <button type="button" onclick="resetCustomTheme()" class="px-3 py-2 rounded-xl text-xs font-semibold text-slate-700 bg-white border border-slate-200 hover:bg-slate-100 transition-colors shadow-2xs">
+        Mặc Định
+      </button>
+      <button type="button" id="copyThemeBtn" onclick="copyThemeCSS()" class="flex-1 py-2 rounded-xl text-xs font-bold bg-[var(--b2b-end)] text-white hover:opacity-95 transition-opacity shadow-xs">
+        Sao Chép Mã CSS
+      </button>
+    </div>
+  </div>
 </body>
 </html>
 `;

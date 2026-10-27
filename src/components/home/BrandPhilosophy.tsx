@@ -36,32 +36,32 @@ export default function BrandPhilosophy() {
 
           {/* Right Column: Editorial Typography & Philosophy */}
           <div className="lg:col-span-7 order-1 lg:order-2 space-y-6">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-heading tracking-tight leading-[1.15]">
-              Nhìn rõ từng chi tiết. Trọn vẹn mọi khoảnh khắc.
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-heading tracking-tight leading-[1.18]">
+              Chúng tôi không chỉ bảo vệ đôi mắt, chúng tôi nâng niu cách bạn nhìn thế giới.
             </h2>
 
             <div className="space-y-4 text-slate-700 text-lg sm:text-xl font-medium leading-relaxed">
-              <p className="text-brand-muted text-base sm:text-lg">
-                Tại Rocky, chúng tôi tin rằng một cặp tròng kính không chỉ đơn thuần là sản phẩm bổ trợ thị lực, mà là người bạn đồng hành chăm sóc thị giác mỗi ngày — mang đến sự êm dịu, rõ nét tự nhiên để bạn tự do tận hưởng từng khoảnh khắc đáng giá.
+              <p className="text-brand-muted text-base sm:text-lg leading-relaxed">
+                Một cặp tròng kính hoàn hảo không chỉ để nhìn rõ những con số trên màn hình. Đó là để bạn trọn vẹn chiêm ngưỡng màu hoàng hôn rực rỡ, bắt trọn nụ cười của người thân yêu, hay vững tin chinh phục những chặng đường dài phía trước. Tại Rocky Lens, chúng tôi chế tác từng lăng kính bằng sự thấu hiểu đó — mang lại độ trong trẻo, êm ái tuyệt đối, để bạn tự do tận hưởng cuộc sống theo cách nguyên bản nhất.
               </p>
             </div>
 
-            {/* 3 Value Cards */}
+            {/* 3 Value Cards (Customer-Centric) */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
               <div className="card-surface p-5 rounded-2xl text-center sm:text-left transition-transform hover:-translate-y-1">
-                <div className="text-base font-black text-primary">Trong Suốt Tự Nhiên</div>
-                <div className="text-sm font-semibold text-slate-800 mt-1">Hạn chế quang sai</div>
-                <p className="text-xs text-brand-muted mt-1 leading-relaxed">Vật liệu tròng kính trong suốt, màu sắc trung thực</p>
+                <div className="text-base font-black text-primary">Trải Nghiệm Chân Thật</div>
+                <div className="text-sm font-semibold text-slate-800 mt-1">Xóa bỏ mọi góc mờ nhòe</div>
+                <p className="text-xs text-brand-muted mt-1 leading-relaxed">Trả lại tầm nhìn sắc nét với màu sắc chân thực sống động.</p>
               </div>
               <div className="card-surface p-5 rounded-2xl text-center sm:text-left transition-transform hover:-translate-y-1">
-                <div className="text-base font-black text-primary">Chuẩn Xác Từng Điểm</div>
-                <div className="text-sm font-semibold text-slate-800 mt-1">Thích nghi êm dịu</div>
-                <p className="text-xs text-brand-muted mt-1 leading-relaxed">Chú trọng độ chính xác trong quá trình chế tác</p>
+                <div className="text-base font-black text-primary">Cá Nhân Hóa Tối Đa</div>
+                <div className="text-sm font-semibold text-slate-800 mt-1">Thích nghi êm dịu ngay từ lần đầu</div>
+                <p className="text-xs text-brand-muted mt-1 leading-relaxed">Cho từng tình trạng thị lực, mang lại cảm giác thích nghi êm dịu ngay từ lần đeo đầu tiên.</p>
               </div>
               <div className="card-surface p-5 rounded-2xl text-center sm:text-left transition-transform hover:-translate-y-1">
-                <div className="text-base font-black text-primary">Chất Lượng Kiểm Chứng</div>
-                <div className="text-sm font-semibold text-slate-800 mt-1">An tâm sử dụng</div>
-                <p className="text-xs text-brand-muted mt-1 leading-relaxed">Tiêu chuẩn ISO 13485 và bảo hành chính hãng</p>
+                <div className="text-base font-black text-primary">Bảo Chứng An Tâm</div>
+                <div className="text-sm font-semibold text-slate-800 mt-1">Đồng hành bền bỉ</div>
+                <p className="text-xs text-brand-muted mt-1 leading-relaxed">An toàn với tiêu chuẩn y tế ISO 13485 và chính sách bảo hành chính hãng toàn diện.</p>
               </div>
             </div>
 

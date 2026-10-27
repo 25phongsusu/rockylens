@@ -25,13 +25,13 @@ export default function HeroSection() {
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.12] text-heading">
-              Rõ tầm nhìn, <br className="hidden sm:inline" /><span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--button-middle)] to-[var(--button-end)]">trọn cuộc sống.</span>
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.14] text-heading">
+              Thấy Rõ Hơn. <br className="hidden sm:inline" /><span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--button-start)] via-[var(--button-middle)] to-[var(--button-end)]">Sống Trọn Vẹn Từng Khoảnh Khắc.</span>
             </h1>
 
             {/* Subheadline */}
             <p className="text-brand-muted text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              Mỗi góc nhìn mở ra một trải nghiệm khác biệt. Rocky hướng đến những giải pháp tròng kính đáp ứng nhu cầu thị giác trong cuộc sống hiện đại.
+              Bảo vệ đôi mắt bạn trước mọi rào cản—từ ánh sáng xanh màn hình, độ chói đèn xe ban đêm, đến tia UV gay gắt. Khám phá giải pháp tròng kính chuẩn Canada thiết kế riêng cho lối sống của bạn.
             </p>
 
             {/* 3 Apple Liquid Spec Cards */}
@@ -55,13 +55,13 @@ export default function HeroSection() {
               </div>
             </div>
 
-            {/* Action Buttons: Khám phá tròng kính & Nhận Báo Giá Đại Lý */}
+            {/* Action Buttons: Tìm Tròng Kính Phù Hợp Với Bạn & Nhận Báo Giá Đại Lý */}
             <div className="pt-3 flex flex-wrap items-center justify-center lg:justify-start gap-3.5">
               <Link
                 href="#trong-kinh"
                 className="liquid-btn-primary px-7 py-3.5 text-xs sm:text-sm font-bold shadow-md flex items-center space-x-2"
               >
-                <span>Khám Phá Tròng Kính</span>
+                <span>Tìm Tròng Kính Phù Hợp Với Bạn</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
 
