@@ -9,7 +9,7 @@ import BlogSection from '@/components/home/BlogSection';
 
 export default function HomePage() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-[var(--site-bg-start)]">
       {/* SECTION 1 — BRAND HERO */}
       <HeroSection />
 

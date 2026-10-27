@@ -72,11 +72,7 @@ export default function WhyRockySection() {
   }, [selectedCertIndex]);
 
   return (
-    <section id="vi-sao-rocky" className="relative py-24 px-6 bg-gradient-to-b from-[var(--site-bg-start)] via-white via-50% to-[var(--site-bg-middle)] overflow-hidden">
-      {/* Subtle Ambient Caustic Light Orbs */}
-      <div className="absolute -top-24 right-1/3 w-[500px] h-48 bg-[var(--site-bg-end)]/15 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute -bottom-24 left-1/4 w-[500px] h-48 bg-[var(--button-start)]/10 rounded-full blur-3xl pointer-events-none" />
-
+    <section id="vi-sao-rocky" className="relative py-20 px-6 bg-transparent overflow-hidden">
       <div className="max-w-7xl mx-auto space-y-16 relative z-10">
         
         {/* Part A: Rocky Canada Opticians & Bằng chứng thương hiệu */}
@@ -214,8 +210,8 @@ export default function WhyRockySection() {
 
           {/* Infinite Marquee Track Moving Slowly from Right to Left */}
           <div className="relative w-full overflow-hidden py-4">
-            <div className="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-28 bg-gradient-to-r from-[var(--site-bg-middle)] to-transparent z-10" />
-            <div className="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-28 bg-gradient-to-l from-[var(--site-bg-middle)] to-transparent z-10" />
+            <div className="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-28 bg-gradient-to-r from-[var(--site-bg-start)] to-transparent z-10" />
+            <div className="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-28 bg-gradient-to-l from-[var(--site-bg-start)] to-transparent z-10" />
 
             <div className="flex items-center gap-6 w-max animate-marquee hover:[animation-play-state:paused]">
               {/* Set 1 */}

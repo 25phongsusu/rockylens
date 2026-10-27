@@ -31,9 +31,7 @@ const partnerValues = [
 export default function PartnerSection() {
   return (
     <section id="doi-tac" className="relative py-24 px-6 b2b-gradient text-white overflow-hidden">
-      {/* Ambient Blur Caustic Overlays (Smooth Section Blending) */}
-      <div className="absolute -top-28 left-1/2 -translate-x-1/2 w-[700px] h-56 bg-[var(--button-start)]/20 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute -bottom-28 left-1/2 -translate-x-1/2 w-[700px] h-56 bg-[var(--button-middle)]/20 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute right-0 top-0 w-96 h-96 bg-[var(--button-start)]/20 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto space-y-12 relative z-10">
         

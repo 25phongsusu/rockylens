@@ -8,10 +8,7 @@ export default function BlogSection() {
   const articles = getAllArticles().slice(0, 3);
 
   return (
-    <section id="blog-insights" className="relative py-24 px-6 bg-gradient-to-b from-[var(--site-bg-start)] via-white to-[var(--site-bg-start)] overflow-hidden">
-      {/* Subtle Ambient Caustic Light Orb */}
-      <div className="absolute -top-24 right-1/4 w-96 h-48 bg-[var(--site-bg-end)]/15 rounded-full blur-3xl pointer-events-none" />
-
+    <section id="blog-insights" className="relative py-20 px-6 bg-transparent overflow-hidden">
       <div className="max-w-7xl mx-auto space-y-12 relative z-10">
         
         {/* Section Header */}

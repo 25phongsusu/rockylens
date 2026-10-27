@@ -32,13 +32,7 @@ const techPillars = [
 
 export default function TechnologyHighlights() {
   return (
-    <section id="cong-nghe" className="relative py-24 px-6 section-background overflow-hidden">
-      {/* Ambient Blur Caustic Overlays (Smooth Section Blending) */}
-      <div className="absolute inset-x-0 -top-12 h-24 bg-gradient-to-b from-[var(--site-bg-start)] to-transparent blur-xl pointer-events-none opacity-80" />
-      <div className="absolute -top-24 left-10 w-96 h-48 bg-[var(--site-bg-end)]/20 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute inset-x-0 -bottom-12 h-24 bg-gradient-to-t from-[var(--site-bg-start)] to-transparent blur-xl pointer-events-none opacity-80" />
-      <div className="absolute -bottom-24 right-10 w-96 h-48 bg-[var(--button-start)]/15 rounded-full blur-3xl pointer-events-none" />
-
+    <section id="cong-nghe" className="relative py-20 px-6 bg-transparent overflow-hidden">
       <div className="max-w-7xl mx-auto space-y-12 relative z-10">
         
         <div className="max-w-3xl">

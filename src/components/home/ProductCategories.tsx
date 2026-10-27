@@ -92,11 +92,7 @@ const discoverySolutions = [
 
 export default function ProductCategories() {
   return (
-    <section id="san-pham" className="relative py-24 px-6 section-background overflow-hidden">
-      {/* Ambient Blur Caustic Overlays (Smooth Section Blending) */}
-      <div className="absolute inset-x-0 -top-12 h-24 bg-gradient-to-b from-[var(--site-bg-start)] to-transparent blur-xl pointer-events-none opacity-80" />
-      <div className="absolute -top-24 left-1/3 w-[500px] h-48 bg-[var(--site-bg-end)]/20 rounded-full blur-3xl pointer-events-none" />
-
+    <section id="san-pham" className="relative py-20 px-6 bg-transparent overflow-hidden">
       <div className="max-w-7xl mx-auto space-y-12 relative z-10">
         
         {/* Section Heading focused on consumer wear needs */}
