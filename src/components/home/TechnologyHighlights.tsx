@@ -1,100 +1,62 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
-import { ArrowRight, ShieldCheck, SunMedium, Cpu, Car, Layers, Eye, Sparkles } from 'lucide-react';
-import SectionHeading from '@/components/shared/SectionHeading';
+import { ArrowRight } from 'lucide-react';
 
-const opticalExperiments = [
+const techPillars = [
   {
-    title: 'Nano Sapphire 9H Chống Trầy',
-    badge: 'Cấu Trúc Đa Tầng',
-    image: '/images/products/category-solution-4.png',
-    description: 'Màng bốc bay điện tử buồng chân không gia cường độ cứng tương đương sapphire, giảm 90% nguy cơ trầy xước khăn lau.',
-    spec: 'Độ cứng bề mặt 9H Pencil Test',
+    title: 'Lựa Chọn Vật Liệu Phù Hợp',
+    description: 'Vật liệu và cấu trúc phôi quyết định độ trong suốt, trọng lượng nhẹ và độ bền cơ học của tròng kính, mang lại cảm giác thoải mái khi bạn đeo kính suốt ngày dài.',
   },
   {
-    title: 'Super Hydrophobic Kháng Nước',
-    badge: 'Góc Tiếp Xúc >115°',
-    image: '/images/products/category-solution-3.png',
-    description: 'Bề mặt phủ trơn nano làm giọt nước mưa vo tròn lăn trượt tức thì, chống bám vân tay và dầu mỡ cực tốt.',
-    spec: 'Kháng nước mưa & sương mù',
+    title: 'Công Nghệ Xử Lý Bề Mặt',
+    description: 'Các lớp phủ tính năng hỗ trợ bảo vệ tròng kính trước trầy xước, giảm bám nước mưa, hạn chế bám bụi bẩn và giúp việc vệ sinh kính hằng ngày trở nên dễ dàng hơn.',
   },
   {
-    title: 'DriveShield Ruby Cắt Lóa',
-    badge: 'Thực Nghiệm Lái Xe',
-    image: '/images/real/driveshield_night.jpg',
-    description: 'Triệt tiêu 85% ánh sáng chói chát từ đèn pha LED ngược chiều, tăng tương phản 35% khi đi đêm trong mưa.',
-    spec: 'Cắt lóa đèn pha LED & đèn cao áp',
+    title: 'Thiết Kế Quang Học Cá Nhân Hóa',
+    description: 'Ứng dụng tính toán quang học kỹ thuật số để tối ưu hóa trường nhìn theo từng đơn kính và kiểu dáng gọng kính, mang lại tầm nhìn tự nhiên và êm dịu.',
   },
   {
-    title: 'Gia Công Freeform KTS 24H',
-    badge: 'Lab Schneider Đức',
-    image: '/images/company/about-2.jpg',
-    description: 'Mài kỹ thuật số mặt sau Back-Surface với sai số quang sai dưới 0.01 Diop, cá nhân hóa theo từng thông số gọng kính.',
-    spec: 'Độ chính xác vi điểm 0.01D',
+    title: 'Quy Trình Kiểm Định Tiêu Chuẩn',
+    description: 'Mỗi sản phẩm đều trải qua các bước kiểm soát chất lượng từ độ khúc xạ, quang sai đến độ hoàn thiện của từng bề mặt trước khi đến tay người tiêu dùng.',
   },
 ];
 
 export default function TechnologyHighlights() {
   return (
-    <section className="py-20 bg-white border-b border-slate-200/80">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+    <section id="cong-nghe" className="py-20 px-6 bg-white">
+      <div className="max-w-7xl mx-auto space-y-12">
         
-        <div className="text-center max-w-3xl mx-auto mb-14 space-y-3">
-          <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full liquid-pill text-[#0B7B8A] text-xs font-bold uppercase tracking-wider">
-            <Cpu className="w-3.5 h-3.5 text-[#0B7B8A]" />
-            <span>Đột Phá Kỹ Thuật Quang Học</span>
-          </div>
-
-          <h2 className="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight uppercase">
-            Khoa Học Vật Liệu &amp; Công Nghệ Váng Phủ
+        <div className="max-w-3xl">
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-[#0E253A] tracking-tight">
+            Công nghệ và tiêu chuẩn chất lượng
           </h2>
-
-          <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-            Sự kết hợp giữa phôi monomer cao cấp từ Mitsui Chemicals (Nhật Bản) và công nghệ gia công Freeform kỹ thuật số tiêu chuẩn Canada.
+          <p className="text-slate-600 text-base sm:text-lg mt-3">
+            Đằng sau mỗi tròng kính là những lựa chọn về vật liệu, thiết kế và công nghệ chế tác. Hãy khám phá cách các yếu tố đó tạo nên những đặc tính khác nhau của tròng kính Rocky.
           </p>
         </div>
 
-        {/* 4 Optical Experiments Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {opticalExperiments.map((exp, idx) => (
-            <div
-              key={idx}
-              className="liquid-card rounded-[24px] overflow-hidden flex flex-col justify-between group"
-            >
-              <div>
-                <div className="aspect-4/3 w-full overflow-hidden bg-slate-900 relative">
-                  <Image
-                    src={exp.image}
-                    alt={exp.title}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    sizes="(max-width: 768px) 100vw, 25vw"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent pointer-events-none" />
-                  <span className="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-black/60 backdrop-blur-md text-teal-300 text-[10px] font-bold uppercase">
-                    {exp.badge}
-                  </span>
-                </div>
-
-                <div className="p-5 space-y-2">
-                  <h3 className="text-base font-bold text-slate-900">
-                    {exp.title}
-                  </h3>
-
-                  <p className="text-xs text-slate-600 leading-relaxed">
-                    {exp.description}
-                  </p>
-                </div>
-              </div>
-
-              <div className="p-5 pt-0">
-                <div className="pt-3 border-t border-slate-100 text-[11px] font-bold text-[#0B7B8A]">
-                  &bull; {exp.spec}
-                </div>
-              </div>
+          {techPillars.map((pillar, idx) => (
+            <div key={idx} className="bg-[#F5F5F7] p-6 rounded-3xl space-y-3">
+              <h3 className="text-xl font-bold text-[#0E253A]">
+                {pillar.title}
+              </h3>
+              <p className="text-slate-700 text-base leading-relaxed">
+                {pillar.description}
+              </p>
             </div>
           ))}
+        </div>
+
+        {/* Section 4 CTA */}
+        <div className="text-center pt-4">
+          <Link
+            href="/cong-nghe/"
+            className="inline-flex items-center space-x-2 px-8 py-4 rounded-full bg-[#0E253A] hover:bg-[#1A365D] text-white font-bold text-base transition-colors"
+          >
+            <span>Tìm hiểu công nghệ Rocky</span>
+            <ArrowRight className="w-5 h-5" />
+          </Link>
         </div>
 
       </div>
