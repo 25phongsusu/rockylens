@@ -53,9 +53,9 @@ const syncFolders = [
   'lien-he',
   've-chung-toi',
   '_next',
+  'assets',
   'images',
   'documents',
-  'icons',
   'uploads'
 ];
 
@@ -63,7 +63,7 @@ syncFolders.forEach(dir => {
   const src = path.join('out', dir);
   const dest = path.resolve(dir);
   if (fs.existsSync(src)) {
-    if (['blog', 'danh-cho-doi-tac', 'kham-pha-trong-kinh', 'trong-kinh', 'lien-he', 've-chung-toi', '_next'].includes(dir) && fs.existsSync(dest)) {
+    if (['blog', 'danh-cho-doi-tac', 'kham-pha-trong-kinh', 'trong-kinh', 'lien-he', 've-chung-toi', '_next', 'assets', 'images', 'documents', 'uploads'].includes(dir) && fs.existsSync(dest)) {
       fs.rmSync(dest, { recursive: true, force: true });
     }
     copyDir(src, dest);
