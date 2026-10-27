@@ -17,6 +17,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0,
     },
     {
+      url: `${baseUrl}/blog/`,
+      lastModified: new Date(),
+      changeFrequency: 'daily',
+      priority: 0.95,
+    },
+    {
       url: `${baseUrl}/trong-kinh/`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
@@ -26,7 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/kham-pha-trong-kinh/`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
-      priority: 0.8,
+      priority: 0.85,
     },
     {
       url: `${baseUrl}/danh-cho-doi-tac/`,
@@ -57,13 +63,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
-  // Dynamic Article Pages
+  // Dynamic Article Pages (Both /blog/ and legacy path for back-compat)
   const articles = getAllArticles();
   const articleRoutes: MetadataRoute.Sitemap = articles.map((a) => ({
-    url: `${baseUrl}/kham-pha-trong-kinh/bai-viet/${a.slug}/`,
+    url: `${baseUrl}/blog/${a.slug}/`,
     lastModified: new Date(a.publishedAt),
     changeFrequency: 'monthly',
-    priority: 0.75,
+    priority: 0.8,
   }));
 
   return [...staticRoutes, ...productRoutes, ...articleRoutes];

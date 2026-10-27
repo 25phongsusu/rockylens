@@ -68,11 +68,15 @@ syncFolders.forEach(dir => {
   }
 });
 
-// 2. Copy 404.html if exists
-if (fs.existsSync(path.join('out', '404.html'))) {
-  fs.copyFileSync(path.join('out', '404.html'), path.resolve('404.html'));
-  console.log('✓ Synced out/404.html -> 404.html');
-}
+// 2. Copy 404.html, robots.txt, sitemap.xml if exist
+['404.html', 'robots.txt', 'sitemap.xml'].forEach(file => {
+  const src = path.join('out', file);
+  const dest = path.resolve(file);
+  if (fs.existsSync(src)) {
+    fs.copyFileSync(src, dest);
+    console.log(`✓ Synced out/${file} -> ${file}`);
+  }
+});
 
 // 3. Post-process all copied subpage directories to fix asset paths for GitHub Pages
 const pagesToProcess = [

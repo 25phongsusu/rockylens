@@ -23,7 +23,149 @@ const html = `<!DOCTYPE html>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rocky Lens • Rõ tầm nhìn, trọn cuộc sống | Thương Hiệu Tròng Kính Canada</title>
-  <meta name="description" content="Khám phá các dòng tròng kính Rocky đáp ứng nhu cầu học tập, làm việc và tận hưởng cuộc sống. Phân phối độc quyền tại Việt Nam bởi Clearly Vietnam.">
+  <meta name="description" content="Khám phá các dòng tròng kính quang học Rocky Lens tiêu chuẩn Canada: chống ánh sáng xanh UV420 không ám vàng, tròng lái xe ban đêm DriveShield, đổi màu thông minh và kiểm soát cận thị. Phân phối độc quyền tại Việt Nam bởi Clearly Vietnam.">
+  <link rel="canonical" href="https://rockylens.com/">
+  <meta name="keywords" content="Tròng kính Rocky, Tròng kính Canada, tròng kính chống ánh sáng xanh UV420, tròng kính lái xe ban đêm DriveShield, tròng đổi màu, tròng kính cận mỏng 1.60 1.67 1.74, kiểm soát cận thị Defocus, Clearly Vietnam, mắt kính B2B, bảng giá tròng kính Rocky">
+  <meta name="author" content="Rocky Lens Canada • Phân phối độc quyền bởi Clearly Vietnam">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+  <!-- Open Graph / Facebook / Zalo -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Rocky Lens • Rõ tầm nhìn, trọn cuộc sống | Thương Hiệu Tròng Kính Canada">
+  <meta property="og:description" content="Thương hiệu tròng kính quang học Canada, phân phối độc quyền bởi Clearly Vietnam. Giải pháp chống ánh sáng xanh UV420, tròng lái xe DriveShield, đổi màu thông minh và kiểm soát cận thị Defocus.">
+  <meta property="og:url" content="https://rockylens.com/">
+  <meta property="og:site_name" content="Rocky Lens">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:image" content="https://rockylens.com/images/banners/hero-banner.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Rocky Lens Canada - Giải pháp tròng kính quang học">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Rocky Lens • Rõ tầm nhìn, trọn cuộc sống">
+  <meta name="twitter:description" content="Thương hiệu tròng kính quang học Canada, phân phối độc quyền tại Việt Nam bởi Clearly Vietnam.">
+  <meta name="twitter:image" content="https://rockylens.com/images/banners/hero-banner.png">
+
+  <!-- Schema.org Structured Data for SEO & GEO (Generative Engine Optimization) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://rockylens.com/#organization",
+        "name": "Rocky Lens",
+        "legalName": "Công ty Cổ phần Clearly Vietnam",
+        "url": "https://rockylens.com",
+        "logo": "https://rockylens.com/assets/logo_rocky_transparent.png",
+        "description": "Thương hiệu tròng kính quang học tiêu chuẩn Canada Opticians, phân phối độc quyền tại Việt Nam bởi Công ty Cổ phần Clearly Vietnam.",
+        "telephone": "0933 102 653",
+        "email": "info@rockylens.com",
+        "taxID": "0316499823",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "TP. Hồ Chí Minh & Hà Nội",
+          "addressLocality": "TP. Hồ Chí Minh",
+          "addressCountry": "VN"
+        },
+        "sameAs": [
+          "https://facebook.com/rockylensvietnam"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://rockylens.com/#website",
+        "url": "https://rockylens.com",
+        "name": "Rocky Lens",
+        "description": "Rõ tầm nhìn, trọn cuộc sống - Thương hiệu tròng kính Canada",
+        "publisher": {
+          "@id": "https://rockylens.com/#organization"
+        }
+      },
+      {
+        "@type": "ItemList",
+        "name": "Danh Mục Giải Pháp Tròng Kính Rocky Lens",
+        "itemListElement": [
+          {
+            "@type": "Product",
+            "name": "Tròng Kính Chuyên Dụng Lái Xe Ban Đêm Rocky DriveShield 1.60",
+            "description": "Lọc dải bước sóng chói lóa từ đèn pha LED xe ngược chiều, tăng độ tương phản khi lái xe ban đêm và trời mưa.",
+            "brand": {"@type": "Brand", "name": "Rocky Lens"},
+            "url": "https://rockylens.com/trong-kinh/rocky-driveshield-night-vision/"
+          },
+          {
+            "@type": "Product",
+            "name": "Tròng Kính Lọc Ánh Sáng Xanh Rocky BlueCut SHMC 1.56",
+            "description": "Phôi monomer hấp thụ tia UV420 và dải ánh sáng xanh có hại, bảo vệ hoàng điểm mắt không ám vàng hình ảnh.",
+            "brand": {"@type": "Brand", "name": "Rocky Lens"},
+            "url": "https://rockylens.com/trong-kinh/rocky-156-bluecut-shmc/"
+          },
+          {
+            "@type": "Product",
+            "name": "Tròng Kính Siêu Mỏng Rocky Ultra High Index 1.74",
+            "description": "Chiết suất 1.74 siêu mỏng cho người có độ cận cao từ -6.00D đến -12.00D, mỏng hơn đến 45% so với tròng thông thường.",
+            "brand": {"@type": "Brand", "name": "Rocky Lens"},
+            "url": "https://rockylens.com/trong-kinh/rocky-174-ultra-high-index/"
+          },
+          {
+            "@type": "Product",
+            "name": "Tròng Kính Kiểm Soát Cận Thị Trẻ Em Rocky MyoControl Defocus",
+            "description": "Công nghệ vi thấu kính phân tán hội tụ chu biên giúp kìm hãm sự tăng độ cận tiến triển ở trẻ em học đường.",
+            "brand": {"@type": "Brand", "name": "Rocky Lens"},
+            "url": "https://rockylens.com/trong-kinh/rocky-myocontrol-dims-kids/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Tròng kính Rocky Lens xuất xứ từ đâu và phân phối bởi ai?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tròng kính Rocky là thương hiệu quang học tiêu chuẩn Canada Opticians, được chứng nhận quản lý chất lượng y tế quốc tế ISO 13485:2016 và được nhập khẩu, phân phối độc quyền tại Việt Nam bởi Công ty Cổ phần Clearly Vietnam (GPKD: 0316499823)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Tròng kính chống ánh sáng xanh Rocky BlueCut có làm ám vàng hình ảnh không?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Không. Rocky BlueCut sử dụng công nghệ phôi monomer hấp thụ tia UV420 và bước sóng xanh tím gây hại 400 - 420nm, giữ độ truyền quang 98% cho hình ảnh trong trẻo tự nhiên, không gây ám vàng sai lệch màu sắc như các thế hệ tròng phủ phản xạ cũ."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Công nghệ tròng kính lái xe ban đêm Rocky DriveShield hoạt động thế nào?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Rocky DriveShield tích hợp lớp màng lọc quang phổ chọn lọc Multi-Matrix giúp triệt tiêu bước sóng 440-460nm của đèn pha LED ngược chiều, giảm đến 85% cảm giác chói lóa mắt ban đêm và nâng cao độ tương phản khi điều khiển phương tiện trong điều kiện mưa gió hoặc thiếu sáng."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Độ cận cao nên chọn tròng kính chiết suất nào để mỏng nhẹ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Với độ cận từ -3.50D đến -6.00D nên chọn chiết suất 1.60 hoặc 1.67 MR-8 mỏng nhẹ hơn 20-30%. Với độ cận từ -6.00D đến -12.00D nên chọn chiết suất siêu mỏng 1.74 để giảm độ dày rìa tròng đến 45% và tránh hiện tượng thu nhỏ mắt."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Cửa hàng mắt kính muốn liên hệ nhập tròng Rocky và nhận báo giá đại lý như thế nào?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Quý đại lý và phòng khám có thể liên hệ trực tiếp Hotline/Zalo B2B 0933 102 653 hoặc nhấn nút 'Nhận Báo Giá Đại Lý' trên website để được bộ phận B2B Rocky Lens gửi bảng giá sỉ và chính sách chiết khấu trong 15 phút."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
