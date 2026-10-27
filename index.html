@@ -113,6 +113,18 @@
       0%, 100% { transform: translateY(0px) rotate(0deg); }
       50% { transform: translateY(-8px) rotate(1deg); }
     }
+        @keyframes floatSubtle {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-3px); }
+    }
+    .motion-float-1 { animation: floatSubtle 5.0s ease-in-out infinite; }
+    .motion-float-2 { animation: floatSubtle 5.5s ease-in-out 0.2s infinite; }
+    .motion-float-3 { animation: floatSubtle 6.0s ease-in-out 0.4s infinite; }
+    .motion-float-4 { animation: floatSubtle 6.5s ease-in-out 0.6s infinite; }
+    .motion-float-5 { animation: floatSubtle 7.0s ease-in-out 0.8s infinite; }
+    .motion-float-6 { animation: floatSubtle 7.5s ease-in-out 1.0s infinite; }
+    .motion-float-7 { animation: floatSubtle 8.0s ease-in-out 1.2s infinite; }
+    .motion-float-8 { animation: floatSubtle 8.5s ease-in-out 1.4s infinite; }
     .animate-float-lens {
       animation: floatLens 6s ease-in-out infinite;
     }
@@ -142,6 +154,18 @@
       .animate-float-lens, [class*="motion-"] {
         animation: none !important;
       }
+    }
+      @keyframes marquee-scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .animate-marquee {
+      display: flex;
+      width: max-content;
+      animation: marquee-scroll 35s linear infinite;
+    }
+    .animate-marquee:hover {
+      animation-play-state: paused;
     }
   </style>
 </head>
@@ -324,7 +348,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           
           <!-- Card 1: Khi Lái Xe & Đi Mưa -->
-          <div class="group relative bg-white rounded-3xl overflow-hidden flex flex-col justify-between transition-all duration-300">
+          <div class="group relative bg-white motion-float-1 rounded-3xl overflow-hidden flex flex-col justify-between transition-all duration-300">
             <div>
               <div class="h-64 sm:h-72 bg-slate-900/5 overflow-hidden flex items-center justify-center p-4 relative">
                 <img src="assets/uploads/solutions/sol_kinh_lai_xe.png" alt="Tròng kính lái xe ban đêm DriveShield" class="w-full h-full object-contain rounded-2xl transition-transform duration-500 group-hover:scale-105">
@@ -394,7 +418,7 @@
           </div>
 
           <!-- Card 2: Cho Ngày Dài Làm Việc -->
-          <div class="group relative bg-white rounded-3xl overflow-hidden flex flex-col justify-between transition-all duration-300">
+          <div class="group relative bg-white motion-float-2 rounded-3xl overflow-hidden flex flex-col justify-between transition-all duration-300">
             <div>
               <div class="h-64 sm:h-72 bg-slate-900/5 overflow-hidden flex items-center justify-center p-4 relative">
                 <img src="assets/uploads/solutions/sol_chong_tia_uv.png" alt="Tròng kính lọc ánh sáng xanh BlueCut" class="w-full h-full object-contain rounded-2xl transition-transform duration-500 group-hover:scale-105">
@@ -464,7 +488,7 @@
           </div>
 
           <!-- Card 3: Cho Những Ngày Đầy Nắng -->
-          <div class="group relative bg-white rounded-3xl overflow-hidden flex flex-col justify-between transition-all duration-300">
+          <div class="group relative bg-white motion-float-3 rounded-3xl overflow-hidden flex flex-col justify-between transition-all duration-300">
             <div>
               <div class="h-64 sm:h-72 bg-slate-900/5 overflow-hidden flex items-center justify-center p-4 relative">
                 <img src="assets/uploads/solutions/sol_doi_mau.png" alt="Tròng kính đổi màu ngoài trời Fast-Change" class="w-full h-full object-contain rounded-2xl transition-transform duration-500 group-hover:scale-105">
@@ -534,7 +558,7 @@
           </div>
 
           <!-- Card 4: Cho Chiếc Kính Gọn Nhẹ Hơn -->
-          <div class="group relative bg-white rounded-3xl overflow-hidden flex flex-col justify-between transition-all duration-300">
+          <div class="group relative bg-white motion-float-4 rounded-3xl overflow-hidden flex flex-col justify-between transition-all duration-300">
             <div>
               <div class="h-64 sm:h-72 bg-slate-900/5 overflow-hidden flex items-center justify-center p-4 relative">
                 <img src="assets/uploads/solutions/sol_kinh_khoan_va_dap.png" alt="Tròng kính mỏng nhẹ chống va đập" class="w-full h-full object-contain rounded-2xl transition-transform duration-500 group-hover:scale-105">
@@ -604,7 +628,7 @@
           </div>
 
           <!-- Card 5: Cho Nhu Cầu Nhìn Gần Và Xa -->
-          <div class="group relative bg-white rounded-3xl overflow-hidden flex flex-col justify-between transition-all duration-300">
+          <div class="group relative bg-white motion-float-5 rounded-3xl overflow-hidden flex flex-col justify-between transition-all duration-300">
             <div>
               <div class="h-64 sm:h-72 bg-slate-900/5 overflow-hidden flex items-center justify-center p-4 relative">
                 <img src="assets/uploads/solutions/sol_da_trong.png" alt="Tròng kính đa tròng kỹ thuật số CanRx" class="w-full h-full object-contain rounded-2xl transition-transform duration-500 group-hover:scale-105">
@@ -674,7 +698,7 @@
           </div>
 
           <!-- Card 6: Đồng Hành Cùng Thị Lực Học Đường -->
-          <div class="group relative bg-white rounded-3xl overflow-hidden flex flex-col justify-between transition-all duration-300">
+          <div class="group relative bg-white motion-float-6 rounded-3xl overflow-hidden flex flex-col justify-between transition-all duration-300">
             <div>
               <div class="h-64 sm:h-72 bg-slate-900/5 overflow-hidden flex items-center justify-center p-4 relative">
                 <img src="assets/uploads/solutions/sol_kiem_soat_can_thi.png" alt="Tròng kính chăm sóc thị lực học đường" class="w-full h-full object-contain rounded-2xl transition-transform duration-500 group-hover:scale-105">
@@ -777,7 +801,7 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           
-          <div class="bg-[#F5F5F7] p-5 sm:p-6 rounded-3xl space-y-4 flex flex-col justify-between group">
+          <div class="bg-[#F5F5F7] p-5 sm:p-6 rounded-3xl space-y-4 flex flex-col justify-between group motion-float-1">
             <div class="space-y-4">
               <div class="aspect-[16/10] w-full rounded-2xl overflow-hidden bg-slate-200 relative">
                 <img src="assets/images/company/about-1.jpg" alt="Kho phôi và vật liệu quang học Rocky" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -792,10 +816,10 @@
             </div>
           </div>
 
-          <div class="bg-[#F5F5F7] p-5 sm:p-6 rounded-3xl space-y-4 flex flex-col justify-between group">
+          <div class="bg-[#F5F5F7] p-5 sm:p-6 rounded-3xl space-y-4 flex flex-col justify-between group motion-float-2">
             <div class="space-y-4">
               <div class="aspect-[16/10] w-full rounded-2xl overflow-hidden bg-slate-200 relative">
-                <img src="assets/images/company/about-6.jpg" alt="Công nghệ phủ chân không đa tầng chống trầy xước" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <img src="assets/images/technologies/bui.png" alt="Công nghệ phủ chân không đa tầng chống trầy xước" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[#0E253A] text-[13px] font-bold">
                   Phủ Chân Không Nano
                 </span>
@@ -807,10 +831,10 @@
             </div>
           </div>
 
-          <div class="bg-[#F5F5F7] p-5 sm:p-6 rounded-3xl space-y-4 flex flex-col justify-between group">
+          <div class="bg-[#F5F5F7] p-5 sm:p-6 rounded-3xl space-y-4 flex flex-col justify-between group motion-float-3">
             <div class="space-y-4">
               <div class="aspect-[16/10] w-full rounded-2xl overflow-hidden bg-slate-200 relative">
-                <img src="assets/images/company/about-2.jpg" alt="Dây chuyền mài kỹ thuật số Freeform CNC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <img src="assets/images/technologies/do-kinh.jpg" alt="Dây chuyền mài kỹ thuật số Freeform CNC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[#0E253A] text-[13px] font-bold">
                   Gia Công KTS Freeform
                 </span>
@@ -822,7 +846,7 @@
             </div>
           </div>
 
-          <div class="bg-[#F5F5F7] p-5 sm:p-6 rounded-3xl space-y-4 flex flex-col justify-between group">
+          <div class="bg-[#F5F5F7] p-5 sm:p-6 rounded-3xl space-y-4 flex flex-col justify-between group motion-float-4">
             <div class="space-y-4">
               <div class="aspect-[16/10] w-full rounded-2xl overflow-hidden bg-slate-200 relative">
                 <img src="assets/images/company/about-3.jpg" alt="Quy trình kiểm soát chất lượng quang sai từng tròng" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -877,21 +901,21 @@
               </p>
             </div>
 
-            <!-- 4 Value Points in Clean Typographic Box (No icon-cards, No outlined-box) -->
+            <!-- 4 Value Points in Clean Typographic Box -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-              <div class="p-4 rounded-2xl bg-white flex items-center gap-3 shadow-xs">
+              <div class="p-4 rounded-2xl bg-white flex items-center gap-3 shadow-xs motion-float-5">
                 <span class="w-2.5 h-2.5 rounded-full bg-[#0B7B8A] shrink-0"></span>
                 <span class="text-sm font-bold text-[#0E253A]">Tính năng ưu việt bảo vệ mắt toàn diện</span>
               </div>
-              <div class="p-4 rounded-2xl bg-white flex items-center gap-3 shadow-xs">
+              <div class="p-4 rounded-2xl bg-white flex items-center gap-3 shadow-xs motion-float-6">
                 <span class="w-2.5 h-2.5 rounded-full bg-[#0B7B8A] shrink-0"></span>
                 <span class="text-sm font-bold text-[#0E253A]">Đa dạng hóa nhu cầu người tiêu dùng</span>
               </div>
-              <div class="p-4 rounded-2xl bg-white flex items-center gap-3 shadow-xs">
+              <div class="p-4 rounded-2xl bg-white flex items-center gap-3 shadow-xs motion-float-7">
                 <span class="w-2.5 h-2.5 rounded-full bg-[#0B7B8A] shrink-0"></span>
                 <span class="text-sm font-bold text-[#0E253A]">Giải pháp thị lực ở mọi phân khúc giá</span>
               </div>
-              <div class="p-4 rounded-2xl bg-white flex items-center gap-3 shadow-xs">
+              <div class="p-4 rounded-2xl bg-white flex items-center gap-3 shadow-xs motion-float-8">
                 <span class="w-2.5 h-2.5 rounded-full bg-[#0B7B8A] shrink-0"></span>
                 <span class="text-sm font-bold text-[#0E253A]">Sản phẩm đạt chất lượng quốc tế</span>
               </div>
@@ -899,71 +923,110 @@
 
           </div>
 
-          <!-- Right Column (7 cols): Certificates & Awards -->
+          <!-- Right Column (7 cols): Certificates & Awards (Larger + Click to Open Lightbox) -->
           <div class="lg:col-span-7 space-y-8">
             
             <!-- Group 1: Chứng chỉ Canada -->
             <div class="space-y-3">
-              <div class="grid grid-cols-3 sm:grid-cols-6 gap-2 sm:gap-2.5">
-                <div class="bg-white p-1 rounded-xl shadow-xs  aspect-[3/4] overflow-hidden group">
-                  <img src="assets/images/bangkhen/11.jpg" alt="The College of Opticians of Ontario - Optician Certificate" class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-300">
+              <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">
+                <div class="bg-white p-1.5 rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300" onclick="openCertModal(0)">
+                  <img src="assets/images/bangkhen/11.jpg" alt="The College of Opticians of Ontario - Optician Certificate" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
+                  <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
+                    <span class="px-2 py-1 rounded-full bg-white/90 text-[#0E253A] text-[13px] font-bold">Phóng to</span>
+                  </div>
                 </div>
-                <div class="bg-white p-1 rounded-xl shadow-xs  aspect-[3/4] overflow-hidden group">
-                  <img src="assets/images/bangkhen/12.jpg" alt="The College of Opticians of Ontario - Optician Certificate" class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-300">
+                <div class="bg-white p-1.5 rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300" onclick="openCertModal(1)">
+                  <img src="assets/images/bangkhen/12.jpg" alt="The College of Opticians of Ontario - Optician Certificate" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
+                  <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
+                    <span class="px-2 py-1 rounded-full bg-white/90 text-[#0E253A] text-[13px] font-bold">Phóng to</span>
+                  </div>
                 </div>
-                <div class="bg-white p-1 rounded-xl shadow-xs  aspect-[3/4] overflow-hidden group">
-                  <img src="assets/images/bangkhen/13.jpg" alt="The College of Opticians of Ontario - Optician Certificate" class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-300">
+                <div class="bg-white p-1.5 rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300" onclick="openCertModal(2)">
+                  <img src="assets/images/bangkhen/13.jpg" alt="The College of Opticians of Ontario - Optician Certificate" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
+                  <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
+                    <span class="px-2 py-1 rounded-full bg-white/90 text-[#0E253A] text-[13px] font-bold">Phóng to</span>
+                  </div>
                 </div>
-                <div class="bg-white p-1 rounded-xl shadow-xs  aspect-[3/4] overflow-hidden group">
-                  <img src="assets/images/bangkhen/14.jpg" alt="The College of Opticians of Ontario - Optician Certificate" class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-300">
+                <div class="bg-white p-1.5 rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300" onclick="openCertModal(3)">
+                  <img src="assets/images/bangkhen/14.jpg" alt="The College of Opticians of Ontario - Optician Certificate" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
+                  <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
+                    <span class="px-2 py-1 rounded-full bg-white/90 text-[#0E253A] text-[13px] font-bold">Phóng to</span>
+                  </div>
                 </div>
-                <div class="bg-white p-1 rounded-xl shadow-xs  aspect-[3/4] overflow-hidden group">
-                  <img src="assets/images/bangkhen/15.jpg" alt="Georgian College - Optician Diploma" class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-300">
+                <div class="bg-white p-1.5 rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300" onclick="openCertModal(4)">
+                  <img src="assets/images/bangkhen/15.jpg" alt="Georgian College - Optician Diploma" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
+                  <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
+                    <span class="px-2 py-1 rounded-full bg-white/90 text-[#0E253A] text-[13px] font-bold">Phóng to</span>
+                  </div>
                 </div>
-                <div class="bg-white p-1 rounded-xl shadow-xs  aspect-[3/4] overflow-hidden group">
-                  <img src="assets/images/bangkhen/16.jpg" alt="National Association of Canadian Optician Regulators" class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-300">
+                <div class="bg-white p-1.5 rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300" onclick="openCertModal(5)">
+                  <img src="assets/images/bangkhen/16.jpg" alt="National Association of Canadian Optician Regulators" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
+                  <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
+                    <span class="px-2 py-1 rounded-full bg-white/90 text-[#0E253A] text-[13px] font-bold">Phóng to</span>
+                  </div>
                 </div>
               </div>
-              <p class="text-center text-sm sm:text-sm font-bold text-[#0E253A]">
-                Đội ngũ nhân sự tốt nghiệp và có chứng chỉ hành nghề tại Canada
+              <p class="text-center text-sm font-bold text-[#0E253A]">
+                Đội ngũ nhân sự tốt nghiệp và có chứng chỉ hành nghề tại Canada (Bấm vào để xem lớn)
               </p>
             </div>
 
             <!-- Group 2: Tiêu chuẩn quốc tế & Giải thưởng châu Á -->
             <div class="space-y-3">
-              <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                <div class="bg-white p-1.5 rounded-xl shadow-xs  aspect-[3/4] overflow-hidden group">
-                  <img src="assets/images/bangkhen/1.jpg" alt="Giấy chứng nhận ISO 13485:2016 Rocky Lens" class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-300">
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                <div class="bg-white p-2 rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300" onclick="openCertModal(6)">
+                  <img src="assets/images/bangkhen/1.jpg" alt="Giấy chứng nhận ISO 13485:2016 Rocky Lens" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
+                  <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
+                    <span class="px-2.5 py-1 rounded-full bg-white/90 text-[#0E253A] text-[13px] font-bold">Phóng to</span>
+                  </div>
                 </div>
-                <div class="bg-white p-1.5 rounded-xl shadow-xs  aspect-[3/4] overflow-hidden group">
-                  <img src="assets/images/bangkhen/2.jpg" alt="Thương hiệu uy tín hội nhập Châu Á 2024" class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-300">
+                <div class="bg-white p-2 rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300" onclick="openCertModal(7)">
+                  <img src="assets/images/bangkhen/2.jpg" alt="Thương hiệu uy tín hội nhập Châu Á 2024" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
+                  <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
+                    <span class="px-2.5 py-1 rounded-full bg-white/90 text-[#0E253A] text-[13px] font-bold">Phóng to</span>
+                  </div>
                 </div>
-                <div class="bg-white p-1.5 rounded-xl shadow-xs  aspect-[3/4] overflow-hidden group">
-                  <img src="assets/images/bangkhen/3.jpg" alt="Sản phẩm dịch vụ chất lượng Châu Á 2024" class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-300">
+                <div class="bg-white p-2 rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300" onclick="openCertModal(8)">
+                  <img src="assets/images/bangkhen/3.jpg" alt="Sản phẩm dịch vụ chất lượng Châu Á 2024" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
+                  <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
+                    <span class="px-2.5 py-1 rounded-full bg-white/90 text-[#0E253A] text-[13px] font-bold">Phóng to</span>
+                  </div>
                 </div>
-                <div class="bg-white p-1.5 rounded-xl shadow-xs  aspect-[3/4] overflow-hidden group">
-                  <img src="assets/images/bangkhen/4.jpg" alt="The Best of Vietnam 2024 - Top 20 Sản phẩm tốt nhất" class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-300">
+                <div class="bg-white p-2 rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300" onclick="openCertModal(9)">
+                  <img src="assets/images/bangkhen/4.jpg" alt="The Best of Vietnam 2024 - Top 20 Sản phẩm tốt nhất" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
+                  <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
+                    <span class="px-2.5 py-1 rounded-full bg-white/90 text-[#0E253A] text-[13px] font-bold">Phóng to</span>
+                  </div>
                 </div>
               </div>
-              <p class="text-center text-sm sm:text-sm font-bold text-[#0E253A]">
+              <p class="text-center text-sm font-bold text-[#0E253A]">
                 Sản phẩm đạt Tiêu chuẩn quốc tế và vinh dự đạt giải thưởng chất lượng châu Á
               </p>
             </div>
 
             <!-- Group 3: Hoạt động vì cộng đồng -->
             <div class="space-y-3">
-              <div class="grid grid-cols-3 gap-3">
-                <div class="bg-white p-1.5 rounded-xl shadow-xs  aspect-[4/3] overflow-hidden group">
-                  <img src="assets/images/bangkhen/31.jpg" alt="Giấy khen Hội cứu trợ trẻ em tàn tật Việt Nam" class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-300">
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div class="bg-white p-2 rounded-2xl shadow-xs aspect-[4/3] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300" onclick="openCertModal(10)">
+                  <img src="assets/images/bangkhen/31.jpg" alt="Giấy khen Hội cứu trợ trẻ em tàn tật Việt Nam" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
+                  <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
+                    <span class="px-2.5 py-1 rounded-full bg-white/90 text-[#0E253A] text-[13px] font-bold">Phóng to</span>
+                  </div>
                 </div>
-                <div class="bg-white p-1.5 rounded-xl shadow-xs  aspect-[4/3] overflow-hidden group">
-                  <img src="assets/images/bangkhen/32.jpg" alt="Giấy khen Hội nạn nhân chất độc da cam / Dioxin" class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-300">
+                <div class="bg-white p-2 rounded-2xl shadow-xs aspect-[4/3] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300" onclick="openCertModal(11)">
+                  <img src="assets/images/bangkhen/32.jpg" alt="Giấy khen Hội nạn nhân chất độc da cam / Dioxin" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
+                  <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
+                    <span class="px-2.5 py-1 rounded-full bg-white/90 text-[#0E253A] text-[13px] font-bold">Phóng to</span>
+                  </div>
                 </div>
-                <div class="bg-white p-1.5 rounded-xl shadow-xs  aspect-[4/3] overflow-hidden group">
-                  <img src="assets/images/bangkhen/33.jpg" alt="Kỷ niệm chương Tấm lòng nhân ái" class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-300">
+                <div class="bg-white p-2 rounded-2xl shadow-xs aspect-[4/3] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300" onclick="openCertModal(12)">
+                  <img src="assets/images/bangkhen/33.jpg" alt="Kỷ niệm chương Tấm lòng nhân ái" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
+                  <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
+                    <span class="px-2.5 py-1 rounded-full bg-white/90 text-[#0E253A] text-[13px] font-bold">Phóng to</span>
+                  </div>
                 </div>
               </div>
-              <p class="text-center text-sm sm:text-sm font-bold text-[#0E253A]">
+              <p class="text-center text-sm font-bold text-[#0E253A]">
                 Tích cực tham gia hoạt động vì cộng đồng
               </p>
             </div>
@@ -972,7 +1035,7 @@
 
         </div>
 
-        <!-- Part B: Đối tác của chúng tôi (Image 2) -->
+        <!-- Part B: Đối tác của chúng tôi (Larger Logos & Infinite Marquee Moving Right to Left) -->
         <div class="pt-12 space-y-6">
           <div class="text-center space-y-2">
             <h3 class="text-2xl sm:text-3xl font-black text-[#0E253A] tracking-tight">
@@ -983,39 +1046,101 @@
             </p>
           </div>
 
-          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-9 gap-4 items-center">
-            <div class="bg-white p-3 rounded-2xl shadow-xs  flex items-center justify-center h-20 group hover:shadow-md transition-all">
-              <img src="assets/uploads/partners/partner_1.png" alt="Đối tác CARAS Eyewear" class="max-h-12 w-auto max-w-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300">
-            </div>
-            <div class="bg-white p-3 rounded-2xl shadow-xs  flex items-center justify-center h-20 group hover:shadow-md transition-all">
-              <img src="assets/uploads/partners/partner_2.png" alt="Đối tác LB Luxury Eyewear" class="max-h-12 w-auto max-w-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300">
-            </div>
-            <div class="bg-white p-3 rounded-2xl shadow-xs  flex items-center justify-center h-20 group hover:shadow-md transition-all">
-              <img src="assets/uploads/partners/partner_3.png" alt="Đối tác ZE Eyewear" class="max-h-12 w-auto max-w-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300">
-            </div>
-            <div class="bg-white p-3 rounded-2xl shadow-xs  flex items-center justify-center h-20 group hover:shadow-md transition-all">
-              <img src="assets/uploads/partners/partner_4.png" alt="Đối tác Mắt Kính Ngọc Sáng" class="max-h-12 w-auto max-w-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300">
-            </div>
-            <div class="bg-white p-3 rounded-2xl shadow-xs  flex items-center justify-center h-20 group hover:shadow-md transition-all">
-              <img src="assets/uploads/partners/partner_5.png" alt="Đối tác Mắt Kính Uy Tín" class="max-h-12 w-auto max-w-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300">
-            </div>
-            <div class="bg-white p-3 rounded-2xl shadow-xs  flex items-center justify-center h-20 group hover:shadow-md transition-all">
-              <img src="assets/uploads/partners/partner_6.png" alt="Đối tác Mắt Kính Phân Phối" class="max-h-12 w-auto max-w-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300">
-            </div>
-            <div class="bg-white p-3 rounded-2xl shadow-xs  flex items-center justify-center h-20 group hover:shadow-md transition-all">
-              <img src="assets/uploads/partners/partner_8.png" alt="Đối tác Mắt Kính Khúc Xạ" class="max-h-12 w-auto max-w-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300">
-            </div>
-            <div class="bg-white p-3 rounded-2xl shadow-xs  flex items-center justify-center h-20 group hover:shadow-md transition-all">
-              <img src="assets/uploads/partners/partner_9.png" alt="Đối tác Chuỗi Cửa Hàng Kính" class="max-h-12 w-auto max-w-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300">
-            </div>
-            <div class="bg-white p-3 rounded-2xl shadow-xs  flex items-center justify-center h-20 group hover:shadow-md transition-all">
-              <img src="assets/uploads/partners/partner_10.png" alt="Đối tác Nhãn Khoa Đối Tác" class="max-h-12 w-auto max-w-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300">
+          <!-- Infinite Marquee Moving from Right to Left slowly -->
+          <div class="relative w-full overflow-hidden py-4">
+            <!-- Left & Right Gradient Shadows -->
+            <div class="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-28 bg-gradient-to-r from-[#F5F5F7] to-transparent z-10"></div>
+            <div class="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-28 bg-gradient-to-l from-[#F5F5F7] to-transparent z-10"></div>
+
+            <div class="animate-marquee gap-6 items-center">
+              <!-- Set 1: 9 Large Partner Logos -->
+              <div class="bg-white px-8 py-5 rounded-2xl shadow-xs flex items-center justify-center h-24 sm:h-28 min-w-[200px] sm:min-w-[240px] group hover:shadow-md transition-all shrink-0">
+                <img src="assets/uploads/partners/partner_1.png" alt="Đối tác CARAS Eyewear" class="max-h-14 sm:max-h-16 w-auto max-w-[160px] object-contain grayscale group-hover:grayscale-0 transition-all duration-300">
+              </div>
+              <div class="bg-white px-8 py-5 rounded-2xl shadow-xs flex items-center justify-center h-24 sm:h-28 min-w-[200px] sm:min-w-[240px] group hover:shadow-md transition-all shrink-0">
+                <img src="assets/uploads/partners/partner_2.png" alt="Đối tác LB Luxury Eyewear" class="max-h-14 sm:max-h-16 w-auto max-w-[160px] object-contain grayscale group-hover:grayscale-0 transition-all duration-300">
+              </div>
+              <div class="bg-white px-8 py-5 rounded-2xl shadow-xs flex items-center justify-center h-24 sm:h-28 min-w-[200px] sm:min-w-[240px] group hover:shadow-md transition-all shrink-0">
+                <img src="assets/uploads/partners/partner_3.png" alt="Đối tác ZE Eyewear" class="max-h-14 sm:max-h-16 w-auto max-w-[160px] object-contain grayscale group-hover:grayscale-0 transition-all duration-300">
+              </div>
+              <div class="bg-white px-8 py-5 rounded-2xl shadow-xs flex items-center justify-center h-24 sm:h-28 min-w-[200px] sm:min-w-[240px] group hover:shadow-md transition-all shrink-0">
+                <img src="assets/uploads/partners/partner_4.png" alt="Đối tác Mắt Kính Ngọc Sáng" class="max-h-14 sm:max-h-16 w-auto max-w-[160px] object-contain grayscale group-hover:grayscale-0 transition-all duration-300">
+              </div>
+              <div class="bg-white px-8 py-5 rounded-2xl shadow-xs flex items-center justify-center h-24 sm:h-28 min-w-[200px] sm:min-w-[240px] group hover:shadow-md transition-all shrink-0">
+                <img src="assets/uploads/partners/partner_5.png" alt="Đối tác Mắt Kính Uy Tín" class="max-h-14 sm:max-h-16 w-auto max-w-[160px] object-contain grayscale group-hover:grayscale-0 transition-all duration-300">
+              </div>
+              <div class="bg-white px-8 py-5 rounded-2xl shadow-xs flex items-center justify-center h-24 sm:h-28 min-w-[200px] sm:min-w-[240px] group hover:shadow-md transition-all shrink-0">
+                <img src="assets/uploads/partners/partner_6.png" alt="Đối tác Mắt Kính Phân Phối" class="max-h-14 sm:max-h-16 w-auto max-w-[160px] object-contain grayscale group-hover:grayscale-0 transition-all duration-300">
+              </div>
+              <div class="bg-white px-8 py-5 rounded-2xl shadow-xs flex items-center justify-center h-24 sm:h-28 min-w-[200px] sm:min-w-[240px] group hover:shadow-md transition-all shrink-0">
+                <img src="assets/uploads/partners/partner_8.png" alt="Đối tác Mắt Kính Khúc Xạ" class="max-h-14 sm:max-h-16 w-auto max-w-[160px] object-contain grayscale group-hover:grayscale-0 transition-all duration-300">
+              </div>
+              <div class="bg-white px-8 py-5 rounded-2xl shadow-xs flex items-center justify-center h-24 sm:h-28 min-w-[200px] sm:min-w-[240px] group hover:shadow-md transition-all shrink-0">
+                <img src="assets/uploads/partners/partner_9.png" alt="Đối tác Chuỗi Cửa Hàng Kính" class="max-h-14 sm:max-h-16 w-auto max-w-[160px] object-contain grayscale group-hover:grayscale-0 transition-all duration-300">
+              </div>
+              <div class="bg-white px-8 py-5 rounded-2xl shadow-xs flex items-center justify-center h-24 sm:h-28 min-w-[200px] sm:min-w-[240px] group hover:shadow-md transition-all shrink-0">
+                <img src="assets/uploads/partners/partner_10.png" alt="Đối tác Nhãn Khoa Đối Tác" class="max-h-14 sm:max-h-16 w-auto max-w-[160px] object-contain grayscale group-hover:grayscale-0 transition-all duration-300">
+              </div>
+
+              <!-- Set 2: Duplicate for seamless infinite loop -->
+              <div class="bg-white px-8 py-5 rounded-2xl shadow-xs flex items-center justify-center h-24 sm:h-28 min-w-[200px] sm:min-w-[240px] group hover:shadow-md transition-all shrink-0">
+                <img src="assets/uploads/partners/partner_1.png" alt="Đối tác CARAS Eyewear" class="max-h-14 sm:max-h-16 w-auto max-w-[160px] object-contain grayscale group-hover:grayscale-0 transition-all duration-300">
+              </div>
+              <div class="bg-white px-8 py-5 rounded-2xl shadow-xs flex items-center justify-center h-24 sm:h-28 min-w-[200px] sm:min-w-[240px] group hover:shadow-md transition-all shrink-0">
+                <img src="assets/uploads/partners/partner_2.png" alt="Đối tác LB Luxury Eyewear" class="max-h-14 sm:max-h-16 w-auto max-w-[160px] object-contain grayscale group-hover:grayscale-0 transition-all duration-300">
+              </div>
+              <div class="bg-white px-8 py-5 rounded-2xl shadow-xs flex items-center justify-center h-24 sm:h-28 min-w-[200px] sm:min-w-[240px] group hover:shadow-md transition-all shrink-0">
+                <img src="assets/uploads/partners/partner_3.png" alt="Đối tác ZE Eyewear" class="max-h-14 sm:max-h-16 w-auto max-w-[160px] object-contain grayscale group-hover:grayscale-0 transition-all duration-300">
+              </div>
+              <div class="bg-white px-8 py-5 rounded-2xl shadow-xs flex items-center justify-center h-24 sm:h-28 min-w-[200px] sm:min-w-[240px] group hover:shadow-md transition-all shrink-0">
+                <img src="assets/uploads/partners/partner_4.png" alt="Đối tác Mắt Kính Ngọc Sáng" class="max-h-14 sm:max-h-16 w-auto max-w-[160px] object-contain grayscale group-hover:grayscale-0 transition-all duration-300">
+              </div>
+              <div class="bg-white px-8 py-5 rounded-2xl shadow-xs flex items-center justify-center h-24 sm:h-28 min-w-[200px] sm:min-w-[240px] group hover:shadow-md transition-all shrink-0">
+                <img src="assets/uploads/partners/partner_5.png" alt="Đối tác Mắt Kính Uy Tín" class="max-h-14 sm:max-h-16 w-auto max-w-[160px] object-contain grayscale group-hover:grayscale-0 transition-all duration-300">
+              </div>
+              <div class="bg-white px-8 py-5 rounded-2xl shadow-xs flex items-center justify-center h-24 sm:h-28 min-w-[200px] sm:min-w-[240px] group hover:shadow-md transition-all shrink-0">
+                <img src="assets/uploads/partners/partner_6.png" alt="Đối tác Mắt Kính Phân Phối" class="max-h-14 sm:max-h-16 w-auto max-w-[160px] object-contain grayscale group-hover:grayscale-0 transition-all duration-300">
+              </div>
+              <div class="bg-white px-8 py-5 rounded-2xl shadow-xs flex items-center justify-center h-24 sm:h-28 min-w-[200px] sm:min-w-[240px] group hover:shadow-md transition-all shrink-0">
+                <img src="assets/uploads/partners/partner_8.png" alt="Đối tác Mắt Kính Khúc Xạ" class="max-h-14 sm:max-h-16 w-auto max-w-[160px] object-contain grayscale group-hover:grayscale-0 transition-all duration-300">
+              </div>
+              <div class="bg-white px-8 py-5 rounded-2xl shadow-xs flex items-center justify-center h-24 sm:h-28 min-w-[200px] sm:min-w-[240px] group hover:shadow-md transition-all shrink-0">
+                <img src="assets/uploads/partners/partner_9.png" alt="Đối tác Chuỗi Cửa Hàng Kính" class="max-h-14 sm:max-h-16 w-auto max-w-[160px] object-contain grayscale group-hover:grayscale-0 transition-all duration-300">
+              </div>
+              <div class="bg-white px-8 py-5 rounded-2xl shadow-xs flex items-center justify-center h-24 sm:h-28 min-w-[200px] sm:min-w-[240px] group hover:shadow-md transition-all shrink-0">
+                <img src="assets/uploads/partners/partner_10.png" alt="Đối tác Nhãn Khoa Đối Tác" class="max-h-14 sm:max-h-16 w-auto max-w-[160px] object-contain grayscale group-hover:grayscale-0 transition-all duration-300">
+              </div>
             </div>
           </div>
         </div>
 
       </div>
     </section>
+
+    <!-- Certificate Lightbox Modal (Click to zoom with Next/Prev) -->
+    <div id="certLightbox" class="fixed inset-0 z-50 bg-[#071521]/95 backdrop-blur-md hidden items-center justify-center p-4 sm:p-8" onclick="closeCertModal()">
+      <button type="button" onclick="closeCertModal()" class="absolute top-5 right-5 sm:top-8 sm:right-8 w-11 h-11 rounded-full bg-white/10 hover:bg-white/25 text-white flex items-center justify-center transition-colors z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+
+      <button type="button" onclick="prevCert(event)" class="absolute left-3 sm:left-8 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/10 hover:bg-white/25 text-white flex items-center justify-center transition-all z-50 shadow-lg">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/></svg>
+      </button>
+
+      <button type="button" onclick="nextCert(event)" class="absolute right-3 sm:right-8 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/10 hover:bg-white/25 text-white flex items-center justify-center transition-all z-50 shadow-lg">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
+      </button>
+
+      <div class="max-w-4xl w-full flex flex-col items-center justify-center space-y-4 max-h-full" onclick="event.stopPropagation()">
+        <div class="relative max-h-[75vh] w-auto max-w-full rounded-2xl overflow-hidden bg-black/40 flex items-center justify-center p-2 shadow-2xl">
+          <img id="certLightboxImg" src="" alt="Chứng chỉ bằng khen Rocky Lens" class="max-h-[72vh] w-auto max-w-full object-contain rounded-xl shadow-lg transition-transform duration-300">
+        </div>
+        <div class="text-center space-y-1">
+          <div id="certLightboxTitle" class="text-base sm:text-lg font-bold text-white max-w-2xl px-4"></div>
+          <div id="certLightboxCounter" class="text-sm font-semibold text-teal-300"></div>
+        </div>
+      </div>
+    </div>
 
     <!-- ========================================================= -->
     <!-- SECTION 6 — FIND A STORE (B2C ACTION)                     -->

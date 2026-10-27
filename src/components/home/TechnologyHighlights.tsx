@@ -13,14 +13,14 @@ const techPillars = [
   {
     title: 'Công Nghệ Xử Lý Bề Mặt',
     badge: 'Phủ Chân Không Nano',
-    image: '/images/company/about-6.jpg',
-    description: 'Các lớp phủ tính năng hỗ trợ bảo vệ tròng kính trước trầy xước, giảm bám nước mưa, hạn chế bám bụi bẩn và giúp việc vệ sinh kính hằng ngày trở nên dễ dàng hơn.',
+    image: '/images/technologies/bui.png',
+    description: 'Các lớp phủ bề mặt chuyên biệt giúp hạn chế trầy xước trong quá trình lau chùi, trượt hạt nước mưa khi đi đường và giúp bạn dễ dàng làm sạch tròng kính.',
   },
   {
     title: 'Thiết Kế Quang Học Cá Nhân Hóa',
     badge: 'Gia Công KTS Freeform',
-    image: '/images/company/about-2.jpg',
-    description: 'Ứng dụng tính toán quang học kỹ thuật số để tối ưu hóa trường nhìn theo từng đơn kính và kiểu dáng gọng kính, mang lại tầm nhìn tự nhiên và êm dịu.',
+    image: '/images/technologies/do-kinh.jpg',
+    description: 'Công nghệ gia công kỹ thuật số tính toán mài vi điểm theo từng số độ và thông số gọng thực tế, mở rộng vùng nhìn rõ và giúp đôi mắt thích nghi tự nhiên hơn.',
   },
   {
     title: 'Quy Trình Kiểm Định Tiêu Chuẩn',
