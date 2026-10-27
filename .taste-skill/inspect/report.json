@@ -1,26 +1,27 @@
 {
  "url": "index.html",
- "at": "2026-10-27T02:34:02.505Z",
+ "at": "2026-10-27T02:58:19.204Z",
  "allow": [],
  "viewports": [
   {
    "width": 1440,
    "height": 900,
    "load": "load",
-   "screens": 8,
+   "screens": 9,
    "filled": [
     0.66,
     0.62,
     0.83,
-    0.68,
-    0.58,
-    0.73,
+    0.7,
+    0.61,
+    0.52,
+    0.77,
     1,
     1
    ],
    "motion": {
-    "elements": 14,
-    "css": 14,
+    "elements": 10,
+    "css": 10,
     "transitions": 0,
     "scripted": 0,
     "videos": 0,
@@ -32,10 +33,10 @@
      "h": 900
     },
     "page": {
-     "height": 6646,
-     "screens": 7.4,
-     "words": 1738,
-     "img": 10,
+     "height": 7345,
+     "screens": 8.2,
+     "words": 1759,
+     "img": 36,
      "video": 0,
      "canvas": 0,
      "svg": 2,
@@ -44,7 +45,7 @@
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 8,
+     "realPictures": 19,
      "videoCount": 0,
      "uiPictures": 0,
      "pictureSamples": [
@@ -55,7 +56,7 @@
       "sol_kinh_khoan_va_dap.png",
       "sol_da_trong.png",
       "sol_kiem_soat_can_thi.png",
-      "rocky_store_showcase.jpg"
+      "about-1.jpg"
      ],
      "blendText": 0,
      "sideScrollers": 0,
@@ -177,9 +178,9 @@
       "kind": "heading"
      },
      {
-      "text": "Hiểu rõ lựa chọn. An tâm hơn khi mua.",
-      "words": 9,
-      "chars": 37,
+      "text": "Rocky Canada Opticians",
+      "words": 3,
+      "chars": 22,
       "lines": 2,
       "size": 48,
       "vw": 3.3,
@@ -192,9 +193,30 @@
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.53,
-      "top": 3982,
+      "widthRatio": 0.35,
+      "top": 4122,
       "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Đối tác của chúng tôi",
+      "words": 5,
+      "chars": 21,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 4953,
+      "tag": "h3",
       "kind": "heading"
      },
      {
@@ -214,7 +236,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.53,
-      "top": 4582,
+      "top": 5281,
       "tag": "h2",
       "kind": "heading"
      },
@@ -235,7 +257,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.4,
-      "top": 5046,
+      "top": 5745,
       "tag": "div",
       "kind": "heading"
      },
@@ -256,17 +278,17 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.5,
-      "top": 5406,
+      "top": 6105,
       "tag": "h2",
       "kind": "heading"
      }
     ],
     "headingSummary": {
-     "count": 8,
+     "count": 9,
      "maxLines": 2,
      "over2Lines": 0,
      "statements": 0,
-     "centered": 0,
+     "centered": 1,
      "medianWords": 8,
      "mixedFontHeadings": 0
     },
@@ -280,6 +302,7 @@
      ],
      "familyCount": 1,
      "sizes": [
+      13,
       14,
       16,
       18,
@@ -289,7 +312,7 @@
       48,
       72
      ],
-     "sizeCount": 8,
+     "sizeCount": 9,
      "notLoaded": [],
      "body": {
       "font": "SF Pro Display",
@@ -299,7 +322,7 @@
       "tracking": 0,
       "contrast": 7.6
      },
-     "measureChars": 85,
+     "measureChars": 64,
      "max": {
       "size": 72,
       "vw": 5,
@@ -314,7 +337,7 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.07,
+     "centerShare": 0.1,
      "smallText": 0
     },
     "eyebrows": [],
@@ -348,7 +371,7 @@
       },
       {
        "color": "#0e253a",
-       "top": 5326,
+       "top": 6025,
        "hsl": {
         "h": 209,
         "s": 0.61,
@@ -357,7 +380,7 @@
       },
       {
        "color": "#071521",
-       "top": 6190,
+       "top": 6889,
        "hsl": {
         "h": 208,
         "s": 0.65,
@@ -367,24 +390,24 @@
      ],
      "textColors": [
       {
-       "color": "#334155",
-       "share": 0.31
-      },
-      {
        "color": "#475569",
-       "share": 0.25
+       "share": 0.34
       },
       {
-       "color": "#cbd5e1",
-       "share": 0.11
+       "color": "#334155",
+       "share": 0.29
       },
       {
        "color": "#0e253a",
-       "share": 0.1
+       "share": 0.16
       },
       {
        "color": "#e2e8f0",
        "share": 0.09
+      },
+      {
+       "color": "#5eead4",
+       "share": 0.03
       }
      ],
      "button": {
@@ -425,11 +448,11 @@
      "hairlineSamples": [],
      "outlinedBoxes": 0,
      "dashed": 0,
-     "blurred": 1,
-     "roundedBoxes": 28,
+     "blurred": 5,
+     "roundedBoxes": 35,
      "boxRadius": 24,
      "squareMedia": 1,
-     "roundedMedia": 7,
+     "roundedMedia": 14,
      "mediaRadius": 16,
      "textShadow": 0,
      "cardRows": [
@@ -452,22 +475,16 @@
        "top": 3488
       },
       {
-       "count": 4,
-       "iconTopped": false,
-       "rounded": true,
-       "top": 4194
-      },
-      {
        "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 4746
+       "top": 5445
       },
       {
        "count": 4,
        "iconTopped": false,
        "rounded": true,
-       "top": 5666
+       "top": 6365
       }
      ]
     },
@@ -493,10 +510,10 @@
      "w": 1440,
      "h": 900
     },
-    "pageH": 6646,
+    "pageH": 7345,
     "margins": {
      "left": 73,
-     "right": 104
+     "right": 94
     },
     "sections": [
      {
@@ -572,19 +589,19 @@
       "sel": "section#cong-nghe.py-20.px-6",
       "tag": "section",
       "top": 3244,
-      "height": 658,
-      "words": 185,
-      "media": 0,
-      "middle": 83,
+      "height": 798,
+      "words": 202,
+      "media": 4,
+      "middle": 72,
       "heading": {
        "text": "Công nghệ và tiêu chuẩn chất lượng",
        "size": 48,
        "tag": "h2"
       },
       "left": 73,
-      "right": 115,
+      "right": 112,
       "textLeft": 73,
-      "textRight": 115,
+      "textRight": 121,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -594,20 +611,20 @@
      {
       "sel": "section#vi-sao-rocky.py-20.px-6",
       "tag": "section",
-      "top": 3902,
-      "height": 600,
-      "words": 177,
-      "media": 0,
-      "middle": 87,
+      "top": 4042,
+      "height": 1159,
+      "words": 182,
+      "media": 7,
+      "middle": 0,
       "heading": {
-       "text": "Hiểu rõ lựa chọn. An tâm hơn khi mua.",
+       "text": "Rocky Canada Opticians",
        "size": 48,
        "tag": "h2"
       },
       "left": 73,
-      "right": 117,
+      "right": 92,
       "textLeft": 73,
-      "textRight": 117,
+      "textRight": 207,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -617,7 +634,7 @@
      {
       "sel": "section#tim-dai-ly.py-20.px-6",
       "tag": "section",
-      "top": 4502,
+      "top": 5201,
       "height": 824,
       "words": 200,
       "media": 0,
@@ -640,7 +657,7 @@
      {
       "sel": "section#doi-tac.py-20.px-6",
       "tag": "section",
-      "top": 5326,
+      "top": 6025,
       "height": 864,
       "words": 223,
       "media": 1,
@@ -661,13 +678,13 @@
       "pinned": false
      },
      {
-      "sel": "footer.bg-[#071521].text-slate-300",
+      "sel": "footer.bg-[#071521].text-slate-600",
       "tag": "footer",
-      "top": 6190,
+      "top": 6889,
       "height": 456,
       "words": 170,
       "media": 0,
-      "middle": 121,
+      "middle": 115,
       "heading": null,
       "left": 73,
       "right": 88,
@@ -693,11 +710,11 @@
     "edges": [
      {
       "x": 73,
-      "n": 16
+      "n": 17
      },
      {
       "x": 93,
-      "n": 10
+      "n": 8
      },
      {
       "x": 538,
@@ -708,23 +725,15 @@
       "n": 6
      },
      {
-      "x": 423,
-      "n": 4
-     },
-     {
-      "x": 749,
-      "n": 4
-     },
-     {
-      "x": 1075,
-      "n": 4
-     },
-     {
       "x": 105,
       "n": 3
      },
      {
       "x": 129,
+      "n": 2
+     },
+     {
+      "x": 423,
       "n": 2
      },
      {
@@ -734,9 +743,17 @@
      {
       "x": 729,
       "n": 2
+     },
+     {
+      "x": 749,
+      "n": 2
+     },
+     {
+      "x": 1075,
+      "n": 2
      }
     ],
-    "leftBlocks": 59,
+    "leftBlocks": 52,
     "bodySize": 16,
     "stage": false,
     "explains": true,
@@ -756,22 +773,23 @@
    "width": 768,
    "height": 1024,
    "load": "load",
-   "screens": 10,
+   "screens": 11,
    "filled": [
-    0.56,
-    0.59,
-    0.81,
-    0.83,
-    0.74,
-    0.78,
-    0.61,
-    0.94,
+    0.55,
+    0.65,
+    0.77,
+    0.88,
+    0.79,
+    0.84,
+    0.71,
+    0.67,
+    0.86,
     1,
     1
    ],
    "motion": {
-    "elements": 14,
-    "css": 14,
+    "elements": 10,
+    "css": 10,
     "transitions": 0,
     "scripted": 0,
     "videos": 0,
@@ -783,10 +801,10 @@
      "h": 1024
     },
     "page": {
-     "height": 9528,
-     "screens": 9.3,
-     "words": 1719,
-     "img": 10,
+     "height": 10794,
+     "screens": 10.5,
+     "words": 1740,
+     "img": 36,
      "video": 0,
      "canvas": 0,
      "svg": 2,
@@ -795,7 +813,7 @@
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 8,
+     "realPictures": 19,
      "videoCount": 0,
      "uiPictures": 0,
      "pictureSamples": [
@@ -806,7 +824,7 @@
       "sol_kinh_khoan_va_dap.png",
       "sol_da_trong.png",
       "sol_kiem_soat_can_thi.png",
-      "rocky_store_showcase.jpg"
+      "about-1.jpg"
      ],
      "blendText": 0,
      "sideScrollers": 0,
@@ -831,7 +849,7 @@
      "align": "left",
      "position": "center",
      "widthRatio": 0.92,
-     "top": 184,
+     "top": 208,
      "tag": "h1",
      "kind": "heading"
     },
@@ -860,7 +878,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 184,
+      "top": 208,
       "tag": "h1",
       "kind": "heading"
      },
@@ -881,7 +899,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 1434,
+      "top": 1458,
       "tag": "h2",
       "kind": "heading"
      },
@@ -902,7 +920,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 2066,
+      "top": 2090,
       "tag": "h2",
       "kind": "heading"
      },
@@ -923,14 +941,14 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 4864,
+      "top": 4888,
       "tag": "h2",
       "kind": "heading"
      },
      {
-      "text": "Hiểu rõ lựa chọn. An tâm hơn khi mua.",
-      "words": 9,
-      "chars": 37,
+      "text": "Rocky Canada Opticians",
+      "words": 3,
+      "chars": 22,
       "lines": 1,
       "size": 36,
       "vw": 4.7,
@@ -944,8 +962,29 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 5676,
+      "top": 6080,
       "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Đối tác của chúng tôi",
+      "words": 5,
+      "chars": 21,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 7314,
+      "tag": "h3",
       "kind": "heading"
      },
      {
@@ -965,7 +1004,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 6472,
+      "top": 7738,
       "tag": "h2",
       "kind": "heading"
      },
@@ -986,7 +1025,7 @@
       "align": "center",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 7088,
+      "top": 8354,
       "tag": "div",
       "kind": "heading"
      },
@@ -1007,17 +1046,17 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 7552,
+      "top": 8818,
       "tag": "h2",
       "kind": "heading"
      }
     ],
     "headingSummary": {
-     "count": 8,
+     "count": 9,
      "maxLines": 2,
      "over2Lines": 0,
      "statements": 0,
-     "centered": 1,
+     "centered": 2,
      "medianWords": 8,
      "mixedFontHeadings": 0
     },
@@ -1031,6 +1070,7 @@
      ],
      "familyCount": 1,
      "sizes": [
+      13,
       14,
       16,
       18,
@@ -1040,7 +1080,7 @@
       36,
       60
      ],
-     "sizeCount": 8,
+     "sizeCount": 9,
      "notLoaded": [],
      "body": {
       "font": "SF Pro Display",
@@ -1050,7 +1090,7 @@
       "tracking": 0,
       "contrast": 7.6
      },
-     "measureChars": 78,
+     "measureChars": 88,
      "max": {
       "size": 60,
       "vw": 7.8,
@@ -1065,7 +1105,7 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.09,
+     "centerShare": 0.13,
      "smallText": 0
     },
     "eyebrows": [],
@@ -1081,7 +1121,7 @@
      "sectionBgs": [
       {
        "color": "#f5f5f7",
-       "top": 120,
+       "top": 144,
        "hsl": {
         "h": 240,
         "s": 0.11,
@@ -1090,7 +1130,7 @@
       },
       {
        "color": "#ffffff",
-       "top": 738,
+       "top": 762,
        "hsl": {
         "h": 0,
         "s": 0,
@@ -1099,7 +1139,7 @@
       },
       {
        "color": "#0e253a",
-       "top": 7472,
+       "top": 8738,
        "hsl": {
         "h": 209,
         "s": 0.61,
@@ -1108,7 +1148,7 @@
       },
       {
        "color": "#071521",
-       "top": 8816,
+       "top": 10082,
        "hsl": {
         "h": 208,
         "s": 0.65,
@@ -1118,24 +1158,24 @@
      ],
      "textColors": [
       {
-       "color": "#334155",
-       "share": 0.31
-      },
-      {
        "color": "#475569",
-       "share": 0.25
+       "share": 0.34
       },
       {
-       "color": "#cbd5e1",
-       "share": 0.11
+       "color": "#334155",
+       "share": 0.3
       },
       {
        "color": "#0e253a",
-       "share": 0.1
+       "share": 0.16
       },
       {
        "color": "#e2e8f0",
        "share": 0.09
+      },
+      {
+       "color": "#5eead4",
+       "share": 0.03
       }
      ],
      "button": {
@@ -1176,11 +1216,11 @@
      "hairlineSamples": [],
      "outlinedBoxes": 0,
      "dashed": 0,
-     "blurred": 1,
-     "roundedBoxes": 28,
+     "blurred": 5,
+     "roundedBoxes": 35,
      "boxRadius": 24,
      "squareMedia": 1,
-     "roundedMedia": 7,
+     "roundedMedia": 14,
      "mediaRadius": 16,
      "textShadow": 0,
      "cardRows": [
@@ -1188,44 +1228,38 @@
        "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 516
+       "top": 540
       },
       {
        "count": 6,
        "iconTopped": false,
        "rounded": true,
-       "top": 2238
+       "top": 2262
       },
       {
        "count": 4,
        "iconTopped": false,
        "rounded": true,
-       "top": 5020
-      },
-      {
-       "count": 4,
-       "iconTopped": false,
-       "rounded": true,
-       "top": 5832
+       "top": 5044
       },
       {
        "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 6628
+       "top": 7894
       },
       {
        "count": 4,
        "iconTopped": false,
        "rounded": true,
-       "top": 7784
+       "top": 9050
       }
      ]
     },
     "heroMedia": [
      {
       "type": "img",
-      "ratio": 0.13
+      "ratio": 0.11
      }
     ],
     "nav": {
@@ -1244,16 +1278,16 @@
      "w": 768,
      "h": 1024
     },
-    "pageH": 9528,
+    "pageH": 10794,
     "margins": {
      "left": 24,
-     "right": 52
+     "right": 45
     },
     "sections": [
      {
       "sel": "section.pt-12.sm:pt-16",
       "tag": "section",
-      "top": 120,
+      "top": 144,
       "height": 1234,
       "words": 110,
       "media": 1,
@@ -1276,7 +1310,7 @@
      {
       "sel": "section#triet-ly.py-20.px-6",
       "tag": "section",
-      "top": 1354,
+      "top": 1378,
       "height": 632,
       "words": 99,
       "media": 0,
@@ -1299,7 +1333,7 @@
      {
       "sel": "section#trong-kinh.py-20.px-6",
       "tag": "section",
-      "top": 1986,
+      "top": 2010,
       "height": 2798,
       "words": 393,
       "media": 6,
@@ -1322,10 +1356,10 @@
      {
       "sel": "section#cong-nghe.py-20.px-6",
       "tag": "section",
-      "top": 4784,
-      "height": 812,
-      "words": 185,
-      "media": 0,
+      "top": 4808,
+      "height": 1192,
+      "words": 202,
+      "media": 4,
       "middle": 0,
       "heading": {
        "text": "Công nghệ và tiêu chuẩn chất lượng",
@@ -1345,20 +1379,20 @@
      {
       "sel": "section#vi-sao-rocky.py-20.px-6",
       "tag": "section",
-      "top": 5596,
-      "height": 796,
-      "words": 177,
-      "media": 0,
+      "top": 6000,
+      "height": 1659,
+      "words": 182,
+      "media": 7,
       "middle": 0,
       "heading": {
-       "text": "Hiểu rõ lựa chọn. An tâm hơn khi mua.",
+       "text": "Rocky Canada Opticians",
        "size": 36,
        "tag": "h2"
       },
       "left": 24,
-      "right": 56,
+      "right": 42,
       "textLeft": 24,
-      "textRight": 56,
+      "textRight": 42,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1368,7 +1402,7 @@
      {
       "sel": "section#tim-dai-ly.py-20.px-6",
       "tag": "section",
-      "top": 6392,
+      "top": 7658,
       "height": 1080,
       "words": 200,
       "media": 0,
@@ -1391,7 +1425,7 @@
      {
       "sel": "section#doi-tac.py-20.px-6",
       "tag": "section",
-      "top": 7472,
+      "top": 8738,
       "height": 1344,
       "words": 223,
       "media": 1,
@@ -1412,18 +1446,18 @@
       "pinned": false
      },
      {
-      "sel": "footer.bg-[#071521].text-slate-300",
+      "sel": "footer.bg-[#071521].text-slate-600",
       "tag": "footer",
-      "top": 8816,
+      "top": 10082,
       "height": 712,
       "words": 170,
       "media": 0,
-      "middle": 13,
+      "middle": 5,
       "heading": null,
       "left": 24,
-      "right": 52,
+      "right": 44,
       "textLeft": 24,
-      "textRight": 52,
+      "textRight": 44,
       "fullBleed": false,
       "footer": true,
       "hero": false,
@@ -1436,7 +1470,7 @@
      {
       "text": "Rõ tầm nhìn, trọn cuộc sống.",
       "size": 60,
-      "top": 184,
+      "top": 208,
       "firstScreen": true
      }
     ],
@@ -1444,18 +1478,18 @@
     "edges": [
      {
       "x": 24,
-      "n": 16
+      "n": 17
      },
      {
       "x": 44,
-      "n": 16
-     },
-     {
-      "x": 417,
-      "n": 10
+      "n": 12
      },
      {
       "x": 405,
+      "n": 6
+     },
+     {
+      "x": 421,
       "n": 6
      },
      {
@@ -1479,7 +1513,7 @@
       "n": 2
      }
     ],
-    "leftBlocks": 58,
+    "leftBlocks": 51,
     "bodySize": 16,
     "stage": false,
     "explains": true,
@@ -1505,13 +1539,13 @@
     0.92,
     0.92,
     0.77,
-    0.75,
-    0.73,
-    0.75
+    0.71,
+    0.74,
+    0.7
    ],
    "motion": {
-    "elements": 14,
-    "css": 14,
+    "elements": 10,
+    "css": 10,
     "transitions": 0,
     "scripted": 0,
     "videos": 0,
@@ -1523,10 +1557,10 @@
      "h": 844
     },
     "page": {
-     "height": 14737,
-     "screens": 17.5,
-     "words": 1712,
-     "img": 10,
+     "height": 16624,
+     "screens": 19.7,
+     "words": 1733,
+     "img": 36,
      "video": 0,
      "canvas": 0,
      "svg": 2,
@@ -1535,7 +1569,7 @@
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 8,
+     "realPictures": 16,
      "videoCount": 0,
      "uiPictures": 0,
      "pictureSamples": [
@@ -1546,7 +1580,7 @@
       "sol_kinh_khoan_va_dap.png",
       "sol_da_trong.png",
       "sol_kiem_soat_can_thi.png",
-      "rocky_store_showcase.jpg"
+      "about-1.jpg"
      ],
      "blendText": 0,
      "sideScrollers": 0,
@@ -1794,10 +1828,10 @@
       "kind": "heading"
      },
      {
-      "text": "Hiểu rõ lựa chọn. An tâm hơn khi mua.",
-      "words": 9,
-      "chars": 37,
-      "lines": 2,
+      "text": "Rocky Canada Opticians",
+      "words": 3,
+      "chars": 22,
+      "lines": 1,
       "size": 30,
       "vw": 7.7,
       "font": "SF Pro Display",
@@ -1810,8 +1844,29 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 8693,
+      "top": 9421,
       "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Đối tác của chúng tôi",
+      "words": 5,
+      "chars": 21,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": -0.025,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 11214,
+      "tag": "h3",
       "kind": "heading"
      },
      {
@@ -1831,7 +1886,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 10055,
+      "top": 11942,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1852,7 +1907,7 @@
       "align": "center",
       "position": "center",
       "widthRatio": 0.71,
-      "top": 11107,
+      "top": 12994,
       "tag": "div",
       "kind": "heading"
      },
@@ -1873,17 +1928,17 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 11727,
+      "top": 13614,
       "tag": "h2",
       "kind": "heading"
      }
     ],
     "headingSummary": {
-     "count": 14,
+     "count": 15,
      "maxLines": 2,
      "over2Lines": 0,
      "statements": 0,
-     "centered": 1,
+     "centered": 2,
      "medianWords": 7,
      "mixedFontHeadings": 0
     },
@@ -1897,6 +1952,7 @@
      ],
      "familyCount": 1,
      "sizes": [
+      13,
       14,
       16,
       18,
@@ -1905,7 +1961,7 @@
       30,
       36
      ],
-     "sizeCount": 7,
+     "sizeCount": 8,
      "notLoaded": [],
      "body": {
       "font": "SF Pro Display",
@@ -1915,7 +1971,7 @@
       "tracking": 0,
       "contrast": 7.6
      },
-     "measureChars": 38,
+     "measureChars": 43,
      "max": {
       "size": 36,
       "vw": 9.2,
@@ -1930,7 +1986,7 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.09,
+     "centerShare": 0.13,
      "smallText": 0
     },
     "eyebrows": [],
@@ -1964,7 +2020,7 @@
       },
       {
        "color": "#0e253a",
-       "top": 11647,
+       "top": 13534,
        "hsl": {
         "h": 209,
         "s": 0.61,
@@ -1973,7 +2029,7 @@
       },
       {
        "color": "#163652",
-       "top": 12967,
+       "top": 14854,
        "hsl": {
         "h": 208,
         "s": 0.58,
@@ -1982,7 +2038,7 @@
       },
       {
        "color": "#071521",
-       "top": 13507,
+       "top": 15394,
        "hsl": {
         "h": 208,
         "s": 0.65,
@@ -1992,24 +2048,24 @@
      ],
      "textColors": [
       {
-       "color": "#334155",
-       "share": 0.31
-      },
-      {
        "color": "#475569",
-       "share": 0.25
+       "share": 0.34
       },
       {
-       "color": "#cbd5e1",
-       "share": 0.11
+       "color": "#334155",
+       "share": 0.3
       },
       {
        "color": "#0e253a",
-       "share": 0.1
+       "share": 0.16
       },
       {
        "color": "#e2e8f0",
        "share": 0.09
+      },
+      {
+       "color": "#5eead4",
+       "share": 0.03
       }
      ],
      "button": {
@@ -2050,11 +2106,11 @@
      "hairlineSamples": [],
      "outlinedBoxes": 0,
      "dashed": 0,
-     "blurred": 1,
-     "roundedBoxes": 29,
+     "blurred": 5,
+     "roundedBoxes": 42,
      "boxRadius": 24,
      "squareMedia": 1,
-     "roundedMedia": 7,
+     "roundedMedia": 11,
      "mediaRadius": 16,
      "textShadow": 0,
      "cardRows": [
@@ -2077,22 +2133,16 @@
        "top": 7605
       },
       {
-       "count": 4,
-       "iconTopped": false,
-       "rounded": true,
-       "top": 8937
-      },
-      {
        "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 10271
+       "top": 12158
       },
       {
        "count": 4,
        "iconTopped": false,
        "rounded": true,
-       "top": 12067
+       "top": 13954
       }
      ]
     },
@@ -2113,7 +2163,7 @@
      "w": 390,
      "h": 844
     },
-    "pageH": 14737,
+    "pageH": 16624,
     "margins": {
      "left": 24,
      "right": 27
@@ -2192,9 +2242,9 @@
       "sel": "section#cong-nghe.py-20.px-6",
       "tag": "section",
       "top": 7289,
-      "height": 1324,
-      "words": 185,
-      "media": 0,
+      "height": 2052,
+      "words": 202,
+      "media": 4,
       "middle": 0,
       "heading": {
        "text": "Công nghệ và tiêu chuẩn chất lượng",
@@ -2214,20 +2264,20 @@
      {
       "sel": "section#vi-sao-rocky.py-20.px-6",
       "tag": "section",
-      "top": 8613,
-      "height": 1362,
-      "words": 177,
-      "media": 0,
+      "top": 9341,
+      "height": 2521,
+      "words": 182,
+      "media": 4,
       "middle": 0,
       "heading": {
-       "text": "Hiểu rõ lựa chọn. An tâm hơn khi mua.",
+       "text": "Rocky Canada Opticians",
        "size": 30,
        "tag": "h2"
       },
       "left": 24,
-      "right": 29,
+      "right": 25,
       "textLeft": 24,
-      "textRight": 29,
+      "textRight": 25,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -2237,7 +2287,7 @@
      {
       "sel": "section#tim-dai-ly.py-20.px-6",
       "tag": "section",
-      "top": 9975,
+      "top": 11862,
       "height": 1672,
       "words": 200,
       "media": 0,
@@ -2260,7 +2310,7 @@
      {
       "sel": "section#doi-tac.py-20.px-6",
       "tag": "section",
-      "top": 11647,
+      "top": 13534,
       "height": 1860,
       "words": 223,
       "media": 1,
@@ -2281,18 +2331,18 @@
       "pinned": false
      },
      {
-      "sel": "footer.bg-[#071521].text-slate-300",
+      "sel": "footer.bg-[#071521].text-slate-600",
       "tag": "footer",
-      "top": 13507,
+      "top": 15394,
       "height": 1230,
       "words": 170,
       "media": 0,
       "middle": 0,
       "heading": null,
       "left": 24,
-      "right": 25,
+      "right": 27,
       "textLeft": 24,
-      "textRight": 25,
+      "textRight": 27,
       "fullBleed": false,
       "footer": true,
       "hero": false,
@@ -2313,18 +2363,18 @@
     "edges": [
      {
       "x": 44,
-      "n": 32
+      "n": 24
      },
      {
       "x": 24,
-      "n": 16
+      "n": 17
      },
      {
       "x": 56,
       "n": 10
      }
     ],
-    "leftBlocks": 58,
+    "leftBlocks": 51,
     "bodySize": 16,
     "stage": false,
     "explains": true,
@@ -2339,9 +2389,20 @@
  "findings": [
   {
    "level": "WARN",
+   "id": "glass",
+   "width": 1440,
+   "message": "5 backdrop-blur surfaces.",
+   "fix": "One blurred sticky bar at most; glass cards are a tell.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
    "id": "card-rows",
    "width": 1440,
-   "message": "6 rows of identical boxed cards.",
+   "message": "5 rows of identical boxed cards.",
    "fix": "Vary the composition; not every section is a card grid.",
    "alsoAt": [
     768,
@@ -2359,7 +2420,7 @@
    "level": "WARN",
    "id": "off-centre",
    "width": 1440,
-   "message": "The margins differ: 73px on the left, 104px on the right, at 1440px.",
+   "message": "The margins differ: 73px on the left, 94px on the right, at 1440px.",
    "fix": "Put the navigation and the content on one pair of margins; check for padding on one side only, a scrollbar gutter, or a header on another inset than the page.",
    "alsoAt": [
     768
@@ -2369,14 +2430,14 @@
    "level": "WARN",
    "id": "ragged-edges",
    "width": 1440,
-   "message": "Left-aligned text starts at 11 different lines (73px, 93px, 538px, 975px, 423px, 749px, 1075px); the three most used hold only 54% of it.",
+   "message": "Left-aligned text starts at 11 different lines (73px, 93px, 538px, 975px, 105px, 129px, 423px); the three most used hold only 60% of it.",
    "fix": "Pick two or three anchor lines from the grid and start every heading and paragraph on one of them."
   },
   {
    "level": "WARN",
    "id": "still-page",
    "width": 1440,
-   "message": "Little motion: 14 element(s) moved while the page loaded and scrolled.",
+   "message": "Little motion: 10 element(s) moved while the page loaded and scrolled.",
    "fix": "Give every section an entrance for its parts (not one fade of the whole block) and add one moving picture: a looping clip or a slow move on a photograph."
   }
  ],
@@ -2387,7 +2448,8 @@
    "fold": "C:\\Users\\phong\\Desktop\\Rocky\\.taste-skill\\inspect\\desktop-fold.jpg",
    "pages": [
     "C:\\Users\\phong\\Desktop\\Rocky\\.taste-skill\\inspect\\desktop-page-01.jpg",
-    "C:\\Users\\phong\\Desktop\\Rocky\\.taste-skill\\inspect\\desktop-page-02.jpg"
+    "C:\\Users\\phong\\Desktop\\Rocky\\.taste-skill\\inspect\\desktop-page-02.jpg",
+    "C:\\Users\\phong\\Desktop\\Rocky\\.taste-skill\\inspect\\desktop-page-03.jpg"
    ],
    "film": []
   },

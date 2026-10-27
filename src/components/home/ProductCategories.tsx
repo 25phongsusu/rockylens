@@ -1,80 +1,86 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowRight, ChevronRight, Eye, ShieldCheck, Sparkles } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 const discoverySolutions = [
   {
     id: 'driveshield',
     name: 'Rocky DriveShield Ruby AR',
-    tag: 'Lái Xe Ban Đêm & Trời Mưa',
+    tag: 'Lái Xe Ban Đêm & Mưa',
     categorySlug: 'kinh-lai-xe',
-    tagColor: 'text-rose-700 bg-rose-50 border-rose-200',
-    index: 'Chiết suất 1.56 / 1.60',
+    index: 'Chiết suất 1.60 & 1.67',
     image: '/images/real/driveshield_night.jpg',
     heading: 'Hỗ trợ tầm nhìn khi lái xe ban đêm và trời mưa',
     description: 'Hạn chế cảm giác chói lóa từ đèn xe ngược chiều và tăng độ tương phản khi mặt đường ướt hoặc sương mù.',
-    techSpec: 'Lớp phủ phản xạ chuyên biệt cho quang phổ đèn xe ban đêm, tối ưu độ trong suốt mặt đường.',
+    opticalFeature: 'Quang phổ ấm hạn chế chói',
+    coating: 'Kỵ nước, trượt hạt mưa',
+    durability: 'Chống nứt vỡ và dẻo dai',
   },
   {
     id: 'bluecut',
     name: 'Rocky BlueCut UV420 Defender',
     tag: 'Văn Phòng & Thiết Bị Số',
     categorySlug: 'loc-anh-sang-xanh',
-    tagColor: 'text-teal-700 bg-teal-50 border-teal-200',
-    index: 'Chiết suất 1.56 / 1.60 / 1.67 / 1.74',
+    index: 'Chiết suất 1.56 - 1.74',
     image: '/images/products/category-solution-1.png',
     heading: 'Dễ chịu hơn khi làm việc cùng máy tính và điện thoại',
     description: 'Lựa chọn phù hợp khi làm việc với thiết bị số nhiều giờ, giúp mắt dễ chịu hơn mà vẫn giữ trọn màu sắc tự nhiên.',
-    techSpec: 'Công nghệ ngăn chọn lọc năng lượng ánh sáng bước sóng ngắn từ lõi phôi kết hợp màng lọc nano.',
+    opticalFeature: 'Ngăn ánh sáng xanh tím',
+    coating: 'Nano Sapphire chống trầy',
+    durability: 'Chịu va đập chuẩn quốc tế',
   },
   {
     id: 'photochromic',
     name: 'Rocky Fast-Change Spin-Coat',
     tag: 'Đổi Màu Ngoài Trời',
     categorySlug: 'trong-doi-mau',
-    tagColor: 'text-amber-700 bg-amber-50 border-amber-200',
     index: 'Chiết suất 1.56 / 1.60 / 1.67',
     image: '/images/products/category-solution-8.png',
     heading: 'Tự động đổi màu theo cường độ ánh sáng mặt trời',
     description: 'Tròng kính tự động đậm màu khi ra ngoài trời nắng và trong suốt trở lại khi bạn bước vào bóng râm, tiện lợi mọi lúc.',
-    techSpec: 'Lớp phủ phân tử quang học ly tâm Spin-Coating đồng đều trên bề mặt tròng kính.',
+    opticalFeature: 'Đổi màu theo tia UV',
+    coating: 'Phủ ly tâm Spin-Coating',
+    durability: 'Bền bỉ hoạt động ngoài trời',
   },
   {
     id: 'ultra-thin',
     name: 'Rocky Ultra-Thin Aspheric 1.74',
     tag: 'Cận Nặng & Gọng Mỏng',
     categorySlug: 'trong-don-trong',
-    tagColor: 'text-purple-700 bg-purple-50 border-purple-200',
-    index: 'Chiết suất cao 1.67 / 1.74',
+    index: 'Siêu mỏng 1.67 & 1.74',
     image: '/images/company/about-6.jpg',
     heading: 'Mỏng nhẹ hơn cho người có độ khúc xạ cao',
     description: 'Tối ưu về độ mỏng và độ dẻo dai cao, giữ dáng kính thanh thoát và mở rộng sự lựa chọn cho các kiểu gọng khoan ốc hoặc nửa viền.',
-    techSpec: 'Thiết kế bề mặt phi cầu Aspheric chuẩn xác, hạn chế hiện tượng thu nhỏ mắt qua kính.',
+    opticalFeature: 'Phi cầu giảm biến dạng rìa',
+    coating: 'Siêu trượt nước và bụi bẩn',
+    durability: 'Dẻo dai cho gọng khoan ốc',
   },
   {
     id: 'defocus',
     name: 'Rocky Defocus 360° MyoControl',
     tag: 'Chăm Sóc Thị Lực Trẻ Em',
     categorySlug: 'kiem-soat-can-thi',
-    tagColor: 'text-emerald-700 bg-emerald-50 border-emerald-200',
-    index: 'Vật liệu an toàn chịu lực',
+    index: 'Phôi an toàn chịu lực',
     image: '/images/real/myopia_defocus_diagram.png',
     heading: 'Đồng hành cùng thị lực học đường',
     description: 'Thiết kế quang học hỗ trợ chăm sóc thị lực cho học sinh, sinh viên trong giai đoạn học tập với cường độ cao.',
-    techSpec: 'Công nghệ phân bổ tiêu cự chu biên quang học, đồng hành cùng định kỳ đo khám của bác sĩ nhãn khoa.',
+    opticalFeature: 'Phân bổ tiêu cự chu biên',
+    coating: 'Chống bám bẩn, dễ vệ sinh',
+    durability: 'Chống va đập an toàn học đường',
   },
   {
     id: 'freeform',
     name: 'CanRx Ultraview Freeform',
     tag: 'Đa Tròng Cho Người Trên 40',
     categorySlug: 'trong-da-trong',
-    tagColor: 'text-blue-700 bg-blue-50 border-blue-200',
-    index: 'Cá nhân hóa kỹ thuật số',
+    index: 'Đặt mài Rx cá nhân hóa',
     image: '/images/products/category-solution-2.png',
     heading: 'Chuyển tiếp êm dịu giữa nhìn xa, trung gian và đọc sách',
     description: 'Hỗ trợ bạn nhìn rõ mọi khoảng cách sinh hoạt thường ngày mà không cần phải đổi kính liên tục hay cảm giác bỡ ngỡ.',
-    techSpec: 'Gia công kỹ thuật số mặt sau Back-Surface Freeform, mở rộng vùng nhìn trung gian tự nhiên.',
+    opticalFeature: 'Đa tiêu cự kỹ thuật số',
+    coating: 'Trong suốt, chuyển tiếp êm',
+    durability: 'Tiêu chuẩn quang học Canada',
   },
 ];
 
@@ -124,28 +130,52 @@ export default function ProductCategories() {
                 </div>
               </div>
 
-              {/* Layer 3 - Technical details on hover */}
-              <div className="absolute inset-0 bg-[#0E253A]/95 p-6 rounded-3xl text-white flex flex-col justify-between opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300">
+              {/* Layer 3 - Technical details on hover with WHITE BACKGROUND */}
+              <div className="absolute inset-0 bg-white/98 backdrop-blur-md p-5 sm:p-6 rounded-3xl text-[#0E253A] flex flex-col justify-between opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 z-10 border border-slate-200/90 shadow-2xl">
                 <div className="space-y-3">
-                  <div className="text-xs uppercase font-bold text-teal-400">
-                    {sol.tag}
+                  <div className="flex items-center justify-between">
+                    <span className="px-3 py-1 rounded-full bg-teal-50 text-[#0B7B8A] text-xs font-bold border border-teal-200/60">
+                      Thông Tin Sản Phẩm
+                    </span>
+                    <span className="text-xs text-slate-500 font-semibold">
+                      Bảo Hành Chính Hãng
+                    </span>
                   </div>
-                  <div className="text-xl font-bold">{sol.name}</div>
-                  <p className="text-sm text-slate-300 leading-relaxed">
-                    {sol.techSpec}
-                  </p>
-                  <div className="text-xs text-teal-300 font-medium">
-                    {sol.index}
+                  <h4 className="text-xl font-black text-[#0E253A]">
+                    {sol.name}
+                  </h4>
+                  <div className="space-y-1.5 text-xs pt-1">
+                    <div className="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
+                      <span className="text-slate-600 font-medium">Đặc tính quang học:</span>
+                      <span className="font-bold text-[#0B7B8A] text-right">{sol.opticalFeature}</span>
+                    </div>
+                    <div className="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
+                      <span className="text-slate-600 font-medium">Lớp phủ bề mặt:</span>
+                      <span className="font-bold text-[#0E253A] text-right">{sol.coating}</span>
+                    </div>
+                    <div className="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
+                      <span className="text-slate-600 font-medium">Khả năng chịu lực:</span>
+                      <span className="font-bold text-[#0E253A] text-right">{sol.durability}</span>
+                    </div>
+                    <div className="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
+                      <span className="text-slate-600 font-medium">Lựa chọn độ mỏng:</span>
+                      <span className="font-bold text-[#0E253A] text-right">{sol.index}</span>
+                    </div>
+                    <div className="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
+                      <span className="text-slate-600 font-medium">Chính sách bảo hành:</span>
+                      <span className="font-bold text-[#0B7B8A] text-right">24 tháng chính hãng</span>
+                    </div>
                   </div>
                 </div>
 
-                <Link
-                  href="/trong-kinh/"
-                  className="inline-flex items-center space-x-2 text-sm font-bold text-teal-400 hover:text-white transition-colors"
-                >
-                  <span>Tìm hiểu thêm về dòng tròng này</span>
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
+                <div className="pt-2">
+                  <Link
+                    href="/trong-kinh/"
+                    className="w-full py-2.5 rounded-xl bg-[#0B7B8A] hover:bg-[#086370] text-white text-xs font-bold transition-colors block text-center shadow-xs"
+                  >
+                    Xem chi tiết dòng tròng &rarr;
+                  </Link>
+                </div>
               </div>
 
               <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
