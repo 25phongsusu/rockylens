@@ -197,19 +197,19 @@
       <!-- 6 Primary Navigation Items in Strict Order -->
       <nav class="hidden lg:flex items-center gap-7 text-base font-semibold text-slate-800">
         <a href="#" class="text-[#0B7B8A] font-bold">Trang chủ</a>
-        <a href="#trong-kinh" class="hover:text-[#0B7B8A] transition-colors">Tròng kính</a>
         <a href="#triet-ly" class="hover:text-[#0B7B8A] transition-colors">Triết lý</a>
+        <a href="#trong-kinh" class="hover:text-[#0B7B8A] transition-colors">Tròng kính</a>
         <a href="#cong-nghe" class="hover:text-[#0B7B8A] transition-colors">Công nghệ</a>
         <a href="#vi-sao-rocky" class="hover:text-[#0B7B8A] transition-colors">Vì sao chọn Rocky</a>
         <a href="#tim-dai-ly" class="hover:text-[#0B7B8A] transition-colors">Tìm đại lý</a>
         <a href="#doi-tac" class="hover:text-[#0B7B8A] transition-colors">Dành cho đối tác</a>
       </nav>
 
-      <!-- Action Button -->
+      <!-- Action Button: Open B2B Dealer Quote Modal -->
       <div class="flex items-center gap-3">
-        <a href="#tim-dai-ly" class="px-5 py-2.5 rounded-full bg-[#0B7B8A] hover:bg-[#086370] text-white font-bold text-base transition-colors text-center">
-          Tìm đại lý
-        </a>
+        <button type="button" onclick="openB2BQuoteModal()" class="px-5 py-2.5 rounded-full bg-[#0B7B8A] hover:bg-[#086370] text-white font-bold text-base transition-all text-center cursor-pointer shadow-xs hover:shadow-md active:scale-95">
+          Nhận Báo Giá Đại Lý
+        </button>
       </div>
 
     </div>
@@ -276,6 +276,77 @@
                 <span class="text-base text-slate-600 block mt-1">Phân phối chính hãng bởi Clearly Vietnam &bull; Tiêu chuẩn ISO 13485</span>
               </div>
             </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SECTION 2 — BRAND PHILOSOPHY                              -->
+    <!-- Mục tiêu: Giúp người dùng hiểu Rocky đại diện cho điều gì -->
+    <!-- Niềm tin, bản sắc & trải nghiệm thị giác                  -->
+    <!-- ========================================================= -->
+    <section id="triet-ly" class="py-20 px-6 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          
+          <!-- Left Column: Visual Storytelling Art -->
+          <div class="lg:col-span-5 order-2 lg:order-1">
+            <div class="relative rounded-3xl overflow-hidden bg-slate-100 group">
+              <div class="aspect-[4/3] sm:aspect-[16/11] w-full relative">
+                <img src="assets/images/company/about-6.jpg" alt="Trải nghiệm thị giác tròng kính Rocky" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
+              </div>
+              <div class="absolute top-4 left-4">
+                <span class="px-3.5 py-1.5 rounded-full bg-white text-[#0E253A] text-sm font-bold">
+                  Trải Nghiệm Thị Giác &bull; Canada Standards
+                </span>
+              </div>
+              <div class="p-4 sm:p-5 bg-white flex items-center justify-between text-sm font-semibold text-slate-800">
+                <span>Tối ưu trường nhìn tự nhiên</span>
+                <span class="text-[#086370] font-bold">Thích nghi êm dịu</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Editorial Typography & Philosophy -->
+          <div class="lg:col-span-7 order-1 lg:order-2 space-y-6">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0E253A] tracking-tight leading-[1.15]">
+              Cuộc sống có biết bao điều đáng nhìn ngắm.
+            </h2>
+
+            <div class="space-y-4 text-slate-700 text-lg sm:text-xl font-medium leading-relaxed">
+              <p>
+                Từ những khoảnh khắc đời thường giản dị đến những chân trời rộng mở, tầm nhìn luôn là chiếc cầu nối để bạn trọn vẹn cảm nhận vẻ đẹp của thế giới.
+              </p>
+              <p class="text-slate-600 text-base sm:text-lg">
+                Tại Rocky, chúng tôi tin rằng một cặp tròng kính không chỉ đơn thuần là sản phẩm bổ trợ thị lực, mà là người bạn đồng hành chăm sóc thị giác mỗi ngày — mang đến sự êm dịu, rõ nét tự nhiên để bạn tự do tận hưởng từng khoảnh khắc đáng giá.
+              </p>
+            </div>
+
+            <!-- 3 Value Pillars -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+              <div class="bg-[#F5F5F7] p-4 rounded-2xl text-center sm:text-left">
+                <div class="text-sm font-bold text-slate-800">Độ trong suốt tự nhiên</div>
+                <p class="text-sm text-slate-600 mt-1">Màu sắc trung thực, hạn chế quang sai</p>
+              </div>
+              <div class="bg-[#F5F5F7] p-4 rounded-2xl text-center sm:text-left">
+                <div class="text-sm font-bold text-slate-800">Cảm giác đeo êm dịu</div>
+                <p class="text-sm text-slate-600 mt-1">Thoải mái khi làm việc suốt ngày dài</p>
+              </div>
+              <div class="bg-[#F5F5F7] p-4 rounded-2xl text-center sm:text-left">
+                <div class="text-sm font-bold text-slate-800">Độ chính xác chuẩn mực</div>
+                <p class="text-sm text-slate-600 mt-1">Chế tác theo tiêu chuẩn ISO 13485</p>
+              </div>
+            </div>
+
+            <div class="pt-2">
+              <a href="#trong-kinh" class="inline-flex items-center gap-2 text-[#0B7B8A] hover:text-[#086370] font-bold text-base transition-colors group">
+                <span>Khám phá các giải pháp tròng kính theo nhu cầu</span>
+                <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
+              </a>
+            </div>
+
           </div>
 
         </div>
@@ -738,35 +809,6 @@
     </section>
 
     <!-- ========================================================= -->
-    <!-- SECTION 3 — BRAND PHILOSOPHY                              -->
-    <!-- Mục tiêu: Giúp người dùng hiểu Rocky đại diện cho điều gì -->
-    <!-- Niềm tin, bản sắc & trải nghiệm thị giác                  -->
-    <!-- ========================================================= -->
-    <section id="triet-ly" class="py-20 px-6 bg-white">
-      <div class="max-w-4xl mx-auto space-y-8">
-        
-        <div class="space-y-4">
-          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0E253A] tracking-tight">
-            Cuộc sống có biết bao điều đáng nhìn ngắm.
-          </h2>
-        </div>
-
-        <div class="space-y-6 text-slate-700 text-lg sm:text-xl lg:text-2xl font-medium leading-relaxed pt-2">
-          <p>
-            &ldquo;Từ những khoảnh khắc giản dị đến những trải nghiệm đáng nhớ, tầm nhìn luôn là một phần trong cách chúng ta cảm nhận thế giới.
-          </p>
-          <p>
-            Tại Rocky, chúng tôi tin rằng một giải pháp tròng kính không chỉ là một sản phẩm, mà còn là một phần trong trải nghiệm thị giác của mỗi người.
-          </p>
-          <p>
-            Đó là lý do chúng tôi hướng đến việc phát triển những giải pháp tròng kính đáp ứng các nhu cầu khác nhau trong cuộc sống hiện đại &mdash; để mỗi người có thể tìm thấy lựa chọn phù hợp với mình.&rdquo;
-          </p>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ========================================================= -->
     <!-- SECTION 4 — TECHNOLOGY & QUALITY                          -->
     <!-- Mục tiêu: Giúp khách hàng hiểu đặc tính tạo nên chất lượng -->
     <!-- Giải thích bằng ngôn ngữ phổ thông, không dùng cam kết quá đà -->
@@ -1153,31 +1195,6 @@
       </div>
     </section>
 
-    <!-- Certificate Lightbox Modal (Click to zoom with Next/Prev) -->
-    <div id="certLightbox" class="fixed inset-0 z-50 bg-[#071521]/95 backdrop-blur-md hidden items-center justify-center p-4 sm:p-8" onclick="closeCertModal()">
-      <button type="button" onclick="closeCertModal()" class="absolute top-5 right-5 sm:top-8 sm:right-8 w-11 h-11 rounded-full bg-white/10 hover:bg-white/25 text-white flex items-center justify-center transition-colors z-50">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-      </button>
-
-      <button type="button" onclick="prevCert(event)" class="absolute left-3 sm:left-8 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/10 hover:bg-white/25 text-white flex items-center justify-center transition-all z-50 shadow-lg">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/></svg>
-      </button>
-
-      <button type="button" onclick="nextCert(event)" class="absolute right-3 sm:right-8 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/10 hover:bg-white/25 text-white flex items-center justify-center transition-all z-50 shadow-lg">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
-      </button>
-
-      <div class="max-w-4xl w-full flex flex-col items-center justify-center space-y-4 max-h-full" onclick="event.stopPropagation()">
-        <div class="relative max-h-[75vh] w-auto max-w-full rounded-2xl overflow-hidden bg-black/40 flex items-center justify-center p-2 shadow-2xl">
-          <img id="certLightboxImg" src="" alt="Chứng chỉ bằng khen Rocky Lens" class="max-h-[72vh] w-auto max-w-full object-contain rounded-xl shadow-lg transition-transform duration-300">
-        </div>
-        <div class="text-center space-y-1">
-          <div id="certLightboxTitle" class="text-base sm:text-lg font-bold text-white max-w-2xl px-4"></div>
-          <div id="certLightboxCounter" class="text-sm font-semibold text-teal-300"></div>
-        </div>
-      </div>
-    </div>
-
     <!-- ========================================================= -->
     <!-- SECTION 6 — FIND A STORE (B2C ACTION)                     -->
     <!-- Mục tiêu: Chuyển đổi B2C đến đại lý, đo khám thị lực      -->
@@ -1440,6 +1457,81 @@
     </div>
   </div>
 
+  <!-- ========================================================= -->
+  <!-- B2B DEALER QUOTE MODAL (INTERACTIVE POPUP)                -->
+  <!-- ========================================================= -->
+  <div id="b2bQuoteModal" class="fixed inset-0 z-50 bg-[#071521]/80 backdrop-blur-md hidden items-center justify-center p-4 sm:p-6 transition-all duration-300 opacity-0" role="dialog" aria-modal="true" aria-labelledby="b2bModalTitle">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative border border-slate-100 text-left space-y-6" onclick="event.stopPropagation()">
+      
+      <!-- Close Button -->
+      <button type="button" onclick="closeB2BQuoteModal()" class="absolute top-5 right-5 w-10 h-10 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 flex items-center justify-center transition-colors cursor-pointer" aria-label="Đóng cửa sổ">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <!-- Header -->
+      <div class="space-y-2 pr-8">
+        <span class="px-3.5 py-1.5 rounded-full bg-teal-50 text-[#086370] text-sm font-bold inline-block">
+          Dành Cho Cửa Hàng &amp; Đại Lý Mắt Kính
+        </span>
+        <h3 id="b2bModalTitle" class="text-2xl sm:text-3xl font-black text-[#0E253A] tracking-tight leading-snug">
+          Nhận Báo Giá Đại Lý &amp; Chính Sách Chiết Khấu
+        </h3>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          Bảng giá sỉ các dòng tròng Rocky sẵn kho và chính sách hợp tác Lab RX Freeform kỹ thuật số được gửi trực tiếp, bảo mật cho đối tác kinh doanh.
+        </p>
+      </div>
+
+      <!-- Quick 1-Click Action Buttons -->
+      <div class="space-y-3 pt-1">
+        <a href="https://zalo.me/0933102653" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 px-6 rounded-2xl bg-[#0B7B8A] hover:bg-[#086370] text-white font-bold text-base flex items-center justify-center gap-3 transition-colors shadow-sm cursor-pointer">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.38A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"/>
+          </svg>
+          <span>Nhận Báo Giá File PDF Qua Zalo Ngay</span>
+        </a>
+
+        <a href="tel:0933102653" class="w-full py-3 px-6 rounded-2xl bg-slate-100 hover:bg-slate-200 text-[#0E253A] font-bold text-base flex items-center justify-center gap-3 transition-colors cursor-pointer">
+          <svg class="w-5 h-5 text-[#0B7B8A]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+          </svg>
+          <span>Hotline Phụ Trách B2B: 0933 102 653</span>
+        </a>
+      </div>
+
+      <!-- Quick Inquiry Mini Form -->
+      <div class="border-t border-slate-100 pt-5 space-y-4">
+        <div class="text-sm font-semibold text-slate-700">
+          Hoặc để lại thông tin nhanh, chuyên viên Rocky sẽ gửi bảng giá qua Zalo:
+        </div>
+        <form id="b2bQuickForm" onsubmit="handleB2BSubmit(event)" class="space-y-3">
+          <div>
+            <input type="text" id="b2bStoreName" required placeholder="Tên Cửa hàng mắt kính / Đơn vị (*)" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-[#0B7B8A] focus:outline-none text-sm text-[#0E253A] bg-slate-50 focus:bg-white transition-colors">
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <input type="tel" id="b2bPhone" required placeholder="Số điện thoại / Zalo (*)" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-[#0B7B8A] focus:outline-none text-sm text-[#0E253A] bg-slate-50 focus:bg-white transition-colors">
+            <input type="text" id="b2bCity" required placeholder="Tỉnh / Thành phố (*)" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-[#0B7B8A] focus:outline-none text-sm text-[#0E253A] bg-slate-50 focus:bg-white transition-colors">
+          </div>
+          <button type="submit" class="w-full py-3 rounded-xl bg-[#0E253A] hover:bg-[#0B7B8A] text-white font-bold text-sm transition-colors cursor-pointer">
+            Gửi Yêu Cầu Nhận Báo Giá &amp; Catalog
+          </button>
+        </form>
+        <div id="b2bSuccessMsg" class="hidden text-center text-sm font-bold text-teal-600 bg-teal-50 py-2.5 px-3 rounded-xl">
+          ✓ Cảm ơn bạn! Chuyên viên Rocky sẽ gửi bảng giá qua Zalo cho bạn trong ít phút.
+        </div>
+      </div>
+
+      <!-- Consumer Redirect Link -->
+      <div class="text-center pt-1 border-t border-slate-100">
+        <a href="#tim-dai-ly" onclick="closeB2BQuoteModal()" class="text-sm text-slate-600 hover:text-[#0B7B8A] transition-colors">
+          Bạn là khách hàng cá nhân muốn cắt kính lẻ? <span class="font-bold underline">Xem điểm bán gần nhất &rarr;</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
   <script>
     var certList = [
       { src: "assets/images/bangkhen/11.jpg", title: "The College of Opticians of Ontario - Chứng chỉ hành nghề Optician Canada (Thao Nguyen)" },
@@ -1515,7 +1607,57 @@
       });
     }
 
+    // B2B Quote Modal Logic
+    var b2bModal = document.getElementById('b2bQuoteModal');
+
+    function openB2BQuoteModal() {
+      if (!b2bModal) return;
+      b2bModal.classList.remove('hidden');
+      b2bModal.classList.add('flex');
+      setTimeout(function() {
+        b2bModal.classList.remove('opacity-0');
+        b2bModal.classList.add('opacity-100');
+      }, 10);
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeB2BQuoteModal() {
+      if (!b2bModal) return;
+      b2bModal.classList.remove('opacity-100');
+      b2bModal.classList.add('opacity-0');
+      setTimeout(function() {
+        b2bModal.classList.remove('flex');
+        b2bModal.classList.add('hidden');
+        document.body.style.overflow = '';
+      }, 300);
+    }
+
+    function handleB2BSubmit(e) {
+      e.preventDefault();
+      var msg = document.getElementById('b2bSuccessMsg');
+      var form = document.getElementById('b2bQuickForm');
+      if (msg) {
+        msg.classList.remove('hidden');
+        if (form) form.classList.add('hidden');
+        setTimeout(function() {
+          window.open('https://zalo.me/0933102653', '_blank');
+        }, 1200);
+      }
+    }
+
+    if (b2bModal) {
+      b2bModal.addEventListener('click', function(e) {
+        if (e.target === b2bModal) {
+          closeB2BQuoteModal();
+        }
+      });
+    }
+
     document.addEventListener('keydown', function(e) {
+      if (b2bModal && !b2bModal.classList.contains('hidden') && e.key === 'Escape') {
+        closeB2BQuoteModal();
+        return;
+      }
       if (!certModal || certModal.classList.contains('hidden')) return;
       if (e.key === 'Escape') {
         closeCertModal();
