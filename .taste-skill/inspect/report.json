@@ -1,6 +1,6 @@
 {
  "url": "index.html",
- "at": "2026-10-27T02:10:26.132Z",
+ "at": "2026-10-27T02:16:40.444Z",
  "allow": [],
  "viewports": [
   {
@@ -9,18 +9,18 @@
    "load": "load",
    "screens": 8,
    "filled": [
-    0.6,
-    0.71,
-    0.83,
-    0.71,
-    0.68,
-    0.79,
+    0.64,
+    0.47,
+    0.88,
+    0.69,
+    0.58,
+    0.77,
     1,
     1
    ],
    "motion": {
-    "elements": 17,
-    "css": 17,
+    "elements": 14,
+    "css": 14,
     "transitions": 0,
     "scripted": 0,
     "videos": 0,
@@ -32,9 +32,9 @@
      "h": 900
     },
     "page": {
-     "height": 6660,
+     "height": 6634,
      "screens": 7.4,
-     "words": 1820,
+     "words": 1682,
      "img": 10,
      "video": 0,
      "canvas": 0,
@@ -64,12 +64,12 @@
      "videosNoPoster": 0
     },
     "hero": {
-     "text": "Quang Học Canada",
-     "words": 3,
-     "chars": 16,
-     "lines": 1,
-     "size": 76,
-     "vw": 5.3,
+     "text": "Rõ tầm nhìn, trọn cuộc sống.",
+     "words": 6,
+     "chars": 28,
+     "lines": 2,
+     "size": 72,
+     "vw": 5,
      "font": "SF Pro Display",
      "weight": 900,
      "tracking": -0.025,
@@ -80,25 +80,25 @@
      "align": "left",
      "position": "left",
      "widthRatio": 0.5,
-     "top": 184,
+     "top": 199,
      "tag": "h1",
      "kind": "heading"
     },
     "h1": {
-     "text": "Quang Học Canada",
-     "words": 3,
-     "lines": 1,
-     "size": 76,
+     "text": "Rõ tầm nhìn, trọn cuộc sống.",
+     "words": 6,
+     "lines": 2,
+     "size": 72,
      "font": "SF Pro Display"
     },
     "headings": [
      {
-      "text": "Quang Học Canada",
-      "words": 3,
-      "chars": 16,
-      "lines": 1,
-      "size": 76,
-      "vw": 5.3,
+      "text": "Rõ tầm nhìn, trọn cuộc sống.",
+      "words": 6,
+      "chars": 28,
+      "lines": 2,
+      "size": 72,
+      "vw": 5,
       "font": "SF Pro Display",
       "weight": 900,
       "tracking": -0.025,
@@ -109,14 +109,14 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.5,
-      "top": 184,
+      "top": 199,
       "tag": "h1",
       "kind": "heading"
      },
      {
-      "text": "Triết Lý Khúc Xạ",
+      "text": "Triết Lý Thương Hiệu",
       "words": 4,
-      "chars": 16,
+      "chars": 20,
       "lines": 1,
       "size": 48,
       "vw": 3.3,
@@ -130,9 +130,30 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.53,
-      "top": 926,
+      "top": 880,
       "tag": "h2",
       "kind": "heading"
+     },
+     {
+      "text": "“Cuộc sống có biết bao điều đáng nhìn ngắm. Từ những điều giản dị mỗi ngày đến những trải nghiệm đáng nhớ, tầm nhìn luôn là một phần quan trọng trong cách chúng ta cảm nhận thế giới.”",
+      "words": 38,
+      "chars": 183,
+      "lines": 3,
+      "size": 36,
+      "vw": 2.5,
+      "font": "SF Pro Display",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.81,
+      "top": 1032,
+      "tag": "p",
+      "kind": "statement"
      },
      {
       "text": "Khám Phá Tròng Kính Rocky",
@@ -151,7 +172,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.53,
-      "top": 1566,
+      "top": 1540,
       "tag": "h2",
       "kind": "heading"
      },
@@ -172,7 +193,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.53,
-      "top": 3398,
+      "top": 3372,
       "tag": "h2",
       "kind": "heading"
      },
@@ -193,7 +214,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.53,
-      "top": 4034,
+      "top": 4008,
       "tag": "h2",
       "kind": "heading"
      },
@@ -214,7 +235,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.53,
-      "top": 4614,
+      "top": 4588,
       "tag": "h2",
       "kind": "heading"
      },
@@ -235,7 +256,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.4,
-      "top": 5080,
+      "top": 5054,
       "tag": "div",
       "kind": "heading"
      },
@@ -256,16 +277,16 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.5,
-      "top": 5440,
+      "top": 5414,
       "tag": "h2",
       "kind": "heading"
      }
     ],
     "headingSummary": {
-     "count": 8,
-     "maxLines": 1,
+     "count": 9,
+     "maxLines": 3,
      "over2Lines": 0,
-     "statements": 0,
+     "statements": 1,
      "centered": 0,
      "medianWords": 5,
      "mixedFontHeadings": 0
@@ -286,10 +307,11 @@
       20,
       24,
       30,
+      36,
       48,
-      76
+      72
      ],
-     "sizeCount": 8,
+     "sizeCount": 9,
      "notLoaded": [],
      "body": {
       "font": "SF Pro Display",
@@ -297,14 +319,14 @@
       "leading": 1.63,
       "weight": 400,
       "tracking": 0,
-      "contrast": 9.5
+      "contrast": 7.6
      },
      "measureChars": 75,
      "max": {
-      "size": 76,
-      "vw": 5.3,
+      "size": 72,
+      "vw": 5,
       "font": "SF Pro Display",
-      "text": "Quang Học Canada"
+      "text": "Rõ tầm nhìn, trọn cuộc sống."
      },
      "monoShare": 0,
      "monoProseShare": 0,
@@ -314,7 +336,7 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.06,
+     "centerShare": 0.07,
      "smallText": 0
     },
     "eyebrows": [],
@@ -339,7 +361,7 @@
       },
       {
        "color": "#ffffff",
-       "top": 846,
+       "top": 800,
        "hsl": {
         "h": 0,
         "s": 0,
@@ -348,7 +370,7 @@
       },
       {
        "color": "#0e253a",
-       "top": 5360,
+       "top": 5334,
        "hsl": {
         "h": 209,
         "s": 0.61,
@@ -357,7 +379,7 @@
       },
       {
        "color": "#071521",
-       "top": 6204,
+       "top": 6178,
        "hsl": {
         "h": 208,
         "s": 0.65,
@@ -368,23 +390,23 @@
      "textColors": [
       {
        "color": "#334155",
-       "share": 0.33
+       "share": 0.3
       },
       {
        "color": "#475569",
-       "share": 0.23
-      },
-      {
-       "color": "#cbd5e1",
-       "share": 0.1
+       "share": 0.22
       },
       {
        "color": "#0e253a",
-       "share": 0.09
+       "share": 0.12
+      },
+      {
+       "color": "#cbd5e1",
+       "share": 0.11
       },
       {
        "color": "#e2e8f0",
-       "share": 0.09
+       "share": 0.1
       }
      ],
      "button": {
@@ -410,7 +432,7 @@
      "heroLabels": [
       "Tìm đại lý",
       "Khám phá tròng kính",
-      "Tìm đại lý gần nhất"
+      "Tìm đại lý"
      ]
     },
     "surfaces": {
@@ -426,7 +448,7 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 1,
-     "roundedBoxes": 30,
+     "roundedBoxes": 28,
      "boxRadius": 24,
      "squareMedia": 1,
      "roundedMedia": 7,
@@ -437,43 +459,37 @@
        "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 616
-      },
-      {
-       "count": 3,
-       "iconTopped": false,
-       "rounded": true,
-       "top": 1126
+       "top": 555
       },
       {
        "count": 6,
        "iconTopped": false,
        "rounded": true,
-       "top": 1746
+       "top": 1720
       },
       {
        "count": 4,
        "iconTopped": false,
        "rounded": true,
-       "top": 3562
+       "top": 3536
       },
       {
        "count": 4,
        "iconTopped": false,
        "rounded": true,
-       "top": 4198
+       "top": 4172
       },
       {
        "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 4778
+       "top": 4752
       },
       {
        "count": 4,
        "iconTopped": false,
        "rounded": true,
-       "top": 5680
+       "top": 5654
       }
      ]
     },
@@ -499,23 +515,23 @@
      "w": 1440,
      "h": 900
     },
-    "pageH": 6660,
+    "pageH": 6634,
     "margins": {
      "left": 73,
-     "right": 107
+     "right": 104
     },
     "sections": [
      {
       "sel": "section.pt-12.sm:pt-16",
       "tag": "section",
       "top": 120,
-      "height": 726,
-      "words": 136,
+      "height": 680,
+      "words": 96,
       "media": 1,
-      "middle": 131,
+      "middle": 147,
       "heading": {
-       "text": "Quang Học Canada",
-       "size": 76,
+       "text": "Rõ tầm nhìn,",
+       "size": 72,
        "tag": "h1"
       },
       "left": 73,
@@ -531,20 +547,20 @@
      {
       "sel": "section#triet-ly.py-20.px-6",
       "tag": "section",
-      "top": 846,
-      "height": 640,
-      "words": 190,
+      "top": 800,
+      "height": 660,
+      "words": 110,
       "media": 0,
-      "middle": 97,
+      "middle": 0,
       "heading": {
-       "text": "Triết Lý Khúc Xạ",
+       "text": "Triết Lý Thương Hiệu",
        "size": 48,
        "tag": "h2"
       },
       "left": 73,
-      "right": 125,
+      "right": 144,
       "textLeft": 73,
-      "textRight": 125,
+      "textRight": 144,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -554,7 +570,7 @@
      {
       "sel": "section#trong-kinh.py-20.px-6",
       "tag": "section",
-      "top": 1486,
+      "top": 1460,
       "height": 1832,
       "words": 350,
       "media": 6,
@@ -577,7 +593,7 @@
      {
       "sel": "section#cong-nghe.py-20.px-6",
       "tag": "section",
-      "top": 3318,
+      "top": 3292,
       "height": 636,
       "words": 179,
       "media": 0,
@@ -600,7 +616,7 @@
      {
       "sel": "section#vi-sao-rocky.py-20.px-6",
       "tag": "section",
-      "top": 3954,
+      "top": 3928,
       "height": 580,
       "words": 173,
       "media": 0,
@@ -623,7 +639,7 @@
      {
       "sel": "section#tim-dai-ly.py-20.px-6",
       "tag": "section",
-      "top": 4534,
+      "top": 4508,
       "height": 826,
       "words": 202,
       "media": 0,
@@ -646,7 +662,7 @@
      {
       "sel": "section#doi-tac.py-20.px-6",
       "tag": "section",
-      "top": 5360,
+      "top": 5334,
       "height": 844,
       "words": 226,
       "media": 1,
@@ -669,7 +685,7 @@
      {
       "sel": "footer.bg-[#071521].text-slate-300",
       "tag": "footer",
-      "top": 6204,
+      "top": 6178,
       "height": 456,
       "words": 164,
       "media": 0,
@@ -689,9 +705,9 @@
     "gaps": [],
     "h1s": [
      {
-      "text": "Quang Học Canada",
-      "size": 76,
-      "top": 184,
+      "text": "Rõ tầm nhìn, trọn cuộc sống.",
+      "size": 72,
+      "top": 199,
       "firstScreen": true
      }
     ],
@@ -699,7 +715,7 @@
     "edges": [
      {
       "x": 73,
-      "n": 16
+      "n": 15
      },
      {
       "x": 93,
@@ -707,15 +723,11 @@
      },
      {
       "x": 538,
-      "n": 8
+      "n": 6
      },
      {
       "x": 975,
-      "n": 8
-     },
-     {
-      "x": 105,
-      "n": 5
+      "n": 6
      },
      {
       "x": 423,
@@ -730,11 +742,23 @@
       "n": 4
      },
      {
+      "x": 105,
+      "n": 3
+     },
+     {
+      "x": 129,
+      "n": 3
+     },
+     {
       "x": 464,
+      "n": 2
+     },
+     {
+      "x": 729,
       "n": 2
      }
     ],
-    "leftBlocks": 61,
+    "leftBlocks": 59,
     "bodySize": 16,
     "stage": false,
     "explains": true,
@@ -742,7 +766,7 @@
     "voidShare": 0.13,
     "voidBox": {
      "x": 0,
-     "y": 780,
+     "y": 720,
      "w": 1440,
      "h": 120
     }
@@ -756,20 +780,20 @@
    "load": "load",
    "screens": 10,
    "filled": [
-    0.54,
-    0.71,
-    0.7,
-    0.88,
-    0.78,
-    0.7,
+    0.59,
+    0.57,
     0.74,
+    0.88,
+    0.77,
+    0.63,
+    0.76,
     0.88,
     1,
     1
    ],
    "motion": {
-    "elements": 17,
-    "css": 17,
+    "elements": 14,
+    "css": 14,
     "transitions": 0,
     "scripted": 0,
     "videos": 0,
@@ -781,9 +805,9 @@
      "h": 1024
     },
     "page": {
-     "height": 9812,
-     "screens": 9.6,
-     "words": 1801,
+     "height": 9668,
+     "screens": 9.4,
+     "words": 1663,
      "img": 10,
      "video": 0,
      "canvas": 0,
@@ -813,10 +837,10 @@
      "videosNoPoster": 0
     },
     "hero": {
-     "text": "Quang Học Canada",
-     "words": 3,
-     "chars": 16,
-     "lines": 1,
+     "text": "Rõ tầm nhìn, trọn cuộc sống.",
+     "words": 6,
+     "chars": 28,
+     "lines": 2,
      "size": 60,
      "vw": 7.8,
      "font": "SF Pro Display",
@@ -834,18 +858,18 @@
      "kind": "heading"
     },
     "h1": {
-     "text": "Quang Học Canada",
-     "words": 3,
-     "lines": 1,
+     "text": "Rõ tầm nhìn, trọn cuộc sống.",
+     "words": 6,
+     "lines": 2,
      "size": 60,
      "font": "SF Pro Display"
     },
     "headings": [
      {
-      "text": "Quang Học Canada",
-      "words": 3,
-      "chars": 16,
-      "lines": 1,
+      "text": "Rõ tầm nhìn, trọn cuộc sống.",
+      "words": 6,
+      "chars": 28,
+      "lines": 2,
       "size": 60,
       "vw": 7.8,
       "font": "SF Pro Display",
@@ -863,9 +887,9 @@
       "kind": "heading"
      },
      {
-      "text": "Triết Lý Khúc Xạ",
+      "text": "Triết Lý Thương Hiệu",
       "words": 4,
-      "chars": 16,
+      "chars": 20,
       "lines": 1,
       "size": 36,
       "vw": 4.7,
@@ -879,7 +903,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 1494,
+      "top": 1410,
       "tag": "h2",
       "kind": "heading"
      },
@@ -900,7 +924,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 2334,
+      "top": 2190,
       "tag": "h2",
       "kind": "heading"
      },
@@ -921,7 +945,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 5028,
+      "top": 4884,
       "tag": "h2",
       "kind": "heading"
      },
@@ -942,7 +966,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 5904,
+      "top": 5760,
       "tag": "h2",
       "kind": "heading"
      },
@@ -963,7 +987,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 6730,
+      "top": 6586,
       "tag": "h2",
       "kind": "heading"
      },
@@ -984,7 +1008,7 @@
       "align": "center",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 7344,
+      "top": 7200,
       "tag": "div",
       "kind": "heading"
      },
@@ -1005,14 +1029,14 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 7808,
+      "top": 7664,
       "tag": "h2",
       "kind": "heading"
      }
     ],
     "headingSummary": {
      "count": 8,
-     "maxLines": 1,
+     "maxLines": 2,
      "over2Lines": 0,
      "statements": 0,
      "centered": 1,
@@ -1046,14 +1070,14 @@
       "leading": 1.63,
       "weight": 400,
       "tracking": 0,
-      "contrast": 9.5
+      "contrast": 7.6
      },
      "measureChars": 75,
      "max": {
       "size": 60,
       "vw": 7.8,
       "font": "SF Pro Display",
-      "text": "Quang Học Canada"
+      "text": "Rõ tầm nhìn, trọn cuộc sống."
      },
      "monoShare": 0,
      "monoProseShare": 0,
@@ -1088,7 +1112,7 @@
       },
       {
        "color": "#ffffff",
-       "top": 798,
+       "top": 714,
        "hsl": {
         "h": 0,
         "s": 0,
@@ -1097,7 +1121,7 @@
       },
       {
        "color": "#0e253a",
-       "top": 7728,
+       "top": 7584,
        "hsl": {
         "h": 209,
         "s": 0.61,
@@ -1106,7 +1130,7 @@
       },
       {
        "color": "#071521",
-       "top": 9100,
+       "top": 8956,
        "hsl": {
         "h": 208,
         "s": 0.65,
@@ -1117,23 +1141,23 @@
      "textColors": [
       {
        "color": "#334155",
-       "share": 0.33
+       "share": 0.3
       },
       {
        "color": "#475569",
-       "share": 0.23
+       "share": 0.22
+      },
+      {
+       "color": "#0e253a",
+       "share": 0.12
       },
       {
        "color": "#cbd5e1",
        "share": 0.11
       },
       {
-       "color": "#0e253a",
-       "share": 0.09
-      },
-      {
        "color": "#e2e8f0",
-       "share": 0.09
+       "share": 0.1
       }
      ],
      "button": {
@@ -1159,7 +1183,7 @@
      "heroLabels": [
       "Tìm đại lý",
       "Khám phá tròng kính",
-      "Tìm đại lý gần nhất"
+      "Tìm đại lý"
      ]
     },
     "surfaces": {
@@ -1175,7 +1199,7 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 1,
-     "roundedBoxes": 30,
+     "roundedBoxes": 28,
      "boxRadius": 24,
      "squareMedia": 1,
      "roundedMedia": 7,
@@ -1186,50 +1210,44 @@
        "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 600
-      },
-      {
-       "count": 3,
-       "iconTopped": false,
-       "rounded": true,
-       "top": 1686
+       "top": 516
       },
       {
        "count": 6,
        "iconTopped": false,
        "rounded": true,
-       "top": 2506
+       "top": 2362
       },
       {
        "count": 4,
        "iconTopped": false,
        "rounded": true,
-       "top": 5184
+       "top": 5040
       },
       {
        "count": 4,
        "iconTopped": false,
        "rounded": true,
-       "top": 6060
+       "top": 5916
       },
       {
        "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 6886
+       "top": 6742
       },
       {
        "count": 4,
        "iconTopped": false,
        "rounded": true,
-       "top": 8068
+       "top": 7924
       }
      ]
     },
     "heroMedia": [
      {
       "type": "img",
-      "ratio": 0.1
+      "ratio": 0.14
      }
     ],
     "nav": {
@@ -1248,29 +1266,29 @@
      "w": 768,
      "h": 1024
     },
-    "pageH": 9812,
+    "pageH": 9668,
     "margins": {
      "left": 24,
-     "right": 50
+     "right": 52
     },
     "sections": [
      {
       "sel": "section.pt-12.sm:pt-16",
       "tag": "section",
       "top": 120,
-      "height": 1294,
-      "words": 136,
+      "height": 1210,
+      "words": 96,
       "media": 1,
       "middle": 0,
       "heading": {
-       "text": "Quang Học Canada",
+       "text": "Rõ tầm nhìn,",
        "size": 60,
        "tag": "h1"
       },
       "left": 24,
-      "right": 43,
+      "right": 73,
       "textLeft": 24,
-      "textRight": 43,
+      "textRight": 73,
       "fullBleed": false,
       "footer": false,
       "hero": true,
@@ -1280,20 +1298,20 @@
      {
       "sel": "section#triet-ly.py-20.px-6",
       "tag": "section",
-      "top": 1414,
-      "height": 840,
-      "words": 190,
+      "top": 1330,
+      "height": 780,
+      "words": 110,
       "media": 0,
       "middle": 0,
       "heading": {
-       "text": "Triết Lý Khúc Xạ",
+       "text": "Triết Lý Thương Hiệu",
        "size": 36,
        "tag": "h2"
       },
       "left": 24,
-      "right": 41,
+      "right": 90,
       "textLeft": 24,
-      "textRight": 41,
+      "textRight": 90,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1303,7 +1321,7 @@
      {
       "sel": "section#trong-kinh.py-20.px-6",
       "tag": "section",
-      "top": 2254,
+      "top": 2110,
       "height": 2694,
       "words": 350,
       "media": 6,
@@ -1326,7 +1344,7 @@
      {
       "sel": "section#cong-nghe.py-20.px-6",
       "tag": "section",
-      "top": 4948,
+      "top": 4804,
       "height": 876,
       "words": 179,
       "media": 0,
@@ -1349,7 +1367,7 @@
      {
       "sel": "section#vi-sao-rocky.py-20.px-6",
       "tag": "section",
-      "top": 5824,
+      "top": 5680,
       "height": 826,
       "words": 173,
       "media": 0,
@@ -1372,7 +1390,7 @@
      {
       "sel": "section#tim-dai-ly.py-20.px-6",
       "tag": "section",
-      "top": 6650,
+      "top": 6506,
       "height": 1078,
       "words": 202,
       "media": 0,
@@ -1395,7 +1413,7 @@
      {
       "sel": "section#doi-tac.py-20.px-6",
       "tag": "section",
-      "top": 7728,
+      "top": 7584,
       "height": 1372,
       "words": 226,
       "media": 1,
@@ -1418,7 +1436,7 @@
      {
       "sel": "footer.bg-[#071521].text-slate-300",
       "tag": "footer",
-      "top": 9100,
+      "top": 8956,
       "height": 712,
       "words": 164,
       "media": 0,
@@ -1438,7 +1456,7 @@
     "gaps": [],
     "h1s": [
      {
-      "text": "Quang Học Canada",
+      "text": "Rõ tầm nhìn, trọn cuộc sống.",
       "size": 60,
       "top": 184,
       "firstScreen": true
@@ -1447,12 +1465,12 @@
     "edgeText": [],
     "edges": [
      {
-      "x": 24,
+      "x": 44,
       "n": 16
      },
      {
-      "x": 44,
-      "n": 16
+      "x": 24,
+      "n": 15
      },
      {
       "x": 417,
@@ -1463,19 +1481,27 @@
       "n": 6
      },
      {
+      "x": 72,
+      "n": 3
+     },
+     {
       "x": 56,
-      "n": 4
+      "n": 2
      },
      {
       "x": 302,
-      "n": 4
+      "n": 2
+     },
+     {
+      "x": 393,
+      "n": 2
      },
      {
       "x": 547,
-      "n": 4
+      "n": 2
      }
     ],
-    "leftBlocks": 60,
+    "leftBlocks": 58,
     "bodySize": 16,
     "stage": false,
     "explains": true,
@@ -1492,22 +1518,22 @@
    "load": "load",
    "screens": 12,
    "filled": [
+    0.69,
+    0.74,
     0.64,
-    0.85,
-    0.64,
-    0.47,
+    0.69,
+    0.86,
     0.85,
     0.86,
     0.92,
-    0.86,
-    0.74,
-    0.66,
-    0.66,
-    0.84
+    0.63,
+    0.58,
+    0.75,
+    0.8
    ],
    "motion": {
-    "elements": 17,
-    "css": 17,
+    "elements": 14,
+    "css": 14,
     "transitions": 0,
     "scripted": 0,
     "videos": 0,
@@ -1519,9 +1545,9 @@
      "h": 844
     },
     "page": {
-     "height": 15307,
-     "screens": 18.1,
-     "words": 1794,
+     "height": 14749,
+     "screens": 17.5,
+     "words": 1656,
      "img": 10,
      "video": 0,
      "canvas": 0,
@@ -1551,16 +1577,16 @@
      "videosNoPoster": 0
     },
     "hero": {
-     "text": "Quang Học Canada",
-     "words": 3,
-     "chars": 16,
+     "text": "Rõ tầm nhìn, trọn cuộc sống.",
+     "words": 6,
+     "chars": 28,
      "lines": 2,
-     "size": 48,
-     "vw": 12.3,
+     "size": 36,
+     "vw": 9.2,
      "font": "SF Pro Display",
      "weight": 900,
      "tracking": -0.025,
-     "leading": 1.06,
+     "leading": 1.08,
      "upper": false,
      "italic": false,
      "mono": false,
@@ -1572,24 +1598,24 @@
      "kind": "heading"
     },
     "h1": {
-     "text": "Quang Học Canada",
-     "words": 3,
+     "text": "Rõ tầm nhìn, trọn cuộc sống.",
+     "words": 6,
      "lines": 2,
-     "size": 48,
+     "size": 36,
      "font": "SF Pro Display"
     },
     "headings": [
      {
-      "text": "Quang Học Canada",
-      "words": 3,
-      "chars": 16,
+      "text": "Rõ tầm nhìn, trọn cuộc sống.",
+      "words": 6,
+      "chars": 28,
       "lines": 2,
-      "size": 48,
-      "vw": 12.3,
+      "size": 36,
+      "vw": 9.2,
       "font": "SF Pro Display",
       "weight": 900,
       "tracking": -0.025,
-      "leading": 1.06,
+      "leading": 1.08,
       "upper": false,
       "italic": false,
       "mono": false,
@@ -1617,7 +1643,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.77,
-      "top": 799,
+      "top": 631,
       "tag": "div",
       "kind": "heading"
      },
@@ -1638,7 +1664,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.77,
-      "top": 941,
+      "top": 773,
       "tag": "div",
       "kind": "heading"
      },
@@ -1659,14 +1685,14 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.77,
-      "top": 1083,
+      "top": 915,
       "tag": "div",
       "kind": "heading"
      },
      {
-      "text": "Triết Lý Khúc Xạ",
+      "text": "Triết Lý Thương Hiệu",
       "words": 4,
-      "chars": 16,
+      "chars": 20,
       "lines": 1,
       "size": 30,
       "vw": 7.7,
@@ -1680,71 +1706,8 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 1933,
+      "top": 1765,
       "tag": "h2",
-      "kind": "heading"
-     },
-     {
-      "text": "Tôn Trọng Quang Học Tự Nhiên",
-      "words": 6,
-      "chars": 28,
-      "lines": 2,
-      "size": 24,
-      "vw": 6.2,
-      "font": "SF Pro Display",
-      "weight": 700,
-      "tracking": 0,
-      "leading": 1.33,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.71,
-      "top": 2209,
-      "tag": "h3",
-      "kind": "heading"
-     },
-     {
-      "text": "Đồng Hành Mọi Lát Cắt Sống",
-      "words": 6,
-      "chars": 26,
-      "lines": 2,
-      "size": 24,
-      "vw": 6.2,
-      "font": "SF Pro Display",
-      "weight": 700,
-      "tracking": 0,
-      "leading": 1.33,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.71,
-      "top": 2573,
-      "tag": "h3",
-      "kind": "heading"
-     },
-     {
-      "text": "Chuẩn Mực & Bền Vững Canada",
-      "words": 6,
-      "chars": 27,
-      "lines": 2,
-      "size": 24,
-      "vw": 6.2,
-      "font": "SF Pro Display",
-      "weight": 700,
-      "tracking": 0,
-      "leading": 1.33,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.71,
-      "top": 2911,
-      "tag": "h3",
       "kind": "heading"
      },
      {
@@ -1764,7 +1727,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 3345,
+      "top": 2787,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1785,7 +1748,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 3885,
+      "top": 3327,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1806,7 +1769,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 4531,
+      "top": 3973,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1827,7 +1790,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 5177,
+      "top": 4619,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1848,7 +1811,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 5823,
+      "top": 5265,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1869,7 +1832,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 6501,
+      "top": 5943,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1890,7 +1853,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 7147,
+      "top": 6589,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1911,7 +1874,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 7833,
+      "top": 7275,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1932,7 +1895,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 9253,
+      "top": 8695,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1953,7 +1916,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 10671,
+      "top": 10113,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1974,7 +1937,7 @@
       "align": "center",
       "position": "center",
       "widthRatio": 0.71,
-      "top": 11687,
+      "top": 11129,
       "tag": "div",
       "kind": "heading"
      },
@@ -1995,13 +1958,13 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 12307,
+      "top": 11749,
       "tag": "h2",
       "kind": "heading"
      }
     ],
     "headingSummary": {
-     "count": 20,
+     "count": 17,
      "maxLines": 2,
      "over2Lines": 0,
      "statements": 0,
@@ -2025,7 +1988,7 @@
       20,
       24,
       30,
-      48
+      36
      ],
      "sizeCount": 7,
      "notLoaded": [],
@@ -2039,10 +2002,10 @@
      },
      "measureChars": 43,
      "max": {
-      "size": 48,
-      "vw": 12.3,
+      "size": 36,
+      "vw": 9.2,
       "font": "SF Pro Display",
-      "text": "Quang Học Canada"
+      "text": "Rõ tầm nhìn, trọn cuộc sống."
      },
      "monoShare": 0,
      "monoProseShare": 0,
@@ -2077,7 +2040,7 @@
       },
       {
        "color": "#ffffff",
-       "top": 1237,
+       "top": 1069,
        "hsl": {
         "h": 0,
         "s": 0,
@@ -2086,7 +2049,7 @@
       },
       {
        "color": "#0e253a",
-       "top": 12227,
+       "top": 11669,
        "hsl": {
         "h": 209,
         "s": 0.61,
@@ -2095,7 +2058,7 @@
       },
       {
        "color": "#163652",
-       "top": 13537,
+       "top": 12979,
        "hsl": {
         "h": 208,
         "s": 0.58,
@@ -2104,7 +2067,7 @@
       },
       {
        "color": "#071521",
-       "top": 14077,
+       "top": 13519,
        "hsl": {
         "h": 208,
         "s": 0.65,
@@ -2115,23 +2078,23 @@
      "textColors": [
       {
        "color": "#334155",
-       "share": 0.33
+       "share": 0.31
       },
       {
        "color": "#475569",
-       "share": 0.23
-      },
-      {
-       "color": "#cbd5e1",
-       "share": 0.1
+       "share": 0.22
       },
       {
        "color": "#0e253a",
-       "share": 0.09
+       "share": 0.12
+      },
+      {
+       "color": "#cbd5e1",
+       "share": 0.11
       },
       {
        "color": "#e2e8f0",
-       "share": 0.09
+       "share": 0.1
       }
      ],
      "button": {
@@ -2157,7 +2120,7 @@
      "heroLabels": [
       "Tìm đại lý",
       "Khám phá tròng kính",
-      "Tìm đại lý gần nhất"
+      "Tìm đại lý"
      ]
     },
     "surfaces": {
@@ -2173,7 +2136,7 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 1,
-     "roundedBoxes": 31,
+     "roundedBoxes": 29,
      "boxRadius": 24,
      "squareMedia": 1,
      "roundedMedia": 7,
@@ -2184,43 +2147,37 @@
        "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 779
-      },
-      {
-       "count": 3,
-       "iconTopped": false,
-       "rounded": true,
-       "top": 2177
+       "top": 611
       },
       {
        "count": 6,
        "iconTopped": false,
        "rounded": true,
-       "top": 3605
+       "top": 3047
       },
       {
        "count": 4,
        "iconTopped": false,
        "rounded": true,
-       "top": 8013
+       "top": 7455
       },
       {
        "count": 4,
        "iconTopped": false,
        "rounded": true,
-       "top": 9469
+       "top": 8911
       },
       {
        "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 10851
+       "top": 10293
       },
       {
        "count": 4,
        "iconTopped": false,
        "rounded": true,
-       "top": 12637
+       "top": 12079
       }
      ]
     },
@@ -2241,29 +2198,29 @@
      "w": 390,
      "h": 844
     },
-    "pageH": 15307,
+    "pageH": 14749,
     "margins": {
      "left": 24,
-     "right": 27
+     "right": 28
     },
     "sections": [
      {
       "sel": "section.pt-12.sm:pt-16",
       "tag": "section",
       "top": 144,
-      "height": 1709,
-      "words": 136,
+      "height": 1541,
+      "words": 96,
       "media": 1,
       "middle": 0,
       "heading": {
-       "text": "Quang Học Canada",
-       "size": 48,
+       "text": "Rõ tầm nhìn,",
+       "size": 36,
        "tag": "h1"
       },
       "left": 24,
-      "right": 25,
+      "right": 28,
       "textLeft": 24,
-      "textRight": 25,
+      "textRight": 28,
       "fullBleed": false,
       "footer": false,
       "hero": true,
@@ -2273,20 +2230,20 @@
      {
       "sel": "section#triet-ly.py-20.px-6",
       "tag": "section",
-      "top": 1853,
-      "height": 1412,
-      "words": 190,
+      "top": 1685,
+      "height": 1022,
+      "words": 110,
       "media": 0,
       "middle": 0,
       "heading": {
-       "text": "Triết Lý Khúc Xạ",
+       "text": "Triết Lý Thương Hiệu",
        "size": 30,
        "tag": "h2"
       },
       "left": 24,
-      "right": 29,
+      "right": 57,
       "textLeft": 24,
-      "textRight": 29,
+      "textRight": 57,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -2296,7 +2253,7 @@
      {
       "sel": "section#trong-kinh.py-20.px-6",
       "tag": "section",
-      "top": 3265,
+      "top": 2707,
       "height": 4488,
       "words": 350,
       "media": 6,
@@ -2319,7 +2276,7 @@
      {
       "sel": "section#cong-nghe.py-20.px-6",
       "tag": "section",
-      "top": 7753,
+      "top": 7195,
       "height": 1420,
       "words": 179,
       "media": 0,
@@ -2342,7 +2299,7 @@
      {
       "sel": "section#vi-sao-rocky.py-20.px-6",
       "tag": "section",
-      "top": 9173,
+      "top": 8615,
       "height": 1418,
       "words": 173,
       "media": 0,
@@ -2365,7 +2322,7 @@
      {
       "sel": "section#tim-dai-ly.py-20.px-6",
       "tag": "section",
-      "top": 10591,
+      "top": 10033,
       "height": 1636,
       "words": 202,
       "media": 0,
@@ -2388,7 +2345,7 @@
      {
       "sel": "section#doi-tac.py-20.px-6",
       "tag": "section",
-      "top": 12227,
+      "top": 11669,
       "height": 1850,
       "words": 226,
       "media": 1,
@@ -2411,7 +2368,7 @@
      {
       "sel": "footer.bg-[#071521].text-slate-300",
       "tag": "footer",
-      "top": 14077,
+      "top": 13519,
       "height": 1230,
       "words": 164,
       "media": 0,
@@ -2431,8 +2388,8 @@
     "gaps": [],
     "h1s": [
      {
-      "text": "Quang Học Canada",
-      "size": 48,
+      "text": "Rõ tầm nhìn, trọn cuộc sống.",
+      "size": 36,
       "top": 192,
       "firstScreen": true
      }
@@ -2445,14 +2402,14 @@
      },
      {
       "x": 24,
-      "n": 16
+      "n": 15
      },
      {
       "x": 56,
-      "n": 12
+      "n": 11
      }
     ],
-    "leftBlocks": 60,
+    "leftBlocks": 58,
     "bodySize": 16,
     "stage": false,
     "explains": true,
@@ -2469,7 +2426,7 @@
    "level": "WARN",
    "id": "card-rows",
    "width": 1440,
-   "message": "7 rows of identical boxed cards.",
+   "message": "6 rows of identical boxed cards.",
    "fix": "Vary the composition; not every section is a card grid.",
    "alsoAt": [
     768,
@@ -2487,7 +2444,7 @@
    "level": "WARN",
    "id": "off-centre",
    "width": 1440,
-   "message": "The margins differ: 73px on the left, 107px on the right, at 1440px.",
+   "message": "The margins differ: 73px on the left, 104px on the right, at 1440px.",
    "fix": "Put the navigation and the content on one pair of margins; check for padding on one side only, a scrollbar gutter, or a header on another inset than the page.",
    "alsoAt": [
     768
@@ -2497,8 +2454,15 @@
    "level": "WARN",
    "id": "ragged-edges",
    "width": 1440,
-   "message": "Left-aligned text starts at 9 different lines (73px, 93px, 538px, 975px, 105px, 423px, 749px); the three most used hold only 56% of it.",
+   "message": "Left-aligned text starts at 11 different lines (73px, 93px, 538px, 975px, 423px, 749px, 1075px); the three most used hold only 53% of it.",
    "fix": "Pick two or three anchor lines from the grid and start every heading and paragraph on one of them."
+  },
+  {
+   "level": "WARN",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Little motion: 14 element(s) moved while the page loaded and scrolled.",
+   "fix": "Give every section an entrance for its parts (not one fade of the whole block) and add one moving picture: a looping clip or a slow move on a photograph."
   }
  ],
  "images": [

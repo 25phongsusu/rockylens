@@ -22,14 +22,14 @@ export default function HeroSection() {
               <span className="tracking-wide uppercase font-semibold">Thương Hiệu Tròng Kính Canada Opticians</span>
             </div>
 
-            {/* Main Headline (Discovery & Visual Clarity) */}
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.12] text-slate-900 uppercase">
-              Tầm Nhìn Thuần Khiết. <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0B7B8A] to-teal-600">Nghệ Thuật Quang Học.</span>
+            {/* Main Headline (User's Exact Proposed Headline) */}
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.12] text-slate-900">
+              Rõ tầm nhìn, <br className="hidden sm:inline" /><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0B7B8A] to-teal-600">trọn cuộc sống.</span>
             </h1>
 
-            {/* Subheadline (Job-to-be-done for the wearer) */}
+            {/* Subheadline (User's Exact Proposed Narrative) */}
             <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              Khám phá thế hệ tròng kính kỹ thuật số chế tác từ phôi monomer Mitsui Nhật Bản. Chuẩn xác từng độ cầu, siêu mỏng nhẹ và bảo vệ thị lực toàn diện trong mọi khoảnh khắc sống.
+              Mỗi góc nhìn mở ra một trải nghiệm khác biệt. Rocky hướng đến những giải pháp tròng kính đáp ứng nhu cầu thị giác trong cuộc sống hiện đại.
             </p>
 
             {/* 3 Apple Liquid Spec Cards */}
@@ -37,7 +37,7 @@ export default function HeroSection() {
               <div className="p-4 rounded-2xl liquid-card">
                 <div className="text-xs font-bold text-[#0B7B8A] uppercase">Mitsui Monomer MR™</div>
                 <div className="text-sm font-black text-slate-900 mt-1">Trong Suốt 99.8%</div>
-                <div className="text-[11px] text-slate-500 mt-0.5">Không quang sai màu, dẻo dai cơ học</div>
+                <div className="text-[11px] text-slate-500 mt-0.5">Truyền quang cao, quang sai cực thấp</div>
               </div>
 
               <div className="p-4 rounded-2xl liquid-card">
@@ -53,21 +53,21 @@ export default function HeroSection() {
               </div>
             </div>
 
-            {/* Action Buttons (Product Exploration First) */}
+            {/* Action Buttons: Khám phá tròng kính & Tìm đại lý */}
             <div className="pt-3 flex flex-wrap items-center justify-center lg:justify-start gap-3.5">
               <Link
-                href="/trong-kinh/"
+                href="#trong-kinh"
                 className="liquid-btn-primary px-7 py-3.5 text-xs sm:text-sm font-bold shadow-md flex items-center space-x-2"
               >
-                <span>Khám Phá Các Dòng Tròng</span>
+                <span>Khám Phá Tròng Kính</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
 
               <Link
-                href="/kham-pha-trong-kinh/"
+                href="#tim-dai-ly"
                 className="liquid-btn-secondary px-6 py-3.5 text-xs sm:text-sm font-bold flex items-center space-x-2"
               >
-                <span>Cẩm Nang Chọn Tròng Kính</span>
+                <span>Tìm Đại Lý</span>
               </Link>
             </div>
 
