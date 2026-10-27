@@ -1,6 +1,6 @@
 {
  "url": "index.html",
- "at": "2026-10-27T03:37:36.964Z",
+ "at": "2026-10-27T03:51:28.741Z",
  "allow": [],
  "viewports": [
   {
@@ -9,19 +9,19 @@
    "load": "load",
    "screens": 9,
    "filled": [
-    0.66,
-    0.62,
-    0.83,
-    0.75,
+    0.52,
+    0.78,
+    0.8,
+    0.97,
     0.68,
     0.55,
-    0.77,
+    0.76,
     1,
     1
    ],
    "motion": {
-    "elements": 25,
-    "css": 25,
+    "elements": 24,
+    "css": 24,
     "transitions": 0,
     "scripted": 0,
     "videos": 0,
@@ -33,9 +33,9 @@
      "h": 900
     },
     "page": {
-     "height": 7336,
-     "screens": 8.2,
-     "words": 1764,
+     "height": 7324,
+     "screens": 8.1,
+     "words": 1759,
      "img": 47,
      "video": 0,
      "canvas": 0,
@@ -115,10 +115,10 @@
       "kind": "heading"
      },
      {
-      "text": "Cuộc sống có biết bao điều đáng nhìn ngắm.",
-      "words": 9,
-      "chars": 42,
-      "lines": 2,
+      "text": "Mỗi nhu cầu, một lựa chọn phù hợp.",
+      "words": 8,
+      "chars": 34,
+      "lines": 1,
       "size": 48,
       "vw": 3.3,
       "font": "SF Pro Display",
@@ -136,10 +136,10 @@
       "kind": "heading"
      },
      {
-      "text": "Mỗi nhu cầu, một lựa chọn phù hợp.",
-      "words": 8,
-      "chars": 34,
-      "lines": 1,
+      "text": "Cuộc sống có biết bao điều đáng nhìn ngắm.",
+      "words": 9,
+      "chars": 42,
+      "lines": 2,
       "size": 48,
       "vw": 3.3,
       "font": "SF Pro Display",
@@ -150,9 +150,9 @@
       "italic": false,
       "mono": false,
       "align": "left",
-      "position": "left",
-      "widthRatio": 0.53,
-      "top": 1460,
+      "position": "center",
+      "widthRatio": 0.62,
+      "top": 2680,
       "tag": "h2",
       "kind": "heading"
      },
@@ -173,7 +173,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.53,
-      "top": 3260,
+      "top": 3248,
       "tag": "h2",
       "kind": "heading"
      },
@@ -194,7 +194,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.35,
-      "top": 4058,
+      "top": 4046,
       "tag": "h2",
       "kind": "heading"
      },
@@ -215,7 +215,7 @@
       "align": "center",
       "position": "center",
       "widthRatio": 0.89,
-      "top": 4880,
+      "top": 4868,
       "tag": "h3",
       "kind": "heading"
      },
@@ -236,7 +236,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.53,
-      "top": 5272,
+      "top": 5260,
       "tag": "h2",
       "kind": "heading"
      },
@@ -257,7 +257,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.4,
-      "top": 5736,
+      "top": 5724,
       "tag": "div",
       "kind": "heading"
      },
@@ -278,7 +278,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.5,
-      "top": 6096,
+      "top": 6084,
       "tag": "h2",
       "kind": "heading"
      }
@@ -362,7 +362,7 @@
       },
       {
        "color": "#ffffff",
-       "top": 800,
+       "top": 2600,
        "hsl": {
         "h": 0,
         "s": 0,
@@ -371,7 +371,7 @@
       },
       {
        "color": "#0e253a",
-       "top": 6016,
+       "top": 6004,
        "hsl": {
         "h": 209,
         "s": 0.61,
@@ -380,7 +380,7 @@
       },
       {
        "color": "#071521",
-       "top": 6880,
+       "top": 6868,
        "hsl": {
         "h": 208,
         "s": 0.65,
@@ -390,12 +390,12 @@
      ],
      "textColors": [
       {
-       "color": "#475569",
+       "color": "#334155",
        "share": 0.34
       },
       {
-       "color": "#334155",
-       "share": 0.29
+       "color": "#475569",
+       "share": 0.3
       },
       {
        "color": "#0e253a",
@@ -403,7 +403,7 @@
       },
       {
        "color": "#e2e8f0",
-       "share": 0.08
+       "share": 0.09
       },
       {
        "color": "#5eead4",
@@ -449,7 +449,7 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 5,
-     "roundedBoxes": 60,
+     "roundedBoxes": 59,
      "boxRadius": 16,
      "squareMedia": 1,
      "roundedMedia": 14,
@@ -466,25 +466,25 @@
        "count": 6,
        "iconTopped": false,
        "rounded": true,
-       "top": 1640
+       "top": 1060
       },
       {
        "count": 4,
        "iconTopped": false,
        "rounded": true,
-       "top": 3424
+       "top": 3412
       },
       {
        "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 5436
+       "top": 5424
       },
       {
        "count": 4,
        "iconTopped": false,
        "rounded": true,
-       "top": 6356
+       "top": 6344
       }
      ]
     },
@@ -510,10 +510,10 @@
      "w": 1440,
      "h": 900
     },
-    "pageH": 7336,
+    "pageH": 7324,
     "margins": {
      "left": 73,
-     "right": 96
+     "right": 88
     },
     "sections": [
      {
@@ -540,34 +540,11 @@
       "pinned": false
      },
      {
-      "sel": "section#triet-ly.py-20.px-6",
-      "tag": "section",
-      "top": 800,
-      "height": 580,
-      "words": 99,
-      "media": 0,
-      "middle": 0,
-      "heading": {
-       "text": "Cuộc sống có biết bao điều đáng nhìn ngắm.",
-       "size": 48,
-       "tag": "h2"
-      },
-      "left": 73,
-      "right": 160,
-      "textLeft": 73,
-      "textRight": 160,
-      "fullBleed": false,
-      "footer": false,
-      "hero": false,
-      "continues": true,
-      "pinned": false
-     },
-     {
       "sel": "section#trong-kinh.py-20.px-6",
       "tag": "section",
-      "top": 1380,
+      "top": 800,
       "height": 1800,
-      "words": 393,
+      "words": 392,
       "media": 6,
       "middle": 64,
       "heading": {
@@ -586,9 +563,32 @@
       "pinned": false
      },
      {
+      "sel": "section#triet-ly.py-20.px-6",
+      "tag": "section",
+      "top": 2600,
+      "height": 568,
+      "words": 93,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Cuộc sống có biết bao điều đáng nhìn ngắm.",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 265,
+      "right": 291,
+      "textLeft": 265,
+      "textRight": 291,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
       "sel": "section#cong-nghe.py-20.px-6",
       "tag": "section",
-      "top": 3180,
+      "top": 3168,
       "height": 798,
       "words": 202,
       "media": 4,
@@ -611,11 +611,11 @@
      {
       "sel": "section#vi-sao-rocky.py-20.px-6",
       "tag": "section",
-      "top": 3978,
+      "top": 3966,
       "height": 1215,
       "words": 186,
       "media": 7,
-      "middle": 2547,
+      "middle": 2572,
       "heading": {
        "text": "Rocky Canada Opticians",
        "size": 48,
@@ -634,7 +634,7 @@
      {
       "sel": "section#tim-dai-ly.py-20.px-6",
       "tag": "section",
-      "top": 5192,
+      "top": 5180,
       "height": 824,
       "words": 200,
       "media": 0,
@@ -657,7 +657,7 @@
      {
       "sel": "section#doi-tac.py-20.px-6",
       "tag": "section",
-      "top": 6016,
+      "top": 6004,
       "height": 864,
       "words": 223,
       "media": 1,
@@ -680,7 +680,7 @@
      {
       "sel": "footer.bg-[#071521].text-slate-600",
       "tag": "footer",
-      "top": 6880,
+      "top": 6868,
       "height": 456,
       "words": 170,
       "media": 0,
@@ -710,7 +710,7 @@
     "edges": [
      {
       "x": 73,
-      "n": 17
+      "n": 15
      },
      {
       "x": 93,
@@ -725,12 +725,12 @@
       "n": 6
      },
      {
-      "x": 105,
-      "n": 3
+      "x": 265,
+      "n": 4
      },
      {
-      "x": 129,
-      "n": 2
+      "x": 105,
+      "n": 3
      },
      {
       "x": 423,
@@ -738,10 +738,6 @@
      },
      {
       "x": 464,
-      "n": 2
-     },
-     {
-      "x": 729,
       "n": 2
      },
      {
@@ -753,7 +749,7 @@
       "n": 2
      }
     ],
-    "leftBlocks": 52,
+    "leftBlocks": 50,
     "bodySize": 16,
     "stage": false,
     "explains": true,
@@ -776,20 +772,20 @@
    "screens": 11,
    "filled": [
     0.55,
-    0.65,
-    0.77,
+    0.64,
     0.88,
-    0.85,
-    0.84,
-    0.73,
-    0.54,
+    0.75,
     0.87,
+    0.65,
+    0.56,
+    0.72,
+    0.97,
     1,
     1
    ],
    "motion": {
-    "elements": 25,
-    "css": 25,
+    "elements": 24,
+    "css": 24,
     "transitions": 0,
     "scripted": 0,
     "videos": 0,
@@ -801,9 +797,9 @@
      "h": 1024
     },
     "page": {
-     "height": 10690,
-     "screens": 10.4,
-     "words": 1745,
+     "height": 10582,
+     "screens": 10.3,
+     "words": 1740,
      "img": 47,
      "video": 0,
      "canvas": 0,
@@ -883,10 +879,10 @@
       "kind": "heading"
      },
      {
-      "text": "Cuộc sống có biết bao điều đáng nhìn ngắm.",
-      "words": 9,
-      "chars": 42,
-      "lines": 2,
+      "text": "Mỗi nhu cầu, một lựa chọn phù hợp.",
+      "words": 8,
+      "chars": 34,
+      "lines": 1,
       "size": 36,
       "vw": 4.7,
       "font": "SF Pro Display",
@@ -904,10 +900,10 @@
       "kind": "heading"
      },
      {
-      "text": "Mỗi nhu cầu, một lựa chọn phù hợp.",
-      "words": 8,
-      "chars": 34,
-      "lines": 1,
+      "text": "Cuộc sống có biết bao điều đáng nhìn ngắm.",
+      "words": 9,
+      "chars": 42,
+      "lines": 2,
       "size": 36,
       "vw": 4.7,
       "font": "SF Pro Display",
@@ -920,7 +916,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 2090,
+      "top": 4192,
       "tag": "h2",
       "kind": "heading"
      },
@@ -941,7 +937,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 4824,
+      "top": 4716,
       "tag": "h2",
       "kind": "heading"
      },
@@ -962,7 +958,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 6016,
+      "top": 5908,
       "tag": "h2",
       "kind": "heading"
      },
@@ -983,7 +979,7 @@
       "align": "center",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 7242,
+      "top": 7134,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1004,7 +1000,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 7634,
+      "top": 7526,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1025,7 +1021,7 @@
       "align": "center",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 8250,
+      "top": 8142,
       "tag": "div",
       "kind": "heading"
      },
@@ -1046,7 +1042,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 8714,
+      "top": 8606,
       "tag": "h2",
       "kind": "heading"
      }
@@ -1139,7 +1135,7 @@
       },
       {
        "color": "#0e253a",
-       "top": 8634,
+       "top": 8526,
        "hsl": {
         "h": 209,
         "s": 0.61,
@@ -1148,7 +1144,7 @@
       },
       {
        "color": "#071521",
-       "top": 9978,
+       "top": 9870,
        "hsl": {
         "h": 208,
         "s": 0.65,
@@ -1158,12 +1154,12 @@
      ],
      "textColors": [
       {
-       "color": "#475569",
+       "color": "#334155",
        "share": 0.34
       },
       {
-       "color": "#334155",
-       "share": 0.3
+       "color": "#475569",
+       "share": 0.31
       },
       {
        "color": "#0e253a",
@@ -1217,7 +1213,7 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 5,
-     "roundedBoxes": 60,
+     "roundedBoxes": 59,
      "boxRadius": 16,
      "squareMedia": 1,
      "roundedMedia": 14,
@@ -1234,25 +1230,25 @@
        "count": 6,
        "iconTopped": false,
        "rounded": true,
-       "top": 2260
+       "top": 1629
       },
       {
        "count": 4,
        "iconTopped": false,
        "rounded": true,
-       "top": 4978
+       "top": 4871
       },
       {
        "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 7790
+       "top": 7682
       },
       {
        "count": 4,
        "iconTopped": false,
        "rounded": true,
-       "top": 8946
+       "top": 8838
       }
      ]
     },
@@ -1278,10 +1274,10 @@
      "w": 768,
      "h": 1024
     },
-    "pageH": 10690,
+    "pageH": 10582,
     "margins": {
      "left": 24,
-     "right": 45
+     "right": 41
     },
     "sections": [
      {
@@ -1308,34 +1304,11 @@
       "pinned": false
      },
      {
-      "sel": "section#triet-ly.py-20.px-6",
-      "tag": "section",
-      "top": 1378,
-      "height": 632,
-      "words": 99,
-      "media": 0,
-      "middle": 0,
-      "heading": {
-       "text": "Cuộc sống có biết bao điều đáng nhìn ngắm.",
-       "size": 36,
-       "tag": "h2"
-      },
-      "left": 24,
-      "right": 76,
-      "textLeft": 24,
-      "textRight": 76,
-      "fullBleed": false,
-      "footer": false,
-      "hero": false,
-      "continues": true,
-      "pinned": false
-     },
-     {
       "sel": "section#trong-kinh.py-20.px-6",
       "tag": "section",
-      "top": 2010,
+      "top": 1378,
       "height": 2734,
-      "words": 393,
+      "words": 392,
       "media": 6,
       "middle": 0,
       "heading": {
@@ -1344,9 +1317,32 @@
        "tag": "h2"
       },
       "left": 24,
-      "right": 52,
+      "right": 55,
       "textLeft": 24,
-      "textRight": 52,
+      "textRight": 68,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#triet-ly.py-20.px-6",
+      "tag": "section",
+      "top": 4112,
+      "height": 524,
+      "words": 93,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Cuộc sống có biết bao điều đáng nhìn ngắm.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 42,
+      "textLeft": 24,
+      "textRight": 42,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1356,7 +1352,7 @@
      {
       "sel": "section#cong-nghe.py-20.px-6",
       "tag": "section",
-      "top": 4744,
+      "top": 4636,
       "height": 1192,
       "words": 202,
       "media": 4,
@@ -1379,11 +1375,11 @@
      {
       "sel": "section#vi-sao-rocky.py-20.px-6",
       "tag": "section",
-      "top": 5936,
+      "top": 5828,
       "height": 1619,
       "words": 186,
       "media": 7,
-      "middle": 3067,
+      "middle": 3092,
       "heading": {
        "text": "Rocky Canada Opticians",
        "size": 36,
@@ -1402,7 +1398,7 @@
      {
       "sel": "section#tim-dai-ly.py-20.px-6",
       "tag": "section",
-      "top": 7554,
+      "top": 7446,
       "height": 1080,
       "words": 200,
       "media": 0,
@@ -1425,7 +1421,7 @@
      {
       "sel": "section#doi-tac.py-20.px-6",
       "tag": "section",
-      "top": 8634,
+      "top": 8526,
       "height": 1344,
       "words": 223,
       "media": 1,
@@ -1448,7 +1444,7 @@
      {
       "sel": "footer.bg-[#071521].text-slate-600",
       "tag": "footer",
-      "top": 9978,
+      "top": 9870,
       "height": 712,
       "words": 170,
       "media": 0,
@@ -1478,7 +1474,7 @@
     "edges": [
      {
       "x": 24,
-      "n": 17
+      "n": 19
      },
      {
       "x": 44,
@@ -1497,15 +1493,7 @@
       "n": 2
      },
      {
-      "x": 72,
-      "n": 2
-     },
-     {
       "x": 302,
-      "n": 2
-     },
-     {
-      "x": 393,
       "n": 2
      },
      {
@@ -1513,7 +1501,7 @@
       "n": 2
      }
     ],
-    "leftBlocks": 51,
+    "leftBlocks": 49,
     "bodySize": 16,
     "stage": false,
     "explains": true,
@@ -1532,20 +1520,20 @@
    "filled": [
     0.63,
     0.79,
-    0.7,
-    0.72,
-    0.86,
+    0.71,
     0.91,
-    0.92,
-    0.92,
-    0.82,
-    0.81,
-    0.74,
-    0.77
+    0.86,
+    0.86,
+    0.86,
+    0.88,
+    0.91,
+    0.72,
+    0.64,
+    0.76
    ],
    "motion": {
-    "elements": 25,
-    "css": 25,
+    "elements": 24,
+    "css": 24,
     "transitions": 0,
     "scripted": 0,
     "videos": 0,
@@ -1557,9 +1545,9 @@
      "h": 844
     },
     "page": {
-     "height": 17331,
-     "screens": 20.5,
-     "words": 1738,
+     "height": 17191,
+     "screens": 20.4,
+     "words": 1733,
      "img": 47,
      "video": 0,
      "canvas": 0,
@@ -1639,27 +1627,6 @@
       "kind": "heading"
      },
      {
-      "text": "Cuộc sống có biết bao điều đáng nhìn ngắm.",
-      "words": 9,
-      "chars": 42,
-      "lines": 2,
-      "size": 30,
-      "vw": 7.7,
-      "font": "SF Pro Display",
-      "weight": 900,
-      "tracking": -0.025,
-      "leading": 1.2,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.88,
-      "top": 1825,
-      "tag": "h2",
-      "kind": "heading"
-     },
-     {
       "text": "Mỗi nhu cầu, một lựa chọn phù hợp.",
       "words": 8,
       "chars": 34,
@@ -1676,7 +1643,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 2641,
+      "top": 1825,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1697,7 +1664,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 3178,
+      "top": 2368,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1718,7 +1685,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 3863,
+      "top": 3052,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1739,7 +1706,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 4540,
+      "top": 3729,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1760,7 +1727,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 5253,
+      "top": 4442,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1781,7 +1748,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 5930,
+      "top": 5119,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1802,8 +1769,29 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 6644,
+      "top": 5833,
       "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Cuộc sống có biết bao điều đáng nhìn ngắm.",
+      "words": 9,
+      "chars": 42,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "SF Pro Display",
+      "weight": 900,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 6494,
+      "tag": "h2",
       "kind": "heading"
      },
      {
@@ -1823,7 +1811,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 7305,
+      "top": 7165,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1844,7 +1832,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 9357,
+      "top": 9217,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1865,7 +1853,7 @@
       "align": "center",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 12257,
+      "top": 12117,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1886,7 +1874,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 12649,
+      "top": 12509,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1907,7 +1895,7 @@
       "align": "center",
       "position": "center",
       "widthRatio": 0.71,
-      "top": 13701,
+      "top": 13561,
       "tag": "div",
       "kind": "heading"
      },
@@ -1928,7 +1916,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 14321,
+      "top": 14181,
       "tag": "h2",
       "kind": "heading"
      }
@@ -2020,7 +2008,7 @@
       },
       {
        "color": "#0e253a",
-       "top": 14241,
+       "top": 14101,
        "hsl": {
         "h": 209,
         "s": 0.61,
@@ -2029,7 +2017,7 @@
       },
       {
        "color": "#163652",
-       "top": 15561,
+       "top": 15421,
        "hsl": {
         "h": 208,
         "s": 0.58,
@@ -2038,7 +2026,7 @@
       },
       {
        "color": "#071521",
-       "top": 16101,
+       "top": 15961,
        "hsl": {
         "h": 208,
         "s": 0.65,
@@ -2048,12 +2036,12 @@
      ],
      "textColors": [
       {
-       "color": "#475569",
+       "color": "#334155",
        "share": 0.34
       },
       {
-       "color": "#334155",
-       "share": 0.3
+       "color": "#475569",
+       "share": 0.31
       },
       {
        "color": "#0e253a",
@@ -2107,7 +2095,7 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 5,
-     "roundedBoxes": 73,
+     "roundedBoxes": 72,
      "boxRadius": 16,
      "squareMedia": 1,
      "roundedMedia": 14,
@@ -2124,25 +2112,25 @@
        "count": 6,
        "iconTopped": false,
        "rounded": true,
-       "top": 2898
+       "top": 2088
       },
       {
        "count": 4,
        "iconTopped": false,
        "rounded": true,
-       "top": 7538
+       "top": 7399
       },
       {
        "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 12865
+       "top": 12725
       },
       {
        "count": 4,
        "iconTopped": false,
        "rounded": true,
-       "top": 14661
+       "top": 14521
       }
      ]
     },
@@ -2163,10 +2151,10 @@
      "w": 390,
      "h": 844
     },
-    "pageH": 17331,
+    "pageH": 17191,
     "margins": {
      "left": 24,
-     "right": 27
+     "right": 24
     },
     "sections": [
      {
@@ -2193,34 +2181,11 @@
       "pinned": false
      },
      {
-      "sel": "section#triet-ly.py-20.px-6",
-      "tag": "section",
-      "top": 1745,
-      "height": 816,
-      "words": 99,
-      "media": 0,
-      "middle": 0,
-      "heading": {
-       "text": "Cuộc sống có biết bao điều đáng nhìn ngắm.",
-       "size": 30,
-       "tag": "h2"
-      },
-      "left": 24,
-      "right": 30,
-      "textLeft": 24,
-      "textRight": 30,
-      "fullBleed": false,
-      "footer": false,
-      "hero": false,
-      "continues": true,
-      "pinned": false
-     },
-     {
       "sel": "section#trong-kinh.py-20.px-6",
       "tag": "section",
-      "top": 2561,
-      "height": 4664,
-      "words": 393,
+      "top": 1745,
+      "height": 4669,
+      "words": 392,
       "media": 6,
       "middle": 0,
       "heading": {
@@ -2229,9 +2194,32 @@
        "tag": "h2"
       },
       "left": 24,
-      "right": 35,
+      "right": 28,
       "textLeft": 24,
-      "textRight": 35,
+      "textRight": 28,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#triet-ly.py-20.px-6",
+      "tag": "section",
+      "top": 6414,
+      "height": 671,
+      "words": 93,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Cuộc sống có biết bao điều đáng nhìn ngắm.",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 25,
+      "textLeft": 24,
+      "textRight": 25,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -2241,7 +2229,7 @@
      {
       "sel": "section#cong-nghe.py-20.px-6",
       "tag": "section",
-      "top": 7225,
+      "top": 7085,
       "height": 2052,
       "words": 202,
       "media": 4,
@@ -2264,11 +2252,11 @@
      {
       "sel": "section#vi-sao-rocky.py-20.px-6",
       "tag": "section",
-      "top": 9277,
+      "top": 9137,
       "height": 3292,
       "words": 186,
       "media": 13,
-      "middle": 2844,
+      "middle": 2847,
       "heading": {
        "text": "Rocky Canada Opticians",
        "size": 30,
@@ -2287,7 +2275,7 @@
      {
       "sel": "section#tim-dai-ly.py-20.px-6",
       "tag": "section",
-      "top": 12569,
+      "top": 12429,
       "height": 1672,
       "words": 200,
       "media": 0,
@@ -2310,7 +2298,7 @@
      {
       "sel": "section#doi-tac.py-20.px-6",
       "tag": "section",
-      "top": 14241,
+      "top": 14101,
       "height": 1860,
       "words": 223,
       "media": 1,
@@ -2333,7 +2321,7 @@
      {
       "sel": "footer.bg-[#071521].text-slate-600",
       "tag": "footer",
-      "top": 16101,
+      "top": 15961,
       "height": 1230,
       "words": 170,
       "media": 0,
@@ -2367,14 +2355,14 @@
      },
      {
       "x": 24,
-      "n": 17
+      "n": 19
      },
      {
       "x": 56,
-      "n": 10
+      "n": 6
      }
     ],
-    "leftBlocks": 51,
+    "leftBlocks": 49,
     "bodySize": 16,
     "stage": false,
     "explains": true,
@@ -2418,19 +2406,9 @@
   },
   {
    "level": "WARN",
-   "id": "off-centre",
-   "width": 1440,
-   "message": "The margins differ: 73px on the left, 96px on the right, at 1440px.",
-   "fix": "Put the navigation and the content on one pair of margins; check for padding on one side only, a scrollbar gutter, or a header on another inset than the page.",
-   "alsoAt": [
-    768
-   ]
-  },
-  {
-   "level": "WARN",
    "id": "empty-middle",
    "width": 1440,
-   "message": "1 section(s) have content at both edges and 2547px of nothing between: \"Rocky Canada Opticians\"",
+   "message": "1 section(s) have content at both edges and 2572px of nothing between: \"Rocky Canada Opticians\"",
    "fix": "Bring the two parts together on the grid, or put the picture or figure of the section in the middle. An empty middle third reads as a hole, the same as an empty half.",
    "alsoAt": [
     768
@@ -2440,8 +2418,15 @@
    "level": "WARN",
    "id": "ragged-edges",
    "width": 1440,
-   "message": "Left-aligned text starts at 11 different lines (73px, 93px, 538px, 975px, 105px, 129px, 423px); the three most used hold only 60% of it.",
+   "message": "Left-aligned text starts at 10 different lines (73px, 93px, 538px, 975px, 265px, 105px, 423px); the three most used hold only 58% of it.",
    "fix": "Pick two or three anchor lines from the grid and start every heading and paragraph on one of them."
+  },
+  {
+   "level": "WARN",
+   "id": "off-centre",
+   "width": 768,
+   "message": "The margins differ: 24px on the left, 41px on the right, at 768px.",
+   "fix": "Put the navigation and the content on one pair of margins; check for padding on one side only, a scrollbar gutter, or a header on another inset than the page."
   }
  ],
  "images": [

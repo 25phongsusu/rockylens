@@ -113,7 +113,7 @@ export default function WhyRockySection() {
                   <div
                     key={idx}
                     onClick={() => setSelectedCertIndex(idx)}
-                    className="bg-white p-1.5 rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300"
+                    className="rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100"
                   >
                     <Image
                       src={cert.src}
@@ -142,7 +142,7 @@ export default function WhyRockySection() {
                   <div
                     key={idx}
                     onClick={() => setSelectedCertIndex(idx + 6)}
-                    className="bg-white p-2 rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300"
+                    className="rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100"
                   >
                     <Image
                       src={cert.src}
@@ -171,7 +171,7 @@ export default function WhyRockySection() {
                   <div
                     key={idx}
                     onClick={() => setSelectedCertIndex(idx + 10)}
-                    className="bg-white p-2 rounded-2xl shadow-xs aspect-[4/3] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300"
+                    className="rounded-2xl shadow-xs aspect-[4/3] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100"
                   >
                     <Image
                       src={cert.src}

@@ -216,8 +216,8 @@ const html = `<!DOCTYPE html>
       <!-- 6 Primary Navigation Items in Strict Order -->
       <nav class="hidden lg:flex items-center gap-7 text-base font-semibold text-slate-800">
         <a href="#" class="text-[#0B7B8A] font-bold">Trang chủ</a>
-        <a href="#triet-ly" class="hover:text-[#0B7B8A] transition-colors">Triết lý</a>
         <a href="#trong-kinh" class="hover:text-[#0B7B8A] transition-colors">Tròng kính</a>
+        <a href="#triet-ly" class="hover:text-[#0B7B8A] transition-colors">Triết lý</a>
         <a href="#cong-nghe" class="hover:text-[#0B7B8A] transition-colors">Công nghệ</a>
         <a href="#vi-sao-rocky" class="hover:text-[#0B7B8A] transition-colors">Vì sao chọn Rocky</a>
         <a href="#tim-dai-ly" class="hover:text-[#0B7B8A] transition-colors">Tìm đại lý</a>
@@ -302,51 +302,6 @@ const html = `<!DOCTYPE html>
     </section>
 
     <!-- ========================================================= -->
-    <!-- SECTION 2 — BRAND PHILOSOPHY                              -->
-    <!-- Mục tiêu: Giúp người dùng hiểu Rocky đại diện cho điều gì -->
-    <!-- Niềm tin, bản sắc & mối liên hệ với trải nghiệm thị giác  -->
-    <!-- ========================================================= -->
-    <section id="triet-ly" class="py-20 px-6 bg-white">
-      <div class="max-w-7xl mx-auto space-y-12">
-        
-        <div class="max-w-3xl motion-8">
-          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0E253A] tracking-tight">
-            Cuộc sống có biết bao điều đáng nhìn ngắm.
-          </h2>
-          <p class="text-slate-600 text-lg mt-3">
-            Từ những khoảnh khắc giản dị đến những trải nghiệm đáng nhớ, tầm nhìn luôn là một phần trong cách chúng ta cảm nhận thế giới.
-          </p>
-        </div>
-
-        <!-- Editorial Philosophy Lead Block -->
-        <div class="bg-[#F5F5F7] p-8 sm:p-12 lg:p-14 rounded-[36px] space-y-8 motion-9">
-          
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="space-y-3">
-              <h3 class="text-xl font-bold text-[#0B7B8A]">
-                Trải Nghiệm Thị Giác Của Mỗi Người
-              </h3>
-              <p class="text-slate-700 text-base sm:text-lg leading-relaxed">
-                Rocky tin rằng việc lựa chọn tròng kính không chỉ dựa trên số độ, mà còn cần cân nhắc nhu cầu và thói quen trong cuộc sống hằng ngày của bạn.
-              </p>
-            </div>
-
-            <div class="space-y-3">
-              <h3 class="text-xl font-bold text-[#0B7B8A]">
-                Đồng Hành Cùng Cuộc Sống Hiện Đại
-              </h3>
-              <p class="text-slate-700 text-base sm:text-lg leading-relaxed">
-                Đó là lý do Rocky hướng đến những giải pháp tròng kính đa dạng, giúp mỗi người dễ dàng tìm hiểu và lựa chọn sản phẩm phù hợp nhất với mình.
-              </p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ========================================================= -->
     <!-- SECTION 3 — EXPLORE ROCKY LENSES                          -->
     <!-- Mục tiêu: Giúp người tiêu dùng khám phá theo nhu cầu      -->
     <!-- Bố cục: 6 Card lớn (3 ô / hàng), hover specs, CTA rõ ràng -->
@@ -358,8 +313,8 @@ const html = `<!DOCTYPE html>
           <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0E253A] tracking-tight">
             Mỗi nhu cầu, một lựa chọn phù hợp.
           </h2>
-          <p class="text-slate-600 text-lg mt-3">
-            Khám phá các dòng tròng kính Rocky theo nhu cầu sử dụng và những đặc điểm mà bạn quan tâm. Rê chuột vào từng sản phẩm để xem thông tin chi tiết.
+          <p class="text-slate-700 text-lg sm:text-xl mt-3 leading-relaxed motion-9">
+            Rocky tin rằng việc lựa chọn tròng kính không chỉ dựa trên số độ, mà còn cần cân nhắc nhu cầu và thói quen trong cuộc sống hằng ngày của bạn.
           </p>
         </div>
 
@@ -802,6 +757,35 @@ const html = `<!DOCTYPE html>
     </section>
 
     <!-- ========================================================= -->
+    <!-- SECTION 3 — BRAND PHILOSOPHY                              -->
+    <!-- Mục tiêu: Giúp người dùng hiểu Rocky đại diện cho điều gì -->
+    <!-- Niềm tin, bản sắc & trải nghiệm thị giác                  -->
+    <!-- ========================================================= -->
+    <section id="triet-ly" class="py-20 px-6 bg-white">
+      <div class="max-w-4xl mx-auto space-y-8">
+        
+        <div class="space-y-4">
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0E253A] tracking-tight">
+            Cuộc sống có biết bao điều đáng nhìn ngắm.
+          </h2>
+        </div>
+
+        <div class="space-y-6 text-slate-700 text-lg sm:text-xl lg:text-2xl font-medium leading-relaxed pt-2">
+          <p>
+            &ldquo;Từ những khoảnh khắc giản dị đến những trải nghiệm đáng nhớ, tầm nhìn luôn là một phần trong cách chúng ta cảm nhận thế giới.
+          </p>
+          <p>
+            Tại Rocky, chúng tôi tin rằng một giải pháp tròng kính không chỉ là một sản phẩm, mà còn là một phần trong trải nghiệm thị giác của mỗi người.
+          </p>
+          <p>
+            Đó là lý do chúng tôi hướng đến việc phát triển những giải pháp tròng kính đáp ứng các nhu cầu khác nhau trong cuộc sống hiện đại &mdash; để mỗi người có thể tìm thấy lựa chọn phù hợp với mình.&rdquo;
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
     <!-- SECTION 4 — TECHNOLOGY & QUALITY                          -->
     <!-- Mục tiêu: Giúp khách hàng hiểu đặc tính tạo nên chất lượng -->
     <!-- Giải thích bằng ngôn ngữ phổ thông, không dùng cam kết quá đà -->
@@ -948,7 +932,7 @@ const html = `<!DOCTYPE html>
             <!-- Group 1: Chứng chỉ Canada -->
             <div class="space-y-3">
               <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">
-                <div class="bg-white p-1.5 rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300" onclick="openCertModal(0)">
+                <div class="rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(0)">
                   <img src="assets/images/bangkhen/11.jpg" alt="The College of Opticians of Ontario - Optician Certificate" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
                     <div class="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
@@ -958,7 +942,7 @@ const html = `<!DOCTYPE html>
                     </div>
                   </div>
                 </div>
-                <div class="bg-white p-1.5 rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300" onclick="openCertModal(1)">
+                <div class="rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(1)">
                   <img src="assets/images/bangkhen/12.jpg" alt="The College of Opticians of Ontario - Optician Certificate" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
                     <div class="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
@@ -968,7 +952,7 @@ const html = `<!DOCTYPE html>
                     </div>
                   </div>
                 </div>
-                <div class="bg-white p-1.5 rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300" onclick="openCertModal(2)">
+                <div class="rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(2)">
                   <img src="assets/images/bangkhen/13.jpg" alt="The College of Opticians of Ontario - Optician Certificate" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
                     <div class="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
@@ -978,7 +962,7 @@ const html = `<!DOCTYPE html>
                     </div>
                   </div>
                 </div>
-                <div class="bg-white p-1.5 rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300" onclick="openCertModal(3)">
+                <div class="rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(3)">
                   <img src="assets/images/bangkhen/14.jpg" alt="The College of Opticians of Ontario - Optician Certificate" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
                     <div class="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
@@ -988,7 +972,7 @@ const html = `<!DOCTYPE html>
                     </div>
                   </div>
                 </div>
-                <div class="bg-white p-1.5 rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300" onclick="openCertModal(4)">
+                <div class="rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(4)">
                   <img src="assets/images/bangkhen/15.jpg" alt="Georgian College - Optician Diploma" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
                     <div class="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
@@ -998,7 +982,7 @@ const html = `<!DOCTYPE html>
                     </div>
                   </div>
                 </div>
-                <div class="bg-white p-1.5 rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300" onclick="openCertModal(5)">
+                <div class="rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(5)">
                   <img src="assets/images/bangkhen/16.jpg" alt="National Association of Canadian Optician Regulators" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
                     <div class="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
@@ -1017,7 +1001,7 @@ const html = `<!DOCTYPE html>
             <!-- Group 2: Tiêu chuẩn quốc tế & Giải thưởng châu Á -->
             <div class="space-y-3">
               <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-                <div class="bg-white p-2 rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300" onclick="openCertModal(6)">
+                <div class="rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(6)">
                   <img src="assets/images/bangkhen/1.jpg" alt="Giấy chứng nhận ISO 13485:2016 Rocky Lens" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
                     <div class="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
@@ -1027,7 +1011,7 @@ const html = `<!DOCTYPE html>
                     </div>
                   </div>
                 </div>
-                <div class="bg-white p-2 rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300" onclick="openCertModal(7)">
+                <div class="rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(7)">
                   <img src="assets/images/bangkhen/2.jpg" alt="Thương hiệu uy tín hội nhập Châu Á 2024" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
                     <div class="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
@@ -1037,7 +1021,7 @@ const html = `<!DOCTYPE html>
                     </div>
                   </div>
                 </div>
-                <div class="bg-white p-2 rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300" onclick="openCertModal(8)">
+                <div class="rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(8)">
                   <img src="assets/images/bangkhen/3.jpg" alt="Sản phẩm dịch vụ chất lượng Châu Á 2024" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
                     <div class="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
@@ -1047,7 +1031,7 @@ const html = `<!DOCTYPE html>
                     </div>
                   </div>
                 </div>
-                <div class="bg-white p-2 rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300" onclick="openCertModal(9)">
+                <div class="rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(9)">
                   <img src="assets/images/bangkhen/4.jpg" alt="The Best of Vietnam 2024 - Top 20 Sản phẩm tốt nhất" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
                     <div class="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
@@ -1066,7 +1050,7 @@ const html = `<!DOCTYPE html>
             <!-- Group 3: Hoạt động vì cộng đồng -->
             <div class="space-y-3">
               <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                <div class="bg-white p-2 rounded-2xl shadow-xs aspect-[4/3] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300" onclick="openCertModal(10)">
+                <div class="rounded-2xl shadow-xs aspect-[4/3] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(10)">
                   <img src="assets/images/bangkhen/31.jpg" alt="Giấy khen Hội cứu trợ trẻ em tàn tật Việt Nam" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
                     <div class="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
@@ -1076,7 +1060,7 @@ const html = `<!DOCTYPE html>
                     </div>
                   </div>
                 </div>
-                <div class="bg-white p-2 rounded-2xl shadow-xs aspect-[4/3] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300" onclick="openCertModal(11)">
+                <div class="rounded-2xl shadow-xs aspect-[4/3] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(11)">
                   <img src="assets/images/bangkhen/32.jpg" alt="Giấy khen Hội nạn nhân chất độc da cam / Dioxin" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
                     <div class="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
@@ -1086,7 +1070,7 @@ const html = `<!DOCTYPE html>
                     </div>
                   </div>
                 </div>
-                <div class="bg-white p-2 rounded-2xl shadow-xs aspect-[4/3] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300" onclick="openCertModal(12)">
+                <div class="rounded-2xl shadow-xs aspect-[4/3] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(12)">
                   <img src="assets/images/bangkhen/33.jpg" alt="Kỷ niệm chương Tấm lòng nhân ái" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
                     <div class="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
