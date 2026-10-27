@@ -6,6 +6,7 @@ import TechnologyHighlights from '@/components/home/TechnologyHighlights';
 import WhyRockySection from '@/components/home/WhyRockySection';
 import FindStoreSection from '@/components/home/FindStoreSection';
 import PartnerSection from '@/components/home/PartnerSection';
+import BlogSection from '@/components/home/BlogSection';
 
 export default function HomePage() {
   return (
@@ -30,6 +31,9 @@ export default function HomePage() {
 
       {/* SECTION 7 — PARTNER WITH ROCKY */}
       <PartnerSection />
+
+      {/* SECTION 8 — BLOG & CUSTOMER INSIGHTS */}
+      <BlogSection />
     </div>
   );
 }

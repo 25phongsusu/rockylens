@@ -139,9 +139,9 @@ export default function Header() {
           <div className="flex items-center space-x-3">
             <Link
               href="/danh-cho-doi-tac/"
-              className="hidden sm:inline-flex items-center space-x-2 px-4 py-2.5 rounded-lg text-xs font-semibold bg-[#0B7B8A] text-white hover:bg-[#096370] shadow-xs hover:shadow transition-all"
+              className="hidden sm:inline-flex items-center space-x-2 px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold bg-[#0B7B8A] text-white hover:bg-[#086370] shadow-xs hover:shadow transition-all"
             >
-              <span>Dành Cho Đối Tác B2B</span>
+              <span>Nhận Báo Giá Đại Lý</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
 

@@ -213,15 +213,13 @@ const html = `<!DOCTYPE html>
         <img src="assets/logo_rocky_transparent.png" alt="Rocky Lens Canada" class="h-9 sm:h-10 w-auto object-contain">
       </a>
 
-      <!-- 6 Primary Navigation Items in Strict Order -->
-      <nav class="hidden lg:flex items-center gap-7 text-base font-semibold text-slate-800">
-        <a href="#" class="text-[#0B7B8A] font-bold">Trang chủ</a>
-        <a href="#triet-ly" class="hover:text-[#0B7B8A] transition-colors">Triết lý</a>
-        <a href="#trong-kinh" class="hover:text-[#0B7B8A] transition-colors">Tròng kính</a>
-        <a href="#cong-nghe" class="hover:text-[#0B7B8A] transition-colors">Công nghệ</a>
-        <a href="#vi-sao-rocky" class="hover:text-[#0B7B8A] transition-colors">Vì sao chọn Rocky</a>
-        <a href="#tim-dai-ly" class="hover:text-[#0B7B8A] transition-colors">Tìm đại lý</a>
-        <a href="#doi-tac" class="hover:text-[#0B7B8A] transition-colors">Dành cho đối tác</a>
+      <!-- Primary Multi-Page Navigation Items -->
+      <nav class="hidden lg:flex items-center gap-8 text-base font-semibold text-slate-800">
+        <a href="index.html" class="text-[#0B7B8A] font-bold">Trang chủ</a>
+        <a href="trong-kinh/" class="hover:text-[#0B7B8A] transition-colors">Sản Phẩm</a>
+        <a href="kham-pha-trong-kinh/" class="hover:text-[#0B7B8A] transition-colors">Công Nghệ</a>
+        <a href="blog/" class="hover:text-[#0B7B8A] transition-colors">Blog</a>
+        <a href="danh-cho-doi-tac/" class="hover:text-[#0B7B8A] transition-colors">Đối tác</a>
       </nav>
 
       <!-- Action Button: Open B2B Dealer Quote Modal -->
@@ -1350,6 +1348,148 @@ const html = `<!DOCTYPE html>
             </div>
           </div>
 
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SECTION 8 — BLOG & CUSTOMER INSIGHTS                      -->
+    <!-- Mục tiêu: Chia sẻ kiến thức thị giác theo insight khách hàng -->
+    <!-- 3 bài mẫu: Văn phòng, Lái xe đêm mưa, Trẻ em cận tiến triển -->
+    <!-- ========================================================= -->
+    <section id="blog-insights" class="py-20 px-6 bg-[#F5F5F7]">
+      <div class="max-w-7xl mx-auto space-y-12">
+        
+        <!-- Section Header -->
+        <div class="max-w-3xl space-y-3">
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0E253A] tracking-tight">
+            Góc nhìn &amp; insight thị giác.
+          </h2>
+          <p class="text-slate-600 text-lg leading-relaxed mt-3">
+            Kiến thức tròng kính và những câu chuyện thực tế từ người đeo kính giúp bạn lựa chọn giải pháp phù hợp nhất.
+          </p>
+        </div>
+
+        <!-- 3 Featured Insight Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Card 1: Dân Văn Phòng & Thiết Kế -->
+          <div class="group bg-white rounded-3xl overflow-hidden transition-all duration-300 flex flex-col justify-between hover:shadow-lg">
+            <div>
+              <div class="h-56 sm:h-64 bg-slate-100 overflow-hidden relative">
+                <img src="assets/images/products/category-solution-2.png" alt="Giải pháp chống ánh sáng xanh UV420 không ám vàng" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <span class="absolute top-4 left-4 px-3.5 py-1 rounded-full bg-[#0E253A] text-teal-300 text-sm font-bold">
+                  Bảo Vệ Thị Lực Văn Phòng
+                </span>
+              </div>
+              <div class="p-6 sm:p-7 space-y-3">
+                <div class="flex items-center gap-3 text-sm font-semibold text-slate-500">
+                  <span>05/03/2025</span>
+                  <span>&bull;</span>
+                  <span>5 phút đọc</span>
+                </div>
+                <h3 class="text-xl font-bold text-[#0E253A] group-hover:text-[#0B7B8A] transition-colors leading-snug line-clamp-2">
+                  <a href="blog/giai-phap-chong-anh-sang-xanh-uv420/">
+                    Ánh Sáng Xanh Có Thực Sự Gây Hại? Bí Quyết Chống Mỏi Mắt Màn Hình Không Ám Vàng
+                  </a>
+                </h3>
+                <p class="text-slate-600 text-sm leading-relaxed line-clamp-3">
+                  Làm việc 8-10 tiếng mỗi ngày trước laptop khiến mắt khô rát và mỏi điều tiết. Tìm hiểu cơ chế phôi hấp thụ monomer BlueCut UV420 bảo vệ hoàng điểm và giữ màu trung thực.
+                </p>
+              </div>
+            </div>
+            <div class="p-6 sm:p-7 pt-0">
+              <a href="blog/giai-phap-chong-anh-sang-xanh-uv420/" class="w-full py-3 rounded-full bg-slate-100 hover:bg-[#0B7B8A] hover:text-white text-slate-800 font-semibold text-sm transition-all flex items-center justify-center gap-2 text-center cursor-pointer">
+                <span>Đọc bài viết chi tiết</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: Tài Xế Lái Xe Đêm & Mưa -->
+          <div class="group bg-white rounded-3xl overflow-hidden transition-all duration-300 flex flex-col justify-between hover:shadow-lg">
+            <div>
+              <div class="h-56 sm:h-64 bg-slate-100 overflow-hidden relative">
+                <img src="assets/images/products/category-solution-1.png" alt="Kính lái xe ban đêm DriveShield chống lóa đèn pha" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <span class="absolute top-4 left-4 px-3.5 py-1 rounded-full bg-[#0E253A] text-teal-300 text-sm font-bold">
+                  Tầm Nhìn Lái Xe An Toàn
+                </span>
+              </div>
+              <div class="p-6 sm:p-7 space-y-3">
+                <div class="flex items-center gap-3 text-sm font-semibold text-slate-500">
+                  <span>10/03/2025</span>
+                  <span>&bull;</span>
+                  <span>6 phút đọc</span>
+                </div>
+                <h3 class="text-xl font-bold text-[#0E253A] group-hover:text-[#0B7B8A] transition-colors leading-snug line-clamp-2">
+                  <a href="blog/cong-nghe-kinh-lai-xe-driveshield/">
+                    Lái Xe Ban Đêm &amp; Đi Mưa: Bí Quyết Triệt Tiêu Lóa Đèn Pha Cho Bác Tài Vững Lái
+                  </a>
+                </h3>
+                <p class="text-slate-600 text-sm leading-relaxed line-clamp-3">
+                  Nỗi ám ảnh khi bị đèn pha xe đối diện rọi chói mắt hoặc đường ướt mưa gây lóa mờ. Khám phá lớp phủ phân cực Ruby AR nâng cao độ tương phản đêm an toàn.
+                </p>
+              </div>
+            </div>
+            <div class="p-6 sm:p-7 pt-0">
+              <a href="blog/cong-nghe-kinh-lai-xe-driveshield/" class="w-full py-3 rounded-full bg-slate-100 hover:bg-[#0B7B8A] hover:text-white text-slate-800 font-semibold text-sm transition-all flex items-center justify-center gap-2 text-center cursor-pointer">
+                <span>Đọc bài viết chi tiết</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3: Phụ Huynh Có Con Cận Thị -->
+          <div class="group bg-white rounded-3xl overflow-hidden transition-all duration-300 flex flex-col justify-between hover:shadow-lg">
+            <div>
+              <div class="h-56 sm:h-64 bg-slate-100 overflow-hidden relative">
+                <img src="assets/images/products/category-solution-7.png" alt="Kiểm soát cận thị tiến triển Defocus MyoControl" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <span class="absolute top-4 left-4 px-3.5 py-1 rounded-full bg-[#0E253A] text-teal-300 text-sm font-bold">
+                  Chăm Sóc Mắt Học Đường
+                </span>
+              </div>
+              <div class="p-6 sm:p-7 space-y-3">
+                <div class="flex items-center gap-3 text-sm font-semibold text-slate-500">
+                  <span>15/03/2025</span>
+                  <span>&bull;</span>
+                  <span>7 phút đọc</span>
+                </div>
+                <h3 class="text-xl font-bold text-[#0E253A] group-hover:text-[#0B7B8A] transition-colors leading-snug line-clamp-2">
+                  <a href="blog/kiem-soat-can-thi-tre-em-myocontrol/">
+                    Kiểm Soát Tăng Độ Cận Ở Trẻ Em: Những Điều Ba Mẹ Cần Biết Về Defocus MyoControl
+                  </a>
+                </h3>
+                <p class="text-slate-600 text-sm leading-relaxed line-clamp-3">
+                  Vì sao độ cận của trẻ tăng nhanh 0.75 - 1.25 độ mỗi năm khi đi học? Cơ chế vi thấu kính phân tán chu biên hội tụ giúp kìm hãm trục nhãn cầu dài ra hiệu quả.
+                </p>
+              </div>
+            </div>
+            <div class="p-6 sm:p-7 pt-0">
+              <a href="blog/kiem-soat-can-thi-tre-em-myocontrol/" class="w-full py-3 rounded-full bg-slate-100 hover:bg-[#0B7B8A] hover:text-white text-slate-800 font-semibold text-sm transition-all flex items-center justify-center gap-2 text-center cursor-pointer">
+                <span>Đọc bài viết chi tiết</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Big Action Button to Full Blog Page -->
+        <div class="flex flex-col sm:flex-row items-center justify-center pt-4">
+          <a href="blog/" class="group inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#0E253A] hover:bg-[#0B7B8A] text-white font-bold text-base sm:text-lg transition-colors duration-200">
+            <span>Khám Phá Tất Cả Bài Viết &amp; Insight Thị Giác</span>
+            <svg class="w-5 h-5 transition-transform duration-200 group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
         </div>
 
       </div>
