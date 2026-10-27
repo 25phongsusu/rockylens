@@ -381,8 +381,8 @@ const html = `<!DOCTYPE html>
     <!-- CTA chính: Khám phá tròng kính | CTA phụ: Tìm đại lý     -->
     <!-- ========================================================= -->
     <section class="pt-12 sm:pt-16 pb-20 px-6 bg-[#F5F5F7]">
-      <div class="max-w-7xl mx-auto">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
           
           <!-- Left Column: Display Typography & Brand Value -->
           <div class="lg:col-span-7 space-y-6">
@@ -391,7 +391,7 @@ const html = `<!DOCTYPE html>
               Rõ tầm nhìn, <br class="hidden sm:inline" />trọn cuộc sống.
             </h1>
 
-            <p class="text-slate-700 text-lg sm:text-xl leading-relaxed max-w-2xl motion-2">
+            <p class="text-slate-700 text-lg sm:text-xl leading-relaxed max-w-xl motion-2">
               Mỗi ngày có biết bao điều đáng để nhìn ngắm. Rocky mang đến những lựa chọn tròng kính đáp ứng nhu cầu học tập, làm việc và tận hưởng cuộc sống.
             </p>
 
@@ -422,16 +422,16 @@ const html = `<!DOCTYPE html>
 
           </div>
 
-          <!-- Right Column: Studio Lens Photograph (Tách nền trắng - Transparent Floating) -->
-          <div class="lg:col-span-5 relative flex flex-col items-center justify-center motion-7">
+          <!-- Right Column: Studio Lens Photograph (Gần lại nội dung bên trái, thu hẹp khoảng cách) -->
+          <div class="lg:col-span-5 relative flex flex-col items-center lg:items-start justify-center motion-7 lg:-ml-4">
             <!-- Ambient Optical Caustic Halo -->
             <div class="w-72 h-72 sm:w-96 sm:h-96 rounded-full bg-gradient-to-tr from-teal-300/35 via-cyan-200/30 to-sky-300/35 blur-3xl absolute pointer-events-none -z-0"></div>
 
-            <div class="relative z-10 w-full max-w-md flex flex-col items-center justify-center">
+            <div class="relative z-10 w-full max-w-sm sm:max-w-md flex flex-col items-center justify-center">
               <div class="relative w-full flex items-center justify-center min-h-[320px]">
                 <img src="assets/h-lens3.png" alt="Tròng kính quang học Rocky Lens Canada" class="w-full max-h-[380px] object-contain animate-float-lens drop-shadow-[0_20px_35px_rgba(11,123,138,0.22)]">
               </div>
-              <div class="mt-4 text-center">
+              <div class="mt-4 text-center w-full">
                 <span class="text-base font-bold text-[#0E253A] block">Thương Hiệu Tròng Kính Rocky</span>
                 <span class="text-base text-slate-600 block mt-1">Phân phối chính hãng bởi Clearly Vietnam &bull; Tiêu chuẩn ISO 13485</span>
               </div>

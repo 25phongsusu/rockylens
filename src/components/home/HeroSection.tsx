@@ -12,8 +12,8 @@ export default function HeroSection() {
       <div className="absolute -top-32 -left-32 w-[600px] h-[600px] bg-gradient-to-tr from-teal-200/40 via-cyan-100/30 to-sky-200/40 rounded-full blur-[100px] liquid-morph-1 pointer-events-none" />
       <div className="absolute top-1/4 -right-32 w-[550px] h-[550px] bg-gradient-to-bl from-teal-100/35 via-cyan-100/30 to-blue-100/30 rounded-full blur-[110px] liquid-morph-2 pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
           
           {/* Left Column: Product Discovery Journey Hero Narrative */}
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
@@ -95,13 +95,13 @@ export default function HeroSection() {
 
           </div>
 
-          {/* Right Column: Hero Visual Asset (Tách nền trắng - Transparent Floating) */}
-          <div className="lg:col-span-5 relative flex items-center justify-center">
+          {/* Right Column: Hero Visual Asset (Gần lại nội dung bên trái, thu hẹp khoảng cách) */}
+          <div className="lg:col-span-5 relative flex items-center justify-center lg:justify-start lg:-ml-4">
             
             {/* Ambient Caustic Halo */}
             <div className="w-80 h-80 sm:w-96 sm:h-96 rounded-full bg-gradient-to-tr from-teal-200/50 via-cyan-100/40 to-sky-200/50 blur-3xl absolute liquid-morph-1 pointer-events-none" />
 
-            <div className="relative z-10 w-full max-w-md aspect-square flex items-center justify-center">
+            <div className="relative z-10 w-full max-w-sm sm:max-w-md aspect-square flex items-center justify-center">
               
               <div className="relative w-full h-full flex items-center justify-center">
                 <Image
