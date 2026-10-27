@@ -376,33 +376,29 @@
               Mỗi ngày có biết bao điều đáng để nhìn ngắm. Rocky mang đến những lựa chọn tròng kính đáp ứng nhu cầu học tập, làm việc và tận hưởng cuộc sống.
             </p>
 
-            <!-- Dual CTAs: Khám phá tròng kính & Tìm đại lý -->
+            <!-- Dual CTAs: Khám phá tròng kính & Nhận Báo Giá Đại Lý -->
             <div class="flex flex-wrap items-center gap-4 pt-2 motion-3">
-              <a href="#trong-kinh" class="px-7 py-3.5 rounded-full bg-[#0B7B8A] hover:bg-[#086370] text-white font-bold text-base transition-colors text-center">
+              <a href="#trong-kinh" class="px-7 py-3.5 rounded-full bg-[#0B7B8A] hover:bg-[#086370] text-white font-bold text-base transition-colors text-center shadow-sm">
                 Khám phá tròng kính
               </a>
-              <a href="#tim-dai-ly" class="px-7 py-3.5 rounded-full bg-white hover:bg-slate-100 text-[#0E253A] font-bold text-base transition-colors text-center">
-                Tìm đại lý
-              </a>
+              <button type="button" onclick="openB2BQuoteModal()" class="px-7 py-3.5 rounded-full bg-white hover:bg-slate-100 text-[#0E253A] font-bold text-base transition-colors text-center cursor-pointer shadow-sm">
+                Nhận Báo Giá Đại Lý
+              </button>
             </div>
 
-            <!-- 3 Consumer-Centric Value Cards (Layer 1 Benefits -> Layer 2 Explanation) -->
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6">
-              <div class="bg-white p-5 rounded-3xl motion-4">
-                <div class="text-xl font-black text-[#0B7B8A]">Trong Suốt Tự Nhiên</div>
-                <div class="text-base font-semibold text-slate-800 mt-1">Hạn chế quang sai</div>
-                <p class="text-base text-slate-600 mt-0.5">Vật liệu tròng kính trong suốt, màu sắc trung thực</p>
-              </div>
-              <div class="bg-white p-5 rounded-3xl motion-5">
-                <div class="text-xl font-black text-[#0B7B8A]">Chuẩn Xác Từng Điểm</div>
-                <div class="text-base font-semibold text-slate-800 mt-1">Thích nghi êm dịu</div>
-                <p class="text-base text-slate-600 mt-0.5">Chú trọng độ chính xác trong quá trình chế tác</p>
-              </div>
-              <div class="bg-white p-5 rounded-3xl motion-6">
-                <div class="text-xl font-black text-[#0B7B8A]">Chất Lượng Kiểm Chứng</div>
-                <div class="text-base font-semibold text-slate-800 mt-1">An tâm sử dụng</div>
-                <p class="text-base text-slate-600 mt-0.5">Tiêu chuẩn ISO 13485 và bảo hành chính hãng</p>
-              </div>
+            <!-- Micro Trust Indicators -->
+            <div class="pt-4 flex flex-wrap items-center gap-4 text-xs text-slate-500 font-medium motion-4">
+              <span class="flex items-center gap-1.5 text-slate-700">
+                <span class="w-2 h-2 rounded-full bg-[#0B7B8A]"></span>
+                <span>Ontario Opticians No. 6181</span>
+              </span>
+              <span>&bull;</span>
+              <span class="flex items-center gap-1.5 text-slate-700">
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                <span>ISO 13485:2016 Medical Quality</span>
+              </span>
+              <span>&bull;</span>
+              <span class="text-slate-700">Bảo hành điện tử 1 đổi 1 24T</span>
             </div>
 
           </div>
@@ -456,27 +452,27 @@
             </h2>
 
             <div class="space-y-4 text-slate-700 text-lg sm:text-xl font-medium leading-relaxed">
-              <p>
-                Từ những khoảnh khắc đời thường giản dị đến những chân trời rộng mở, tầm nhìn luôn là chiếc cầu nối để bạn trọn vẹn cảm nhận vẻ đẹp của thế giới.
-              </p>
-              <p class="text-slate-600 text-base sm:text-lg">
+              <p class="text-slate-700 text-base sm:text-lg">
                 Tại Rocky, chúng tôi tin rằng một cặp tròng kính không chỉ đơn thuần là sản phẩm bổ trợ thị lực, mà là người bạn đồng hành chăm sóc thị giác mỗi ngày — mang đến sự êm dịu, rõ nét tự nhiên để bạn tự do tận hưởng từng khoảnh khắc đáng giá.
               </p>
             </div>
 
-            <!-- 3 Value Pillars -->
+            <!-- 3 Value Cards (Chuyển từ Hero xuống) -->
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
-              <div class="bg-[#F5F5F7] p-4 rounded-2xl text-center sm:text-left">
-                <div class="text-sm font-bold text-slate-800">Độ trong suốt tự nhiên</div>
-                <p class="text-sm text-slate-600 mt-1">Màu sắc trung thực, hạn chế quang sai</p>
+              <div class="bg-[#F5F5F7] p-5 rounded-2xl text-center sm:text-left transition-transform hover:-translate-y-1">
+                <div class="text-base font-black text-[#0B7B8A]">Trong Suốt Tự Nhiên</div>
+                <div class="text-sm font-semibold text-slate-800 mt-1">Hạn chế quang sai</div>
+                <p class="text-xs text-slate-600 mt-1 leading-relaxed">Vật liệu tròng kính trong suốt, màu sắc trung thực</p>
               </div>
-              <div class="bg-[#F5F5F7] p-4 rounded-2xl text-center sm:text-left">
-                <div class="text-sm font-bold text-slate-800">Cảm giác đeo êm dịu</div>
-                <p class="text-sm text-slate-600 mt-1">Thoải mái khi làm việc suốt ngày dài</p>
+              <div class="bg-[#F5F5F7] p-5 rounded-2xl text-center sm:text-left transition-transform hover:-translate-y-1">
+                <div class="text-base font-black text-[#0B7B8A]">Chuẩn Xác Từng Điểm</div>
+                <div class="text-sm font-semibold text-slate-800 mt-1">Thích nghi êm dịu</div>
+                <p class="text-xs text-slate-600 mt-1 leading-relaxed">Chú trọng độ chính xác trong quá trình chế tác</p>
               </div>
-              <div class="bg-[#F5F5F7] p-4 rounded-2xl text-center sm:text-left">
-                <div class="text-sm font-bold text-slate-800">Độ chính xác chuẩn mực</div>
-                <p class="text-sm text-slate-600 mt-1">Chế tác theo tiêu chuẩn ISO 13485</p>
+              <div class="bg-[#F5F5F7] p-5 rounded-2xl text-center sm:text-left transition-transform hover:-translate-y-1">
+                <div class="text-base font-black text-[#0B7B8A]">Chất Lượng Kiểm Chứng</div>
+                <div class="text-sm font-semibold text-slate-800 mt-1">An tâm sử dụng</div>
+                <p class="text-xs text-slate-600 mt-1 leading-relaxed">Tiêu chuẩn ISO 13485 và bảo hành chính hãng</p>
               </div>
             </div>
 
@@ -506,7 +502,7 @@
             Mỗi nhu cầu, một lựa chọn phù hợp.
           </h2>
           <p class="text-slate-700 text-lg sm:text-xl mt-3 leading-relaxed motion-9">
-            Rocky tin rằng việc lựa chọn tròng kính không chỉ dựa trên số độ, mà còn cần cân nhắc nhu cầu và thói quen trong cuộc sống hằng ngày của bạn.
+            Từ những khoảnh khắc đời thường giản dị đến những chân trời rộng mở, tầm nhìn luôn là chiếc cầu nối để bạn trọn vẹn cảm nhận vẻ đẹp của thế giới.
           </p>
         </div>
 

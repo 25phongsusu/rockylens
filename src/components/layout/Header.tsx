@@ -12,6 +12,15 @@ export default function Header() {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   const [isB2BModalOpen, setIsB2BModalOpen] = useState(false);
 
+  React.useEffect(() => {
+    const handler = () => setIsB2BModalOpen(true);
+    window.addEventListener('open-b2b-modal', handler);
+    (window as any).openB2BQuoteModal = handler;
+    return () => {
+      window.removeEventListener('open-b2b-modal', handler);
+    };
+  }, []);
+
   const isActive = (href: string) => {
     if (href === '/') return pathname === '/' || pathname === '';
     return pathname.startsWith(href);

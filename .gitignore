@@ -10,6 +10,7 @@ psd_summary.txt
 rockylens_font_report.json
 preview_sections/
 scratch/
+.taste-skill/
 
 # Next.js & Node
 node_modules/

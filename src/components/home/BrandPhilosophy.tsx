@@ -35,27 +35,27 @@ export default function BrandPhilosophy() {
             </h2>
 
             <div className="space-y-4 text-slate-700 text-lg sm:text-xl font-medium leading-relaxed">
-              <p>
-                Từ những khoảnh khắc đời thường giản dị đến những chân trời rộng mở, tầm nhìn luôn là chiếc cầu nối để bạn trọn vẹn cảm nhận vẻ đẹp của thế giới.
-              </p>
               <p className="text-slate-600 text-base sm:text-lg">
                 Tại Rocky, chúng tôi tin rằng một cặp tròng kính không chỉ đơn thuần là sản phẩm bổ trợ thị lực, mà là người bạn đồng hành chăm sóc thị giác mỗi ngày — mang đến sự êm dịu, rõ nét tự nhiên để bạn tự do tận hưởng từng khoảnh khắc đáng giá.
               </p>
             </div>
 
-            {/* 3 Value Pillars */}
+            {/* 3 Value Cards (Chuyển từ Hero xuống) */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
-              <div className="bg-[#F5F5F7] p-4 rounded-2xl text-center sm:text-left">
-                <div className="text-xs font-bold text-slate-500 uppercase tracking-wider">Độ Trong Suốt</div>
-                <div className="text-sm font-bold text-[#0E253A] mt-1">Màu sắc trung thực</div>
+              <div className="bg-[#F5F5F7] p-5 rounded-2xl text-center sm:text-left transition-transform hover:-translate-y-1">
+                <div className="text-base font-black text-[#0B7B8A]">Trong Suốt Tự Nhiên</div>
+                <div className="text-sm font-semibold text-slate-800 mt-1">Hạn chế quang sai</div>
+                <p className="text-xs text-slate-600 mt-1 leading-relaxed">Vật liệu tròng kính trong suốt, màu sắc trung thực</p>
               </div>
-              <div className="bg-[#F5F5F7] p-4 rounded-2xl text-center sm:text-left">
-                <div className="text-xs font-bold text-slate-500 uppercase tracking-wider">Cảm Giác Đeo</div>
-                <div className="text-sm font-bold text-[#0E253A] mt-1">Êm dịu suốt ngày dài</div>
+              <div className="bg-[#F5F5F7] p-5 rounded-2xl text-center sm:text-left transition-transform hover:-translate-y-1">
+                <div className="text-base font-black text-[#0B7B8A]">Chuẩn Xác Từng Điểm</div>
+                <div className="text-sm font-semibold text-slate-800 mt-1">Thích nghi êm dịu</div>
+                <p className="text-xs text-slate-600 mt-1 leading-relaxed">Chú trọng độ chính xác trong quá trình chế tác</p>
               </div>
-              <div className="bg-[#F5F5F7] p-4 rounded-2xl text-center sm:text-left">
-                <div className="text-xs font-bold text-slate-500 uppercase tracking-wider">Độ Chính Xác</div>
-                <div className="text-sm font-bold text-[#0E253A] mt-1">Chuẩn ISO 13485</div>
+              <div className="bg-[#F5F5F7] p-5 rounded-2xl text-center sm:text-left transition-transform hover:-translate-y-1">
+                <div className="text-base font-black text-[#0B7B8A]">Chất Lượng Kiểm Chứng</div>
+                <div className="text-sm font-semibold text-slate-800 mt-1">An tâm sử dụng</div>
+                <p className="text-xs text-slate-600 mt-1 leading-relaxed">Tiêu chuẩn ISO 13485 và bảo hành chính hãng</p>
               </div>
             </div>
 

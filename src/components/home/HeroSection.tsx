@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -53,7 +55,7 @@ export default function HeroSection() {
               </div>
             </div>
 
-            {/* Action Buttons: Khám phá tròng kính & Tìm đại lý */}
+            {/* Action Buttons: Khám phá tròng kính & Nhận Báo Giá Đại Lý */}
             <div className="pt-3 flex flex-wrap items-center justify-center lg:justify-start gap-3.5">
               <Link
                 href="#trong-kinh"
@@ -63,12 +65,17 @@ export default function HeroSection() {
                 <ArrowRight className="w-4 h-4" />
               </Link>
 
-              <Link
-                href="#tim-dai-ly"
-                className="liquid-btn-secondary px-6 py-3.5 text-xs sm:text-sm font-bold flex items-center space-x-2"
+              <button
+                type="button"
+                onClick={() => {
+                  if (typeof window !== 'undefined') {
+                    window.dispatchEvent(new CustomEvent('open-b2b-modal'));
+                  }
+                }}
+                className="liquid-btn-secondary px-6 py-3.5 text-xs sm:text-sm font-bold flex items-center space-x-2 cursor-pointer"
               >
-                <span>Tìm Đại Lý</span>
-              </Link>
+                <span>Nhận Báo Giá Đại Lý</span>
+              </button>
             </div>
 
             {/* Micro Trust Indicators */}

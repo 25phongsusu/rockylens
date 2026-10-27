@@ -101,7 +101,7 @@ export default function ProductCategories() {
             Mỗi nhu cầu, một lựa chọn phù hợp
           </h2>
           <p className="text-slate-600 text-base sm:text-lg mt-3">
-            Rocky tin rằng việc lựa chọn tròng kính không chỉ dựa trên số độ, mà còn cần cân nhắc nhu cầu và thói quen trong cuộc sống hằng ngày của bạn.
+            Từ những khoảnh khắc đời thường giản dị đến những chân trời rộng mở, tầm nhìn luôn là chiếc cầu nối để bạn trọn vẹn cảm nhận vẻ đẹp của thế giới.
           </p>
         </div>
 
