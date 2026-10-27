@@ -169,7 +169,7 @@ export default function AboutUsPage() {
       {/* Contact CTA */}
       <ContactCTA
         title="Đồng Hành Cùng Thương Hiệu Tròng Kính Rocky Lens"
-        description="Chúng tôi luôn chào đón các đối tác chuỗi mắt kính, phòng khám nhãn khoa và khách hàng tìm kiếm giá trị thị giác đích thực."
+        description="Chúng tôi luôn chào đón các cửa hàng mắt kính, chuỗi phòng khám nhãn khoa và đại lý phân phối trên toàn quốc hợp tác phát triển cùng Rocky Lens."
       />
     </div>
   );

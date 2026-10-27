@@ -20,6 +20,7 @@ import {
 import Breadcrumbs from '@/components/shared/Breadcrumbs';
 import SectionHeading from '@/components/shared/SectionHeading';
 import ContactCTA from '@/components/shared/ContactCTA';
+import B2BQuoteButton from '@/components/common/B2BQuoteButton';
 import { constructMetadata } from '@/lib/seo/metadata';
 import { siteConfig } from '@/config/site';
 import { CATEGORIES } from '@/features/products/product-types';
@@ -74,14 +75,16 @@ export default function PartnerPage() {
             </p>
 
             <div className="pt-2 flex flex-wrap gap-4">
+              <B2BQuoteButton />
+
               <a
                 href={siteConfig.zalo.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center space-x-2 px-6 py-3.5 rounded-xl text-sm font-bold bg-[#0B7B8A] hover:bg-[#096370] text-white shadow-lg transition-all"
+                className="inline-flex items-center space-x-2 px-6 py-3.5 rounded-xl text-sm font-semibold bg-white/10 hover:bg-white/15 text-white border border-white/20 transition-all"
               >
-                <span>Kết Nối Zalo Đại Lý</span>
-                <ArrowUpRight className="w-4 h-4" />
+                <span>Nhắn Zalo Đại Lý</span>
+                <ArrowUpRight className="w-4 h-4 text-teal-300" />
               </a>
 
               <a
@@ -91,7 +94,7 @@ export default function PartnerPage() {
                 className="inline-flex items-center space-x-2 px-6 py-3.5 rounded-xl text-sm font-semibold bg-white/10 hover:bg-white/15 text-white border border-white/20 transition-all"
               >
                 <Download className="w-4 h-4 text-[#D97706]" />
-                <span>Tải Bảng Giá & Catalogue 2025</span>
+                <span>Tải Bảng Giá &amp; Catalogue 2025</span>
               </a>
             </div>
           </div>

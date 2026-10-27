@@ -33,7 +33,7 @@ export default function ProductsPage() {
             Danh Mục Tròng Kính Quang Học
           </h1>
           <p className="mt-3 text-slate-300 text-sm sm:text-base max-w-3xl leading-relaxed">
-            Hệ sinh thái sản phẩm toàn diện cho đại lý kính mắt và người tiêu dùng. Cam kết 100% phôi vật liệu đạt chuẩn quang học, ứng dụng công nghệ phay Freeform 3D và lớp váng phủ chân không đa tầng.
+            Hệ sinh thái sản phẩm toàn diện cho hệ thống đại lý kính mắt và chuỗi phòng khám khúc xạ. Cam kết 100% phôi vật liệu đạt chuẩn quang học, ứng dụng công nghệ phay Freeform 3D và lớp váng phủ chân không đa tầng.
           </p>
         </div>
       </section>

@@ -3,6 +3,19 @@
 import React, { useState } from 'react';
 import { X, Phone, MessageSquare, CheckCircle, ArrowRight } from 'lucide-react';
 
+export function openB2BQuoteModal() {
+  if (typeof window !== 'undefined') {
+    window.dispatchEvent(new CustomEvent('open-b2b-modal'));
+    if ((window as any).openB2BQuoteModal) {
+      try {
+        (window as any).openB2BQuoteModal();
+      } catch (e) {
+        // noop
+      }
+    }
+  }
+}
+
 interface B2BQuoteModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -93,43 +106,53 @@ export default function B2BQuoteModal({ isOpen, onClose }: B2BQuoteModalProps) {
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-3">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
                 <input
                   type="text"
                   required
-                  placeholder="Tên Cửa Hàng / Đại Lý *"
+                  placeholder="Tên Cửa hàng mắt kính / Đơn vị (*)"
                   value={formData.storeName}
                   onChange={(e) => setFormData({ ...formData, storeName: e.target.value })}
-                  className="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-[#0B7B8A] focus:ring-1 focus:ring-[#0B7B8A]"
+                  className="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-[#0B7B8A] focus:outline-none text-sm text-[#0E253A] bg-slate-50 focus:bg-white transition-colors"
                 />
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <input
                   type="tel"
                   required
-                  placeholder="Số Điện Thoại / Zalo *"
+                  placeholder="Số điện thoại / Zalo (*)"
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  className="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-[#0B7B8A] focus:ring-1 focus:ring-[#0B7B8A]"
+                  className="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-[#0B7B8A] focus:outline-none text-sm text-[#0E253A] bg-slate-50 focus:bg-white transition-colors"
+                />
+                <input
+                  type="text"
+                  required
+                  placeholder="Tỉnh / Thành phố (*)"
+                  value={formData.city}
+                  onChange={(e) => setFormData({ ...formData, city: e.target.value })}
+                  className="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-[#0B7B8A] focus:outline-none text-sm text-[#0E253A] bg-slate-50 focus:bg-white transition-colors"
                 />
               </div>
-              <input
-                type="text"
-                placeholder="Tỉnh / Thành Phố hoạt động"
-                value={formData.city}
-                onChange={(e) => setFormData({ ...formData, city: e.target.value })}
-                className="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-[#0B7B8A] focus:ring-1 focus:ring-[#0B7B8A]"
-              />
               <button
                 type="submit"
                 className="w-full py-3 rounded-xl bg-[#0E253A] hover:bg-[#0B7B8A] text-white font-bold text-sm transition-colors cursor-pointer flex items-center justify-center gap-2"
               >
-                <span>Gửi Yêu Cầu Báo Giá</span>
-                <ArrowRight className="w-4 h-4" />
+                <span>Gửi Yêu Cầu Nhận Báo Giá &amp; Catalog</span>
               </button>
             </form>
           )}
 
-          <div className="text-[11px] text-slate-400 text-center">
-            Rocky cam kết bảo mật 100% dữ liệu và chính sách chiết khấu của đối tác kinh doanh.
+          {/* Consumer Redirect Link matching screenshot */}
+          <div className="text-center pt-2 border-t border-slate-100">
+            <a
+              href="#tim-dai-ly"
+              onClick={onClose}
+              className="text-sm text-slate-600 hover:text-[#0B7B8A] transition-colors"
+            >
+              Bạn là khách hàng cá nhân muốn cắt kính lẻ?{' '}
+              <span className="font-bold underline">Xem điểm bán gần nhất &rarr;</span>
+            </a>
           </div>
         </div>
       </div>

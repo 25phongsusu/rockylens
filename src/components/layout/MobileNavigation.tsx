@@ -46,7 +46,7 @@ export default function MobileNavigation() {
         <div className="p-5 border-b border-slate-100 flex items-center justify-between bg-slate-50">
           <Link href="/" onClick={closeMenu} className="flex items-center space-x-2">
             <span className="text-xl font-bold tracking-tight text-[#0B7B8A]">ROCKY LENS</span>
-            <span className="text-xs font-semibold px-2 py-0.5 rounded bg-teal-100 text-[#0B7B8A]">B2B & B2C</span>
+            <span className="text-xs font-semibold px-2 py-0.5 rounded bg-teal-100 text-[#0B7B8A]">B2B Đại Lý</span>
           </Link>
           <button
             onClick={closeMenu}
@@ -103,7 +103,7 @@ export default function MobileNavigation() {
             rel="noopener noreferrer"
             className="w-full flex items-center justify-center space-x-2 py-2.5 px-4 bg-[#0B7B8A] text-white rounded-lg text-sm font-medium hover:bg-[#096370] shadow-xs transition-colors"
           >
-            <span>Kết nối Zalo B2B</span>
+            <span>Zalo Tiếp Nhận Đại Lý</span>
             <ArrowRight className="w-4 h-4" />
           </a>
           <a
@@ -111,7 +111,7 @@ export default function MobileNavigation() {
             className="w-full flex items-center justify-center space-x-2 py-2.5 px-4 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:border-[#0B7B8A] hover:text-[#0B7B8A] transition-colors"
           >
             <Phone className="w-4 h-4 text-[#0B7B8A]" />
-            <span>Hotline: {siteConfig.phones.hotlineDisplay}</span>
+            <span>Hotline B2B: {siteConfig.phones.hotlineDisplay}</span>
           </a>
         </div>
       </div>

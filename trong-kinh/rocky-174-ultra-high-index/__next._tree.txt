@@ -1,6 +1,5 @@
-:HL["/rockylens/_next/static/chunks/3fgdg_52zpc7t.css","style"]
-:HL["/rockylens/assets/logo_rocky_transparent.png","image"]
+:HL["/rockylens/_next/static/chunks/1evrliwoiwoui.css","style"]
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":{"n":"slug","t":"d","k":"rocky-174-ultra-high-index","s":[]},"h":96,"c":"$Q3"}]]
-1:[["children",{"s":"trong-kinh","h":64,"c":"$Q2"}]]
-0:{"b":"IiIdFO_9FZmr3HKOeuJvg","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
+1:[["children",{"s":"trong-kinh","h":96,"c":"$Q2"}]]
+0:{"b":"QUXrJ47vYpeGPE7tVA0Yg","t":{"t":{"s":"","h":80,"c":"$Q1"}}}

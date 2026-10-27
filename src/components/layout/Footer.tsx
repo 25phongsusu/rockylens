@@ -1,5 +1,8 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
+import { openB2BQuoteModal } from '@/components/common/B2BQuoteModal';
 
 export default function Footer() {
   return (
@@ -93,15 +96,24 @@ export default function Footer() {
 
           {/* Col 4: Distribution & Contact */}
           <div className="space-y-3">
-            <span className="text-white font-bold text-lg block">Văn Phòng Phân Phối</span>
+            <span className="text-white font-bold text-lg block">Tiếp Nhận Đại Lý &amp; B2B</span>
             <div className="space-y-2 text-base text-slate-400 font-medium">
-              <p><strong>Hotline:</strong> 0933 102 653</p>
-              <p><strong>Email:</strong> info@rockylens.com</p>
-              <p><strong>Zalo:</strong> 0933 102 653</p>
-              <p><strong>Văn phòng:</strong> TP. Hồ Chí Minh &amp; Hà Nội</p>
+              <p><strong>Hotline B2B:</strong> 0933 102 653</p>
+              <p><strong>Email Đại Lý:</strong> b2b@rockylens.com</p>
+              <p><strong>Zalo Hợp Tác:</strong> 0933 102 653</p>
+              <p><strong>Trung Tâm Kho:</strong> TP. Hồ Chí Minh &amp; Hà Nội</p>
               <p className="text-base text-slate-400 font-medium pt-2">
-                Thời gian tiếp nhận: 8:00 - 18:00 (Thứ 2 - Thứ 7)
+                Tiếp nhận yêu cầu đại lý: 8:00 - 18:00 (Thứ 2 - Thứ 7)
               </p>
+              <div className="pt-2">
+                <button
+                  type="button"
+                  onClick={openB2BQuoteModal}
+                  className="w-full sm:w-auto inline-flex items-center justify-center px-4 py-2.5 rounded-xl text-xs font-bold bg-[#0B7B8A] hover:bg-[#086370] text-white transition-colors cursor-pointer shadow-xs"
+                >
+                  Nhận Báo Giá Cho Đại Lý
+                </button>
+              </div>
             </div>
           </div>
 

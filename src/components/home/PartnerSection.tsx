@@ -1,6 +1,9 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
-import { ArrowRight, Phone, ShieldCheck, Layers, Cpu, Award } from 'lucide-react';
+import { ArrowRight, Phone, ShieldCheck, Layers, Cpu, Award, ArrowUpRight } from 'lucide-react';
+import { openB2BQuoteModal } from '@/components/common/B2BQuoteModal';
 
 const partnerValues = [
   {
@@ -74,19 +77,27 @@ export default function PartnerSection() {
             </p>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-4 shrink-0">
+            <button
+              type="button"
+              onClick={openB2BQuoteModal}
+              className="px-7 py-3.5 rounded-full bg-[#0B7B8A] hover:bg-[#086370] text-white font-bold text-base transition-colors text-center cursor-pointer shadow-xs inline-flex items-center space-x-2"
+            >
+              <span>Nhận Báo Giá Cho Đại Lý</span>
+              <ArrowUpRight className="w-4 h-4" />
+            </button>
             <Link
               href="/danh-cho-doi-tac/"
-              className="px-7 py-3.5 rounded-full bg-[#0B7B8A] hover:bg-[#086370] text-white font-bold text-base transition-colors text-center inline-flex items-center space-x-2"
+              className="px-7 py-3.5 rounded-full bg-slate-700 hover:bg-slate-600 text-white font-bold text-base transition-colors text-center inline-flex items-center space-x-2"
             >
-              <span>Xem thông tin hợp tác</span>
+              <span>Chính Sách Hợp Tác</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
             <a
               href="tel:0933102653"
-              className="px-7 py-3.5 rounded-full bg-slate-700 hover:bg-slate-600 text-white font-bold text-base transition-colors text-center inline-flex items-center space-x-2"
+              className="px-6 py-3.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-semibold text-sm transition-colors text-center inline-flex items-center space-x-2"
             >
               <Phone className="w-4 h-4 text-teal-400" />
-              <span>Hotline B2B: 0933 102 653</span>
+              <span>0933 102 653</span>
             </a>
           </div>
         </div>

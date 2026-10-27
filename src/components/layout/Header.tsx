@@ -39,7 +39,7 @@ export default function Header() {
           </div>
           <div className="flex items-center gap-6 text-base font-medium">
             <a href="tel:0933102653" className="text-white hover:text-teal-300 transition-colors">
-              Hotline: 0933 102 653
+              Hotline B2B: 0933 102 653
             </a>
             <a
               href="https://zalo.me/0933102653"
@@ -47,7 +47,7 @@ export default function Header() {
               rel="noopener noreferrer"
               className="text-teal-300 hover:text-white transition-colors"
             >
-              Zalo Hỗ Trợ
+              Zalo B2B Đại Lý
             </a>
           </div>
         </div>
@@ -143,7 +143,7 @@ export default function Header() {
               <div className="flex items-center justify-around text-sm font-medium text-slate-600 pt-1">
                 <a href="tel:0933102653" className="flex items-center gap-1.5 hover:text-[#0B7B8A]">
                   <Phone className="w-4 h-4 text-[#0B7B8A]" />
-                  <span>0933 102 653</span>
+                  <span>Hotline B2B: 0933 102 653</span>
                 </a>
                 <a
                   href="https://zalo.me/0933102653"
@@ -152,7 +152,7 @@ export default function Header() {
                   className="flex items-center gap-1.5 text-teal-600 hover:text-teal-700"
                 >
                   <MessageSquare className="w-4 h-4" />
-                  <span>Zalo Hỗ Trợ</span>
+                  <span>Zalo B2B Đại Lý</span>
                 </a>
               </div>
             </div>
