@@ -1,154 +1,161 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Phone, Mail, ChevronDown, Award, Sparkles, ArrowRight } from 'lucide-react';
+import { Menu, X, ChevronRight, Phone, MessageSquare } from 'lucide-react';
 import { mainNavigation } from '@/config/navigation';
-import { siteConfig } from '@/config/site';
-import MobileNavigation from './MobileNavigation';
+import B2BQuoteModal from '@/components/common/B2BQuoteModal';
 
 export default function Header() {
   const pathname = usePathname();
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [isMobileOpen, setIsMobileOpen] = useState(false);
+  const [isB2BModalOpen, setIsB2BModalOpen] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  const isActive = (href: string) => {
+    if (href === '/') return pathname === '/' || pathname === '';
+    return pathname.startsWith(href);
+  };
 
   return (
-    <header className="sticky top-0 z-40 w-full bg-white transition-shadow duration-200">
-      {/* Top Utility Bar */}
-      <div className="bg-[#050E10] text-slate-300 text-xs py-2 px-4 sm:px-6 border-b border-slate-800">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="flex items-center space-x-4">
-            <span className="inline-flex items-center space-x-1.5 text-slate-300">
-              <Award className="w-3.5 h-3.5 text-[#D97706]" />
-              <span className="font-medium text-slate-200">Rocky Lens</span>
-              <span className="hidden sm:inline text-slate-400">— Công nghệ Quang học Canada Opticians</span>
+    <>
+      {/* TOP SLIM BAR: OFFICIAL IDENTITY & CONTACT (MATCHES HOME EXACTLY) */}
+      <div className="bg-[#0E253A] text-white py-2.5 px-6 text-base">
+        <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
+          <div className="flex items-center gap-3">
+            <span className="text-teal-300 font-semibold text-base">Rocky Lens Canada</span>
+            <span className="text-slate-300 font-medium text-base hidden sm:inline">
+              Phân phối độc quyền bởi Clearly Vietnam
             </span>
           </div>
-
-          <div className="flex items-center space-x-6">
-            <a
-              href={`tel:${siteConfig.phones.hotline}`}
-              className="inline-flex items-center space-x-1.5 hover:text-white transition-colors"
-            >
-              <Phone className="w-3 h-3 text-[#0B7B8A]" />
-              <span className="hidden sm:inline text-slate-400">Hotline:</span>
-              <span className="font-semibold text-slate-200">{siteConfig.phones.hotlineDisplay}</span>
+          <div className="flex items-center gap-6 text-base font-medium">
+            <a href="tel:0933102653" className="text-white hover:text-teal-300 transition-colors">
+              Hotline: 0933 102 653
             </a>
             <a
-              href={siteConfig.zalo.url}
+              href="https://zalo.me/0933102653"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden md:inline-flex items-center space-x-1 text-teal-400 hover:text-teal-300 transition-colors font-medium"
+              className="text-teal-300 hover:text-white transition-colors"
             >
-              <span>Zalo Hợp Tác B2B</span>
+              Zalo Hỗ Trợ
             </a>
           </div>
         </div>
       </div>
 
-      {/* Main Navbar */}
-      <div
-        className={`border-b border-slate-100 ${
-          isScrolled ? 'shadow-md shadow-slate-900/5' : ''
-        }`}
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
-          {/* Logo */}
-          <Link href="/" className="flex items-center space-x-3 group">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#0B7B8A] to-[#050E10] flex items-center justify-center text-white font-black text-xl shadow-xs group-hover:scale-105 transition-transform">
-              R
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xl font-extrabold tracking-tight text-[#050E10] group-hover:text-[#0B7B8A] transition-colors leading-none">
-                ROCKY LENS
-              </span>
-              <span className="text-[10px] tracking-wider uppercase font-semibold text-slate-500 mt-1">
-                Canada Opticians
-              </span>
-            </div>
+      {/* APPLE FLUID NAVIGATION: STICKY FROSTED GLASS (MATCHES HOME EXACTLY) */}
+      <header className="sticky top-0 z-40 bg-[#F5F5F7]/90 backdrop-blur-md border-b border-slate-200/80 transition-shadow">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-6">
+          
+          {/* Brand Logo with Real Rocky Image */}
+          <Link href="/" className="flex items-center gap-3 group">
+            <img
+              src="/assets/logo_rocky_transparent.png"
+              alt="Rocky Lens Canada"
+              className="h-9 sm:h-10 w-auto object-contain transition-transform group-hover:scale-105"
+            />
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-1">
+          {/* Primary Multi-Page Navigation Items */}
+          <nav className="hidden lg:flex items-center gap-8 text-base font-semibold text-slate-800">
             {mainNavigation.map((item) => {
-              const isActive =
-                pathname === item.href || (item.href !== '/' && pathname.startsWith(item.href));
-              const hasDropdown = Boolean(item.children && item.children.length > 0);
-
+              const active = isActive(item.href);
               return (
-                <div
+                <Link
                   key={item.href}
-                  className="relative"
-                  onMouseEnter={() => hasDropdown && setActiveDropdown(item.href)}
-                  onMouseLeave={() => hasDropdown && setActiveDropdown(null)}
+                  href={item.href}
+                  className={`transition-colors ${
+                    active ? 'text-[#0B7B8A] font-bold' : 'hover:text-[#0B7B8A]'
+                  }`}
                 >
-                  <Link
-                    href={item.href}
-                    className={`inline-flex items-center space-x-1 px-3.5 py-2 rounded-lg text-sm font-medium transition-all ${
-                      isActive
-                        ? 'text-[#0B7B8A] bg-teal-50/70 font-semibold'
-                        : 'text-slate-700 hover:text-[#0B7B8A] hover:bg-slate-50'
-                    }`}
-                  >
-                    <span>{item.title}</span>
-                    {hasDropdown && (
-                      <ChevronDown
-                        className={`w-4 h-4 text-slate-400 transition-transform ${
-                          activeDropdown === item.href ? 'rotate-180 text-[#0B7B8A]' : ''
-                        }`}
-                      />
-                    )}
-                  </Link>
-
-                  {/* Dropdown Menu */}
-                  {hasDropdown && activeDropdown === item.href && (
-                    <div className="absolute top-full left-0 w-72 bg-white rounded-xl shadow-xl border border-slate-100 p-2 z-50 animate-in fade-in slide-in-from-top-1 duration-150">
-                      {item.children!.map((sub) => (
-                        <Link
-                          key={sub.href}
-                          href={sub.href}
-                          className="block p-2.5 rounded-lg hover:bg-teal-50/60 transition-colors group"
-                        >
-                          <div className="text-sm font-medium text-slate-800 group-hover:text-[#0B7B8A]">
-                            {sub.title}
-                          </div>
-                          {sub.description && (
-                            <div className="text-xs text-slate-500 line-clamp-1 mt-0.5">
-                              {sub.description}
-                            </div>
-                          )}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
-                </div>
+                  {item.title}
+                </Link>
               );
             })}
           </nav>
 
-          {/* Header Action CTA & Mobile Navigation */}
-          <div className="flex items-center space-x-3">
-            <Link
-              href="/danh-cho-doi-tac/"
-              className="hidden sm:inline-flex items-center space-x-2 px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold bg-[#0B7B8A] text-white hover:bg-[#086370] shadow-xs hover:shadow transition-all"
+          {/* Action Button: Open B2B Dealer Quote Modal */}
+          <div className="flex items-center gap-3">
+            <button
+              type="button"
+              onClick={() => setIsB2BModalOpen(true)}
+              className="hidden sm:inline-block px-5 py-2.5 rounded-full bg-[#0B7B8A] hover:bg-[#086370] text-white font-bold text-base transition-all text-center cursor-pointer shadow-xs hover:shadow-md active:scale-95"
             >
-              <span>Nhận Báo Giá Đại Lý</span>
-              <ArrowRight className="w-3.5 h-3.5" />
-            </Link>
+              Nhận Báo Giá Đại Lý
+            </button>
 
-            <MobileNavigation />
+            {/* Mobile Hamburger Toggle */}
+            <button
+              type="button"
+              onClick={() => setIsMobileOpen(!isMobileOpen)}
+              className="lg:hidden p-2 rounded-xl text-slate-700 hover:bg-slate-200/60 transition-colors"
+              aria-label="Menu"
+            >
+              {isMobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
           </div>
+
         </div>
-      </div>
-    </header>
+
+        {/* Mobile Navigation Drawer */}
+        {isMobileOpen && (
+          <div className="lg:hidden border-t border-slate-200 bg-[#F5F5F7] px-6 py-5 space-y-4 shadow-xl">
+            <nav className="flex flex-col space-y-3">
+              {mainNavigation.map((item) => {
+                const active = isActive(item.href);
+                return (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    onClick={() => setIsMobileOpen(false)}
+                    className={`flex items-center justify-between py-2 text-base font-semibold ${
+                      active ? 'text-[#0B7B8A] font-bold' : 'text-slate-800'
+                    }`}
+                  >
+                    <span>{item.title}</span>
+                    <ChevronRight className="w-4 h-4 text-slate-400" />
+                  </Link>
+                );
+              })}
+            </nav>
+
+            <div className="pt-3 border-t border-slate-200 space-y-3">
+              <button
+                type="button"
+                onClick={() => {
+                  setIsMobileOpen(false);
+                  setIsB2BModalOpen(true);
+                }}
+                className="w-full py-3 rounded-full bg-[#0B7B8A] hover:bg-[#086370] text-white font-bold text-base text-center transition-all cursor-pointer"
+              >
+                Nhận Báo Giá Đại Lý
+              </button>
+              <div className="flex items-center justify-around text-sm font-medium text-slate-600 pt-1">
+                <a href="tel:0933102653" className="flex items-center gap-1.5 hover:text-[#0B7B8A]">
+                  <Phone className="w-4 h-4 text-[#0B7B8A]" />
+                  <span>0933 102 653</span>
+                </a>
+                <a
+                  href="https://zalo.me/0933102653"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1.5 text-teal-600 hover:text-teal-700"
+                >
+                  <MessageSquare className="w-4 h-4" />
+                  <span>Zalo Hỗ Trợ</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        )}
+      </header>
+
+      {/* B2B Dealer Quote Modal */}
+      <B2BQuoteModal
+        isOpen={isB2BModalOpen}
+        onClose={() => setIsB2BModalOpen(false)}
+      />
+    </>
   );
 }

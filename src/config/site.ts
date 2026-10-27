@@ -40,43 +40,37 @@ export interface SiteConfig {
 
 export const siteConfig: SiteConfig = {
   name: 'Rocky Lens',
-  legalName: 'Công Ty TNHH Mắt Kính Rocky Việt Nam',
+  legalName: 'Công ty Cổ phần Clearly Vietnam',
   shortName: 'Rocky Lens',
   domain: 'rockylens.com',
   url: 'https://rockylens.com',
-  slogan: 'Giải pháp tròng kính cho tầm nhìn hiện đại',
-  description: 'Nhà phân phối tròng kính quang học chính hãng Canada Opticians tại Việt Nam. Cung cấp giải pháp tròng đơn tròng, đa tròng Freeform, đổi màu thông minh, chống ánh sáng xanh UV420 và tròng chuyên dụng lái xe.',
+  slogan: 'Rõ tầm nhìn, trọn cuộc sống',
+  description: 'Thương hiệu tròng kính quang học Canada, phân phối độc quyền tại Việt Nam bởi Công ty Cổ phần Clearly Vietnam.',
   emails: {
     contact: 'info@rockylens.com',
-    b2b: 'daily@rockylens.com',
+    b2b: 'info@rockylens.com',
   },
   phones: {
-    hotline: '0908692888',
-    hotlineDisplay: '0908 692 888',
-    office: '028 38 692 888',
+    hotline: '0933102653',
+    hotlineDisplay: '0933 102 653',
+    office: '0933 102 653',
   },
   zalo: {
-    url: 'https://zalo.me/0908692888',
-    display: '0908 692 888 (Zalo B2B)',
+    url: 'https://zalo.me/0933102653',
+    display: '0933 102 653 (Zalo Hỗ Trợ)',
   },
   addresses: [
     {
-      title: 'Tổng kho & Trung tâm Lab RX Miền Nam',
-      street: '123 Võ Văn Tần, Phường Võ Thị Sáu, Quận 3',
+      title: 'Văn phòng TP. Hồ Chí Minh',
+      street: 'TP. Hồ Chí Minh & Hà Nội',
       city: 'TP. Hồ Chí Minh',
       isPrimary: true,
-    },
-    {
-      title: 'Chi nhánh & Trung tâm Phân phối Miền Bắc',
-      street: '45 Nguyễn Du, Phường Bùi Thị Xuân, Quận Hai Bà Trưng',
-      city: 'Hà Nội',
-      isPrimary: false,
     },
   ],
   colors: {
     primaryTeal: '#0B7B8A',
-    deepNavy: '#050E10',
-    slateDark: '#0F172A',
+    deepNavy: '#0E253A',
+    slateDark: '#071521',
     accentGold: '#D97706',
   },
   social: {
