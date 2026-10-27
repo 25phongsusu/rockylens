@@ -67,17 +67,19 @@ export default function BlogSection() {
                     </Link>
                   </h3>
 
-                  <p className="text-slate-600 text-sm leading-relaxed line-clamp-3">
-                    {article.description}
-                  </p>
+                  {article.slug !== 'kiem-soat-can-thi-tre-em-myocontrol' && (
+                    <p className="text-slate-600 text-sm leading-relaxed line-clamp-3">
+                      {article.description}
+                    </p>
+                  )}
                 </div>
               </div>
 
-              {/* Card Bottom CTA */}
+              {/* Card Bottom CTA (Tô đậm, giới hạn chiều rộng không hết trang) */}
               <div className="p-6 sm:p-7 pt-0">
                 <Link
                   href={`/blog/${article.slug}/`}
-                  className="w-full py-3 rounded-full border border-slate-200 hover:border-[#0B7B8A] hover:bg-[#0B7B8A] hover:text-white text-slate-700 font-semibold text-sm transition-all flex items-center justify-center gap-2 text-center cursor-pointer shadow-xs"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full bg-[#0B7B8A] hover:bg-[#086370] text-white font-bold text-sm transition-all shadow-xs"
                 >
                   <span>Đọc bài viết chi tiết</span>
                   <ArrowRight className="w-4 h-4" />
