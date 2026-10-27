@@ -2061,10 +2061,12 @@ const html = `<!DOCTYPE html>
     var customizerPresets = [
       {
         name: 'Rocky Canada Cyan',
+        desc: 'Bản sắc quang học nguyên bản thanh khiết',
         colors: customizerDefaults
       },
       {
         name: 'Deep Sapphire Ocean',
+        desc: 'Xanh biển sâu sapphire sang trọng & công nghệ',
         colors: {
           siteBgStart: '#F0F7FF',
           siteBgMiddle: '#D0E5FF',
@@ -2079,6 +2081,7 @@ const html = `<!DOCTYPE html>
       },
       {
         name: 'Emerald Optical Health',
+        desc: 'Xanh ngọc lục bảo y khoa dịu mát & an tâm',
         colors: {
           siteBgStart: '#F0FDF4',
           siteBgMiddle: '#DCFCE7',
@@ -2093,6 +2096,7 @@ const html = `<!DOCTYPE html>
       },
       {
         name: 'Royal Amethyst',
+        desc: 'Tím quang phổ thấu kính tinh tế & độc đáo',
         colors: {
           siteBgStart: '#FAF5FF',
           siteBgMiddle: '#F3E8FF',
@@ -2107,6 +2111,7 @@ const html = `<!DOCTYPE html>
       },
       {
         name: 'Titanium Apple Slate',
+        desc: 'Xám bạc tối giản, trung tính hiện đại chuẩn Apple',
         colors: {
           siteBgStart: '#F8FAFC',
           siteBgMiddle: '#E2E8F0',
@@ -2159,23 +2164,78 @@ const html = `<!DOCTYPE html>
         if (hex) hex.value = colors[k];
       }
 
+      updatePresetHighlights();
+
       try {
         localStorage.setItem(STORAGE_KEY, JSON.stringify(colors));
       } catch (err) {}
     }
 
+    function updatePresetHighlights() {
+      for (var i = 0; i < customizerPresets.length; i++) {
+        var p = customizerPresets[i];
+        var isCurrent = (currentTheme.buttonMiddle === p.colors.buttonMiddle && currentTheme.siteBgStart === p.colors.siteBgStart);
+        var pBtn = document.getElementById('presetBtn_' + i);
+        var pCheck = document.getElementById('presetCheck_' + i);
+        if (pBtn) {
+          if (isCurrent) {
+            pBtn.className = 'w-full p-3 rounded-2xl border text-left flex items-center justify-between transition-all cursor-pointer border-primary bg-primary/5 shadow-xs ring-1 ring-primary';
+          } else {
+            pBtn.className = 'w-full p-3 rounded-2xl border text-left flex items-center justify-between transition-all cursor-pointer border-slate-200/80 bg-white hover:border-slate-300 hover:bg-slate-50/60';
+          }
+        }
+        if (pCheck) {
+          if (isCurrent) {
+            pCheck.classList.remove('hidden');
+          } else {
+            pCheck.classList.add('hidden');
+          }
+        }
+      }
+    }
+
+    function switchCustomizerTab(tabId) {
+      var tabs = ['presets', 'bg', 'btn', 'b2b'];
+      for (var i = 0; i < tabs.length; i++) {
+        var t = tabs[i];
+        var btn = document.getElementById('tabBtn_' + t);
+        var content = document.getElementById('tabContent_' + t);
+        if (t === tabId) {
+          if (btn) {
+            btn.className = 'flex-1 py-2.5 text-center transition-colors border-b-2 border-primary text-primary font-black cursor-pointer';
+          }
+          if (content) {
+            content.classList.remove('hidden');
+          }
+        } else {
+          if (btn) {
+            btn.className = 'flex-1 py-2.5 text-center transition-colors border-b-2 border-transparent hover:text-slate-900 cursor-pointer';
+          }
+          if (content) {
+            content.classList.add('hidden');
+          }
+        }
+      }
+    }
+
     function toggleCustomizer(e) {
       if (e && e.stopPropagation) e.stopPropagation();
       var panel = document.getElementById('themeCustomizerPanel');
+      var toggleText = document.getElementById('themeToggleText');
       if (!panel) return;
-      if (panel.style.display === 'none' || panel.style.display === '' || panel.classList.contains('hidden')) {
+      var isHidden = (panel.style.display === 'none' || panel.style.display === '' || panel.classList.contains('hidden'));
+      if (isHidden) {
         panel.classList.remove('hidden');
         panel.style.display = 'flex';
+        if (toggleText) toggleText.innerText = 'Đóng Bảng Màu';
+        applyCustomTheme(currentTheme);
       } else {
         panel.style.display = 'none';
+        if (toggleText) toggleText.innerText = 'Tùy Biến Màu Sắc';
       }
     }
     window.toggleCustomizer = toggleCustomizer;
+    window.switchCustomizerTab = switchCustomizerTab;
     window.applyPreset = applyPreset;
     window.resetCustomTheme = resetCustomTheme;
     window.onCustomColorChange = onCustomColorChange;
@@ -2184,9 +2244,11 @@ const html = `<!DOCTYPE html>
     document.addEventListener('click', function(e) {
       var panel = document.getElementById('themeCustomizerPanel');
       var btn = document.getElementById('themeCustomizerToggleBtn');
+      var toggleText = document.getElementById('themeToggleText');
       if (!panel || panel.style.display === 'none') return;
       if (!panel.contains(e.target) && (!btn || !btn.contains(e.target))) {
         panel.style.display = 'none';
+        if (toggleText) toggleText.innerText = 'Tùy Biến Màu Sắc';
       }
     });
 
@@ -2243,9 +2305,9 @@ const html = `<!DOCTYPE html>
         navigator.clipboard.writeText(css).then(function() {
           var btn = document.getElementById('copyThemeBtn');
           if (btn) {
-            btn.innerHTML = '<span>Đã Sao Chép :root!</span>';
+            btn.innerHTML = '<svg class="w-3.5 h-3.5 text-emerald-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Đã Sao Chép :root!</span>';
             setTimeout(function() {
-              btn.innerHTML = '<span>Sao Chép Mã CSS</span>';
+              btn.innerHTML = '<svg class="w-3.5 h-3.5 text-slate-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg><span>Sao Chép Mã CSS</span>';
             }, 2500);
           }
         });
@@ -2260,36 +2322,49 @@ const html = `<!DOCTYPE html>
       }
     } catch (e) {}
     applyCustomTheme(currentTheme);
+
+    window.addEventListener('DOMContentLoaded', function() {
+      applyCustomTheme(currentTheme);
+    });
   </script>
 
   <!-- FLOATING THEME CUSTOMIZER WIDGET (MASTER TEMPLATE) -->
   <div class="print:hidden pointer-events-auto" style="position: fixed; bottom: 24px; right: 24px; z-index: 99998;">
-    <button id="themeCustomizerToggleBtn" type="button" onclick="toggleCustomizer(event)" class="group flex items-center space-x-2.5 px-4 py-3 rounded-full bg-white text-slate-900 border border-slate-200/90 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer backdrop-blur-md">
+    <button id="themeCustomizerToggleBtn" type="button" onclick="toggleCustomizer(event)" class="group flex items-center space-x-2.5 px-4 py-3 rounded-full bg-white text-slate-900 border border-slate-200/90 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer backdrop-blur-md" title="Tùy biến bảng màu giao diện (Color Customizer)">
       <div class="w-6 h-6 rounded-full flex items-center justify-center text-white" style="background: var(--gradient-button);">
         <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.563-2.512 5.563-5.563C22 6.5 17.5 2 12 2Z"/></svg>
       </div>
-      <span class="text-xs font-bold text-slate-800 tracking-wide">Tùy Biến Màu Sắc</span>
+      <span id="themeToggleText" class="text-xs font-bold text-slate-800 tracking-wide">Tùy Biến Màu Sắc</span>
       <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
     </button>
   </div>
 
   <!-- FLOATING CUSTOMIZER PANEL -->
   <div id="themeCustomizerPanel" onclick="event.stopPropagation()" style="position: fixed; bottom: 84px; right: 24px; z-index: 99999; display: none;" class="w-[360px] sm:w-[420px] max-w-[calc(100vw-2rem)] max-h-[80vh] flex flex-col bg-white/95 backdrop-blur-xl rounded-3xl border border-slate-200/90 shadow-2xl overflow-hidden pointer-events-auto shadow-slate-900/10">
+    
     <!-- Header -->
     <div class="p-4 sm:p-5 border-b border-slate-100 flex items-center justify-between bg-slate-50/80">
-      <div>
-        <h3 class="text-sm font-extrabold text-slate-900">Tùy Biến Màu Giao Diện</h3>
-        <p class="text-[11px] text-slate-500">Kéo thanh màu hoặc nhập mã HEX trực tiếp</p>
+      <div class="flex items-center space-x-2.5">
+        <div class="w-8 h-8 rounded-xl flex items-center justify-center text-white shadow-xs" style="background: var(--gradient-button);">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="21" x2="14" y1="4" y2="4"/><line x1="10" x2="3" y1="4" y2="4"/><line x1="21" x2="12" y1="12" y2="12"/><line x1="8" x2="3" y1="12" y2="12"/><line x1="21" x2="16" y1="20" y2="20"/><line x1="12" x2="3" y1="20" y2="20"/><line x1="14" x2="14" y1="2" y2="6"/><line x1="8" x2="8" y1="10" y2="14"/><line x1="16" x2="16" y1="18" y2="22"/></svg>
+        </div>
+        <div>
+          <h3 class="text-sm font-extrabold text-slate-900">Tùy Biến Màu Giao Diện</h3>
+          <p class="text-[11px] text-slate-500">Kéo thanh màu hoặc nhập mã HEX trực tiếp</p>
+        </div>
       </div>
       <button type="button" onclick="toggleCustomizer(event)" class="p-1.5 rounded-lg text-slate-400 hover:text-slate-700 hover:bg-slate-200/60 transition-colors cursor-pointer">
-        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
       </button>
     </div>
 
-    <!-- Live Preview -->
+    <!-- Live Gradient Preview Banner -->
     <div class="p-4 bg-slate-50 border-b border-slate-100 space-y-2">
       <div class="flex items-center justify-between text-[11px] font-semibold text-slate-600">
-        <span>Xem Trước Hiệu Ứng Trực Tiếp:</span>
+        <span class="flex items-center gap-1">
+          <svg class="w-3.5 h-3.5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg>
+          <span>Xem Trước Hiệu Ứng Trực Tiếp:</span>
+        </span>
         <span class="text-[10px] text-emerald-600 font-bold bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">Live Active</span>
       </div>
       <div class="grid grid-cols-2 gap-2 text-xs">
@@ -2302,118 +2377,274 @@ const html = `<!DOCTYPE html>
       </div>
     </div>
 
-    <!-- Presets Quick Select -->
-    <div class="p-4 border-b border-slate-100 space-y-2">
-      <div class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Chọn Bảng Màu Mẫu:</div>
-      <div class="grid grid-cols-2 sm:grid-cols-3 gap-1.5">
-        <button type="button" onclick="applyPreset(0)" class="p-2 rounded-xl border border-slate-200 hover:border-teal-400 text-left text-xs font-bold text-slate-800 bg-white shadow-2xs">
-          Rocky Cyan
-        </button>
-        <button type="button" onclick="applyPreset(1)" class="p-2 rounded-xl border border-slate-200 hover:border-blue-400 text-left text-xs font-bold text-slate-800 bg-white shadow-2xs">
-          Sapphire
-        </button>
-        <button type="button" onclick="applyPreset(2)" class="p-2 rounded-xl border border-slate-200 hover:border-emerald-400 text-left text-xs font-bold text-slate-800 bg-white shadow-2xs">
-          Emerald
-        </button>
-        <button type="button" onclick="applyPreset(3)" class="p-2 rounded-xl border border-slate-200 hover:border-purple-400 text-left text-xs font-bold text-slate-800 bg-white shadow-2xs">
-          Amethyst
-        </button>
-        <button type="button" onclick="applyPreset(4)" class="p-2 rounded-xl border border-slate-200 hover:border-slate-400 text-left text-xs font-bold text-slate-800 bg-white shadow-2xs">
-          Titanium
-        </button>
-      </div>
+    <!-- Tab Navigation -->
+    <div class="flex border-b border-slate-100 bg-white text-xs font-bold text-slate-600">
+      <button type="button" id="tabBtn_presets" onclick="switchCustomizerTab('presets')" class="flex-1 py-2.5 text-center transition-colors border-b-2 border-primary text-primary font-black cursor-pointer">
+        Mẫu Sẵn
+      </button>
+      <button type="button" id="tabBtn_bg" onclick="switchCustomizerTab('bg')" class="flex-1 py-2.5 text-center transition-colors border-b-2 border-transparent hover:text-slate-900 cursor-pointer">
+        Nền Site
+      </button>
+      <button type="button" id="tabBtn_btn" onclick="switchCustomizerTab('btn')" class="flex-1 py-2.5 text-center transition-colors border-b-2 border-transparent hover:text-slate-900 cursor-pointer">
+        Nút Bấm
+      </button>
+      <button type="button" id="tabBtn_b2b" onclick="switchCustomizerTab('b2b')" class="flex-1 py-2.5 text-center transition-colors border-b-2 border-transparent hover:text-slate-900 cursor-pointer">
+        B2B
+      </button>
     </div>
 
-    <!-- Interactive Pickers List -->
-    <div class="p-4 overflow-y-auto flex-1 max-h-[300px] space-y-3">
-      <!-- Group 1: Background -->
-      <div class="space-y-2">
-        <div class="text-[11px] font-bold text-slate-500 uppercase">1. Nền Website:</div>
-        <div class="flex items-center justify-between p-2 rounded-xl border border-slate-100 bg-white">
-          <span class="text-xs font-medium text-slate-700">Điểm Bắt Đầu</span>
-          <div class="flex items-center space-x-2">
-            <input type="color" id="pick_siteBgStart" onchange="onCustomColorChange('siteBgStart', this.value)" class="w-7 h-7 rounded border-0 cursor-pointer p-0">
-            <input type="text" id="hex_siteBgStart" onchange="onCustomColorChange('siteBgStart', this.value)" class="w-20 px-2 py-0.5 text-xs font-mono uppercase text-center border rounded">
+    <!-- Tab Contents -->
+    <div class="p-4 overflow-y-auto flex-1 space-y-3.5 max-h-[380px]">
+      
+      <!-- Tab: Presets -->
+      <div id="tabContent_presets" class="space-y-2.5">
+        <div class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">
+          Chọn Bảng Màu Mẫu Thiết Kế Sẵn:
+        </div>
+        
+        <!-- Preset 0 -->
+        <button type="button" id="presetBtn_0" onclick="applyPreset(0)" class="w-full p-3 rounded-2xl border text-left flex items-center justify-between transition-all cursor-pointer border-slate-200/80 bg-white hover:border-slate-300 hover:bg-slate-50/60">
+          <div class="space-y-1">
+            <div class="text-xs font-bold text-slate-900 flex items-center gap-1.5">
+              <span>Rocky Canada Cyan</span>
+              <span id="presetCheck_0" class="hidden"><svg class="w-3.5 h-3.5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+            </div>
+            <div class="text-[11px] text-slate-500">Bản sắc quang học nguyên bản thanh khiết</div>
+          </div>
+          <div class="flex items-center -space-x-1.5 shrink-0 pl-3">
+            <div class="w-5 h-5 rounded-full border border-white shadow-2xs" style="background-color: #D7F4FA;"></div>
+            <div class="w-5 h-5 rounded-full border border-white shadow-2xs" style="background-color: #00A2CC;"></div>
+            <div class="w-5 h-5 rounded-full border border-white shadow-2xs" style="background-color: #003B50;"></div>
+          </div>
+        </button>
+
+        <!-- Preset 1 -->
+        <button type="button" id="presetBtn_1" onclick="applyPreset(1)" class="w-full p-3 rounded-2xl border text-left flex items-center justify-between transition-all cursor-pointer border-slate-200/80 bg-white hover:border-slate-300 hover:bg-slate-50/60">
+          <div class="space-y-1">
+            <div class="text-xs font-bold text-slate-900 flex items-center gap-1.5">
+              <span>Deep Sapphire Ocean</span>
+              <span id="presetCheck_1" class="hidden"><svg class="w-3.5 h-3.5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+            </div>
+            <div class="text-[11px] text-slate-500">Xanh biển sâu sapphire sang trọng &amp; công nghệ</div>
+          </div>
+          <div class="flex items-center -space-x-1.5 shrink-0 pl-3">
+            <div class="w-5 h-5 rounded-full border border-white shadow-2xs" style="background-color: #D0E5FF;"></div>
+            <div class="w-5 h-5 rounded-full border border-white shadow-2xs" style="background-color: #0284C7;"></div>
+            <div class="w-5 h-5 rounded-full border border-white shadow-2xs" style="background-color: #082F49;"></div>
+          </div>
+        </button>
+
+        <!-- Preset 2 -->
+        <button type="button" id="presetBtn_2" onclick="applyPreset(2)" class="w-full p-3 rounded-2xl border text-left flex items-center justify-between transition-all cursor-pointer border-slate-200/80 bg-white hover:border-slate-300 hover:bg-slate-50/60">
+          <div class="space-y-1">
+            <div class="text-xs font-bold text-slate-900 flex items-center gap-1.5">
+              <span>Emerald Optical Health</span>
+              <span id="presetCheck_2" class="hidden"><svg class="w-3.5 h-3.5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+            </div>
+            <div class="text-[11px] text-slate-500">Xanh ngọc lục bảo y khoa dịu mát &amp; an tâm</div>
+          </div>
+          <div class="flex items-center -space-x-1.5 shrink-0 pl-3">
+            <div class="w-5 h-5 rounded-full border border-white shadow-2xs" style="background-color: #DCFCE7;"></div>
+            <div class="w-5 h-5 rounded-full border border-white shadow-2xs" style="background-color: #059669;"></div>
+            <div class="w-5 h-5 rounded-full border border-white shadow-2xs" style="background-color: #064E3B;"></div>
+          </div>
+        </button>
+
+        <!-- Preset 3 -->
+        <button type="button" id="presetBtn_3" onclick="applyPreset(3)" class="w-full p-3 rounded-2xl border text-left flex items-center justify-between transition-all cursor-pointer border-slate-200/80 bg-white hover:border-slate-300 hover:bg-slate-50/60">
+          <div class="space-y-1">
+            <div class="text-xs font-bold text-slate-900 flex items-center gap-1.5">
+              <span>Royal Amethyst</span>
+              <span id="presetCheck_3" class="hidden"><svg class="w-3.5 h-3.5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+            </div>
+            <div class="text-[11px] text-slate-500">Tím quang phổ thấu kính tinh tế &amp; độc đáo</div>
+          </div>
+          <div class="flex items-center -space-x-1.5 shrink-0 pl-3">
+            <div class="w-5 h-5 rounded-full border border-white shadow-2xs" style="background-color: #F3E8FF;"></div>
+            <div class="w-5 h-5 rounded-full border border-white shadow-2xs" style="background-color: #7E22CE;"></div>
+            <div class="w-5 h-5 rounded-full border border-white shadow-2xs" style="background-color: #3B0764;"></div>
+          </div>
+        </button>
+
+        <!-- Preset 4 -->
+        <button type="button" id="presetBtn_4" onclick="applyPreset(4)" class="w-full p-3 rounded-2xl border text-left flex items-center justify-between transition-all cursor-pointer border-slate-200/80 bg-white hover:border-slate-300 hover:bg-slate-50/60">
+          <div class="space-y-1">
+            <div class="text-xs font-bold text-slate-900 flex items-center gap-1.5">
+              <span>Titanium Apple Slate</span>
+              <span id="presetCheck_4" class="hidden"><svg class="w-3.5 h-3.5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+            </div>
+            <div class="text-[11px] text-slate-500">Xám bạc tối giản, trung tính hiện đại chuẩn Apple</div>
+          </div>
+          <div class="flex items-center -space-x-1.5 shrink-0 pl-3">
+            <div class="w-5 h-5 rounded-full border border-white shadow-2xs" style="background-color: #E2E8F0;"></div>
+            <div class="w-5 h-5 rounded-full border border-white shadow-2xs" style="background-color: #334155;"></div>
+            <div class="w-5 h-5 rounded-full border border-white shadow-2xs" style="background-color: #0F172A;"></div>
+          </div>
+        </button>
+      </div>
+
+      <!-- Tab: Background -->
+      <div id="tabContent_bg" class="space-y-3 hidden">
+        <div class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">
+          3 Màu Gradient Nền Website:
+        </div>
+        
+        <!-- siteBgStart -->
+        <div class="p-2.5 rounded-xl border border-slate-200/80 bg-white shadow-2xs flex items-center justify-between gap-3">
+          <div class="space-y-0.5 flex-1 min-w-0">
+            <div class="text-xs font-bold text-slate-900 truncate">Điểm bắt đầu (Start)</div>
+            <div class="text-[10px] text-slate-400 font-mono truncate">--site-bg-start</div>
+          </div>
+          <div class="flex items-center space-x-2 shrink-0">
+            <div class="relative w-8 h-8 rounded-lg overflow-hidden border border-slate-200 shadow-2xs shrink-0 cursor-pointer">
+              <input type="color" id="pick_siteBgStart" oninput="onCustomColorChange('siteBgStart', this.value)" class="absolute -top-2 -left-2 w-12 h-12 cursor-pointer border-0 p-0" title="Nhấp để kéo thanh màu">
+            </div>
+            <input type="text" id="hex_siteBgStart" maxlength="7" oninput="onCustomColorChange('siteBgStart', this.value)" class="w-20 px-2 py-1 rounded-lg border border-slate-200 text-xs font-mono font-bold text-slate-800 text-center uppercase focus:outline-none focus:ring-1 focus:ring-primary" placeholder="#000000">
           </div>
         </div>
-        <div class="flex items-center justify-between p-2 rounded-xl border border-slate-100 bg-white">
-          <span class="text-xs font-medium text-slate-700">Điểm Ở Giữa</span>
-          <div class="flex items-center space-x-2">
-            <input type="color" id="pick_siteBgMiddle" onchange="onCustomColorChange('siteBgMiddle', this.value)" class="w-7 h-7 rounded border-0 cursor-pointer p-0">
-            <input type="text" id="hex_siteBgMiddle" onchange="onCustomColorChange('siteBgMiddle', this.value)" class="w-20 px-2 py-0.5 text-xs font-mono uppercase text-center border rounded">
+
+        <!-- siteBgMiddle -->
+        <div class="p-2.5 rounded-xl border border-slate-200/80 bg-white shadow-2xs flex items-center justify-between gap-3">
+          <div class="space-y-0.5 flex-1 min-w-0">
+            <div class="text-xs font-bold text-slate-900 truncate">Điểm ở giữa (Middle)</div>
+            <div class="text-[10px] text-slate-400 font-mono truncate">--site-bg-middle</div>
+          </div>
+          <div class="flex items-center space-x-2 shrink-0">
+            <div class="relative w-8 h-8 rounded-lg overflow-hidden border border-slate-200 shadow-2xs shrink-0 cursor-pointer">
+              <input type="color" id="pick_siteBgMiddle" oninput="onCustomColorChange('siteBgMiddle', this.value)" class="absolute -top-2 -left-2 w-12 h-12 cursor-pointer border-0 p-0" title="Nhấp để kéo thanh màu">
+            </div>
+            <input type="text" id="hex_siteBgMiddle" maxlength="7" oninput="onCustomColorChange('siteBgMiddle', this.value)" class="w-20 px-2 py-1 rounded-lg border border-slate-200 text-xs font-mono font-bold text-slate-800 text-center uppercase focus:outline-none focus:ring-1 focus:ring-primary" placeholder="#000000">
           </div>
         </div>
-        <div class="flex items-center justify-between p-2 rounded-xl border border-slate-100 bg-white">
-          <span class="text-xs font-medium text-slate-700">Điểm Kết Thúc</span>
-          <div class="flex items-center space-x-2">
-            <input type="color" id="pick_siteBgEnd" onchange="onCustomColorChange('siteBgEnd', this.value)" class="w-7 h-7 rounded border-0 cursor-pointer p-0">
-            <input type="text" id="hex_siteBgEnd" onchange="onCustomColorChange('siteBgEnd', this.value)" class="w-20 px-2 py-0.5 text-xs font-mono uppercase text-center border rounded">
+
+        <!-- siteBgEnd -->
+        <div class="p-2.5 rounded-xl border border-slate-200/80 bg-white shadow-2xs flex items-center justify-between gap-3">
+          <div class="space-y-0.5 flex-1 min-w-0">
+            <div class="text-xs font-bold text-slate-900 truncate">Điểm kết thúc (End)</div>
+            <div class="text-[10px] text-slate-400 font-mono truncate">--site-bg-end</div>
+          </div>
+          <div class="flex items-center space-x-2 shrink-0">
+            <div class="relative w-8 h-8 rounded-lg overflow-hidden border border-slate-200 shadow-2xs shrink-0 cursor-pointer">
+              <input type="color" id="pick_siteBgEnd" oninput="onCustomColorChange('siteBgEnd', this.value)" class="absolute -top-2 -left-2 w-12 h-12 cursor-pointer border-0 p-0" title="Nhấp để kéo thanh màu">
+            </div>
+            <input type="text" id="hex_siteBgEnd" maxlength="7" oninput="onCustomColorChange('siteBgEnd', this.value)" class="w-20 px-2 py-1 rounded-lg border border-slate-200 text-xs font-mono font-bold text-slate-800 text-center uppercase focus:outline-none focus:ring-1 focus:ring-primary" placeholder="#000000">
           </div>
         </div>
       </div>
 
-      <!-- Group 2: Button -->
-      <div class="space-y-2 pt-2 border-t border-slate-100">
-        <div class="text-[11px] font-bold text-slate-500 uppercase">2. Nút Bấm &amp; CTA:</div>
-        <div class="flex items-center justify-between p-2 rounded-xl border border-slate-100 bg-white">
-          <span class="text-xs font-medium text-slate-700">Điểm Bắt Đầu</span>
-          <div class="flex items-center space-x-2">
-            <input type="color" id="pick_buttonStart" onchange="onCustomColorChange('buttonStart', this.value)" class="w-7 h-7 rounded border-0 cursor-pointer p-0">
-            <input type="text" id="hex_buttonStart" onchange="onCustomColorChange('buttonStart', this.value)" class="w-20 px-2 py-0.5 text-xs font-mono uppercase text-center border rounded">
+      <!-- Tab: Button -->
+      <div id="tabContent_btn" class="space-y-3 hidden">
+        <div class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">
+          3 Màu Gradient Nút Bấm &amp; CTA:
+        </div>
+        
+        <!-- buttonStart -->
+        <div class="p-2.5 rounded-xl border border-slate-200/80 bg-white shadow-2xs flex items-center justify-between gap-3">
+          <div class="space-y-0.5 flex-1 min-w-0">
+            <div class="text-xs font-bold text-slate-900 truncate">Điểm bắt đầu (Start)</div>
+            <div class="text-[10px] text-slate-400 font-mono truncate">--button-start</div>
+          </div>
+          <div class="flex items-center space-x-2 shrink-0">
+            <div class="relative w-8 h-8 rounded-lg overflow-hidden border border-slate-200 shadow-2xs shrink-0 cursor-pointer">
+              <input type="color" id="pick_buttonStart" oninput="onCustomColorChange('buttonStart', this.value)" class="absolute -top-2 -left-2 w-12 h-12 cursor-pointer border-0 p-0" title="Nhấp để kéo thanh màu">
+            </div>
+            <input type="text" id="hex_buttonStart" maxlength="7" oninput="onCustomColorChange('buttonStart', this.value)" class="w-20 px-2 py-1 rounded-lg border border-slate-200 text-xs font-mono font-bold text-slate-800 text-center uppercase focus:outline-none focus:ring-1 focus:ring-primary" placeholder="#000000">
           </div>
         </div>
-        <div class="flex items-center justify-between p-2 rounded-xl border border-slate-100 bg-white">
-          <span class="text-xs font-medium text-slate-700">Màu Chủ Đạo (Solid)</span>
-          <div class="flex items-center space-x-2">
-            <input type="color" id="pick_buttonMiddle" onchange="onCustomColorChange('buttonMiddle', this.value)" class="w-7 h-7 rounded border-0 cursor-pointer p-0">
-            <input type="text" id="hex_buttonMiddle" onchange="onCustomColorChange('buttonMiddle', this.value)" class="w-20 px-2 py-0.5 text-xs font-mono uppercase text-center border rounded">
+
+        <!-- buttonMiddle -->
+        <div class="p-2.5 rounded-xl border border-slate-200/80 bg-white shadow-2xs flex items-center justify-between gap-3">
+          <div class="space-y-0.5 flex-1 min-w-0">
+            <div class="text-xs font-bold text-slate-900 truncate">Màu chủ đạo (Middle / Brand Solid)</div>
+            <div class="text-[10px] text-slate-400 font-mono truncate">--button-middle</div>
+          </div>
+          <div class="flex items-center space-x-2 shrink-0">
+            <div class="relative w-8 h-8 rounded-lg overflow-hidden border border-slate-200 shadow-2xs shrink-0 cursor-pointer">
+              <input type="color" id="pick_buttonMiddle" oninput="onCustomColorChange('buttonMiddle', this.value)" class="absolute -top-2 -left-2 w-12 h-12 cursor-pointer border-0 p-0" title="Nhấp để kéo thanh màu">
+            </div>
+            <input type="text" id="hex_buttonMiddle" maxlength="7" oninput="onCustomColorChange('buttonMiddle', this.value)" class="w-20 px-2 py-1 rounded-lg border border-slate-200 text-xs font-mono font-bold text-slate-800 text-center uppercase focus:outline-none focus:ring-1 focus:ring-primary" placeholder="#000000">
           </div>
         </div>
-        <div class="flex items-center justify-between p-2 rounded-xl border border-slate-100 bg-white">
-          <span class="text-xs font-medium text-slate-700">Điểm Kết Thúc (Hover)</span>
-          <div class="flex items-center space-x-2">
-            <input type="color" id="pick_buttonEnd" onchange="onCustomColorChange('buttonEnd', this.value)" class="w-7 h-7 rounded border-0 cursor-pointer p-0">
-            <input type="text" id="hex_buttonEnd" onchange="onCustomColorChange('buttonEnd', this.value)" class="w-20 px-2 py-0.5 text-xs font-mono uppercase text-center border rounded">
+
+        <!-- buttonEnd -->
+        <div class="p-2.5 rounded-xl border border-slate-200/80 bg-white shadow-2xs flex items-center justify-between gap-3">
+          <div class="space-y-0.5 flex-1 min-w-0">
+            <div class="text-xs font-bold text-slate-900 truncate">Điểm kết thúc (End / Hover State)</div>
+            <div class="text-[10px] text-slate-400 font-mono truncate">--button-end</div>
+          </div>
+          <div class="flex items-center space-x-2 shrink-0">
+            <div class="relative w-8 h-8 rounded-lg overflow-hidden border border-slate-200 shadow-2xs shrink-0 cursor-pointer">
+              <input type="color" id="pick_buttonEnd" oninput="onCustomColorChange('buttonEnd', this.value)" class="absolute -top-2 -left-2 w-12 h-12 cursor-pointer border-0 p-0" title="Nhấp để kéo thanh màu">
+            </div>
+            <input type="text" id="hex_buttonEnd" maxlength="7" oninput="onCustomColorChange('buttonEnd', this.value)" class="w-20 px-2 py-1 rounded-lg border border-slate-200 text-xs font-mono font-bold text-slate-800 text-center uppercase focus:outline-none focus:ring-1 focus:ring-primary" placeholder="#000000">
           </div>
         </div>
       </div>
 
-      <!-- Group 3: B2B -->
-      <div class="space-y-2 pt-2 border-t border-slate-100">
-        <div class="text-[11px] font-bold text-slate-500 uppercase">3. B2B &amp; Tiêu Đề:</div>
-        <div class="flex items-center justify-between p-2 rounded-xl border border-slate-100 bg-white">
-          <span class="text-xs font-medium text-slate-700">Điểm Bắt Đầu</span>
-          <div class="flex items-center space-x-2">
-            <input type="color" id="pick_b2bStart" onchange="onCustomColorChange('b2bStart', this.value)" class="w-7 h-7 rounded border-0 cursor-pointer p-0">
-            <input type="text" id="hex_b2bStart" onchange="onCustomColorChange('b2bStart', this.value)" class="w-20 px-2 py-0.5 text-xs font-mono uppercase text-center border rounded">
+      <!-- Tab: B2B -->
+      <div id="tabContent_b2b" class="space-y-3 hidden">
+        <div class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">
+          3 Màu Phân Hệ B2B &amp; Heading:
+        </div>
+        
+        <!-- b2bStart -->
+        <div class="p-2.5 rounded-xl border border-slate-200/80 bg-white shadow-2xs flex items-center justify-between gap-3">
+          <div class="space-y-0.5 flex-1 min-w-0">
+            <div class="text-xs font-bold text-slate-900 truncate">Điểm bắt đầu (Start)</div>
+            <div class="text-[10px] text-slate-400 font-mono truncate">--b2b-start</div>
+          </div>
+          <div class="flex items-center space-x-2 shrink-0">
+            <div class="relative w-8 h-8 rounded-lg overflow-hidden border border-slate-200 shadow-2xs shrink-0 cursor-pointer">
+              <input type="color" id="pick_b2bStart" oninput="onCustomColorChange('b2bStart', this.value)" class="absolute -top-2 -left-2 w-12 h-12 cursor-pointer border-0 p-0" title="Nhấp để kéo thanh màu">
+            </div>
+            <input type="text" id="hex_b2bStart" maxlength="7" oninput="onCustomColorChange('b2bStart', this.value)" class="w-20 px-2 py-1 rounded-lg border border-slate-200 text-xs font-mono font-bold text-slate-800 text-center uppercase focus:outline-none focus:ring-1 focus:ring-primary" placeholder="#000000">
           </div>
         </div>
-        <div class="flex items-center justify-between p-2 rounded-xl border border-slate-100 bg-white">
-          <span class="text-xs font-medium text-slate-700">Điểm Ở Giữa</span>
-          <div class="flex items-center space-x-2">
-            <input type="color" id="pick_b2bMiddle" onchange="onCustomColorChange('b2bMiddle', this.value)" class="w-7 h-7 rounded border-0 cursor-pointer p-0">
-            <input type="text" id="hex_b2bMiddle" onchange="onCustomColorChange('b2bMiddle', this.value)" class="w-20 px-2 py-0.5 text-xs font-mono uppercase text-center border rounded">
+
+        <!-- b2bMiddle -->
+        <div class="p-2.5 rounded-xl border border-slate-200/80 bg-white shadow-2xs flex items-center justify-between gap-3">
+          <div class="space-y-0.5 flex-1 min-w-0">
+            <div class="text-xs font-bold text-slate-900 truncate">Điểm ở giữa (Middle)</div>
+            <div class="text-[10px] text-slate-400 font-mono truncate">--b2b-middle</div>
+          </div>
+          <div class="flex items-center space-x-2 shrink-0">
+            <div class="relative w-8 h-8 rounded-lg overflow-hidden border border-slate-200 shadow-2xs shrink-0 cursor-pointer">
+              <input type="color" id="pick_b2bMiddle" oninput="onCustomColorChange('b2bMiddle', this.value)" class="absolute -top-2 -left-2 w-12 h-12 cursor-pointer border-0 p-0" title="Nhấp để kéo thanh màu">
+            </div>
+            <input type="text" id="hex_b2bMiddle" maxlength="7" oninput="onCustomColorChange('b2bMiddle', this.value)" class="w-20 px-2 py-1 rounded-lg border border-slate-200 text-xs font-mono font-bold text-slate-800 text-center uppercase focus:outline-none focus:ring-1 focus:ring-primary" placeholder="#000000">
           </div>
         </div>
-        <div class="flex items-center justify-between p-2 rounded-xl border border-slate-100 bg-white">
-          <span class="text-xs font-medium text-slate-700">Đậm Nhất (Tiêu Đề)</span>
-          <div class="flex items-center space-x-2">
-            <input type="color" id="pick_b2bEnd" onchange="onCustomColorChange('b2bEnd', this.value)" class="w-7 h-7 rounded border-0 cursor-pointer p-0">
-            <input type="text" id="hex_b2bEnd" onchange="onCustomColorChange('b2bEnd', this.value)" class="w-20 px-2 py-0.5 text-xs font-mono uppercase text-center border rounded">
+
+        <!-- b2bEnd -->
+        <div class="p-2.5 rounded-xl border border-slate-200/80 bg-white shadow-2xs flex items-center justify-between gap-3">
+          <div class="space-y-0.5 flex-1 min-w-0">
+            <div class="text-xs font-bold text-slate-900 truncate">Đậm nhất (End / Heading Color)</div>
+            <div class="text-[10px] text-slate-400 font-mono truncate">--b2b-end</div>
+          </div>
+          <div class="flex items-center space-x-2 shrink-0">
+            <div class="relative w-8 h-8 rounded-lg overflow-hidden border border-slate-200 shadow-2xs shrink-0 cursor-pointer">
+              <input type="color" id="pick_b2bEnd" oninput="onCustomColorChange('b2bEnd', this.value)" class="absolute -top-2 -left-2 w-12 h-12 cursor-pointer border-0 p-0" title="Nhấp để kéo thanh màu">
+            </div>
+            <input type="text" id="hex_b2bEnd" maxlength="7" oninput="onCustomColorChange('b2bEnd', this.value)" class="w-20 px-2 py-1 rounded-lg border border-slate-200 text-xs font-mono font-bold text-slate-800 text-center uppercase focus:outline-none focus:ring-1 focus:ring-primary" placeholder="#000000">
           </div>
         </div>
       </div>
+
     </div>
 
     <!-- Footer Actions -->
     <div class="p-3.5 border-t border-slate-100 bg-slate-50 flex items-center justify-between gap-2">
-      <button type="button" onclick="resetCustomTheme()" class="px-3 py-2 rounded-xl text-xs font-semibold text-slate-700 bg-white border border-slate-200 hover:bg-slate-100 transition-colors shadow-2xs">
-        Mặc Định
+      <button type="button" onclick="resetCustomTheme()" class="inline-flex items-center space-x-1.5 px-3 py-2 rounded-xl text-xs font-semibold text-slate-700 bg-white border border-slate-200 hover:bg-slate-100 transition-colors shadow-2xs cursor-pointer" title="Khôi phục màu mặc định ban đầu">
+        <svg class="w-3.5 h-3.5 text-slate-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+        <span>Mặc Định</span>
       </button>
-      <button type="button" id="copyThemeBtn" onclick="copyThemeCSS()" class="flex-1 py-2 rounded-xl text-xs font-bold bg-[var(--b2b-end)] text-white hover:opacity-95 transition-opacity shadow-xs">
-        Sao Chép Mã CSS
+
+      <button type="button" id="copyThemeBtn" onclick="copyThemeCSS()" class="flex-1 inline-flex items-center justify-center space-x-1.5 px-3 py-2 rounded-xl text-xs font-bold bg-[var(--b2b-end)] text-white hover:opacity-95 transition-opacity shadow-xs cursor-pointer" title="Sao chép mã CSS :root để lưu cấu hình">
+        <svg class="w-3.5 h-3.5 text-slate-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+        <span>Sao Chép Mã CSS</span>
       </button>
     </div>
+
   </div>
 </body>
 </html>
