@@ -7,7 +7,7 @@ category: "cong-nghe"
 categoryName: "Công nghệ tròng kính"
 coverImage: "/images/products/driveshield-4.jpg"
 publishedAt: "2025-03-18"
-author: "Kỹ Sư Quang Học Ứng Dụng Rocky Lens"
+author: "Rocky Lens"
 readTime: "5 phút đọc"
 relatedProductIds:
   - "rocky-driveshield-night-vision"

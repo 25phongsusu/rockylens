@@ -57,7 +57,7 @@ export default function ArticleCard({ article }: ArticleCardProps) {
 
         <div className="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between">
           <span className="text-[11px] text-slate-400">
-            Bởi {article.author}
+            {article.readTime}
           </span>
           <Link
             href={`/kham-pha-trong-kinh/bai-viet/${article.slug}/`}

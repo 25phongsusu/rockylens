@@ -7,7 +7,7 @@ category: "huong-dan"
 categoryName: "Hướng dẫn & Tư vấn"
 coverImage: "/images/articles/blog_freeform_lab.png"
 publishedAt: "2025-02-28"
-author: "Bác Sĩ Khúc Xạ Nhãn Khoa Cố Vấn Rocky Lens"
+author: "Rocky Lens"
 readTime: "7 phút đọc"
 relatedProductIds:
   - "rocky-freeform-progressive-hd"

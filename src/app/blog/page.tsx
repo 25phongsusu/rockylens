@@ -108,8 +108,8 @@ export default function BlogIndexPage() {
 
               {/* Card Footer CTA */}
               <div className="p-6 sm:p-7 pt-0 border-t border-slate-50 mt-4 flex items-center justify-between">
-                <span className="text-xs font-medium text-slate-500">
-                  {article.author}
+                <span className="text-xs font-medium text-slate-400">
+                  {article.readTime}
                 </span>
                 <Link
                   href={`/blog/${article.slug}/`}

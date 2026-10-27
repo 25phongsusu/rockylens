@@ -7,7 +7,7 @@ category: "cong-nghe"
 categoryName: "Công nghệ tròng kính"
 coverImage: "/images/articles/blog_genting_cruise.png"
 publishedAt: "2025-02-10"
-author: "Phòng Nghiên Cứu & Phát Triển (R&D) Rocky Lens"
+author: "Rocky Lens"
 readTime: "5 phút đọc"
 relatedProductIds:
   - "rocky-trendy-photochromic-grey"

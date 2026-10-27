@@ -7,7 +7,7 @@ category: "kien-thuc"
 categoryName: "Kiến thức quang học"
 coverImage: "/images/articles/blog_b2b_policy.png"
 publishedAt: "2025-01-15"
-author: "Chuyên gia Kỹ thuật Quang học Rocky Lens"
+author: "Rocky Lens"
 readTime: "6 phút đọc"
 relatedProductIds:
   - "rocky-156-bluecut-shmc"

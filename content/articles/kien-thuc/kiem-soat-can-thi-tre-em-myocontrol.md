@@ -7,7 +7,7 @@ category: "kien-thuc"
 categoryName: "Kiến thức quang học"
 coverImage: "/images/articles/blog_myocontrol.png"
 publishedAt: "2025-03-12"
-author: "Hội Đồng Nhãn Khoa Trẻ Em Rocky Lens"
+author: "Rocky Lens"
 readTime: "6 phút đọc"
 relatedProductIds:
   - "rocky-myocontrol-dims-kids"

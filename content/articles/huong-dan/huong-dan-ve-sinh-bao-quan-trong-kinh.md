@@ -7,7 +7,7 @@ category: "huong-dan"
 categoryName: "Hướng dẫn & Tư vấn"
 coverImage: "/images/articles/blog_b2b_policy.png"
 publishedAt: "2025-03-22"
-author: "Chuyên Viên Hỗ Trợ Khách Hàng Rocky Lens"
+author: "Rocky Lens"
 readTime: "4 phút đọc"
 relatedProductIds:
   - "rocky-156-bluecut-shmc"

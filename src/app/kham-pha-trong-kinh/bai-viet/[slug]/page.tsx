@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { Calendar, Clock, User, Tag, ArrowLeft, Share2 } from 'lucide-react';
+import { Calendar, Clock, Tag, ArrowLeft, Share2 } from 'lucide-react';
 import {
   getAllArticles,
   getArticleBySlug,
@@ -106,17 +106,12 @@ export default async function ArticleDetailPage({ params }: ArticlePageProps) {
           {/* Meta Info */}
           <div className="flex flex-wrap items-center gap-4 py-4 border-t border-b border-slate-100 text-xs text-slate-500">
             <span className="inline-flex items-center space-x-1.5">
-              <User className="w-3.5 h-3.5 text-[#0B7B8A]" />
-              <strong className="text-slate-800">{article.author}</strong>
-            </span>
-            <span>•</span>
-            <span className="inline-flex items-center space-x-1.5">
-              <Calendar className="w-3.5 h-3.5" />
+              <Calendar className="w-3.5 h-3.5 text-[#0B7B8A]" />
               <span>{formatDate(article.publishedAt)}</span>
             </span>
             <span>•</span>
             <span className="inline-flex items-center space-x-1.5">
-              <Clock className="w-3.5 h-3.5" />
+              <Clock className="w-3.5 h-3.5 text-[#0B7B8A]" />
               <span>{article.readTime}</span>
             </span>
           </div>

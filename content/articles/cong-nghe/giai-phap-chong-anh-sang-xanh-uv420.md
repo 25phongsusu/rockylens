@@ -7,7 +7,7 @@ category: "cong-nghe"
 categoryName: "Công nghệ tròng kính"
 coverImage: "/images/articles/blog_b2b_policy.png"
 publishedAt: "2025-03-05"
-author: "Phòng Nghiên Cứu Quang Học Rocky Lens"
+author: "Rocky Lens"
 readTime: "5 phút đọc"
 relatedProductIds:
   - "rocky-156-bluecut-shmc"
