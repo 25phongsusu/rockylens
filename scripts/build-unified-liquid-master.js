@@ -1230,11 +1230,10 @@ const html = `<!DOCTYPE html>
     <!-- Mục tiêu: Trả lời câu hỏi vì sao tôi nên cân nhắc Rocky   -->
     <!-- Sự an tâm & thông tin rõ ràng, không lặp lại công nghệ    -->
     <!-- ========================================================= -->
-    <section id="vi-sao-rocky" class="relative py-24 px-6 bg-gradient-to-b from-[var(--site-bg-start)] via-[var(--site-bg-middle)] via-80% to-[var(--b2b-end)] overflow-hidden">
-      <!-- Ambient Blur Caustic Overlays (Smooth Section Blending) -->
-      <div className="absolute inset-x-0 -top-12 h-24 bg-gradient-to-b from-[var(--site-bg-start)] to-transparent blur-xl pointer-events-none opacity-80"></div>
-      <div class="absolute -top-24 right-1/3 w-[500px] h-48 bg-teal-500/5 rounded-full blur-3xl pointer-events-none"></div>
-      <div class="absolute inset-x-0 -bottom-16 h-32 bg-gradient-to-b from-transparent via-[var(--b2b-end)]/60 to-[var(--b2b-end)] blur-xl pointer-events-none opacity-90"></div>
+    <section id="vi-sao-rocky" class="relative py-24 px-6 bg-gradient-to-b from-[var(--site-bg-start)] via-white via-50% to-[var(--site-bg-middle)] overflow-hidden">
+      <!-- Ambient Caustic Light Orbs -->
+      <div class="absolute -top-24 right-1/3 w-[500px] h-48 bg-[var(--site-bg-end)]/15 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -bottom-24 left-1/4 w-[500px] h-48 bg-[var(--button-start)]/10 rounded-full blur-3xl pointer-events-none"></div>
 
       <div class="max-w-7xl mx-auto space-y-16 relative z-10">
         
@@ -1455,8 +1454,8 @@ const html = `<!DOCTYPE html>
           <!-- Infinite Marquee Moving from Right to Left slowly -->
           <div class="relative w-full overflow-hidden py-4">
             <!-- Left & Right Gradient Shadows -->
-            <div class="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-28 bg-gradient-to-r from-[#F5F5F7] to-transparent z-10"></div>
-            <div class="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-28 bg-gradient-to-l from-[#F5F5F7] to-transparent z-10"></div>
+            <div class="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-28 bg-gradient-to-r from-[var(--site-bg-middle)] to-transparent z-10"></div>
+            <div class="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-28 bg-gradient-to-l from-[var(--site-bg-middle)] to-transparent z-10"></div>
 
             <div class="animate-marquee gap-6 items-center">
               <!-- Set 1: 9 Large Partner Logos -->
@@ -1608,10 +1607,9 @@ const html = `<!DOCTYPE html>
     <!-- Mục tiêu: Chia sẻ kiến thức thị giác theo insight khách hàng -->
     <!-- 3 bài mẫu: Văn phòng, Lái xe đêm mưa, Trẻ em cận tiến triển -->
     <!-- ========================================================= -->
-    <section id="blog-insights" class="relative py-24 px-6 bg-gradient-to-b from-[var(--site-bg-start)] via-[var(--site-bg-middle)] to-[var(--b2b-end)] overflow-hidden">
-      <!-- Ambient Blur Caustic Overlays (Smooth Section Blending) -->
-      <div class="absolute inset-x-0 -top-12 h-24 bg-gradient-to-b from-[var(--b2b-end)]/10 to-transparent blur-xl pointer-events-none"></div>
-      <div class="absolute -top-24 right-1/4 w-96 h-48 bg-teal-500/5 rounded-full blur-3xl pointer-events-none"></div>
+    <section id="blog-insights" class="relative py-24 px-6 bg-gradient-to-b from-[var(--site-bg-start)] via-white to-[var(--site-bg-start)] overflow-hidden">
+      <!-- Ambient Blur Caustic Overlays -->
+      <div class="absolute -top-24 right-1/4 w-96 h-48 bg-[var(--site-bg-end)]/15 rounded-full blur-3xl pointer-events-none"></div>
 
       <div class="max-w-7xl mx-auto space-y-12 relative z-10">
         
@@ -1744,7 +1742,7 @@ const html = `<!DOCTYPE html>
   <!-- ========================================================= -->
   <!-- OFFICIAL FOOTER                                           -->
   <!-- ========================================================= -->
-  <footer class="bg-[var(--b2b-end)] text-slate-600 font-medium py-16 px-6 text-base">
+  <footer class="bg-[var(--b2b-end)] text-slate-300 font-medium py-16 px-6 text-base">
     <div class="max-w-7xl mx-auto space-y-12">
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -1752,10 +1750,10 @@ const html = `<!DOCTYPE html>
         <!-- Col 1: Brand Info -->
         <div class="space-y-4">
           <img src="assets/logo_rocky_transparent.png" alt="Rocky Lens" class="h-10 w-auto object-contain brightness-0 invert">
-          <p class="text-slate-600 font-medium text-base leading-relaxed">
+          <p class="text-slate-300 font-medium text-base leading-relaxed">
             Thương hiệu tròng kính quang học Canada, phân phối độc quyền tại Việt Nam bởi Công ty Cổ phần Clearly Vietnam.
           </p>
-          <div class="text-base text-slate-600 font-medium">
+          <div class="text-base text-slate-400 font-medium">
             Giấy phép kinh doanh số: 0316499823 do Sở Kế hoạch và Đầu tư TP.HCM cấp.
           </div>
         </div>
@@ -1764,12 +1762,12 @@ const html = `<!DOCTYPE html>
         <div class="space-y-3">
           <span class="text-white font-bold text-lg block">Danh Mục Tròng Kính</span>
           <ul class="space-y-2 text-base">
-            <li><a href="trong-kinh/" class="text-slate-600 font-medium hover:text-white transition-colors">Khi Lái Xe Ban Đêm</a></li>
-            <li><a href="trong-kinh/" class="text-slate-600 font-medium hover:text-white transition-colors">Khi Làm Việc Màn Hình Số</a></li>
-            <li><a href="trong-kinh/" class="text-slate-600 font-medium hover:text-white transition-colors">Tròng Kính Đổi Màu Ngoài Trời</a></li>
-            <li><a href="trong-kinh/" class="text-slate-600 font-medium hover:text-white transition-colors">Tròng Kính Mỏng Nhẹ Chịu Lực</a></li>
-            <li><a href="trong-kinh/" class="text-slate-600 font-medium hover:text-white transition-colors">Tròng Kính Nhìn Rõ Xa Và Gần</a></li>
-            <li><a href="trong-kinh/" class="text-slate-600 font-medium hover:text-white transition-colors">Chăm Sóc Thị Lực Trẻ Em</a></li>
+            <li><a href="trong-kinh/" class="text-slate-300 font-medium hover:text-white transition-colors">Khi Lái Xe Ban Đêm</a></li>
+            <li><a href="trong-kinh/" class="text-slate-300 font-medium hover:text-white transition-colors">Khi Làm Việc Màn Hình Số</a></li>
+            <li><a href="trong-kinh/" class="text-slate-300 font-medium hover:text-white transition-colors">Tròng Kính Đổi Màu Ngoài Trời</a></li>
+            <li><a href="trong-kinh/" class="text-slate-300 font-medium hover:text-white transition-colors">Tròng Kính Mỏng Nhẹ Chịu Lực</a></li>
+            <li><a href="trong-kinh/" class="text-slate-300 font-medium hover:text-white transition-colors">Tròng Kính Nhìn Rõ Xa Và Gần</a></li>
+            <li><a href="trong-kinh/" class="text-slate-300 font-medium hover:text-white transition-colors">Chăm Sóc Thị Lực Trẻ Em</a></li>
           </ul>
         </div>
 
@@ -1777,11 +1775,11 @@ const html = `<!DOCTYPE html>
         <div class="space-y-3">
           <span class="text-white font-bold text-lg block">Công Nghệ & Khám Phá</span>
           <ul class="space-y-2 text-base">
-            <li><a href="kham-pha-trong-kinh/" class="text-slate-600 font-medium hover:text-white transition-colors">Lựa chọn vật liệu phù hợp</a></li>
-            <li><a href="kham-pha-trong-kinh/" class="text-slate-600 font-medium hover:text-white transition-colors">Gia công kỹ thuật số Freeform</a></li>
-            <li><a href="kham-pha-trong-kinh/" class="text-slate-600 font-medium hover:text-white transition-colors">Lớp phủ hạn chế bám bẩn</a></li>
-            <li><a href="trong-kinh/" class="text-slate-600 font-medium hover:text-white transition-colors">Tìm hiểu các lựa chọn độ mỏng</a></li>
-            <li><a href="ve-chung-toi/" class="text-slate-600 font-medium hover:text-white transition-colors">Tiêu chuẩn quản lý y tế ISO 13485</a></li>
+            <li><a href="kham-pha-trong-kinh/" class="text-slate-300 font-medium hover:text-white transition-colors">Lựa chọn vật liệu phù hợp</a></li>
+            <li><a href="kham-pha-trong-kinh/" class="text-slate-300 font-medium hover:text-white transition-colors">Gia công kỹ thuật số Freeform</a></li>
+            <li><a href="kham-pha-trong-kinh/" class="text-slate-300 font-medium hover:text-white transition-colors">Lớp phủ hạn chế bám bẩn</a></li>
+            <li><a href="trong-kinh/" class="text-slate-300 font-medium hover:text-white transition-colors">Tìm hiểu các lựa chọn độ mỏng</a></li>
+            <li><a href="ve-chung-toi/" class="text-slate-300 font-medium hover:text-white transition-colors">Tiêu chuẩn quản lý y tế ISO 13485</a></li>
           </ul>
         </div>
 
