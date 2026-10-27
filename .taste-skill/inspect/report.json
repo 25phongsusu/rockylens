@@ -1,6 +1,6 @@
 {
  "url": "index.html",
- "at": "2026-10-27T03:25:55.583Z",
+ "at": "2026-10-27T03:37:36.964Z",
  "allow": [],
  "viewports": [
   {
@@ -12,9 +12,9 @@
     0.66,
     0.62,
     0.83,
-    0.7,
-    0.62,
-    0.48,
+    0.75,
+    0.68,
+    0.55,
     0.77,
     1,
     1
@@ -33,13 +33,13 @@
      "h": 900
     },
     "page": {
-     "height": 7400,
+     "height": 7336,
      "screens": 8.2,
-     "words": 1790,
-     "img": 46,
+     "words": 1764,
+     "img": 47,
      "video": 0,
      "canvas": 0,
-     "svg": 5,
+     "svg": 21,
      "sections": 7,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
@@ -173,7 +173,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.53,
-      "top": 3324,
+      "top": 3260,
       "tag": "h2",
       "kind": "heading"
      },
@@ -194,7 +194,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.35,
-      "top": 4122,
+      "top": 4058,
       "tag": "h2",
       "kind": "heading"
      },
@@ -215,7 +215,7 @@
       "align": "center",
       "position": "center",
       "widthRatio": 0.89,
-      "top": 4944,
+      "top": 4880,
       "tag": "h3",
       "kind": "heading"
      },
@@ -236,7 +236,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.53,
-      "top": 5336,
+      "top": 5272,
       "tag": "h2",
       "kind": "heading"
      },
@@ -257,7 +257,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.4,
-      "top": 5800,
+      "top": 5736,
       "tag": "div",
       "kind": "heading"
      },
@@ -278,7 +278,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.5,
-      "top": 6160,
+      "top": 6096,
       "tag": "h2",
       "kind": "heading"
      }
@@ -337,7 +337,7 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.1,
+     "centerShare": 0.11,
      "smallText": 0
     },
     "eyebrows": [],
@@ -371,7 +371,7 @@
       },
       {
        "color": "#0e253a",
-       "top": 6080,
+       "top": 6016,
        "hsl": {
         "h": 209,
         "s": 0.61,
@@ -380,7 +380,7 @@
       },
       {
        "color": "#071521",
-       "top": 6944,
+       "top": 6880,
        "hsl": {
         "h": 208,
         "s": 0.65,
@@ -391,7 +391,7 @@
      "textColors": [
       {
        "color": "#475569",
-       "share": 0.33
+       "share": 0.34
       },
       {
        "color": "#334155",
@@ -399,7 +399,7 @@
       },
       {
        "color": "#0e253a",
-       "share": 0.17
+       "share": 0.16
       },
       {
        "color": "#e2e8f0",
@@ -472,19 +472,19 @@
        "count": 4,
        "iconTopped": false,
        "rounded": true,
-       "top": 3488
+       "top": 3424
       },
       {
        "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 5500
+       "top": 5436
       },
       {
        "count": 4,
        "iconTopped": false,
        "rounded": true,
-       "top": 6420
+       "top": 6356
       }
      ]
     },
@@ -510,7 +510,7 @@
      "w": 1440,
      "h": 900
     },
-    "pageH": 7400,
+    "pageH": 7336,
     "margins": {
      "left": 73,
      "right": 96
@@ -566,7 +566,7 @@
       "sel": "section#trong-kinh.py-20.px-6",
       "tag": "section",
       "top": 1380,
-      "height": 1864,
+      "height": 1800,
       "words": 393,
       "media": 6,
       "middle": 64,
@@ -588,7 +588,7 @@
      {
       "sel": "section#cong-nghe.py-20.px-6",
       "tag": "section",
-      "top": 3244,
+      "top": 3180,
       "height": 798,
       "words": 202,
       "media": 4,
@@ -611,11 +611,11 @@
      {
       "sel": "section#vi-sao-rocky.py-20.px-6",
       "tag": "section",
-      "top": 4042,
+      "top": 3978,
       "height": 1215,
       "words": 186,
       "media": 7,
-      "middle": 2572,
+      "middle": 2547,
       "heading": {
        "text": "Rocky Canada Opticians",
        "size": 48,
@@ -634,7 +634,7 @@
      {
       "sel": "section#tim-dai-ly.py-20.px-6",
       "tag": "section",
-      "top": 5256,
+      "top": 5192,
       "height": 824,
       "words": 200,
       "media": 0,
@@ -657,7 +657,7 @@
      {
       "sel": "section#doi-tac.py-20.px-6",
       "tag": "section",
-      "top": 6080,
+      "top": 6016,
       "height": 864,
       "words": 223,
       "media": 1,
@@ -680,7 +680,7 @@
      {
       "sel": "footer.bg-[#071521].text-slate-600",
       "tag": "footer",
-      "top": 6944,
+      "top": 6880,
       "height": 456,
       "words": 170,
       "media": 0,
@@ -779,11 +779,11 @@
     0.65,
     0.77,
     0.88,
-    0.79,
+    0.85,
     0.84,
-    0.71,
-    0.55,
-    0.81,
+    0.73,
+    0.54,
+    0.87,
     1,
     1
    ],
@@ -801,13 +801,13 @@
      "h": 1024
     },
     "page": {
-     "height": 10754,
-     "screens": 10.5,
-     "words": 1771,
-     "img": 46,
+     "height": 10690,
+     "screens": 10.4,
+     "words": 1745,
+     "img": 47,
      "video": 0,
      "canvas": 0,
-     "svg": 5,
+     "svg": 21,
      "sections": 7,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
@@ -941,7 +941,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 4888,
+      "top": 4824,
       "tag": "h2",
       "kind": "heading"
      },
@@ -962,7 +962,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 6080,
+      "top": 6016,
       "tag": "h2",
       "kind": "heading"
      },
@@ -983,7 +983,7 @@
       "align": "center",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 7306,
+      "top": 7242,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1004,7 +1004,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 7698,
+      "top": 7634,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1025,7 +1025,7 @@
       "align": "center",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 8314,
+      "top": 8250,
       "tag": "div",
       "kind": "heading"
      },
@@ -1046,7 +1046,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 8778,
+      "top": 8714,
       "tag": "h2",
       "kind": "heading"
      }
@@ -1139,7 +1139,7 @@
       },
       {
        "color": "#0e253a",
-       "top": 8698,
+       "top": 8634,
        "hsl": {
         "h": 209,
         "s": 0.61,
@@ -1148,7 +1148,7 @@
       },
       {
        "color": "#071521",
-       "top": 10042,
+       "top": 9978,
        "hsl": {
         "h": 208,
         "s": 0.65,
@@ -1163,15 +1163,15 @@
       },
       {
        "color": "#334155",
-       "share": 0.29
+       "share": 0.3
       },
       {
        "color": "#0e253a",
-       "share": 0.17
+       "share": 0.16
       },
       {
        "color": "#e2e8f0",
-       "share": 0.08
+       "share": 0.09
       },
       {
        "color": "#5eead4",
@@ -1234,25 +1234,25 @@
        "count": 6,
        "iconTopped": false,
        "rounded": true,
-       "top": 2261
+       "top": 2260
       },
       {
        "count": 4,
        "iconTopped": false,
        "rounded": true,
-       "top": 5043
+       "top": 4978
       },
       {
        "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 7854
+       "top": 7790
       },
       {
        "count": 4,
        "iconTopped": false,
        "rounded": true,
-       "top": 9010
+       "top": 8946
       }
      ]
     },
@@ -1278,7 +1278,7 @@
      "w": 768,
      "h": 1024
     },
-    "pageH": 10754,
+    "pageH": 10690,
     "margins": {
      "left": 24,
      "right": 45
@@ -1334,7 +1334,7 @@
       "sel": "section#trong-kinh.py-20.px-6",
       "tag": "section",
       "top": 2010,
-      "height": 2798,
+      "height": 2734,
       "words": 393,
       "media": 6,
       "middle": 0,
@@ -1356,7 +1356,7 @@
      {
       "sel": "section#cong-nghe.py-20.px-6",
       "tag": "section",
-      "top": 4808,
+      "top": 4744,
       "height": 1192,
       "words": 202,
       "media": 4,
@@ -1379,11 +1379,11 @@
      {
       "sel": "section#vi-sao-rocky.py-20.px-6",
       "tag": "section",
-      "top": 6000,
+      "top": 5936,
       "height": 1619,
       "words": 186,
       "media": 7,
-      "middle": 3097,
+      "middle": 3067,
       "heading": {
        "text": "Rocky Canada Opticians",
        "size": 36,
@@ -1402,7 +1402,7 @@
      {
       "sel": "section#tim-dai-ly.py-20.px-6",
       "tag": "section",
-      "top": 7618,
+      "top": 7554,
       "height": 1080,
       "words": 200,
       "media": 0,
@@ -1425,7 +1425,7 @@
      {
       "sel": "section#doi-tac.py-20.px-6",
       "tag": "section",
-      "top": 8698,
+      "top": 8634,
       "height": 1344,
       "words": 223,
       "media": 1,
@@ -1448,7 +1448,7 @@
      {
       "sel": "footer.bg-[#071521].text-slate-600",
       "tag": "footer",
-      "top": 10042,
+      "top": 9978,
       "height": 712,
       "words": 170,
       "media": 0,
@@ -1533,15 +1533,15 @@
     0.63,
     0.79,
     0.7,
-    0.77,
+    0.72,
     0.86,
     0.91,
     0.92,
     0.92,
-    0.77,
-    0.71,
+    0.82,
+    0.81,
     0.74,
-    0.71
+    0.77
    ],
    "motion": {
     "elements": 25,
@@ -1557,13 +1557,13 @@
      "h": 844
     },
     "page": {
-     "height": 17395,
-     "screens": 20.6,
-     "words": 1764,
-     "img": 46,
+     "height": 17331,
+     "screens": 20.5,
+     "words": 1738,
+     "img": 47,
      "video": 0,
      "canvas": 0,
-     "svg": 5,
+     "svg": 21,
      "sections": 7,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
@@ -1823,7 +1823,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 7369,
+      "top": 7305,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1844,7 +1844,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 9421,
+      "top": 9357,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1865,7 +1865,7 @@
       "align": "center",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 12321,
+      "top": 12257,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1886,7 +1886,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 12713,
+      "top": 12649,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1907,7 +1907,7 @@
       "align": "center",
       "position": "center",
       "widthRatio": 0.71,
-      "top": 13765,
+      "top": 13701,
       "tag": "div",
       "kind": "heading"
      },
@@ -1928,7 +1928,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 14385,
+      "top": 14321,
       "tag": "h2",
       "kind": "heading"
      }
@@ -2020,7 +2020,7 @@
       },
       {
        "color": "#0e253a",
-       "top": 14305,
+       "top": 14241,
        "hsl": {
         "h": 209,
         "s": 0.61,
@@ -2029,7 +2029,7 @@
       },
       {
        "color": "#163652",
-       "top": 15625,
+       "top": 15561,
        "hsl": {
         "h": 208,
         "s": 0.58,
@@ -2038,7 +2038,7 @@
       },
       {
        "color": "#071521",
-       "top": 16165,
+       "top": 16101,
        "hsl": {
         "h": 208,
         "s": 0.65,
@@ -2053,11 +2053,11 @@
       },
       {
        "color": "#334155",
-       "share": 0.29
+       "share": 0.3
       },
       {
        "color": "#0e253a",
-       "share": 0.17
+       "share": 0.16
       },
       {
        "color": "#e2e8f0",
@@ -2130,19 +2130,19 @@
        "count": 4,
        "iconTopped": false,
        "rounded": true,
-       "top": 7602
+       "top": 7538
       },
       {
        "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 12929
+       "top": 12865
       },
       {
        "count": 4,
        "iconTopped": false,
        "rounded": true,
-       "top": 14725
+       "top": 14661
       }
      ]
     },
@@ -2163,7 +2163,7 @@
      "w": 390,
      "h": 844
     },
-    "pageH": 17395,
+    "pageH": 17331,
     "margins": {
      "left": 24,
      "right": 27
@@ -2219,7 +2219,7 @@
       "sel": "section#trong-kinh.py-20.px-6",
       "tag": "section",
       "top": 2561,
-      "height": 4728,
+      "height": 4664,
       "words": 393,
       "media": 6,
       "middle": 0,
@@ -2241,7 +2241,7 @@
      {
       "sel": "section#cong-nghe.py-20.px-6",
       "tag": "section",
-      "top": 7289,
+      "top": 7225,
       "height": 2052,
       "words": 202,
       "media": 4,
@@ -2264,11 +2264,11 @@
      {
       "sel": "section#vi-sao-rocky.py-20.px-6",
       "tag": "section",
-      "top": 9341,
+      "top": 9277,
       "height": 3292,
       "words": 186,
       "media": 13,
-      "middle": 2841,
+      "middle": 2844,
       "heading": {
        "text": "Rocky Canada Opticians",
        "size": 30,
@@ -2287,7 +2287,7 @@
      {
       "sel": "section#tim-dai-ly.py-20.px-6",
       "tag": "section",
-      "top": 12633,
+      "top": 12569,
       "height": 1672,
       "words": 200,
       "media": 0,
@@ -2310,7 +2310,7 @@
      {
       "sel": "section#doi-tac.py-20.px-6",
       "tag": "section",
-      "top": 14305,
+      "top": 14241,
       "height": 1860,
       "words": 223,
       "media": 1,
@@ -2333,7 +2333,7 @@
      {
       "sel": "footer.bg-[#071521].text-slate-600",
       "tag": "footer",
-      "top": 16165,
+      "top": 16101,
       "height": 1230,
       "words": 170,
       "media": 0,
@@ -2430,7 +2430,7 @@
    "level": "WARN",
    "id": "empty-middle",
    "width": 1440,
-   "message": "1 section(s) have content at both edges and 2572px of nothing between: \"Rocky Canada Opticians\"",
+   "message": "1 section(s) have content at both edges and 2547px of nothing between: \"Rocky Canada Opticians\"",
    "fix": "Bring the two parts together on the grid, or put the picture or figure of the section in the middle. An empty middle third reads as a hole, the same as an empty half.",
    "alsoAt": [
     768

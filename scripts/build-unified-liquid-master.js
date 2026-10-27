@@ -396,35 +396,35 @@ const html = `<!DOCTYPE html>
             </div>
 
             <!-- Hover Specs Overlay (Layer 3: Professional Technical Details) -->
-            <div class="absolute inset-0 bg-white/98 backdrop-blur-md text-[#0E253A] p-6 sm:p-7 rounded-3xl flex flex-col justify-between opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-20  shadow-2xl">
+            <div class="absolute inset-0 bg-white/98 backdrop-blur-md text-[#0E253A] p-6 sm:p-7 rounded-3xl flex flex-col justify-between opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-20 shadow-2xl">
               <div class="space-y-4">
                 <div class="flex items-center justify-between">
-                  <span class="px-3 py-1 rounded-full bg-teal-50 text-[#0B7B8A] text-[13px] font-bold ">
+                  <span class="px-3 py-1 rounded-full bg-teal-50 text-[#0B7B8A] text-[13px] font-bold">
                     Thông Tin Sản Phẩm
                   </span>
-                  <span class="text-sm text-slate-500 font-semibold">Bảo Hành Chính Hãng</span>
+                  <span class="text-sm text-slate-500 font-semibold">Tầm Nhìn Lái Xe</span>
                 </div>
                 <h4 class="text-2xl font-black text-[#0E253A]">DriveShield Ruby AR</h4>
                 <div class="space-y-2 text-base pt-2">
                   <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
-                    <span class="text-slate-600 font-medium">Đặc tính quang học:</span>
-                    <span class="font-bold text-[#0B7B8A]">Quang phổ ấm hạn chế chói</span>
+                    <span class="text-slate-600 font-medium">Tính năng nổi bật:</span>
+                    <span class="font-bold text-[#0B7B8A] text-right ml-2">Giảm chói đèn xe &amp; trượt nước mưa</span>
                   </div>
                   <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
-                    <span class="text-slate-600 font-medium">Lớp phủ bề mặt:</span>
-                    <span class="font-bold text-[#0E253A]">Kỵ nước, trượt hạt mưa</span>
+                    <span class="text-slate-600 font-medium">Công nghệ xử lý:</span>
+                    <span class="font-bold text-[#0E253A] text-right ml-2">Phủ phân cực lọc ánh sáng chói</span>
                   </div>
                   <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
-                    <span class="text-slate-600 font-medium">Khả năng chịu lực:</span>
-                    <span class="font-bold text-[#0E253A]">Chống nứt vỡ và dẻo dai</span>
+                    <span class="text-slate-600 font-medium">Trải nghiệm thị giác:</span>
+                    <span class="font-bold text-[#0E253A] text-right ml-2">Tầm nhìn êm dịu, tăng tương phản đêm</span>
                   </div>
                   <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
-                    <span class="text-slate-600 font-medium">Lựa chọn độ mỏng:</span>
-                    <span class="font-bold text-[#0E253A]">Chiết suất 1.60 & 1.67</span>
+                    <span class="text-slate-600 font-medium">Tùy chọn chiết suất:</span>
+                    <span class="font-bold text-[#0E253A] text-right ml-2">1.56 | 1.60 | 1.67</span>
                   </div>
                   <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
                     <span class="text-slate-600 font-medium">Chính sách bảo hành:</span>
-                    <span class="font-bold text-[#0E253A]">24 tháng chính hãng</span>
+                    <span class="font-bold text-[#0E253A] text-right ml-2">24 tháng chính hãng</span>
                   </div>
                 </div>
               </div>
@@ -466,35 +466,35 @@ const html = `<!DOCTYPE html>
             </div>
 
             <!-- Hover Specs Overlay -->
-            <div class="absolute inset-0 bg-white/98 backdrop-blur-md text-[#0E253A] p-6 sm:p-7 rounded-3xl flex flex-col justify-between opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-20  shadow-2xl">
+            <div class="absolute inset-0 bg-white/98 backdrop-blur-md text-[#0E253A] p-6 sm:p-7 rounded-3xl flex flex-col justify-between opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-20 shadow-2xl">
               <div class="space-y-4">
                 <div class="flex items-center justify-between">
-                  <span class="px-3 py-1 rounded-full bg-teal-50 text-[#0B7B8A] text-[13px] font-bold ">
+                  <span class="px-3 py-1 rounded-full bg-teal-50 text-[#0B7B8A] text-[13px] font-bold">
                     Thông Tin Sản Phẩm
                   </span>
-                  <span class="text-sm text-slate-500 font-semibold">Bảo Vệ Hằng Ngày</span>
+                  <span class="text-sm text-slate-500 font-semibold">Bảo Vệ Mắt Điện Tử</span>
                 </div>
-                <h4 class="text-2xl font-black text-[#0E253A]">BlueCut UV420</h4>
+                <h4 class="text-2xl font-black text-[#0E253A]">BlueCut UV420 Relax</h4>
                 <div class="space-y-2 text-base pt-2">
                   <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
-                    <span class="text-slate-600 font-medium">Tính năng lọc sáng:</span>
-                    <span class="font-bold text-[#0B7B8A]">Lọc dải HEV 415-455nm</span>
+                    <span class="text-slate-600 font-medium">Tính năng nổi bật:</span>
+                    <span class="font-bold text-[#0B7B8A] text-right ml-2">Ngăn ánh sáng xanh màn hình số</span>
                   </div>
                   <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
-                    <span class="text-slate-600 font-medium">Độ trong suốt:</span>
-                    <span class="font-bold text-[#0E253A]">Trong suốt tự nhiên, không ám vàng</span>
+                    <span class="text-slate-600 font-medium">Công nghệ xử lý:</span>
+                    <span class="font-bold text-[#0E253A] text-right ml-2">Phủ chân không Nano BlueCut UV420</span>
                   </div>
                   <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
-                    <span class="text-slate-600 font-medium">Lớp váng bề mặt:</span>
-                    <span class="font-bold text-[#0E253A]">Kháng trầy xước và bám bẩn</span>
+                    <span class="text-slate-600 font-medium">Trải nghiệm thị giác:</span>
+                    <span class="font-bold text-[#0E253A] text-right ml-2">Màu sắc tự nhiên, giảm mỏi mắt</span>
                   </div>
                   <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
-                    <span class="text-slate-600 font-medium">Lựa chọn độ mỏng:</span>
-                    <span class="font-bold text-[#0E253A]">Chiết suất 1.56, 1.60, 1.67, 1.74</span>
+                    <span class="text-slate-600 font-medium">Tùy chọn chiết suất:</span>
+                    <span class="font-bold text-[#0E253A] text-right ml-2">1.56 | 1.60 | 1.67 | 1.74</span>
                   </div>
                   <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
                     <span class="text-slate-600 font-medium">Chính sách bảo hành:</span>
-                    <span class="font-bold text-[#0E253A]">24 tháng chính hãng</span>
+                    <span class="font-bold text-[#0E253A] text-right ml-2">24 tháng chính hãng</span>
                   </div>
                 </div>
               </div>
@@ -536,35 +536,35 @@ const html = `<!DOCTYPE html>
             </div>
 
             <!-- Hover Specs Overlay -->
-            <div class="absolute inset-0 bg-white/98 backdrop-blur-md text-[#0E253A] p-6 sm:p-7 rounded-3xl flex flex-col justify-between opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-20  shadow-2xl">
+            <div class="absolute inset-0 bg-white/98 backdrop-blur-md text-[#0E253A] p-6 sm:p-7 rounded-3xl flex flex-col justify-between opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-20 shadow-2xl">
               <div class="space-y-4">
                 <div class="flex items-center justify-between">
-                  <span class="px-3 py-1 rounded-full bg-teal-50 text-[#0B7B8A] text-[13px] font-bold ">
+                  <span class="px-3 py-1 rounded-full bg-teal-50 text-[#0B7B8A] text-[13px] font-bold">
                     Thông Tin Sản Phẩm
                   </span>
-                  <span class="text-sm text-slate-500 font-semibold">Năng Động Tiện Lợi</span>
+                  <span class="text-sm text-slate-500 font-semibold">Đổi Màu Tiện Lợi</span>
                 </div>
                 <h4 class="text-2xl font-black text-[#0E253A]">Fast-Change Spin-Coat</h4>
                 <div class="space-y-2 text-base pt-2">
                   <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
-                    <span class="text-slate-600 font-medium">Cơ chế chuyển màu:</span>
-                    <span class="font-bold text-[#0B7B8A]">Chuyển màu khi tiếp xúc tia UV</span>
+                    <span class="text-slate-600 font-medium">Tính năng nổi bật:</span>
+                    <span class="font-bold text-[#0B7B8A] text-right ml-2">Đổi màu râm linh hoạt khi ra nắng</span>
                   </div>
                   <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
-                    <span class="text-slate-600 font-medium">Tùy chọn sắc thái:</span>
-                    <span class="font-bold text-[#0E253A]">Xám khói và Nâu trà thanh lịch</span>
+                    <span class="text-slate-600 font-medium">Công nghệ xử lý:</span>
+                    <span class="font-bold text-[#0E253A] text-right ml-2">Phủ đổi màu bề mặt Spin-Coat UV</span>
                   </div>
                   <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
-                    <span class="text-slate-600 font-medium">Khả năng ngăn tia UV:</span>
-                    <span class="font-bold text-[#0E253A]">Bảo vệ mắt trước tia cực tím</span>
+                    <span class="text-slate-600 font-medium">Trải nghiệm thị giác:</span>
+                    <span class="font-bold text-[#0E253A] text-right ml-2">Dịu mắt ngoài trời, trong suốt trong nhà</span>
                   </div>
                   <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
-                    <span class="text-slate-600 font-medium">Lựa chọn độ mỏng:</span>
-                    <span class="font-bold text-[#0E253A]">Chiết suất 1.56, 1.60, 1.67</span>
+                    <span class="text-slate-600 font-medium">Tùy chọn chiết suất:</span>
+                    <span class="font-bold text-[#0E253A] text-right ml-2">1.56 | 1.60 | 1.67</span>
                   </div>
                   <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
                     <span class="text-slate-600 font-medium">Chính sách bảo hành:</span>
-                    <span class="font-bold text-[#0E253A]">24 tháng chính hãng</span>
+                    <span class="font-bold text-[#0E253A] text-right ml-2">24 tháng chính hãng</span>
                   </div>
                 </div>
               </div>
@@ -606,35 +606,35 @@ const html = `<!DOCTYPE html>
             </div>
 
             <!-- Hover Specs Overlay -->
-            <div class="absolute inset-0 bg-white/98 backdrop-blur-md text-[#0E253A] p-6 sm:p-7 rounded-3xl flex flex-col justify-between opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-20  shadow-2xl">
+            <div class="absolute inset-0 bg-white/98 backdrop-blur-md text-[#0E253A] p-6 sm:p-7 rounded-3xl flex flex-col justify-between opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-20 shadow-2xl">
               <div class="space-y-4">
                 <div class="flex items-center justify-between">
-                  <span class="px-3 py-1 rounded-full bg-teal-50 text-[#0B7B8A] text-[13px] font-bold ">
+                  <span class="px-3 py-1 rounded-full bg-teal-50 text-[#0B7B8A] text-[13px] font-bold">
                     Thông Tin Sản Phẩm
                   </span>
-                  <span class="text-sm text-slate-500 font-semibold">Độ Bền Cao</span>
+                  <span class="text-sm text-slate-500 font-semibold">Gọn Nhẹ &amp; Bền Bỉ</span>
                 </div>
                 <h4 class="text-2xl font-black text-[#0E253A]">Tough Aspheric MR Series</h4>
                 <div class="space-y-2 text-base pt-2">
                   <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
-                    <span class="text-slate-600 font-medium">Đặc tính vật liệu:</span>
-                    <span class="font-bold text-[#0B7B8A]">Độ dẻo dai cao, hạn chế nứt vỡ</span>
+                    <span class="text-slate-600 font-medium">Tính năng nổi bật:</span>
+                    <span class="font-bold text-[#0B7B8A] text-right ml-2">Tối ưu độ mỏng &amp; chịu lực va đập</span>
                   </div>
                   <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
-                    <span class="text-slate-600 font-medium">Thiết kế quang học:</span>
-                    <span class="font-bold text-[#0E253A]">Bề mặt phi cầu Aspheric mỏng mép</span>
+                    <span class="text-slate-600 font-medium">Công nghệ xử lý:</span>
+                    <span class="font-bold text-[#0E253A] text-right ml-2">Phôi vật liệu dẻo dai MR Series</span>
                   </div>
                   <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
-                    <span class="text-slate-600 font-medium">Độ sắc nét:</span>
-                    <span class="font-bold text-[#0E253A]">Chỉ số Abbe cao, hạn chế quang sai</span>
+                    <span class="text-slate-600 font-medium">Trải nghiệm thị giác:</span>
+                    <span class="font-bold text-[#0E253A] text-right ml-2">Nhẹ nhàng, triệt tiêu quang sai biên</span>
                   </div>
                   <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
-                    <span class="text-slate-600 font-medium">Phù hợp gọng:</span>
-                    <span class="font-bold text-[#0E253A]">Chuyên gọng khoan ốc, xẻ cước</span>
+                    <span class="text-slate-600 font-medium">Tùy chọn chiết suất:</span>
+                    <span class="font-bold text-[#0E253A] text-right ml-2">1.60 | 1.67 | 1.74 siêu mỏng</span>
                   </div>
                   <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
                     <span class="text-slate-600 font-medium">Chính sách bảo hành:</span>
-                    <span class="font-bold text-[#0E253A]">24 tháng chính hãng</span>
+                    <span class="font-bold text-[#0E253A] text-right ml-2">24 tháng chính hãng</span>
                   </div>
                 </div>
               </div>
@@ -676,10 +676,10 @@ const html = `<!DOCTYPE html>
             </div>
 
             <!-- Hover Specs Overlay -->
-            <div class="absolute inset-0 bg-white/98 backdrop-blur-md text-[#0E253A] p-6 sm:p-7 rounded-3xl flex flex-col justify-between opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-20  shadow-2xl">
+            <div class="absolute inset-0 bg-white/98 backdrop-blur-md text-[#0E253A] p-6 sm:p-7 rounded-3xl flex flex-col justify-between opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-20 shadow-2xl">
               <div class="space-y-4">
                 <div class="flex items-center justify-between">
-                  <span class="px-3 py-1 rounded-full bg-teal-50 text-[#0B7B8A] text-[13px] font-bold ">
+                  <span class="px-3 py-1 rounded-full bg-teal-50 text-[#0B7B8A] text-[13px] font-bold">
                     Thông Tin Sản Phẩm
                   </span>
                   <span class="text-sm text-slate-500 font-semibold">Đa Khoảng Cách</span>
@@ -687,24 +687,24 @@ const html = `<!DOCTYPE html>
                 <h4 class="text-2xl font-black text-[#0E253A]">CanRx Freeform HD</h4>
                 <div class="space-y-2 text-base pt-2">
                   <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
-                    <span class="text-slate-600 font-medium">Phương pháp chế tác:</span>
-                    <span class="font-bold text-[#0B7B8A]">Mài kỹ thuật số mặt sau</span>
+                    <span class="text-slate-600 font-medium">Tính năng nổi bật:</span>
+                    <span class="font-bold text-[#0B7B8A] text-right ml-2">Nhìn rõ mọi cự ly Xa - Trung - Gần</span>
                   </div>
                   <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
-                    <span class="text-slate-600 font-medium">Vùng nhìn chuyển tiếp:</span>
-                    <span class="font-bold text-[#0E253A]">Mở rộng hành lang nhìn trung gian</span>
+                    <span class="text-slate-600 font-medium">Công nghệ xử lý:</span>
+                    <span class="font-bold text-[#0E253A] text-right ml-2">Mài vi điểm kỹ thuật số Freeform HD</span>
                   </div>
                   <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
-                    <span class="text-slate-600 font-medium">Cá nhân hóa:</span>
-                    <span class="font-bold text-[#0E253A]">Tối ưu theo góc nghiêng gọng kính</span>
+                    <span class="text-slate-600 font-medium">Trải nghiệm thị giác:</span>
+                    <span class="font-bold text-[#0E253A] text-right ml-2">Vùng nhìn liền mạch, thích nghi nhanh</span>
                   </div>
                   <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
-                    <span class="text-slate-600 font-medium">Lựa chọn độ mỏng:</span>
-                    <span class="font-bold text-[#0E253A]">Chiết suất 1.56, 1.60, 1.67</span>
+                    <span class="text-slate-600 font-medium">Tùy chọn chiết suất:</span>
+                    <span class="font-bold text-[#0E253A] text-right ml-2">1.56 | 1.60 | 1.67</span>
                   </div>
                   <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
                     <span class="text-slate-600 font-medium">Chính sách bảo hành:</span>
-                    <span class="font-bold text-[#0E253A]">24 tháng chính hãng</span>
+                    <span class="font-bold text-[#0E253A] text-right ml-2">24 tháng chính hãng</span>
                   </div>
                 </div>
               </div>
@@ -746,35 +746,35 @@ const html = `<!DOCTYPE html>
             </div>
 
             <!-- Hover Specs Overlay -->
-            <div class="absolute inset-0 bg-white/98 backdrop-blur-md text-[#0E253A] p-6 sm:p-7 rounded-3xl flex flex-col justify-between opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-20  shadow-2xl">
+            <div class="absolute inset-0 bg-white/98 backdrop-blur-md text-[#0E253A] p-6 sm:p-7 rounded-3xl flex flex-col justify-between opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-20 shadow-2xl">
               <div class="space-y-4">
                 <div class="flex items-center justify-between">
-                  <span class="px-3 py-1 rounded-full bg-teal-50 text-[#0B7B8A] text-[13px] font-bold ">
+                  <span class="px-3 py-1 rounded-full bg-teal-50 text-[#0B7B8A] text-[13px] font-bold">
                     Thông Tin Sản Phẩm
                   </span>
-                  <span class="text-sm text-slate-500 font-semibold">Học Sinh & Trẻ Em</span>
+                  <span class="text-sm text-slate-500 font-semibold">Thị Lực Học Đường</span>
                 </div>
-                <h4 class="text-2xl font-black text-[#0E253A]">Defocus MyoControl</h4>
+                <h4 class="text-2xl font-black text-[#0E253A]">Defocus MyoControl HD</h4>
                 <div class="space-y-2 text-base pt-2">
                   <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
-                    <span class="text-slate-600 font-medium">Thiết kế quang học:</span>
-                    <span class="font-bold text-[#0B7B8A]">Vi điểm phân kỳ hỗ trợ thị lực</span>
+                    <span class="text-slate-600 font-medium">Tính năng nổi bật:</span>
+                    <span class="font-bold text-[#0B7B8A] text-right ml-2">Chăm sóc thị lực lứa tuổi học sinh</span>
                   </div>
                   <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
-                    <span class="text-slate-600 font-medium">Vật liệu an toàn:</span>
-                    <span class="font-bold text-[#0E253A]">Hạn chế nứt vỡ khi va chạm</span>
+                    <span class="text-slate-600 font-medium">Công nghệ xử lý:</span>
+                    <span class="font-bold text-[#0E253A] text-right ml-2">Vi thấu kính phân tán chu biên hội tụ</span>
                   </div>
                   <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
-                    <span class="text-slate-600 font-medium">Khả năng chống bám:</span>
-                    <span class="font-bold text-[#0E253A]">Hạn chế bám bẩn và dễ lau sạch</span>
+                    <span class="text-slate-600 font-medium">Trải nghiệm thị giác:</span>
+                    <span class="font-bold text-[#0E253A] text-right ml-2">Sắc nét trung tâm, giảm mỏi điều tiết</span>
                   </div>
                   <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
-                    <span class="text-slate-600 font-medium">Kháng trầy xước:</span>
-                    <span class="font-bold text-[#0E253A]">Lớp phủ bảo vệ bề mặt tròng kính</span>
+                    <span class="text-slate-600 font-medium">Tùy chọn chiết suất:</span>
+                    <span class="font-bold text-[#0E253A] text-right ml-2">1.56 | 1.60 | 1.67</span>
                   </div>
                   <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[#F5F5F7]">
                     <span class="text-slate-600 font-medium">Chính sách bảo hành:</span>
-                    <span class="font-bold text-[#0E253A]">24 tháng chính hãng</span>
+                    <span class="font-bold text-[#0E253A] text-right ml-2">24 tháng chính hãng</span>
                   </div>
                 </div>
               </div>
@@ -784,7 +784,7 @@ const html = `<!DOCTYPE html>
                 </a>
               </div>
             </div>
-          </div>
+          </div></div>
 
         </div>
 
@@ -951,37 +951,61 @@ const html = `<!DOCTYPE html>
                 <div class="bg-white p-1.5 rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300" onclick="openCertModal(0)">
                   <img src="assets/images/bangkhen/11.jpg" alt="The College of Opticians of Ontario - Optician Certificate" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
-                    <span class="px-2 py-1 rounded-full bg-white/90 text-[#0E253A] text-[13px] font-bold">Phóng to</span>
+                    <div class="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                      </svg>
+                    </div>
                   </div>
                 </div>
                 <div class="bg-white p-1.5 rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300" onclick="openCertModal(1)">
                   <img src="assets/images/bangkhen/12.jpg" alt="The College of Opticians of Ontario - Optician Certificate" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
-                    <span class="px-2 py-1 rounded-full bg-white/90 text-[#0E253A] text-[13px] font-bold">Phóng to</span>
+                    <div class="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                      </svg>
+                    </div>
                   </div>
                 </div>
                 <div class="bg-white p-1.5 rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300" onclick="openCertModal(2)">
                   <img src="assets/images/bangkhen/13.jpg" alt="The College of Opticians of Ontario - Optician Certificate" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
-                    <span class="px-2 py-1 rounded-full bg-white/90 text-[#0E253A] text-[13px] font-bold">Phóng to</span>
+                    <div class="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                      </svg>
+                    </div>
                   </div>
                 </div>
                 <div class="bg-white p-1.5 rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300" onclick="openCertModal(3)">
                   <img src="assets/images/bangkhen/14.jpg" alt="The College of Opticians of Ontario - Optician Certificate" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
-                    <span class="px-2 py-1 rounded-full bg-white/90 text-[#0E253A] text-[13px] font-bold">Phóng to</span>
+                    <div class="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                      </svg>
+                    </div>
                   </div>
                 </div>
                 <div class="bg-white p-1.5 rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300" onclick="openCertModal(4)">
                   <img src="assets/images/bangkhen/15.jpg" alt="Georgian College - Optician Diploma" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
-                    <span class="px-2 py-1 rounded-full bg-white/90 text-[#0E253A] text-[13px] font-bold">Phóng to</span>
+                    <div class="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                      </svg>
+                    </div>
                   </div>
                 </div>
                 <div class="bg-white p-1.5 rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300" onclick="openCertModal(5)">
                   <img src="assets/images/bangkhen/16.jpg" alt="National Association of Canadian Optician Regulators" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
-                    <span class="px-2 py-1 rounded-full bg-white/90 text-[#0E253A] text-[13px] font-bold">Phóng to</span>
+                    <div class="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                      </svg>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -996,25 +1020,41 @@ const html = `<!DOCTYPE html>
                 <div class="bg-white p-2 rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300" onclick="openCertModal(6)">
                   <img src="assets/images/bangkhen/1.jpg" alt="Giấy chứng nhận ISO 13485:2016 Rocky Lens" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
-                    <span class="px-2.5 py-1 rounded-full bg-white/90 text-[#0E253A] text-[13px] font-bold">Phóng to</span>
+                    <div class="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                      </svg>
+                    </div>
                   </div>
                 </div>
                 <div class="bg-white p-2 rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300" onclick="openCertModal(7)">
                   <img src="assets/images/bangkhen/2.jpg" alt="Thương hiệu uy tín hội nhập Châu Á 2024" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
-                    <span class="px-2.5 py-1 rounded-full bg-white/90 text-[#0E253A] text-[13px] font-bold">Phóng to</span>
+                    <div class="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                      </svg>
+                    </div>
                   </div>
                 </div>
                 <div class="bg-white p-2 rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300" onclick="openCertModal(8)">
                   <img src="assets/images/bangkhen/3.jpg" alt="Sản phẩm dịch vụ chất lượng Châu Á 2024" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
-                    <span class="px-2.5 py-1 rounded-full bg-white/90 text-[#0E253A] text-[13px] font-bold">Phóng to</span>
+                    <div class="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                      </svg>
+                    </div>
                   </div>
                 </div>
                 <div class="bg-white p-2 rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300" onclick="openCertModal(9)">
                   <img src="assets/images/bangkhen/4.jpg" alt="The Best of Vietnam 2024 - Top 20 Sản phẩm tốt nhất" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
-                    <span class="px-2.5 py-1 rounded-full bg-white/90 text-[#0E253A] text-[13px] font-bold">Phóng to</span>
+                    <div class="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                      </svg>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1029,19 +1069,31 @@ const html = `<!DOCTYPE html>
                 <div class="bg-white p-2 rounded-2xl shadow-xs aspect-[4/3] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300" onclick="openCertModal(10)">
                   <img src="assets/images/bangkhen/31.jpg" alt="Giấy khen Hội cứu trợ trẻ em tàn tật Việt Nam" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
-                    <span class="px-2.5 py-1 rounded-full bg-white/90 text-[#0E253A] text-[13px] font-bold">Phóng to</span>
+                    <div class="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                      </svg>
+                    </div>
                   </div>
                 </div>
                 <div class="bg-white p-2 rounded-2xl shadow-xs aspect-[4/3] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300" onclick="openCertModal(11)">
                   <img src="assets/images/bangkhen/32.jpg" alt="Giấy khen Hội nạn nhân chất độc da cam / Dioxin" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
-                    <span class="px-2.5 py-1 rounded-full bg-white/90 text-[#0E253A] text-[13px] font-bold">Phóng to</span>
+                    <div class="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                      </svg>
+                    </div>
                   </div>
                 </div>
                 <div class="bg-white p-2 rounded-2xl shadow-xs aspect-[4/3] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300" onclick="openCertModal(12)">
                   <img src="assets/images/bangkhen/33.jpg" alt="Kỷ niệm chương Tấm lòng nhân ái" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[#0E253A]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
-                    <span class="px-2.5 py-1 rounded-full bg-white/90 text-[#0E253A] text-[13px] font-bold">Phóng to</span>
+                    <div class="w-10 h-10 rounded-full bg-white/95 text-[#0B7B8A] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                      </svg>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1376,6 +1428,139 @@ const html = `<!DOCTYPE html>
     </div>
   </footer>
 
+  <!-- ========================================================= -->
+  <!-- CERTIFICATE LIGHTBOX MODAL (INTERACTIVE CLICK TO ZOOM)    -->
+  <!-- ========================================================= -->
+  <div id="certModal" class="fixed inset-0 z-50 bg-[#071521]/95 backdrop-blur-md hidden items-center justify-center p-4 sm:p-6 transition-all duration-300 opacity-0" role="dialog" aria-modal="true" aria-label="Phóng to bằng khen và chứng chỉ">
+    
+    <!-- Top Bar: Title & Counter & Close Button -->
+    <div class="absolute top-4 inset-x-4 sm:inset-x-8 flex items-center justify-between text-white z-20 pointer-events-auto">
+      <div class="flex items-center gap-3">
+        <span id="certCounter" class="px-3 py-1 rounded-full bg-white/10 text-xs sm:text-sm font-bold tracking-wide">
+          1 / 13
+        </span>
+        <h4 id="certTitle" class="text-sm sm:text-base font-semibold text-slate-200 line-clamp-1 max-w-md sm:max-w-xl">
+          Chứng chỉ Optician Canada
+        </h4>
+      </div>
+      <button type="button" onclick="closeCertModal()" class="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors focus:outline-none cursor-pointer" aria-label="Đóng">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Navigation Prev Button -->
+    <button type="button" onclick="prevCert()" class="absolute left-2 sm:left-6 top-1/2 -translate-y-1/2 w-11 h-11 sm:w-14 sm:h-14 rounded-full bg-white/10 hover:bg-white/25 text-white flex items-center justify-center transition-all z-20 focus:outline-none hover:scale-110 active:scale-95 cursor-pointer" aria-label="Bằng khen trước">
+      <svg class="w-6 h-6 sm:w-7 sm:h-7" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+
+    <!-- Navigation Next Button -->
+    <button type="button" onclick="nextCert()" class="absolute right-2 sm:right-6 top-1/2 -translate-y-1/2 w-11 h-11 sm:w-14 sm:h-14 rounded-full bg-white/10 hover:bg-white/25 text-white flex items-center justify-center transition-all z-20 focus:outline-none hover:scale-110 active:scale-95 cursor-pointer" aria-label="Bằng khen tiếp theo">
+      <svg class="w-6 h-6 sm:w-7 sm:h-7" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+
+    <!-- Certificate Image Container -->
+    <div class="relative max-w-4xl max-h-[82vh] w-full flex items-center justify-center p-2 sm:p-4" onclick="event.stopPropagation()">
+      <img id="certImage" src="assets/images/bangkhen/11.jpg" alt="Chứng chỉ Rocky Lens" class="max-h-[78vh] max-w-full object-contain rounded-2xl shadow-2xl transition-all duration-200">
+    </div>
+
+    <!-- Bottom Helper Note -->
+    <div class="absolute bottom-4 inset-x-0 text-center text-xs text-slate-400 pointer-events-none">
+      Dùng phím mũi tên &larr; &rarr; để chuyển ảnh &bull; Bấm ra ngoài hoặc ESC để đóng
+    </div>
+  </div>
+
+  <script>
+    var certList = [
+      { src: "assets/images/bangkhen/11.jpg", title: "The College of Opticians of Ontario - Chứng chỉ hành nghề Optician Canada (Thao Nguyen)" },
+      { src: "assets/images/bangkhen/12.jpg", title: "The College of Opticians of Ontario - Chứng chỉ hành nghề Optician Canada (Ha Vu)" },
+      { src: "assets/images/bangkhen/13.jpg", title: "The College of Opticians of Ontario - Chứng chỉ hành nghề Optician Canada (Tan Dang)" },
+      { src: "assets/images/bangkhen/14.jpg", title: "The College of Opticians of Ontario - Chứng chỉ hành nghề Optician Canada (Tiep Truong)" },
+      { src: "assets/images/bangkhen/15.jpg", title: "Georgian College of Applied Arts and Technology - Bằng tốt nghiệp Optician Canada" },
+      { src: "assets/images/bangkhen/16.jpg", title: "National Association of Canadian Optician Regulators (NACOR Certificate)" },
+      { src: "assets/images/bangkhen/1.jpg", title: "Giấy chứng nhận ISO 13485:2016 - Hệ thống quản lý chất lượng thiết bị y tế quốc tế" },
+      { src: "assets/images/bangkhen/2.jpg", title: "Diễn đàn hợp tác kinh tế Việt Nam - Asia 2024: Thương hiệu uy tín hội nhập Châu Á" },
+      { src: "assets/images/bangkhen/3.jpg", title: "Chứng nhận Sản phẩm & Dịch vụ chất lượng Châu Á 2024 (Asia Quality Products & Services)" },
+      { src: "assets/images/bangkhen/4.jpg", title: "The Best of Vietnam 2024 - Top 20 Sản phẩm dịch vụ chất lượng tốt nhất Việt Nam" },
+      { src: "assets/images/bangkhen/31.jpg", title: "Giấy khen Hội cứu trợ trẻ em tàn tật Việt Nam - Tích cực vì sức khỏe thị lực trẻ em" },
+      { src: "assets/images/bangkhen/32.jpg", title: "Giấy khen Hội nạn nhân chất độc da cam / Dioxin Việt Nam - Hoạt động thiện nguyện" },
+      { src: "assets/images/bangkhen/33.jpg", title: "Kỷ niệm chương Tấm lòng nhân ái vì sự nghiệp chăm sóc sức khỏe cộng đồng" }
+    ];
+
+    var currentCertIdx = 0;
+    var certModal = document.getElementById('certModal');
+    var certImage = document.getElementById('certImage');
+    var certTitle = document.getElementById('certTitle');
+    var certCounter = document.getElementById('certCounter');
+
+    function updateCertModal() {
+      if (!certImage || !certTitle || !certCounter) return;
+      var cert = certList[currentCertIdx];
+      certImage.src = cert.src;
+      certImage.alt = cert.title;
+      certTitle.textContent = cert.title;
+      certCounter.textContent = (currentCertIdx + 1) + ' / ' + certList.length;
+    }
+
+    function openCertModal(index) {
+      if (index < 0 || index >= certList.length) return;
+      currentCertIdx = index;
+      updateCertModal();
+      if (!certModal) return;
+      certModal.classList.remove('hidden');
+      certModal.classList.add('flex');
+      setTimeout(function() {
+        certModal.classList.remove('opacity-0');
+        certModal.classList.add('opacity-100');
+      }, 10);
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeCertModal() {
+      if (!certModal) return;
+      certModal.classList.remove('opacity-100');
+      certModal.classList.add('opacity-0');
+      setTimeout(function() {
+        certModal.classList.remove('flex');
+        certModal.classList.add('hidden');
+        document.body.style.overflow = '';
+      }, 300);
+    }
+
+    function prevCert() {
+      currentCertIdx = (currentCertIdx - 1 + certList.length) % certList.length;
+      updateCertModal();
+    }
+
+    function nextCert() {
+      currentCertIdx = (currentCertIdx + 1) % certList.length;
+      updateCertModal();
+    }
+
+    if (certModal) {
+      certModal.addEventListener('click', function(e) {
+        if (e.target === certModal) {
+          closeCertModal();
+        }
+      });
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (!certModal || certModal.classList.contains('hidden')) return;
+      if (e.key === 'Escape') {
+        closeCertModal();
+      } else if (e.key === 'ArrowLeft') {
+        prevCert();
+      } else if (e.key === 'ArrowRight') {
+        nextCert();
+      }
+    });
+  </script>
 </body>
 </html>
 `;
