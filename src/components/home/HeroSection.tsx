@@ -95,13 +95,13 @@ export default function HeroSection() {
 
           </div>
 
-          {/* Right Column: Hero Visual Asset with Apple Liquid Frosted Depth */}
+          {/* Right Column: Hero Visual Asset (Tách nền trắng - Transparent Floating) */}
           <div className="lg:col-span-5 relative flex items-center justify-center">
             
             {/* Ambient Caustic Halo */}
             <div className="w-80 h-80 sm:w-96 sm:h-96 rounded-full bg-gradient-to-tr from-teal-200/50 via-cyan-100/40 to-sky-200/50 blur-3xl absolute liquid-morph-1 pointer-events-none" />
 
-            <div className="relative z-10 w-full max-w-md aspect-square rounded-[36px] liquid-panel p-6 border border-white/95 shadow-xl flex items-center justify-center">
+            <div className="relative z-10 w-full max-w-md aspect-square flex items-center justify-center">
               
               <div className="relative w-full h-full flex items-center justify-center">
                 <Image
@@ -109,13 +109,13 @@ export default function HeroSection() {
                   alt="Tròng kính quang học Rocky Lens Canada"
                   fill
                   priority
-                  className="object-contain p-2 transition-transform duration-700 hover:scale-105 drop-shadow-[0_15px_30px_rgba(11,123,138,0.25)]"
+                  className="object-contain p-2 transition-transform duration-700 hover:scale-105 drop-shadow-[0_20px_35px_rgba(11,123,138,0.22)]"
                   sizes="(max-width: 1024px) 100vw, 450px"
                 />
               </div>
 
               {/* Floating Apple Liquid Pill Badges */}
-              <div className="absolute -bottom-3 -left-4 liquid-pill px-4 py-2 shadow-md flex items-center space-x-2.5">
+              <div className="absolute -bottom-2 -left-2 liquid-pill px-4 py-2 shadow-md flex items-center space-x-2.5">
                 <div className="w-8 h-8 rounded-full bg-teal-50 flex items-center justify-center text-[#0B7B8A] shrink-0">
                   <ShieldCheck className="w-4 h-4" />
                 </div>
@@ -125,7 +125,7 @@ export default function HeroSection() {
                 </div>
               </div>
 
-              <div className="absolute -top-3 -right-3 liquid-pill px-3.5 py-1.5 shadow-md flex items-center space-x-1.5">
+              <div className="absolute -top-2 -right-2 liquid-pill px-3.5 py-1.5 shadow-md flex items-center space-x-1.5">
                 <Award className="w-4 h-4 text-[#D97706]" />
                 <span className="text-[11px] font-bold text-slate-900">Canada Certified</span>
               </div>

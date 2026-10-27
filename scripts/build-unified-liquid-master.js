@@ -422,14 +422,14 @@ const html = `<!DOCTYPE html>
 
           </div>
 
-          <!-- Right Column: Studio Lens Photograph -->
-          <div class="lg:col-span-5 relative flex flex-col items-center justify-center motion-7 space-y-4">
+          <!-- Right Column: Studio Lens Photograph (Tách nền trắng - Transparent Floating) -->
+          <div class="lg:col-span-5 relative flex flex-col items-center justify-center motion-7">
             <!-- Ambient Optical Caustic Halo -->
-            <div class="w-72 h-72 sm:w-88 sm:h-88 rounded-full bg-gradient-to-tr from-teal-300/40 via-cyan-200/35 to-sky-300/40 blur-3xl absolute pointer-events-none -z-0"></div>
+            <div class="w-72 h-72 sm:w-96 sm:h-96 rounded-full bg-gradient-to-tr from-teal-300/35 via-cyan-200/30 to-sky-300/35 blur-3xl absolute pointer-events-none -z-0"></div>
 
-            <div class="relative z-10 w-full max-w-md bg-gradient-to-b from-white/95 to-slate-50/90 backdrop-blur-md p-8 rounded-3xl border border-white/90 shadow-xl flex flex-col items-center justify-center">
-              <div class="relative w-full flex items-center justify-center min-h-[300px]">
-                <img src="assets/h-lens3.png" alt="Tròng kính quang học Rocky Lens Canada" class="w-full max-h-[360px] object-contain animate-float-lens drop-shadow-[0_15px_30px_rgba(11,123,138,0.25)]">
+            <div class="relative z-10 w-full max-w-md flex flex-col items-center justify-center">
+              <div class="relative w-full flex items-center justify-center min-h-[320px]">
+                <img src="assets/h-lens3.png" alt="Tròng kính quang học Rocky Lens Canada" class="w-full max-h-[380px] object-contain animate-float-lens drop-shadow-[0_20px_35px_rgba(11,123,138,0.22)]">
               </div>
               <div class="mt-4 text-center">
                 <span class="text-base font-bold text-[#0E253A] block">Thương Hiệu Tròng Kính Rocky</span>
