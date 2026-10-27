@@ -31,12 +31,12 @@ export default function BrandPhilosophy() {
           {/* Right Column: Editorial Typography & Philosophy */}
           <div className="lg:col-span-7 order-1 lg:order-2 space-y-6">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-heading tracking-tight leading-[1.18]">
-              Chúng tôi không chỉ bảo vệ đôi mắt, chúng tôi nâng niu cách bạn nhìn thế giới.
+              Hiểu từng nhu cầu. <br className="hidden sm:inline" /><span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--button-start)] via-[var(--button-middle)] to-[var(--button-end)]">Chọn đúng giải pháp tròng kính.</span>
             </h2>
 
             <div className="space-y-4 text-slate-700 text-lg sm:text-xl font-medium leading-relaxed">
               <p className="text-brand-muted text-base sm:text-lg leading-relaxed">
-                Một cặp tròng kính hoàn hảo không chỉ để nhìn rõ những con số trên màn hình. Đó là để bạn trọn vẹn chiêm ngưỡng màu hoàng hôn rực rỡ, bắt trọn nụ cười của người thân yêu, hay vững tin chinh phục những chặng đường dài phía trước. Tại Rocky Lens, chúng tôi chế tác từng lăng kính bằng sự thấu hiểu đó — mang lại độ trong trẻo, êm ái tuyệt đối, để bạn tự do tận hưởng cuộc sống theo cách nguyên bản nhất.
+                Mỗi nhu cầu thị giác đều có những đặc điểm riêng. Rocky Lens mang đến các giải pháp tròng kính đa dạng, kết hợp công nghệ quang học và thông tin sản phẩm rõ ràng, giúp đối tác mắt kính tự tin tư vấn và người dùng dễ dàng tìm hiểu, lựa chọn tròng kính phù hợp.
               </p>
             </div>
 
@@ -64,7 +64,7 @@ export default function BrandPhilosophy() {
                 href="#trong-kinh"
                 className="inline-flex items-center gap-2 text-primary hover:text-[var(--color-primary-hover)] font-bold text-base transition-colors group"
               >
-                <span>Khám phá các giải pháp tròng kính theo nhu cầu</span>
+                <span>Khám phá giải pháp tròng kính</span>
                 <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
               </a>
             </div>
