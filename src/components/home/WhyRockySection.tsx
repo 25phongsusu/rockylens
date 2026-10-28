@@ -209,24 +209,24 @@ export default function WhyRockySection() {
           </div>
 
           {/* Infinite Marquee Track Moving Slowly from Right to Left */}
-          <div className="relative w-full overflow-hidden py-4">
-            <div className="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-28 bg-gradient-to-r from-[var(--site-bg-start)] to-transparent z-10" />
-            <div className="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-28 bg-gradient-to-l from-[var(--site-bg-start)] to-transparent z-10" />
+          <div className="relative w-full overflow-hidden py-6 sm:py-8">
+            <div className="pointer-events-none absolute inset-y-0 left-0 w-24 sm:w-40 bg-gradient-to-r from-[var(--site-bg-start)] to-transparent z-10" />
+            <div className="pointer-events-none absolute inset-y-0 right-0 w-24 sm:w-40 bg-gradient-to-l from-[var(--site-bg-start)] to-transparent z-10" />
 
-            <div className="flex items-center gap-6 w-max animate-marquee hover:[animation-play-state:paused]">
+            <div className="flex items-center gap-10 sm:gap-14 w-max animate-marquee hover:[animation-play-state:paused]">
               {/* Set 1 */}
               {partnerLogos.map((p, idx) => (
                 <div
                   key={`p1-${idx}`}
-                  className="bg-white px-8 py-5 rounded-2xl shadow-xs flex items-center justify-center h-24 sm:h-28 min-w-[200px] sm:min-w-[240px] group hover:shadow-md transition-all shrink-0 border border-[var(--color-border)]/60"
+                  className="flex items-center justify-center shrink-0 group transition-all"
                 >
-                  <div className="relative w-36 sm:w-44 h-14 sm:h-16">
+                  <div className="relative w-[360px] sm:w-[440px] h-36 sm:h-40">
                     <Image
                       src={p.src}
                       alt={p.alt}
                       fill
-                      className="object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
-                      sizes="200px"
+                      className="object-contain grayscale opacity-85 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300"
+                      sizes="(max-width: 768px) 360px, 440px"
                     />
                   </div>
                 </div>
@@ -235,15 +235,15 @@ export default function WhyRockySection() {
               {partnerLogos.map((p, idx) => (
                 <div
                   key={`p2-${idx}`}
-                  className="bg-white px-8 py-5 rounded-2xl shadow-xs flex items-center justify-center h-24 sm:h-28 min-w-[200px] sm:min-w-[240px] group hover:shadow-md transition-all shrink-0 border border-[var(--color-border)]/60"
+                  className="flex items-center justify-center shrink-0 group transition-all"
                 >
-                  <div className="relative w-36 sm:w-44 h-14 sm:h-16">
+                  <div className="relative w-[360px] sm:w-[440px] h-36 sm:h-40">
                     <Image
                       src={p.src}
                       alt={p.alt}
                       fill
-                      className="object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
-                      sizes="200px"
+                      className="object-contain grayscale opacity-85 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300"
+                      sizes="(max-width: 768px) 360px, 440px"
                     />
                   </div>
                 </div>

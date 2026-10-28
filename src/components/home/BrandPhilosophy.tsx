@@ -1,4 +1,6 @@
 import React from 'react';
+import Link from 'next/link';
+import { Monitor, Sun, Eye } from 'lucide-react';
 
 export default function BrandPhilosophy() {
   return (
@@ -31,42 +33,56 @@ export default function BrandPhilosophy() {
           {/* Right Column: Editorial Typography & Philosophy */}
           <div className="lg:col-span-7 order-1 lg:order-2 space-y-6">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-heading tracking-tight leading-[1.18]">
-              Hiểu từng nhu cầu. <br className="hidden sm:inline" /><span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--button-start)] via-[var(--button-middle)] to-[var(--button-end)]">Chọn đúng giải pháp tròng kính.</span>
+              Hiểu từng nhu cầu. <br className="hidden sm:inline" />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--button-start)] via-[var(--button-middle)] to-[var(--button-end)]">
+                Chọn giải pháp tròng kính phù hợp.
+              </span>
             </h2>
 
             <div className="space-y-4 text-slate-700 text-lg sm:text-xl font-medium leading-relaxed">
               <p className="text-brand-muted text-base sm:text-lg leading-relaxed">
-                Mỗi nhu cầu thị giác đều có những đặc điểm riêng. Rocky Lens mang đến các giải pháp tròng kính đa dạng, kết hợp công nghệ quang học và thông tin sản phẩm rõ ràng, giúp đối tác mắt kính tự tin tư vấn và người dùng dễ dàng tìm hiểu, lựa chọn tròng kính phù hợp.
+                Dù làm việc, học tập hay di chuyển, mỗi người đều có những nhu cầu thị giác khác nhau. Khám phá các loại tròng kính và công nghệ phù hợp để hiểu rõ hơn về lựa chọn của mình.
               </p>
             </div>
 
-            {/* 3 Value Cards (Customer-Centric) */}
+            {/* 3 Needs-Based Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
-              <div className="card-surface p-5 rounded-2xl text-center sm:text-left transition-transform hover:-translate-y-1">
-                <div className="text-base font-black text-primary">Trải Nghiệm Chân Thật</div>
-                <div className="text-sm font-semibold text-slate-800 mt-1">Xóa bỏ mọi góc mờ nhòe</div>
-                <p className="text-xs text-brand-muted mt-1 leading-relaxed">Trả lại tầm nhìn sắc nét với màu sắc chân thực sống động.</p>
+              <div className="card-surface p-5 rounded-2xl text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+                <Monitor className="w-6 h-6 text-primary mb-3" />
+                <div className="text-base font-bold text-heading">Làm việc & học tập</div>
+                <p className="text-xs text-brand-muted mt-1.5 leading-relaxed">
+                  Tìm hiểu các giải pháp cho nhu cầu nhìn gần và sử dụng thiết bị số.
+                </p>
               </div>
-              <div className="card-surface p-5 rounded-2xl text-center sm:text-left transition-transform hover:-translate-y-1">
-                <div className="text-base font-black text-primary">Cá Nhân Hóa Tối Đa</div>
-                <div className="text-sm font-semibold text-slate-800 mt-1">Thích nghi êm dịu ngay từ lần đầu</div>
-                <p className="text-xs text-brand-muted mt-1 leading-relaxed">Cho từng tình trạng thị lực, mang lại cảm giác thích nghi êm dịu ngay từ lần đeo đầu tiên.</p>
+
+              <div className="card-surface p-5 rounded-2xl text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+                <Sun className="w-6 h-6 text-primary mb-3" />
+                <div className="text-base font-bold text-heading">Di chuyển & ngoài trời</div>
+                <p className="text-xs text-brand-muted mt-1.5 leading-relaxed">
+                  Khám phá công nghệ đổi màu, phân cực và các đặc điểm quang học liên quan.
+                </p>
               </div>
-              <div className="card-surface p-5 rounded-2xl text-center sm:text-left transition-transform hover:-translate-y-1">
-                <div className="text-base font-black text-primary">Bảo Chứng An Tâm</div>
-                <div className="text-sm font-semibold text-slate-800 mt-1">Đồng hành bền bỉ</div>
-                <p className="text-xs text-brand-muted mt-1 leading-relaxed">An toàn với tiêu chuẩn y tế ISO 13485 và chính sách bảo hành chính hãng toàn diện.</p>
+
+              <div className="card-surface p-5 rounded-2xl text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+                <Eye className="w-6 h-6 text-primary mb-3" />
+                <div className="text-base font-bold text-heading">Nhìn đa khoảng cách</div>
+                <p className="text-xs text-brand-muted mt-1.5 leading-relaxed">
+                  Tìm hiểu thiết kế đa tròng và các giải pháp cho nhiều khoảng nhìn.
+                </p>
               </div>
             </div>
 
-            <div className="pt-2">
-              <a
-                href="#trong-kinh"
+            <div className="pt-2 flex flex-col items-center justify-center text-center">
+              <Link
+                href="/kham-pha-trong-kinh/"
                 className="inline-flex items-center gap-2 text-primary hover:text-[var(--color-primary-hover)] font-bold text-base transition-colors group"
               >
                 <span>Khám phá giải pháp tròng kính</span>
                 <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
-              </a>
+              </Link>
+              <span className="text-xs text-brand-muted mt-1">
+                Dẫn đến trang Công nghệ & Kiến thức
+              </span>
             </div>
 
           </div>

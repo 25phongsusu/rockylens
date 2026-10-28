@@ -1,7 +1,7 @@
-:HL["/rockylens/_next/static/chunks/42f9avn5kci82.css","style"]
+:HL["/rockylens/_next/static/chunks/3n9lf6i-tyldx.css","style"]
 :HL["/rockylens/assets/logo_rocky_transparent.png","image"]
 :HL["/rockylens/images/articles/blog_b2b_policy.png","image"]
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":{"n":"slug","t":"d","k":"giai-phap-chong-anh-sang-xanh-uv420","s":[]},"h":96,"c":"$Q3"}]]
 1:[["children",{"s":"blog","h":64,"c":"$Q2"}]]
-0:{"b":"LrZbeN9tAbW-m9udcXT1C","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
+0:{"b":"5sh79QRnM-shgHfbRVJhB","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
