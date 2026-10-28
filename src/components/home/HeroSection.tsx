@@ -114,22 +114,6 @@ export default function HeroSection() {
                 />
               </div>
 
-              {/* Floating Apple Liquid Pill Badges */}
-              <div className="absolute -bottom-2 -left-2 liquid-pill px-4 py-2 shadow-md flex items-center space-x-2.5">
-                <div className="w-8 h-8 rounded-full bg-[var(--site-bg-middle)]/60 flex items-center justify-center text-[var(--color-primary)] shrink-0">
-                  <ShieldCheck className="w-4 h-4" />
-                </div>
-                <div className="text-left">
-                  <div className="text-xs font-bold text-heading">Chiết Suất Siêu Mỏng</div>
-                  <div className="text-[10px] text-[var(--color-muted)]">1.56 &bull; 1.60 &bull; 1.67 &bull; 1.74</div>
-                </div>
-              </div>
-
-              <div className="absolute -top-2 -right-2 liquid-pill px-3.5 py-1.5 shadow-md flex items-center space-x-1.5">
-                <Award className="w-4 h-4 text-[#D97706]" />
-                <span className="text-[11px] font-bold text-slate-900">Canada Certified</span>
-              </div>
-
             </div>
 
           </div>
