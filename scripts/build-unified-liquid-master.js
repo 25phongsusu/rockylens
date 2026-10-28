@@ -347,6 +347,74 @@ const html = `<!DOCTYPE html>
       transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
       cursor: pointer;
     }
+    
+    .liquid-card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(28px) saturate(200%);
+      -webkit-backdrop-filter: blur(28px) saturate(200%);
+      border: 1px solid var(--color-border);
+      box-shadow: 
+        0 4px 6px -1px rgba(0, 59, 80, 0.02),
+        0 16px 32px -8px rgba(0, 59, 80, 0.06),
+        inset 0 1.5px 2px 0 rgba(255, 255, 255, 1);
+      border-radius: 20px;
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+    }
+    .liquid-card:hover {
+      background: #FFFFFF;
+      transform: translateY(-3px);
+      border-color: var(--button-middle);
+      box-shadow: 
+        0 20px 40px -12px rgba(0, 162, 204, 0.16),
+        inset 0 1.5px 2px 0 rgba(255, 255, 255, 1);
+    }
+    .liquid-pill {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(20px) saturate(180%);
+      -webkit-backdrop-filter: blur(20px) saturate(180%);
+      border: 1px solid var(--color-border);
+      box-shadow: 0 2px 10px rgba(0, 59, 80, 0.04), inset 0 1px 1px rgba(255, 255, 255, 1);
+      border-radius: 9999px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .liquid-pill:hover {
+      background: #FFFFFF;
+      transform: translateY(-1px);
+    }
+    .liquid-btn-primary {
+      background: var(--gradient-button);
+      color: #FFFFFF;
+      border-radius: 9999px;
+      text-shadow: 0 1px 2px rgba(0, 59, 80, 0.7);
+      box-shadow: 0 4px 14px rgba(0, 162, 204, 0.32), inset 0 1px 1px rgba(255, 255, 255, 0.4);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .liquid-btn-primary:hover {
+      filter: brightness(1.08);
+      transform: translateY(-1px);
+      box-shadow: 0 8px 20px rgba(0, 162, 204, 0.42);
+    }
+    .liquid-btn-secondary {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--color-border);
+      border-radius: 9999px;
+      color: var(--color-heading);
+      box-shadow: 0 2px 10px rgba(0, 59, 80, 0.04), inset 0 1px 1px #fff;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .liquid-btn-secondary:hover {
+      background: #FFFFFF;
+      color: var(--button-middle);
+      transform: translateY(-1px);
+    }
+
     @font-face {
       font-family: "SF Pro Display";
       src: url("assets/fonts/sf-pro-display/SF-Pro-Display-Regular.woff2") format("woff2"),
@@ -514,7 +582,7 @@ const html = `<!DOCTYPE html>
       <!-- Action Button: Open B2B Dealer Quote Modal -->
       <div class="flex items-center gap-3">
         <button type="button" onclick="openB2BQuoteModal()" class="px-5 py-2.5 rounded-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold text-base transition-all text-center cursor-pointer shadow-xs hover:shadow-md active:scale-95">
-          Nhận Báo Giá Cho Đại Lý
+          Nhận Báo Giá Đại Lý
         </button>
       </div>
 
@@ -524,66 +592,92 @@ const html = `<!DOCTYPE html>
   <main>
     <!-- ========================================================= -->
     <!-- SECTION 1 — BRAND HERO                                    -->
-    <!-- Mục tiêu: Thu hút sự chú ý, giới thiệu Rocky, tạo động lực khám phá -->
-    <!-- CTA chính: Khám phá tròng kính | CTA phụ: Tìm đại lý     -->
     <!-- ========================================================= -->
-    <section class="pt-12 sm:pt-16 pb-20 px-6 bg-transparent">
-      <div class="max-w-6xl mx-auto">
+    <section class="relative overflow-hidden py-16 sm:py-24 lg:py-28 site-background text-slate-800">
+      <!-- Apple Liquid Caustic Light Orbs -->
+      <div class="absolute -top-32 -left-32 w-[600px] h-[600px] bg-gradient-to-tr from-[var(--site-bg-end)]/40 via-[var(--site-bg-middle)]/30 to-[var(--button-start)]/30 rounded-full blur-[100px] pointer-events-none"></div>
+      <div class="absolute top-1/4 -right-32 w-[550px] h-[550px] bg-gradient-to-bl from-[var(--site-bg-middle)]/35 via-[var(--site-bg-start)]/30 to-[var(--site-bg-end)]/30 rounded-full blur-[110px] pointer-events-none"></div>
+
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
           
           <!-- Left Column: Display Typography & Brand Value -->
-          <div class="lg:col-span-7 space-y-6">
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
             
-            <h1 class="text-3xl sm:text-5xl lg:text-[52px] font-black text-heading tracking-tight leading-[1.15] motion-1">
+            <!-- Apple-style Capsule Badge -->
+            <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full liquid-pill text-primary text-xs font-bold shadow-xs">
+              <span class="w-2 h-2 rounded-full bg-[var(--button-middle)]"></span>
+              <span class="tracking-wide uppercase font-semibold">Thương Hiệu Tròng Kính Canada Opticians</span>
+            </div>
+
+            <h1 class="text-3xl sm:text-5xl lg:text-[52px] font-black text-heading tracking-tight leading-[1.15]">
               Rocky Lens - <br class="hidden sm:inline" />
               <span class="text-transparent bg-clip-text bg-gradient-to-r from-[var(--button-start)] via-[var(--button-middle)] to-[var(--button-end)]">
                 nhà phân phối tròng kính từ Canada
               </span>
             </h1>
 
-            <p class="text-slate-700 text-lg sm:text-xl leading-relaxed max-w-2xl motion-2">
+            <p class="text-brand-muted text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
               Rocky Lens tự hào là đơn vị phân phối tròng kính B2B và gia công Lab công nghệ quốc tế tại Việt Nam. Với hệ sinh thái sản phẩm toàn diện - từ tròng kính cận, tròng kính đổi màu đến tròng kính chống ánh sáng xanh - chúng tôi mang đến giải pháp nguồn hàng trọn gói, ổn định, đồng hành cùng sự phát triển bền vững của các hệ thống cửa hàng kính mắt trên toàn quốc.
             </p>
 
+            <!-- 3 Apple Liquid Spec Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 text-left">
+              <div class="p-4 rounded-2xl liquid-card">
+                <div class="text-xs font-bold text-primary uppercase">Mitsui Monomer MR™</div>
+                <div class="text-sm font-black text-heading mt-1">Trong Suốt 99.8%</div>
+                <div class="text-[11px] text-brand-muted mt-0.5">Truyền quang cao, quang sai cực thấp</div>
+              </div>
+
+              <div class="p-4 rounded-2xl liquid-card">
+                <div class="text-xs font-bold text-[var(--button-end)] uppercase">Nano Sapphire 9H</div>
+                <div class="text-sm font-black text-heading mt-1">Trượt Nước &gt;115°</div>
+                <div class="text-[11px] text-brand-muted mt-0.5">Kháng trầy xước, không đọng nước mưa</div>
+              </div>
+
+              <div class="p-4 rounded-2xl liquid-card">
+                <div class="text-xs font-bold text-heading uppercase">CanRx Freeform 4K</div>
+                <div class="text-sm font-black text-heading mt-1">Sai Số &lt; 0.01 Diop</div>
+                <div class="text-[11px] text-brand-muted mt-0.5">Gia công kỹ thuật số cá nhân hóa</div>
+              </div>
+            </div>
+
             <!-- Dual CTAs: Tìm Tròng Kính Phù Hợp Với Bạn & Nhận Báo Giá Đại Lý -->
-            <div class="flex flex-wrap items-center gap-4 pt-2 motion-3">
-              <a href="#trong-kinh" class="px-7 py-3.5 rounded-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold text-base transition-colors text-center shadow-sm">
-                Tìm Tròng Kính Phù Hợp Với Bạn
+            <div class="pt-3 flex flex-wrap items-center justify-center lg:justify-start gap-3.5">
+              <a href="#trong-kinh" class="liquid-btn-primary px-7 py-3.5 text-xs sm:text-sm font-bold shadow-md flex items-center space-x-2">
+                <span>Tìm Tròng Kính Phù Hợp Với Bạn</span>
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
               </a>
-              <button type="button" onclick="openB2BQuoteModal()" class="px-7 py-3.5 rounded-full bg-white hover:bg-slate-100 text-heading font-bold text-base transition-colors text-center cursor-pointer shadow-sm">
-                Nhận Báo Giá Đại Lý
+              <button type="button" onclick="openB2BQuoteModal()" class="liquid-btn-secondary px-6 py-3.5 text-xs sm:text-sm font-bold flex items-center space-x-2 cursor-pointer">
+                <span>Nhận Báo Giá Đại Lý</span>
               </button>
             </div>
 
             <!-- Micro Trust Indicators -->
-            <div class="pt-4 flex flex-wrap items-center gap-4 text-xs text-slate-500 font-medium motion-4">
-              <span class="flex items-center gap-1.5 text-slate-700">
-                <span class="w-2 h-2 rounded-full bg-[var(--color-primary)]"></span>
+            <div class="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-4 text-xs text-brand-muted font-medium">
+              <span class="flex items-center gap-1.5">
+                <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
                 <span>Ontario Opticians No. 6181</span>
               </span>
               <span>&bull;</span>
-              <span class="flex items-center gap-1.5 text-slate-700">
-                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+              <span class="flex items-center gap-1.5">
+                <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
                 <span>ISO 13485:2016 Medical Quality</span>
               </span>
               <span>&bull;</span>
-              <span class="text-slate-700">Bảo hành điện tử 1 đổi 1 24T</span>
+              <span>Bảo hành điện tử 1 đổi 1 24T</span>
             </div>
 
           </div>
 
-          <!-- Right Column: Studio Lens Photograph (Gần lại nội dung bên trái, thu hẹp khoảng cách) -->
-          <div class="lg:col-span-5 relative flex flex-col items-center lg:items-start justify-center motion-7 lg:-ml-4">
-            <!-- Ambient Optical Caustic Halo -->
-            <div class="w-72 h-72 sm:w-96 sm:h-96 rounded-full bg-gradient-to-tr from-teal-300/35 via-cyan-200/30 to-sky-300/35 blur-3xl absolute pointer-events-none -z-0"></div>
+          <!-- Right Column: Studio Lens Photograph -->
+          <div class="lg:col-span-5 relative flex items-center justify-center lg:justify-start lg:-ml-4">
+            <!-- Ambient Caustic Halo -->
+            <div class="w-80 h-80 sm:w-96 sm:h-96 rounded-full bg-gradient-to-tr from-teal-200/50 via-cyan-100/40 to-sky-200/50 blur-3xl absolute pointer-events-none"></div>
 
-            <div class="relative z-10 w-full max-w-sm sm:max-w-md flex flex-col items-center justify-center">
-              <div class="relative w-full flex items-center justify-center min-h-[320px]">
-                <img src="assets/h-lens3.png" alt="Tròng kính quang học Rocky Lens Canada" class="w-full max-h-[380px] object-contain animate-float-lens drop-shadow-[0_20px_35px_rgba(11,123,138,0.22)]">
-              </div>
-              <div class="mt-4 text-center w-full">
-                <span class="text-base font-bold text-heading block">Thương Hiệu Tròng Kính Rocky</span>
-                <span class="text-base text-slate-600 block mt-1">Phân phối chính hãng bởi Clearly Vietnam &bull; Tiêu chuẩn ISO 13485</span>
+            <div class="relative z-10 w-full max-w-sm sm:max-w-md aspect-square flex items-center justify-center">
+              <div class="relative w-full h-full flex items-center justify-center">
+                <img src="assets/h-lens3.png" alt="Tròng kính quang học Rocky Lens Canada" class="object-contain p-2 transition-transform duration-700 hover:scale-105 drop-shadow-[0_20px_35px_rgba(11,123,138,0.22)] max-h-[380px]">
               </div>
             </div>
           </div>
