@@ -25,11 +25,11 @@ export default function HomePage() {
       {/* SECTION 5 — WHY ROCKY */}
       <WhyRockySection />
 
-      {/* SECTION 6 — PARTNER WITH ROCKY */}
-      <PartnerSection />
-
-      {/* SECTION 7 — BLOG & CUSTOMER INSIGHTS */}
+      {/* SECTION 6 — BLOG & CUSTOMER INSIGHTS */}
       <BlogSection />
+
+      {/* SECTION 7 — PARTNER WITH ROCKY */}
+      <PartnerSection />
     </div>
   );
 }

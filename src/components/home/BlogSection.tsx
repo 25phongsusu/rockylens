@@ -33,7 +33,7 @@ export default function BlogSection() {
         {/* Section Header matching preview.png Section 06 */}
         <div className="max-w-3xl space-y-2.5">
           <div className="text-xs font-bold text-primary tracking-wider uppercase">
-            06 / GÓC NHÌN &amp; KIẾN THỨC
+            GÓC NHÌN &amp; KIẾN THỨC
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-heading tracking-tight leading-[1.14]">
             Hiểu đúng công nghệ. <br className="hidden sm:inline" />

@@ -41,7 +41,7 @@ export default function PartnerSection() {
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 relative z-10">
             <div className="max-w-2xl space-y-2.5">
               <div className="text-xs font-bold text-cyan-300 uppercase tracking-wider">
-                05 / DÀNH CHO ĐỐI TÁC
+                DÀNH CHO ĐỐI TÁC
               </div>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight leading-tight">
                 Cùng RockyLens mở rộng giá trị cho cửa hàng mắt kính.

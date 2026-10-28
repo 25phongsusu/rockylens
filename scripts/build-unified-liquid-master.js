@@ -678,7 +678,7 @@ const html = `<!DOCTYPE html>
         <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
           <div class="max-w-3xl space-y-2.5">
             <div class="text-xs font-bold text-primary tracking-wider uppercase">
-              01 / DANH MỤC SẢN PHẨM
+              DANH MỤC SẢN PHẨM
             </div>
             <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-heading tracking-tight leading-[1.14]">
               Khám phá các giải pháp <span class="text-transparent bg-clip-text bg-gradient-to-r from-[var(--button-start)] via-[var(--button-middle)] to-[var(--button-end)]">tròng kính</span> RockyLens.
@@ -719,7 +719,7 @@ const html = `<!DOCTYPE html>
             <div>
               <div class="text-[11px] font-mono font-semibold text-slate-400">01 / 06</div>
               <div class="aspect-square w-full rounded-2xl overflow-hidden bg-slate-50/50 relative my-4 flex items-center justify-center p-2">
-                <img src="assets/images/technologies/sol_kinh_lai_xe.png" alt="Khi lái xe & ban đêm" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                <img src="assets/uploads/solutions/sol_kinh_lai_xe.png" alt="Khi lái xe & ban đêm" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
               </div>
               <div class="space-y-1.5 pt-1">
                 <div class="text-xs font-bold text-primary tracking-wide uppercase">DI CHUYỂN</div>
@@ -740,7 +740,7 @@ const html = `<!DOCTYPE html>
             <div>
               <div class="text-[11px] font-mono font-semibold text-slate-400">02 / 06</div>
               <div class="aspect-square w-full rounded-2xl overflow-hidden bg-slate-50/50 relative my-4 flex items-center justify-center p-2">
-                <img src="assets/images/technologies/sol_chong_tia_uv.png" alt="Làm việc với màn hình" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                <img src="assets/uploads/solutions/sol_chong_tia_uv.png" alt="Làm việc với màn hình" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
               </div>
               <div class="space-y-1.5 pt-1">
                 <div class="text-xs font-bold text-primary tracking-wide uppercase">HỌC TẬP & LÀM VIỆC</div>
@@ -761,7 +761,7 @@ const html = `<!DOCTYPE html>
             <div>
               <div class="text-[11px] font-mono font-semibold text-slate-400">03 / 06</div>
               <div class="aspect-square w-full rounded-2xl overflow-hidden bg-slate-50/50 relative my-4 flex items-center justify-center p-2">
-                <img src="assets/images/technologies/sol_doi_mau.png" alt="Tròng kính đổi màu" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                <img src="assets/uploads/solutions/sol_doi_mau.png" alt="Tròng kính đổi màu" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
               </div>
               <div class="space-y-1.5 pt-1">
                 <div class="text-xs font-bold text-primary tracking-wide uppercase">NGOÀI TRỜI</div>
@@ -782,7 +782,7 @@ const html = `<!DOCTYPE html>
             <div>
               <div class="text-[11px] font-mono font-semibold text-slate-400">04 / 06</div>
               <div class="aspect-square w-full rounded-2xl overflow-hidden bg-slate-50/50 relative my-4 flex items-center justify-center p-2">
-                <img src="assets/images/technologies/sol_kinh_khoan_va_dap.png" alt="Mỏng nhẹ & gọng không viền" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                <img src="assets/uploads/solutions/sol_kinh_khoan_va_dap.png" alt="Mỏng nhẹ & gọng không viền" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
               </div>
               <div class="space-y-1.5 pt-1">
                 <div class="text-xs font-bold text-primary tracking-wide uppercase">THẨM MỸ & ĐỘ MỎNG</div>
@@ -803,7 +803,7 @@ const html = `<!DOCTYPE html>
             <div>
               <div class="text-[11px] font-mono font-semibold text-slate-400">05 / 06</div>
               <div class="aspect-square w-full rounded-2xl overflow-hidden bg-slate-50/50 relative my-4 flex items-center justify-center p-2">
-                <img src="assets/images/technologies/sol_da_trong.png" alt="Nhu cầu nhìn xa & gần" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                <img src="assets/uploads/solutions/sol_da_trong.png" alt="Nhu cầu nhìn xa & gần" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
               </div>
               <div class="space-y-1.5 pt-1">
                 <div class="text-xs font-bold text-primary tracking-wide uppercase">NHIỀU KHOẢNG NHÌN</div>
@@ -824,7 +824,7 @@ const html = `<!DOCTYPE html>
             <div>
               <div class="text-[11px] font-mono font-semibold text-slate-400">06 / 06</div>
               <div class="aspect-square w-full rounded-2xl overflow-hidden bg-slate-50/50 relative my-4 flex items-center justify-center p-2">
-                <img src="assets/images/technologies/sol_kiem_soat_can_thi.png" alt="Thị lực học đường" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                <img src="assets/uploads/solutions/sol_kiem_soat_can_thi.png" alt="Thị lực học đường" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
               </div>
               <div class="space-y-1.5 pt-1">
                 <div class="text-xs font-bold text-primary tracking-wide uppercase">TRẺ EM & HỌC ĐƯỜNG</div>
@@ -857,10 +857,10 @@ const html = `<!DOCTYPE html>
     <section id="cong-nghe" class="relative py-20 px-6 bg-transparent overflow-hidden">
       <div class="max-w-7xl mx-auto space-y-10 relative z-10">
         
-        <!-- Section Header matching preview.png Section 03 -->
+        <!-- Section Header -->
         <div class="max-w-3xl space-y-2.5">
           <div class="text-xs font-bold text-primary tracking-wider uppercase">
-            03 / CÔNG NGHỆ TRÒNG KÍNH
+            CÔNG NGHỆ TRÒNG KÍNH
           </div>
           <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-heading tracking-tight leading-[1.14]">
             Công nghệ tạo nên <span class="text-transparent bg-clip-text bg-gradient-to-r from-[var(--button-start)] via-[var(--button-middle)] to-[var(--button-end)]">sự khác biệt.</span>
@@ -870,18 +870,21 @@ const html = `<!DOCTYPE html>
           </p>
         </div>
 
-        <!-- 3 Column Cards Grid matching preview.png -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
+        <!-- 4 Column Cards Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-2">
           
           <!-- Card 1 -->
           <div class="card-surface rounded-[28px] overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between border border-[var(--color-border)]/50 group bg-white">
             <div>
               <div class="aspect-[16/10] w-full bg-slate-100 overflow-hidden relative">
                 <img src="assets/images/technologies/tech_sec3_1.jpg" alt="Độ mỏng cần được hiểu đúng." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/95 backdrop-blur-md text-heading text-xs font-bold shadow-xs">
+                  Phôi Monomer
+                </span>
               </div>
               <div class="p-6 sm:p-7 space-y-2">
                 <div class="text-xs font-bold text-primary tracking-wider uppercase">
-                  01 — VẬT LIỆU &amp; CHIẾT SUẤT
+                  VẬT LIỆU &amp; CHIẾT SUẤT
                 </div>
                 <h3 class="text-lg sm:text-xl font-bold text-heading leading-snug">
                   Độ mỏng cần được hiểu đúng.
@@ -898,10 +901,13 @@ const html = `<!DOCTYPE html>
             <div>
               <div class="aspect-[16/10] w-full bg-slate-100 overflow-hidden relative">
                 <img src="assets/images/technologies/tech_sec3_2.jpg" alt="Dễ vệ sinh, thuận tiện sử dụng." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/95 backdrop-blur-md text-heading text-xs font-bold shadow-xs">
+                  Phủ Chân Không
+                </span>
               </div>
               <div class="p-6 sm:p-7 space-y-2">
                 <div class="text-xs font-bold text-primary tracking-wider uppercase">
-                  02 — CÔNG NGHỆ LỚP PHỦ
+                  CÔNG NGHỆ LỚP PHỦ
                 </div>
                 <h3 class="text-lg sm:text-xl font-bold text-heading leading-snug">
                   Dễ vệ sinh, thuận tiện sử dụng.
@@ -918,16 +924,42 @@ const html = `<!DOCTYPE html>
             <div>
               <div class="aspect-[16/10] w-full bg-slate-100 overflow-hidden relative">
                 <img src="assets/images/technologies/tech_sec3_3.jpg" alt="Thiết kế theo đặc điểm sử dụng." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/95 backdrop-blur-md text-heading text-xs font-bold shadow-xs">
+                  Freeform KTS
+                </span>
               </div>
               <div class="p-6 sm:p-7 space-y-2">
                 <div class="text-xs font-bold text-primary tracking-wider uppercase">
-                  03 — THIẾT KẾ QUANG HỌC
+                  THIẾT KẾ QUANG HỌC
                 </div>
                 <h3 class="text-lg sm:text-xl font-bold text-heading leading-snug">
                   Thiết kế theo đặc điểm sử dụng.
                 </h3>
                 <p class="text-brand-muted text-sm leading-relaxed">
                   Freeform và các thiết kế quang học cần được đánh giá theo từng sản phẩm cụ thể.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: New Card requested by user -->
+          <div class="card-surface rounded-[28px] overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between border border-[var(--color-border)]/50 group bg-white">
+            <div>
+              <div class="aspect-[16/10] w-full bg-slate-100 overflow-hidden relative">
+                <img src="assets/images/technologies/tech_sec3_4.jpg" alt="Quy Chuẩn Chất Lượng Quốc Tế" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/95 backdrop-blur-md text-heading text-xs font-bold shadow-xs">
+                  Kiểm Định KCS Tiêu Chuẩn
+                </span>
+              </div>
+              <div class="p-6 sm:p-7 space-y-2">
+                <div class="text-xs font-bold text-primary tracking-wider uppercase">
+                  TIÊU CHUẨN &amp; CHẤT LƯỢNG
+                </div>
+                <h3 class="text-lg sm:text-xl font-bold text-heading leading-snug">
+                  Quy Chuẩn Chất Lượng Quốc Tế
+                </h3>
+                <p class="text-brand-muted text-sm leading-relaxed">
+                  Quy trình sản xuất tuân thủ hệ thống quản lý chất lượng thiết bị y tế quốc tế ISO 13485:2016 cùng tiêu chuẩn chuyên môn của chuyên gia khúc xạ nhãn khoa.
                 </p>
               </div>
             </div>
@@ -1232,94 +1264,6 @@ const html = `<!DOCTYPE html>
     </section>
 
     <!-- ========================================================= -->
-    <!-- SECTION 6 — PARTNER WITH ROCKY (05 / DÀNH CHO ĐỐI TÁC)    -->
-    <!-- Bố cục thẻ bo tròn tông Navy chuẩn theo preview.png        -->
-    <!-- ========================================================= -->
-    <section id="doi-tac" class="relative py-16 sm:py-20 px-6 bg-transparent overflow-hidden">
-      <div class="max-w-7xl mx-auto relative z-10">
-        
-        <!-- Deep Navy Box matching preview.png Section 05 -->
-        <div class="rounded-[32px] sm:rounded-[40px] p-8 sm:p-12 lg:p-14 text-white shadow-2xl relative overflow-hidden" style="background: var(--gradient-b2b);">
-          
-          <!-- Subtle background glow -->
-          <div class="absolute -right-20 -top-20 w-80 h-80 bg-[var(--button-start)]/15 rounded-full blur-3xl pointer-events-none"></div>
-
-          <!-- Top Row: Eyebrow + Heading + CTA Button -->
-          <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 relative z-10">
-            <div class="max-w-2xl space-y-2.5">
-              <div class="text-xs font-bold text-cyan-300 uppercase tracking-wider">
-                05 / DÀNH CHO ĐỐI TÁC
-              </div>
-              <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight leading-tight">
-                Cùng RockyLens mở rộng giá trị cho cửa hàng mắt kính.
-              </h2>
-              <p class="text-white/80 text-sm sm:text-base leading-relaxed pt-1">
-                Không chỉ là một danh mục tròng kính, RockyLens hướng đến hỗ trợ cửa hàng bằng thông tin sản phẩm dễ sử dụng, tài liệu kỹ thuật và kênh trao đổi trực tiếp.
-              </p>
-            </div>
-
-            <div class="shrink-0 pb-1">
-              <button type="button" onclick="openB2BQuoteModal()" class="px-6 py-3 rounded-full bg-white text-[#003B50] font-bold text-sm hover:bg-slate-100 transition-all cursor-pointer shadow-md inline-flex items-center gap-1.5 active:scale-95">
-                <span>Liên hệ hợp tác</span>
-                <span>&#8599;</span>
-              </button>
-            </div>
-          </div>
-
-          <!-- 4 Feature Columns in Divided Box -->
-          <div class="mt-10 rounded-2xl border border-white/15 bg-white/[0.04] p-6 sm:p-7 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-white/15 gap-6 sm:gap-0 relative z-10">
-            <div class="sm:px-6 first:pl-0 last:pr-0 pt-4 sm:pt-0 first:pt-0">
-              <div class="text-xs font-mono font-bold text-cyan-300">01</div>
-              <h3 class="text-base font-bold text-white mt-2">Tư vấn danh mục</h3>
-              <p class="text-xs sm:text-sm text-white/70 mt-1 leading-relaxed">
-                Trao đổi nhu cầu của cửa hàng để tìm hiểu dòng tròng phù hợp.
-              </p>
-            </div>
-
-            <div class="sm:px-6 first:pl-0 last:pr-0 pt-4 sm:pt-0 first:pt-0">
-              <div class="text-xs font-mono font-bold text-cyan-300">02</div>
-              <h3 class="text-base font-bold text-white mt-2">Tài liệu kỹ thuật</h3>
-              <p class="text-xs sm:text-sm text-white/70 mt-1 leading-relaxed">
-                Thông số, tính năng và phạm vi ứng dụng theo từng sản phẩm.
-              </p>
-            </div>
-
-            <div class="sm:px-6 first:pl-0 last:pr-0 pt-4 sm:pt-0 first:pt-0">
-              <div class="text-xs font-mono font-bold text-cyan-300">03</div>
-              <h3 class="text-base font-bold text-white mt-2">Giải pháp trưng bày</h3>
-              <p class="text-xs sm:text-sm text-white/70 mt-1 leading-relaxed">
-                Tìm hiểu tài liệu và hình ảnh hỗ trợ giới thiệu sản phẩm.
-              </p>
-            </div>
-
-            <div class="sm:px-6 first:pl-0 last:pr-0 pt-4 sm:pt-0 first:pt-0">
-              <div class="text-xs font-mono font-bold text-cyan-300">04</div>
-              <h3 class="text-base font-bold text-white mt-2">Hỗ trợ &amp; hậu mãi</h3>
-              <p class="text-xs sm:text-sm text-white/70 mt-1 leading-relaxed">
-                Liên hệ để nhận thông tin về chính sách hiện hành.
-              </p>
-            </div>
-          </div>
-
-          <!-- Footer Info Strip: Direct Connect + Phone + Email -->
-          <div class="mt-8 pt-6 border-t border-white/10 flex flex-wrap items-center gap-4 sm:gap-8 text-xs sm:text-sm relative z-10">
-            <span class="text-[11px] font-bold uppercase tracking-widest text-cyan-300">
-              KẾT NỐI TRỰC TIẾP
-            </span>
-            <a href="tel:0933102653" class="font-bold text-white hover:text-cyan-200 transition-colors">
-              0933 102 653
-            </a>
-            <a href="mailto:b2b@rockylens.com" class="text-white/80 hover:text-white transition-colors">
-              b2b@rockylens.com
-            </a>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ========================================================= -->
     <!-- SECTION 8 — BLOG & INSIGHTS (06 / GÓC NHÌN & KIẾN THỨC)   -->
     <!-- Bố cục & nội dung chuẩn theo preview.png                  -->
     <!-- ========================================================= -->
@@ -1329,7 +1273,7 @@ const html = `<!DOCTYPE html>
         <!-- Section Header matching preview.png Section 06 -->
         <div class="max-w-3xl space-y-2.5">
           <div class="text-xs font-bold text-primary tracking-wider uppercase">
-            06 / GÓC NHÌN &amp; KIẾN THỨC
+            GÓC NHÌN &amp; KIẾN THỨC
           </div>
           <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-heading tracking-tight leading-[1.14]">
             Hiểu đúng công nghệ. <br class="hidden sm:inline">
@@ -1433,6 +1377,96 @@ const html = `<!DOCTYPE html>
 
       </div>
     </section>
+
+    <!-- ========================================================= -->
+    <!-- SECTION 6 — PARTNER WITH ROCKY (DÀNH CHO ĐỐI TÁC)    -->
+    <!-- Bố cục thẻ bo tròn tông Navy chuẩn theo preview.png        -->
+    <!-- ========================================================= -->
+    <section id="doi-tac" class="relative py-16 sm:py-20 px-6 bg-transparent overflow-hidden">
+      <div class="max-w-7xl mx-auto relative z-10">
+        
+        <!-- Deep Navy Box matching preview.png Section 05 -->
+        <div class="rounded-[32px] sm:rounded-[40px] p-8 sm:p-12 lg:p-14 text-white shadow-2xl relative overflow-hidden" style="background: var(--gradient-b2b);">
+          
+          <!-- Subtle background glow -->
+          <div class="absolute -right-20 -top-20 w-80 h-80 bg-[var(--button-start)]/15 rounded-full blur-3xl pointer-events-none"></div>
+
+          <!-- Top Row: Eyebrow + Heading + CTA Button -->
+          <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 relative z-10">
+            <div class="max-w-2xl space-y-2.5">
+              <div class="text-xs font-bold text-cyan-300 uppercase tracking-wider">
+                DÀNH CHO ĐỐI TÁC
+              </div>
+              <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight leading-tight">
+                Cùng RockyLens mở rộng giá trị cho cửa hàng mắt kính.
+              </h2>
+              <p class="text-white/80 text-sm sm:text-base leading-relaxed pt-1">
+                Không chỉ là một danh mục tròng kính, RockyLens hướng đến hỗ trợ cửa hàng bằng thông tin sản phẩm dễ sử dụng, tài liệu kỹ thuật và kênh trao đổi trực tiếp.
+              </p>
+            </div>
+
+            <div class="shrink-0 pb-1">
+              <button type="button" onclick="openB2BQuoteModal()" class="px-6 py-3 rounded-full bg-white text-[#003B50] font-bold text-sm hover:bg-slate-100 transition-all cursor-pointer shadow-md inline-flex items-center gap-1.5 active:scale-95">
+                <span>Liên hệ hợp tác</span>
+                <span>&#8599;</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- 4 Feature Columns in Divided Box -->
+          <div class="mt-10 rounded-2xl border border-white/15 bg-white/[0.04] p-6 sm:p-7 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-white/15 gap-6 sm:gap-0 relative z-10">
+            <div class="sm:px-6 first:pl-0 last:pr-0 pt-4 sm:pt-0 first:pt-0">
+              <div class="text-xs font-mono font-bold text-cyan-300">01</div>
+              <h3 class="text-base font-bold text-white mt-2">Tư vấn danh mục</h3>
+              <p class="text-xs sm:text-sm text-white/70 mt-1 leading-relaxed">
+                Trao đổi nhu cầu của cửa hàng để tìm hiểu dòng tròng phù hợp.
+              </p>
+            </div>
+
+            <div class="sm:px-6 first:pl-0 last:pr-0 pt-4 sm:pt-0 first:pt-0">
+              <div class="text-xs font-mono font-bold text-cyan-300">02</div>
+              <h3 class="text-base font-bold text-white mt-2">Tài liệu kỹ thuật</h3>
+              <p class="text-xs sm:text-sm text-white/70 mt-1 leading-relaxed">
+                Thông số, tính năng và phạm vi ứng dụng theo từng sản phẩm.
+              </p>
+            </div>
+
+            <div class="sm:px-6 first:pl-0 last:pr-0 pt-4 sm:pt-0 first:pt-0">
+              <div class="text-xs font-mono font-bold text-cyan-300">03</div>
+              <h3 class="text-base font-bold text-white mt-2">Giải pháp trưng bày</h3>
+              <p class="text-xs sm:text-sm text-white/70 mt-1 leading-relaxed">
+                Tìm hiểu tài liệu và hình ảnh hỗ trợ giới thiệu sản phẩm.
+              </p>
+            </div>
+
+            <div class="sm:px-6 first:pl-0 last:pr-0 pt-4 sm:pt-0 first:pt-0">
+              <div class="text-xs font-mono font-bold text-cyan-300">04</div>
+              <h3 class="text-base font-bold text-white mt-2">Hỗ trợ &amp; hậu mãi</h3>
+              <p class="text-xs sm:text-sm text-white/70 mt-1 leading-relaxed">
+                Liên hệ để nhận thông tin về chính sách hiện hành.
+              </p>
+            </div>
+          </div>
+
+          <!-- Footer Info Strip: Direct Connect + Phone + Email -->
+          <div class="mt-8 pt-6 border-t border-white/10 flex flex-wrap items-center gap-4 sm:gap-8 text-xs sm:text-sm relative z-10">
+            <span class="text-[11px] font-bold uppercase tracking-widest text-cyan-300">
+              KẾT NỐI TRỰC TIẾP
+            </span>
+            <a href="tel:0933102653" class="font-bold text-white hover:text-cyan-200 transition-colors">
+              0933 102 653
+            </a>
+            <a href="mailto:b2b@rockylens.com" class="text-white/80 hover:text-white transition-colors">
+              b2b@rockylens.com
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
 
   </main>
 

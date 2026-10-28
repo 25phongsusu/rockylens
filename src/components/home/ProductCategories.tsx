@@ -10,7 +10,7 @@ export const productSolutions = [
     filter: 'Ngoài trời',
     title: 'Khi lái xe & ban đêm',
     desc: 'Tìm hiểu các đặc điểm tròng kính liên quan đến ánh sáng chói và nhu cầu di chuyển.',
-    image: '/images/technologies/sol_kinh_lai_xe.png',
+    image: '/uploads/solutions/sol_kinh_lai_xe.png',
     link: '/trong-kinh/rocky-driveshield-night-vision/',
   },
   {
@@ -19,7 +19,7 @@ export const productSolutions = [
     filter: 'Làm việc',
     title: 'Làm việc với màn hình',
     desc: 'Tìm hiểu lớp phủ, các lựa chọn tròng kính và thói quen sử dụng thiết bị số.',
-    image: '/images/technologies/sol_chong_tia_uv.png',
+    image: '/uploads/solutions/sol_chong_tia_uv.png',
     link: '/trong-kinh/rocky-156-bluecut-shmc/',
   },
   {
@@ -28,7 +28,7 @@ export const productSolutions = [
     filter: 'Ngoài trời',
     title: 'Tròng kính đổi màu',
     desc: 'Khám phá sự thay đổi sắc độ của tròng trong các điều kiện ánh sáng phù hợp.',
-    image: '/images/technologies/sol_doi_mau.png',
+    image: '/uploads/solutions/sol_doi_mau.png',
     link: '/trong-kinh/rocky-trendy-photochromic-grey/',
   },
   {
@@ -37,7 +37,7 @@ export const productSolutions = [
     filter: 'Chuyên biệt',
     title: 'Mỏng nhẹ & gọng không viền',
     desc: 'Tìm hiểu vật liệu, chiết suất và cách chọn tròng theo cấu trúc gọng.',
-    image: '/images/technologies/sol_kinh_khoan_va_dap.png',
+    image: '/uploads/solutions/sol_kinh_khoan_va_dap.png',
     link: '/trong-kinh/rocky-160-mr8-aspheric/',
   },
   {
@@ -46,7 +46,7 @@ export const productSolutions = [
     filter: 'Làm việc',
     title: 'Nhu cầu nhìn xa & gần',
     desc: 'Tìm hiểu tròng đa tròng và yếu tố cần cân nhắc khi nhìn ở nhiều khoảng cách.',
-    image: '/images/technologies/sol_da_trong.png',
+    image: '/uploads/solutions/sol_da_trong.png',
     link: '/trong-kinh/rocky-freeform-progressive-hd/',
   },
   {
@@ -55,7 +55,7 @@ export const productSolutions = [
     filter: 'Chuyên biệt',
     title: 'Thị lực học đường',
     desc: 'Khám phá các thiết kế tròng dành cho trẻ và lưu ý khi lựa chọn.',
-    image: '/images/technologies/sol_kiem_soat_can_thi.png',
+    image: '/uploads/solutions/sol_kiem_soat_can_thi.png',
     link: '/trong-kinh/rocky-myocontrol-dims-kids/',
   },
 ];
@@ -75,7 +75,7 @@ export default function ProductCategories() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
           <div className="max-w-3xl space-y-2.5">
             <div className="text-xs font-bold text-primary tracking-wider uppercase">
-              01 / DANH MỤC SẢN PHẨM
+              DANH MỤC SẢN PHẨM
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-heading tracking-tight leading-[1.14]">
               Khám phá các giải pháp{' '}
