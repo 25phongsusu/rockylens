@@ -1,88 +1,81 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
-import { ArrowRight } from 'lucide-react';
 
-const techPillars = [
+export const technologyCards = [
   {
-    title: 'Lựa Chọn Vật Liệu Phù Hợp',
-    badge: 'Phôi Monomer Quang Học',
-    image: '/images/company/about-1.jpg',
-    description: 'Vật liệu và cấu trúc phôi quyết định độ trong suốt, trọng lượng nhẹ và độ bền cơ học của tròng kính, mang lại cảm giác thoải mái khi bạn đeo kính suốt ngày dài.',
+    num: '01 — VẬT LIỆU & CHIẾT SUẤT',
+    title: 'Độ mỏng cần được hiểu đúng.',
+    desc: 'Chiết suất, độ kính và lựa chọn gọng cùng ảnh hưởng đến độ dày thực tế của tròng.',
+    image: '/images/technologies/tech_sec3_1.jpg',
+    link: '/kham-pha-trong-kinh/',
   },
   {
-    title: 'Công Nghệ Xử Lý Bề Mặt',
-    badge: 'Phủ Chân Không Nano',
-    image: '/images/technologies/bui.png',
-    description: 'Các lớp phủ bề mặt chuyên biệt giúp hạn chế trầy xước trong quá trình lau chùi, trượt hạt nước mưa khi đi đường và giúp bạn dễ dàng làm sạch tròng kính.',
+    num: '02 — CÔNG NGHỆ LỚP PHỦ',
+    title: 'Dễ vệ sinh, thuận tiện sử dụng.',
+    desc: 'Tìm hiểu các đặc điểm lớp phủ giúp hạn chế bám bẩn hoặc phản xạ tùy dòng tròng.',
+    image: '/images/technologies/tech_sec3_2.jpg',
+    link: '/kham-pha-trong-kinh/',
   },
   {
-    title: 'Thiết Kế Quang Học Cá Nhân Hóa',
-    badge: 'Gia Công KTS Freeform',
-    image: '/images/technologies/do-kinh.jpg',
-    description: 'Công nghệ gia công kỹ thuật số tính toán mài vi điểm theo từng số độ và thông số gọng thực tế, mở rộng vùng nhìn rõ và giúp đôi mắt thích nghi tự nhiên hơn.',
-  },
-  {
-    title: 'Quy Trình Kiểm Định Tiêu Chuẩn',
-    badge: 'Kiểm Định KCS Tiêu Chuẩn',
-    image: '/images/company/about-3.jpg',
-    description: 'Mỗi sản phẩm đều trải qua các bước kiểm soát chất lượng từ độ khúc xạ, quang sai đến độ hoàn thiện của từng bề mặt trước khi đến tay người tiêu dùng.',
+    num: '03 — THIẾT KẾ QUANG HỌC',
+    title: 'Thiết kế theo đặc điểm sử dụng.',
+    desc: 'Freeform và các thiết kế quang học cần được đánh giá theo từng sản phẩm cụ thể.',
+    image: '/images/technologies/tech_sec3_3.jpg',
+    link: '/kham-pha-trong-kinh/',
   },
 ];
 
 export default function TechnologyHighlights() {
   return (
     <section id="cong-nghe" className="relative py-20 px-6 bg-transparent overflow-hidden">
-      <div className="max-w-7xl mx-auto space-y-12 relative z-10">
+      <div className="max-w-7xl mx-auto space-y-10 relative z-10">
         
-        <div className="max-w-3xl">
-          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-heading tracking-tight">
-            Công nghệ và tiêu chuẩn chất lượng
+        {/* Section Header matching preview.png Section 03 */}
+        <div className="max-w-3xl space-y-2.5">
+          <div className="text-xs font-bold text-primary tracking-wider uppercase">
+            03 / CÔNG NGHỆ TRÒNG KÍNH
+          </div>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-heading tracking-tight leading-[1.14]">
+            Công nghệ tạo nên{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--button-start)] via-[var(--button-middle)] to-[var(--button-end)]">
+              sự khác biệt.
+            </span>
           </h2>
-          <p className="text-brand-muted text-base sm:text-lg mt-3">
-            Đằng sau mỗi tròng kính là những lựa chọn về vật liệu, thiết kế và công nghệ chế tác. Hãy khám phá cách các yếu tố đó tạo nên những đặc tính khác nhau của tròng kính Rocky.
+          <p className="text-brand-muted text-base sm:text-lg leading-relaxed">
+            Từ vật liệu, lớp phủ đến thiết kế bề mặt, mỗi công nghệ giải quyết một vấn đề quang học khác nhau.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {techPillars.map((pillar, idx) => (
+        {/* 3 Column Cards Grid matching preview.png */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
+          {technologyCards.map((card, idx) => (
             <div
               key={idx}
-              className="card-surface p-5 sm:p-6 rounded-3xl space-y-4 flex flex-col justify-between group"
+              className="card-surface rounded-[28px] overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between border border-[var(--color-border)]/50 group bg-white"
             >
-              <div className="space-y-4">
-                <div className="aspect-[16/10] w-full rounded-2xl overflow-hidden bg-slate-200 relative">
-                  <Image
-                    src={pillar.image}
-                    alt={pillar.title}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+              <div>
+                <div className="aspect-[16/10] w-full bg-slate-100 overflow-hidden relative">
+                  <img
+                    src={card.image}
+                    alt={card.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <span className="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-heading text-xs font-bold">
-                    {pillar.badge}
-                  </span>
                 </div>
-                <h3 className="text-xl font-bold text-heading">
-                  {pillar.title}
-                </h3>
-                <p className="text-slate-700 text-sm leading-relaxed">
-                  {pillar.description}
-                </p>
+
+                <div className="p-6 sm:p-7 space-y-2">
+                  <div className="text-xs font-bold text-primary tracking-wider uppercase">
+                    {card.num}
+                  </div>
+                  <h3 className="text-lg sm:text-xl font-bold text-heading leading-snug">
+                    {card.title}
+                  </h3>
+                  <p className="text-brand-muted text-sm leading-relaxed">
+                    {card.desc}
+                  </p>
+                </div>
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Section 4 CTA */}
-        <div className="text-center pt-4">
-          <Link
-            href="/kham-pha-trong-kinh/"
-            className="button-primary inline-flex items-center space-x-2 px-8 py-4 rounded-full text-base transition-colors"
-          >
-            <span>Tìm hiểu công nghệ Rocky</span>
-            <ArrowRight className="w-5 h-5 ml-2" />
-          </Link>
         </div>
 
       </div>

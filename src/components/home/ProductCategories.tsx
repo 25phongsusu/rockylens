@@ -1,210 +1,171 @@
-import React from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import { ArrowRight } from 'lucide-react';
+'use client';
 
-const discoverySolutions = [
+import React, { useState } from 'react';
+import Link from 'next/link';
+
+export const productSolutions = [
   {
-    id: 'driveshield',
-    name: 'Rocky DriveShield Ruby AR',
-    tag: 'Lái Xe Ban Đêm & Mưa',
-    categorySlug: 'kinh-lai-xe',
-    subTag: 'Tầm Nhìn Lái Xe',
-    image: '/images/real/driveshield_night.jpg',
-    heading: 'Làm Chủ Mọi Cung Đường Đêm & Mưa.',
-    description: 'Chấm dứt nỗi ám ảnh chói đèn pha và nhòe sương kính. DriveShield mang lại tầm nhìn sắc nét, êm dịu, giúp bạn vững tay lái và an tâm về nhà trong mọi điều kiện thời tiết.',
-    keyFeature: 'Chống chói pha LED & trượt nước mưa',
-    techProcess: 'Lọc quang phổ chọn lọc Multi-Matrix',
-    visionExperience: 'Tầm nhìn êm dịu, vững vàng tay lái',
-    indexOption: '1.56 | 1.60 | 1.67',
+    num: '01 / 06',
+    category: 'DI CHUYỂN',
+    filter: 'Ngoài trời',
+    title: 'Khi lái xe & ban đêm',
+    desc: 'Tìm hiểu các đặc điểm tròng kính liên quan đến ánh sáng chói và nhu cầu di chuyển.',
+    image: '/images/technologies/sol_kinh_lai_xe.png',
+    link: '/trong-kinh/rocky-driveshield-night-vision/',
   },
   {
-    id: 'bluecut',
-    name: 'Rocky BlueCut UV420 Relax',
-    tag: 'Cho Ngày Dài Làm Việc',
-    categorySlug: 'loc-anh-sang-xanh',
-    subTag: 'Bảo Vệ Mắt Điện Tử',
-    image: '/images/products/category-solution-1.png',
-    heading: 'Tạm Biệt Nhức Mỏi Mắt Mùa Chạy Deadline.',
-    description: '8 tiếng nhìn màn hình không còn là rào cản. Tròng kính BlueCut chặn đứng ánh sáng xanh có hại, giữ màu sắc chân thực để đôi mắt luôn thư giãn dù bạn làm việc hay giải trí trọn ngày dài.',
-    keyFeature: 'Chặn ánh sáng xanh tím màn hình số',
-    techProcess: 'Phôi Monomer BlueCut UV420',
-    visionExperience: 'Màu sắc trung thực, mắt luôn thư giãn',
-    indexOption: '1.56 | 1.60 | 1.67 | 1.74',
+    num: '02 / 06',
+    category: 'HỌC TẬP & LÀM VIỆC',
+    filter: 'Làm việc',
+    title: 'Làm việc với màn hình',
+    desc: 'Tìm hiểu lớp phủ, các lựa chọn tròng kính và thói quen sử dụng thiết bị số.',
+    image: '/images/technologies/sol_chong_tia_uv.png',
+    link: '/trong-kinh/rocky-156-bluecut-shmc/',
   },
   {
-    id: 'photochromic',
-    name: 'Rocky Fast-Change Spin-Coat',
-    tag: 'Cho Những Ngày Đầy Nắng',
-    categorySlug: 'trong-doi-mau',
-    subTag: 'Đổi Màu Tiện Lợi',
-    image: '/images/products/category-solution-8.png',
-    heading: '1 Chiếc Kính. 2 Phong Cách. Tiện Lợi Tối Đa.',
-    description: 'Trong suốt khi ở nhà, tự động chuyển màu râm sành điệu khi ra nắng. Bảo vệ mắt toàn diện khỏi tia UV mà không cần lỉnh kỉnh đổi qua lại giữa kính cận và kính mát.',
-    keyFeature: 'Đổi màu râm sành điệu chuẩn CAT 3',
-    techProcess: 'Phủ ly tâm Spin-Coat Photochromic',
-    visionExperience: 'Tiện lợi 2 trong 1, bảo vệ UV tối đa',
-    indexOption: '1.56 | 1.60 | 1.67',
+    num: '03 / 06',
+    category: 'NGOÀI TRỜI',
+    filter: 'Ngoài trời',
+    title: 'Tròng kính đổi màu',
+    desc: 'Khám phá sự thay đổi sắc độ của tròng trong các điều kiện ánh sáng phù hợp.',
+    image: '/images/technologies/sol_doi_mau.png',
+    link: '/trong-kinh/rocky-trendy-photochromic-grey/',
   },
   {
-    id: 'ultra-thin',
-    name: 'Rocky Tough Aspheric MR Series',
-    tag: 'Gọn Nhẹ & Bền Bỉ',
-    categorySlug: 'trong-don-trong',
-    subTag: 'Gọn Nhẹ & Bền Bỉ',
-    image: '/images/company/about-6.jpg',
-    heading: 'Mỏng nhẹ hơn cho người có độ khúc xạ cao',
-    description: 'Tối ưu về độ mỏng và độ dẻo dai cao, giữ dáng kính thanh thoát và mở rộng sự lựa chọn cho các kiểu gọng khoan ốc hoặc nửa viền.',
-    keyFeature: 'Tối ưu độ mỏng & chịu lực va đập',
-    techProcess: 'Phôi vật liệu dẻo dai MR Series',
-    visionExperience: 'Nhẹ nhàng, triệt tiêu quang sai biên',
-    indexOption: '1.60 | 1.67 | 1.74 siêu mỏng',
+    num: '04 / 06',
+    category: 'THẨM MỸ & ĐỘ MỎNG',
+    filter: 'Chuyên biệt',
+    title: 'Mỏng nhẹ & gọng không viền',
+    desc: 'Tìm hiểu vật liệu, chiết suất và cách chọn tròng theo cấu trúc gọng.',
+    image: '/images/technologies/sol_kinh_khoan_va_dap.png',
+    link: '/trong-kinh/rocky-160-mr8-aspheric/',
   },
   {
-    id: 'freeform',
-    name: 'CanRx Freeform HD',
-    tag: 'Nhìn Rõ Nhiều Khoảng Cách',
-    categorySlug: 'trong-da-trong',
-    subTag: 'Đa Khoảng Cách',
-    image: '/images/products/category-solution-2.png',
-    heading: 'Chuyển tiếp êm dịu giữa nhìn xa, trung gian và đọc sách',
-    description: 'Hỗ trợ bạn nhìn rõ mọi khoảng cách sinh hoạt thường ngày mà không cần phải đổi kính liên tục hay cảm giác bỡ ngỡ.',
-    keyFeature: 'Nhìn rõ mọi cự ly Xa - Trung - Gần',
-    techProcess: 'Mài vi điểm kỹ thuật số Freeform HD',
-    visionExperience: 'Vùng nhìn liền mạch, thích nghi nhanh',
-    indexOption: '1.56 | 1.60 | 1.67',
+    num: '05 / 06',
+    category: 'NHIỀU KHOẢNG NHÌN',
+    filter: 'Làm việc',
+    title: 'Nhu cầu nhìn xa & gần',
+    desc: 'Tìm hiểu tròng đa tròng và yếu tố cần cân nhắc khi nhìn ở nhiều khoảng cách.',
+    image: '/images/technologies/sol_da_trong.png',
+    link: '/trong-kinh/rocky-freeform-progressive-hd/',
   },
   {
-    id: 'defocus',
-    name: 'Defocus MyoControl HD',
-    tag: 'Học Sinh & Trẻ Em',
-    categorySlug: 'kiem-soat-can-thi',
-    subTag: 'Thị Lực Học Đường',
-    image: '/images/real/myopia_defocus_diagram.png',
-    heading: 'Đồng hành cùng thị lực học đường',
-    description: 'Thiết kế quang học hỗ trợ chăm sóc thị lực cho học sinh, sinh viên trong giai đoạn học tập với cường độ cao.',
-    keyFeature: 'Chăm sóc thị lực lứa tuổi học sinh',
-    techProcess: 'Vi thấu kính phân tán chu biên hội tụ',
-    visionExperience: 'Sắc nét trung tâm, giảm mỏi điều tiết',
-    indexOption: '1.56 | 1.60 | 1.67',
+    num: '06 / 06',
+    category: 'TRẺ EM & HỌC ĐƯỜNG',
+    filter: 'Chuyên biệt',
+    title: 'Thị lực học đường',
+    desc: 'Khám phá các thiết kế tròng dành cho trẻ và lưu ý khi lựa chọn.',
+    image: '/images/technologies/sol_kiem_soat_can_thi.png',
+    link: '/trong-kinh/rocky-myocontrol-dims-kids/',
   },
 ];
 
 export default function ProductCategories() {
+  const [activeFilter, setActiveFilter] = useState('Tất cả');
+
+  const filtered = activeFilter === 'Tất cả'
+    ? productSolutions
+    : productSolutions.filter(item => item.filter === activeFilter);
+
   return (
-    <section id="san-pham" className="relative py-20 px-6 bg-transparent overflow-hidden">
-      <div className="max-w-7xl mx-auto space-y-12 relative z-10">
+    <section id="trong-kinh" className="relative py-20 px-6 bg-transparent overflow-hidden">
+      <div className="max-w-7xl mx-auto space-y-8 relative z-10">
         
-        {/* Section Heading focused on consumer wear needs */}
-        <div className="max-w-3xl">
-          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-heading tracking-tight">
-            Mỗi nhu cầu, một lựa chọn phù hợp
-          </h2>
-          <p className="text-brand-muted text-base sm:text-lg mt-3">
-            Từ những khoảnh khắc đời thường giản dị đến những chân trời rộng mở, tầm nhìn luôn là chiếc cầu nối để bạn trọn vẹn cảm nhận vẻ đẹp của thế giới.
-          </p>
+        {/* Top Header Row matching preview.png Section 01 */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+          <div className="max-w-3xl space-y-2.5">
+            <div className="text-xs font-bold text-primary tracking-wider uppercase">
+              01 / DANH MỤC SẢN PHẨM
+            </div>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-heading tracking-tight leading-[1.14]">
+              Khám phá các giải pháp{' '}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--button-start)] via-[var(--button-middle)] to-[var(--button-end)]">
+                tròng kính
+              </span>{' '}
+              RockyLens.
+            </h2>
+            <p className="text-brand-muted text-base sm:text-lg leading-relaxed">
+              Từ nhu cầu nhìn thường ngày đến những yêu cầu chuyên biệt, mỗi nhóm tròng kính có những đặc điểm và công nghệ riêng.
+            </p>
+          </div>
+          <div className="shrink-0 pb-1">
+            <Link
+              href="/trong-kinh/"
+              className="text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 transition-colors"
+            >
+              <span>Xem các nhóm sản phẩm</span>
+              <span>&#8599;</span>
+            </Link>
+          </div>
         </div>
 
-        {/* 6 Customer Benefit Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {discoverySolutions.map((sol) => (
-            <div
-              key={sol.id}
-              className="card-surface rounded-3xl p-6 shadow-sm hover:shadow-md transition-all duration-300 relative group overflow-hidden flex flex-col justify-between"
+        {/* Category Filter Tabs */}
+        <div className="flex flex-wrap items-center gap-2 pt-1">
+          {['Tất cả', 'Làm việc', 'Ngoài trời', 'Chuyên biệt'].map((filter) => (
+            <button
+              key={filter}
+              type="button"
+              onClick={() => setActiveFilter(filter)}
+              className={`px-5 py-2 rounded-full text-xs font-bold transition-all cursor-pointer ${
+                activeFilter === filter
+                  ? 'bg-[var(--b2b-end)] text-white shadow-xs'
+                  : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-200/90'
+              }`}
             >
-              <div className="space-y-4">
-                <div className="aspect-[4/3] rounded-2xl overflow-hidden bg-slate-100 relative">
-                  <Image
-                    src={sol.image}
-                    alt={sol.name}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                  <span className="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/90 backdrop-blur-md text-heading text-xs font-bold">
-                    {sol.tag}
-                  </span>
+              {filter}
+            </button>
+          ))}
+        </div>
+
+        {/* 6 Solution Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-2">
+          {filtered.map((item) => (
+            <div
+              key={item.num}
+              className="card-surface rounded-[28px] p-6 sm:p-7 shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between border border-[var(--color-border)]/50 group bg-white"
+            >
+              <div>
+                <div className="text-[11px] font-mono font-semibold text-slate-400">
+                  {item.num}
                 </div>
 
-                <div className="space-y-2">
-                  <h3 className="text-xl font-bold text-heading leading-snug">
-                    {sol.heading}
+                <div className="aspect-square w-full rounded-2xl overflow-hidden bg-slate-50/50 relative my-4 flex items-center justify-center p-2">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+
+                <div className="space-y-1.5 pt-1">
+                  <div className="text-xs font-bold text-primary tracking-wide uppercase">
+                    {item.category}
+                  </div>
+                  <h3 className="text-lg font-bold text-heading leading-snug">
+                    {item.title}
                   </h3>
                   <p className="text-brand-muted text-sm leading-relaxed">
-                    {sol.description}
+                    {item.desc}
                   </p>
                 </div>
               </div>
 
-              {/* Layer 3 - Technical details on hover with WHITE BACKGROUND */}
-              <div className="absolute inset-0 bg-white/98 backdrop-blur-md p-5 sm:p-6 rounded-3xl text-heading flex flex-col justify-between opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 z-10 border border-[var(--color-border)] shadow-2xl">
-                <div className="space-y-3">
-                  <div className="flex items-center justify-between">
-                    <span className="px-3 py-1 rounded-full bg-[var(--site-bg-middle)]/50 text-primary text-xs font-bold border border-[var(--color-border)]">
-                      Thông Tin Sản Phẩm
-                    </span>
-                    <span className="text-xs text-brand-muted font-semibold">
-                      {sol.subTag}
-                    </span>
-                  </div>
-                  <h4 className="text-xl font-black text-heading">
-                    {sol.name}
-                  </h4>
-                  <div className="space-y-1.5 text-xs pt-1">
-                    <div className="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
-                      <span className="text-brand-muted font-medium">Tính năng nổi bật:</span>
-                      <span className="font-bold text-primary text-right ml-2">{sol.keyFeature}</span>
-                    </div>
-                    <div className="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
-                      <span className="text-brand-muted font-medium">Công nghệ xử lý:</span>
-                      <span className="font-bold text-heading text-right ml-2">{sol.techProcess}</span>
-                    </div>
-                    <div className="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
-                      <span className="text-brand-muted font-medium">Trải nghiệm thị giác:</span>
-                      <span className="font-bold text-heading text-right ml-2">{sol.visionExperience}</span>
-                    </div>
-                    <div className="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
-                      <span className="text-brand-muted font-medium">Tùy chọn chiết suất:</span>
-                      <span className="font-bold text-heading text-right ml-2">{sol.indexOption}</span>
-                    </div>
-                    <div className="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
-                      <span className="text-brand-muted font-medium">Chính sách bảo hành:</span>
-                      <span className="font-bold text-heading text-right ml-2">24 tháng chính hãng</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="pt-2">
-                  <Link
-                    href="/trong-kinh/"
-                    className="button-primary w-full py-2.5 rounded-xl text-xs font-bold transition-colors block text-center shadow-xs"
-                  >
-                    Xem chi tiết dòng tròng &rarr;
-                  </Link>
-                </div>
-              </div>
-
-              <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                <span className="text-xs font-semibold text-primary">
-                  {sol.name}
-                </span>
-                <span className="text-xs font-bold text-slate-400 group-hover:text-primary transition-colors">
-                  Chi tiết &rarr;
-                </span>
+              <div className="pt-5 mt-4 border-t border-slate-100 flex items-center">
+                <Link
+                  href={item.link}
+                  className="text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all"
+                >
+                  <span>Xem giải pháp</span>
+                  <span>&#8599;</span>
+                </Link>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Section 3 CTA */}
-        <div className="text-center pt-4">
-          <Link
-            href="/trong-kinh/"
-            className="button-primary inline-flex items-center space-x-2 px-8 py-4 rounded-full text-base transition-colors"
-          >
-            <span>Khám phá tất cả tròng kính Rocky</span>
-            <ArrowRight className="w-5 h-5 ml-2" />
-          </Link>
+        {/* Footnote */}
+        <div className="text-xs text-slate-500 pt-2 text-center sm:text-left">
+          Thông số kỹ thuật và các lựa chọn cụ thể có thể khác nhau theo từng sản phẩm. Vui lòng tham khảo trang chi tiết hoặc liên hệ để xác nhận.
         </div>
 
       </div>

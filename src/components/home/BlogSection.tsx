@@ -1,103 +1,96 @@
 import React from 'react';
 import Link from 'next/link';
-import { Calendar, Clock, ArrowRight } from 'lucide-react';
-import { getAllArticles } from '@/features/articles/article-service';
-import { formatDate } from '@/lib/utils';
+
+export const blogArticles = [
+  {
+    slug: 'giai-phap-chong-anh-sang-xanh-uv420',
+    category: 'KIẾN THỨC QUANG HỌC',
+    title: 'Ánh sáng xanh từ màn hình: những điều cần hiểu',
+    desc: 'Phân biệt đặc điểm lớp phủ và thói quen nhìn màn hình với các tuyên bố bảo vệ mắt.',
+    image: '/images/articles/blog_sec6_1.jpg',
+  },
+  {
+    slug: 'cong-nghe-kinh-lai-xe-driveshield',
+    category: 'NHU CẦU SỬ DỤNG',
+    title: 'Lái xe ban đêm: nên cân nhắc những gì?',
+    desc: 'Tìm hiểu độ chói, phản xạ và các yếu tố cần thảo luận khi chọn kính.',
+    image: '/images/articles/blog_sec6_2.jpg',
+  },
+  {
+    slug: 'kiem-soat-can-thi-tre-em-myocontrol',
+    category: 'TRẺ EM & THỊ LỰC',
+    title: 'Tròng kính cho trẻ: hiểu về các lựa chọn',
+    desc: 'Phân biệt thiết kế tròng và nhu cầu thăm khám, theo dõi thị lực định kỳ.',
+    image: '/images/articles/blog_sec6_3.jpg',
+  },
+];
 
 export default function BlogSection() {
-  const articles = getAllArticles().slice(0, 3);
-
   return (
     <section id="blog-insights" className="relative py-20 px-6 bg-transparent overflow-hidden">
-      <div className="max-w-7xl mx-auto space-y-12 relative z-10">
+      <div className="max-w-7xl mx-auto space-y-10 relative z-10">
         
-        {/* Section Header */}
-        <div className="max-w-3xl space-y-3">
-          <span className="px-3.5 py-1.5 rounded-full bg-[var(--site-bg-middle)]/50 text-primary text-sm font-bold inline-block border border-[var(--color-border)]">
-            Góc Nhìn &amp; Insight Thị Giác
-          </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-heading tracking-tight">
-            Kiến thức thị giác &amp; câu chuyện từ người đeo kính.
+        {/* Section Header matching preview.png Section 06 */}
+        <div className="max-w-3xl space-y-2.5">
+          <div className="text-xs font-bold text-primary tracking-wider uppercase">
+            06 / GÓC NHÌN &amp; KIẾN THỨC
+          </div>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-heading tracking-tight leading-[1.14]">
+            Hiểu đúng công nghệ. <br className="hidden sm:inline" />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--button-start)] via-[var(--button-middle)] to-[var(--button-end)]">
+              Lựa chọn sáng suốt hơn.
+            </span>
           </h2>
-          <p className="text-brand-muted text-lg leading-relaxed">
-            Lắng nghe nhu cầu thực tế và khám phá những chia sẻ chuyên sâu giúp bạn chọn đúng cặp tròng kính cho công việc, cuộc sống và gia đình.
+          <p className="text-brand-muted text-base sm:text-lg leading-relaxed">
+            Những bài giải thích dễ hiểu cho người đeo kính và cũng là tài liệu tham khảo hữu ích cho cửa hàng mắt kính.
           </p>
         </div>
 
-        {/* 3 Featured Insight Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {articles.map((article) => (
+        {/* 3 Editorial Blog Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
+          {blogArticles.map((article) => (
             <article
-              key={article.id}
-              className="group card-surface rounded-3xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+              key={article.slug}
+              className="card-surface rounded-[28px] overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between border border-[var(--color-border)]/50 group bg-white"
             >
               <div>
-                {/* Card Visual Top */}
                 <Link
                   href={`/blog/${article.slug}/`}
-                  className="block h-56 sm:h-64 bg-slate-100 overflow-hidden relative"
+                  className="aspect-[16/10] w-full bg-slate-100 overflow-hidden block relative"
                 >
                   <img
-                    src={article.coverImage}
+                    src={article.image}
                     alt={article.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <span className="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-primary text-xs font-bold border border-[var(--color-border)] shadow-xs">
-                    {article.categoryName}
-                  </span>
                 </Link>
 
-                {/* Card Body */}
-                <div className="p-6 sm:p-7 space-y-3">
-                  <div className="flex items-center gap-3 text-xs font-semibold text-slate-500">
-                    <span className="inline-flex items-center gap-1.5">
-                      <Calendar className="w-3.5 h-3.5 text-primary" />
-                      <span>{formatDate(article.publishedAt)}</span>
-                    </span>
-                    <span>&bull;</span>
-                    <span className="inline-flex items-center gap-1.5">
-                      <Clock className="w-3.5 h-3.5 text-primary" />
-                      <span>{article.readTime}</span>
-                    </span>
+                <div className="p-6 sm:p-7 space-y-2">
+                  <div className="text-xs font-bold text-primary tracking-wider uppercase">
+                    {article.category}
                   </div>
-
-                  <h3 className="text-xl font-bold text-heading group-hover:text-primary transition-colors leading-snug line-clamp-2">
+                  <h3 className="text-lg sm:text-xl font-bold text-heading leading-snug group-hover:text-primary transition-colors">
                     <Link href={`/blog/${article.slug}/`}>
                       {article.title}
                     </Link>
                   </h3>
-
-                  {article.slug !== 'kiem-soat-can-thi-tre-em-myocontrol' && (
-                    <p className="text-brand-muted text-sm leading-relaxed line-clamp-3">
-                      {article.description}
-                    </p>
-                  )}
+                  <p className="text-brand-muted text-sm leading-relaxed">
+                    {article.desc}
+                  </p>
                 </div>
               </div>
 
-              {/* Card Bottom CTA */}
               <div className="p-6 sm:p-7 pt-0">
                 <Link
                   href={`/blog/${article.slug}/`}
-                  className="button-primary inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full text-sm shadow-xs"
+                  className="text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all"
                 >
-                  <span>Đọc bài viết chi tiết</span>
-                  <ArrowRight className="w-4 h-4 ml-1" />
+                  <span>Đọc bài viết</span>
+                  <span>&#8599;</span>
                 </Link>
               </div>
             </article>
           ))}
-        </div>
-
-        {/* Big Action Button to Full Blog Page */}
-        <div className="flex flex-col sm:flex-row items-center justify-center pt-4">
-          <Link
-            href="/blog/"
-            className="button-primary inline-flex items-center gap-3 px-8 py-4 rounded-full text-base sm:text-lg transition-colors duration-200 shadow-sm"
-          >
-            <span>Khám phá toàn bộ bài viết tại chuyên mục Blog</span>
-            <ArrowRight className="w-5 h-5 ml-1" />
-          </Link>
         </div>
 
       </div>

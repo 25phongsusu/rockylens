@@ -1,111 +1,104 @@
 'use client';
 
 import React from 'react';
-import Link from 'next/link';
-import { ArrowRight, Phone, ShieldCheck, Layers, Cpu, Award, ArrowUpRight } from 'lucide-react';
 import { openB2BQuoteModal } from '@/components/common/B2BQuoteModal';
 
-const partnerValues = [
+export const partnerFeatures = [
   {
-    icon: <Layers className="w-5 h-5 text-teal-400" />,
-    title: 'Danh Mục Sản Phẩm Đa Dạng & Sẵn Kho',
-    description: 'Hệ sinh thái sản phẩm phong phú từ đơn tròng, tròng đổi màu đến đa tròng kỹ thuật số, sẵn sàng cung ứng nhanh chóng từ 3 trung tâm phân phối.',
+    num: '01',
+    title: 'Tư vấn danh mục',
+    desc: 'Trao đổi nhu cầu của cửa hàng để tìm hiểu dòng tròng phù hợp.',
   },
   {
-    icon: <Cpu className="w-5 h-5 text-teal-400" />,
-    title: 'Dịch Vụ Gia Công Kỹ Thuật Số (Lab RX 24h)',
-    description: 'Xử lý chuẩn xác các đơn kính độ khó, độ lệch lớn và thông số cá nhân hóa trên hệ thống máy mài kỹ thuật số hiện đại trong vòng 24 giờ.',
+    num: '02',
+    title: 'Tài liệu kỹ thuật',
+    desc: 'Thông số, tính năng và phạm vi ứng dụng theo từng sản phẩm.',
   },
   {
-    icon: <Award className="w-5 h-5 text-teal-400" />,
-    title: 'Hỗ Trợ Đào Tạo & Tư Liệu Điểm Bán',
-    description: 'Cung cấp tài liệu truyền thông, bộ công cụ thử quang học trực quan và hỗ trợ cập nhật kiến thức sản phẩm cho đội ngũ nhân viên cửa hàng.',
+    num: '03',
+    title: 'Giải pháp trưng bày',
+    desc: 'Tìm hiểu tài liệu và hình ảnh hỗ trợ giới thiệu sản phẩm.',
   },
   {
-    icon: <ShieldCheck className="w-5 h-5 text-teal-400" />,
-    title: 'Chính Sách Hợp Tác Bền Vững & Minh Bạch',
-    description: 'Đồng hành cùng phát triển với các giải pháp quản lý tồn kho hợp lý, bảo hiểm thích nghi cho người đeo và dịch vụ hậu mãi chu đáo.',
+    num: '04',
+    title: 'Hỗ trợ & hậu mãi',
+    desc: 'Liên hệ để nhận thông tin về chính sách hiện hành.',
   },
 ];
 
 export default function PartnerSection() {
   return (
-    <section id="doi-tac" className="relative py-24 px-6 b2b-gradient text-white overflow-hidden">
-      <div className="absolute right-0 top-0 w-96 h-96 bg-[var(--button-start)]/20 rounded-full blur-3xl pointer-events-none" />
-
-      <div className="max-w-7xl mx-auto space-y-12 relative z-10">
+    <section id="doi-tac" className="relative py-16 sm:py-20 px-6 bg-transparent overflow-hidden">
+      <div className="max-w-7xl mx-auto relative z-10">
         
-        <div className="max-w-3xl">
-          <div className="text-[var(--button-start)] text-sm font-bold uppercase tracking-wider mb-2">
-            Dành Cho Đối Tác &amp; Cửa Hàng Kính Mắt
-          </div>
-          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black tracking-tight text-white">
-            Cùng Rocky mở rộng cơ hội hợp tác
-          </h2>
-          <p className="text-slate-200 text-base sm:text-lg mt-3 leading-relaxed">
-            Chúng tôi cung cấp dải sản phẩm tròng kính chất lượng, dịch vụ gia công Lab RX chuẩn xác và chính sách đồng hành phát triển bền vững cùng các cửa hàng mắt kính trên toàn quốc.
-          </p>
-        </div>
+        {/* Deep Navy Box matching preview.png Section 05 */}
+        <div className="rounded-[32px] sm:rounded-[40px] p-8 sm:p-12 lg:p-14 text-white shadow-2xl relative overflow-hidden" style={{ background: 'var(--gradient-b2b)' }}>
+          
+          {/* Subtle background glow */}
+          <div className="absolute -right-20 -top-20 w-80 h-80 bg-[var(--button-start)]/15 rounded-full blur-3xl pointer-events-none" />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {partnerValues.map((val, idx) => (
-            <div
-              key={idx}
-              className="bg-white/10 backdrop-blur-md p-6 rounded-3xl space-y-3 border border-white/15 flex flex-col justify-between"
-            >
-              <div className="space-y-3">
-                <div className="w-10 h-10 rounded-xl bg-white/15 flex items-center justify-center">
-                  {val.icon}
+          {/* Top Row: Eyebrow + Heading + CTA Button */}
+          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 relative z-10">
+            <div className="max-w-2xl space-y-2.5">
+              <div className="text-xs font-bold text-cyan-300 uppercase tracking-wider">
+                05 / DÀNH CHO ĐỐI TÁC
+              </div>
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight leading-tight">
+                Cùng RockyLens mở rộng giá trị cho cửa hàng mắt kính.
+              </h2>
+              <p className="text-white/80 text-sm sm:text-base leading-relaxed pt-1">
+                Không chỉ là một danh mục tròng kính, RockyLens hướng đến hỗ trợ cửa hàng bằng thông tin sản phẩm dễ sử dụng, tài liệu kỹ thuật và kênh trao đổi trực tiếp.
+              </p>
+            </div>
+
+            <div className="shrink-0 pb-1">
+              <button
+                type="button"
+                onClick={openB2BQuoteModal}
+                className="px-6 py-3 rounded-full bg-white text-[#003B50] font-bold text-sm hover:bg-slate-100 transition-all cursor-pointer shadow-md inline-flex items-center gap-1.5 active:scale-95"
+              >
+                <span>Liên hệ hợp tác</span>
+                <span>&#8599;</span>
+              </button>
+            </div>
+          </div>
+
+          {/* 4 Feature Columns in Divided Box */}
+          <div className="mt-10 rounded-2xl border border-white/15 bg-white/[0.04] p-6 sm:p-7 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-white/15 gap-6 sm:gap-0 relative z-10">
+            {partnerFeatures.map((item, idx) => (
+              <div key={idx} className="sm:px-6 first:pl-0 last:pr-0 pt-4 sm:pt-0 first:pt-0">
+                <div className="text-xs font-mono font-bold text-cyan-300">
+                  {item.num}
                 </div>
-                <h3 className="text-lg font-bold text-white">
-                  {val.title}
+                <h3 className="text-base font-bold text-white mt-2">
+                  {item.title}
                 </h3>
-                <p className="text-slate-200 text-sm leading-relaxed">
-                  {val.description}
+                <p className="text-xs sm:text-sm text-white/70 mt-1 leading-relaxed">
+                  {item.desc}
                 </p>
               </div>
-            </div>
-          ))}
-        </div>
-
-        {/* B2B Action Card */}
-        <div className="p-8 sm:p-10 rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 flex flex-col lg:flex-row items-center justify-between gap-8">
-          <div className="space-y-2 text-center lg:text-left">
-            <div className="text-2xl font-bold text-white">
-              Bạn Là Cửa Hàng Kính Mắt Đang Tìm Nguồn Cung Ứng Tin Cậy?
-            </div>
-            <p className="text-slate-200 text-sm sm:text-base max-w-xl">
-              Kết nối với đội ngũ phát triển đại lý của Rocky để tìm hiểu quy trình hợp tác, chính sách hỗ trợ điểm bán và tham quan dịch vụ Lab RX.
-            </p>
+            ))}
           </div>
-          <div className="flex flex-wrap items-center justify-center gap-4 shrink-0">
-            <button
-              type="button"
-              onClick={openB2BQuoteModal}
-              className="button-primary px-7 py-3.5 rounded-full text-base transition-colors text-center cursor-pointer shadow-xs inline-flex items-center space-x-2"
-            >
-              <span>Nhận Báo Giá Cho Đại Lý</span>
-              <ArrowUpRight className="w-4 h-4 ml-1" />
-            </button>
-            <Link
-              href="/danh-cho-doi-tac/"
-              className="px-7 py-3.5 rounded-full bg-white/15 hover:bg-white/25 text-white font-bold text-base transition-colors text-center inline-flex items-center space-x-2 border border-white/20"
-            >
-              <span>Chính Sách Hợp Tác</span>
-              <ArrowRight className="w-4 h-4" />
-            </Link>
+
+          {/* Footer Info Strip: Direct Connect + Phone + Email */}
+          <div className="mt-8 pt-6 border-t border-white/10 flex flex-wrap items-center gap-4 sm:gap-8 text-xs sm:text-sm relative z-10">
+            <span className="text-[11px] font-bold uppercase tracking-widest text-cyan-300">
+              KẾT NỐI TRỰC TIẾP
+            </span>
             <a
               href="tel:0933102653"
-              className="px-6 py-3.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-semibold text-sm transition-colors text-center inline-flex items-center space-x-2 border border-white/15"
+              className="font-bold text-white hover:text-cyan-200 transition-colors"
             >
-              <Phone className="w-4 h-4 text-[var(--button-start)]" />
-              <span>0933 102 653</span>
+              0933 102 653
+            </a>
+            <a
+              href="mailto:b2b@rockylens.com"
+              className="text-white/80 hover:text-white transition-colors"
+            >
+              b2b@rockylens.com
             </a>
           </div>
-        </div>
 
-        <div className="text-center text-xs text-slate-300">
-          * Rocky bảo mật thông tin kinh doanh và không công khai bảng giá sỉ hay chính sách chiết khấu trên website đại chúng. Vui lòng liên hệ trực tiếp bộ phận B2B để nhận thông tin hợp tác chi tiết.
         </div>
 
       </div>

@@ -649,549 +649,271 @@
     </section>
 
     <!-- ========================================================= -->
-    <!-- SECTION 3 — EXPLORE ROCKY LENSES                          -->
-    <!-- Mục tiêu: Giúp người tiêu dùng khám phá theo nhu cầu      -->
-    <!-- Bố cục: 6 Card lớn (3 ô / hàng), hover specs, CTA rõ ràng -->
+    <!-- SECTION 3 — EXPLORE ROCKY LENSES (01 / DANH MỤC SẢN PHẨM) -->
+    <!-- Bố cục & nội dung chuẩn theo preview.png                  -->
     <!-- ========================================================= -->
     <section id="trong-kinh" class="relative py-20 px-6 bg-transparent overflow-hidden">
-      <div class="max-w-7xl mx-auto space-y-16 relative z-10">
+      <div class="max-w-7xl mx-auto space-y-8 relative z-10">
         
-        <div class="max-w-3xl">
-          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-heading tracking-tight">
-            Mỗi nhu cầu, một lựa chọn phù hợp.
-          </h2>
-          <p class="text-slate-700 text-lg sm:text-xl mt-3 leading-relaxed motion-9">
-            Từ những khoảnh khắc đời thường giản dị đến những chân trời rộng mở, tầm nhìn luôn là chiếc cầu nối để bạn trọn vẹn cảm nhận vẻ đẹp của thế giới.
-          </p>
+        <!-- Header Row -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+          <div class="max-w-3xl space-y-2.5">
+            <div class="text-xs font-bold text-primary tracking-wider uppercase">
+              01 / DANH MỤC SẢN PHẨM
+            </div>
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-heading tracking-tight leading-[1.14]">
+              Khám phá các giải pháp <span class="text-transparent bg-clip-text bg-gradient-to-r from-[var(--button-start)] via-[var(--button-middle)] to-[var(--button-end)]">tròng kính</span> RockyLens.
+            </h2>
+            <p class="text-brand-muted text-base sm:text-lg leading-relaxed">
+              Từ nhu cầu nhìn thường ngày đến những yêu cầu chuyên biệt, mỗi nhóm tròng kính có những đặc điểm và công nghệ riêng.
+            </p>
+          </div>
+          <div class="shrink-0 pb-1">
+            <a href="trong-kinh/" class="text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 transition-colors">
+              <span>Xem các nhóm sản phẩm</span>
+              <span>&#8599;</span>
+            </a>
+          </div>
         </div>
 
-        <!-- 6 Large Solution Cards (3 per row: 2 rows of 3) -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Filter tabs -->
+        <div class="flex flex-wrap items-center gap-2 pt-1" id="product-category-filters">
+          <button type="button" onclick="filterProductSolutions('all', this)" class="product-filter-btn px-5 py-2 rounded-full text-xs font-bold transition-all cursor-pointer bg-[var(--b2b-end)] text-white shadow-xs">
+            Tất cả
+          </button>
+          <button type="button" onclick="filterProductSolutions('work', this)" class="product-filter-btn px-5 py-2 rounded-full text-xs font-bold transition-all cursor-pointer bg-white text-slate-700 hover:bg-slate-100 border border-slate-200/90">
+            Làm việc
+          </button>
+          <button type="button" onclick="filterProductSolutions('outdoor', this)" class="product-filter-btn px-5 py-2 rounded-full text-xs font-bold transition-all cursor-pointer bg-white text-slate-700 hover:bg-slate-100 border border-slate-200/90">
+            Ngoài trời
+          </button>
+          <button type="button" onclick="filterProductSolutions('special', this)" class="product-filter-btn px-5 py-2 rounded-full text-xs font-bold transition-all cursor-pointer bg-white text-slate-700 hover:bg-slate-100 border border-slate-200/90">
+            Chuyên biệt
+          </button>
+        </div>
+
+        <!-- 6 Solution Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-2" id="product-cards-grid">
           
-          <!-- Card 1: Khi Lái Xe & Đi Mưa -->
-          <div class="group relative bg-white motion-float-1 rounded-3xl overflow-hidden flex flex-col justify-between transition-all duration-300">
+          <!-- Card 1 -->
+          <div class="product-sol-card card-surface rounded-[28px] p-6 sm:p-7 shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between border border-[var(--color-border)]/50 group bg-white" data-group="outdoor">
             <div>
-              <div class="h-64 sm:h-72 bg-slate-900/5 overflow-hidden flex items-center justify-center p-4 relative">
-                <img src="assets/uploads/solutions/sol_kinh_lai_xe.png" alt="Tròng kính lái xe ban đêm DriveShield" class="w-full h-full object-contain rounded-2xl transition-transform duration-500 group-hover:scale-105">
-                <span class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-[var(--color-primary)] text-xs sm:text-sm font-bold border border-slate-200/80 shadow-xs">
-                  Lái Xe Ban Đêm & Mưa
-                </span>
+              <div class="text-[11px] font-mono font-semibold text-slate-400">01 / 06</div>
+              <div class="aspect-square w-full rounded-2xl overflow-hidden bg-slate-50/50 relative my-4 flex items-center justify-center p-2">
+                <img src="assets/images/technologies/sol_kinh_lai_xe.png" alt="Khi lái xe & ban đêm" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
               </div>
-              <div class="p-6 sm:p-7 space-y-3">
-                <h3 class="text-2xl font-bold text-heading group-hover:text-[var(--color-primary)] transition-colors">
-                  Làm Chủ Mọi Cung Đường Đêm & Mưa.
-                </h3>
-                <p class="text-slate-600 text-base leading-relaxed">
-                  Chấm dứt nỗi ám ảnh chói đèn pha và nhòe sương kính. DriveShield mang lại tầm nhìn sắc nét, êm dịu, giúp bạn vững tay lái và an tâm về nhà trong mọi điều kiện thời tiết.
-                </p>
-                <div class="pt-2 flex flex-wrap gap-2 text-sm font-semibold text-slate-700">
-                  <span class="px-3 py-1 rounded-lg bg-slate-100">Dịu mắt ban đêm</span>
-                  <span class="px-3 py-1 rounded-lg bg-slate-100">Hạn chế bám nước mưa</span>
-                  <span class="px-3 py-1 rounded-lg bg-slate-100">Hạn chế lóa đèn pha</span>
-                </div>
+              <div class="space-y-1.5 pt-1">
+                <div class="text-xs font-bold text-primary tracking-wide uppercase">DI CHUYỂN</div>
+                <h3 class="text-lg font-bold text-heading leading-snug">Khi lái xe & ban đêm</h3>
+                <p class="text-brand-muted text-sm leading-relaxed">Tìm hiểu các đặc điểm tròng kính liên quan đến ánh sáng chói và nhu cầu di chuyển.</p>
               </div>
             </div>
-            <div class="p-6 sm:p-7 pt-0">
-              <a href="trong-kinh/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-full border border-slate-700 hover:border-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-white text-slate-800 font-semibold text-base transition-colors block text-center">
-                Khám phá ngay
+            <div class="pt-5 mt-4 border-t border-slate-100 flex items-center">
+              <a href="trong-kinh/rocky-driveshield-night-vision/" class="text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                <span>Xem giải pháp</span>
+                <span>&#8599;</span>
               </a>
-            </div>
-
-            <!-- Hover Specs Overlay (Layer 3: Professional Technical Details) -->
-            <div class="absolute inset-0 bg-white/98 backdrop-blur-md text-heading p-6 sm:p-7 rounded-3xl flex flex-col justify-between opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-20 shadow-2xl">
-              <div class="space-y-4">
-                <div class="flex items-center justify-between">
-                  <span class="px-3 py-1 rounded-full bg-teal-50 text-[var(--color-primary)] text-[13px] font-bold">
-                    Thông Tin Sản Phẩm
-                  </span>
-                  <span class="text-sm text-slate-500 font-semibold">Tầm Nhìn Lái Xe</span>
-                </div>
-                <h4 class="text-2xl font-black text-heading">DriveShield Ruby AR</h4>
-                <div class="space-y-2 text-base pt-2">
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
-                    <span class="text-slate-600 font-medium">Tính năng nổi bật:</span>
-                    <span class="font-bold text-[var(--color-primary)] text-right ml-2">Giảm chói đèn xe &amp; trượt nước mưa</span>
-                  </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
-                    <span class="text-slate-600 font-medium">Công nghệ xử lý:</span>
-                    <span class="font-bold text-heading text-right ml-2">Phủ phân cực lọc ánh sáng chói</span>
-                  </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
-                    <span class="text-slate-600 font-medium">Trải nghiệm thị giác:</span>
-                    <span class="font-bold text-heading text-right ml-2">Tầm nhìn êm dịu, tăng tương phản đêm</span>
-                  </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
-                    <span class="text-slate-600 font-medium">Tùy chọn chiết suất:</span>
-                    <span class="font-bold text-heading text-right ml-2">1.56 | 1.60 | 1.67</span>
-                  </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
-                    <span class="text-slate-600 font-medium">Chính sách bảo hành:</span>
-                    <span class="font-bold text-heading text-right ml-2">24 tháng chính hãng</span>
-                  </div>
-                </div>
-              </div>
-              <div class="pt-4">
-                <a href="trong-kinh/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold text-base transition-colors block text-center">
-                  Xem chi tiết dòng tròng &rarr;
-                </a>
-              </div>
             </div>
           </div>
 
-          <!-- Card 2: Cho Ngày Dài Làm Việc -->
-          <div class="group relative bg-white motion-float-2 rounded-3xl overflow-hidden flex flex-col justify-between transition-all duration-300">
+          <!-- Card 2 -->
+          <div class="product-sol-card card-surface rounded-[28px] p-6 sm:p-7 shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between border border-[var(--color-border)]/50 group bg-white" data-group="work">
             <div>
-              <div class="h-64 sm:h-72 bg-slate-900/5 overflow-hidden flex items-center justify-center p-4 relative">
-                <img src="assets/uploads/solutions/sol_chong_tia_uv.png" alt="Tròng kính lọc ánh sáng xanh BlueCut" class="w-full h-full object-contain rounded-2xl transition-transform duration-500 group-hover:scale-105">
-                <span class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-[var(--color-primary)] text-xs sm:text-sm font-bold border border-slate-200/80 shadow-xs">
-                  Cho Ngày Dài Làm Việc
-                </span>
+              <div class="text-[11px] font-mono font-semibold text-slate-400">02 / 06</div>
+              <div class="aspect-square w-full rounded-2xl overflow-hidden bg-slate-50/50 relative my-4 flex items-center justify-center p-2">
+                <img src="assets/images/technologies/sol_chong_tia_uv.png" alt="Làm việc với màn hình" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
               </div>
-              <div class="p-6 sm:p-7 space-y-3">
-                <h3 class="text-2xl font-bold text-heading group-hover:text-[var(--color-primary)] transition-colors">
-                  Tạm Biệt Nhức Mỏi Mắt Mùa Chạy Deadline.
-                </h3>
-                <p class="text-slate-600 text-base leading-relaxed">
-                  8 tiếng nhìn màn hình không còn là rào cản. Tròng kính BlueCut chặn đứng ánh sáng xanh có hại, giữ màu sắc chân thực để đôi mắt luôn thư giãn dù bạn làm việc hay giải trí trọn ngày dài.
-                </p>
-                <div class="pt-2 flex flex-wrap gap-2 text-sm font-semibold text-slate-700">
-                  <span class="px-3 py-1 rounded-lg bg-slate-100">Lọc ánh sáng xanh có hại</span>
-                  <span class="px-3 py-1 rounded-lg bg-slate-100">Màu sắc tự nhiên</span>
-                  <span class="px-3 py-1 rounded-lg bg-slate-100">Hạn chế trầy xước</span>
-                </div>
+              <div class="space-y-1.5 pt-1">
+                <div class="text-xs font-bold text-primary tracking-wide uppercase">HỌC TẬP & LÀM VIỆC</div>
+                <h3 class="text-lg font-bold text-heading leading-snug">Làm việc với màn hình</h3>
+                <p class="text-brand-muted text-sm leading-relaxed">Tìm hiểu lớp phủ, các lựa chọn tròng kính và thói quen sử dụng thiết bị số.</p>
               </div>
             </div>
-            <div class="p-6 sm:p-7 pt-0">
-              <a href="trong-kinh/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-full border border-slate-700 hover:border-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-white text-slate-800 font-semibold text-base transition-colors block text-center">
-                Khám phá ngay
+            <div class="pt-5 mt-4 border-t border-slate-100 flex items-center">
+              <a href="trong-kinh/rocky-156-bluecut-shmc/" class="text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                <span>Xem giải pháp</span>
+                <span>&#8599;</span>
               </a>
-            </div>
-
-            <!-- Hover Specs Overlay -->
-            <div class="absolute inset-0 bg-white/98 backdrop-blur-md text-heading p-6 sm:p-7 rounded-3xl flex flex-col justify-between opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-20 shadow-2xl">
-              <div class="space-y-4">
-                <div class="flex items-center justify-between">
-                  <span class="px-3 py-1 rounded-full bg-teal-50 text-[var(--color-primary)] text-[13px] font-bold">
-                    Thông Tin Sản Phẩm
-                  </span>
-                  <span class="text-sm text-slate-500 font-semibold">Bảo Vệ Mắt Điện Tử</span>
-                </div>
-                <h4 class="text-2xl font-black text-heading">BlueCut UV420 Relax</h4>
-                <div class="space-y-2 text-base pt-2">
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
-                    <span class="text-slate-600 font-medium">Tính năng nổi bật:</span>
-                    <span class="font-bold text-[var(--color-primary)] text-right ml-2">Ngăn ánh sáng xanh màn hình số</span>
-                  </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
-                    <span class="text-slate-600 font-medium">Công nghệ xử lý:</span>
-                    <span class="font-bold text-heading text-right ml-2">Phủ chân không Nano BlueCut UV420</span>
-                  </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
-                    <span class="text-slate-600 font-medium">Trải nghiệm thị giác:</span>
-                    <span class="font-bold text-heading text-right ml-2">Màu sắc tự nhiên, giảm mỏi mắt</span>
-                  </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
-                    <span class="text-slate-600 font-medium">Tùy chọn chiết suất:</span>
-                    <span class="font-bold text-heading text-right ml-2">1.56 | 1.60 | 1.67 | 1.74</span>
-                  </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
-                    <span class="text-slate-600 font-medium">Chính sách bảo hành:</span>
-                    <span class="font-bold text-heading text-right ml-2">24 tháng chính hãng</span>
-                  </div>
-                </div>
-              </div>
-              <div class="pt-4">
-                <a href="trong-kinh/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold text-base transition-colors block text-center">
-                  Xem chi tiết dòng tròng &rarr;
-                </a>
-              </div>
             </div>
           </div>
 
-          <!-- Card 3: Cho Những Ngày Đầy Nắng -->
-          <div class="group relative bg-white motion-float-3 rounded-3xl overflow-hidden flex flex-col justify-between transition-all duration-300">
+          <!-- Card 3 -->
+          <div class="product-sol-card card-surface rounded-[28px] p-6 sm:p-7 shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between border border-[var(--color-border)]/50 group bg-white" data-group="outdoor">
             <div>
-              <div class="h-64 sm:h-72 bg-slate-900/5 overflow-hidden flex items-center justify-center p-4 relative">
-                <img src="assets/uploads/solutions/sol_doi_mau.png" alt="Tròng kính đổi màu ngoài trời Fast-Change" class="w-full h-full object-contain rounded-2xl transition-transform duration-500 group-hover:scale-105">
-                <span class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-[var(--color-primary)] text-xs sm:text-sm font-bold border border-slate-200/80 shadow-xs">
-                  Cho Những Ngày Đầy Nắng
-                </span>
+              <div class="text-[11px] font-mono font-semibold text-slate-400">03 / 06</div>
+              <div class="aspect-square w-full rounded-2xl overflow-hidden bg-slate-50/50 relative my-4 flex items-center justify-center p-2">
+                <img src="assets/images/technologies/sol_doi_mau.png" alt="Tròng kính đổi màu" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
               </div>
-              <div class="p-6 sm:p-7 space-y-3">
-                <h3 class="text-2xl font-bold text-heading group-hover:text-[var(--color-primary)] transition-colors">
-                  1 Chiếc Kính. 2 Phong Cách. Tiện Lợi Tối Đa.
-                </h3>
-                <p class="text-slate-600 text-base leading-relaxed">
-                  Trong suốt khi ở nhà, tự động chuyển màu râm sành điệu khi ra nắng. Bảo vệ mắt toàn diện khỏi tia UV mà không cần lỉnh kỉnh đổi qua lại giữa kính cận và kính mát.
-                </p>
-                <div class="pt-2 flex flex-wrap gap-2 text-sm font-semibold text-slate-700">
-                  <span class="px-3 py-1 rounded-lg bg-slate-100">Đổi màu râm khi ra nắng</span>
-                  <span class="px-3 py-1 rounded-lg bg-slate-100">Trong suốt khi trong nhà</span>
-                  <span class="px-3 py-1 rounded-lg bg-slate-100">Bảo vệ trước tia UV</span>
-                </div>
+              <div class="space-y-1.5 pt-1">
+                <div class="text-xs font-bold text-primary tracking-wide uppercase">NGOÀI TRỜI</div>
+                <h3 class="text-lg font-bold text-heading leading-snug">Tròng kính đổi màu</h3>
+                <p class="text-brand-muted text-sm leading-relaxed">Khám phá sự thay đổi sắc độ của tròng trong các điều kiện ánh sáng phù hợp.</p>
               </div>
             </div>
-            <div class="p-6 sm:p-7 pt-0">
-              <a href="trong-kinh/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-full border border-slate-700 hover:border-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-white text-slate-800 font-semibold text-base transition-colors block text-center">
-                Khám phá ngay
+            <div class="pt-5 mt-4 border-t border-slate-100 flex items-center">
+              <a href="trong-kinh/rocky-trendy-photochromic-grey/" class="text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                <span>Xem giải pháp</span>
+                <span>&#8599;</span>
               </a>
-            </div>
-
-            <!-- Hover Specs Overlay -->
-            <div class="absolute inset-0 bg-white/98 backdrop-blur-md text-heading p-6 sm:p-7 rounded-3xl flex flex-col justify-between opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-20 shadow-2xl">
-              <div class="space-y-4">
-                <div class="flex items-center justify-between">
-                  <span class="px-3 py-1 rounded-full bg-teal-50 text-[var(--color-primary)] text-[13px] font-bold">
-                    Thông Tin Sản Phẩm
-                  </span>
-                  <span class="text-sm text-slate-500 font-semibold">Đổi Màu Tiện Lợi</span>
-                </div>
-                <h4 class="text-2xl font-black text-heading">Fast-Change Spin-Coat</h4>
-                <div class="space-y-2 text-base pt-2">
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
-                    <span class="text-slate-600 font-medium">Tính năng nổi bật:</span>
-                    <span class="font-bold text-[var(--color-primary)] text-right ml-2">Đổi màu râm linh hoạt khi ra nắng</span>
-                  </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
-                    <span class="text-slate-600 font-medium">Công nghệ xử lý:</span>
-                    <span class="font-bold text-heading text-right ml-2">Phủ đổi màu bề mặt Spin-Coat UV</span>
-                  </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
-                    <span class="text-slate-600 font-medium">Trải nghiệm thị giác:</span>
-                    <span class="font-bold text-heading text-right ml-2">Dịu mắt ngoài trời, trong suốt trong nhà</span>
-                  </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
-                    <span class="text-slate-600 font-medium">Tùy chọn chiết suất:</span>
-                    <span class="font-bold text-heading text-right ml-2">1.56 | 1.60 | 1.67</span>
-                  </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
-                    <span class="text-slate-600 font-medium">Chính sách bảo hành:</span>
-                    <span class="font-bold text-heading text-right ml-2">24 tháng chính hãng</span>
-                  </div>
-                </div>
-              </div>
-              <div class="pt-4">
-                <a href="trong-kinh/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold text-base transition-colors block text-center">
-                  Xem chi tiết dòng tròng &rarr;
-                </a>
-              </div>
             </div>
           </div>
 
-          <!-- Card 4: Cho Chiếc Kính Gọn Nhẹ Hơn -->
-          <div class="group relative bg-white motion-float-4 rounded-3xl overflow-hidden flex flex-col justify-between transition-all duration-300">
+          <!-- Card 4 -->
+          <div class="product-sol-card card-surface rounded-[28px] p-6 sm:p-7 shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between border border-[var(--color-border)]/50 group bg-white" data-group="special">
             <div>
-              <div class="h-64 sm:h-72 bg-slate-900/5 overflow-hidden flex items-center justify-center p-4 relative">
-                <img src="assets/uploads/solutions/sol_kinh_khoan_va_dap.png" alt="Tròng kính mỏng nhẹ chống va đập" class="w-full h-full object-contain rounded-2xl transition-transform duration-500 group-hover:scale-105">
-                <span class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-[var(--color-primary)] text-xs sm:text-sm font-bold border border-slate-200/80 shadow-xs">
-                  Gọn Nhẹ & Bền Bỉ
-                </span>
+              <div class="text-[11px] font-mono font-semibold text-slate-400">04 / 06</div>
+              <div class="aspect-square w-full rounded-2xl overflow-hidden bg-slate-50/50 relative my-4 flex items-center justify-center p-2">
+                <img src="assets/images/technologies/sol_kinh_khoan_va_dap.png" alt="Mỏng nhẹ & gọng không viền" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
               </div>
-              <div class="p-6 sm:p-7 space-y-3">
-                <h3 class="text-2xl font-bold text-heading group-hover:text-[var(--color-primary)] transition-colors">
-                  Cho Chiếc Kính Mỏng Nhẹ Hơn
-                </h3>
-                <p class="text-slate-600 text-base leading-relaxed">
-                  Lựa chọn tối ưu về độ mỏng và trọng lượng nhẹ cho người có số độ cao, đồng thời có độ dẻo dai cao phù hợp với các kiểu gọng khoan ốc thanh mảnh.
-                </p>
-                <div class="pt-2 flex flex-wrap gap-2 text-sm font-semibold text-slate-700">
-                  <span class="px-3 py-1 rounded-lg bg-slate-100">Mỏng nhẹ thẩm mỹ</span>
-                  <span class="px-3 py-1 rounded-lg bg-slate-100">Dẻo dai chịu lực</span>
-                  <span class="px-3 py-1 rounded-lg bg-slate-100">Thích hợp gọng không viền</span>
-                </div>
+              <div class="space-y-1.5 pt-1">
+                <div class="text-xs font-bold text-primary tracking-wide uppercase">THẨM MỸ & ĐỘ MỎNG</div>
+                <h3 class="text-lg font-bold text-heading leading-snug">Mỏng nhẹ & gọng không viền</h3>
+                <p class="text-brand-muted text-sm leading-relaxed">Tìm hiểu vật liệu, chiết suất và cách chọn tròng theo cấu trúc gọng.</p>
               </div>
             </div>
-            <div class="p-6 sm:p-7 pt-0">
-              <a href="trong-kinh/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-full border border-slate-700 hover:border-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-white text-slate-800 font-semibold text-base transition-colors block text-center">
-                Khám phá ngay
+            <div class="pt-5 mt-4 border-t border-slate-100 flex items-center">
+              <a href="trong-kinh/rocky-160-mr8-aspheric/" class="text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                <span>Xem giải pháp</span>
+                <span>&#8599;</span>
               </a>
-            </div>
-
-            <!-- Hover Specs Overlay -->
-            <div class="absolute inset-0 bg-white/98 backdrop-blur-md text-heading p-6 sm:p-7 rounded-3xl flex flex-col justify-between opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-20 shadow-2xl">
-              <div class="space-y-4">
-                <div class="flex items-center justify-between">
-                  <span class="px-3 py-1 rounded-full bg-teal-50 text-[var(--color-primary)] text-[13px] font-bold">
-                    Thông Tin Sản Phẩm
-                  </span>
-                  <span class="text-sm text-slate-500 font-semibold">Gọn Nhẹ &amp; Bền Bỉ</span>
-                </div>
-                <h4 class="text-2xl font-black text-heading">Tough Aspheric MR Series</h4>
-                <div class="space-y-2 text-base pt-2">
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
-                    <span class="text-slate-600 font-medium">Tính năng nổi bật:</span>
-                    <span class="font-bold text-[var(--color-primary)] text-right ml-2">Tối ưu độ mỏng &amp; chịu lực va đập</span>
-                  </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
-                    <span class="text-slate-600 font-medium">Công nghệ xử lý:</span>
-                    <span class="font-bold text-heading text-right ml-2">Phôi vật liệu dẻo dai MR Series</span>
-                  </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
-                    <span class="text-slate-600 font-medium">Trải nghiệm thị giác:</span>
-                    <span class="font-bold text-heading text-right ml-2">Nhẹ nhàng, triệt tiêu quang sai biên</span>
-                  </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
-                    <span class="text-slate-600 font-medium">Tùy chọn chiết suất:</span>
-                    <span class="font-bold text-heading text-right ml-2">1.60 | 1.67 | 1.74 siêu mỏng</span>
-                  </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
-                    <span class="text-slate-600 font-medium">Chính sách bảo hành:</span>
-                    <span class="font-bold text-heading text-right ml-2">24 tháng chính hãng</span>
-                  </div>
-                </div>
-              </div>
-              <div class="pt-4">
-                <a href="trong-kinh/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold text-base transition-colors block text-center">
-                  Xem chi tiết dòng tròng &rarr;
-                </a>
-              </div>
             </div>
           </div>
 
-          <!-- Card 5: Cho Nhu Cầu Nhìn Gần Và Xa -->
-          <div class="group relative bg-white motion-float-5 rounded-3xl overflow-hidden flex flex-col justify-between transition-all duration-300">
+          <!-- Card 5 -->
+          <div class="product-sol-card card-surface rounded-[28px] p-6 sm:p-7 shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between border border-[var(--color-border)]/50 group bg-white" data-group="work">
             <div>
-              <div class="h-64 sm:h-72 bg-slate-900/5 overflow-hidden flex items-center justify-center p-4 relative">
-                <img src="assets/uploads/solutions/sol_da_trong.png" alt="Tròng kính đa tròng kỹ thuật số CanRx" class="w-full h-full object-contain rounded-2xl transition-transform duration-500 group-hover:scale-105">
-                <span class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-[var(--color-primary)] text-xs sm:text-sm font-bold border border-slate-200/80 shadow-xs">
-                  Nhìn Rõ Nhiều Khoảng Cách
-                </span>
+              <div class="text-[11px] font-mono font-semibold text-slate-400">05 / 06</div>
+              <div class="aspect-square w-full rounded-2xl overflow-hidden bg-slate-50/50 relative my-4 flex items-center justify-center p-2">
+                <img src="assets/images/technologies/sol_da_trong.png" alt="Nhu cầu nhìn xa & gần" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
               </div>
-              <div class="p-6 sm:p-7 space-y-3">
-                <h3 class="text-2xl font-bold text-heading group-hover:text-[var(--color-primary)] transition-colors">
-                  Cho Nhu Cầu Nhìn Gần Và Xa
-                </h3>
-                <p class="text-slate-600 text-base leading-relaxed">
-                  Hỗ trợ chuyển tiếp êm ái giữa các khoảng cách nhìn xa khi lái xe, làm việc máy tính đến đọc sách gần trên cùng một mắt kính cho người tuổi trung niên.
-                </p>
-                <div class="pt-2 flex flex-wrap gap-2 text-sm font-semibold text-slate-700">
-                  <span class="px-3 py-1 rounded-lg bg-slate-100">Nhìn rõ xa - trung - gần</span>
-                  <span class="px-3 py-1 rounded-lg bg-slate-100">Chuyển tiếp êm ái</span>
-                  <span class="px-3 py-1 rounded-lg bg-slate-100">Tối ưu theo thói quen</span>
-                </div>
+              <div class="space-y-1.5 pt-1">
+                <div class="text-xs font-bold text-primary tracking-wide uppercase">NHIỀU KHOẢNG NHÌN</div>
+                <h3 class="text-lg font-bold text-heading leading-snug">Nhu cầu nhìn xa & gần</h3>
+                <p class="text-brand-muted text-sm leading-relaxed">Tìm hiểu tròng đa tròng và yếu tố cần cân nhắc khi nhìn ở nhiều khoảng cách.</p>
               </div>
             </div>
-            <div class="p-6 sm:p-7 pt-0">
-              <a href="trong-kinh/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-full border border-slate-700 hover:border-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-white text-slate-800 font-semibold text-base transition-colors block text-center">
-                Khám phá ngay
+            <div class="pt-5 mt-4 border-t border-slate-100 flex items-center">
+              <a href="trong-kinh/rocky-freeform-progressive-hd/" class="text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                <span>Xem giải pháp</span>
+                <span>&#8599;</span>
               </a>
-            </div>
-
-            <!-- Hover Specs Overlay -->
-            <div class="absolute inset-0 bg-white/98 backdrop-blur-md text-heading p-6 sm:p-7 rounded-3xl flex flex-col justify-between opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-20 shadow-2xl">
-              <div class="space-y-4">
-                <div class="flex items-center justify-between">
-                  <span class="px-3 py-1 rounded-full bg-teal-50 text-[var(--color-primary)] text-[13px] font-bold">
-                    Thông Tin Sản Phẩm
-                  </span>
-                  <span class="text-sm text-slate-500 font-semibold">Đa Khoảng Cách</span>
-                </div>
-                <h4 class="text-2xl font-black text-heading">CanRx Freeform HD</h4>
-                <div class="space-y-2 text-base pt-2">
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
-                    <span class="text-slate-600 font-medium">Tính năng nổi bật:</span>
-                    <span class="font-bold text-[var(--color-primary)] text-right ml-2">Nhìn rõ mọi cự ly Xa - Trung - Gần</span>
-                  </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
-                    <span class="text-slate-600 font-medium">Công nghệ xử lý:</span>
-                    <span class="font-bold text-heading text-right ml-2">Mài vi điểm kỹ thuật số Freeform HD</span>
-                  </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
-                    <span class="text-slate-600 font-medium">Trải nghiệm thị giác:</span>
-                    <span class="font-bold text-heading text-right ml-2">Vùng nhìn liền mạch, thích nghi nhanh</span>
-                  </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
-                    <span class="text-slate-600 font-medium">Tùy chọn chiết suất:</span>
-                    <span class="font-bold text-heading text-right ml-2">1.56 | 1.60 | 1.67</span>
-                  </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
-                    <span class="text-slate-600 font-medium">Chính sách bảo hành:</span>
-                    <span class="font-bold text-heading text-right ml-2">24 tháng chính hãng</span>
-                  </div>
-                </div>
-              </div>
-              <div class="pt-4">
-                <a href="trong-kinh/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold text-base transition-colors block text-center">
-                  Xem chi tiết dòng tròng &rarr;
-                </a>
-              </div>
             </div>
           </div>
 
-          <!-- Card 6: Đồng Hành Cùng Thị Lực Học Đường -->
-          <div class="group relative bg-white motion-float-6 rounded-3xl overflow-hidden flex flex-col justify-between transition-all duration-300">
+          <!-- Card 6 -->
+          <div class="product-sol-card card-surface rounded-[28px] p-6 sm:p-7 shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between border border-[var(--color-border)]/50 group bg-white" data-group="special">
             <div>
-              <div class="h-64 sm:h-72 bg-slate-900/5 overflow-hidden flex items-center justify-center p-4 relative">
-                <img src="assets/uploads/solutions/sol_kiem_soat_can_thi.png" alt="Tròng kính chăm sóc thị lực học đường" class="w-full h-full object-contain rounded-2xl transition-transform duration-500 group-hover:scale-105">
-                <span class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-[var(--color-primary)] text-xs sm:text-sm font-bold border border-slate-200/80 shadow-xs">
-                  Học Sinh & Trẻ Em
-                </span>
+              <div class="text-[11px] font-mono font-semibold text-slate-400">06 / 06</div>
+              <div class="aspect-square w-full rounded-2xl overflow-hidden bg-slate-50/50 relative my-4 flex items-center justify-center p-2">
+                <img src="assets/images/technologies/sol_kiem_soat_can_thi.png" alt="Thị lực học đường" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
               </div>
-              <div class="p-6 sm:p-7 space-y-3">
-                <h3 class="text-2xl font-bold text-heading group-hover:text-[var(--color-primary)] transition-colors">
-                  Đồng Hành Cùng Thị Lực Học Đường
-                </h3>
-                <p class="text-slate-600 text-base leading-relaxed">
-                  Thiết kế quang học hỗ trợ chăm sóc thị lực cho học sinh trong giai đoạn học tập cường độ cao, kết hợp vật liệu an toàn hạn chế nứt vỡ khi vận động.
-                </p>
-                <div class="pt-2 flex flex-wrap gap-2 text-sm font-semibold text-slate-700">
-                  <span class="px-3 py-1 rounded-lg bg-slate-100">Thiết kế cho lứa tuổi học sinh</span>
-                  <span class="px-3 py-1 rounded-lg bg-slate-100">Vật liệu an toàn chịu lực</span>
-                  <span class="px-3 py-1 rounded-lg bg-slate-100">Dễ dàng vệ sinh bụi bẩn</span>
-                </div>
+              <div class="space-y-1.5 pt-1">
+                <div class="text-xs font-bold text-primary tracking-wide uppercase">TRẺ EM & HỌC ĐƯỜNG</div>
+                <h3 class="text-lg font-bold text-heading leading-snug">Thị lực học đường</h3>
+                <p class="text-brand-muted text-sm leading-relaxed">Khám phá các thiết kế tròng dành cho trẻ và lưu ý khi lựa chọn.</p>
               </div>
             </div>
-            <div class="p-6 sm:p-7 pt-0">
-              <a href="trong-kinh/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-full border border-slate-700 hover:border-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-white text-slate-800 font-semibold text-base transition-colors block text-center">
-                Khám phá ngay
+            <div class="pt-5 mt-4 border-t border-slate-100 flex items-center">
+              <a href="trong-kinh/rocky-myocontrol-dims-kids/" class="text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                <span>Xem giải pháp</span>
+                <span>&#8599;</span>
               </a>
             </div>
-
-            <!-- Hover Specs Overlay -->
-            <div class="absolute inset-0 bg-white/98 backdrop-blur-md text-heading p-6 sm:p-7 rounded-3xl flex flex-col justify-between opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-20 shadow-2xl">
-              <div class="space-y-4">
-                <div class="flex items-center justify-between">
-                  <span class="px-3 py-1 rounded-full bg-teal-50 text-[var(--color-primary)] text-[13px] font-bold">
-                    Thông Tin Sản Phẩm
-                  </span>
-                  <span class="text-sm text-slate-500 font-semibold">Thị Lực Học Đường</span>
-                </div>
-                <h4 class="text-2xl font-black text-heading">Defocus MyoControl HD</h4>
-                <div class="space-y-2 text-base pt-2">
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
-                    <span class="text-slate-600 font-medium">Tính năng nổi bật:</span>
-                    <span class="font-bold text-[var(--color-primary)] text-right ml-2">Chăm sóc thị lực lứa tuổi học sinh</span>
-                  </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
-                    <span class="text-slate-600 font-medium">Công nghệ xử lý:</span>
-                    <span class="font-bold text-heading text-right ml-2">Vi thấu kính phân tán chu biên hội tụ</span>
-                  </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
-                    <span class="text-slate-600 font-medium">Trải nghiệm thị giác:</span>
-                    <span class="font-bold text-heading text-right ml-2">Sắc nét trung tâm, giảm mỏi điều tiết</span>
-                  </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
-                    <span class="text-slate-600 font-medium">Tùy chọn chiết suất:</span>
-                    <span class="font-bold text-heading text-right ml-2">1.56 | 1.60 | 1.67</span>
-                  </div>
-                  <div class="flex justify-between items-center py-2 px-3 rounded-xl bg-[var(--site-bg-start)]">
-                    <span class="text-slate-600 font-medium">Chính sách bảo hành:</span>
-                    <span class="font-bold text-heading text-right ml-2">24 tháng chính hãng</span>
-                  </div>
-                </div>
-              </div>
-              <div class="pt-4">
-                <a href="trong-kinh/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold text-base transition-colors block text-center">
-                  Xem chi tiết dòng tròng &rarr;
-                </a>
-              </div>
-            </div>
-          </div></div>
+          </div>
 
         </div>
 
-        <!-- Action Button: Xem Thêm Toàn Bộ Catalogue -->
-        <div class="flex flex-col sm:flex-row items-center justify-center pt-4">
-          <a href="trong-kinh/" target="_blank" rel="noopener noreferrer" class="group inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[var(--b2b-end)] hover:bg-[var(--color-primary)] text-white font-bold text-base sm:text-lg transition-colors duration-200">
-            <span>Khám Phá Tất Cả Tròng Kính & Lựa Chọn Độ Mỏng</span>
-            <svg class="w-5 h-5 transition-transform duration-200 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-            </svg>
-          </a>
+        <!-- Footnote text from preview.png -->
+        <div class="pt-2 text-center text-xs text-brand-muted">
+          Thông số kỹ thuật và các lựa chọn cụ thể có thể khác nhau theo từng sản phẩm. Vui lòng tham khảo trang chi tiết hoặc liên hệ để xác nhận.
         </div>
 
       </div>
     </section>
 
     <!-- ========================================================= -->
-    <!-- SECTION 4 — TECHNOLOGY & QUALITY                          -->
-    <!-- Mục tiêu: Giúp khách hàng hiểu đặc tính tạo nên chất lượng -->
-    <!-- Giải thích bằng ngôn ngữ phổ thông, không dùng cam kết quá đà -->
+    <!-- SECTION 4 — TECHNOLOGY (03 / CÔNG NGHỆ TRÒNG KÍNH)        -->
+    <!-- Bố cục & nội dung chuẩn theo preview.png                  -->
     <!-- ========================================================= -->
     <section id="cong-nghe" class="relative py-20 px-6 bg-transparent overflow-hidden">
-      <div class="max-w-7xl mx-auto space-y-12 relative z-10">
+      <div class="max-w-7xl mx-auto space-y-10 relative z-10">
         
-        <div class="max-w-3xl">
-          <h2 class="text-2xl sm:text-4xl lg:text-5xl font-black text-heading tracking-tight">
-            Công nghệ và tiêu chuẩn chất lượng
+        <!-- Section Header matching preview.png Section 03 -->
+        <div class="max-w-3xl space-y-2.5">
+          <div class="text-xs font-bold text-primary tracking-wider uppercase">
+            03 / CÔNG NGHỆ TRÒNG KÍNH
+          </div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-heading tracking-tight leading-[1.14]">
+            Công nghệ tạo nên <span class="text-transparent bg-clip-text bg-gradient-to-r from-[var(--button-start)] via-[var(--button-middle)] to-[var(--button-end)]">sự khác biệt.</span>
           </h2>
-          <p class="text-slate-600 text-lg mt-3">
-            Đằng sau mỗi tròng kính là những lựa chọn về vật liệu, thiết kế và công nghệ chế tác. Hãy khám phá cách các yếu tố đó tạo nên những đặc tính khác nhau của tròng kính Rocky.
+          <p class="text-brand-muted text-base sm:text-lg leading-relaxed">
+            Từ vật liệu, lớp phủ đến thiết kế bề mặt, mỗi công nghệ giải quyết một vấn đề quang học khác nhau.
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- 3 Column Cards Grid matching preview.png -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
           
-          <div class="bg-white p-5 sm:p-6 rounded-3xl space-y-4 flex flex-col justify-between group shadow-xs border border-[var(--color-border)]/60 motion-float-1">
-            <div class="space-y-4">
-              <div class="aspect-[16/10] w-full rounded-2xl overflow-hidden bg-slate-200 relative">
-                <img src="assets/images/company/about-1.jpg" alt="Kho phôi và vật liệu quang học Rocky" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-heading text-[13px] font-bold">
-                  Phôi Monomer Quang Học
-                </span>
+          <!-- Card 1 -->
+          <div class="card-surface rounded-[28px] overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between border border-[var(--color-border)]/50 group bg-white">
+            <div>
+              <div class="aspect-[16/10] w-full bg-slate-100 overflow-hidden relative">
+                <img src="assets/images/technologies/tech_sec3_1.jpg" alt="Độ mỏng cần được hiểu đúng." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
               </div>
-              <h3 class="text-xl font-bold text-heading">Lựa Chọn Vật Liệu Phù Hợp</h3>
-              <p class="text-slate-700 text-sm leading-relaxed">
-                Vật liệu và cấu trúc phôi quyết định độ trong suốt, trọng lượng nhẹ và độ bền cơ học của tròng kính, mang lại cảm giác thoải mái khi bạn đeo kính suốt ngày dài.
-              </p>
+              <div class="p-6 sm:p-7 space-y-2">
+                <div class="text-xs font-bold text-primary tracking-wider uppercase">
+                  01 — VẬT LIỆU &amp; CHIẾT SUẤT
+                </div>
+                <h3 class="text-lg sm:text-xl font-bold text-heading leading-snug">
+                  Độ mỏng cần được hiểu đúng.
+                </h3>
+                <p class="text-brand-muted text-sm leading-relaxed">
+                  Chiết suất, độ kính và lựa chọn gọng cùng ảnh hưởng đến độ dày thực tế của tròng.
+                </p>
+              </div>
             </div>
           </div>
 
-          <div class="bg-white p-5 sm:p-6 rounded-3xl space-y-4 flex flex-col justify-between group shadow-xs border border-[var(--color-border)]/60 motion-float-2">
-            <div class="space-y-4">
-              <div class="aspect-[16/10] w-full rounded-2xl overflow-hidden bg-slate-200 relative">
-                <img src="assets/images/technologies/bui.png" alt="Công nghệ phủ chân không đa tầng chống trầy xước" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-heading text-[13px] font-bold">
-                  Phủ Chân Không Nano
-                </span>
+          <!-- Card 2 -->
+          <div class="card-surface rounded-[28px] overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between border border-[var(--color-border)]/50 group bg-white">
+            <div>
+              <div class="aspect-[16/10] w-full bg-slate-100 overflow-hidden relative">
+                <img src="assets/images/technologies/tech_sec3_2.jpg" alt="Dễ vệ sinh, thuận tiện sử dụng." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
               </div>
-              <h3 class="text-xl font-bold text-heading">Hạn Chế Bám Bẩn, Dễ Vệ Sinh</h3>
-              <p class="text-slate-700 text-sm leading-relaxed">
-                Các lớp phủ bề mặt chuyên biệt giúp hạn chế trầy xước trong quá trình lau chùi, trượt hạt nước mưa khi đi đường và giúp bạn dễ dàng làm sạch tròng kính.
-              </p>
+              <div class="p-6 sm:p-7 space-y-2">
+                <div class="text-xs font-bold text-primary tracking-wider uppercase">
+                  02 — CÔNG NGHỆ LỚP PHỦ
+                </div>
+                <h3 class="text-lg sm:text-xl font-bold text-heading leading-snug">
+                  Dễ vệ sinh, thuận tiện sử dụng.
+                </h3>
+                <p class="text-brand-muted text-sm leading-relaxed">
+                  Tìm hiểu các đặc điểm lớp phủ giúp hạn chế bám bẩn hoặc phản xạ tùy dòng tròng.
+                </p>
+              </div>
             </div>
           </div>
 
-          <div class="bg-white p-5 sm:p-6 rounded-3xl space-y-4 flex flex-col justify-between group shadow-xs border border-[var(--color-border)]/60 motion-float-3">
-            <div class="space-y-4">
-              <div class="aspect-[16/10] w-full rounded-2xl overflow-hidden bg-slate-200 relative">
-                <img src="assets/images/technologies/do-kinh.jpg" alt="Dây chuyền mài kỹ thuật số Freeform CNC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-heading text-[13px] font-bold">
-                  Gia Công KTS Freeform
-                </span>
+          <!-- Card 3 -->
+          <div class="card-surface rounded-[28px] overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between border border-[var(--color-border)]/50 group bg-white">
+            <div>
+              <div class="aspect-[16/10] w-full bg-slate-100 overflow-hidden relative">
+                <img src="assets/images/technologies/tech_sec3_3.jpg" alt="Thiết kế theo đặc điểm sử dụng." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
               </div>
-              <h3 class="text-xl font-bold text-heading">Chú Trọng Độ Chính Xác</h3>
-              <p class="text-slate-700 text-sm leading-relaxed">
-                Công nghệ gia công kỹ thuật số tính toán mài vi điểm theo từng số độ và thông số gọng thực tế, mở rộng vùng nhìn rõ và giúp đôi mắt thích nghi tự nhiên hơn.
-              </p>
+              <div class="p-6 sm:p-7 space-y-2">
+                <div class="text-xs font-bold text-primary tracking-wider uppercase">
+                  03 — THIẾT KẾ QUANG HỌC
+                </div>
+                <h3 class="text-lg sm:text-xl font-bold text-heading leading-snug">
+                  Thiết kế theo đặc điểm sử dụng.
+                </h3>
+                <p class="text-brand-muted text-sm leading-relaxed">
+                  Freeform và các thiết kế quang học cần được đánh giá theo từng sản phẩm cụ thể.
+                </p>
+              </div>
             </div>
           </div>
 
-          <div class="bg-white p-5 sm:p-6 rounded-3xl space-y-4 flex flex-col justify-between group shadow-xs border border-[var(--color-border)]/60 motion-float-4">
-            <div class="space-y-4">
-              <div class="aspect-[16/10] w-full rounded-2xl overflow-hidden bg-slate-200 relative">
-                <img src="assets/images/company/about-3.jpg" alt="Quy trình kiểm soát chất lượng quang sai từng tròng" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-heading text-[13px] font-bold">
-                  Kiểm Định KCS Tiêu Chuẩn
-                </span>
-              </div>
-              <h3 class="text-xl font-bold text-heading">Quy Chuẩn Chất Lượng Quốc Tế</h3>
-              <p class="text-slate-700 text-sm leading-relaxed">
-                Quy trình sản xuất tuân thủ hệ thống quản lý chất lượng thiết bị y tế quốc tế ISO 13485:2016 cùng tiêu chuẩn chuyên môn của chuyên gia khúc xạ nhãn khoa.
-              </p>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- CTA Link -->
-        <div class="pt-4 flex justify-center sm:justify-start">
-          <a href="kham-pha-trong-kinh/" class="inline-flex items-center gap-2 text-[var(--color-primary)] hover:text-[var(--color-primary-hover)] font-bold text-base transition-colors">
-            <span>Tìm hiểu công nghệ Rocky</span>
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-            </svg>
-          </a>
         </div>
 
       </div>
@@ -1491,76 +1213,86 @@
     </section>
 
     <!-- ========================================================= -->
-    <!-- SECTION 6 — PARTNER WITH ROCKY (B2B GATEWAY)              -->
-    <!-- Mục tiêu: Mở ra cơ hội hợp tác cho cửa hàng, đại lý, lab -->
-    <!-- Giọng văn chuyên nghiệp, không công khai giá sỉ/chiết khấu -->
+    <!-- SECTION 6 — PARTNER WITH ROCKY (05 / DÀNH CHO ĐỐI TÁC)    -->
+    <!-- Bố cục thẻ bo tròn tông Navy chuẩn theo preview.png        -->
     <!-- ========================================================= -->
-    <section id="doi-tac" class="relative py-24 px-6 b2b-gradient text-white overflow-hidden">
-      <div class="absolute right-0 top-0 w-96 h-96 bg-[var(--button-start)]/20 rounded-full blur-3xl pointer-events-none"></div>
-
-      <div class="max-w-7xl mx-auto space-y-14 relative z-10">
+    <section id="doi-tac" class="relative py-16 sm:py-20 px-6 bg-transparent overflow-hidden">
+      <div class="max-w-7xl mx-auto relative z-10">
         
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Deep Navy Box matching preview.png Section 05 -->
+        <div class="rounded-[32px] sm:rounded-[40px] p-8 sm:p-12 lg:p-14 text-white shadow-2xl relative overflow-hidden" style="background: var(--gradient-b2b);">
           
-          <div class="lg:col-span-7 space-y-6">
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
-              Cùng Rocky mở rộng cơ hội hợp tác.
-            </h2>
+          <!-- Subtle background glow -->
+          <div class="absolute -right-20 -top-20 w-80 h-80 bg-[var(--button-start)]/15 rounded-full blur-3xl pointer-events-none"></div>
 
-            <p class="text-teal-300 text-xl font-bold">
-              Giải pháp quang học toàn diện dành cho cửa hàng mắt kính và đối tác phân phối
-            </p>
-
-            <p class="text-slate-200 text-base sm:text-lg leading-relaxed max-w-2xl">
-              Tìm hiểu danh mục tròng kính Rocky và kết nối với chúng tôi để trao đổi về cơ hội hợp tác dành cho cửa hàng kính mắt, đại lý và đối tác phân phối trên toàn quốc.
-            </p>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-              <div class="bg-white/10 backdrop-blur-md border border-white/15 p-5 rounded-2xl space-y-2 hover:bg-white/15 transition-all">
-                <span class="text-base font-bold text-white block">Lab RX Freeform Kỹ Thuật Số</span>
-                <p class="text-base text-slate-200">Xử lý các đơn hàng độ khó, loạn cao và đa tròng cá nhân hóa được gia công và kiểm định chuẩn xác trong 24 giờ.</p>
+          <!-- Top Row: Eyebrow + Heading + CTA Button -->
+          <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 relative z-10">
+            <div class="max-w-2xl space-y-2.5">
+              <div class="text-xs font-bold text-cyan-300 uppercase tracking-wider">
+                05 / DÀNH CHO ĐỐI TÁC
               </div>
-              <div class="bg-white/10 backdrop-blur-md border border-white/15 p-5 rounded-2xl space-y-2 hover:bg-white/15 transition-all">
-                <span class="text-base font-bold text-white block">Tổng Kho Sẵn Sàng 24/7</span>
-                <p class="text-base text-slate-200">Đầy đủ các dãy độ và chiết suất 1.56, 1.60, 1.67, 1.74, BlueCut và đổi màu, giao nhanh nội thành trong 2 giờ.</p>
-              </div>
-              <div class="bg-white/10 backdrop-blur-md border border-white/15 p-5 rounded-2xl space-y-2 hover:bg-white/15 transition-all">
-                <span class="text-base font-bold text-white block">Chính Sách Bảo Hành Đồng Hành</span>
-                <p class="text-base text-slate-200">Chính sách bảo hành điện tử chính hãng 1 đổi 1 trong 24 tháng hỗ trợ đại lý an tâm về sự hài lòng của khách hàng.</p>
-              </div>
-              <div class="bg-white/10 backdrop-blur-md border border-white/15 p-5 rounded-2xl space-y-2 hover:bg-white/15 transition-all">
-                <span class="text-base font-bold text-white block">Tài Liệu &amp; Công Cụ Trưng Bày</span>
-                <p class="text-base text-slate-200">Cung cấp trọn bộ kit đèn test UV420, phôi mẫu so sánh chiết suất và tài liệu đào tạo khúc xạ chuyên sâu tại điểm bán.</p>
-              </div>
+              <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight leading-tight">
+                Cùng RockyLens mở rộng giá trị cho cửa hàng mắt kính.
+              </h2>
+              <p class="text-white/80 text-sm sm:text-base leading-relaxed pt-1">
+                Không chỉ là một danh mục tròng kính, RockyLens hướng đến hỗ trợ cửa hàng bằng thông tin sản phẩm dễ sử dụng, tài liệu kỹ thuật và kênh trao đổi trực tiếp.
+              </p>
             </div>
 
-            <div class="pt-4 flex flex-wrap items-center gap-4">
-              <button type="button" onclick="openB2BQuoteModal()" class="button-primary px-7 py-3.5 rounded-full text-base transition-colors text-center cursor-pointer shadow-xs">
-                Nhận Báo Giá Cho Đại Lý
+            <div class="shrink-0 pb-1">
+              <button type="button" onclick="openB2BQuoteModal()" class="px-6 py-3 rounded-full bg-white text-[#003B50] font-bold text-sm hover:bg-slate-100 transition-all cursor-pointer shadow-md inline-flex items-center gap-1.5 active:scale-95">
+                <span>Liên hệ hợp tác</span>
+                <span>&#8599;</span>
               </button>
-              <a href="danh-cho-doi-tac/" class="px-7 py-3.5 rounded-full bg-white/15 hover:bg-white/25 border border-white/20 text-white font-bold text-base transition-colors text-center">
-                Chính Sách Hợp Tác
-              </a>
-              <a href="https://zalo.me/0933102653" target="_blank" rel="noopener noreferrer" class="px-7 py-3.5 rounded-full bg-white hover:bg-slate-100 text-heading font-bold text-base transition-colors text-center">
-                Kết nối Zalo B2B: 0933 102 653
-              </a>
             </div>
-
-            <div class="text-sm text-slate-300 font-medium pt-1">
-              * Chính sách chiết khấu và bảng báo giá sỉ đại lý được cung cấp trực tiếp qua kênh trao đổi bảo mật.
-            </div>
-
           </div>
 
-          <!-- Real Optical Store Showcase Image -->
-          <div class="lg:col-span-5 flex justify-center">
-            <div class="bg-white/10 backdrop-blur-md border border-white/20 p-4 rounded-3xl max-w-md w-full overflow-hidden shadow-xl">
-              <img src="assets/images/real/rocky_store_showcase.jpg" alt="Showcase đại lý Rocky Lens" class="w-full h-80 object-cover rounded-2xl">
-              <div class="p-4 text-center">
-                <span class="text-base font-bold text-white block">Mạng Lưới Đối Tác Toàn Quốc</span>
-                <span class="text-base text-slate-200 block mt-1">Đồng hành tại hơn 500+ đại lý mắt kính uy tín tại Việt Nam</span>
-              </div>
+          <!-- 4 Feature Columns in Divided Box -->
+          <div class="mt-10 rounded-2xl border border-white/15 bg-white/[0.04] p-6 sm:p-7 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-white/15 gap-6 sm:gap-0 relative z-10">
+            <div class="sm:px-6 first:pl-0 last:pr-0 pt-4 sm:pt-0 first:pt-0">
+              <div class="text-xs font-mono font-bold text-cyan-300">01</div>
+              <h3 class="text-base font-bold text-white mt-2">Tư vấn danh mục</h3>
+              <p class="text-xs sm:text-sm text-white/70 mt-1 leading-relaxed">
+                Trao đổi nhu cầu của cửa hàng để tìm hiểu dòng tròng phù hợp.
+              </p>
             </div>
+
+            <div class="sm:px-6 first:pl-0 last:pr-0 pt-4 sm:pt-0 first:pt-0">
+              <div class="text-xs font-mono font-bold text-cyan-300">02</div>
+              <h3 class="text-base font-bold text-white mt-2">Tài liệu kỹ thuật</h3>
+              <p class="text-xs sm:text-sm text-white/70 mt-1 leading-relaxed">
+                Thông số, tính năng và phạm vi ứng dụng theo từng sản phẩm.
+              </p>
+            </div>
+
+            <div class="sm:px-6 first:pl-0 last:pr-0 pt-4 sm:pt-0 first:pt-0">
+              <div class="text-xs font-mono font-bold text-cyan-300">03</div>
+              <h3 class="text-base font-bold text-white mt-2">Giải pháp trưng bày</h3>
+              <p class="text-xs sm:text-sm text-white/70 mt-1 leading-relaxed">
+                Tìm hiểu tài liệu và hình ảnh hỗ trợ giới thiệu sản phẩm.
+              </p>
+            </div>
+
+            <div class="sm:px-6 first:pl-0 last:pr-0 pt-4 sm:pt-0 first:pt-0">
+              <div class="text-xs font-mono font-bold text-cyan-300">04</div>
+              <h3 class="text-base font-bold text-white mt-2">Hỗ trợ &amp; hậu mãi</h3>
+              <p class="text-xs sm:text-sm text-white/70 mt-1 leading-relaxed">
+                Liên hệ để nhận thông tin về chính sách hiện hành.
+              </p>
+            </div>
+          </div>
+
+          <!-- Footer Info Strip: Direct Connect + Phone + Email -->
+          <div class="mt-8 pt-6 border-t border-white/10 flex flex-wrap items-center gap-4 sm:gap-8 text-xs sm:text-sm relative z-10">
+            <span class="text-[11px] font-bold uppercase tracking-widest text-cyan-300">
+              KẾT NỐI TRỰC TIẾP
+            </span>
+            <a href="tel:0933102653" class="font-bold text-white hover:text-cyan-200 transition-colors">
+              0933 102 653
+            </a>
+            <a href="mailto:b2b@rockylens.com" class="text-white/80 hover:text-white transition-colors">
+              b2b@rockylens.com
+            </a>
           </div>
 
         </div>
@@ -1569,132 +1301,115 @@
     </section>
 
     <!-- ========================================================= -->
-    <!-- SECTION 8 — BLOG & CUSTOMER INSIGHTS                      -->
-    <!-- Mục tiêu: Chia sẻ kiến thức thị giác theo insight khách hàng -->
-    <!-- 3 bài mẫu: Văn phòng, Lái xe đêm mưa, Trẻ em cận tiến triển -->
+    <!-- SECTION 8 — BLOG & INSIGHTS (06 / GÓC NHÌN & KIẾN THỨC)   -->
+    <!-- Bố cục & nội dung chuẩn theo preview.png                  -->
     <!-- ========================================================= -->
     <section id="blog-insights" class="relative py-20 px-6 bg-transparent overflow-hidden">
-      <div class="max-w-7xl mx-auto space-y-12 relative z-10">
+      <div class="max-w-7xl mx-auto space-y-10 relative z-10">
         
-        <!-- Section Header -->
-        <div class="max-w-3xl space-y-3">
-          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-heading tracking-tight">
-            Góc nhìn &amp; insight thị giác.
+        <!-- Section Header matching preview.png Section 06 -->
+        <div class="max-w-3xl space-y-2.5">
+          <div class="text-xs font-bold text-primary tracking-wider uppercase">
+            06 / GÓC NHÌN &amp; KIẾN THỨC
+          </div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-heading tracking-tight leading-[1.14]">
+            Hiểu đúng công nghệ. <br class="hidden sm:inline">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-[var(--button-start)] via-[var(--button-middle)] to-[var(--button-end)]">
+              Lựa chọn sáng suốt hơn.
+            </span>
           </h2>
-          <p class="text-slate-600 text-lg leading-relaxed mt-3">
-            Kiến thức tròng kính và những câu chuyện thực tế từ người đeo kính giúp bạn lựa chọn giải pháp phù hợp nhất.
+          <p class="text-brand-muted text-base sm:text-lg leading-relaxed">
+            Những bài giải thích dễ hiểu cho người đeo kính và cũng là tài liệu tham khảo hữu ích cho cửa hàng mắt kính.
           </p>
         </div>
 
-        <!-- 3 Featured Insight Cards -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- 3 Editorial Blog Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
           
-          <!-- Card 1: Ánh sáng xanh -->
-          <div class="group bg-white rounded-3xl overflow-hidden transition-all duration-300 flex flex-col justify-between hover:shadow-lg border border-slate-100">
+          <!-- Card 1 -->
+          <article class="card-surface rounded-[28px] overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between border border-[var(--color-border)]/50 group bg-white">
             <div>
-              <div class="h-56 sm:h-64 bg-slate-100 overflow-hidden relative">
-                <img src="assets/images/products/category-solution-2.png" alt="Giải pháp chống ánh sáng xanh UV420 không ám vàng" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                <span class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-[var(--color-primary)] text-xs font-bold border border-slate-200/80 shadow-xs">
-                  Công Nghệ Tròng Kính
-                </span>
-              </div>
-              <div class="p-6 sm:p-7 space-y-3">
-                <div class="flex items-center gap-3 text-xs font-semibold text-slate-500">
-                  <span>05/03/2025</span>
-                  <span>&bull;</span>
-                  <span>5 phút đọc</span>
+              <a href="blog/giai-phap-chong-anh-sang-xanh-uv420/" class="aspect-[16/10] w-full bg-slate-100 overflow-hidden block relative">
+                <img src="assets/images/articles/blog_sec6_1.jpg" alt="Ánh sáng xanh từ màn hình: những điều cần hiểu" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              </a>
+              <div class="p-6 sm:p-7 space-y-2">
+                <div class="text-xs font-bold text-primary tracking-wider uppercase">
+                  KIẾN THỨC QUANG HỌC
                 </div>
-                <h3 class="text-xl font-bold text-heading group-hover:text-[var(--color-primary)] transition-colors leading-snug line-clamp-2">
+                <h3 class="text-lg sm:text-xl font-bold text-heading leading-snug group-hover:text-primary transition-colors">
                   <a href="blog/giai-phap-chong-anh-sang-xanh-uv420/">
-                    Ánh Sáng Xanh Có Thực Sự Gây Hại? Bí Quyết Chống Mỏi Mắt Màn Hình Không Ám Vàng
+                    Ánh sáng xanh từ màn hình: những điều cần hiểu
                   </a>
                 </h3>
-                <p class="text-slate-600 text-sm leading-relaxed line-clamp-3">
-                  Làm việc 8-10 tiếng mỗi ngày trước laptop khiến mắt khô rát và mỏi điều tiết. Tìm hiểu cơ chế phôi hấp thụ monomer BlueCut UV420 bảo vệ hoàng điểm và giữ màu trung thực.
+                <p class="text-brand-muted text-sm leading-relaxed">
+                  Phân biệt đặc điểm lớp phủ và thói quen nhìn màn hình với các tuyên bố bảo vệ mắt.
                 </p>
               </div>
             </div>
             <div class="p-6 sm:p-7 pt-0">
-              <a href="blog/giai-phap-chong-anh-sang-xanh-uv420/" class="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold text-sm transition-all shadow-xs">
-                <span>Đọc bài viết chi tiết</span>
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+              <a href="blog/giai-phap-chong-anh-sang-xanh-uv420/" class="text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                <span>Đọc bài viết</span>
+                <span>&#8599;</span>
               </a>
             </div>
-          </div>
+          </article>
 
-          <!-- Card 2: Lái xe DriveShield -->
-          <div class="group bg-white rounded-3xl overflow-hidden transition-all duration-300 flex flex-col justify-between hover:shadow-lg border border-slate-100">
+          <!-- Card 2 -->
+          <article class="card-surface rounded-[28px] overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between border border-[var(--color-border)]/50 group bg-white">
             <div>
-              <div class="h-56 sm:h-64 bg-slate-100 overflow-hidden relative">
-                <img src="assets/images/products/category-solution-1.png" alt="Kính lái xe ban đêm DriveShield chống lóa đèn pha" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                <span class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-[var(--color-primary)] text-xs font-bold border border-slate-200/80 shadow-xs">
-                  Công Nghệ Tròng Kính
-                </span>
-              </div>
-              <div class="p-6 sm:p-7 space-y-3">
-                <div class="flex items-center gap-3 text-xs font-semibold text-slate-500">
-                  <span>10/03/2025</span>
-                  <span>&bull;</span>
-                  <span>6 phút đọc</span>
+              <a href="blog/cong-nghe-kinh-lai-xe-driveshield/" class="aspect-[16/10] w-full bg-slate-100 overflow-hidden block relative">
+                <img src="assets/images/articles/blog_sec6_2.jpg" alt="Lái xe ban đêm: nên cân nhắc những gì?" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              </a>
+              <div class="p-6 sm:p-7 space-y-2">
+                <div class="text-xs font-bold text-primary tracking-wider uppercase">
+                  NHU CẦU SỬ DỤNG
                 </div>
-                <h3 class="text-xl font-bold text-heading group-hover:text-[var(--color-primary)] transition-colors leading-snug line-clamp-2">
+                <h3 class="text-lg sm:text-xl font-bold text-heading leading-snug group-hover:text-primary transition-colors">
                   <a href="blog/cong-nghe-kinh-lai-xe-driveshield/">
-                    Lái Xe Ban Đêm &amp; Đi Mưa: Bí Quyết Triệt Tiêu Lóa Đèn Pha Cho Bác Tài Vững Lái
+                    Lái xe ban đêm: nên cân nhắc những gì?
                   </a>
                 </h3>
-                <p class="text-slate-600 text-sm leading-relaxed line-clamp-3">
-                  Nỗi ám ảnh khi bị đèn pha xe đối diện rọi chói mắt hoặc đường ướt mưa gây lóa mờ. Khám phá lớp phủ phân cực Ruby AR nâng cao độ tương phản đêm an toàn.
+                <p class="text-brand-muted text-sm leading-relaxed">
+                  Tìm hiểu độ chói, phản xạ và các yếu tố cần thảo luận khi chọn kính.
                 </p>
               </div>
             </div>
             <div class="p-6 sm:p-7 pt-0">
-              <a href="blog/cong-nghe-kinh-lai-xe-driveshield/" class="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold text-sm transition-all shadow-xs">
-                <span>Đọc bài viết chi tiết</span>
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+              <a href="blog/cong-nghe-kinh-lai-xe-driveshield/" class="text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                <span>Đọc bài viết</span>
+                <span>&#8599;</span>
               </a>
             </div>
-          </div>
+          </article>
 
-          <!-- Card 3: Kiểm soát cận thị trẻ em -->
-          <div class="group bg-white rounded-3xl overflow-hidden transition-all duration-300 flex flex-col justify-between hover:shadow-lg border border-slate-100">
+          <!-- Card 3 -->
+          <article class="card-surface rounded-[28px] overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between border border-[var(--color-border)]/50 group bg-white">
             <div>
-              <div class="h-56 sm:h-64 bg-slate-100 overflow-hidden relative">
-                <img src="assets/images/products/category-solution-7.png" alt="Kiểm soát cận thị tiến triển Defocus MyoControl" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                <span class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-[var(--color-primary)] text-xs font-bold border border-slate-200/80 shadow-xs">
-                  Kiến Thức Quang Học
-                </span>
-              </div>
-              <div class="p-6 sm:p-7 space-y-3">
-                <div class="flex items-center gap-3 text-xs font-semibold text-slate-500">
-                  <span>15/03/2025</span>
-                  <span>&bull;</span>
-                  <span>7 phút đọc</span>
+              <a href="blog/kiem-soat-can-thi-tre-em-myocontrol/" class="aspect-[16/10] w-full bg-slate-100 overflow-hidden block relative">
+                <img src="assets/images/articles/blog_sec6_3.jpg" alt="Tròng kính cho trẻ: hiểu về các lựa chọn" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              </a>
+              <div class="p-6 sm:p-7 space-y-2">
+                <div class="text-xs font-bold text-primary tracking-wider uppercase">
+                  TRẺ EM &amp; THỊ LỰC
                 </div>
-                <h3 class="text-xl font-bold text-heading group-hover:text-[var(--color-primary)] transition-colors leading-snug line-clamp-2">
+                <h3 class="text-lg sm:text-xl font-bold text-heading leading-snug group-hover:text-primary transition-colors">
                   <a href="blog/kiem-soat-can-thi-tre-em-myocontrol/">
-                    Kiểm Soát Tăng Độ Cận Ở Trẻ Em: Những Điều Ba Mẹ Cần Biết Về Defocus MyoControl
+                    Tròng kính cho trẻ: hiểu về các lựa chọn
                   </a>
                 </h3>
+                <p class="text-brand-muted text-sm leading-relaxed">
+                  Phân biệt thiết kế tròng và nhu cầu thăm khám, theo dõi thị lực định kỳ.
+                </p>
               </div>
             </div>
             <div class="p-6 sm:p-7 pt-0">
-              <a href="blog/kiem-soat-can-thi-tre-em-myocontrol/" class="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold text-sm transition-all shadow-xs">
-                <span>Đọc bài viết chi tiết</span>
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+              <a href="blog/kiem-soat-can-thi-tre-em-myocontrol/" class="text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                <span>Đọc bài viết</span>
+                <span>&#8599;</span>
               </a>
             </div>
-          </div>
+          </article>
 
-        </div>
-
-        <!-- Big Action Button to Full Blog Page -->
-        <div class="flex flex-col sm:flex-row items-center justify-center pt-4">
-          <a href="blog/" class="group inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold text-base sm:text-lg transition-colors duration-200 shadow-sm">
-            <span>Khám Phá Tất Cả Bài Viết &amp; Insight Thị Giác</span>
-            <svg class="w-5 h-5 transition-transform duration-200 group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-            </svg>
-          </a>
         </div>
 
       </div>
@@ -1897,6 +1612,25 @@
   </div>
 
   <script>
+
+    function filterProductSolutions(filter, btn) {
+      var cards = document.querySelectorAll('.product-sol-card');
+      var buttons = document.querySelectorAll('.product-filter-btn');
+      
+      buttons.forEach(function(b) {
+        b.className = 'product-filter-btn px-5 py-2 rounded-full text-xs font-bold transition-all cursor-pointer bg-white text-slate-700 hover:bg-slate-100 border border-slate-200/90';
+      });
+      btn.className = 'product-filter-btn px-5 py-2 rounded-full text-xs font-bold transition-all cursor-pointer bg-[var(--b2b-end)] text-white shadow-xs';
+
+      cards.forEach(function(card) {
+        if (filter === 'all' || card.getAttribute('data-group') === filter) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
     var certList = [
       { src: "assets/images/bangkhen/11.jpg", title: "The College of Opticians of Ontario - Chứng chỉ hành nghề Optician Canada (Thao Nguyen)" },
       { src: "assets/images/bangkhen/12.jpg", title: "The College of Opticians of Ontario - Chứng chỉ hành nghề Optician Canada (Ha Vu)" },
