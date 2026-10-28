@@ -4,35 +4,27 @@ import Link from 'next/link';
 export const technologyCards = [
   {
     category: 'VẬT LIỆU & CHIẾT SUẤT',
-    badge: 'Phôi Monomer',
-    title: 'Độ mỏng cần được hiểu đúng.',
-    desc: 'Chiết suất, độ kính và lựa chọn gọng cùng ảnh hưởng đến độ dày thực tế của tròng.',
+    title: 'Độ mỏng bắt đầu từ sự lựa chọn phù hợp.',
+    desc: 'Chiết suất, độ kính và kích thước gọng đều ảnh hưởng đến độ dày thực tế của tròng. Hiểu rõ từng yếu tố giúp lựa chọn chính xác hơn.',
     image: '/images/technologies/tech_sec3_1.jpg',
-    link: '/kham-pha-trong-kinh/',
+    linkText: 'Tìm hiểu chiết suất',
+    link: '/blog/so-sanh-chiet-suat-trong-kinh/',
   },
   {
     category: 'CÔNG NGHỆ LỚP PHỦ',
-    badge: 'Phủ Chân Không',
-    title: 'Dễ vệ sinh, thuận tiện sử dụng.',
-    desc: 'Tìm hiểu các đặc điểm lớp phủ giúp hạn chế bám bẩn hoặc phản xạ tùy dòng tròng.',
+    title: 'Tối ưu trải nghiệm sử dụng hằng ngày.',
+    desc: 'Các công nghệ lớp phủ có thể giúp giảm phản xạ, hạn chế bám bẩn và hỗ trợ vệ sinh tròng kính, tùy theo từng sản phẩm.',
     image: '/images/technologies/tech_sec3_2.jpg',
-    link: '/kham-pha-trong-kinh/',
+    linkText: 'Khám phá lớp phủ',
+    link: '/blog/giai-phap-chong-anh-sang-xanh-uv420/',
   },
   {
-    category: 'THIẾT KẾ QUANG HỌC',
-    badge: 'Freeform KTS',
-    title: 'Thiết kế theo đặc điểm sử dụng.',
-    desc: 'Freeform và các thiết kế quang học cần được đánh giá theo từng sản phẩm cụ thể.',
+    category: 'THIẾT KẾ QUANG HỌC FREEFORM',
+    title: 'Thiết kế hướng đến từng nhu cầu thị giác.',
+    desc: 'Công nghệ Freeform cho phép gia công các bề mặt quang học phức tạp, hỗ trợ nhiều thiết kế tròng kính đáp ứng các nhu cầu nhìn khác nhau.',
     image: '/images/technologies/tech_sec3_3.jpg',
-    link: '/kham-pha-trong-kinh/',
-  },
-  {
-    category: 'TIÊU CHUẨN & CHẤT LƯỢNG',
-    badge: 'Kiểm Định KCS Tiêu Chuẩn',
-    title: 'Quy Chuẩn Chất Lượng Quốc Tế',
-    desc: 'Quy trình sản xuất tuân thủ hệ thống quản lý chất lượng thiết bị y tế quốc tế ISO 13485:2016 cùng tiêu chuẩn chuyên môn của chuyên gia khúc xạ nhãn khoa.',
-    image: '/images/technologies/tech_sec3_4.jpg',
-    link: '/kham-pha-trong-kinh/',
+    linkText: 'Tìm hiểu Freeform',
+    link: '/blog/khi-nao-nen-dung-kinh-da-trong/',
   },
 ];
 
@@ -44,28 +36,25 @@ export default function TechnologyHighlights() {
         {/* Section Header */}
         <div className="max-w-3xl space-y-2.5">
           <div className="text-xs font-bold text-primary tracking-wider uppercase">
-            CÔNG NGHỆ TRÒNG KÍNH
+            KHÁM PHÁ CÔNG NGHỆ ROCKYLENS
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-heading tracking-tight leading-[1.14]">
-            Công nghệ tạo nên{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--button-start)] via-[var(--button-middle)] to-[var(--button-end)]">
-              sự khác biệt.
-            </span>
+            Công nghệ phía sau mỗi tầm nhìn.
           </h2>
           <p className="text-brand-muted text-base sm:text-lg leading-relaxed">
-            Từ vật liệu, lớp phủ đến thiết kế bề mặt, mỗi công nghệ giải quyết một vấn đề quang học khác nhau.
+            Từ vật liệu quang học, công nghệ lớp phủ đến thiết kế bề mặt, mỗi yếu tố đều góp phần tạo nên đặc điểm và trải nghiệm riêng của từng dòng tròng kính.
           </p>
         </div>
 
-        {/* 4 Column Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-2">
+        {/* 3 Column Cards Grid matching user screenshot */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
           {technologyCards.map((card, idx) => (
             <div
               key={idx}
               className="card-surface rounded-[28px] overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between border border-[var(--color-border)]/50 group bg-white"
             >
               <div>
-                <div className="aspect-[16/10] w-full bg-slate-100 overflow-hidden relative">
+                <div className="aspect-[4/3] sm:aspect-[16/11] w-full bg-slate-100 overflow-hidden relative">
                   <img
                     src={card.image}
                     alt={card.title}
@@ -73,14 +62,9 @@ export default function TechnologyHighlights() {
                     decoding="async"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  {card.badge && (
-                    <span className="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/95 backdrop-blur-md text-heading text-xs font-bold shadow-xs">
-                      {card.badge}
-                    </span>
-                  )}
                 </div>
 
-                <div className="p-6 sm:p-7 space-y-2">
+                <div className="p-6 sm:p-7 space-y-2.5">
                   <div className="text-xs font-bold text-primary tracking-wider uppercase">
                     {card.category}
                   </div>
@@ -92,8 +76,29 @@ export default function TechnologyHighlights() {
                   </p>
                 </div>
               </div>
+
+              <div className="p-6 sm:p-7 pt-0">
+                <Link
+                  href={card.link}
+                  className="text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all"
+                >
+                  <span>{card.linkText}</span>
+                  <span>&#8599;</span>
+                </Link>
+              </div>
             </div>
           ))}
+        </div>
+
+        {/* Bottom Centered CTA */}
+        <div className="text-center pt-4">
+          <Link
+            href="/kham-pha-trong-kinh/"
+            className="inline-flex items-center gap-2 text-base font-bold text-primary hover:text-[var(--color-primary-hover)] transition-all group"
+          >
+            <span>Khám phá tất cả công nghệ</span>
+            <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
+          </Link>
         </div>
 
       </div>
