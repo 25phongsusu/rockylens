@@ -44,8 +44,8 @@ export const siteConfig: SiteConfig = {
   shortName: 'Rocky Lens',
   domain: 'rockylens.com',
   url: 'https://rockylens.com',
-  slogan: 'Rõ tầm nhìn, trọn cuộc sống',
-  description: 'Thương hiệu tròng kính quang học Canada, phân phối độc quyền tại Việt Nam bởi Công ty Cổ phần Clearly Vietnam.',
+  slogan: 'Nhà phân phối tròng kính từ Canada',
+  description: 'Rocky Lens – Trung tâm phân phối tròng kính B2B & gia công Lab công nghệ quốc tế tại Việt Nam. Cung cấp sỉ tròng cận, đổi màu, chống ánh sáng xanh cho cửa hàng kính.',
   emails: {
     contact: 'info@rockylens.com',
     b2b: 'info@rockylens.com',

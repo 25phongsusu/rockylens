@@ -22,8 +22,8 @@ const html = `<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rocky Lens • Rõ tầm nhìn, trọn cuộc sống | Thương Hiệu Tròng Kính Canada</title>
-  <meta name="description" content="Khám phá các dòng tròng kính quang học Rocky Lens tiêu chuẩn Canada: chống ánh sáng xanh UV420 không ám vàng, tròng lái xe ban đêm DriveShield, đổi màu thông minh và kiểm soát cận thị. Phân phối độc quyền tại Việt Nam bởi Clearly Vietnam.">
+  <title>Rocky Lens - Nhà phân phối tròng kính từ Canada</title>
+  <meta name="description" content="Rocky Lens – Trung tâm phân phối tròng kính B2B & gia công Lab công nghệ quốc tế tại Việt Nam. Cung cấp sỉ tròng cận, đổi màu, chống ánh sáng xanh cho cửa hàng kính.">
   <link rel="canonical" href="https://rockylens.com/">
   <meta name="keywords" content="Tròng kính Rocky, Tròng kính Canada, tròng kính chống ánh sáng xanh UV420, tròng kính lái xe ban đêm DriveShield, tròng đổi màu, tròng kính cận mỏng 1.60 1.67 1.74, kiểm soát cận thị Defocus, Clearly Vietnam, mắt kính B2B, bảng giá tròng kính Rocky">
   <meta name="author" content="Rocky Lens Canada • Phân phối độc quyền bởi Clearly Vietnam">
@@ -534,12 +534,15 @@ const html = `<!DOCTYPE html>
           <!-- Left Column: Display Typography & Brand Value -->
           <div class="lg:col-span-7 space-y-6">
             
-            <h1 class="text-3xl sm:text-5xl lg:text-[54px] font-black text-heading tracking-tight leading-[1.15] motion-1">
-              Nhà phân phối tròng kính <br class="hidden sm:inline" /><span class="text-transparent bg-clip-text bg-gradient-to-r from-[var(--button-start)] via-[var(--button-middle)] to-[var(--button-end)]">nhập khẩu từ Canada</span>
+            <h1 class="text-3xl sm:text-5xl lg:text-[52px] font-black text-heading tracking-tight leading-[1.15] motion-1">
+              Rocky Lens - <br class="hidden sm:inline" />
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-[var(--button-start)] via-[var(--button-middle)] to-[var(--button-end)]">
+                nhà phân phối tròng kính từ Canada
+              </span>
             </h1>
 
             <p class="text-slate-700 text-lg sm:text-xl leading-relaxed max-w-2xl motion-2">
-              Rocky Lens mang đến các giải pháp tròng kính đa dạng, đáp ứng nhu cầu của hệ thống cửa hàng mắt kính và người sử dụng. Khám phá công nghệ, đặc điểm sản phẩm và những lựa chọn phù hợp với từng nhu cầu thị giác.
+              Rocky Lens tự hào là đơn vị phân phối tròng kính B2B và gia công Lab công nghệ quốc tế hàng đầu tại Việt Nam. Với hệ sinh thái sản phẩm toàn diện — từ tròng kính cận, tròng kính đổi màu đến tròng kính chống ánh sáng xanh — chúng tôi mang đến giải pháp nguồn hàng trọn gói, ổn định, đồng hành cùng sự phát triển bền vững của các hệ thống cửa hàng kính mắt trên toàn quốc.
             </p>
 
             <!-- Dual CTAs: Tìm Tròng Kính Phù Hợp Với Bạn & Nhận Báo Giá Đại Lý -->
