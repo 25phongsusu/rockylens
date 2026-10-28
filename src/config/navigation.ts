@@ -21,7 +21,7 @@ export const mainNavigation: NavItem[] = [
   },
   {
     title: 'Công Nghệ',
-    href: '/kham-pha-trong-kinh/',
+    href: '/cong-nghe/',
   },
   {
     title: 'Blog',

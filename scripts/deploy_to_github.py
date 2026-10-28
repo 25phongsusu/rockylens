@@ -33,6 +33,7 @@ DEPLOY_FOLDERS = [
     "blog",
     "danh-cho-doi-tac",
     "kham-pha-trong-kinh",
+    "cong-nghe",
     "trong-kinh",
     "lien-he",
     "ve-chung-toi",
@@ -173,7 +174,7 @@ def main():
 
     # Post-process paths for GitHub Pages subfolder (/rockylens)
     print("  ✓ Patching asset paths for GitHub Pages...")
-    for folder in ["blog", "danh-cho-doi-tac", "kham-pha-trong-kinh", "trong-kinh", "lien-he", "ve-chung-toi"]:
+    for folder in ["blog", "danh-cho-doi-tac", "kham-pha-trong-kinh", "cong-nghe", "trong-kinh", "lien-he", "ve-chung-toi"]:
         process_directory_files(os.path.join(DEPLOY_DIR, folder))
     if os.path.exists(dest_index):
         with open(dest_index, "r", encoding="utf-8", errors="ignore") as f:

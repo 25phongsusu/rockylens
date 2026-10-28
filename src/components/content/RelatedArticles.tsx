@@ -23,7 +23,7 @@ export default function RelatedArticles({
           <h3 className="text-xl font-bold text-heading">{title}</h3>
         </div>
         <Link
-          href="/kham-pha-trong-kinh/"
+          href="/cong-nghe/"
           className="text-xs font-semibold text-primary hover:underline inline-flex items-center space-x-1"
         >
           <span>Xem tất cả kiến thức</span>

@@ -31,7 +31,7 @@ export default function EducationPreview({ articles }: EducationPreviewProps) {
         {/* CTA */}
         <div className="mt-12 text-center">
           <Link
-            href="/kham-pha-trong-kinh/"
+            href="/cong-nghe/"
             className="button-primary inline-flex items-center space-x-2"
           >
             <BookOpen className="w-4 h-4" />

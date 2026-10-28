@@ -64,17 +64,17 @@ export default function Footer() {
             <span className="text-white font-bold text-lg block">Công Nghệ &amp; Khám Phá</span>
             <ul className="space-y-2 text-base">
               <li>
-                <Link href="/kham-pha-trong-kinh/" className="text-slate-400 font-medium hover:text-white transition-colors">
+                <Link href="/cong-nghe/" className="text-slate-400 font-medium hover:text-white transition-colors">
                   Lựa chọn vật liệu phù hợp
                 </Link>
               </li>
               <li>
-                <Link href="/kham-pha-trong-kinh/" className="text-slate-400 font-medium hover:text-white transition-colors">
+                <Link href="/cong-nghe/" className="text-slate-400 font-medium hover:text-white transition-colors">
                   Gia công kỹ thuật số Freeform
                 </Link>
               </li>
               <li>
-                <Link href="/kham-pha-trong-kinh/" className="text-slate-400 font-medium hover:text-white transition-colors">
+                <Link href="/cong-nghe/" className="text-slate-400 font-medium hover:text-white transition-colors">
                   Lớp phủ hạn chế bám bẩn
                 </Link>
               </li>

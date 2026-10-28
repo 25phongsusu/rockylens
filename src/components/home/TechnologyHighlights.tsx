@@ -96,7 +96,7 @@ export default function TechnologyHighlights() {
         {/* Bottom Centered CTA */}
         <div className="text-center pt-3">
           <Link
-            href="/kham-pha-trong-kinh/"
+            href="/cong-nghe/"
             className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] transition-all group"
           >
             <span>Khám phá tất cả công nghệ</span>
