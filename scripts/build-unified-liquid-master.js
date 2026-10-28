@@ -690,7 +690,7 @@ const html = `<!DOCTYPE html>
           <div class="shrink-0 pb-1">
             <a href="trong-kinh/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 transition-colors">
               <span>Xem các nhóm sản phẩm</span>
-              <span>&#8599;</span>
+              <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
             </a>
           </div>
         </div>
@@ -730,7 +730,7 @@ const html = `<!DOCTYPE html>
               <div class="pt-3 mt-3 border-t border-slate-100 flex items-center">
                 <a href="trong-kinh/rocky-driveshield-night-vision/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                   <span>Xem giải pháp</span>
-                  <span>&#8599;</span>
+                  <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
               </div>
 
@@ -794,7 +794,7 @@ const html = `<!DOCTYPE html>
               <div class="pt-3 mt-3 border-t border-slate-100 flex items-center">
                 <a href="trong-kinh/rocky-156-bluecut-shmc/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                   <span>Xem giải pháp</span>
-                  <span>&#8599;</span>
+                  <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
               </div>
 
@@ -858,7 +858,7 @@ const html = `<!DOCTYPE html>
               <div class="pt-3 mt-3 border-t border-slate-100 flex items-center">
                 <a href="trong-kinh/rocky-trendy-photochromic-grey/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                   <span>Xem giải pháp</span>
-                  <span>&#8599;</span>
+                  <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
               </div>
 
@@ -922,7 +922,7 @@ const html = `<!DOCTYPE html>
               <div class="pt-3 mt-3 border-t border-slate-100 flex items-center">
                 <a href="trong-kinh/rocky-160-mr8-aspheric/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                   <span>Xem giải pháp</span>
-                  <span>&#8599;</span>
+                  <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
               </div>
 
@@ -986,7 +986,7 @@ const html = `<!DOCTYPE html>
               <div class="pt-3 mt-3 border-t border-slate-100 flex items-center">
                 <a href="trong-kinh/rocky-freeform-progressive-hd/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                   <span>Xem giải pháp</span>
-                  <span>&#8599;</span>
+                  <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
               </div>
 
@@ -1050,7 +1050,7 @@ const html = `<!DOCTYPE html>
               <div class="pt-3 mt-3 border-t border-slate-100 flex items-center">
                 <a href="trong-kinh/rocky-myocontrol-dims-kids/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                   <span>Xem giải pháp</span>
-                  <span>&#8599;</span>
+                  <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
               </div>
 
@@ -1162,7 +1162,7 @@ const html = `<!DOCTYPE html>
               <div class="p-4 sm:p-5 pt-0">
                 <a href="blog/so-sanh-chiet-suat-trong-kinh/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                   <span>Tìm hiểu chiết suất</span>
-                  <span>&#8599;</span>
+                  <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
               </div>
             </div>
@@ -1186,7 +1186,7 @@ const html = `<!DOCTYPE html>
               <div class="p-4 sm:p-5 pt-0">
                 <a href="blog/giai-phap-chong-anh-sang-xanh-uv420/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                   <span>Khám phá lớp phủ</span>
-                  <span>&#8599;</span>
+                  <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
               </div>
             </div>
@@ -1210,7 +1210,7 @@ const html = `<!DOCTYPE html>
               <div class="p-4 sm:p-5 pt-0">
                 <a href="blog/khi-nao-nen-dung-kinh-da-trong/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                   <span>Tìm hiểu Freeform</span>
-                  <span>&#8599;</span>
+                  <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
               </div>
             </div>
@@ -1572,7 +1572,7 @@ const html = `<!DOCTYPE html>
               <div class="p-4 sm:p-5 pt-0">
                 <a href="blog/giai-phap-chong-anh-sang-xanh-uv420/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                   <span>Đọc bài viết</span>
-                  <span>&#8599;</span>
+                  <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
               </div>
             </article>
@@ -1600,7 +1600,7 @@ const html = `<!DOCTYPE html>
               <div class="p-4 sm:p-5 pt-0">
                 <a href="blog/cong-nghe-kinh-lai-xe-driveshield/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                   <span>Đọc bài viết</span>
-                  <span>&#8599;</span>
+                  <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
               </div>
             </article>
@@ -1628,7 +1628,7 @@ const html = `<!DOCTYPE html>
               <div class="p-4 sm:p-5 pt-0">
                 <a href="blog/kiem-soat-can-thi-tre-em-myocontrol/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                   <span>Đọc bài viết</span>
-                  <span>&#8599;</span>
+                  <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
               </div>
             </article>
@@ -1669,7 +1669,7 @@ const html = `<!DOCTYPE html>
             <div class="shrink-0 pb-1">
               <button type="button" onclick="openB2BQuoteModal()" class="px-6 py-3 rounded-full bg-white text-[#003B50] font-bold text-sm hover:bg-slate-100 transition-all cursor-pointer shadow-md inline-flex items-center gap-1.5 active:scale-95">
                 <span>Liên hệ hợp tác</span>
-                <span>&#8599;</span>
+                <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
               </button>
             </div>
           </div>

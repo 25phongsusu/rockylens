@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import { ArrowUpRight } from 'lucide-react';
 
 export const productSolutions = [
   {
@@ -136,7 +137,7 @@ export default function ProductCategories() {
               className="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 transition-colors"
             >
               <span>Xem các nhóm sản phẩm</span>
-              <span>&#8599;</span>
+              <ArrowUpRight className="w-4 h-4" />
             </Link>
           </div>
         </div>
@@ -198,7 +199,7 @@ export default function ProductCategories() {
                     className="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all"
                   >
                     <span>Xem giải pháp</span>
-                    <span>&#8599;</span>
+                    <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </Link>
                 </div>
 
