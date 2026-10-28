@@ -27,6 +27,13 @@ kham-pha-trong-kinh/
 lien-he/
 ve-chung-toi/
 404.html
+/assets/
+/images/
+/uploads/
+/documents/
+/robots.txt
+/sitemap.xml
+.nojekyll
 
 # OS Files
 .DS_Store
