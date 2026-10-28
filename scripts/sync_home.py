@@ -67,6 +67,7 @@ def sync_product_categories_tsx(data):
     items_js = []
     for idx, item in enumerate(data["products"]["items"]):
         num_str = f"0{idx+1} / 0{len(data['products']['items'])}"
+        image_fit_line = f"    imageFit: '{item['imageFit']}' as const,\n" if "imageFit" in item else ""
         item_block = f"""  {{
     num: '{num_str}',
     category: '{item["category"]}',
@@ -74,7 +75,7 @@ def sync_product_categories_tsx(data):
     title: '{item["title"]}',
     desc: '{item["desc"]}',
     image: '{item["image"]}',
-    link: '{item["link"]}',
+{image_fit_line}    link: '{item["link"]}',
     productName: '{item["productName"]}',
     subTag: '{item["subTag"]}',
     keyFeature: '{item["keyFeature"]}',

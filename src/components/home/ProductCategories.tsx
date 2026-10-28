@@ -12,6 +12,7 @@ export const productSolutions = [
     title: 'Khi lái xe & ban đêm',
     desc: 'Tìm hiểu các đặc điểm tròng kính liên quan đến ánh sáng chói và nhu cầu di chuyển.',
     image: '/uploads/solutions/sol_kinh_lai_xe.png',
+    imageFit: 'cover' as const,
     link: '/trong-kinh/rocky-driveshield-night-vision/',
     productName: 'Rocky DriveShield Ruby AR',
     subTag: 'Tầm Nhìn Lái Xe',
@@ -28,6 +29,7 @@ export const productSolutions = [
     title: 'Làm việc với màn hình',
     desc: 'Tìm hiểu lớp phủ, các lựa chọn tròng kính và thói quen sử dụng thiết bị số.',
     image: '/uploads/solutions/sol_chong_tia_uv.png',
+    imageFit: 'cover' as const,
     link: '/trong-kinh/rocky-156-bluecut-shmc/',
     productName: 'Rocky BlueCut UV420 Relax',
     subTag: 'Bảo Vệ Mắt Điện Tử',
@@ -44,6 +46,7 @@ export const productSolutions = [
     title: 'Tròng kính đổi màu',
     desc: 'Khám phá sự thay đổi sắc độ của tròng trong các điều kiện ánh sáng phù hợp.',
     image: '/uploads/solutions/sol_doi_mau.png',
+    imageFit: 'cover' as const,
     link: '/trong-kinh/rocky-trendy-photochromic-grey/',
     productName: 'Rocky Fast-Change Spin-Coat',
     subTag: 'Đổi Màu Tiện Lợi',
@@ -182,13 +185,13 @@ export default function ProductCategories() {
                     </p>
                   </div>
 
-                  <div className="aspect-[16/10] sm:aspect-[16/10] h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-50/50 relative my-2.5 flex items-center justify-center p-2">
+                  <div className={`aspect-[16/10] sm:aspect-[16/10] h-44 sm:h-48 w-full rounded-xl overflow-hidden relative my-2.5 flex items-center justify-center ${item.imageFit === 'cover' ? 'bg-slate-900/10' : 'bg-slate-50/50 p-2'}`}>
                     <img
                       src={item.image}
                       alt={item.title}
                       loading="lazy"
                       decoding="async"
-                      className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+                      className={`w-full h-full group-hover:scale-105 transition-transform duration-500 ${item.imageFit === 'cover' ? 'object-cover' : 'object-contain'}`}
                     />
                   </div>
                 </div>

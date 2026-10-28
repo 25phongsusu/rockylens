@@ -68,7 +68,12 @@
       "text": "Xem các nhóm sản phẩm",
       "href": "/trong-kinh/"
     },
-    "filterTabs": ["Tất cả", "Làm việc", "Ngoài trời", "Chuyên biệt"],
+    "filterTabs": [
+      "Tất cả",
+      "Làm việc",
+      "Ngoài trời",
+      "Chuyên biệt"
+    ],
     "items": [
       {
         "category": "DI CHUYỂN",
@@ -83,7 +88,8 @@
         "techProcess": "Lọc quang phổ Multi-Matrix & phủ Ruby AR",
         "visionExperience": "Tầm nhìn êm dịu, vững vàng tay lái đêm",
         "indexOption": "1.56 | 1.60 | 1.67",
-        "warranty": "24 tháng chính hãng"
+        "warranty": "24 tháng chính hãng",
+        "imageFit": "cover"
       },
       {
         "category": "HỌC TẬP & LÀM VIỆC",
@@ -98,7 +104,8 @@
         "techProcess": "Phôi Monomer BlueCut UV420",
         "visionExperience": "Màu sắc trung thực, mắt luôn thư giãn",
         "indexOption": "1.56 | 1.60 | 1.67 | 1.74",
-        "warranty": "24 tháng chính hãng"
+        "warranty": "24 tháng chính hãng",
+        "imageFit": "cover"
       },
       {
         "category": "NGOÀI TRỜI",
@@ -113,7 +120,8 @@
         "techProcess": "Phủ ly tâm Spin-Coat Photochromic",
         "visionExperience": "Tiện lợi 2 trong 1, bảo vệ UV tối đa",
         "indexOption": "1.56 | 1.60 | 1.67",
-        "warranty": "24 tháng chính hãng"
+        "warranty": "24 tháng chính hãng",
+        "imageFit": "cover"
       },
       {
         "category": "THẨM MỸ & ĐỘ MỎNG",

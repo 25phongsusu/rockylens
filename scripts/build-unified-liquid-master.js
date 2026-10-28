@@ -742,8 +742,8 @@ const html = `<!DOCTYPE html>
                   <h3 class="text-base sm:text-lg font-bold text-heading leading-snug">Khi lái xe &amp; ban đêm</h3>
                   <p class="text-brand-muted text-xs leading-relaxed line-clamp-2">Tìm hiểu các đặc điểm tròng kính liên quan đến ánh sáng chói và nhu cầu di chuyển.</p>
                 </div>
-                <div class="aspect-[16/10] sm:aspect-[16/10] h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-50/50 relative my-2.5 flex items-center justify-center p-2">
-                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_kinh_lai_xe.png" alt="Khi lái xe &amp; ban đêm" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                <div class="aspect-[16/10] sm:aspect-[16/10] h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
+                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_kinh_lai_xe.png" alt="Khi lái xe &amp; ban đêm" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
               </div>
               <div class="pt-3 mt-3 border-t border-slate-100 flex items-center">
@@ -806,8 +806,8 @@ const html = `<!DOCTYPE html>
                   <h3 class="text-base sm:text-lg font-bold text-heading leading-snug">Làm việc với màn hình</h3>
                   <p class="text-brand-muted text-xs leading-relaxed line-clamp-2">Tìm hiểu lớp phủ, các lựa chọn tròng kính và thói quen sử dụng thiết bị số.</p>
                 </div>
-                <div class="aspect-[16/10] sm:aspect-[16/10] h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-50/50 relative my-2.5 flex items-center justify-center p-2">
-                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_chong_tia_uv.png" alt="Làm việc với màn hình" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                <div class="aspect-[16/10] sm:aspect-[16/10] h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
+                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_chong_tia_uv.png" alt="Làm việc với màn hình" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
               </div>
               <div class="pt-3 mt-3 border-t border-slate-100 flex items-center">
@@ -870,8 +870,8 @@ const html = `<!DOCTYPE html>
                   <h3 class="text-base sm:text-lg font-bold text-heading leading-snug">Tròng kính đổi màu</h3>
                   <p class="text-brand-muted text-xs leading-relaxed line-clamp-2">Khám phá sự thay đổi sắc độ của tròng trong các điều kiện ánh sáng phù hợp.</p>
                 </div>
-                <div class="aspect-[16/10] sm:aspect-[16/10] h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-50/50 relative my-2.5 flex items-center justify-center p-2">
-                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_doi_mau.png" alt="Tròng kính đổi màu" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                <div class="aspect-[16/10] sm:aspect-[16/10] h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
+                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_doi_mau.png" alt="Tròng kính đổi màu" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
               </div>
               <div class="pt-3 mt-3 border-t border-slate-100 flex items-center">
