@@ -18,6 +18,16 @@ node_modules/
 out/
 next-env.d.ts
 
+# Generated static deploy folders (now isolated in Rocky-Deploy)
+_next/
+blog/
+trong-kinh/
+danh-cho-doi-tac/
+kham-pha-trong-kinh/
+lien-he/
+ve-chung-toi/
+404.html
+
 # OS Files
 .DS_Store
 Thumbs.db

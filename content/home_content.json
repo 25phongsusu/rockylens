@@ -1,0 +1,273 @@
+{
+  "hero": {
+    "badge": "Thương Hiệu Tròng Kính Canada Opticians",
+    "headlinePrefix": "Nhà phân phối tròng kính",
+    "headlineHighlight": "nhập khẩu từ Canada",
+    "subheadline": "Rocky Lens mang đến các giải pháp tròng kính đa dạng, đáp ứng nhu cầu của hệ thống cửa hàng mắt kính và người sử dụng. Khám phá công nghệ, đặc điểm sản phẩm và những lựa chọn phù hợp với từng nhu cầu thị giác.",
+    "specCards": [
+      {
+        "title": "MITSUI MONOMER MR™",
+        "highlight": "Trong Suốt 99.8%",
+        "sub": "Truyền quang cao, quang sai cực thấp"
+      },
+      {
+        "title": "NANO SAPPHIRE 9H",
+        "highlight": "Trượt Nước >115°",
+        "sub": "Kháng trầy xước, không đọng nước mưa"
+      },
+      {
+        "title": "CANRX FREEFORM 4K",
+        "highlight": "Sai Số < 0.01 Diop",
+        "sub": "Gia công kỹ thuật số cá nhân hóa"
+      }
+    ],
+    "ctaPrimary": {
+      "text": "Tìm Tròng Kính Phù Hợp Với Bạn",
+      "link": "#trong-kinh"
+    },
+    "ctaSecondary": {
+      "text": "Nhận Báo Giá Đại Lý"
+    },
+    "heroImage": "/assets/h-lens3.png",
+    "trustIndicators": [
+      "Ontario Opticians No. 6181",
+      "ISO 13485:2016 Medical Quality",
+      "Bảo hành điện tử 1 đổi 1 24T"
+    ]
+  },
+  "philosophy": {
+    "tag": "TRIẾT LÝ SẢN PHẨM",
+    "title": "Hiểu từng nhu cầu.",
+    "highlight": "Chọn giải pháp tròng kính phù hợp.",
+    "desc": "Mỗi nhu cầu thị giác đều có những đặc điểm riêng. Rocky Lens mang đến các giải pháp tròng kính đa dạng, kết hợp công nghệ quang học và thông tin sản phẩm rõ ràng, giúp đối tác mắt kính tự tin tư vấn và người dùng dễ dàng tìm hiểu, lựa chọn tròng kính phù hợp.",
+    "pillars": [
+      {
+        "category": "LÀM VIỆC & HỌC TẬP",
+        "title": "Thiết bị số & Ánh sáng xanh",
+        "desc": "Tập trung vào lớp phủ và vật liệu giúp giảm căng thẳng thị giác khi sử dụng máy tính, điện thoại kéo dài."
+      },
+      {
+        "category": "DI CHUYỂN & NGOÀI TRỜI",
+        "title": "Lái xe, Chống chói & Đổi màu",
+        "desc": "Các lựa chọn phù hợp cho người thường xuyên di chuyển ngoài trời hoặc lái xe trong các điều kiện ánh sáng phức tạp."
+      },
+      {
+        "category": "NHÌN ĐA KHOẢNG CÁCH",
+        "title": "Đa tròng & Thị lực toàn diện",
+        "desc": "Hỗ trợ tầm nhìn liền mạch từ xa đến gần, đáp ứng nhu cầu thị giác ngày càng tinh tế ở mọi độ tuổi."
+      }
+    ]
+  },
+  "products": {
+    "tag": "DANH MỤC SẢN PHẨM",
+    "title": "Khám phá các giải pháp",
+    "highlight": "tròng kính",
+    "suffix": "RockyLens.",
+    "desc": "Từ nhu cầu nhìn thường ngày đến những yêu cầu chuyên biệt, mỗi nhóm tròng kính có những đặc điểm và công nghệ riêng.",
+    "linkTop": {
+      "text": "Xem các nhóm sản phẩm",
+      "href": "/trong-kinh/"
+    },
+    "filterTabs": ["Tất cả", "Làm việc", "Ngoài trời", "Chuyên biệt"],
+    "items": [
+      {
+        "category": "DI CHUYỂN",
+        "filter": "Ngoài trời",
+        "title": "Khi lái xe & ban đêm",
+        "desc": "Tìm hiểu các đặc điểm tròng kính liên quan đến ánh sáng chói và nhu cầu di chuyển.",
+        "image": "/uploads/solutions/sol_kinh_lai_xe.png",
+        "link": "/trong-kinh/rocky-driveshield-night-vision/",
+        "productName": "Rocky DriveShield Ruby AR",
+        "subTag": "Tầm Nhìn Lái Xe",
+        "keyFeature": "Chống chói pha LED & trượt nước mưa",
+        "techProcess": "Lọc quang phổ Multi-Matrix & phủ Ruby AR",
+        "visionExperience": "Tầm nhìn êm dịu, vững vàng tay lái đêm",
+        "indexOption": "1.56 | 1.60 | 1.67",
+        "warranty": "24 tháng chính hãng"
+      },
+      {
+        "category": "HỌC TẬP & LÀM VIỆC",
+        "filter": "Làm việc",
+        "title": "Làm việc với màn hình",
+        "desc": "Tìm hiểu lớp phủ, các lựa chọn tròng kính và thói quen sử dụng thiết bị số.",
+        "image": "/uploads/solutions/sol_chong_tia_uv.png",
+        "link": "/trong-kinh/rocky-156-bluecut-shmc/",
+        "productName": "Rocky BlueCut UV420 Relax",
+        "subTag": "Bảo Vệ Mắt Điện Tử",
+        "keyFeature": "Chặn ánh sáng xanh tím màn hình số",
+        "techProcess": "Phôi Monomer BlueCut UV420",
+        "visionExperience": "Màu sắc trung thực, mắt luôn thư giãn",
+        "indexOption": "1.56 | 1.60 | 1.67 | 1.74",
+        "warranty": "24 tháng chính hãng"
+      },
+      {
+        "category": "NGOÀI TRỜI",
+        "filter": "Ngoài trời",
+        "title": "Tròng kính đổi màu",
+        "desc": "Khám phá sự thay đổi sắc độ của tròng trong các điều kiện ánh sáng phù hợp.",
+        "image": "/uploads/solutions/sol_doi_mau.png",
+        "link": "/trong-kinh/rocky-trendy-photochromic-grey/",
+        "productName": "Rocky Fast-Change Spin-Coat",
+        "subTag": "Đổi Màu Tiện Lợi",
+        "keyFeature": "Đổi màu râm sành điệu chuẩn CAT 3",
+        "techProcess": "Phủ ly tâm Spin-Coat Photochromic",
+        "visionExperience": "Tiện lợi 2 trong 1, bảo vệ UV tối đa",
+        "indexOption": "1.56 | 1.60 | 1.67",
+        "warranty": "24 tháng chính hãng"
+      },
+      {
+        "category": "THẨM MỸ & ĐỘ MỎNG",
+        "filter": "Chuyên biệt",
+        "title": "Mỏng nhẹ & gọng không viền",
+        "desc": "Tìm hiểu vật liệu, chiết suất và cách chọn tròng theo cấu trúc gọng.",
+        "image": "/uploads/solutions/sol_kinh_khoan_va_dap.png",
+        "link": "/trong-kinh/rocky-160-mr8-aspheric/",
+        "productName": "Rocky Tough Aspheric MR Series",
+        "subTag": "Gọn Nhẹ & Bền Bỉ",
+        "keyFeature": "Tối ưu độ mỏng & chịu lực va đập gọng khoan",
+        "techProcess": "Phôi vật liệu dẻo dai Mitsui MR Series",
+        "visionExperience": "Nhẹ nhàng, triệt tiêu quang sai biên",
+        "indexOption": "1.60 | 1.67 | 1.74 siêu mỏng",
+        "warranty": "24 tháng chính hãng"
+      },
+      {
+        "category": "NHIỀU KHOẢNG NHÌN",
+        "filter": "Làm việc",
+        "title": "Nhu cầu nhìn xa & gần",
+        "desc": "Tìm hiểu tròng đa tròng và yếu tố cần cân nhắc khi nhìn ở nhiều khoảng cách.",
+        "image": "/uploads/solutions/sol_da_trong.png",
+        "link": "/trong-kinh/rocky-freeform-progressive-hd/",
+        "productName": "CanRx Freeform HD Progressive",
+        "subTag": "Đa Khoảng Cách",
+        "keyFeature": "Nhìn rõ mọi cự ly Xa - Trung - Gần",
+        "techProcess": "Mài vi điểm kỹ thuật số Freeform HD",
+        "visionExperience": "Vùng nhìn liền mạch, thích nghi nhanh",
+        "indexOption": "1.56 | 1.60 | 1.67",
+        "warranty": "24 tháng chính hãng"
+      },
+      {
+        "category": "TRẺ EM & HỌC ĐƯỜNG",
+        "filter": "Chuyên biệt",
+        "title": "Thị lực học đường",
+        "desc": "Khám phá các thiết kế tròng dành cho trẻ và lưu ý khi lựa chọn.",
+        "image": "/uploads/solutions/sol_kiem_soat_can_thi.png",
+        "link": "/trong-kinh/rocky-myocontrol-dims-kids/",
+        "productName": "Defocus MyoControl Kids HD",
+        "subTag": "Thị Lực Học Đường",
+        "keyFeature": "Chăm sóc thị lực, làm chậm tiến triển cận",
+        "techProcess": "Vi thấu kính phân tán chu biên hội tụ D.I.M.S.",
+        "visionExperience": "Sắc nét trung tâm, giảm mỏi điều tiết",
+        "indexOption": "1.56 | 1.60",
+        "warranty": "24 tháng chính hãng"
+      }
+    ],
+    "bottomCTA": {
+      "text": "Xem thêm giải pháp tròng kính",
+      "href": "/trong-kinh/"
+    }
+  },
+  "technologies": {
+    "tag": "KHÁM PHÁ CÔNG NGHỆ ROCKYLENS",
+    "title": "Công nghệ phía sau mỗi tầm nhìn.",
+    "desc": "Từ vật liệu quang học, công nghệ lớp phủ đến thiết kế bề mặt, mỗi yếu tố đều góp phần tạo nên đặc điểm và trải nghiệm riêng của từng dòng tròng kính.",
+    "cards": [
+      {
+        "category": "VẬT LIỆU & CHIẾT SUẤT",
+        "title": "Độ mỏng bắt đầu từ sự lựa chọn phù hợp.",
+        "desc": "Chiết suất, độ kính và kích thước gọng đều ảnh hưởng đến độ dày thực tế của tròng. Hiểu rõ từng yếu tố giúp lựa chọn chính xác hơn.",
+        "image": "/images/technologies/tech_sec3_1.jpg",
+        "linkText": "Tìm hiểu chiết suất",
+        "link": "/blog/so-sanh-chiet-suat-trong-kinh/"
+      },
+      {
+        "category": "CÔNG NGHỆ LỚP PHỦ",
+        "title": "Tối ưu trải nghiệm sử dụng hằng ngày.",
+        "desc": "Các công nghệ lớp phủ có thể giúp giảm phản xạ, hạn chế bám bẩn và hỗ trợ vệ sinh tròng kính, tùy theo từng sản phẩm.",
+        "image": "/images/technologies/tech_sec3_2.jpg",
+        "linkText": "Khám phá lớp phủ",
+        "link": "/blog/giai-phap-chong-anh-sang-xanh-uv420/"
+      },
+      {
+        "category": "THIẾT KẾ QUANG HỌC FREEFORM",
+        "title": "Thiết kế hướng đến từng nhu cầu thị giác.",
+        "desc": "Công nghệ Freeform cho phép gia công các bề mặt quang học phức tạp, hỗ trợ nhiều thiết kế tròng kính đáp ứng các nhu cầu nhìn khác nhau.",
+        "image": "/images/technologies/tech_sec3_3.jpg",
+        "linkText": "Tìm hiểu Freeform",
+        "link": "/blog/khi-nao-nen-dung-kinh-da-trong/"
+      }
+    ],
+    "bottomCTA": {
+      "text": "Khám phá tất cả công nghệ",
+      "href": "/kham-pha-trong-kinh/"
+    }
+  },
+  "whyRocky": {
+    "title": "Rocky Canada Opticians",
+    "paragraphs": [
+      "Được phát triển bởi đội ngũ chuyên gia khúc xạ tại Canada, Rocky mang tinh hoa quang học Canada về phục vụ cộng đồng Việt Nam. Chúng tôi kết hợp nền tảng chuyên môn vững chắc với khát vọng nâng cao sức khỏe thị lực, mang đến những giải pháp tròng kính đạt chuẩn quốc tế, phù hợp với nhu cầu và điều kiện sống của người Việt.",
+      "Hiện Rocky đã có mặt tại 34 tỉnh thành với hệ thống phân phối rộng khắp, cam kết mang lại trải nghiệm dịch vụ nhanh chóng, chính xác và tận tâm."
+    ],
+    "values": [
+      "Tính năng ưu việt bảo vệ mắt toàn diện",
+      "Đáp ứng toàn diện mọi nhu cầu thị lực",
+      "Giải pháp thị lực ở mọi phân khúc giá",
+      "Sản phẩm đạt chất lượng quốc tế"
+    ]
+  },
+  "blog": {
+    "tag": "GÓC NHÌN & KIẾN THỨC",
+    "title": "Hiểu đúng công nghệ.",
+    "highlight": "Lựa chọn sáng suốt hơn.",
+    "desc": "Những bài giải thích dễ hiểu cho người đeo kính và cũng là tài liệu tham khảo hữu ích cho cửa hàng mắt kính.",
+    "articles": [
+      {
+        "slug": "giai-phap-chong-anh-sang-xanh-uv420",
+        "category": "KIẾN THỨC QUANG HỌC",
+        "title": "Ánh sáng xanh từ màn hình: những điều cần hiểu",
+        "desc": "Phân biệt đặc điểm lớp phủ và thói quen nhìn màn hình với các tuyên bố bảo vệ mắt.",
+        "image": "/images/articles/blog_sec6_1.jpg"
+      },
+      {
+        "slug": "cong-nghe-kinh-lai-xe-driveshield",
+        "category": "NHU CẦU SỬ DỤNG",
+        "title": "Lái xe ban đêm: nên cân nhắc những gì?",
+        "desc": "Tìm hiểu độ chói, phản xạ và các yếu tố cần thảo luận khi chọn kính.",
+        "image": "/images/articles/blog_sec6_2.jpg"
+      },
+      {
+        "slug": "kiem-soat-can-thi-tre-em-myocontrol",
+        "category": "TRẺ EM & THỊ LỰC",
+        "title": "Tròng kính cho trẻ: hiểu về các lựa chọn",
+        "desc": "Phân biệt thiết kế tròng và nhu cầu thăm khám, theo dõi thị lực định kỳ.",
+        "image": "/images/articles/blog_sec6_3.jpg"
+      }
+    ]
+  },
+  "partner": {
+    "title": "Cùng RockyLens mở rộng giá trị cho cửa hàng mắt kính.",
+    "desc": "Hợp tác cung cấp các giải pháp tròng kính chất lượng, thông tin minh bạch và dịch vụ hỗ trợ đồng hành lâu dài cùng hệ thống đại lý.",
+    "features": [
+      {
+        "num": "01",
+        "title": "Tư vấn danh mục",
+        "desc": "Trao đổi nhu cầu của cửa hàng để tìm hiểu dòng tròng phù hợp."
+      },
+      {
+        "num": "02",
+        "title": "Tài liệu kỹ thuật",
+        "desc": "Thông số, tính năng và phạm vi ứng dụng theo từng sản phẩm."
+      },
+      {
+        "num": "03",
+        "title": "Giải pháp trưng bày",
+        "desc": "Tìm hiểu tài liệu và hình ảnh hỗ trợ giới thiệu sản phẩm."
+      },
+      {
+        "num": "04",
+        "title": "Hỗ trợ & hậu mãi",
+        "desc": "Liên hệ để nhận thông tin về chính sách hiện hành."
+      }
+    ],
+    "cta": "Liên hệ nhận thông tin đối tác"
+  }
+}
