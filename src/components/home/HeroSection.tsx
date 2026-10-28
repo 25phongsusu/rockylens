@@ -31,7 +31,7 @@ export default function HeroSection() {
 
             {/* Subheadline */}
             <p className="text-brand-muted text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              Rocky Lens Mang đến các giải pháp tròng kính đa dạng, đáp ứng nhu cầu của hệ thống cửa hàng mắt kính và người sử dụng. Khám phá công nghệ, đặc điểm sản phẩm và những lựa chọn phù hợp với từng nhu cầu thị giác.
+              Rocky Lens mang đến các giải pháp tròng kính đa dạng, đáp ứng nhu cầu của hệ thống cửa hàng mắt kính và người sử dụng. Khám phá công nghệ, đặc điểm sản phẩm và những lựa chọn phù hợp với từng nhu cầu thị giác.
             </p>
 
             {/* 3 Apple Liquid Spec Cards */}
