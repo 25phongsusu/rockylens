@@ -542,7 +542,7 @@ const html = `<!DOCTYPE html>
             </h1>
 
             <p class="text-slate-700 text-lg sm:text-xl leading-relaxed max-w-2xl motion-2">
-              Rocky Lens tự hào là đơn vị phân phối tròng kính B2B và gia công Lab công nghệ quốc tế hàng đầu tại Việt Nam. Với hệ sinh thái sản phẩm toàn diện — từ tròng kính cận, tròng kính đổi màu đến tròng kính chống ánh sáng xanh — chúng tôi mang đến giải pháp nguồn hàng trọn gói, ổn định, đồng hành cùng sự phát triển bền vững của các hệ thống cửa hàng kính mắt trên toàn quốc.
+              Rocky Lens tự hào là đơn vị phân phối tròng kính B2B và gia công Lab công nghệ quốc tế tại Việt Nam. Với hệ sinh thái sản phẩm toàn diện - từ tròng kính cận, tròng kính đổi màu đến tròng kính chống ánh sáng xanh - chúng tôi mang đến giải pháp nguồn hàng trọn gói, ổn định, đồng hành cùng sự phát triển bền vững của các hệ thống cửa hàng kính mắt trên toàn quốc.
             </p>
 
             <!-- Dual CTAs: Tìm Tròng Kính Phù Hợp Với Bạn & Nhận Báo Giá Đại Lý -->
