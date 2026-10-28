@@ -13,11 +13,11 @@ export default function HomePage() {
       {/* SECTION 1 — BRAND HERO */}
       <HeroSection />
 
-      {/* SECTION 2 — BRAND PHILOSOPHY */}
-      <BrandPhilosophy />
-
-      {/* SECTION 3 — EXPLORE ROCKY LENSES */}
+      {/* SECTION 2 — EXPLORE ROCKY LENSES (SẢN PHẨM TRÒNG KÍNH) */}
       <ProductCategories />
+
+      {/* SECTION 3 — BRAND PHILOSOPHY (HIỂU TỪNG NHU CẦU) */}
+      <BrandPhilosophy />
 
       {/* SECTION 4 — TECHNOLOGY & QUALITY */}
       <TechnologyHighlights />

@@ -24,12 +24,13 @@ const allCerts = [
 ];
 
 const partnerLogos = [
-  { src: '/uploads/partners/partner_1.png', alt: 'Đối tác CARAS Eyewear' },
-  { src: '/uploads/partners/partner_2.png', alt: 'Đối tác LB Luxury Eyewear' },
-  { src: '/uploads/partners/partner_3.png', alt: 'Đối tác ZE Eyewear' },
-  { src: '/uploads/partners/partner_4.png', alt: 'Đối tác Mắt Kính Ngọc Sáng' },
-  { src: '/uploads/partners/partner_5.png', alt: 'Đối tác Mắt Kính Uy Tín' },
-  { src: '/uploads/partners/partner_6.png', alt: 'Đối tác Mắt Kính Phân Phối' },
+  { src: '/uploads/partners/partner_1.png', alt: 'Đối tác Mắt Kính Văn Nguyên (MKVN)' },
+  { src: '/uploads/partners/partner_2.png', alt: 'Đối tác Quang Optic - Kính Thuốc Chuyên Nghiệp' },
+  { src: '/uploads/partners/partner_3.png', alt: 'Đối tác Huân Kính Since 1995' },
+  { src: '/uploads/partners/partner_4.png', alt: 'Đối tác Mắt Kính Sài Gòn Optic' },
+  { src: '/uploads/partners/partner_5.png', alt: 'Đối tác Mắt Kính Tâm Đức' },
+  { src: '/uploads/partners/partner_6.png', alt: 'Đối tác Mắt Kính Ánh Sáng' },
+  { src: '/uploads/partners/partner_7.png', alt: 'Đối tác Mắt Kính Bệnh Viện Mắt' },
   { src: '/uploads/partners/partner_8.png', alt: 'Đối tác Mắt Kính Khúc Xạ' },
   { src: '/uploads/partners/partner_9.png', alt: 'Đối tác Chuỗi Cửa Hàng Kính' },
   { src: '/uploads/partners/partner_10.png', alt: 'Đối tác Nhãn Khoa Đối Tác' },
@@ -209,24 +210,24 @@ export default function WhyRockySection() {
           </div>
 
           {/* Infinite Marquee Track Moving Slowly from Right to Left */}
-          <div className="relative w-full overflow-hidden py-6 sm:py-8">
-            <div className="pointer-events-none absolute inset-y-0 left-0 w-24 sm:w-40 bg-gradient-to-r from-[var(--site-bg-start)] to-transparent z-10" />
-            <div className="pointer-events-none absolute inset-y-0 right-0 w-24 sm:w-40 bg-gradient-to-l from-[var(--site-bg-start)] to-transparent z-10" />
+          <div className="relative w-full overflow-hidden py-4 sm:py-6">
+            <div className="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-28 bg-gradient-to-r from-[var(--site-bg-start)] to-transparent z-10" />
+            <div className="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-28 bg-gradient-to-l from-[var(--site-bg-start)] to-transparent z-10" />
 
-            <div className="flex items-center gap-10 sm:gap-14 w-max animate-marquee hover:[animation-play-state:paused]">
+            <div className="flex items-center gap-5 sm:gap-6 w-max animate-marquee hover:[animation-play-state:paused]">
               {/* Set 1 */}
               {partnerLogos.map((p, idx) => (
                 <div
                   key={`p1-${idx}`}
-                  className="flex items-center justify-center shrink-0 group transition-all"
+                  className="bg-white/95 px-6 sm:px-8 py-4 sm:py-5 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-20 sm:h-24 min-w-[200px] sm:min-w-[230px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer"
                 >
-                  <div className="relative w-[360px] sm:w-[440px] h-36 sm:h-40">
+                  <div className="relative w-36 sm:w-44 h-12 sm:h-14">
                     <Image
                       src={p.src}
                       alt={p.alt}
                       fill
-                      className="object-contain grayscale opacity-85 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300"
-                      sizes="(max-width: 768px) 360px, 440px"
+                      className="object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300"
+                      sizes="(max-width: 768px) 200px, 240px"
                     />
                   </div>
                 </div>
@@ -235,15 +236,15 @@ export default function WhyRockySection() {
               {partnerLogos.map((p, idx) => (
                 <div
                   key={`p2-${idx}`}
-                  className="flex items-center justify-center shrink-0 group transition-all"
+                  className="bg-white/95 px-6 sm:px-8 py-4 sm:py-5 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-20 sm:h-24 min-w-[200px] sm:min-w-[230px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer"
                 >
-                  <div className="relative w-[360px] sm:w-[440px] h-36 sm:h-40">
+                  <div className="relative w-36 sm:w-44 h-12 sm:h-14">
                     <Image
                       src={p.src}
                       alt={p.alt}
                       fill
-                      className="object-contain grayscale opacity-85 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300"
-                      sizes="(max-width: 768px) 360px, 440px"
+                      className="object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300"
+                      sizes="(max-width: 768px) 200px, 240px"
                     />
                   </div>
                 </div>
