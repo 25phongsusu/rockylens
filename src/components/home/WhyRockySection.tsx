@@ -210,24 +210,24 @@ export default function WhyRockySection() {
           </div>
 
           {/* Infinite Marquee Track Moving Slowly from Right to Left */}
-          <div className="relative w-full overflow-hidden py-4 sm:py-6">
-            <div className="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-28 bg-gradient-to-r from-[var(--site-bg-start)] to-transparent z-10" />
-            <div className="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-28 bg-gradient-to-l from-[var(--site-bg-start)] to-transparent z-10" />
+          <div className="relative w-full overflow-hidden py-6 sm:py-8">
+            <div className="pointer-events-none absolute inset-y-0 left-0 w-20 sm:w-36 bg-gradient-to-r from-[var(--site-bg-start)] to-transparent z-10" />
+            <div className="pointer-events-none absolute inset-y-0 right-0 w-20 sm:w-36 bg-gradient-to-l from-[var(--site-bg-start)] to-transparent z-10" />
 
-            <div className="flex items-center gap-5 sm:gap-6 w-max animate-marquee hover:[animation-play-state:paused]">
+            <div className="flex items-center gap-6 sm:gap-8 w-max animate-marquee hover:[animation-play-state:paused]">
               {/* Set 1 */}
               {partnerLogos.map((p, idx) => (
                 <div
                   key={`p1-${idx}`}
-                  className="bg-white/95 px-6 sm:px-8 py-4 sm:py-5 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-20 sm:h-24 min-w-[200px] sm:min-w-[230px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer"
+                  className="bg-white/95 p-2 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-28 sm:h-36 min-w-[260px] sm:min-w-[320px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer"
                 >
-                  <div className="relative w-36 sm:w-44 h-12 sm:h-14">
+                  <div className="relative w-56 sm:w-72 h-24 sm:h-28">
                     <Image
                       src={p.src}
                       alt={p.alt}
                       fill
-                      className="object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300"
-                      sizes="(max-width: 768px) 200px, 240px"
+                      className="object-contain grayscale opacity-85 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300"
+                      sizes="(max-width: 768px) 260px, 320px"
                     />
                   </div>
                 </div>
@@ -236,15 +236,15 @@ export default function WhyRockySection() {
               {partnerLogos.map((p, idx) => (
                 <div
                   key={`p2-${idx}`}
-                  className="bg-white/95 px-6 sm:px-8 py-4 sm:py-5 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-20 sm:h-24 min-w-[200px] sm:min-w-[230px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer"
+                  className="bg-white/95 p-2 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-28 sm:h-36 min-w-[260px] sm:min-w-[320px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer"
                 >
-                  <div className="relative w-36 sm:w-44 h-12 sm:h-14">
+                  <div className="relative w-56 sm:w-72 h-24 sm:h-28">
                     <Image
                       src={p.src}
                       alt={p.alt}
                       fill
-                      className="object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300"
-                      sizes="(max-width: 768px) 200px, 240px"
+                      className="object-contain grayscale opacity-85 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300"
+                      sizes="(max-width: 768px) 260px, 320px"
                     />
                   </div>
                 </div>

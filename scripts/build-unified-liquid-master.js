@@ -1107,11 +1107,11 @@ const html = `<!DOCTYPE html>
             </div>
 
             <div class="pt-2 flex flex-col items-center justify-center text-center">
-              <a href="kham-pha-trong-kinh/" class="inline-flex items-center gap-2 text-[var(--color-primary)] hover:text-[var(--color-primary-hover)] font-bold text-base transition-colors group">
+              <a href="trong-kinh/" class="inline-flex items-center gap-2 text-[var(--color-primary)] hover:text-[var(--color-primary-hover)] font-bold text-base transition-colors group">
                 <span>Khám phá giải pháp tròng kính</span>
                 <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
               </a>
-              <span class="text-xs text-slate-500 mt-1">Dẫn đến trang Công nghệ & Kiến thức</span>
+              <span class="text-xs text-slate-500 mt-1">Dẫn đến trang Tròng kính</span>
             </div>
 
           </div>
@@ -1460,107 +1460,107 @@ const html = `<!DOCTYPE html>
             <div class="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-28 bg-gradient-to-r from-[var(--site-bg-start)] to-transparent z-10"></div>
             <div class="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-28 bg-gradient-to-l from-[var(--site-bg-start)] to-transparent z-10"></div>
 
-            <div class="animate-marquee gap-5 sm:gap-6 items-center">
+            <div class="animate-marquee gap-6 sm:gap-8 items-center">
               <!-- Set 1: 10 Partner Logos with Cards -->
-              <div class="bg-white/95 px-6 sm:px-8 py-4 sm:py-5 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-20 sm:h-24 min-w-[200px] sm:min-w-[230px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
-                <div class="relative w-36 sm:w-44 h-12 sm:h-14 flex items-center justify-center">
+              <div class="bg-white/95 p-2 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-28 sm:h-36 min-w-[260px] sm:min-w-[320px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
+                <div class="relative w-56 sm:w-72 h-24 sm:h-28 flex items-center justify-center">
                   <img loading="lazy" decoding="async" src="assets/uploads/partners/partner_1.png" alt="Đối tác Mắt Kính Văn Nguyên (MKVN)" class="w-full h-full object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
                 </div>
               </div>
-              <div class="bg-white/95 px-6 sm:px-8 py-4 sm:py-5 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-20 sm:h-24 min-w-[200px] sm:min-w-[230px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
-                <div class="relative w-36 sm:w-44 h-12 sm:h-14 flex items-center justify-center">
+              <div class="bg-white/95 p-2 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-28 sm:h-36 min-w-[260px] sm:min-w-[320px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
+                <div class="relative w-56 sm:w-72 h-24 sm:h-28 flex items-center justify-center">
                   <img loading="lazy" decoding="async" src="assets/uploads/partners/partner_2.png" alt="Đối tác Quang Optic - Kính Thuốc Chuyên Nghiệp" class="w-full h-full object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
                 </div>
               </div>
-              <div class="bg-white/95 px-6 sm:px-8 py-4 sm:py-5 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-20 sm:h-24 min-w-[200px] sm:min-w-[230px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
-                <div class="relative w-36 sm:w-44 h-12 sm:h-14 flex items-center justify-center">
+              <div class="bg-white/95 p-2 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-28 sm:h-36 min-w-[260px] sm:min-w-[320px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
+                <div class="relative w-56 sm:w-72 h-24 sm:h-28 flex items-center justify-center">
                   <img loading="lazy" decoding="async" src="assets/uploads/partners/partner_3.png" alt="Đối tác Huân Kính Since 1995" class="w-full h-full object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
                 </div>
               </div>
-              <div class="bg-white/95 px-6 sm:px-8 py-4 sm:py-5 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-20 sm:h-24 min-w-[200px] sm:min-w-[230px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
-                <div class="relative w-36 sm:w-44 h-12 sm:h-14 flex items-center justify-center">
+              <div class="bg-white/95 p-2 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-28 sm:h-36 min-w-[260px] sm:min-w-[320px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
+                <div class="relative w-56 sm:w-72 h-24 sm:h-28 flex items-center justify-center">
                   <img loading="lazy" decoding="async" src="assets/uploads/partners/partner_4.png" alt="Đối tác Mắt Kính Sài Gòn Optic" class="w-full h-full object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
                 </div>
               </div>
-              <div class="bg-white/95 px-6 sm:px-8 py-4 sm:py-5 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-20 sm:h-24 min-w-[200px] sm:min-w-[230px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
-                <div class="relative w-36 sm:w-44 h-12 sm:h-14 flex items-center justify-center">
+              <div class="bg-white/95 p-2 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-28 sm:h-36 min-w-[260px] sm:min-w-[320px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
+                <div class="relative w-56 sm:w-72 h-24 sm:h-28 flex items-center justify-center">
                   <img loading="lazy" decoding="async" src="assets/uploads/partners/partner_5.png" alt="Đối tác Mắt Kính Tâm Đức" class="w-full h-full object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
                 </div>
               </div>
-              <div class="bg-white/95 px-6 sm:px-8 py-4 sm:py-5 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-20 sm:h-24 min-w-[200px] sm:min-w-[230px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
-                <div class="relative w-36 sm:w-44 h-12 sm:h-14 flex items-center justify-center">
+              <div class="bg-white/95 p-2 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-28 sm:h-36 min-w-[260px] sm:min-w-[320px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
+                <div class="relative w-56 sm:w-72 h-24 sm:h-28 flex items-center justify-center">
                   <img loading="lazy" decoding="async" src="assets/uploads/partners/partner_6.png" alt="Đối tác Mắt Kính Ánh Sáng" class="w-full h-full object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
                 </div>
               </div>
-              <div class="bg-white/95 px-6 sm:px-8 py-4 sm:py-5 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-20 sm:h-24 min-w-[200px] sm:min-w-[230px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
-                <div class="relative w-36 sm:w-44 h-12 sm:h-14 flex items-center justify-center">
+              <div class="bg-white/95 p-2 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-28 sm:h-36 min-w-[260px] sm:min-w-[320px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
+                <div class="relative w-56 sm:w-72 h-24 sm:h-28 flex items-center justify-center">
                   <img loading="lazy" decoding="async" src="assets/uploads/partners/partner_7.png" alt="Đối tác Mắt Kính Bệnh Viện Mắt" class="w-full h-full object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
                 </div>
               </div>
-              <div class="bg-white/95 px-6 sm:px-8 py-4 sm:py-5 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-20 sm:h-24 min-w-[200px] sm:min-w-[230px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
-                <div class="relative w-36 sm:w-44 h-12 sm:h-14 flex items-center justify-center">
+              <div class="bg-white/95 p-2 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-28 sm:h-36 min-w-[260px] sm:min-w-[320px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
+                <div class="relative w-56 sm:w-72 h-24 sm:h-28 flex items-center justify-center">
                   <img loading="lazy" decoding="async" src="assets/uploads/partners/partner_8.png" alt="Đối tác Mắt Kính Khúc Xạ" class="w-full h-full object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
                 </div>
               </div>
-              <div class="bg-white/95 px-6 sm:px-8 py-4 sm:py-5 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-20 sm:h-24 min-w-[200px] sm:min-w-[230px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
-                <div class="relative w-36 sm:w-44 h-12 sm:h-14 flex items-center justify-center">
+              <div class="bg-white/95 p-2 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-28 sm:h-36 min-w-[260px] sm:min-w-[320px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
+                <div class="relative w-56 sm:w-72 h-24 sm:h-28 flex items-center justify-center">
                   <img loading="lazy" decoding="async" src="assets/uploads/partners/partner_9.png" alt="Đối tác Chuỗi Cửa Hàng Kính" class="w-full h-full object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
                 </div>
               </div>
-              <div class="bg-white/95 px-6 sm:px-8 py-4 sm:py-5 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-20 sm:h-24 min-w-[200px] sm:min-w-[230px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
-                <div class="relative w-36 sm:w-44 h-12 sm:h-14 flex items-center justify-center">
+              <div class="bg-white/95 p-2 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-28 sm:h-36 min-w-[260px] sm:min-w-[320px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
+                <div class="relative w-56 sm:w-72 h-24 sm:h-28 flex items-center justify-center">
                   <img loading="lazy" decoding="async" src="assets/uploads/partners/partner_10.png" alt="Đối tác Nhãn Khoa Đối Tác" class="w-full h-full object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
                 </div>
               </div>
 
               <!-- Set 2: Duplicate for seamless infinite loop -->
-              <div class="bg-white/95 px-6 sm:px-8 py-4 sm:py-5 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-20 sm:h-24 min-w-[200px] sm:min-w-[230px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
-                <div class="relative w-36 sm:w-44 h-12 sm:h-14 flex items-center justify-center">
+              <div class="bg-white/95 p-2 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-28 sm:h-36 min-w-[260px] sm:min-w-[320px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
+                <div class="relative w-56 sm:w-72 h-24 sm:h-28 flex items-center justify-center">
                   <img loading="lazy" decoding="async" src="assets/uploads/partners/partner_1.png" alt="Đối tác Mắt Kính Văn Nguyên (MKVN)" class="w-full h-full object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
                 </div>
               </div>
-              <div class="bg-white/95 px-6 sm:px-8 py-4 sm:py-5 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-20 sm:h-24 min-w-[200px] sm:min-w-[230px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
-                <div class="relative w-36 sm:w-44 h-12 sm:h-14 flex items-center justify-center">
+              <div class="bg-white/95 p-2 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-28 sm:h-36 min-w-[260px] sm:min-w-[320px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
+                <div class="relative w-56 sm:w-72 h-24 sm:h-28 flex items-center justify-center">
                   <img loading="lazy" decoding="async" src="assets/uploads/partners/partner_2.png" alt="Đối tác Quang Optic - Kính Thuốc Chuyên Nghiệp" class="w-full h-full object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
                 </div>
               </div>
-              <div class="bg-white/95 px-6 sm:px-8 py-4 sm:py-5 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-20 sm:h-24 min-w-[200px] sm:min-w-[230px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
-                <div class="relative w-36 sm:w-44 h-12 sm:h-14 flex items-center justify-center">
+              <div class="bg-white/95 p-2 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-28 sm:h-36 min-w-[260px] sm:min-w-[320px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
+                <div class="relative w-56 sm:w-72 h-24 sm:h-28 flex items-center justify-center">
                   <img loading="lazy" decoding="async" src="assets/uploads/partners/partner_3.png" alt="Đối tác Huân Kính Since 1995" class="w-full h-full object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
                 </div>
               </div>
-              <div class="bg-white/95 px-6 sm:px-8 py-4 sm:py-5 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-20 sm:h-24 min-w-[200px] sm:min-w-[230px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
-                <div class="relative w-36 sm:w-44 h-12 sm:h-14 flex items-center justify-center">
+              <div class="bg-white/95 p-2 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-28 sm:h-36 min-w-[260px] sm:min-w-[320px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
+                <div class="relative w-56 sm:w-72 h-24 sm:h-28 flex items-center justify-center">
                   <img loading="lazy" decoding="async" src="assets/uploads/partners/partner_4.png" alt="Đối tác Mắt Kính Sài Gòn Optic" class="w-full h-full object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
                 </div>
               </div>
-              <div class="bg-white/95 px-6 sm:px-8 py-4 sm:py-5 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-20 sm:h-24 min-w-[200px] sm:min-w-[230px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
-                <div class="relative w-36 sm:w-44 h-12 sm:h-14 flex items-center justify-center">
+              <div class="bg-white/95 p-2 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-28 sm:h-36 min-w-[260px] sm:min-w-[320px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
+                <div class="relative w-56 sm:w-72 h-24 sm:h-28 flex items-center justify-center">
                   <img loading="lazy" decoding="async" src="assets/uploads/partners/partner_5.png" alt="Đối tác Mắt Kính Tâm Đức" class="w-full h-full object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
                 </div>
               </div>
-              <div class="bg-white/95 px-6 sm:px-8 py-4 sm:py-5 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-20 sm:h-24 min-w-[200px] sm:min-w-[230px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
-                <div class="relative w-36 sm:w-44 h-12 sm:h-14 flex items-center justify-center">
+              <div class="bg-white/95 p-2 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-28 sm:h-36 min-w-[260px] sm:min-w-[320px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
+                <div class="relative w-56 sm:w-72 h-24 sm:h-28 flex items-center justify-center">
                   <img loading="lazy" decoding="async" src="assets/uploads/partners/partner_6.png" alt="Đối tác Mắt Kính Ánh Sáng" class="w-full h-full object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
                 </div>
               </div>
-              <div class="bg-white/95 px-6 sm:px-8 py-4 sm:py-5 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-20 sm:h-24 min-w-[200px] sm:min-w-[230px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
-                <div class="relative w-36 sm:w-44 h-12 sm:h-14 flex items-center justify-center">
+              <div class="bg-white/95 p-2 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-28 sm:h-36 min-w-[260px] sm:min-w-[320px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
+                <div class="relative w-56 sm:w-72 h-24 sm:h-28 flex items-center justify-center">
                   <img loading="lazy" decoding="async" src="assets/uploads/partners/partner_7.png" alt="Đối tác Mắt Kính Bệnh Viện Mắt" class="w-full h-full object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
                 </div>
               </div>
-              <div class="bg-white/95 px-6 sm:px-8 py-4 sm:py-5 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-20 sm:h-24 min-w-[200px] sm:min-w-[230px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
-                <div class="relative w-36 sm:w-44 h-12 sm:h-14 flex items-center justify-center">
+              <div class="bg-white/95 p-2 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-28 sm:h-36 min-w-[260px] sm:min-w-[320px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
+                <div class="relative w-56 sm:w-72 h-24 sm:h-28 flex items-center justify-center">
                   <img loading="lazy" decoding="async" src="assets/uploads/partners/partner_8.png" alt="Đối tác Mắt Kính Khúc Xạ" class="w-full h-full object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
                 </div>
               </div>
-              <div class="bg-white/95 px-6 sm:px-8 py-4 sm:py-5 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-20 sm:h-24 min-w-[200px] sm:min-w-[230px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
-                <div class="relative w-36 sm:w-44 h-12 sm:h-14 flex items-center justify-center">
+              <div class="bg-white/95 p-2 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-28 sm:h-36 min-w-[260px] sm:min-w-[320px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
+                <div class="relative w-56 sm:w-72 h-24 sm:h-28 flex items-center justify-center">
                   <img loading="lazy" decoding="async" src="assets/uploads/partners/partner_9.png" alt="Đối tác Chuỗi Cửa Hàng Kính" class="w-full h-full object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
                 </div>
               </div>
-              <div class="bg-white/95 px-6 sm:px-8 py-4 sm:py-5 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-20 sm:h-24 min-w-[200px] sm:min-w-[230px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
-                <div class="relative w-36 sm:w-44 h-12 sm:h-14 flex items-center justify-center">
+              <div class="bg-white/95 p-2 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-28 sm:h-36 min-w-[260px] sm:min-w-[320px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer">
+                <div class="relative w-56 sm:w-72 h-24 sm:h-28 flex items-center justify-center">
                   <img loading="lazy" decoding="async" src="assets/uploads/partners/partner_10.png" alt="Đối tác Nhãn Khoa Đối Tác" class="w-full h-full object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
                 </div>
               </div>

@@ -74,14 +74,14 @@ export default function BrandPhilosophy() {
 
             <div className="pt-2 flex flex-col items-center justify-center text-center">
               <Link
-                href="/kham-pha-trong-kinh/"
+                href="/trong-kinh/"
                 className="inline-flex items-center gap-2 text-primary hover:text-[var(--color-primary-hover)] font-bold text-base transition-colors group"
               >
                 <span>Khám phá giải pháp tròng kính</span>
                 <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
               </Link>
               <span className="text-xs text-brand-muted mt-1">
-                Dẫn đến trang Công nghệ & Kiến thức
+                Dẫn đến trang Tròng kính
               </span>
             </div>
 
