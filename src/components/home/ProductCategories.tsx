@@ -121,32 +121,30 @@ export default function ProductCategories() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-2">
           {filtered.map((item) => (
             <div
-              key={item.num}
+              key={item.title}
               className="card-surface rounded-[28px] p-6 sm:p-7 shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between border border-[var(--color-border)]/50 group bg-white"
             >
               <div>
-                <div className="text-[11px] font-mono font-semibold text-slate-400">
-                  {item.num}
-                </div>
-
-                <div className="aspect-square w-full rounded-2xl overflow-hidden bg-slate-50/50 relative my-4 flex items-center justify-center p-2">
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-
-                <div className="space-y-1.5 pt-1">
+                <div className="space-y-1.5 pb-3">
                   <div className="text-xs font-bold text-primary tracking-wide uppercase">
                     {item.category}
                   </div>
-                  <h3 className="text-lg font-bold text-heading leading-snug">
+                  <h3 className="text-lg sm:text-xl font-bold text-heading leading-snug">
                     {item.title}
                   </h3>
                   <p className="text-brand-muted text-sm leading-relaxed">
                     {item.desc}
                   </p>
+                </div>
+
+                <div className="aspect-square w-full rounded-2xl overflow-hidden bg-slate-50/50 relative my-2 flex items-center justify-center p-2">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+                  />
                 </div>
               </div>
 
