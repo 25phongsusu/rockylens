@@ -125,7 +125,8 @@ def main():
 
     # 3. Next.js Static Export
     print("\n[3/5] Running Next.js static build (output -> out/)...")
-    run_cmd("npx next build")
+    build_cmd = "npx.cmd next build" if sys.platform == "win32" else "npx next build"
+    run_cmd(build_cmd)
 
     # 4. Sync out/ & static assets to Rocky-Deploy
     print("\n[4/5] Copying compiled artifacts to Rocky-Deploy...")
