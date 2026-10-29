@@ -50,11 +50,13 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
       if (searchQuery.trim()) {
         const q = searchQuery.toLowerCase();
         const matchName = product.name.toLowerCase().includes(q);
+        const matchHeadline = (product.consumerHeadline || '').toLowerCase().includes(q);
+        const matchSubtitle = (product.materialSubtitle || '').toLowerCase().includes(q);
         const matchTagline = (product.tagline || '').toLowerCase().includes(q);
         const matchDesc = product.shortDescription.toLowerCase().includes(q);
         const matchSku = (product.specifications?.sku || '').toLowerCase().includes(q);
         const matchIndex = (product.refractiveIndex || '').toLowerCase().includes(q);
-        if (!matchName && !matchTagline && !matchDesc && !matchSku && !matchIndex) {
+        if (!matchName && !matchHeadline && !matchSubtitle && !matchTagline && !matchDesc && !matchSku && !matchIndex) {
           return false;
         }
       }
@@ -243,16 +245,16 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
                   </div>
                 </div>
 
-                {/* Product Title */}
+                {/* Product Title - Consumer Need-Focused Headline */}
                 <h3 className="text-base sm:text-lg font-bold text-heading leading-snug group-hover:text-primary transition-colors line-clamp-2">
                   <Link href={`/trong-kinh/${product.slug}/`}>
-                    {product.name}
+                    {product.consumerHeadline || product.name}
                   </Link>
                 </h3>
 
-                {/* Tagline / Benefit */}
+                {/* Subtitle - Material & Detailed Specifications */}
                 <p className="mt-2 text-xs sm:text-sm text-brand-muted line-clamp-2 leading-relaxed">
-                  {product.tagline || product.shortDescription}
+                  {product.materialSubtitle || product.tagline || product.shortDescription}
                 </p>
 
                 {/* Product Studio Lens Photograph */}

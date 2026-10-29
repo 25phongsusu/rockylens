@@ -47,6 +47,8 @@ export interface Product {
   slug: string;
   status: ProductStatus;
   name: string;
+  consumerHeadline?: string; // Tiêu đề định hướng nhu cầu người dùng cuối (ví dụ: Ngồi máy tính, Chạy bộ...)
+  materialSubtitle?: string; // Phụ đề vật liệu kỹ thuật chi tiết
   tagline?: string;
   brandId: string;
   categoryIds: LensCategory[];

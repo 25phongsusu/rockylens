@@ -186,18 +186,29 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
           <div className="lg:col-span-7 space-y-8">
             <div>
               {/* 3. Tên sản phẩm */}
-              <div className="inline-block text-xs font-semibold uppercase tracking-wider text-[var(--color-primary)] bg-[var(--site-bg-middle)]/60 px-3 py-1 rounded-full mb-3 border border-[var(--color-border)]/40">
-                Canada Opticians Official
+              <div className="flex flex-wrap items-center gap-2 mb-3">
+                <div className="inline-block text-xs font-semibold uppercase tracking-wider text-[var(--color-primary)] bg-[var(--site-bg-middle)]/60 px-3 py-1 rounded-full border border-[var(--color-border)]/40">
+                  Canada Opticians Official
+                </div>
+                {product.consumerHeadline && (
+                  <div className="inline-block text-xs font-bold text-teal-800 bg-teal-50 px-3 py-1 rounded-full border border-teal-200">
+                    Phù hợp: {product.consumerHeadline}
+                  </div>
+                )}
               </div>
               <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-heading tracking-tight leading-tight">
                 {product.name}
               </h1>
 
-              {product.tagline && (
+              {product.materialSubtitle ? (
+                <p className="mt-2 text-sm sm:text-base font-medium text-slate-700">
+                  {product.materialSubtitle}
+                </p>
+              ) : product.tagline ? (
                 <p className="mt-2 text-sm sm:text-base font-medium text-[var(--color-muted)]">
                   {product.tagline}
                 </p>
-              )}
+              ) : null}
 
               {/* 4. Mô tả ngắn dễ hiểu */}
               <div className="mt-4 p-4 rounded-xl bg-[var(--site-bg-start)]/60 border border-[var(--color-border)]/50 text-xs sm:text-sm text-heading leading-relaxed">
