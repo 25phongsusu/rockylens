@@ -29,7 +29,7 @@ export default function Header() {
   return (
     <>
       {/* TOP SLIM BAR: OFFICIAL IDENTITY & CONTACT (MATCHES HOME EXACTLY) */}
-      <div className="bg-[var(--b2b-end)] text-white py-2.5 px-6 text-base">
+      <div className="bg-[var(--b2b-end)] text-white py-1 px-6 text-base">
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <span className="text-[var(--button-start)] font-semibold text-base">Rocky Lens Canada</span>
@@ -55,7 +55,7 @@ export default function Header() {
 
       {/* APPLE FLUID NAVIGATION: STICKY FROSTED GLASS (MATCHES HOME EXACTLY) */}
       <header className="sticky top-0 z-40 bg-[var(--site-bg-start)]/90 backdrop-blur-md border-b border-[var(--color-border)] transition-shadow">
-        <div className="max-w-7xl mx-auto px-6 py-2.5 sm:py-3 flex items-center justify-between gap-6">
+        <div className="max-w-7xl mx-auto px-6 py-1 sm:py-1.5 flex items-center justify-between gap-6">
           
           {/* Brand Logo with Real Rocky Image (+50% size) */}
           <Link href="/" className="flex items-center gap-3 group">

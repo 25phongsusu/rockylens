@@ -53,7 +53,7 @@ export default function HeroSection() {
   return (
     <section
       id="brand-hero"
-      className={`relative overflow-hidden py-20 sm:py-28 lg:py-36 min-h-[780px] lg:min-h-[860px] flex flex-col justify-center transition-all duration-700 ${
+      className={`relative overflow-hidden py-10 sm:py-14 lg:py-16 min-h-[420px] lg:min-h-[460px] flex flex-col justify-center transition-all duration-700 ${
         isBanner ? 'bg-[#001722] text-white' : 'site-background text-slate-800'
       }`}
     >
@@ -79,8 +79,8 @@ export default function HeroSection() {
       {/* ========================================================= */}
       {!isBanner && (
         <>
-          <div className="absolute -top-32 -left-32 w-[600px] h-[600px] bg-gradient-to-tr from-[var(--site-bg-end)]/40 via-[var(--site-bg-middle)]/30 to-[var(--button-start)]/30 rounded-full blur-[100px] liquid-morph-1 pointer-events-none" />
-          <div className="absolute top-1/4 -right-32 w-[550px] h-[550px] bg-gradient-to-bl from-[var(--site-bg-middle)]/35 via-[var(--site-bg-start)]/30 to-[var(--site-bg-end)]/30 rounded-full blur-[110px] liquid-morph-2 pointer-events-none" />
+          <div className="absolute -top-32 -left-32 w-[400px] h-[400px] bg-gradient-to-tr from-[var(--site-bg-end)]/40 via-[var(--site-bg-middle)]/30 to-[var(--button-start)]/30 rounded-full blur-[100px] liquid-morph-1 pointer-events-none" />
+          <div className="absolute top-1/4 -right-32 w-[380px] h-[380px] bg-gradient-to-bl from-[var(--site-bg-middle)]/35 via-[var(--site-bg-start)]/30 to-[var(--site-bg-end)]/30 rounded-full blur-[110px] liquid-morph-2 pointer-events-none" />
         </>
       )}
 
@@ -89,7 +89,7 @@ export default function HeroSection() {
         {/* ========================================================= */}
         {/* SEGMENTED MODE SWITCHER: CHẾ ĐỘ 1 vs CHẾ ĐỘ 2            */}
         {/* ========================================================= */}
-        <div className="flex items-center justify-center lg:justify-start mb-6">
+        <div className="flex items-center justify-center lg:justify-start mb-4">
           <div className="inline-flex items-center p-1 rounded-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border border-slate-300/70 shadow-sm transition-all">
             <button
               type="button"
@@ -262,14 +262,14 @@ export default function HeroSection() {
             
             {/* Ambient Caustic Halo */}
             <div
-              className={`w-96 h-96 sm:w-[480px] sm:h-[480px] rounded-full blur-3xl absolute liquid-morph-1 pointer-events-none transition-opacity duration-700 ${
+              className={`w-72 h-72 sm:w-[360px] sm:h-[360px] rounded-full blur-3xl absolute liquid-morph-1 pointer-events-none transition-opacity duration-700 ${
                 isBanner
                   ? 'bg-gradient-to-tr from-cyan-500/20 via-teal-500/20 to-blue-500/10'
                   : 'bg-gradient-to-tr from-teal-200/50 via-cyan-100/40 to-sky-200/50'
               }`}
             />
 
-            <div className="relative z-10 w-full max-w-md sm:max-w-lg lg:max-w-xl aspect-square flex items-center justify-center">
+            <div className="relative z-10 w-full max-w-xs sm:max-w-sm lg:max-w-[380px] aspect-square flex items-center justify-center">
               
               <div
                 className={`relative w-full h-full flex items-center justify-center transition-all duration-700 ${
