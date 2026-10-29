@@ -14,7 +14,7 @@ import { constructMetadata } from '@/lib/seo/metadata';
 
 export const metadata: Metadata = constructMetadata({
   title: 'Công Nghệ Tròng Kính & Kiến Thức Quang Học - Rocky Lens Canada',
-  description: 'Khám phá 3 trụ cột công nghệ Rocky Lens: Phôi vật liệu Mitsui MR-8 & BlueCut UV420, Màng phủ chân không Nano SHMC & DriveShield, và Thiết kế quang học số Freeform 4K & Aspheric.',
+  description: 'Khám phá 4 công nghệ quang học Rocky Lens: Thiết kế phi cầu Aspheric, Màng phủ chống chói đa tầng SHMC, Lớp siêu trượt nước Super Hydrophobic và Khử bức xạ EMI BlueCut.',
   path: '/cong-nghe/',
 });
 
@@ -32,63 +32,82 @@ interface CorePillarItem {
   tag: string;
 }
 
-const corePillars: CorePillarItem[] = [
+const coreTechnologies: CorePillarItem[] = [
   {
     number: '01',
-    badge: 'Phôi Vật Liệu',
-    title: 'Phôi Quang Học Tinh Khiết',
-    subtitle: 'Mitsui MR Series & BlueCut Monomer',
-    image: '/images/technologies/tech_sec3_1.jpg',
-    imageAlt: 'Công nghệ phôi vật liệu quang học Mitsui MR dẻo dai',
+    badge: 'Thiết Kế Hình Học',
+    title: 'Thiết Kế Phi Cầu Aspheric',
+    subtitle: 'Aspheric Geometry (SPH)',
+    image: '/images/technologies/tech_aspheric_design.png',
+    imageAlt: 'Sơ đồ so sánh tròng kính cầu thông thường và thiết kế phi cầu Aspheric SPH',
     points: [
       {
-        label: 'Mitsui MR-8 & MR-7:',
-        text: 'Siêu dẻo dai, chống nứt vỡ tuyệt đối cho gọng khoan ốc và xẻ cước.',
+        label: 'Tròng phẳng & Mỏng nhẹ:',
+        text: 'Phẳng hơn rõ rệt, mỏng nhẹ hơn 10% - 15% so với tròng cầu thông thường.',
       },
       {
-        label: 'BlueCut UV420:',
-        text: 'Hấp thụ ánh sáng xanh trong cốt phôi, truyền quang 98% không ám vàng.',
+        label: 'Triệt tiêu méo rìa:',
+        text: 'Mở rộng thị trường sắc nét, loại bỏ biến dạng và giảm hiện tượng mắt bị thu nhỏ.',
       },
     ],
-    tag: 'Ứng dụng: BlueCut 1.56, MR-8 1.60, MR-7 1.67',
+    tag: 'Ứng dụng: Rocky Aspheric 1.60, 1.67, 1.74',
   },
   {
     number: '02',
-    badge: 'Hệ Lớp Phủ',
-    title: 'Màng Phủ Chân Không Nano Đa Năng',
-    subtitle: 'Nano Sapphire SHMC & DriveShield',
-    image: '/images/technologies/tech_sec3_2.jpg',
-    imageAlt: 'Công nghệ màng phủ chân không Nano siêu trượt nước lá sen và chống bám bụi',
+    badge: 'Màng Phủ Chân Không',
+    title: 'Lớp Phủ Đa Tầng SHMC',
+    subtitle: 'Super Hydrophobic Multi-Coating',
+    image: '/images/technologies/tech_shmc_multilayer.png',
+    imageAlt: 'Cấu trúc đa tầng lớp phủ chống chói phản quang SHMC cao cấp',
     points: [
       {
-        label: 'Super Hydrophobic:',
-        text: 'Hiệu ứng lá sen trượt nước mưa góc >115°, kháng bám dầu mỡ và vân tay.',
+        label: 'Độ truyền quang 99.8%:',
+        text: 'Triệt tiêu bóng ma và các tia phản xạ ngoại vi gây chói lóa từ đèn xe, màn hình.',
       },
       {
-        label: 'DriveShield & EMI:',
-        text: 'Giảm chói đèn pha LED ban đêm và triệt tiêu tĩnh điện hút bụi mịn.',
+        label: 'Gia cố độ cứng bề mặt:',
+        text: 'Hệ màng liên kết nano hạn chế trầy xước dăm gấp 3 lần tròng tiêu chuẩn.',
       },
     ],
     tag: 'Ứng dụng: Tiêu chuẩn trên toàn bộ sản phẩm Rocky',
   },
   {
     number: '03',
-    badge: 'Thiết Kế Số',
-    title: 'Thiết Kế Quang Học Số & Freeform',
-    subtitle: 'Aspheric SPH & Digital Freeform 4K',
-    image: '/images/technologies/tech_sec3_3.jpg',
-    imageAlt: 'Công nghệ thiết kế quang học số và khúc xạ đa tròng Freeform 4K',
+    badge: 'Bề Mặt Kỵ Nước',
+    title: 'Màng Siêu Trượt Nước Lá Sen',
+    subtitle: 'Super Hydrophobic Lotus Effect',
+    image: '/images/technologies/tech_super_hydrophobic.png',
+    imageAlt: 'Hiệu ứng trượt nước lá sen góc tiếp xúc >115 độ Super Hydrophobic',
     points: [
       {
-        label: 'Aspheric (Phi cầu):',
-        text: 'Tròng phẳng mỏng hơn 15%, triệt tiêu biến dạng méo hình vùng rìa.',
+        label: 'Hiệu ứng lá sen góc >115°:',
+        text: 'Nước mưa và hơi ẩm gom tròn trôi tuột tức thì, không gây mờ nhòe khi đi mưa.',
       },
       {
-        label: 'Freeform 4K:',
-        text: 'Phay kỹ thuật số sai số < 0.01D, mở rộng 40% trường nhìn êm ái.',
+        label: 'Kháng bám bụi & Vân tay:',
+        text: 'Kháng bám dầu mỡ đến 90%, duy trì tròng sáng trong và lau chùi êm nhẹ như lụa.',
       },
     ],
-    tag: 'Ứng dụng: Dòng Aspheric & Đa tròng Freeform',
+    tag: 'Ứng dụng: Tối ưu cho người hay di chuyển ngoài trời',
+  },
+  {
+    number: '04',
+    badge: 'Bảo Vệ Điện Tử',
+    title: 'Khử Bức Xạ EMI & BlueCut',
+    subtitle: 'Electro-Magnetic Interference & UV420',
+    image: '/images/technologies/tech_emi_coating.png',
+    imageAlt: 'Lớp phủ EMI ngăn tia bức xạ tĩnh điện màn hình điện tử',
+    points: [
+      {
+        label: 'Khử tĩnh điện bề mặt:',
+        text: 'Triệt tiêu lực hút bụi mịn trong không khí, giữ tròng kính luôn sạch sẽ.',
+      },
+      {
+        label: 'Cản sóng điện từ & UV:',
+        text: 'Giảm tải căng thẳng điều tiết mắt khi làm việc nhiều giờ trước thiết bị số.',
+      },
+    ],
+    tag: 'Ứng dụng: Dòng BlueCut UV420 & Tròng văn phòng',
   },
 ];
 
@@ -204,62 +223,62 @@ export default function CongNghePage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-14 space-y-14 sm:space-y-16">
 
         {/* ========================================================= */}
-        {/* 2. THREE CORE PILLARS (GỌN GÀNG, CÓ ẢNH, KHÔNG DÙNG ICON) */}
+        {/* 2. FOUR CORE TECHNOLOGIES (DIAGRAMS, KHÔNG DÙNG ICON)     */}
         {/* ========================================================= */}
         <section id="tru-cot-cong-nghe" className="space-y-8 scroll-mt-24">
           <div className="text-center max-w-3xl mx-auto space-y-2">
             <span className="inline-block px-3 py-1 rounded-full bg-[var(--site-bg-middle)]/60 text-primary text-xs font-bold border border-[var(--color-border)]/60">
-              3 Trụ Cột Công Nghệ Cốt Lõi
+              4 Công Nghệ Quang Học Độc Quyền
             </span>
             <h2 className="text-2xl sm:text-3xl font-black text-heading tracking-tight">
-              Đột Phá Từ Vật Liệu Đến Gia Công Kỹ Thuật Số
+              Khoa Học Xử Lý Bề Mặt &amp; Quang Học Hình Học
             </h2>
             <p className="text-brand-muted text-xs sm:text-sm leading-relaxed">
               Mỗi chiếc tròng kính Rocky Lens là sự kết hợp chuẩn xác giữa hình học phi cầu tối ưu và công nghệ lắng đọng màng mỏng đa tầng đạt chứng nhận quản lý y tế ISO 13485:2016.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {corePillars.map((pillar) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {coreTechnologies.map((tech) => (
               <div
-                key={pillar.number}
-                className="card-surface rounded-3xl p-5 sm:p-6 bg-white border border-[var(--color-border)]/70 shadow-xs hover:shadow-lg transition-all flex flex-col justify-between group overflow-hidden"
+                key={tech.number}
+                className="card-surface rounded-3xl p-5 bg-white border border-[var(--color-border)]/70 shadow-xs hover:shadow-lg transition-all flex flex-col justify-between group overflow-hidden"
               >
                 <div className="space-y-4">
-                  {/* Visual Real Lens Photograph */}
-                  <div className="relative aspect-[16/10] w-full rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/80">
+                  {/* Visual Technology Diagram Asset */}
+                  <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden bg-slate-50/80 border border-slate-200/80 p-2 flex items-center justify-center">
                     <Image
-                      src={pillar.image}
-                      alt={pillar.imageAlt}
+                      src={tech.image}
+                      alt={tech.imageAlt}
                       fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
-                      sizes="(max-width: 768px) 100vw, 33vw"
+                      className="object-contain p-2 group-hover:scale-105 transition-transform duration-500"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                     />
                   </div>
 
                   {/* Header: Number & Badge (No icons) */}
                   <div className="flex items-center justify-between pt-1">
                     <span className="w-8 h-8 rounded-lg bg-[var(--site-bg-middle)]/60 text-[var(--color-primary)] font-black flex items-center justify-center text-xs">
-                      {pillar.number}
+                      {tech.number}
                     </span>
-                    <span className="text-xs font-bold px-3 py-1 rounded-full bg-slate-100 text-slate-700">
-                      {pillar.badge}
+                    <span className="text-[11px] font-bold px-2.5 py-1 rounded-full bg-slate-100 text-slate-700">
+                      {tech.badge}
                     </span>
                   </div>
 
                   {/* Title & Subtitle */}
                   <div>
-                    <h3 className="text-lg sm:text-xl font-bold text-heading group-hover:text-[var(--color-primary)] transition-colors">
-                      {pillar.title}
+                    <h3 className="text-base sm:text-lg font-bold text-heading group-hover:text-[var(--color-primary)] transition-colors leading-snug">
+                      {tech.title}
                     </h3>
-                    <p className="text-xs text-[var(--button-start)] font-semibold mt-0.5">
-                      {pillar.subtitle}
+                    <p className="text-[11px] text-[var(--button-start)] font-semibold mt-0.5">
+                      {tech.subtitle}
                     </p>
                   </div>
 
                   {/* 2 Concise Points - Pure text, zero icons */}
                   <div className="space-y-2.5 pt-2 border-t border-slate-100">
-                    {pillar.points.map((pt, pIdx) => (
+                    {tech.points.map((pt, pIdx) => (
                       <div key={pIdx} className="text-xs leading-relaxed text-slate-700">
                         <span className="font-bold text-heading">{pt.label} </span>
                         <span className="text-slate-600">{pt.text}</span>
@@ -269,8 +288,8 @@ export default function CongNghePage() {
                 </div>
 
                 {/* Footer Tag */}
-                <div className="mt-5 pt-3 border-t border-slate-100 text-xs font-semibold text-slate-500 italic">
-                  {pillar.tag}
+                <div className="mt-5 pt-3 border-t border-slate-100 text-[11px] font-semibold text-slate-500 italic">
+                  {tech.tag}
                 </div>
               </div>
             ))}

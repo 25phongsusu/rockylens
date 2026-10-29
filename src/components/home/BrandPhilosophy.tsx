@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Monitor, Sun, Eye } from 'lucide-react';
 
 export default function BrandPhilosophy() {
@@ -12,10 +13,13 @@ export default function BrandPhilosophy() {
           <div className="lg:col-span-5 order-2 lg:order-1">
             <div className="relative rounded-3xl overflow-hidden shadow-sm bg-slate-100 group">
               <div className="aspect-[4/3] sm:aspect-[16/11] w-full relative">
-                <img
+                <Image
                   src="/images/company/t.png"
                   alt="Trải nghiệm thị giác tròng kính Rocky"
-                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 40vw"
+                  className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                  priority
                 />
               </div>
               <div className="absolute top-4 left-4">

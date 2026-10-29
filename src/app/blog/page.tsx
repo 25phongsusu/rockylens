@@ -1,13 +1,12 @@
 import React from 'react';
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Image from 'next/image';
 import { BookOpen, Sparkles, Clock, Calendar, ArrowRight, ShieldCheck, Eye, Layers } from 'lucide-react';
 import { getAllArticles } from '@/features/articles/article-service';
 import Breadcrumbs from '@/components/shared/Breadcrumbs';
 import ContactCTA from '@/components/shared/ContactCTA';
+import ArticleCard from '@/components/content/ArticleCard';
 import { constructMetadata } from '@/lib/seo/metadata';
-import { formatDate } from '@/lib/utils';
 
 export const metadata: Metadata = constructMetadata({
   title: 'Blog Quang Học & Insight Thị Giác | Rocky Lens Canada',
@@ -60,66 +59,7 @@ export default function BlogIndexPage() {
         {/* Article Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {articles.map((article) => (
-            <article
-              key={article.id}
-              className="group card-surface rounded-3xl overflow-hidden shadow-xs hover:shadow-xl hover:shadow-[var(--button-end)]/10 transition-all duration-300 flex flex-col justify-between border border-[var(--color-border)]/50"
-            >
-              <div>
-                {/* Cover Image */}
-                <Link
-                  href={`/blog/${article.slug}/`}
-                  className="relative aspect-16/10 bg-slate-100 overflow-hidden block"
-                >
-                  <img
-                    src={article.coverImage || '/images/articles/blog_b2b_policy.png'}
-                    alt={article.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <span className="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-bold button-primary shadow-xs">
-                    {article.categoryName}
-                  </span>
-                </Link>
-
-                {/* Content */}
-                <div className="p-6 sm:p-7 space-y-3">
-                  <div className="flex items-center gap-3 text-xs font-semibold text-[var(--color-muted)]">
-                    <span className="inline-flex items-center gap-1">
-                      <Calendar className="w-3.5 h-3.5 text-[var(--color-primary)]" />
-                      <span>{formatDate(article.publishedAt)}</span>
-                    </span>
-                    <span>&bull;</span>
-                    <span className="inline-flex items-center gap-1">
-                      <Clock className="w-3.5 h-3.5 text-[var(--color-primary)]" />
-                      <span>{article.readTime}</span>
-                    </span>
-                  </div>
-
-                  <h3 className="text-xl font-bold text-heading group-hover:text-[var(--color-primary)] transition-colors leading-snug line-clamp-2">
-                    <Link href={`/blog/${article.slug}/`}>
-                      {article.title}
-                    </Link>
-                  </h3>
-
-                  <p className="text-[var(--color-muted)] text-sm leading-relaxed line-clamp-3">
-                    {article.description}
-                  </p>
-                </div>
-              </div>
-
-              {/* Card Footer CTA */}
-              <div className="p-6 sm:p-7 pt-0 border-t border-[var(--color-border)]/30 mt-4 flex items-center justify-between">
-                <span className="text-xs font-medium text-[var(--color-muted)]">
-                  {article.readTime}
-                </span>
-                <Link
-                  href={`/blog/${article.slug}/`}
-                  className="inline-flex items-center gap-1.5 text-sm font-bold text-[var(--color-primary)] group-hover:text-[var(--color-primary-hover)] transition-colors"
-                >
-                  <span>Đọc bài</span>
-                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-                </Link>
-              </div>
-            </article>
+            <ArticleCard key={article.id} article={article} />
           ))}
         </div>
 

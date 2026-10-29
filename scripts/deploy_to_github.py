@@ -142,6 +142,11 @@ def main():
         if os.path.exists(src_folder):
             shutil.copytree(src_folder, dest_folder)
             print(f"  ✓ Synced folder: {folder}")
+        # If folder exists in ROOT_DIR (like assets or images), also overlay to ensure completeness:
+        root_src_folder = os.path.join(ROOT_DIR, folder)
+        if os.path.exists(root_src_folder) and root_src_folder != dest_folder:
+            shutil.copytree(root_src_folder, dest_folder, dirs_exist_ok=True)
+            print(f"  ✓ Overlaid root folder: {folder}")
 
     # Copy files
     for file_name in DEPLOY_FILES:

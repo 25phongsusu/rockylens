@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
+import ArticleCard from '@/components/content/ArticleCard';
+import { ArticleMeta } from '@/features/articles/article-types';
 
 export const blogArticles = [
   {
@@ -47,55 +49,39 @@ export default function BlogSection() {
           </p>
         </div>
 
-        {/* 3 Editorial Blog Cards Grid - Aligned with Section Header */}
+        {/* 3 Editorial Blog Cards Grid - Unified with Blog System */}
         <div className="w-full">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
-            {blogArticles.map((article) => (
-              <article
-                key={article.slug}
-                className="card-surface rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between border border-[var(--color-border)]/50 group bg-white"
-              >
-                <div>
-                  <Link
-                    href={`/blog/${article.slug}/`}
-                    className="aspect-[16/10] sm:aspect-[16/10] h-36 sm:h-40 w-full bg-slate-100 overflow-hidden block relative"
-                  >
-                    <img
-                      src={article.image}
-                      alt={article.title}
-                      loading="lazy"
-                      decoding="async"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                  </Link>
-
-                  <div className="p-4 sm:p-5 space-y-1.5">
-                    <div className="text-[11px] font-bold text-primary tracking-wider uppercase">
-                      {article.category}
-                    </div>
-                    <h3 className="text-base sm:text-lg font-bold text-heading leading-snug group-hover:text-primary transition-colors">
-                      <Link href={`/blog/${article.slug}/`}>
-                        {article.title}
-                      </Link>
-                    </h3>
-                    <p className="text-brand-muted text-xs leading-relaxed line-clamp-2">
-                      {article.desc}
-                    </p>
-                  </div>
-                </div>
-
-                <div className="p-4 sm:p-5 pt-0">
-                  <Link
-                    href={`/blog/${article.slug}/`}
-                    className="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all"
-                  >
-                    <span>Đọc bài viết</span>
-                    <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                  </Link>
-                </div>
-              </article>
-            ))}
+            {blogArticles.map((article) => {
+              const cardData: ArticleMeta = {
+                id: article.slug,
+                slug: article.slug,
+                title: article.title,
+                description: article.desc,
+                category: 'kien-thuc',
+                categoryName: article.category,
+                coverImage: article.image,
+                publishedAt: '2025-03-05',
+                author: 'Rocky Lens Canada',
+                readTime: '5 phút đọc',
+                relatedProductIds: [],
+                relatedArticleIds: [],
+                tags: [],
+              };
+              return <ArticleCard key={article.slug} article={cardData} />;
+            })}
           </div>
+        </div>
+
+        {/* Footer Link to Blog */}
+        <div className="pt-2 text-center sm:text-left">
+          <Link
+            href="/blog/"
+            className="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1.5 transition-all"
+          >
+            <span>Xem tất cả bài viết tại Chuyên mục Blog</span>
+            <ArrowRight className="w-4 h-4" />
+          </Link>
         </div>
 
       </div>
