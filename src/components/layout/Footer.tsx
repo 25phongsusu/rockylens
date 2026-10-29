@@ -69,8 +69,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/cong-nghe/" className="text-slate-400 font-medium hover:text-white transition-colors">
-                  Gia công kỹ thuật số Freeform
+                <Link href="/rx-lab/" className="text-slate-400 font-medium hover:text-white transition-colors">
+                  Gia công Lab RX kỹ thuật số
                 </Link>
               </li>
               <li>

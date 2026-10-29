@@ -3,130 +3,147 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import {
-  HelpCircle,
-  ArrowRight,
-  CheckCircle2,
   Sparkles,
   Layers,
   Droplets,
-  ShieldCheck,
   Eye,
+  CheckCircle2,
+  ArrowRight,
+  HelpCircle,
+  Cpu,
 } from 'lucide-react';
 import Breadcrumbs from '@/components/shared/Breadcrumbs';
 import ContactCTA from '@/components/shared/ContactCTA';
 import { constructMetadata } from '@/lib/seo/metadata';
 
 export const metadata: Metadata = constructMetadata({
-  title: 'Công Nghệ Tròng Kính & Kiến Thức Quang Học Rocky Canada',
-  description: 'Khám phá công nghệ thiết kế phi cầu Aspheric, lớp phủ chống chói đa tầng SHMC, màng siêu trượt nước Super Hydrophobic và lớp phủ khử bức xạ EMI của Rocky Lens Canada.',
+  title: 'Công Nghệ Tròng Kính & Kiến Thức Quang Học - Rocky Lens Canada',
+  description: 'Khám phá 3 trụ cột công nghệ Rocky Lens: Phôi vật liệu Mitsui MR-8 & BlueCut UV420, Màng phủ chân không Nano SHMC & DriveShield, và Thiết kế quang học số Freeform 4K & Aspheric.',
   path: '/cong-nghe/',
 });
 
-interface AdvancedTechItem {
-  id: string;
-  badge: string;
-  icon: React.ElementType;
-  title: string;
-  subtitle: string;
-  description: string;
-  benefits: string[];
-  image: string;
-  imageAlt: string;
-  tag: string;
-  linkSlug?: string;
-}
-
-const advancedTechnologies: AdvancedTechItem[] = [
+const corePillars = [
   {
-    id: 'aspheric',
-    badge: 'Thiết Kế Quang Học Tiên Tiến',
-    icon: Eye,
-    title: 'Thiết Kế Aspheric (Phi Cầu)',
-    subtitle: 'Aspheric Design (SPH)',
+    number: '01',
+    badge: 'Phôi Vật Liệu',
+    title: 'Phôi Quang Học Tinh Khiết',
+    subtitle: 'Mitsui MR Series & BlueCut Monomer',
     description:
-      'Thiết kế Aspheric (phi cầu) ứng dụng công nghệ quang học tiên tiến, tối ưu hóa độ cong bề mặt tròng để triệt tiêu hiện tượng quang sai cầu biên. So với tròng cầu thông thường, tròng kính phẳng hơn, mỏng nhẹ hơn và tăng tính thẩm mỹ rõ rệt, đồng thời mở rộng tầm nhìn chân thực, sắc nét và hạn chế tối đa cảm giác biến dạng méo hình khi liếc nhìn về hai bên.',
-    benefits: [
-      'Giảm thiểu hiện tượng quang sai và méo hình vùng rìa',
-      'Tròng kính phẳng, mỏng nhẹ hơn từ 10% đến 15% so với tròng cầu',
-      'Hạn chế tình trạng thu nhỏ mắt (độ cận cao) hoặc phóng đại mắt (độ viễn)',
+      'Cốt lõi của chiếc tròng kính hoàn hảo bắt đầu từ phôi vật liệu tinh khiết. Rocky Lens tuyển chọn phôi nhựa nhiệt rắn cao cấp từ các nhà sản xuất hóa chất quang học hàng đầu thế giới.',
+    points: [
+      {
+        name: 'Phôi Mitsui MR-8 & MR-7 (Nhật Bản):',
+        desc: 'Độ dai và chịu lực va đập vượt trội, chịu lực kéo căng, chống nứt vỡ tuyệt đối khi khoan bắt ốc hoặc xẻ cước.',
+      },
+      {
+        name: 'Phôi BlueCut UV420 không ám vàng:',
+        desc: 'Hạt monomer hấp thụ trực tiếp tia UV và dải ánh sáng xanh 400-420nm từ cốt phôi, giữ độ truyền quang 98% cho hình ảnh trong suốt tự nhiên.',
+      },
     ],
-    image: '/images/technologies/tech_aspheric_design.png',
-    imageAlt: 'Sơ đồ so sánh tròng kính cầu thông thường và thiết kế phi cầu Aspheric SPH',
-    tag: 'Ứng dụng trên các dòng tròng Aspheric 1.60, 1.67, 1.74',
-    linkSlug: 'rocky-160-mr8-aspheric',
+    tag: 'Ứng dụng: BlueCut 1.56, MR-8 1.60, MR-7 1.67',
+    icon: Sparkles,
   },
   {
-    id: 'shmc',
-    badge: 'Xử Lý Chống Phản Quang Đa Tầng',
-    icon: Layers,
-    title: 'Lớp Phủ Chống Chói Cao Cấp SHMC',
-    subtitle: 'Super Hydrophobic Multi-Coating',
+    number: '02',
+    badge: 'Hệ Lớp Phủ',
+    title: 'Màng Phủ Chân Không Nano Đa Năng',
+    subtitle: 'Nano Sapphire SHMC & DriveShield',
     description:
-      'Hệ thống phủ chân không đa tầng SHMC tích hợp nhiều lớp màng nano quang học siêu mỏng trên cả hai mặt tròng kính. Công nghệ này triệt tiêu đến 99.8% các tia phản xạ ngoại vi gây chói lóa từ đèn xe đối diện, đèn huỳnh quang văn phòng và màn hình số, đem lại trải nghiệm thị giác trong suốt, êm dịu và sắc nét trong mọi điều kiện ánh sáng.',
-    benefits: [
-      'Độ truyền quang đạt 99.8%, loại bỏ bóng ma và phản xạ sáng gây mỏi mắt',
-      'Tăng độ tương phản thị giác trong điều kiện thiếu sáng và khi lái xe ban đêm',
-      'Tăng cường độ cứng bề mặt, hạn chế xước dăm gấp 3 lần tròng tiêu chuẩn',
+      'Hệ thống phủ chân không đa tầng lắng đọng nhiều lớp màng nano quang học siêu mỏng trên cả hai bề mặt tròng, bảo vệ tròng kính trước mọi tác nhân môi trường.',
+    points: [
+      {
+        name: 'Siêu trượt nước Super Hydrophobic (>115°):',
+        desc: 'Tạo hiệu ứng lá sen trơn trượt, nước mưa và hơi sương trôi tuột tức thì, kháng bám dầu mỡ và dấu vân tay.',
+      },
+      {
+        name: 'DriveShield lọc chói đèn pha LED:',
+        desc: 'Triệt tiêu bước sóng chói 440-460nm của đèn xe ngược chiều, tăng tương phản khi lái xe ban đêm và trời mưa.',
+      },
+      {
+        name: 'Màng chắn khử tĩnh điện EMI:',
+        desc: 'Trung hòa điện tích bề mặt, ngăn hoàn toàn hiện tượng hút bụi mịn và xơ vải khi lau kính.',
+      },
     ],
-    image: '/images/technologies/tech_shmc_multilayer.png',
-    imageAlt: 'Cấu trúc đa tầng lớp phủ chống chói phản quang SHMC cao cấp',
-    tag: 'Tiêu chuẩn phủ trên toàn bộ hệ thống sản phẩm Rocky Lens',
-    linkSlug: 'rocky-156-bluecut-shmc',
-  },
-  {
-    id: 'super-hydrophobic',
-    badge: 'Màng Bảo Vệ Bề Mặt Trơn Trượt',
+    tag: 'Ứng dụng: Tiêu chuẩn trên toàn bộ sản phẩm Rocky',
     icon: Droplets,
-    title: 'Lớp Phủ Siêu Trượt Nước (Super Hydrophobic)',
-    subtitle: 'Super Hydrophobic Layer',
-    description:
-      'Lớp phủ Super Hydrophobic tạo hiệu ứng lá sen siêu trơn trên bề mặt tròng kính với góc tiếp xúc hạt nước lớn hơn 115°. Nước mưa, hơi ẩm sương mù và các hạt dầu mỡ sẽ tự động gom thành hạt tròn và trượt tuột tức thì thay vì bám dính lại. Kính luôn sạch sẽ, hạn chế bám bụi và vết ố bẩn, duy trì tầm nhìn thông suốt và lau chùi dễ dàng như lụa.',
-    benefits: [
-      'Hạt nước mưa và hơi sương trôi tuột tức thì, không gây mờ nhòe khi đi mưa',
-      'Kháng bám bụi bẩn, dấu vân tay và vết ố mờ lên đến 90%',
-      'Bảo dưỡng và vệ sinh tròng cực kỳ êm ái, kéo dài tuổi thọ lớp phủ',
-    ],
-    image: '/images/technologies/tech_super_hydrophobic.png',
-    imageAlt: 'Hiệu ứng trượt nước siêu trơn Super Hydrophobic Layer khi đi mưa',
-    tag: 'Tối ưu cho người thường xuyên di chuyển ngoài trời & lái xe',
-    linkSlug: 'rocky-driveshield-night-vision',
   },
   {
-    id: 'emi',
-    badge: 'Màng Chắn Khử Tĩnh Điện & Bức Xạ',
-    icon: ShieldCheck,
-    title: 'Lớp Phủ Chống Nhiễu & Bức Xạ EMI',
-    subtitle: 'Electro-Magnetic Interference Coating',
+    number: '03',
+    badge: 'Thiết Kế Số',
+    title: 'Thiết Kế Quang Học Số & Freeform',
+    subtitle: 'Aspheric SPH & Digital Freeform 4K',
     description:
-      'Công nghệ phủ EMI tạo một màng chắn bảo vệ có khả năng trung hòa tĩnh điện và hấp thụ bức xạ sóng điện từ phát ra từ máy tính, màn hình LED, điện thoại thông minh và thiết bị Wi-Fi. Lớp phủ này triệt tiêu hiện tượng tĩnh điện hút bụi mịn trong không khí, đồng thời giảm căng thẳng thị giác, đem lại đôi mắt thoải mái cho người làm việc liên tục trong môi trường số.',
-    benefits: [
-      'Khử tĩnh điện bề mặt, tròng kính hoàn toàn không hút bụi mịn và xơ vải',
-      'Giảm thiểu tác động tiêu cực của sóng bức xạ điện từ lên vùng võng mạc',
-      'Giảm nhức mỏi và hội chứng thị lực màn hình máy tính (CVS) hiệu quả',
+      'Ứng dụng toán học giải tích bề mặt tự do để tối ưu hóa đường cong thấu kính, mang lại trường nhìn chân thực và tính thẩm mỹ cao nhất cho người đeo kính.',
+    points: [
+      {
+        name: 'Thiết kế phi cầu Aspheric (SPH):',
+        desc: 'Làm phẳng bề mặt, tròng mỏng nhẹ hơn 10-15%, triệt tiêu quang sai méo hình vùng rìa và hạn chế mắt bị thu nhỏ khi cận nặng.',
+      },
+      {
+        name: 'Phay mặt sau kỹ thuật số Freeform 4K:',
+        desc: 'Sai số nhỏ hơn 0.01 Diop, tính toán theo từng thông số khung kính, mở rộng vùng nhìn đa tròng êm ái, thích nghi nhanh chóng.',
+      },
     ],
-    image: '/images/technologies/tech_emi_coating.png',
-    imageAlt: 'Công nghệ lớp phủ EMI chống nhiễu sóng điện từ và khử tĩnh điện bề mặt',
-    tag: 'Khuyên dùng cho lập trình viên, nhân viên văn phòng & game thủ',
-    linkSlug: 'rocky-antifatigue-relax',
+    tag: 'Ứng dụng: Dòng Aspheric & Đa tròng Freeform',
+    icon: Eye,
+  },
+];
+
+const refractiveIndexTable = [
+  {
+    index: '1.56 Tiêu Chuẩn',
+    type: 'CR-39 Biến Tính',
+    diopter: '0.00 đến -2.50 Diop',
+    thickness: 'Độ dày tiêu chuẩn',
+    abbe: '36',
+    frames: 'Gọng nguyên khung (kim loại hoặc nhựa acetate)',
+  },
+  {
+    index: '1.60 MR-8 Cao Cấp',
+    type: 'Mitsui MR-8 (Japan)',
+    diopter: '-2.50 đến -5.00 Diop',
+    thickness: 'Mỏng hơn 15% - 20%',
+    abbe: '42 (Sắc nét cao)',
+    frames: 'Lý tưởng cho gọng khoan ốc, gọng cước & gọng thanh mảnh',
+  },
+  {
+    index: '1.67 MR-7 Siêu Mỏng',
+    type: 'Mitsui MR-7 (Japan)',
+    diopter: '-5.00 đến -8.00 Diop',
+    thickness: 'Mỏng hơn 25% - 30%',
+    abbe: '32',
+    frames: 'Gọng titan cao cấp, gọng khoan, gọng xẻ cước',
+  },
+  {
+    index: '1.74 Siêu Mỏng Nhẹ',
+    type: 'Ultra High Index',
+    diopter: 'Trên -8.00 Diop hoặc cận nặng',
+    thickness: 'Mỏng hơn 35% - 40%',
+    abbe: '33',
+    frames: 'Gọng khung nhỏ vừa phải, gọng kim loại thanh lịch',
   },
 ];
 
 const faqs = [
   {
     question: 'Chiết suất tròng kính bao nhiêu là phù hợp với độ cận của tôi?',
-    answer: 'Nếu độ cận dưới -3.00 Diop, chiết suất 1.56 hoặc 1.60 là lựa chọn cân đối. Với độ cận từ -3.25 đến -5.50 Diop, nên chọn chiết suất 1.60 hoặc 1.67 để tròng mỏng nhẹ và đẹp mắt. Với độ cận trên -6.00 Diop, chiết suất 1.67 hoặc 1.74 là giải pháp tối ưu giúp mép kính không bị dày cộm.',
+    answer:
+      'Nếu độ cận dưới -2.50 Diop, chiết suất 1.56 hoặc 1.60 là lựa chọn cân đối. Với độ cận từ -2.50 đến -5.00 Diop, nên chọn chiết suất 1.60 MR-8 để tròng vừa mỏng nhẹ vừa bền dai. Với độ cận từ -5.00 đến -8.00 Diop, chiết suất 1.67 là giải pháp tối ưu. Khi độ cận trên -8.00 Diop, chiết suất 1.74 giúp mép kính phẳng mỏng, không bị cộm dày.',
   },
   {
-    question: 'Tròng kính đổi màu có thay thế hoàn toàn kính râm được không?',
-    answer: 'Tròng đổi màu Rocky Trendy Smart chuyển màu đậm tương đương kính râm CAT 3 khi ra nắng ngoài trời. Tuy nhiên, khi ngồi trong ô tô, do kính chắn gió đã chặn hầu hết tia UV nên tròng sẽ chỉ đổi màu nhẹ. Nếu bạn thường xuyên lái xe đường dài dưới nắng gắt, nên kết hợp kính phân cực Rocky Polarized.',
+    question: 'Tròng kính lọc ánh sáng xanh Rocky BlueCut có làm màu sắc bị ám vàng không?',
+    answer:
+      'Không. Rocky BlueCut sử dụng công nghệ phôi monomer lọc hấp thụ UV420 và dải ánh sáng xanh năng lượng cao, giữ độ truyền quang đạt 98%. Nhờ đó, hình ảnh trong suốt tự nhiên, loại bỏ hoàn toàn ánh phản chiếu tím lòe loẹt và hiện tượng ám vàng sai lệch màu thường gặp ở tròng phủ phản xạ thế hệ cũ.',
   },
   {
-    question: 'Đeo kính đa tròng lần đầu có bị chóng mặt không?',
-    answer: 'Với công nghệ phay mặt sau kỹ thuật số Freeform HD của Rocky Lens, vùng mép quang sai được mở rộng và làm mềm mại hơn 40% so với đa tròng truyền thống. Đa số khách hàng chỉ mất từ 1 đến 3 ngày để làm quen hoàn toàn với tầm nhìn xa - trung - gần.',
+    question: 'Tại sao làm gọng khoan không viền bắt buộc phải dùng phôi 1.60 MR-8 hoặc 1.67 MR-7?',
+    answer:
+      'Tròng kính 1.56 thông thường có cấu trúc phân tử giòn, khi khoan lỗ bắt ốc hoặc xẻ cước rất dễ bị nứt chân ốc hoặc mẻ viền khi va chạm. Trong khi đó, phôi Mitsui MR-8 và MR-7 có độ bền dai uốn cong và chịu lực va đập gấp nhiều lần, là tiêu chuẩn quốc tế bắt buộc cho gọng bắt ốc không viền.',
   },
   {
-    question: 'Làm thế nào để phân biệt tròng kính lọc ánh sáng xanh chất lượng?',
-    answer: 'Tròng lọc ánh sáng xanh tốt (như Rocky BlueCut UV420) sử dụng phôi monomer hấp thụ thay vì phủ phản xạ bề mặt. Nhờ đó, tròng không bị ánh phản chiếu màu xanh tím lòe loẹt và đặc biệt là không làm hình ảnh cảnh vật bị ám vàng lệch màu khi nhìn thực tế.',
+    question: 'Người mới đeo kính đa tròng mất bao lâu để làm quen?',
+    answer:
+      'Với công nghệ phay mặt sau kỹ thuật số Freeform 4K của Rocky Lens, vùng quang sai méo hình được thu hẹp và làm mềm mại hơn 40% so với đa tròng truyền thống. Đa số người dùng chỉ mất từ 1 đến 3 ngày để làm quen hoàn toàn với tầm nhìn xa - trung - gần liền mạch.',
   },
 ];
 
@@ -135,30 +152,32 @@ export default function CongNghePage() {
     <div className="bg-[var(--site-bg-start)] min-h-screen">
       <Breadcrumbs items={[{ label: 'Công nghệ & Kiến thức', href: '/cong-nghe/' }]} />
 
-      {/* 1. Hero giới thiệu công nghệ quang học */}
-      <section className="b2b-gradient text-white py-14 sm:py-20 px-4 sm:px-6 relative overflow-hidden">
-        <div className="absolute right-0 top-0 w-96 h-96 bg-[var(--button-start)]/20 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute left-1/4 bottom-0 w-80 h-80 bg-[var(--button-end)]/15 rounded-full blur-3xl pointer-events-none" />
+      {/* ========================================================= */}
+      {/* 1. HERO COMPACT: TỔNG QUAN CÔNG NGHỆ QUANG HỌC CANADA      */}
+      {/* ========================================================= */}
+      <section className="b2b-gradient text-white py-10 sm:py-14 px-4 sm:px-6 relative overflow-hidden">
+        <div className="absolute right-0 top-0 w-80 h-80 bg-[var(--button-start)]/20 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute left-1/4 bottom-0 w-72 h-72 bg-[var(--button-end)]/15 rounded-full blur-3xl pointer-events-none" />
 
         <div className="max-w-7xl mx-auto relative z-10 text-center sm:text-left">
-          <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full mb-4 bg-white/10 text-[var(--button-start)] border border-white/20 shadow-xs backdrop-blur-md">
+          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full mb-3 bg-white/10 text-[var(--button-start)] border border-white/20 shadow-xs backdrop-blur-md">
             <Sparkles className="w-3.5 h-3.5" />
-            <span className="text-xs font-bold uppercase tracking-wider">Hệ Sinh Thái Công Nghệ Quang Học Canada</span>
+            <span className="text-xs font-bold uppercase tracking-wider">Hệ Sinh Thái Quang Học Canada</span>
           </div>
 
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.15] max-w-4xl">
+          <h1 className="text-2xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight max-w-4xl">
             Khoa Học Quang Học &amp; <br className="hidden sm:inline" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--button-start)] via-[var(--button-middle)] to-[var(--button-end)]">
               Công Nghệ Tròng Kính Rocky
             </span>
           </h1>
 
-          <p className="mt-4 text-slate-200 text-sm sm:text-base max-w-3xl leading-relaxed">
-            Hội tụ tinh hoa nghiên cứu nhãn khoa từ Canada: từ thiết kế phi cầu Aspheric tối ưu độ phẳng, hệ thống lớp váng phủ đa tầng SHMC siêu trượt nước đến màng chắn khử bức xạ EMI bảo vệ đôi mắt toàn diện trong kỷ nguyên số.
+          <p className="mt-3 text-slate-200 text-sm sm:text-base max-w-3xl leading-relaxed">
+            Hội tụ tinh hoa nghiên cứu nhãn khoa Canada với 3 trụ cột vững chắc: Phôi vật liệu Mitsui tinh khiết, Hệ màng phủ chân không Nano Sapphire đa năng, và Thiết kế quang học số Freeform 4K chính xác từng micromet.
           </p>
 
-          {/* Quick Stats Badges */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mt-8 pt-6 border-t border-white/15 max-w-3xl text-left">
+          {/* Sleek Metrics Bar */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mt-6 pt-5 border-t border-white/15 max-w-3xl text-left">
             <div>
               <div className="text-xl sm:text-2xl font-black text-white">99.8%</div>
               <div className="text-xs text-slate-300">Độ truyền quang SHMC</div>
@@ -179,300 +198,210 @@ export default function CongNghePage() {
         </div>
       </section>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-14 space-y-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-14 space-y-14 sm:space-y-16">
 
         {/* ========================================================= */}
-        {/* 2. CÔNG NGHỆ BỀ MẶT & LỚP PHỦ TIÊN TIẾN (4 SLIDES USER CUNG CẤP) */}
+        {/* 2. THREE CORE PILLARS (GỌN GÀNG, KHÔNG DÀI DÒNG)          */}
         {/* ========================================================= */}
-        <section id="cong-nghe-be-mat" className="space-y-10 scroll-mt-24">
-          <div className="text-center max-w-3xl mx-auto space-y-3">
-            <div className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-[var(--site-bg-middle)]/50 text-primary text-xs font-bold border border-[var(--color-border)]/60">
+        <section id="tru-cot-cong-nghe" className="space-y-8 scroll-mt-24">
+          <div className="text-center max-w-3xl mx-auto space-y-2">
+            <div className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-[var(--site-bg-middle)]/60 text-primary text-xs font-bold border border-[var(--color-border)]/60">
               <Layers className="w-3.5 h-3.5" />
-              <span>Công Nghệ Bề Mặt &amp; Lớp Phủ Tiên Tiến</span>
+              <span>3 Trụ Cột Công Nghệ Cốt Lõi</span>
             </div>
-            <h2 className="text-2xl sm:text-4xl font-black text-heading tracking-tight">
-              Đột Phá Thiết Kế &amp; Xử Lý Màng Phủ Quang Học
+            <h2 className="text-2xl sm:text-3xl font-black text-heading tracking-tight">
+              Đột Phá Từ Vật Liệu Đến Gia Công Kỹ Thuật Số
             </h2>
-            <p className="text-brand-muted text-sm sm:text-base leading-relaxed">
-              Mỗi chiếc tròng kính Rocky Lens là một tác phẩm cơ khí chính xác, kết hợp giữa hình học phi cầu tối ưu và công nghệ lắng đọng màng mỏng đa tầng tiêu chuẩn quốc tế ISO 13485.
+            <p className="text-brand-muted text-xs sm:text-sm leading-relaxed">
+              Mỗi chiếc tròng kính Rocky Lens là sự kết hợp chuẩn xác giữa hình học phi cầu tối ưu và công nghệ lắng đọng màng mỏng đa tầng đạt chứng nhận quản lý y tế ISO 13485:2016.
             </p>
           </div>
 
-          {/* 4 Featured Technology Cards (Alternating Grid) */}
-          <div className="space-y-8">
-            {advancedTechnologies.map((tech, idx) => {
-              const isEven = idx % 2 === 1;
-              return (
-                <div
-                  key={tech.id}
-                  className="card-surface rounded-3xl p-6 sm:p-10 border border-[var(--color-border)]/70 shadow-xs hover:shadow-xl transition-all duration-300 overflow-hidden bg-white group"
-                >
-                  <div className={`grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center ${isEven ? 'lg:flex-row-reverse' : ''}`}>
-                    
-                    {/* Visual Graphic Column (40-45% width on desktop) */}
-                    <div className={`lg:col-span-5 ${isEven ? 'lg:order-2' : 'lg:order-1'}`}>
-                      <div className="relative aspect-[5/4] w-full rounded-2xl overflow-hidden bg-slate-900/5 border border-slate-200/80 shadow-inner flex items-center justify-center p-3 group-hover:border-[var(--button-middle)]/60 transition-colors">
-                        <Image
-                          src={tech.image}
-                          alt={tech.imageAlt}
-                          fill
-                          className="object-contain p-2 group-hover:scale-105 transition-transform duration-500"
-                          sizes="(max-width: 1024px) 100vw, 480px"
-                        />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {corePillars.map((pillar) => (
+              <div
+                key={pillar.number}
+                className="card-surface rounded-3xl p-6 sm:p-7 bg-white border border-[var(--color-border)]/70 shadow-xs hover:shadow-lg transition-all flex flex-col justify-between group"
+              >
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between">
+                    <span className="w-10 h-10 rounded-xl bg-[var(--site-bg-middle)]/60 text-[var(--color-primary)] font-black flex items-center justify-center text-sm">
+                      {pillar.number}
+                    </span>
+                    <span className="text-xs font-bold px-3 py-1 rounded-full bg-slate-100 text-slate-700">
+                      {pillar.badge}
+                    </span>
+                  </div>
+
+                  <div>
+                    <h3 className="text-lg sm:text-xl font-bold text-heading group-hover:text-[var(--color-primary)] transition-colors">
+                      {pillar.title}
+                    </h3>
+                    <p className="text-xs text-[var(--button-start)] font-semibold mt-0.5">
+                      {pillar.subtitle}
+                    </p>
+                  </div>
+
+                  <p className="text-xs sm:text-sm text-brand-muted leading-relaxed">
+                    {pillar.description}
+                  </p>
+
+                  <div className="space-y-2.5 pt-2 border-t border-slate-100">
+                    {pillar.points.map((pt, pIdx) => (
+                      <div key={pIdx} className="text-xs space-y-0.5">
+                        <div className="font-bold text-heading flex items-start gap-1.5">
+                          <CheckCircle2 className="w-3.5 h-3.5 text-teal-600 shrink-0 mt-0.5" />
+                          <span>{pt.name}</span>
+                        </div>
+                        <p className="text-slate-500 pl-5 leading-normal">{pt.desc}</p>
                       </div>
-                    </div>
-
-                    {/* Content Narrative Column (55-60% width on desktop) */}
-                    <div className={`lg:col-span-7 space-y-4 ${isEven ? 'lg:order-1' : 'lg:order-2'}`}>
-                      {/* Category Badge & Subtitle */}
-                      <div className="flex flex-wrap items-center gap-2">
-                        <span className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full text-xs font-bold bg-[var(--site-bg-middle)]/60 text-primary border border-[var(--color-border)]/50">
-                          <tech.icon className="w-3.5 h-3.5" />
-                          <span>{tech.badge}</span>
-                        </span>
-                        <span className="text-xs font-semibold text-[var(--button-start)] uppercase tracking-wider">
-                          {tech.subtitle}
-                        </span>
-                      </div>
-
-                      {/* Title */}
-                      <h3 className="text-2xl sm:text-3xl font-extrabold text-heading tracking-tight leading-snug">
-                        {tech.title}
-                      </h3>
-
-                      {/* Accent Gradient Line (matching slide style) */}
-                      <div className="h-1 w-16 bg-gradient-to-r from-[var(--button-start)] to-[var(--button-middle)] rounded-full" />
-
-                      {/* Detailed Description */}
-                      <p className="text-sm sm:text-base text-brand-muted leading-relaxed">
-                        {tech.description}
-                      </p>
-
-                      {/* Benefit Bullets */}
-                      <div className="pt-2 space-y-2.5">
-                        {tech.benefits.map((benefit, bIdx) => (
-                          <div key={bIdx} className="flex items-start space-x-2.5 text-xs sm:text-sm text-heading">
-                            <CheckCircle2 className="w-4 h-4 text-[var(--button-middle)] shrink-0 mt-0.5" />
-                            <span className="leading-snug">{benefit}</span>
-                          </div>
-                        ))}
-                      </div>
-
-                      {/* Application Footer */}
-                      <div className="pt-4 mt-2 border-t border-slate-100 flex flex-wrap items-center justify-between gap-3">
-                        <span className="text-xs font-medium text-slate-500 italic">
-                          {tech.tag}
-                        </span>
-                        {tech.linkSlug && (
-                          <Link
-                            href={`/trong-kinh/${tech.linkSlug}/`}
-                            className="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all"
-                          >
-                            <span>Xem sản phẩm ứng dụng</span>
-                            <ArrowRight className="w-3.5 h-3.5" />
-                          </Link>
-                        )}
-                      </div>
-                    </div>
-
+                    ))}
                   </div>
                 </div>
-              );
-            })}
-          </div>
-        </section>
 
-        {/* ========================================================= */}
-        {/* 3. KIẾN THỨC QUANG HỌC CỐT LÕI (CHIẾT SUẤT, ABBE, DIMS)   */}
-        {/* ========================================================= */}
-        <section id="kien-thuc" className="space-y-8 scroll-mt-24">
-          <div className="border-b border-slate-200/80 pb-6">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-heading tracking-tight">
-              Kiến Thức Quang Học Cốt Lõi
-            </h2>
-            <p className="text-brand-muted text-sm sm:text-base mt-2 max-w-3xl leading-relaxed">
-              Hiểu rõ nguyên lý khúc xạ ánh sáng, ý nghĩa của các chỉ số chiết suất và Abbe giúp bạn không bị bối rối trước hàng chục thông số khi đo mắt và chọn tròng kính phù hợp.
-            </p>
-          </div>
-
-          {/* 3 Khối Tóm Tắt Khoa Học Trực Quan */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="card-surface rounded-3xl p-6 sm:p-7 flex flex-col justify-between bg-white border border-[var(--color-border)]/60 shadow-xs">
-              <div>
-                <span className="px-3 py-1 rounded-full bg-[var(--site-bg-middle)]/40 text-primary text-xs font-bold border border-[var(--color-border)]">
-                  Chỉ Số Chiết Suất
-                </span>
-                <h3 className="text-xl font-bold text-heading mt-3 mb-2">
-                  1.56 &bull; 1.60 &bull; 1.67 &bull; 1.74
-                </h3>
-                <p className="text-xs sm:text-sm text-brand-muted leading-relaxed">
-                  Chiết suất càng cao, tròng kính càng mỏng và nhẹ hơn ở cùng một số độ cận. Ví dụ, chiết suất 1.74 giúp giảm độ dày viền tới 35-40% so với tròng tiêu chuẩn 1.56.
-                </p>
-              </div>
-              <div className="mt-4 pt-4 border-t border-[var(--color-border)] text-xs font-semibold text-slate-500">
-                Lựa chọn theo số độ: &lt;3 Diop (1.56/1.60), 3-6 Diop (1.60/1.67), &gt;6 Diop (1.67/1.74)
-              </div>
-            </div>
-
-            <div className="card-surface rounded-3xl p-6 sm:p-7 flex flex-col justify-between bg-white border border-[var(--color-border)]/60 shadow-xs">
-              <div>
-                <span className="px-3 py-1 rounded-full bg-[var(--site-bg-middle)]/40 text-primary text-xs font-bold border border-[var(--color-border)]">
-                  Độ Sắc Nét Màu Sắc
-                </span>
-                <h3 className="text-xl font-bold text-heading mt-3 mb-2">
-                  Chỉ Số Abbe (Sắc Sai)
-                </h3>
-                <p className="text-xs sm:text-sm text-brand-muted leading-relaxed">
-                  Chỉ số Abbe đo lường độ tán sắc màu sắc. Abbe càng cao thì viền hình ảnh càng sắc sảo, mắt không bị mỏi hay thấy viền cầu vồng khi liếc nhìn về phía rìa thấu kính.
-                </p>
-              </div>
-              <div className="mt-4 pt-4 border-t border-[var(--color-border)] text-xs font-semibold text-slate-500">
-                Vật liệu MR-8 (1.60) đạt Abbe 42 – mức cân bằng lý tưởng nhất giữa độ mỏng và độ sắc nét
-              </div>
-            </div>
-
-            <div className="card-surface rounded-3xl p-6 sm:p-7 flex flex-col justify-between bg-white border border-[var(--color-border)]/60 shadow-xs">
-              <div>
-                <span className="px-3 py-1 rounded-full bg-[var(--site-bg-middle)]/40 text-primary text-xs font-bold border border-[var(--color-border)]">
-                  Y Khoa Khúc Xạ
-                </span>
-                <h3 className="text-xl font-bold text-heading mt-3 mb-2">
-                  Kiểm Soát Trục Nhãn Cầu
-                </h3>
-                <p className="text-xs sm:text-sm text-brand-muted leading-relaxed">
-                  Cơ chế phân tán tiêu cự chu biên (Defocus D.I.M.S) tạo tín hiệu ức chế nhãn cầu dài ra quá mức, hỗ trợ giảm đến 60% tốc độ tăng độ cận ở lứa tuổi học đường.
-                </p>
-              </div>
-              <div className="mt-4 pt-4 border-t border-[var(--color-border)] text-xs font-semibold text-slate-500">
-                Ứng dụng trên dòng tròng chuyên biệt Rocky MyoControl Kids
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ========================================================= */}
-        {/* 4. CÁC CÔNG NGHỆ CHUYÊN BIỆT THEO NHU CẦU                  */}
-        {/* ========================================================= */}
-        <section id="cong-nghe-chuyen-biet" className="space-y-8 scroll-mt-24">
-          <div className="border-b border-[var(--color-border)]/40 pb-6">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-heading tracking-tight">
-              Giải Pháp Công Nghệ Phôi &amp; Chức Năng Quang Học
-            </h2>
-            <p className="text-[var(--color-muted)] text-sm sm:text-base mt-2 max-w-3xl leading-relaxed">
-              Từ phôi monomer lọc ánh sáng xanh đến công nghệ gia công kỹ thuật số Freeform 4K, đáp ứng chính xác từng nhu cầu thị lực khắt khe.
-            </p>
-          </div>
-
-          {/* 4 Trụ Cột Công Nghệ Mũi Nhọn */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="card-surface rounded-3xl p-6 border border-[var(--color-border)]/50 shadow-xs flex flex-col justify-between bg-white">
-              <div>
-                <div className="w-10 h-10 rounded-xl bg-[var(--site-bg-middle)]/60 text-heading flex items-center justify-center font-bold mb-4">
-                  01
+                <div className="mt-5 pt-3 border-t border-slate-100 text-xs font-semibold text-slate-500 italic">
+                  {pillar.tag}
                 </div>
-                <h3 className="font-extrabold text-heading text-lg mb-2">
-                  Phôi Monomer BlueCut UV420
-                </h3>
-                <p className="text-xs sm:text-sm text-[var(--color-muted)] leading-relaxed">
-                  Lọc ánh sáng xanh có hại ngay từ trong phôi nhựa monomer, triệt tiêu phản xạ xanh tím lòe loẹt và giữ trọn sắc màu cảnh vật tự nhiên, không bị ám vàng.
-                </p>
-              </div>
-              <div className="mt-4 pt-3 border-t border-[var(--color-border)]/30 text-xs font-bold text-[var(--color-primary)]">
-                Bảo vệ võng mạc tối đa
-              </div>
-            </div>
-
-            <div className="card-surface rounded-3xl p-6 border border-[var(--color-border)]/50 shadow-xs flex flex-col justify-between bg-white">
-              <div>
-                <div className="w-10 h-10 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center font-bold mb-4">
-                  02
-                </div>
-                <h3 className="font-extrabold text-heading text-lg mb-2">
-                  DriveShield Lọc Chói Đêm
-                </h3>
-                <p className="text-xs sm:text-sm text-[var(--color-muted)] leading-relaxed">
-                  Lớp phủ quang học hấp thụ các dải ánh sáng chói lóa từ đèn pha LED/Xenon ngược chiều, tăng tương phản trong bóng tối và cải thiện tầm nhìn khi lái xe trời mưa.
-                </p>
-              </div>
-              <div className="mt-4 pt-3 border-t border-[var(--color-border)]/30 text-xs font-bold text-[var(--color-primary)]">
-                An tâm trên mọi cung đường
-              </div>
-            </div>
-
-            <div className="card-surface rounded-3xl p-6 border border-[var(--color-border)]/50 shadow-xs flex flex-col justify-between bg-white">
-              <div>
-                <div className="w-10 h-10 rounded-xl bg-purple-50 text-purple-700 flex items-center justify-center font-bold mb-4">
-                  03
-                </div>
-                <h3 className="font-extrabold text-heading text-lg mb-2">
-                  Spin-Coat Photochromic
-                </h3>
-                <p className="text-xs sm:text-sm text-[var(--color-muted)] leading-relaxed">
-                  Công nghệ phủ ly tâm phân tử nhạy sáng ma trận, đổi màu râm sẫm đều chuẩn CAT 3 chỉ trong 30 giây ngoài trời nắng và trả lại độ trong suốt nhanh chóng khi vào nhà.
-                </p>
-              </div>
-              <div className="mt-4 pt-3 border-t border-[var(--color-border)]/30 text-xs font-bold text-[var(--color-primary)]">
-                Tiện lợi 2 trong 1
-              </div>
-            </div>
-
-            <div className="card-surface rounded-3xl p-6 border border-[var(--color-border)]/50 shadow-xs flex flex-col justify-between bg-white">
-              <div>
-                <div className="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center font-bold mb-4">
-                  04
-                </div>
-                <h3 className="font-extrabold text-heading text-lg mb-2">
-                  Freeform HD Đa Điểm
-                </h3>
-                <p className="text-xs sm:text-sm text-[var(--color-muted)] leading-relaxed">
-                  Phay mặt sau kỹ thuật số chính xác đến từng điểm ảnh với sai số dưới 0.01 Diop, mở rộng trường nhìn xa - trung - gần mềm mại và không gây cảm giác chòng chành.
-                </p>
-              </div>
-              <div className="mt-4 pt-3 border-t border-[var(--color-border)]/30 text-xs font-bold text-[var(--color-primary)]">
-                Thị lực cá nhân hóa 4K
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ========================================================= */}
-        {/* 5. CÁC CÂU HỎI THƯỜNG GẶP (FAQ)                           */}
-        {/* ========================================================= */}
-        <section className="card-surface rounded-3xl p-8 sm:p-10 border border-[var(--color-border)]/50 shadow-xs bg-white">
-          <div className="max-w-3xl mx-auto text-center mb-10">
-            <span className="inline-flex items-center space-x-1 text-xs font-bold uppercase tracking-wider text-[var(--color-primary)] bg-[var(--site-bg-middle)]/50 px-3.5 py-1.5 rounded-full mb-2 border border-[var(--color-border)]/50">
-              <HelpCircle className="w-3.5 h-3.5" />
-              <span>Hỏi Đáp Thường Gặp</span>
-            </span>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-heading">
-              Giải Đáp Thắc Mắc Về Tròng Kính
-            </h2>
-            <p className="text-[var(--color-muted)] text-xs sm:text-sm mt-2">
-              Những thắc mắc phổ biến nhất của người dùng khi tìm hiểu và chọn mua tròng kính chính hãng Rocky Lens.
-            </p>
-          </div>
-
-          <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-            {faqs.map((faq, idx) => (
-              <div
-                key={idx}
-                className="p-5 sm:p-6 rounded-2xl bg-slate-50/70 border border-[var(--color-border)]/50 space-y-2.5 shadow-2xs"
-              >
-                <h3 className="font-bold text-heading text-sm flex items-start space-x-2">
-                  <span className="text-[var(--color-primary)] font-black shrink-0">Q:</span>
-                  <span>{faq.question}</span>
-                </h3>
-                <p className="text-xs sm:text-sm text-[var(--color-muted)] leading-relaxed pl-5">
-                  {faq.answer}
-                </p>
               </div>
             ))}
           </div>
         </section>
 
         {/* ========================================================= */}
-        {/* 7. KẾT NỐI NHU CẦU: B2C CATALOGUE & B2B ĐẠI LÝ            */}
+        {/* 3. BẢNG TRA CỨU CHIẾT SUẤT THÔNG MINH (TABLE GUIDE)       */}
         {/* ========================================================= */}
+        <section id="tra-cuu-chiet-suat" className="space-y-6 scroll-mt-24">
+          <div className="text-center max-w-3xl mx-auto space-y-2">
+            <div className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-[var(--site-bg-middle)]/60 text-primary text-xs font-bold border border-[var(--color-border)]/60">
+              <Cpu className="w-3.5 h-3.5" />
+              <span>Cẩm Nang Quang Học Thực Tế</span>
+            </div>
+            <h2 className="text-2xl sm:text-3xl font-black text-heading tracking-tight">
+              Bảng Tra Cứu Chiết Suất &amp; Độ Dày Tròng Kính
+            </h2>
+            <p className="text-brand-muted text-xs sm:text-sm">
+              Chiết suất càng cao thì tròng kính càng mỏng nhẹ. Dưới đây là bảng hướng dẫn lựa chọn chiết suất chuẩn xác theo độ cận và kiểu dáng gọng kính.
+            </p>
+          </div>
+
+          <div className="card-surface rounded-3xl overflow-hidden border border-[var(--color-border)]/70 shadow-xs bg-white">
+            <div className="overflow-x-auto">
+              <table className="w-full text-left text-xs sm:text-sm">
+                <thead className="bg-slate-50 border-b border-slate-200 text-slate-700 font-bold uppercase tracking-wider text-[11px] sm:text-xs">
+                  <tr>
+                    <th className="py-3.5 px-4 sm:px-6">Chiết Suất</th>
+                    <th className="py-3.5 px-4 sm:px-6">Vật Liệu Cốt</th>
+                    <th className="py-3.5 px-4 sm:px-6">Khoảng Độ Khuyên Dùng</th>
+                    <th className="py-3.5 px-4 sm:px-6">Độ Mỏng So Với Chuẩn</th>
+                    <th className="py-3.5 px-4 sm:px-6 hidden sm:table-cell">Chỉ Số Abbe</th>
+                    <th className="py-3.5 px-4 sm:px-6">Kiểu Gọng Phù Hợp</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-100 font-medium text-slate-700">
+                  {refractiveIndexTable.map((row, idx) => (
+                    <tr key={idx} className="hover:bg-slate-50/70 transition-colors">
+                      <td className="py-4 px-4 sm:px-6 font-bold text-heading">
+                        {row.index}
+                      </td>
+                      <td className="py-4 px-4 sm:px-6 text-slate-600">
+                        {row.type}
+                      </td>
+                      <td className="py-4 px-4 sm:px-6 text-[var(--color-primary)] font-bold">
+                        {row.diopter}
+                      </td>
+                      <td className="py-4 px-4 sm:px-6 font-semibold text-teal-700">
+                        {row.thickness}
+                      </td>
+                      <td className="py-4 px-4 sm:px-6 text-slate-600 hidden sm:table-cell">
+                        {row.abbe}
+                      </td>
+                      <td className="py-4 px-4 sm:px-6 text-xs text-slate-600">
+                        {row.frames}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <div className="p-4 bg-slate-50/70 border-t border-slate-100 flex flex-wrap items-center justify-between text-xs text-brand-muted gap-2">
+              <span>* Độ dày mép kính thực tế còn phụ thuộc vào đường kính mắt kính của khung gọng và khoảng cách đồng tử (PD).</span>
+              <Link href="/rx-lab/" className="font-bold text-[var(--color-primary)] hover:underline inline-flex items-center gap-1">
+                <span>Toa độ phức tạp? Khám phá dịch vụ Lab RX kỹ thuật số</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* ========================================================= */}
+        {/* 4. INTERACTIVE FAQ ACCORDION                              */}
+        {/* ========================================================= */}
+        <section id="faq-quang-hoc" className="max-w-4xl mx-auto space-y-6 scroll-mt-24">
+          <div className="text-center space-y-2">
+            <span className="inline-flex items-center space-x-1 text-xs font-bold uppercase tracking-wider text-[var(--color-primary)] bg-[var(--site-bg-middle)]/60 px-3 py-1 rounded-full border border-[var(--color-border)]/50">
+              <HelpCircle className="w-3.5 h-3.5" />
+              <span>Giải Đáp Quang Học Nhanh</span>
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-heading">
+              Thắc Mắc Thường Gặp Về Tròng Kính
+            </h2>
+            <p className="text-brand-muted text-xs sm:text-sm">
+              Bấm vào câu hỏi để xem giải đáp chi tiết từ chuyên gia nhãn khoa Rocky Lens.
+            </p>
+          </div>
+
+          <div className="space-y-3">
+            {faqs.map((faq, idx) => (
+              <details
+                key={idx}
+                className="group p-4 sm:p-5 rounded-2xl bg-white border border-[var(--color-border)]/70 shadow-2xs open:shadow-sm transition-all"
+              >
+                <summary className="font-bold text-heading text-sm sm:text-base cursor-pointer list-none flex items-center justify-between">
+                  <span>{faq.question}</span>
+                  <span className="text-[var(--color-primary)] font-black text-lg group-open:rotate-45 transition-transform duration-200">
+                    +
+                  </span>
+                </summary>
+                <p className="mt-3 text-xs sm:text-sm text-brand-muted leading-relaxed pl-1">
+                  {faq.answer}
+                </p>
+              </details>
+            ))}
+          </div>
+        </section>
+
+        {/* ========================================================= */}
+        {/* 5. QUICK NAVIGATION LINK TO LAB RX & PRODUCTS             */}
+        {/* ========================================================= */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-4xl mx-auto pt-2">
+          <Link
+            href="/trong-kinh/"
+            className="p-5 rounded-2xl bg-white border border-[var(--color-border)]/70 shadow-xs hover:border-[var(--color-primary)] hover:shadow-md transition-all flex items-center justify-between group"
+          >
+            <div>
+              <div className="text-xs font-semibold text-slate-500 uppercase">Danh Mục Sản Phẩm</div>
+              <div className="text-base font-bold text-heading group-hover:text-[var(--color-primary)] transition-colors">
+                Xem toàn bộ 12 giải pháp tròng kính Rocky &rarr;
+              </div>
+            </div>
+            <ArrowRight className="w-5 h-5 text-slate-400 group-hover:text-[var(--color-primary)] group-hover:translate-x-1 transition-all" />
+          </Link>
+
+          <Link
+            href="/rx-lab/"
+            className="p-5 rounded-2xl bg-white border border-[var(--color-border)]/70 shadow-xs hover:border-[var(--color-primary)] hover:shadow-md transition-all flex items-center justify-between group"
+          >
+            <div>
+              <div className="text-xs font-semibold text-slate-500 uppercase">Trung Tâm Gia Công</div>
+              <div className="text-base font-bold text-heading group-hover:text-[var(--color-primary)] transition-colors">
+                Khám phá dịch vụ Lab RX kỹ thuật số 24h &rarr;
+              </div>
+            </div>
+            <ArrowRight className="w-5 h-5 text-slate-400 group-hover:text-[var(--color-primary)] group-hover:translate-x-1 transition-all" />
+          </Link>
+        </div>
+
+        {/* Contact CTA */}
         <ContactCTA />
 
       </div>

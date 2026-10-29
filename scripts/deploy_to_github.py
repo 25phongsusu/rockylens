@@ -34,6 +34,7 @@ DEPLOY_FOLDERS = [
     "danh-cho-doi-tac",
     "kham-pha-trong-kinh",
     "cong-nghe",
+    "rx-lab",
     "trong-kinh",
     "lien-he",
     "ve-chung-toi",

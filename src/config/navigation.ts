@@ -20,6 +20,10 @@ export const mainNavigation: NavItem[] = [
     href: '/trong-kinh/',
   },
   {
+    title: 'RX & Lab',
+    href: '/rx-lab/',
+  },
+  {
     title: 'Công Nghệ',
     href: '/cong-nghe/',
   },
