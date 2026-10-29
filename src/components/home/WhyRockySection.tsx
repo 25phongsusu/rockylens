@@ -20,7 +20,6 @@ const allCerts = [
   // Group 3: Community
   { src: '/images/bangkhen/31.jpg', title: 'Giấy khen Hội cứu trợ trẻ em tàn tật Việt Nam - Tích cực vì sức khỏe thị lực trẻ em', group: 'Hoạt động cộng đồng' },
   { src: '/images/bangkhen/32.jpg', title: 'Giấy khen Hội nạn nhân chất độc da cam / Dioxin Việt Nam - Hoạt động thiện nguyện', group: 'Hoạt động cộng đồng' },
-  { src: '/images/bangkhen/33.jpg', title: 'Kỷ niệm chương Tấm lòng nhân ái vì sự nghiệp chăm sóc sức khỏe cộng đồng', group: 'Hoạt động cộng đồng' },
 ];
 
 const partnerLogos = [
@@ -165,10 +164,10 @@ export default function WhyRockySection() {
               </p>
             </div>
 
-            {/* Group 3: Community Activities (Indices 10 - 12) */}
+            {/* Group 3: Community Activities (Indices 10 - 11) */}
             <div className="space-y-3">
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                {allCerts.slice(10, 13).map((cert, idx) => (
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
+                {allCerts.slice(10, 12).map((cert, idx) => (
                   <div
                     key={idx}
                     onClick={() => setSelectedCertIndex(idx + 10)}
@@ -179,7 +178,7 @@ export default function WhyRockySection() {
                       alt={cert.title}
                       fill
                       className="object-cover rounded-xl group-hover:scale-105 transition-transform duration-300"
-                      sizes="(max-width: 768px) 100vw, 33vw"
+                      sizes="(max-width: 768px) 100vw, 50vw"
                     />
                     <div className="absolute inset-0 bg-[var(--b2b-end)]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
                       <div className="w-10 h-10 rounded-full bg-white/95 text-primary flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
@@ -258,37 +257,38 @@ export default function WhyRockySection() {
       {/* Interactive Lightbox Modal */}
       {selectedCertIndex !== null && (
         <div
-          className="fixed inset-0 z-50 bg-[var(--b2b-end)]/95 backdrop-blur-md flex items-center justify-center p-4 sm:p-8"
+          className="fixed inset-0 z-50 bg-slate-950/92 backdrop-blur-md flex items-center justify-center p-4 sm:p-8"
+          style={{ backgroundColor: 'rgba(3, 14, 26, 0.94)' }}
           onClick={() => setSelectedCertIndex(null)}
         >
           {/* Close Button */}
           <button
             type="button"
             onClick={() => setSelectedCertIndex(null)}
-            className="absolute top-5 right-5 sm:top-8 sm:right-8 w-11 h-11 rounded-full bg-white/10 hover:bg-white/25 text-white flex items-center justify-center transition-colors z-50"
+            className="absolute top-5 right-5 sm:top-8 sm:right-8 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-slate-900/90 hover:bg-red-600 text-white border-2 border-white/40 shadow-2xl flex items-center justify-center transition-all duration-200 hover:scale-110 active:scale-95 z-50 cursor-pointer"
             aria-label="Đóng"
           >
-            <X className="w-6 h-6" />
+            <X className="w-6 h-6 sm:w-7 sm:h-7 stroke-[2.5]" />
           </button>
 
           {/* Prev Button */}
           <button
             type="button"
             onClick={handlePrev}
-            className="absolute left-3 sm:left-8 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/10 hover:bg-white/25 text-white flex items-center justify-center transition-all z-50 shadow-lg"
+            className="absolute left-3 sm:left-8 top-1/2 -translate-y-1/2 w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-slate-900/90 hover:bg-[var(--button-middle)] text-white border-2 border-white/40 shadow-2xl flex items-center justify-center transition-all duration-200 z-50 hover:scale-110 active:scale-95 cursor-pointer"
             aria-label="Bằng khen trước"
           >
-            <ChevronLeft className="w-6 h-6" />
+            <ChevronLeft className="w-7 h-7 sm:w-9 sm:h-9 stroke-[2.5]" />
           </button>
 
           {/* Next Button */}
           <button
             type="button"
             onClick={handleNext}
-            className="absolute right-3 sm:right-8 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/10 hover:bg-white/25 text-white flex items-center justify-center transition-all z-50 shadow-lg"
+            className="absolute right-3 sm:right-8 top-1/2 -translate-y-1/2 w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-slate-900/90 hover:bg-[var(--button-middle)] text-white border-2 border-white/40 shadow-2xl flex items-center justify-center transition-all duration-200 z-50 hover:scale-110 active:scale-95 cursor-pointer"
             aria-label="Bằng khen tiếp theo"
           >
-            <ChevronRight className="w-6 h-6" />
+            <ChevronRight className="w-7 h-7 sm:w-9 sm:h-9 stroke-[2.5]" />
           </button>
 
           {/* Modal Content */}
@@ -296,18 +296,18 @@ export default function WhyRockySection() {
             className="max-w-4xl w-full flex flex-col items-center justify-center space-y-4 max-h-full"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="relative max-h-[75vh] w-auto max-w-full rounded-2xl overflow-hidden bg-black/40 flex items-center justify-center p-2 shadow-2xl">
+            <div className="relative max-h-[75vh] w-auto max-w-full rounded-2xl overflow-hidden bg-black/60 flex items-center justify-center p-2 shadow-2xl border border-white/10">
               <img
                 src={allCerts[selectedCertIndex].src}
                 alt={allCerts[selectedCertIndex].title}
                 className="max-h-[72vh] w-auto max-w-full object-contain rounded-xl shadow-lg"
               />
             </div>
-            <div className="text-center space-y-1">
-              <div className="text-base sm:text-lg font-bold text-white max-w-2xl px-4">
+            <div className="text-center space-y-1.5">
+              <div className="text-base sm:text-lg font-bold text-white max-w-2xl px-4 drop-shadow-md">
                 {allCerts[selectedCertIndex].title}
               </div>
-              <div className="text-sm font-semibold text-[var(--button-start)]">
+              <div className="inline-block px-3.5 py-1 rounded-full bg-slate-900/80 border border-white/20 text-xs sm:text-sm font-bold text-[var(--button-start)] shadow-md">
                 Chứng nhận {selectedCertIndex + 1} / {allCerts.length}
               </div>
             </div>

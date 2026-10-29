@@ -1283,7 +1283,7 @@ const html = `<!DOCTYPE html>
 
             <!-- Group 3: Hoạt động vì cộng đồng -->
             <div class="space-y-3">
-              <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
                 <div class="rounded-2xl shadow-xs aspect-[4/3] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(10)">
                   <img loading="lazy" decoding="async" src="assets/images/bangkhen/31.jpg" alt="Giấy khen Hội cứu trợ trẻ em tàn tật Việt Nam" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[var(--b2b-end)]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
@@ -1296,16 +1296,6 @@ const html = `<!DOCTYPE html>
                 </div>
                 <div class="rounded-2xl shadow-xs aspect-[4/3] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(11)">
                   <img loading="lazy" decoding="async" src="assets/images/bangkhen/32.jpg" alt="Giấy khen Hội nạn nhân chất độc da cam / Dioxin" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
-                  <div class="absolute inset-0 bg-[var(--b2b-end)]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
-                    <div class="w-10 h-10 rounded-full bg-white/95 text-[var(--color-primary)] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
-                      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                <div class="rounded-2xl shadow-xs aspect-[4/3] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(12)">
-                  <img loading="lazy" decoding="async" src="assets/images/bangkhen/33.jpg" alt="Kỷ niệm chương Tấm lòng nhân ái" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[var(--b2b-end)]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
                     <div class="w-10 h-10 rounded-full bg-white/95 text-[var(--color-primary)] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
@@ -1773,46 +1763,48 @@ const html = `<!DOCTYPE html>
   <!-- ========================================================= -->
   <!-- CERTIFICATE LIGHTBOX MODAL (INTERACTIVE CLICK TO ZOOM)    -->
   <!-- ========================================================= -->
-  <div id="certModal" class="fixed inset-0 z-50 bg-[var(--b2b-end)]/95 backdrop-blur-md hidden items-center justify-center p-4 sm:p-6 transition-all duration-300 opacity-0" role="dialog" aria-modal="true" aria-label="Phóng to bằng khen và chứng chỉ">
+  <div id="certModal" class="fixed inset-0 z-50 bg-slate-950/92 backdrop-blur-md hidden items-center justify-center p-4 sm:p-6 transition-all duration-300 opacity-0" style="background-color: rgba(3, 14, 26, 0.94); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);" role="dialog" aria-modal="true" aria-label="Phóng to bằng khen và chứng chỉ">
     
     <!-- Top Bar: Title & Counter & Close Button -->
-    <div class="absolute top-4 inset-x-4 sm:inset-x-8 flex items-center justify-between text-white z-20 pointer-events-auto">
+    <div class="absolute top-4 inset-x-4 sm:inset-x-8 flex items-center justify-between text-white z-40 pointer-events-auto">
       <div class="flex items-center gap-3">
-        <span id="certCounter" class="px-3 py-1 rounded-full bg-white/10 text-xs sm:text-sm font-bold tracking-wide">
-          1 / 13
+        <span id="certCounter" class="px-3.5 py-1.5 rounded-full bg-slate-900/80 border border-white/20 text-xs sm:text-sm font-bold text-white shadow-md tracking-wide">
+          1 / 12
         </span>
-        <h4 id="certTitle" class="text-sm sm:text-base font-semibold text-slate-200 line-clamp-1 max-w-md sm:max-w-xl">
+        <h4 id="certTitle" class="text-sm sm:text-base font-bold text-white drop-shadow-md line-clamp-1 max-w-md sm:max-w-xl">
           Chứng chỉ Optician Canada
         </h4>
       </div>
-      <button type="button" onclick="closeCertModal()" class="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors focus:outline-none cursor-pointer" aria-label="Đóng">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <button type="button" onclick="closeCertModal()" class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-slate-900/90 hover:bg-red-600 text-white border-2 border-white/40 shadow-2xl flex items-center justify-center transition-all duration-200 hover:scale-110 active:scale-95 focus:outline-none cursor-pointer" aria-label="Đóng">
+        <svg class="w-6 h-6 sm:w-7 sm:h-7 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
         </svg>
       </button>
     </div>
 
     <!-- Navigation Prev Button -->
-    <button type="button" onclick="prevCert()" class="absolute left-2 sm:left-6 top-1/2 -translate-y-1/2 w-11 h-11 sm:w-14 sm:h-14 rounded-full bg-white/10 hover:bg-white/25 text-white flex items-center justify-center transition-all z-20 focus:outline-none hover:scale-110 active:scale-95 cursor-pointer" aria-label="Bằng khen trước">
-      <svg class="w-6 h-6 sm:w-7 sm:h-7" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+    <button type="button" onclick="prevCert()" class="absolute left-3 sm:left-8 top-1/2 -translate-y-1/2 w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-slate-900/90 hover:bg-[var(--button-middle)] text-white border-2 border-white/40 shadow-2xl flex items-center justify-center transition-all duration-200 z-40 focus:outline-none hover:scale-110 active:scale-95 cursor-pointer" aria-label="Bằng khen trước">
+      <svg class="w-7 h-7 sm:w-8 sm:h-8 stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
       </svg>
     </button>
 
     <!-- Navigation Next Button -->
-    <button type="button" onclick="nextCert()" class="absolute right-2 sm:right-6 top-1/2 -translate-y-1/2 w-11 h-11 sm:w-14 sm:h-14 rounded-full bg-white/10 hover:bg-white/25 text-white flex items-center justify-center transition-all z-20 focus:outline-none hover:scale-110 active:scale-95 cursor-pointer" aria-label="Bằng khen tiếp theo">
-      <svg class="w-6 h-6 sm:w-7 sm:h-7" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+    <button type="button" onclick="nextCert()" class="absolute right-3 sm:right-8 top-1/2 -translate-y-1/2 w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-slate-900/90 hover:bg-[var(--button-middle)] text-white border-2 border-white/40 shadow-2xl flex items-center justify-center transition-all duration-200 z-40 focus:outline-none hover:scale-110 active:scale-95 cursor-pointer" aria-label="Bằng khen tiếp theo">
+      <svg class="w-7 h-7 sm:w-8 sm:h-8 stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
       </svg>
     </button>
 
     <!-- Certificate Image Container -->
-    <div class="relative max-w-4xl max-h-[82vh] w-full flex items-center justify-center p-2 sm:p-4" onclick="event.stopPropagation()">
-      <img loading="lazy" decoding="async" id="certImage" src="assets/images/bangkhen/11.jpg" alt="Chứng chỉ Rocky Lens" class="max-h-[78vh] max-w-full object-contain rounded-2xl shadow-2xl transition-all duration-200">
+    <div class="relative max-w-4xl max-h-[82vh] w-full flex items-center justify-center p-2 sm:p-4 z-30" onclick="event.stopPropagation()">
+      <div class="relative max-h-[78vh] w-auto max-w-full rounded-2xl overflow-hidden bg-black/60 flex items-center justify-center p-2 shadow-2xl border border-white/10">
+        <img loading="lazy" decoding="async" id="certImage" src="assets/images/bangkhen/11.jpg" alt="Chứng chỉ Rocky Lens" class="max-h-[74vh] max-w-full object-contain rounded-xl shadow-2xl transition-all duration-200">
+      </div>
     </div>
 
     <!-- Bottom Helper Note -->
-    <div class="absolute bottom-4 inset-x-0 text-center text-xs text-slate-400 pointer-events-none">
+    <div class="absolute bottom-4 inset-x-0 text-center text-xs sm:text-sm text-slate-300 font-medium pointer-events-none drop-shadow-sm">
       Dùng phím mũi tên &larr; &rarr; để chuyển ảnh &bull; Bấm ra ngoài hoặc ESC để đóng
     </div>
   </div>
@@ -2053,8 +2045,7 @@ const html = `<!DOCTYPE html>
       { src: "assets/images/bangkhen/3.jpg", title: "Chứng nhận Sản phẩm & Dịch vụ chất lượng Châu Á 2024 (Asia Quality Products & Services)" },
       { src: "assets/images/bangkhen/4.jpg", title: "The Best of Vietnam 2024 - Top 20 Sản phẩm dịch vụ chất lượng tốt nhất Việt Nam" },
       { src: "assets/images/bangkhen/31.jpg", title: "Giấy khen Hội cứu trợ trẻ em tàn tật Việt Nam - Tích cực vì sức khỏe thị lực trẻ em" },
-      { src: "assets/images/bangkhen/32.jpg", title: "Giấy khen Hội nạn nhân chất độc da cam / Dioxin Việt Nam - Hoạt động thiện nguyện" },
-      { src: "assets/images/bangkhen/33.jpg", title: "Kỷ niệm chương Tấm lòng nhân ái vì sự nghiệp chăm sóc sức khỏe cộng đồng" }
+      { src: "assets/images/bangkhen/32.jpg", title: "Giấy khen Hội nạn nhân chất độc da cam / Dioxin Việt Nam - Hoạt động thiện nguyện" }
     ];
 
     var currentCertIdx = 0;
