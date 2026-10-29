@@ -57,12 +57,12 @@ export default function Header() {
       <header className="sticky top-0 z-40 bg-[var(--site-bg-start)]/90 backdrop-blur-md border-b border-[var(--color-border)] transition-shadow">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-6">
           
-          {/* Brand Logo with Real Rocky Image */}
+          {/* Brand Logo with Real Rocky Image (+30% size) */}
           <Link href="/" className="flex items-center gap-3 group">
             <img
               src="/assets/logo_rocky_transparent.png"
               alt="Rocky Lens Canada"
-              className="h-9 sm:h-10 w-auto object-contain transition-transform group-hover:scale-105"
+              className="h-12 sm:h-[52px] w-auto object-contain transition-transform group-hover:scale-105"
             />
           </Link>
 

@@ -47,9 +47,9 @@ export default function BlogSection() {
           </p>
         </div>
 
-        {/* 3 Editorial Blog Cards Grid - Reduced 30% dimensions */}
-        <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 pt-2">
+        {/* 3 Editorial Blog Cards Grid - Aligned with Section Header */}
+        <div className="w-full">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
             {blogArticles.map((article) => (
               <article
                 key={article.slug}

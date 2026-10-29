@@ -567,7 +567,7 @@ const html = `<!DOCTYPE html>
       
       <!-- Brand Logo -->
       <a href="#" class="flex items-center gap-3">
-        <img src="assets/logo_rocky_transparent.png" alt="Rocky Lens Canada" class="h-9 sm:h-10 w-auto object-contain">
+        <img src="assets/logo_rocky_transparent.png" alt="Rocky Lens Canada" class="h-12 sm:h-[52px] w-auto object-contain">
       </a>
 
       <!-- Primary Multi-Page Navigation Items -->
@@ -772,10 +772,10 @@ const html = `<!DOCTYPE html>
 
         <!-- 6 Solution Cards Grid - Increased 20% -->
         <div class="max-w-[1240px] mx-auto">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-2" id="product-cards-grid">
+          <div class="flex flex-wrap justify-center gap-6 pt-2" id="product-cards-grid">
             
-                        <!-- Card 1 -->
-            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="outdoor">
+                        <!-- Card 1: Tài Xế -->
+            <div class="product-sol-card w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-[390px] card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="outdoor">
               <div>
                 <div class="space-y-1 pb-2">
                   <div class="text-[11px] font-bold text-primary tracking-wide uppercase line-clamp-1">DÀNH CHO TÀI XẾ & DI CHUYỂN ĐÊM</div>
@@ -796,18 +796,18 @@ const html = `<!DOCTYPE html>
               </div>
             </div>
 
-            <!-- Card 2 -->
-            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="work">
+            <!-- Card 2: Designer (Không Đổi Màu) -->
+            <div class="product-sol-card w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-[390px] card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="work">
               <div>
                 <div class="space-y-1 pb-2">
-                  <div class="text-[11px] font-bold text-primary tracking-wide uppercase line-clamp-1">DÂN VĂN PHÒNG & THIẾT KẾ ĐỒ HỌA</div>
+                  <div class="text-[11px] font-bold text-primary tracking-wide uppercase line-clamp-1">DÀNH CHO DESIGNER & ĐỒ HỌA MÁY TÍNH</div>
                   <h3 class="text-base sm:text-lg font-bold text-heading leading-snug h-14 flex items-start line-clamp-2">
-                    <a href="trong-kinh/rocky-156-bluecut-shmc/" class="hover:text-primary transition-colors">Ngồi Máy Tính & Điện Thoại (Lọc Ánh Sáng Xanh)</a>
+                    <a href="trong-kinh/rocky-156-bluecut-shmc/" class="hover:text-primary transition-colors">Ngồi Máy Tính Đồ Họa (Lọc Ánh Sáng Xanh - KHÔNG Đổi Màu)</a>
                   </h3>
-                  <p class="text-brand-muted text-xs leading-relaxed line-clamp-2 h-10">Lọc ánh sáng xanh tím có hại từ màn hình số, giảm khô rát mỏi mắt cả ngày dài. Giữ độ trong suốt tuyệt đối không ngả vàng, chuẩn màu cho Designer.</p>
+                  <p class="text-brand-muted text-xs leading-relaxed line-clamp-2 h-10">Dành cho designer, lập trình viên, dựng video: tròng trong suốt 99.8% cả trong nhà lẫn ngoài trời, lọc ánh sáng xanh tím có hại mà tuyệt đối không ngả vàng, chuẩn màu 100%.</p>
                 </div>
                 <div class="h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
-                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_chong_tia_uv.png" alt="Ngồi Máy Tính & Điện Thoại (Lọc Ánh Sáng Xanh)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_chong_tia_uv.png" alt="Ngồi Máy Tính Đồ Họa (Lọc Ánh Sáng Xanh - KHÔNG Đổi Màu)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
               </div>
               <div class="pt-3 mt-auto border-t border-slate-100 flex items-center">
@@ -818,18 +818,18 @@ const html = `<!DOCTYPE html>
               </div>
             </div>
 
-            <!-- Card 3 -->
-            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="outdoor">
+            <!-- Card 3: Dân Văn Phòng (Có Đổi Màu) -->
+            <div class="product-sol-card w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-[390px] card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="work">
               <div>
                 <div class="space-y-1 pb-2">
-                  <div class="text-[11px] font-bold text-primary tracking-wide uppercase line-clamp-1">NĂNG ĐỘNG NGOÀI TRỜI (2 TRONG 1)</div>
+                  <div class="text-[11px] font-bold text-primary tracking-wide uppercase line-clamp-1">DÂN VĂN PHÒNG & NĂNG ĐỘNG (2 TRONG 1)</div>
                   <h3 class="text-base sm:text-lg font-bold text-heading leading-snug h-14 flex items-start line-clamp-2">
-                    <a href="trong-kinh/rocky-trendy-photochromic-grey/" class="hover:text-primary transition-colors">Người Hay Ra Nắng (Đổi Màu Kính Mát Thời Trang)</a>
+                    <a href="trong-kinh/rocky-trendy-photochromic-grey/" class="hover:text-primary transition-colors">Văn Phòng Hay Ra Nắng (Lọc Ánh Sáng Xanh + CÓ ĐỔI MÀU)</a>
                   </h3>
-                  <p class="text-brand-muted text-xs leading-relaxed line-clamp-2 h-10">Trong suốt thanh lịch trong nhà, tự động chuyển màu râm chuẩn CAT 3 ngay khi ra nắng, chống tia cực tím UV400 và chói lóa ngoài trời tiện lợi 2 trong 1.</p>
+                  <p class="text-brand-muted text-xs leading-relaxed line-clamp-2 h-10">Trong nhà lọc ánh sáng xanh máy tính êm dịu mắt, bước ra nắng tự động chuyển màu râm chuẩn CAT 3 chống tia cực tím UV400 và chói lóa tiện lợi 2 trong 1.</p>
                 </div>
                 <div class="h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
-                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_doi_mau.png" alt="Người Hay Ra Nắng (Đổi Màu Kính Mát Thời Trang)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_doi_mau.png" alt="Văn Phòng Hay Ra Nắng (Lọc Ánh Sáng Xanh + CÓ ĐỔI MÀU)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
               </div>
               <div class="pt-3 mt-auto border-t border-slate-100 flex items-center">
@@ -840,30 +840,8 @@ const html = `<!DOCTYPE html>
               </div>
             </div>
 
-            <!-- Card 4 -->
-            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="special">
-              <div>
-                <div class="space-y-1 pb-2">
-                  <div class="text-[11px] font-bold text-primary tracking-wide uppercase line-clamp-1">CẬN ĐỘ CAO & GỌNG KHOAN THỜI TRANG</div>
-                  <h3 class="text-base sm:text-lg font-bold text-heading leading-snug h-14 flex items-start line-clamp-2">
-                    <a href="trong-kinh/rocky-160-mr8-aspheric/" class="hover:text-primary transition-colors">Cận Nặng Mỏng Nhẹ & Gọng Khoan Không Viền</a>
-                  </h3>
-                  <p class="text-brand-muted text-xs leading-relaxed line-clamp-2 h-10">Chiết suất cao 1.60 - 1.74 mỏng nhẹ hơn đến 45%, phôi Mitsui MR Nhật Bản siêu dai chống sứt mẻ ốc khoan, triệt tiêu viền dày đáy chai thẩm mỹ.</p>
-                </div>
-                <div class="h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
-                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_kinh_khoan_va_dap.png" alt="Cận Nặng Mỏng Nhẹ & Gọng Khoan Không Viền" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                </div>
-              </div>
-              <div class="pt-3 mt-auto border-t border-slate-100 flex items-center">
-                <a href="trong-kinh/rocky-160-mr8-aspheric/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
-                  <span>Xem giải pháp</span>
-                  <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
-                </a>
-              </div>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="work">
+            <!-- Card 4: Người Lớn Tuổi -->
+            <div class="product-sol-card w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-[390px] card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="work">
               <div>
                 <div class="space-y-1 pb-2">
                   <div class="text-[11px] font-bold text-primary tracking-wide uppercase line-clamp-1">NGƯỜI LỚN TUỔI & TRUNG NIÊN (40+)</div>
@@ -884,8 +862,8 @@ const html = `<!DOCTYPE html>
               </div>
             </div>
 
-            <!-- Card 6 -->
-            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="special">
+            <!-- Card 5: Trẻ Em -->
+            <div class="product-sol-card w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-[390px] card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="special">
               <div>
                 <div class="space-y-1 pb-2">
                   <div class="text-[11px] font-bold text-primary tracking-wide uppercase line-clamp-1">TRẺ EM & HỌC SINH CẬN THỊ</div>
@@ -1022,8 +1000,8 @@ const html = `<!DOCTYPE html>
         </div>
 
         <!-- 3 Column Cards Grid matching user screenshot - Reduced 30% -->
-        <div class="max-w-5xl mx-auto">
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-5 pt-2">
+        <div class="w-full">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
             
             <!-- Card 1 -->
             <div class="card-surface rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between border border-[var(--color-border)]/50 group bg-white">
@@ -1476,8 +1454,8 @@ const html = `<!DOCTYPE html>
         </div>
 
         <!-- 3 Editorial Blog Cards Grid - Reduced 30% -->
-        <div class="max-w-5xl mx-auto">
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-5 pt-2">
+        <div class="w-full">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
             
             <!-- Card 1 -->
             <article class="card-surface rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between border border-[var(--color-border)]/50 group bg-white">

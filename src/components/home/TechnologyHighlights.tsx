@@ -47,9 +47,9 @@ export default function TechnologyHighlights() {
           </p>
         </div>
 
-        {/* 3 Column Cards Grid matching user screenshot - Reduced 30% dimensions */}
-        <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 pt-2">
+        {/* 3 Column Cards Grid - Aligned with Section Header */}
+        <div className="w-full">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
             {technologyCards.map((card, idx) => (
               <div
                 key={idx}
