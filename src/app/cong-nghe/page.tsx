@@ -4,10 +4,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import {
   Sparkles,
-  Layers,
-  Droplets,
-  Eye,
-  CheckCircle2,
   ArrowRight,
   HelpCircle,
   Cpu,
@@ -22,70 +18,77 @@ export const metadata: Metadata = constructMetadata({
   path: '/cong-nghe/',
 });
 
-const corePillars = [
+interface CorePillarItem {
+  number: string;
+  badge: string;
+  title: string;
+  subtitle: string;
+  image: string;
+  imageAlt: string;
+  points: {
+    label: string;
+    text: string;
+  }[];
+  tag: string;
+}
+
+const corePillars: CorePillarItem[] = [
   {
     number: '01',
     badge: 'Phôi Vật Liệu',
     title: 'Phôi Quang Học Tinh Khiết',
     subtitle: 'Mitsui MR Series & BlueCut Monomer',
-    description:
-      'Cốt lõi của chiếc tròng kính hoàn hảo bắt đầu từ phôi vật liệu tinh khiết. Rocky Lens tuyển chọn phôi nhựa nhiệt rắn cao cấp từ các nhà sản xuất hóa chất quang học hàng đầu thế giới.',
+    image: '/images/technologies/sol_kinh_khoan_va_dap.png',
+    imageAlt: 'Tròng kính phôi dẻo dai chống nứt vỡ Mitsui MR-8 dành cho gọng khoan',
     points: [
       {
-        name: 'Phôi Mitsui MR-8 & MR-7 (Nhật Bản):',
-        desc: 'Độ dai và chịu lực va đập vượt trội, chịu lực kéo căng, chống nứt vỡ tuyệt đối khi khoan bắt ốc hoặc xẻ cước.',
+        label: 'Mitsui MR-8 & MR-7:',
+        text: 'Siêu dẻo dai, chống nứt vỡ tuyệt đối cho gọng khoan ốc và xẻ cước.',
       },
       {
-        name: 'Phôi BlueCut UV420 không ám vàng:',
-        desc: 'Hạt monomer hấp thụ trực tiếp tia UV và dải ánh sáng xanh 400-420nm từ cốt phôi, giữ độ truyền quang 98% cho hình ảnh trong suốt tự nhiên.',
+        label: 'BlueCut UV420:',
+        text: 'Hấp thụ ánh sáng xanh trong cốt phôi, truyền quang 98% không ám vàng.',
       },
     ],
     tag: 'Ứng dụng: BlueCut 1.56, MR-8 1.60, MR-7 1.67',
-    icon: Sparkles,
   },
   {
     number: '02',
     badge: 'Hệ Lớp Phủ',
     title: 'Màng Phủ Chân Không Nano Đa Năng',
     subtitle: 'Nano Sapphire SHMC & DriveShield',
-    description:
-      'Hệ thống phủ chân không đa tầng lắng đọng nhiều lớp màng nano quang học siêu mỏng trên cả hai bề mặt tròng, bảo vệ tròng kính trước mọi tác nhân môi trường.',
+    image: '/images/technologies/sol_kinh_lai_xe.png',
+    imageAlt: 'Tròng kính phủ Nano lọc chói đèn xe ban đêm và chống bám nước lá sen',
     points: [
       {
-        name: 'Siêu trượt nước Super Hydrophobic (>115°):',
-        desc: 'Tạo hiệu ứng lá sen trơn trượt, nước mưa và hơi sương trôi tuột tức thì, kháng bám dầu mỡ và dấu vân tay.',
+        label: 'Super Hydrophobic:',
+        text: 'Hiệu ứng lá sen trượt nước mưa góc >115°, kháng bám dầu mỡ và vân tay.',
       },
       {
-        name: 'DriveShield lọc chói đèn pha LED:',
-        desc: 'Triệt tiêu bước sóng chói 440-460nm của đèn xe ngược chiều, tăng tương phản khi lái xe ban đêm và trời mưa.',
-      },
-      {
-        name: 'Màng chắn khử tĩnh điện EMI:',
-        desc: 'Trung hòa điện tích bề mặt, ngăn hoàn toàn hiện tượng hút bụi mịn và xơ vải khi lau kính.',
+        label: 'DriveShield & EMI:',
+        text: 'Giảm chói đèn pha LED ban đêm và triệt tiêu tĩnh điện hút bụi mịn.',
       },
     ],
     tag: 'Ứng dụng: Tiêu chuẩn trên toàn bộ sản phẩm Rocky',
-    icon: Droplets,
   },
   {
     number: '03',
     badge: 'Thiết Kế Số',
     title: 'Thiết Kế Quang Học Số & Freeform',
     subtitle: 'Aspheric SPH & Digital Freeform 4K',
-    description:
-      'Ứng dụng toán học giải tích bề mặt tự do để tối ưu hóa đường cong thấu kính, mang lại trường nhìn chân thực và tính thẩm mỹ cao nhất cho người đeo kính.',
+    image: '/images/technologies/sol_da_trong.png',
+    imageAlt: 'Tròng kính đa tròng kỹ thuật số Freeform 4K nhìn rõ xa và gần',
     points: [
       {
-        name: 'Thiết kế phi cầu Aspheric (SPH):',
-        desc: 'Làm phẳng bề mặt, tròng mỏng nhẹ hơn 10-15%, triệt tiêu quang sai méo hình vùng rìa và hạn chế mắt bị thu nhỏ khi cận nặng.',
+        label: 'Aspheric (Phi cầu):',
+        text: 'Tròng phẳng mỏng hơn 15%, triệt tiêu biến dạng méo hình vùng rìa.',
       },
       {
-        name: 'Phay mặt sau kỹ thuật số Freeform 4K:',
-        desc: 'Sai số nhỏ hơn 0.01 Diop, tính toán theo từng thông số khung kính, mở rộng vùng nhìn đa tròng êm ái, thích nghi nhanh chóng.',
+        label: 'Freeform 4K:',
+        text: 'Phay kỹ thuật số sai số < 0.01D, mở rộng 40% trường nhìn êm ái.',
       },
     ],
     tag: 'Ứng dụng: Dòng Aspheric & Đa tròng Freeform',
-    icon: Eye,
   },
 ];
 
@@ -201,14 +204,13 @@ export default function CongNghePage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-14 space-y-14 sm:space-y-16">
 
         {/* ========================================================= */}
-        {/* 2. THREE CORE PILLARS (GỌN GÀNG, KHÔNG DÀI DÒNG)          */}
+        {/* 2. THREE CORE PILLARS (GỌN GÀNG, CÓ ẢNH, KHÔNG DÙNG ICON) */}
         {/* ========================================================= */}
         <section id="tru-cot-cong-nghe" className="space-y-8 scroll-mt-24">
           <div className="text-center max-w-3xl mx-auto space-y-2">
-            <div className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-[var(--site-bg-middle)]/60 text-primary text-xs font-bold border border-[var(--color-border)]/60">
-              <Layers className="w-3.5 h-3.5" />
-              <span>3 Trụ Cột Công Nghệ Cốt Lõi</span>
-            </div>
+            <span className="inline-block px-3 py-1 rounded-full bg-[var(--site-bg-middle)]/60 text-primary text-xs font-bold border border-[var(--color-border)]/60">
+              3 Trụ Cột Công Nghệ Cốt Lõi
+            </span>
             <h2 className="text-2xl sm:text-3xl font-black text-heading tracking-tight">
               Đột Phá Từ Vật Liệu Đến Gia Công Kỹ Thuật Số
             </h2>
@@ -221,11 +223,23 @@ export default function CongNghePage() {
             {corePillars.map((pillar) => (
               <div
                 key={pillar.number}
-                className="card-surface rounded-3xl p-6 sm:p-7 bg-white border border-[var(--color-border)]/70 shadow-xs hover:shadow-lg transition-all flex flex-col justify-between group"
+                className="card-surface rounded-3xl p-5 sm:p-6 bg-white border border-[var(--color-border)]/70 shadow-xs hover:shadow-lg transition-all flex flex-col justify-between group overflow-hidden"
               >
                 <div className="space-y-4">
-                  <div className="flex items-center justify-between">
-                    <span className="w-10 h-10 rounded-xl bg-[var(--site-bg-middle)]/60 text-[var(--color-primary)] font-black flex items-center justify-center text-sm">
+                  {/* Visual Real Lens Photograph */}
+                  <div className="relative aspect-[16/10] w-full rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/80">
+                    <Image
+                      src={pillar.image}
+                      alt={pillar.imageAlt}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                    />
+                  </div>
+
+                  {/* Header: Number & Badge (No icons) */}
+                  <div className="flex items-center justify-between pt-1">
+                    <span className="w-8 h-8 rounded-lg bg-[var(--site-bg-middle)]/60 text-[var(--color-primary)] font-black flex items-center justify-center text-xs">
                       {pillar.number}
                     </span>
                     <span className="text-xs font-bold px-3 py-1 rounded-full bg-slate-100 text-slate-700">
@@ -233,6 +247,7 @@ export default function CongNghePage() {
                     </span>
                   </div>
 
+                  {/* Title & Subtitle */}
                   <div>
                     <h3 className="text-lg sm:text-xl font-bold text-heading group-hover:text-[var(--color-primary)] transition-colors">
                       {pillar.title}
@@ -242,23 +257,18 @@ export default function CongNghePage() {
                     </p>
                   </div>
 
-                  <p className="text-xs sm:text-sm text-brand-muted leading-relaxed">
-                    {pillar.description}
-                  </p>
-
+                  {/* 2 Concise Points - Pure text, zero icons */}
                   <div className="space-y-2.5 pt-2 border-t border-slate-100">
                     {pillar.points.map((pt, pIdx) => (
-                      <div key={pIdx} className="text-xs space-y-0.5">
-                        <div className="font-bold text-heading flex items-start gap-1.5">
-                          <CheckCircle2 className="w-3.5 h-3.5 text-teal-600 shrink-0 mt-0.5" />
-                          <span>{pt.name}</span>
-                        </div>
-                        <p className="text-slate-500 pl-5 leading-normal">{pt.desc}</p>
+                      <div key={pIdx} className="text-xs leading-relaxed text-slate-700">
+                        <span className="font-bold text-heading">{pt.label} </span>
+                        <span className="text-slate-600">{pt.text}</span>
                       </div>
                     ))}
                   </div>
                 </div>
 
+                {/* Footer Tag */}
                 <div className="mt-5 pt-3 border-t border-slate-100 text-xs font-semibold text-slate-500 italic">
                   {pillar.tag}
                 </div>
