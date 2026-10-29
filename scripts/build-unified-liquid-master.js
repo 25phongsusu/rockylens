@@ -934,8 +934,8 @@ const html = `<!DOCTYPE html>
                   <h3 class="text-base sm:text-lg font-bold text-heading leading-snug">Mỏng nhẹ &amp; gọng không viền</h3>
                   <p class="text-brand-muted text-xs leading-relaxed line-clamp-2">Tìm hiểu vật liệu, chiết suất và cách chọn tròng theo cấu trúc gọng.</p>
                 </div>
-                <div class="aspect-[16/10] sm:aspect-[16/10] h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-50/50 relative my-2.5 flex items-center justify-center p-2">
-                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_kinh_khoan_va_dap.png" alt="Mỏng nhẹ &amp; gọng không viền" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                <div class="aspect-[16/10] sm:aspect-[16/10] h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
+                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_kinh_khoan_va_dap.png" alt="Mỏng nhẹ &amp; gọng không viền" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
               </div>
               <div class="pt-3 mt-3 border-t border-slate-100 flex items-center">
@@ -998,8 +998,8 @@ const html = `<!DOCTYPE html>
                   <h3 class="text-base sm:text-lg font-bold text-heading leading-snug">Nhu cầu nhìn xa &amp; gần</h3>
                   <p class="text-brand-muted text-xs leading-relaxed line-clamp-2">Tìm hiểu tròng đa tròng và yếu tố cần cân nhắc khi nhìn ở nhiều khoảng cách.</p>
                 </div>
-                <div class="aspect-[16/10] sm:aspect-[16/10] h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-50/50 relative my-2.5 flex items-center justify-center p-2">
-                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_da_trong.png" alt="Nhu cầu nhìn xa &amp; gần" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                <div class="aspect-[16/10] sm:aspect-[16/10] h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
+                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_da_trong.png" alt="Nhu cầu nhìn xa &amp; gần" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
               </div>
               <div class="pt-3 mt-3 border-t border-slate-100 flex items-center">
@@ -1062,8 +1062,8 @@ const html = `<!DOCTYPE html>
                   <h3 class="text-base sm:text-lg font-bold text-heading leading-snug">Thị lực học đường</h3>
                   <p class="text-brand-muted text-xs leading-relaxed line-clamp-2">Khám phá các thiết kế tròng dành cho trẻ và lưu ý khi lựa chọn.</p>
                 </div>
-                <div class="aspect-[16/10] sm:aspect-[16/10] h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-50/50 relative my-2.5 flex items-center justify-center p-2">
-                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_kiem_soat_can_thi.png" alt="Thị lực học đường" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                <div class="aspect-[16/10] sm:aspect-[16/10] h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
+                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_kiem_soat_can_thi.png" alt="Thị lực học đường" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
               </div>
               <div class="pt-3 mt-3 border-t border-slate-100 flex items-center">

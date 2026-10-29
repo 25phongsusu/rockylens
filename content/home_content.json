@@ -136,7 +136,8 @@
         "techProcess": "Phôi vật liệu dẻo dai Mitsui MR Series",
         "visionExperience": "Nhẹ nhàng, triệt tiêu quang sai biên",
         "indexOption": "1.60 | 1.67 | 1.74 siêu mỏng",
-        "warranty": "24 tháng chính hãng"
+        "warranty": "24 tháng chính hãng",
+        "imageFit": "cover"
       },
       {
         "category": "NHIỀU KHOẢNG NHÌN",
@@ -151,7 +152,8 @@
         "techProcess": "Mài vi điểm kỹ thuật số Freeform HD",
         "visionExperience": "Vùng nhìn liền mạch, thích nghi nhanh",
         "indexOption": "1.56 | 1.60 | 1.67",
-        "warranty": "24 tháng chính hãng"
+        "warranty": "24 tháng chính hãng",
+        "imageFit": "cover"
       },
       {
         "category": "TRẺ EM & HỌC ĐƯỜNG",
@@ -166,7 +168,8 @@
         "techProcess": "Vi thấu kính phân tán chu biên hội tụ D.I.M.S.",
         "visionExperience": "Sắc nét trung tâm, giảm mỏi điều tiết",
         "indexOption": "1.56 | 1.60",
-        "warranty": "24 tháng chính hãng"
+        "warranty": "24 tháng chính hãng",
+        "imageFit": "cover"
       }
     ],
     "bottomCTA": {
