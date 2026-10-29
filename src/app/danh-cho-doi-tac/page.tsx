@@ -236,7 +236,7 @@ export default function PartnerPage() {
       </section>
 
       {/* 8. CTA liên hệ trực tiếp */}
-      <ContactCTA />
+      <ContactCTA variant="b2b-only" />
     </div>
   );
 }

@@ -11,7 +11,6 @@ import {
   Droplets,
   ShieldCheck,
   Eye,
-  Glasses,
 } from 'lucide-react';
 import Breadcrumbs from '@/components/shared/Breadcrumbs';
 import ContactCTA from '@/components/shared/ContactCTA';
@@ -540,39 +539,8 @@ export default function CongNghePage() {
         </section>
 
         {/* ========================================================= */}
-        {/* 7. DẪN SANG CATALOGUE TRÒNG KÍNH HOẶC BLOG               */}
+        {/* 7. KẾT NỐI NHU CẦU: B2C CATALOGUE & B2B ĐẠI LÝ            */}
         {/* ========================================================= */}
-        <section className="section-background rounded-3xl p-8 sm:p-12 border border-[var(--color-border)]/60 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xs bg-gradient-to-r from-blue-900/5 via-sky-900/5 to-teal-900/5">
-          <div className="space-y-2 text-center md:text-left">
-            <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-primary">
-              <Glasses className="w-4 h-4" />
-              <span>Catalogue Tròng Kính Canada</span>
-            </div>
-            <h2 className="text-2xl sm:text-3xl font-black text-heading tracking-tight">
-              Sẵn Sàng Chọn Cặp Tròng Kính Phù Hợp Với Bạn?
-            </h2>
-            <p className="text-[var(--color-muted)] text-sm max-w-2xl leading-relaxed">
-              Khám phá toàn bộ 12 dòng sản phẩm tròng kính Rocky Lens với đầy đủ tính năng, chiết suất và chứng nhận quang học quốc tế.
-            </p>
-          </div>
-          <div className="flex flex-wrap items-center gap-3 shrink-0">
-            <Link
-              href="/trong-kinh/"
-              className="button-primary flex items-center gap-2 px-6 py-3 rounded-full text-xs sm:text-sm font-bold shadow-md hover:shadow-lg transition-all"
-            >
-              <span>Xem Catalogue Tròng Kính</span>
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-            <Link
-              href="/blog/"
-              className="px-6 py-3 rounded-full text-xs sm:text-sm font-bold text-heading bg-white border border-slate-200 hover:bg-slate-50 transition-all shadow-2xs"
-            >
-              <span>Đọc Thêm Blog</span>
-            </Link>
-          </div>
-        </section>
-
-        {/* 8. B2B DEALER BANNER */}
         <ContactCTA />
 
       </div>
