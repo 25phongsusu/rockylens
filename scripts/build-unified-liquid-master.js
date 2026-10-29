@@ -734,392 +734,139 @@ const html = `<!DOCTYPE html>
         <div class="max-w-[1240px] mx-auto">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-2" id="product-cards-grid">
             
-            <!-- Card 1 -->
-            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="outdoor">
+                        <!-- Card 1 -->
+            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="outdoor">
               <div>
                 <div class="space-y-1 pb-2">
-                  <div class="text-[11px] font-bold text-primary tracking-wide uppercase">DI CHUYỂN</div>
-                  <h3 class="text-base sm:text-lg font-bold text-heading leading-snug">Khi lái xe &amp; ban đêm</h3>
-                  <p class="text-brand-muted text-xs leading-relaxed line-clamp-2">Tìm hiểu các đặc điểm tròng kính liên quan đến ánh sáng chói và nhu cầu di chuyển.</p>
+                  <div class="text-[11px] font-bold text-primary tracking-wide uppercase line-clamp-1">DÀNH CHO TÀI XẾ & DI CHUYỂN ĐÊM</div>
+                  <h3 class="text-base sm:text-lg font-bold text-heading leading-snug h-14 flex items-start line-clamp-2">
+                    <a href="trong-kinh/rocky-driveshield-night-vision/" class="hover:text-primary transition-colors">Lái Xe Ban Đêm & Đi Mưa (Chống Chói Đèn Pha)</a>
+                  </h3>
+                  <p class="text-brand-muted text-xs leading-relaxed line-clamp-2 h-10">Triệt tiêu ánh sáng chói lóa từ đèn pha LED đối diện, tăng cường độ tương phản và trượt nước mưa tối đa giúp lái xe an toàn, không bị lóa mắt.</p>
                 </div>
-                <div class="aspect-[16/10] sm:aspect-[16/10] h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
-                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_kinh_lai_xe.png" alt="Khi lái xe &amp; ban đêm" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
+                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_kinh_lai_xe.png" alt="Lái Xe Ban Đêm & Đi Mưa (Chống Chói Đèn Pha)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
               </div>
-              <div class="pt-3 mt-3 border-t border-slate-100 flex items-center">
+              <div class="pt-3 mt-auto border-t border-slate-100 flex items-center">
                 <a href="trong-kinh/rocky-driveshield-night-vision/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                   <span>Xem giải pháp</span>
                   <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
               </div>
-
-              <!-- Technical specifications hover overlay -->
-              <div class="absolute inset-0 bg-white p-5 sm:p-6 rounded-2xl text-heading flex flex-col justify-between opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 z-20 border border-[var(--color-border)] shadow-xl pointer-events-none group-hover:pointer-events-auto">
-                <div class="space-y-2">
-                  <div class="flex items-center justify-between">
-                    <span class="px-2.5 py-0.5 rounded-full bg-[var(--site-bg-middle)]/60 text-primary text-[10px] font-bold border border-[var(--color-border)]">
-                      Thông Số Kỹ Thuật
-                    </span>
-                    <span class="text-[11px] text-brand-muted font-semibold">
-                      Tầm Nhìn Lái Xe
-                    </span>
-                  </div>
-                  <h4 class="text-sm sm:text-base font-black text-heading line-clamp-1">
-                    Rocky DriveShield Ruby AR
-                  </h4>
-                  <div class="space-y-1 text-[11px] pt-0.5">
-                    <div class="flex justify-between items-center py-1.5 px-3 rounded-lg bg-[var(--site-bg-start)]">
-                      <span class="text-brand-muted font-medium shrink-0">Tính năng:</span>
-                      <span class="font-bold text-primary text-right ml-2 line-clamp-1">Chống chói pha LED &amp; trượt nước mưa</span>
-                    </div>
-                    <div class="flex justify-between items-center py-1.5 px-3 rounded-lg bg-[var(--site-bg-start)]">
-                      <span class="text-brand-muted font-medium shrink-0">Công nghệ:</span>
-                      <span class="font-bold text-heading text-right ml-2 line-clamp-1">Lọc quang phổ Multi-Matrix &amp; phủ Ruby AR</span>
-                    </div>
-                    <div class="flex justify-between items-center py-1.5 px-3 rounded-lg bg-[var(--site-bg-start)]">
-                      <span class="text-brand-muted font-medium shrink-0">Trải nghiệm:</span>
-                      <span class="font-bold text-heading text-right ml-2 line-clamp-1">Tầm nhìn êm dịu, vững vàng tay lái đêm</span>
-                    </div>
-                    <div class="flex justify-between items-center py-1.5 px-3 rounded-lg bg-[var(--site-bg-start)]">
-                      <span class="text-brand-muted font-medium shrink-0">Chiết suất:</span>
-                      <span class="font-bold text-heading text-right ml-2">1.56 | 1.60 | 1.67</span>
-                    </div>
-                    <div class="flex justify-between items-center py-1.5 px-3 rounded-lg bg-[var(--site-bg-start)]">
-                      <span class="text-brand-muted font-medium shrink-0">Bảo hành:</span>
-                      <span class="font-bold text-heading text-right ml-2">24 tháng chính hãng</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="pt-2">
-                  <a href="trong-kinh/rocky-driveshield-night-vision/" class="button-primary w-full py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-colors block text-center shadow-xs">
-                    Xem chi tiết dòng tròng &rarr;
-                  </a>
-                </div>
-              </div>
             </div>
 
             <!-- Card 2 -->
-            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="work">
+            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="work">
               <div>
                 <div class="space-y-1 pb-2">
-                  <div class="text-[11px] font-bold text-primary tracking-wide uppercase">HỌC TẬP &amp; LÀM VIỆC</div>
-                  <h3 class="text-base sm:text-lg font-bold text-heading leading-snug">Làm việc với màn hình</h3>
-                  <p class="text-brand-muted text-xs leading-relaxed line-clamp-2">Tìm hiểu lớp phủ, các lựa chọn tròng kính và thói quen sử dụng thiết bị số.</p>
+                  <div class="text-[11px] font-bold text-primary tracking-wide uppercase line-clamp-1">DÂN VĂN PHÒNG & THIẾT KẾ ĐỒ HỌA</div>
+                  <h3 class="text-base sm:text-lg font-bold text-heading leading-snug h-14 flex items-start line-clamp-2">
+                    <a href="trong-kinh/rocky-156-bluecut-shmc/" class="hover:text-primary transition-colors">Ngồi Máy Tính & Điện Thoại (Lọc Ánh Sáng Xanh)</a>
+                  </h3>
+                  <p class="text-brand-muted text-xs leading-relaxed line-clamp-2 h-10">Lọc ánh sáng xanh tím có hại từ màn hình số, giảm khô rát mỏi mắt cả ngày dài. Giữ độ trong suốt tuyệt đối không ngả vàng, chuẩn màu cho Designer.</p>
                 </div>
-                <div class="aspect-[16/10] sm:aspect-[16/10] h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
-                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_chong_tia_uv.png" alt="Làm việc với màn hình" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
+                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_chong_tia_uv.png" alt="Ngồi Máy Tính & Điện Thoại (Lọc Ánh Sáng Xanh)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
               </div>
-              <div class="pt-3 mt-3 border-t border-slate-100 flex items-center">
+              <div class="pt-3 mt-auto border-t border-slate-100 flex items-center">
                 <a href="trong-kinh/rocky-156-bluecut-shmc/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                   <span>Xem giải pháp</span>
                   <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
               </div>
-
-              <!-- Technical specifications hover overlay -->
-              <div class="absolute inset-0 bg-white p-5 sm:p-6 rounded-2xl text-heading flex flex-col justify-between opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 z-20 border border-[var(--color-border)] shadow-xl pointer-events-none group-hover:pointer-events-auto">
-                <div class="space-y-2">
-                  <div class="flex items-center justify-between">
-                    <span class="px-2.5 py-0.5 rounded-full bg-[var(--site-bg-middle)]/60 text-primary text-[10px] font-bold border border-[var(--color-border)]">
-                      Thông Số Kỹ Thuật
-                    </span>
-                    <span class="text-[11px] text-brand-muted font-semibold">
-                      Bảo Vệ Mắt Điện Tử
-                    </span>
-                  </div>
-                  <h4 class="text-sm sm:text-base font-black text-heading line-clamp-1">
-                    Rocky BlueCut UV420 Relax
-                  </h4>
-                  <div class="space-y-1 text-[11px] pt-0.5">
-                    <div class="flex justify-between items-center py-1.5 px-3 rounded-lg bg-[var(--site-bg-start)]">
-                      <span class="text-brand-muted font-medium shrink-0">Tính năng:</span>
-                      <span class="font-bold text-primary text-right ml-2 line-clamp-1">Chặn ánh sáng xanh tím màn hình số</span>
-                    </div>
-                    <div class="flex justify-between items-center py-1.5 px-3 rounded-lg bg-[var(--site-bg-start)]">
-                      <span class="text-brand-muted font-medium shrink-0">Công nghệ:</span>
-                      <span class="font-bold text-heading text-right ml-2 line-clamp-1">Phôi Monomer BlueCut UV420</span>
-                    </div>
-                    <div class="flex justify-between items-center py-1.5 px-3 rounded-lg bg-[var(--site-bg-start)]">
-                      <span class="text-brand-muted font-medium shrink-0">Trải nghiệm:</span>
-                      <span class="font-bold text-heading text-right ml-2 line-clamp-1">Màu sắc trung thực, mắt luôn thư giãn</span>
-                    </div>
-                    <div class="flex justify-between items-center py-1.5 px-3 rounded-lg bg-[var(--site-bg-start)]">
-                      <span class="text-brand-muted font-medium shrink-0">Chiết suất:</span>
-                      <span class="font-bold text-heading text-right ml-2">1.56 | 1.60 | 1.67 | 1.74</span>
-                    </div>
-                    <div class="flex justify-between items-center py-1.5 px-3 rounded-lg bg-[var(--site-bg-start)]">
-                      <span class="text-brand-muted font-medium shrink-0">Bảo hành:</span>
-                      <span class="font-bold text-heading text-right ml-2">24 tháng chính hãng</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="pt-2">
-                  <a href="trong-kinh/rocky-156-bluecut-shmc/" class="button-primary w-full py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-colors block text-center shadow-xs">
-                    Xem chi tiết dòng tròng &rarr;
-                  </a>
-                </div>
-              </div>
             </div>
 
             <!-- Card 3 -->
-            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="outdoor">
+            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="outdoor">
               <div>
                 <div class="space-y-1 pb-2">
-                  <div class="text-[11px] font-bold text-primary tracking-wide uppercase">NGOÀI TRỜI</div>
-                  <h3 class="text-base sm:text-lg font-bold text-heading leading-snug">Tròng kính đổi màu</h3>
-                  <p class="text-brand-muted text-xs leading-relaxed line-clamp-2">Khám phá sự thay đổi sắc độ của tròng trong các điều kiện ánh sáng phù hợp.</p>
+                  <div class="text-[11px] font-bold text-primary tracking-wide uppercase line-clamp-1">NĂNG ĐỘNG NGOÀI TRỜI (2 TRONG 1)</div>
+                  <h3 class="text-base sm:text-lg font-bold text-heading leading-snug h-14 flex items-start line-clamp-2">
+                    <a href="trong-kinh/rocky-trendy-photochromic-grey/" class="hover:text-primary transition-colors">Người Hay Ra Nắng (Đổi Màu Kính Mát Thời Trang)</a>
+                  </h3>
+                  <p class="text-brand-muted text-xs leading-relaxed line-clamp-2 h-10">Trong suốt thanh lịch trong nhà, tự động chuyển màu râm chuẩn CAT 3 ngay khi ra nắng, chống tia cực tím UV400 và chói lóa ngoài trời tiện lợi 2 trong 1.</p>
                 </div>
-                <div class="aspect-[16/10] sm:aspect-[16/10] h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
-                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_doi_mau.png" alt="Tròng kính đổi màu" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
+                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_doi_mau.png" alt="Người Hay Ra Nắng (Đổi Màu Kính Mát Thời Trang)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
               </div>
-              <div class="pt-3 mt-3 border-t border-slate-100 flex items-center">
+              <div class="pt-3 mt-auto border-t border-slate-100 flex items-center">
                 <a href="trong-kinh/rocky-trendy-photochromic-grey/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                   <span>Xem giải pháp</span>
                   <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
               </div>
-
-              <!-- Technical specifications hover overlay -->
-              <div class="absolute inset-0 bg-white p-5 sm:p-6 rounded-2xl text-heading flex flex-col justify-between opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 z-20 border border-[var(--color-border)] shadow-xl pointer-events-none group-hover:pointer-events-auto">
-                <div class="space-y-2">
-                  <div class="flex items-center justify-between">
-                    <span class="px-2.5 py-0.5 rounded-full bg-[var(--site-bg-middle)]/60 text-primary text-[10px] font-bold border border-[var(--color-border)]">
-                      Thông Số Kỹ Thuật
-                    </span>
-                    <span class="text-[11px] text-brand-muted font-semibold">
-                      Đổi Màu Tiện Lợi
-                    </span>
-                  </div>
-                  <h4 class="text-sm sm:text-base font-black text-heading line-clamp-1">
-                    Rocky Fast-Change Spin-Coat
-                  </h4>
-                  <div class="space-y-1 text-[11px] pt-0.5">
-                    <div class="flex justify-between items-center py-1.5 px-3 rounded-lg bg-[var(--site-bg-start)]">
-                      <span class="text-brand-muted font-medium shrink-0">Tính năng:</span>
-                      <span class="font-bold text-primary text-right ml-2 line-clamp-1">Đổi màu râm sành điệu chuẩn CAT 3</span>
-                    </div>
-                    <div class="flex justify-between items-center py-1.5 px-3 rounded-lg bg-[var(--site-bg-start)]">
-                      <span class="text-brand-muted font-medium shrink-0">Công nghệ:</span>
-                      <span class="font-bold text-heading text-right ml-2 line-clamp-1">Phủ ly tâm Spin-Coat Photochromic</span>
-                    </div>
-                    <div class="flex justify-between items-center py-1.5 px-3 rounded-lg bg-[var(--site-bg-start)]">
-                      <span class="text-brand-muted font-medium shrink-0">Trải nghiệm:</span>
-                      <span class="font-bold text-heading text-right ml-2 line-clamp-1">Tiện lợi 2 trong 1, bảo vệ UV tối đa</span>
-                    </div>
-                    <div class="flex justify-between items-center py-1.5 px-3 rounded-lg bg-[var(--site-bg-start)]">
-                      <span class="text-brand-muted font-medium shrink-0">Chiết suất:</span>
-                      <span class="font-bold text-heading text-right ml-2">1.56 | 1.60 | 1.67</span>
-                    </div>
-                    <div class="flex justify-between items-center py-1.5 px-3 rounded-lg bg-[var(--site-bg-start)]">
-                      <span class="text-brand-muted font-medium shrink-0">Bảo hành:</span>
-                      <span class="font-bold text-heading text-right ml-2">24 tháng chính hãng</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="pt-2">
-                  <a href="trong-kinh/rocky-trendy-photochromic-grey/" class="button-primary w-full py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-colors block text-center shadow-xs">
-                    Xem chi tiết dòng tròng &rarr;
-                  </a>
-                </div>
-              </div>
             </div>
 
             <!-- Card 4 -->
-            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="special">
+            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="special">
               <div>
                 <div class="space-y-1 pb-2">
-                  <div class="text-[11px] font-bold text-primary tracking-wide uppercase">THẨM MỸ &amp; ĐỘ MỎNG</div>
-                  <h3 class="text-base sm:text-lg font-bold text-heading leading-snug">Mỏng nhẹ &amp; gọng không viền</h3>
-                  <p class="text-brand-muted text-xs leading-relaxed line-clamp-2">Tìm hiểu vật liệu, chiết suất và cách chọn tròng theo cấu trúc gọng.</p>
+                  <div class="text-[11px] font-bold text-primary tracking-wide uppercase line-clamp-1">CẬN ĐỘ CAO & GỌNG KHOAN THỜI TRANG</div>
+                  <h3 class="text-base sm:text-lg font-bold text-heading leading-snug h-14 flex items-start line-clamp-2">
+                    <a href="trong-kinh/rocky-160-mr8-aspheric/" class="hover:text-primary transition-colors">Cận Nặng Mỏng Nhẹ & Gọng Khoan Không Viền</a>
+                  </h3>
+                  <p class="text-brand-muted text-xs leading-relaxed line-clamp-2 h-10">Chiết suất cao 1.60 - 1.74 mỏng nhẹ hơn đến 45%, phôi Mitsui MR Nhật Bản siêu dai chống sứt mẻ ốc khoan, triệt tiêu viền dày đáy chai thẩm mỹ.</p>
                 </div>
-                <div class="aspect-[16/10] sm:aspect-[16/10] h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
-                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_kinh_khoan_va_dap.png" alt="Mỏng nhẹ &amp; gọng không viền" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
+                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_kinh_khoan_va_dap.png" alt="Cận Nặng Mỏng Nhẹ & Gọng Khoan Không Viền" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
               </div>
-              <div class="pt-3 mt-3 border-t border-slate-100 flex items-center">
+              <div class="pt-3 mt-auto border-t border-slate-100 flex items-center">
                 <a href="trong-kinh/rocky-160-mr8-aspheric/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                   <span>Xem giải pháp</span>
                   <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
               </div>
-
-              <!-- Technical specifications hover overlay -->
-              <div class="absolute inset-0 bg-white p-5 sm:p-6 rounded-2xl text-heading flex flex-col justify-between opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 z-20 border border-[var(--color-border)] shadow-xl pointer-events-none group-hover:pointer-events-auto">
-                <div class="space-y-2">
-                  <div class="flex items-center justify-between">
-                    <span class="px-2.5 py-0.5 rounded-full bg-[var(--site-bg-middle)]/60 text-primary text-[10px] font-bold border border-[var(--color-border)]">
-                      Thông Số Kỹ Thuật
-                    </span>
-                    <span class="text-[11px] text-brand-muted font-semibold">
-                      Gọn Nhẹ &amp; Bền Bỉ
-                    </span>
-                  </div>
-                  <h4 class="text-sm sm:text-base font-black text-heading line-clamp-1">
-                    Rocky Tough Aspheric MR Series
-                  </h4>
-                  <div class="space-y-1 text-[11px] pt-0.5">
-                    <div class="flex justify-between items-center py-1.5 px-3 rounded-lg bg-[var(--site-bg-start)]">
-                      <span class="text-brand-muted font-medium shrink-0">Tính năng:</span>
-                      <span class="font-bold text-primary text-right ml-2 line-clamp-1">Tối ưu độ mỏng &amp; chịu lực va đập gọng khoan</span>
-                    </div>
-                    <div class="flex justify-between items-center py-1.5 px-3 rounded-lg bg-[var(--site-bg-start)]">
-                      <span class="text-brand-muted font-medium shrink-0">Công nghệ:</span>
-                      <span class="font-bold text-heading text-right ml-2 line-clamp-1">Phôi vật liệu dẻo dai Mitsui MR Series</span>
-                    </div>
-                    <div class="flex justify-between items-center py-1.5 px-3 rounded-lg bg-[var(--site-bg-start)]">
-                      <span class="text-brand-muted font-medium shrink-0">Trải nghiệm:</span>
-                      <span class="font-bold text-heading text-right ml-2 line-clamp-1">Nhẹ nhàng, triệt tiêu quang sai biên</span>
-                    </div>
-                    <div class="flex justify-between items-center py-1.5 px-3 rounded-lg bg-[var(--site-bg-start)]">
-                      <span class="text-brand-muted font-medium shrink-0">Chiết suất:</span>
-                      <span class="font-bold text-heading text-right ml-2">1.60 | 1.67 | 1.74 siêu mỏng</span>
-                    </div>
-                    <div class="flex justify-between items-center py-1.5 px-3 rounded-lg bg-[var(--site-bg-start)]">
-                      <span class="text-brand-muted font-medium shrink-0">Bảo hành:</span>
-                      <span class="font-bold text-heading text-right ml-2">24 tháng chính hãng</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="pt-2">
-                  <a href="trong-kinh/rocky-160-mr8-aspheric/" class="button-primary w-full py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-colors block text-center shadow-xs">
-                    Xem chi tiết dòng tròng &rarr;
-                  </a>
-                </div>
-              </div>
             </div>
 
             <!-- Card 5 -->
-            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="work">
+            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="work">
               <div>
                 <div class="space-y-1 pb-2">
-                  <div class="text-[11px] font-bold text-primary tracking-wide uppercase">NHIỀU KHOẢNG NHÌN</div>
-                  <h3 class="text-base sm:text-lg font-bold text-heading leading-snug">Nhu cầu nhìn xa &amp; gần</h3>
-                  <p class="text-brand-muted text-xs leading-relaxed line-clamp-2">Tìm hiểu tròng đa tròng và yếu tố cần cân nhắc khi nhìn ở nhiều khoảng cách.</p>
+                  <div class="text-[11px] font-bold text-primary tracking-wide uppercase line-clamp-1">NGƯỜI LỚN TUỔI & TRUNG NIÊN (40+)</div>
+                  <h3 class="text-base sm:text-lg font-bold text-heading leading-snug h-14 flex items-start line-clamp-2">
+                    <a href="trong-kinh/rocky-freeform-progressive-hd/" class="hover:text-primary transition-colors">Người Lớn Tuổi Nhìn Xa - Trung - Gần (Đa Tròng)</a>
+                  </h3>
+                  <p class="text-brand-muted text-xs leading-relaxed line-clamp-2 h-10">Xóa bỏ ranh giới đường lằn hai tròng, hỗ trợ chuyển vùng nhìn mượt mà: đọc sách báo, xem điện thoại, làm việc máy tính đến đi lại lái xe chỉ trong 1 cặp kính.</p>
                 </div>
-                <div class="aspect-[16/10] sm:aspect-[16/10] h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
-                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_da_trong.png" alt="Nhu cầu nhìn xa &amp; gần" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
+                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_da_trong.png" alt="Người Lớn Tuổi Nhìn Xa - Trung - Gần (Đa Tròng)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
               </div>
-              <div class="pt-3 mt-3 border-t border-slate-100 flex items-center">
+              <div class="pt-3 mt-auto border-t border-slate-100 flex items-center">
                 <a href="trong-kinh/rocky-freeform-progressive-hd/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                   <span>Xem giải pháp</span>
                   <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
               </div>
-
-              <!-- Technical specifications hover overlay -->
-              <div class="absolute inset-0 bg-white p-5 sm:p-6 rounded-2xl text-heading flex flex-col justify-between opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 z-20 border border-[var(--color-border)] shadow-xl pointer-events-none group-hover:pointer-events-auto">
-                <div class="space-y-2">
-                  <div class="flex items-center justify-between">
-                    <span class="px-2.5 py-0.5 rounded-full bg-[var(--site-bg-middle)]/60 text-primary text-[10px] font-bold border border-[var(--color-border)]">
-                      Thông Số Kỹ Thuật
-                    </span>
-                    <span class="text-[11px] text-brand-muted font-semibold">
-                      Đa Khoảng Cách
-                    </span>
-                  </div>
-                  <h4 class="text-sm sm:text-base font-black text-heading line-clamp-1">
-                    CanRx Freeform HD Progressive
-                  </h4>
-                  <div class="space-y-1 text-[11px] pt-0.5">
-                    <div class="flex justify-between items-center py-1.5 px-3 rounded-lg bg-[var(--site-bg-start)]">
-                      <span class="text-brand-muted font-medium shrink-0">Tính năng:</span>
-                      <span class="font-bold text-primary text-right ml-2 line-clamp-1">Nhìn rõ mọi cự ly Xa - Trung - Gần</span>
-                    </div>
-                    <div class="flex justify-between items-center py-1.5 px-3 rounded-lg bg-[var(--site-bg-start)]">
-                      <span class="text-brand-muted font-medium shrink-0">Công nghệ:</span>
-                      <span class="font-bold text-heading text-right ml-2 line-clamp-1">Mài vi điểm kỹ thuật số Freeform HD</span>
-                    </div>
-                    <div class="flex justify-between items-center py-1.5 px-3 rounded-lg bg-[var(--site-bg-start)]">
-                      <span class="text-brand-muted font-medium shrink-0">Trải nghiệm:</span>
-                      <span class="font-bold text-heading text-right ml-2 line-clamp-1">Vùng nhìn liền mạch, thích nghi nhanh</span>
-                    </div>
-                    <div class="flex justify-between items-center py-1.5 px-3 rounded-lg bg-[var(--site-bg-start)]">
-                      <span class="text-brand-muted font-medium shrink-0">Chiết suất:</span>
-                      <span class="font-bold text-heading text-right ml-2">1.56 | 1.60 | 1.67</span>
-                    </div>
-                    <div class="flex justify-between items-center py-1.5 px-3 rounded-lg bg-[var(--site-bg-start)]">
-                      <span class="text-brand-muted font-medium shrink-0">Bảo hành:</span>
-                      <span class="font-bold text-heading text-right ml-2">24 tháng chính hãng</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="pt-2">
-                  <a href="trong-kinh/rocky-freeform-progressive-hd/" class="button-primary w-full py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-colors block text-center shadow-xs">
-                    Xem chi tiết dòng tròng &rarr;
-                  </a>
-                </div>
-              </div>
             </div>
 
             <!-- Card 6 -->
-            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="special">
+            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="special">
               <div>
                 <div class="space-y-1 pb-2">
-                  <div class="text-[11px] font-bold text-primary tracking-wide uppercase">TRẺ EM &amp; HỌC ĐƯỜNG</div>
-                  <h3 class="text-base sm:text-lg font-bold text-heading leading-snug">Thị lực học đường</h3>
-                  <p class="text-brand-muted text-xs leading-relaxed line-clamp-2">Khám phá các thiết kế tròng dành cho trẻ và lưu ý khi lựa chọn.</p>
+                  <div class="text-[11px] font-bold text-primary tracking-wide uppercase line-clamp-1">TRẺ EM & HỌC SINH CẬN THỊ</div>
+                  <h3 class="text-base sm:text-lg font-bold text-heading leading-snug h-14 flex items-start line-clamp-2">
+                    <a href="trong-kinh/rocky-myocontrol-dims-kids/" class="hover:text-primary transition-colors">Trẻ Em & Học Sinh (Kiểm Soát Tăng Độ Cận)</a>
+                  </h3>
+                  <p class="text-brand-muted text-xs leading-relaxed line-clamp-2 h-10">Ứng dụng công nghệ vi thấu kính D.I.M.S làm chậm tốc độ tăng độ cận học đường đến 60%, vật liệu kháng va đập an toàn tuyệt đối cho trẻ vui chơi học tập.</p>
                 </div>
-                <div class="aspect-[16/10] sm:aspect-[16/10] h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
-                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_kiem_soat_can_thi.png" alt="Thị lực học đường" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
+                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_kiem_soat_can_thi.png" alt="Trẻ Em & Học Sinh (Kiểm Soát Tăng Độ Cận)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
               </div>
-              <div class="pt-3 mt-3 border-t border-slate-100 flex items-center">
+              <div class="pt-3 mt-auto border-t border-slate-100 flex items-center">
                 <a href="trong-kinh/rocky-myocontrol-dims-kids/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                   <span>Xem giải pháp</span>
                   <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
               </div>
-
-              <!-- Technical specifications hover overlay -->
-              <div class="absolute inset-0 bg-white p-5 sm:p-6 rounded-2xl text-heading flex flex-col justify-between opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 z-20 border border-[var(--color-border)] shadow-xl pointer-events-none group-hover:pointer-events-auto">
-                <div class="space-y-2">
-                  <div class="flex items-center justify-between">
-                    <span class="px-2.5 py-0.5 rounded-full bg-[var(--site-bg-middle)]/60 text-primary text-[10px] font-bold border border-[var(--color-border)]">
-                      Thông Số Kỹ Thuật
-                    </span>
-                    <span class="text-[11px] text-brand-muted font-semibold">
-                      Thị Lực Học Đường
-                    </span>
-                  </div>
-                  <h4 class="text-sm sm:text-base font-black text-heading line-clamp-1">
-                    Defocus MyoControl Kids HD
-                  </h4>
-                  <div class="space-y-1 text-[11px] pt-0.5">
-                    <div class="flex justify-between items-center py-1.5 px-3 rounded-lg bg-[var(--site-bg-start)]">
-                      <span class="text-brand-muted font-medium shrink-0">Tính năng:</span>
-                      <span class="font-bold text-primary text-right ml-2 line-clamp-1">Chăm sóc thị lực, làm chậm tiến triển cận</span>
-                    </div>
-                    <div class="flex justify-between items-center py-1.5 px-3 rounded-lg bg-[var(--site-bg-start)]">
-                      <span class="text-brand-muted font-medium shrink-0">Công nghệ:</span>
-                      <span class="font-bold text-heading text-right ml-2 line-clamp-1">Vi thấu kính phân tán chu biên hội tụ D.I.M.S.</span>
-                    </div>
-                    <div class="flex justify-between items-center py-1.5 px-3 rounded-lg bg-[var(--site-bg-start)]">
-                      <span class="text-brand-muted font-medium shrink-0">Trải nghiệm:</span>
-                      <span class="font-bold text-heading text-right ml-2 line-clamp-1">Sắc nét trung tâm, giảm mỏi điều tiết</span>
-                    </div>
-                    <div class="flex justify-between items-center py-1.5 px-3 rounded-lg bg-[var(--site-bg-start)]">
-                      <span class="text-brand-muted font-medium shrink-0">Chiết suất:</span>
-                      <span class="font-bold text-heading text-right ml-2">1.56 | 1.60</span>
-                    </div>
-                    <div class="flex justify-between items-center py-1.5 px-3 rounded-lg bg-[var(--site-bg-start)]">
-                      <span class="text-brand-muted font-medium shrink-0">Bảo hành:</span>
-                      <span class="font-bold text-heading text-right ml-2">24 tháng chính hãng</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="pt-2">
-                  <a href="trong-kinh/rocky-myocontrol-dims-kids/" class="button-primary w-full py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-colors block text-center shadow-xs">
-                    Xem chi tiết dòng tròng &rarr;
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
         </div>
-
         <!-- Bottom CTA Button: Xem thêm -->
         <div class="text-center pt-3">
           <a href="trong-kinh/" class="button-primary inline-flex items-center gap-2 px-7 py-3 rounded-full text-xs sm:text-sm font-bold shadow-md hover:shadow-lg transition-all duration-300">
@@ -1784,13 +1531,12 @@ const html = `<!DOCTYPE html>
 
     <!-- ========================================================= -->
     <!-- SECTION 6 — PARTNER WITH ROCKY (DÀNH CHO ĐỐI TÁC)    -->
-    <!-- Bố cục thẻ bo tròn tông Navy chuẩn theo preview.png        -->
+    <!-- Full-Width 100% B2B Section Banner                     -->
     <!-- ========================================================= -->
-    <section id="doi-tac" class="relative py-16 sm:py-20 px-6 bg-transparent overflow-hidden">
-      <div class="max-w-7xl mx-auto relative z-10">
-        
-        <!-- Deep Navy Box matching preview.png Section 05 -->
-        <div class="rounded-[32px] sm:rounded-[40px] p-8 sm:p-12 lg:p-14 text-white shadow-2xl relative overflow-hidden" style="background: var(--gradient-b2b);">
+    <section id="doi-tac" class="relative py-16 sm:py-24 w-full text-white shadow-2xl overflow-hidden" style="background: var(--gradient-b2b);">
+      <div class="absolute -right-20 -top-20 w-96 h-96 bg-[var(--button-start)]/15 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           
           <!-- Subtle background glow -->
           <div class="absolute -right-20 -top-20 w-80 h-80 bg-[var(--button-start)]/15 rounded-full blur-3xl pointer-events-none"></div>
@@ -1865,8 +1611,7 @@ const html = `<!DOCTYPE html>
             </a>
           </div>
 
-        </div>
-
+        
       </div>
     </section>
 
