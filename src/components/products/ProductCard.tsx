@@ -10,9 +10,9 @@ interface ProductCardProps {
 
 export default function ProductCard({ product }: ProductCardProps) {
   return (
-    <div className="group card-surface rounded-2xl hover:border-[var(--button-middle)] shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden">
+    <div className="group card-surface rounded-2xl hover:border-[var(--button-middle)] shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col h-full overflow-hidden">
       {/* Product Image & Badge */}
-      <div className="relative aspect-4/3 bg-[var(--site-bg-start)] overflow-hidden border-b border-[var(--color-border)] flex items-center justify-center p-6">
+      <div className="relative aspect-4/3 bg-[var(--site-bg-start)] overflow-hidden border-b border-[var(--color-border)] flex items-center justify-center p-6 shrink-0">
         {product.badge && (
           <span className="absolute top-3 left-3 z-10 px-2.5 py-1 rounded-md text-[11px] font-bold tracking-wide uppercase bg-[var(--button-middle)] text-white shadow-xs">
             {product.badge}
@@ -40,7 +40,7 @@ export default function ProductCard({ product }: ProductCardProps) {
       <div className="p-5 flex-1 flex flex-col justify-between">
         <div>
           {/* Tech labels / category tags */}
-          <div className="flex flex-wrap gap-1.5 mb-2.5">
+          <div className="flex flex-wrap gap-1.5 mb-2.5 h-6">
             {product.specifications.coating && (
               <span className="inline-flex items-center space-x-1 text-[11px] font-medium text-primary bg-[var(--site-bg-middle)]/40 px-2 py-0.5 rounded">
                 <Sparkles className="w-3 h-3" />
@@ -55,20 +55,20 @@ export default function ProductCard({ product }: ProductCardProps) {
           </div>
 
           {/* Title */}
-          <h3 className="font-bold text-base text-heading group-hover:text-primary transition-colors line-clamp-2">
-            <Link href={`/trong-kinh/${product.slug}/`}>
-              {product.name}
+          <h3 className="h-12 flex items-start font-bold text-base text-heading group-hover:text-primary transition-colors">
+            <Link href={`/trong-kinh/${product.slug}/`} className="line-clamp-2">
+              {product.consumerHeadline || product.name}
             </Link>
           </h3>
 
           {/* Short Description */}
-          <p className="mt-2 text-xs text-brand-muted line-clamp-2 leading-relaxed">
-            {product.shortDescription}
+          <p className="mt-2 h-10 text-xs text-brand-muted line-clamp-2 leading-relaxed">
+            {product.materialSubtitle || product.shortDescription}
           </p>
         </div>
 
         {/* Action Link (NO PRICE, NO CART) */}
-        <div className="mt-5 pt-3.5 border-t border-slate-100 flex items-center justify-between">
+        <div className="mt-5 pt-3.5 border-t border-slate-100 flex items-center justify-between shrink-0">
           <span className="text-[11px] text-slate-400 font-medium">
             Mã: {product.specifications.sku || 'RL-STD'}
           </span>

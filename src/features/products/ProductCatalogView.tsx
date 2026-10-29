@@ -223,42 +223,42 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
           {filteredProducts.map((product) => (
             <div
               key={product.id}
-              className="card-surface rounded-2xl p-5 hover:border-[var(--button-middle)] shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group relative overflow-hidden bg-white border border-[var(--color-border)]/60"
+              className="card-surface rounded-2xl p-5 hover:border-[var(--button-middle)] shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col h-full group relative overflow-hidden bg-white border border-[var(--color-border)]/60"
             >
-              <div>
+              <div className="flex-1 flex flex-col">
                 {/* Header: Glasses Icon + Category / Index Badges */}
-                <div className="flex items-center justify-between gap-2 pb-3">
+                <div className="flex items-center justify-between gap-2 h-9 mb-3">
                   <div className="w-9 h-9 rounded-xl bg-[var(--site-bg-middle)]/60 text-primary flex items-center justify-center shrink-0 border border-[var(--color-border)]/50 group-hover:scale-105 transition-transform">
                     <Glasses className="w-5 h-5 text-primary" />
                   </div>
                   <div className="flex items-center gap-1.5 flex-wrap justify-end">
                     {product.refractiveIndex && (
-                      <span className="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-slate-100 text-slate-700 border border-slate-200">
+                      <span className="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-slate-100 text-slate-700 border border-slate-200 whitespace-nowrap">
                         {product.refractiveIndex}
                       </span>
                     )}
                     {product.badge && (
-                      <span className="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-[var(--button-middle)] text-white shadow-2xs">
+                      <span className="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-[var(--button-middle)] text-white shadow-2xs whitespace-nowrap">
                         {product.badge}
                       </span>
                     )}
                   </div>
                 </div>
 
-                {/* Product Title - Consumer Need-Focused Headline */}
-                <h3 className="text-base sm:text-lg font-bold text-heading leading-snug group-hover:text-primary transition-colors line-clamp-2">
-                  <Link href={`/trong-kinh/${product.slug}/`}>
+                {/* Product Title - Consumer Need-Focused Headline (Locked 2-line height for uniform alignment) */}
+                <h3 className="h-14 flex items-start text-base sm:text-lg font-bold text-heading leading-snug group-hover:text-primary transition-colors">
+                  <Link href={`/trong-kinh/${product.slug}/`} className="line-clamp-2">
                     {product.consumerHeadline || product.name}
                   </Link>
                 </h3>
 
-                {/* Subtitle - Material & Detailed Specifications */}
-                <p className="mt-2 text-xs sm:text-sm text-brand-muted line-clamp-2 leading-relaxed">
+                {/* Subtitle - Material & Detailed Specifications (Locked 2-line height for uniform alignment) */}
+                <p className="mt-1 h-12 text-xs sm:text-sm text-brand-muted line-clamp-2 leading-relaxed">
                   {product.materialSubtitle || product.tagline || product.shortDescription}
                 </p>
 
-                {/* Product Studio Lens Photograph */}
-                <div className="aspect-[16/10] h-40 w-full rounded-xl overflow-hidden bg-slate-50/70 relative my-3 flex items-center justify-center p-2 border border-slate-100">
+                {/* Product Studio Lens Photograph (Fixed height for uniform grid) */}
+                <div className="h-44 w-full rounded-xl overflow-hidden bg-slate-50/70 relative my-3 flex items-center justify-center p-2 border border-slate-100">
                   <Image
                     src={product.featuredImage || product.images[0] || '/assets/uploads/solutions/sol_anh_sang_xanh.png'}
                     alt={product.name}
@@ -268,10 +268,10 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
                   />
                 </div>
 
-                {/* Micro Specs Rows */}
+                {/* Micro Specs Rows (Fixed height for uniform rows) */}
                 <div className="space-y-1.5 text-xs">
                   {product.specifications.coating && (
-                    <div className="flex justify-between items-center py-1.5 px-3 rounded-lg bg-[var(--site-bg-start)]">
+                    <div className="h-8 flex justify-between items-center px-3 rounded-lg bg-[var(--site-bg-start)]">
                       <span className="text-brand-muted text-[11px] font-medium shrink-0">Lớp phủ:</span>
                       <span className="font-semibold text-heading text-[11px] text-right truncate ml-2">
                         {product.specifications.coating.split('(')[0]}
@@ -279,7 +279,7 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
                     </div>
                   )}
                   {product.specifications.material && (
-                    <div className="flex justify-between items-center py-1.5 px-3 rounded-lg bg-[var(--site-bg-start)]">
+                    <div className="h-8 flex justify-between items-center px-3 rounded-lg bg-[var(--site-bg-start)]">
                       <span className="text-brand-muted text-[11px] font-medium shrink-0">Vật liệu:</span>
                       <span className="font-semibold text-heading text-[11px] text-right truncate ml-2">
                         {product.specifications.material}
@@ -289,8 +289,8 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
                 </div>
               </div>
 
-              {/* Bottom Action Footer */}
-              <div className="mt-4 pt-3.5 border-t border-slate-100 flex items-center justify-between">
+              {/* Bottom Action Footer (Anchored to bottom across all cards) */}
+              <div className="mt-4 pt-3.5 border-t border-slate-100 flex items-center justify-between shrink-0">
                 <span className="text-[11px] font-mono text-slate-400">
                   {product.specifications.sku || 'RL-CAN'}
                 </span>
