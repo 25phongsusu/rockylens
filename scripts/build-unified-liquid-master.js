@@ -593,52 +593,92 @@ const html = `<!DOCTYPE html>
     <!-- ========================================================= -->
     <!-- SECTION 1 — BRAND HERO                                    -->
     <!-- ========================================================= -->
-    <section class="relative overflow-hidden py-16 sm:py-24 lg:py-28 site-background text-slate-800">
-      <!-- Apple Liquid Caustic Light Orbs -->
-      <div class="absolute -top-32 -left-32 w-[600px] h-[600px] bg-gradient-to-tr from-[var(--site-bg-end)]/40 via-[var(--site-bg-middle)]/30 to-[var(--button-start)]/30 rounded-full blur-[100px] pointer-events-none"></div>
-      <div class="absolute top-1/4 -right-32 w-[550px] h-[550px] bg-gradient-to-bl from-[var(--site-bg-middle)]/35 via-[var(--site-bg-start)]/30 to-[var(--site-bg-end)]/30 rounded-full blur-[110px] pointer-events-none"></div>
+    <section id="brand-hero" class="relative overflow-hidden py-14 sm:py-20 lg:py-24 site-background text-slate-800 transition-all duration-700">
+      <!-- ========================================================= -->
+      <!-- CHẾ ĐỘ 2: CINEMATIC CANADIAN OPTICAL BANNER BACKGROUND   -->
+      <!-- ========================================================= -->
+      <div id="hero-banner-bg" class="absolute inset-0 z-0 bg-cover bg-center transition-opacity duration-700 pointer-events-none opacity-0" style="background-image: url('images/banners/banner_hero_mode.jpg'); background-position: right 30% center;">
+        <!-- Optical gradient overlay ensuring 100% typography contrast & readability -->
+        <div class="absolute inset-0 bg-gradient-to-r from-[#001722]/98 via-[#002433]/85 to-transparent sm:to-[#002433]/40"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#001722] via-transparent to-[#001722]/60"></div>
+      </div>
+
+      <!-- ========================================================= -->
+      <!-- CHẾ ĐỘ 1: APPLE LIQUID CAUSTIC LIGHT ORBS                -->
+      <!-- ========================================================= -->
+      <div id="hero-orbs" class="transition-opacity duration-700">
+        <div class="absolute -top-32 -left-32 w-[600px] h-[600px] bg-gradient-to-tr from-[var(--site-bg-end)]/40 via-[var(--site-bg-middle)]/30 to-[var(--button-start)]/30 rounded-full blur-[100px] pointer-events-none"></div>
+        <div class="absolute top-1/4 -right-32 w-[550px] h-[550px] bg-gradient-to-bl from-[var(--site-bg-middle)]/35 via-[var(--site-bg-start)]/30 to-[var(--site-bg-end)]/30 rounded-full blur-[110px] pointer-events-none"></div>
+      </div>
 
       <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+        
+        <!-- ========================================================= -->
+        <!-- SEGMENTED MODE SWITCHER: CHẾ ĐỘ 1 vs CHẾ ĐỘ 2            -->
+        <!-- ========================================================= -->
+        <div class="flex items-center justify-center lg:justify-start mb-6">
+          <div class="inline-flex items-center p-1 rounded-full bg-white/80 backdrop-blur-md border border-slate-300/70 shadow-sm transition-all" id="hero-switcher-wrap">
+            <button
+              type="button"
+              id="btn-hero-std"
+              onclick="setHeroMode('standard')"
+              class="px-4 py-1.5 rounded-full text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer bg-[var(--b2b-end)] text-white shadow-xs"
+            >
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg>
+              <span>Chế độ 1: Tối giản</span>
+            </button>
+            <button
+              type="button"
+              id="btn-hero-ban"
+              onclick="setHeroMode('banner')"
+              class="px-4 py-1.5 rounded-full text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer text-slate-600 hover:text-slate-900"
+            >
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+              <span>Chế độ 2: Nền Banner</span>
+            </button>
+          </div>
+        </div>
+
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
           
           <!-- Left Column: Display Typography & Brand Value -->
           <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
             
             <!-- Apple-style Capsule Badge -->
-            <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full liquid-pill text-primary text-xs font-bold shadow-xs">
+            <div id="hero-badge" class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full liquid-pill text-primary text-xs font-bold shadow-xs transition-all">
               <span class="w-2 h-2 rounded-full bg-[var(--button-middle)]"></span>
               <span class="tracking-wide uppercase font-semibold">Thương Hiệu Tròng Kính Canada Opticians</span>
             </div>
 
-            <h1 class="text-3xl sm:text-5xl lg:text-[52px] font-black text-heading tracking-tight leading-[1.15]">
+            <h1 id="hero-title" class="text-3xl sm:text-5xl lg:text-[52px] font-black text-heading tracking-tight leading-[1.15] transition-colors">
               Rocky Lens - <br class="hidden sm:inline" />
               <span class="text-transparent bg-clip-text bg-gradient-to-r from-[var(--button-start)] via-[var(--button-middle)] to-[var(--button-end)]">
                 nhà phân phối tròng kính từ Canada
               </span>
             </h1>
 
-            <p class="text-brand-muted text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
+            <p id="hero-desc" class="text-brand-muted text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0 transition-colors">
               Rocky Lens tự hào là đơn vị phân phối tròng kính B2B và gia công Lab công nghệ quốc tế tại Việt Nam. Với hệ sinh thái sản phẩm toàn diện - từ tròng kính cận, tròng kính đổi màu đến tròng kính chống ánh sáng xanh - chúng tôi mang đến giải pháp nguồn hàng trọn gói, ổn định, đồng hành cùng sự phát triển bền vững của các hệ thống cửa hàng kính mắt trên toàn quốc.
             </p>
 
             <!-- 3 Apple Liquid Spec Cards -->
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 text-left">
-              <div class="p-4 rounded-2xl liquid-card">
-                <div class="text-xs font-bold text-primary uppercase">Mitsui Monomer MR™</div>
-                <div class="text-sm font-black text-heading mt-1">Trong Suốt 99.8%</div>
-                <div class="text-[11px] text-brand-muted mt-0.5">Truyền quang cao, quang sai cực thấp</div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 text-left" id="hero-spec-cards">
+              <div class="p-4 rounded-2xl liquid-card hero-spec-card transition-all">
+                <div class="text-xs font-bold text-primary uppercase hero-spec-tag">Mitsui Monomer MR™</div>
+                <div class="text-sm font-black text-heading mt-1 hero-spec-title">Trong Suốt 99.8%</div>
+                <div class="text-[11px] text-brand-muted mt-0.5 hero-spec-sub">Truyền quang cao, quang sai cực thấp</div>
               </div>
 
-              <div class="p-4 rounded-2xl liquid-card">
-                <div class="text-xs font-bold text-[var(--button-end)] uppercase">Nano Sapphire 9H</div>
-                <div class="text-sm font-black text-heading mt-1">Trượt Nước &gt;115°</div>
-                <div class="text-[11px] text-brand-muted mt-0.5">Kháng trầy xước, không đọng nước mưa</div>
+              <div class="p-4 rounded-2xl liquid-card hero-spec-card transition-all">
+                <div class="text-xs font-bold text-[var(--button-end)] uppercase hero-spec-tag">Nano Sapphire 9H</div>
+                <div class="text-sm font-black text-heading mt-1 hero-spec-title">Trượt Nước &gt;115°</div>
+                <div class="text-[11px] text-brand-muted mt-0.5 hero-spec-sub">Kháng trầy xước, không đọng nước mưa</div>
               </div>
 
-              <div class="p-4 rounded-2xl liquid-card">
-                <div class="text-xs font-bold text-heading uppercase">CanRx Freeform 4K</div>
-                <div class="text-sm font-black text-heading mt-1">Sai Số &lt; 0.01 Diop</div>
-                <div class="text-[11px] text-brand-muted mt-0.5">Gia công kỹ thuật số cá nhân hóa</div>
+              <div class="p-4 rounded-2xl liquid-card hero-spec-card transition-all">
+                <div class="text-xs font-bold text-heading uppercase hero-spec-tag">CanRx Freeform 4K</div>
+                <div class="text-sm font-black text-heading mt-1 hero-spec-title">Sai Số &lt; 0.01 Diop</div>
+                <div class="text-[11px] text-brand-muted mt-0.5 hero-spec-sub">Gia công kỹ thuật số cá nhân hóa</div>
               </div>
             </div>
 
@@ -648,13 +688,13 @@ const html = `<!DOCTYPE html>
                 <span>Tìm Tròng Kính Phù Hợp Với Bạn</span>
                 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
               </a>
-              <button type="button" onclick="openB2BQuoteModal()" class="liquid-btn-secondary px-6 py-3.5 text-xs sm:text-sm font-bold flex items-center space-x-2 cursor-pointer">
+              <button id="hero-b2b-btn" type="button" onclick="openB2BQuoteModal()" class="liquid-btn-secondary px-6 py-3.5 text-xs sm:text-sm font-bold flex items-center space-x-2 cursor-pointer transition-all">
                 <span>Nhận Báo Giá Đại Lý</span>
               </button>
             </div>
 
             <!-- Micro Trust Indicators -->
-            <div class="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-4 text-xs text-brand-muted font-medium">
+            <div id="hero-trust" class="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-4 text-xs text-brand-muted font-medium transition-colors">
               <span class="flex items-center gap-1.5">
                 <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
                 <span>Ontario Opticians No. 6181</span>
@@ -1814,6 +1854,135 @@ const html = `<!DOCTYPE html>
   </div>
 
   <script>
+
+    function setHeroMode(mode) {
+      var isBanner = mode === 'banner';
+      var heroSec = document.getElementById('brand-hero');
+      var bannerBg = document.getElementById('hero-banner-bg');
+      var orbs = document.getElementById('hero-orbs');
+      var btnStd = document.getElementById('btn-hero-std');
+      var btnBan = document.getElementById('btn-hero-ban');
+      var switcherWrap = document.getElementById('hero-switcher-wrap');
+      var badge = document.getElementById('hero-badge');
+      var title = document.getElementById('hero-title');
+      var desc = document.getElementById('hero-desc');
+      var b2bBtn = document.getElementById('hero-b2b-btn');
+      var trust = document.getElementById('hero-trust');
+      var specCards = document.querySelectorAll('.hero-spec-card');
+
+      if (isBanner) {
+        if (heroSec) {
+          heroSec.classList.remove('site-background', 'text-slate-800');
+          heroSec.classList.add('bg-[#001722]', 'text-white');
+        }
+        if (bannerBg) {
+          bannerBg.classList.remove('opacity-0');
+          bannerBg.classList.add('opacity-100');
+        }
+        if (orbs) orbs.classList.add('opacity-0');
+        if (btnStd) {
+          btnStd.className = 'px-4 py-1.5 rounded-full text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer text-slate-400 hover:text-white';
+        }
+        if (btnBan) {
+          btnBan.className = 'px-4 py-1.5 rounded-full text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer bg-gradient-to-r from-cyan-500 to-teal-400 text-slate-950 font-black shadow-md';
+        }
+        if (switcherWrap) {
+          switcherWrap.className = 'inline-flex items-center p-1 rounded-full bg-slate-900/80 backdrop-blur-md border border-cyan-500/30 shadow-md transition-all';
+        }
+        if (badge) {
+          badge.className = 'inline-flex items-center space-x-2 px-4 py-1.5 rounded-full text-xs font-bold shadow-xs transition-all bg-white/10 text-cyan-300 border border-white/20 backdrop-blur-md';
+        }
+        if (title) {
+          title.classList.remove('text-heading');
+          title.classList.add('text-white');
+        }
+        if (desc) {
+          desc.classList.remove('text-brand-muted');
+          desc.classList.add('text-slate-200');
+        }
+        if (b2bBtn) {
+          b2bBtn.className = 'px-6 py-3.5 text-xs sm:text-sm font-bold flex items-center space-x-2 cursor-pointer transition-all rounded-full bg-white/15 hover:bg-white/25 text-white border border-white/30 backdrop-blur-md';
+        }
+        if (trust) {
+          trust.classList.remove('text-brand-muted');
+          trust.classList.add('text-slate-300');
+        }
+        specCards.forEach(function(card) {
+          card.className = 'p-4 rounded-2xl hero-spec-card transition-all bg-white/10 backdrop-blur-md border border-white/20 text-white';
+          var t = card.querySelector('.hero-spec-title');
+          if (t) { t.classList.remove('text-heading'); t.classList.add('text-white'); }
+          var s = card.querySelector('.hero-spec-sub');
+          if (s) { s.classList.remove('text-brand-muted'); s.classList.add('text-slate-300'); }
+        });
+      } else {
+        if (heroSec) {
+          heroSec.classList.remove('bg-[#001722]', 'text-white');
+          heroSec.classList.add('site-background', 'text-slate-800');
+        }
+        if (bannerBg) {
+          bannerBg.classList.remove('opacity-100');
+          bannerBg.classList.add('opacity-0');
+        }
+        if (orbs) orbs.classList.remove('opacity-0');
+        if (btnStd) {
+          btnStd.className = 'px-4 py-1.5 rounded-full text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer bg-[var(--b2b-end)] text-white shadow-xs';
+        }
+        if (btnBan) {
+          btnBan.className = 'px-4 py-1.5 rounded-full text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer text-slate-600 hover:text-slate-900';
+        }
+        if (switcherWrap) {
+          switcherWrap.className = 'inline-flex items-center p-1 rounded-full bg-white/80 backdrop-blur-md border border-slate-300/70 shadow-sm transition-all';
+        }
+        if (badge) {
+          badge.className = 'inline-flex items-center space-x-2 px-4 py-1.5 rounded-full liquid-pill text-primary text-xs font-bold shadow-xs transition-all';
+        }
+        if (title) {
+          title.classList.remove('text-white');
+          title.classList.add('text-heading');
+        }
+        if (desc) {
+          desc.classList.remove('text-slate-200');
+          desc.classList.add('text-brand-muted');
+        }
+        if (b2bBtn) {
+          b2bBtn.className = 'liquid-btn-secondary px-6 py-3.5 text-xs sm:text-sm font-bold flex items-center space-x-2 cursor-pointer transition-all';
+        }
+        if (trust) {
+          trust.classList.remove('text-slate-300');
+          trust.classList.add('text-brand-muted');
+        }
+        specCards.forEach(function(card) {
+          card.className = 'p-4 rounded-2xl liquid-card hero-spec-card transition-all';
+          var t = card.querySelector('.hero-spec-title');
+          if (t) { t.classList.remove('text-white'); t.classList.add('text-heading'); }
+          var s = card.querySelector('.hero-spec-sub');
+          if (s) { s.classList.remove('text-slate-300'); s.classList.add('text-brand-muted'); }
+        });
+      }
+
+      try {
+        localStorage.setItem('rocky_hero_mode', mode);
+        var url = new URL(window.location.href);
+        if (isBanner) {
+          url.searchParams.set('mode', 'banner');
+        } else {
+          url.searchParams.delete('mode');
+          url.searchParams.delete('view');
+        }
+        window.history.replaceState({}, '', url.toString());
+      } catch(e) {}
+    }
+
+    // Auto init on load
+    try {
+      var params = new URLSearchParams(window.location.search);
+      var initialMode = params.get('mode') || params.get('view') || localStorage.getItem('rocky_hero_mode');
+      if (initialMode === 'banner') {
+        window.addEventListener('DOMContentLoaded', function() {
+          setHeroMode('banner');
+        });
+      }
+    } catch(e) {}
 
     function filterProductSolutions(filter, btn) {
       var cards = document.querySelectorAll('.product-sol-card');

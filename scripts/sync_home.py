@@ -45,7 +45,7 @@ def sync_hero_tsx(data):
 
     h = data["hero"]
     # Replace Subheadline in HeroSection
-    pattern = r'(<p className="text-brand-muted text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">\s*)(.*?)(\s*<\/p>)'
+    pattern = r'(<p[^>]*max-w-2xl mx-auto lg:mx-0[^>]*>\s*)(.*?)(\s*<\/p>)'
     replacement = rf'\g<1>{h["subheadline"]}\g<3>'
     new_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
 
@@ -168,7 +168,7 @@ def sync_build_script(data):
     h = data["hero"]
 
     # 1. Update Hero Subheadline in build script
-    subheadline_regex = r'(<p class="text-brand-muted text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">\s*)(.*?)(\s*<\/p>)'
+    subheadline_regex = r'(<p[^>]*id="hero-desc"[^>]*>\s*)(.*?)(\s*<\/p>)'
     content = re.sub(subheadline_regex, rf'\g<1>{h["subheadline"]}\g<3>', content)
 
     # 2. Update Technology Cards in build script
