@@ -24,15 +24,18 @@ export default function ProductsPage() {
         <div className="max-w-4xl mx-auto relative z-10 space-y-3">
           <div className="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-white/90 border border-[var(--color-border)] text-primary text-xs font-bold shadow-2xs">
             <span className="w-2 h-2 rounded-full bg-[var(--button-middle)]" />
-            <span className="tracking-wide uppercase font-semibold">Catalogue Tròng Kính Chính Hãng</span>
+            <span className="tracking-wide uppercase font-semibold">Giải Pháp Thị Lực Theo Đối Tượng &amp; Nhu Cầu</span>
           </div>
 
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-heading">
-            Danh Mục Tròng Kính <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--button-start)] via-[var(--button-middle)] to-[var(--button-end)]">RockyLens</span>
+            Chọn Đúng Kính -{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--button-start)] via-[var(--button-middle)] to-[var(--button-end)]">
+              Đúng Nhu Cầu Thị Giác
+            </span>
           </h1>
 
-          <p className="text-brand-muted text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
-            Hệ sinh thái tròng kính quang học Canada tiêu chuẩn ISO 13485. Dễ dàng lựa chọn xem theo nhu cầu thực tế hoặc theo cấu trúc loại và công nghệ tròng kính.
+          <p className="text-brand-muted text-sm sm:text-base max-w-3xl mx-auto leading-relaxed">
+            Hệ sinh thái tròng kính quang học Canada tiêu chuẩn ISO 13485:2016. Phân định rõ ràng từng giải pháp theo đặc thù nghề nghiệp và sinh hoạt — từ Designer đồ họa, dân văn phòng hay ra nắng, tài xế lái xe ban đêm đến người lớn tuổi và trẻ em cận thị.
           </p>
         </div>
       </section>

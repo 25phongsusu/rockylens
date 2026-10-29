@@ -47,7 +47,8 @@ export interface Product {
   slug: string;
   status: ProductStatus;
   name: string;
-  consumerHeadline?: string; // Tiêu đề định hướng nhu cầu người dùng cuối (ví dụ: Ngồi máy tính, Chạy bộ...)
+  targetPersona?: string; // Đối tượng & nhu cầu cụ thể (ví dụ: DÀNH CHO DESIGNER & ĐỒ HỌA MÁY TÍNH)
+  consumerHeadline?: string; // Tiêu đề định hướng nhu cầu người dùng cuối (ví dụ: Ngồi máy tính đồ họa...)
   materialSubtitle?: string; // Phụ đề vật liệu kỹ thuật chi tiết
   tagline?: string;
   brandId: string;

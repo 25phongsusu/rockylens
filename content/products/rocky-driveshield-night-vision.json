@@ -21,8 +21,8 @@
     "/images/products/driveshield-13.png"
   ],
   "featuredImage": "/images/products/category-solution-3.png",
-  "badge": "Lái Xe An Toàn",
-  "shortDescription": "Chấm dứt nỗi ám ảnh chói đèn pha và nhòe sương kính. DriveShield mang lại tầm nhìn sắc nét, êm dịu, giúp bạn vững tay lái và an tâm về nhà trong mọi điều kiện thời tiết.",
+  "badge": "Chuyên Lái Xe Đêm",
+  "shortDescription": "Triệt tiêu ánh sáng chói lóa từ đèn pha LED đối diện, tăng cường độ tương phản và trượt nước mưa tối đa giúp lái xe an toàn, không bị lóa mắt khi di chuyển đêm.",
   "targetAudience": [
     "Tài xế lái xe đường dài, người thường xuyên điều khiển ô tô hoặc mô tô vào ban đêm",
     "Người thường xuyên cảm thấy chói mắt, lóa mắt khi gặp đèn pha xe đối diện",
@@ -81,6 +81,7 @@
       "rocky driveshield"
     ]
   },
-  "consumerHeadline": "Lái Xe Ban Đêm & Đi Mưa Chống Chói Đèn Pha",
-  "materialSubtitle": "Rocky DriveShield 1.60 • Phủ Ruby AR Multi-Matrix lọc phổ chói pha LED & trượt nước mưa tối đa"
+  "consumerHeadline": "Lái Xe Ban Đêm & Đi Mưa (Chống Chói Đèn Pha)",
+  "materialSubtitle": "Rocky DriveShield Ruby AR • Lớp phủ Ruby AR Multi-Matrix triệt tiêu ánh sáng chói pha LED & trượt nước mưa",
+  "targetPersona": "DÀNH CHO TÀI XẾ & DI CHUYỂN ĐÊM"
 }

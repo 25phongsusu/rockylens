@@ -20,8 +20,8 @@
     "/images/technologies/sol_anh_sang_xanh.png"
   ],
   "featuredImage": "/images/products/category-solution-1.png",
-  "badge": "Siêu Mỏng",
-  "shortDescription": "Tròng kính chiết suất cao 1.67 Aspheric, mỏng hơn 35% so với tròng 1.56 thông thường, tích hợp công nghệ chống ánh sáng xanh và lớp phủ siêu trơn trượt nước Nano SHMC.",
+  "badge": "Mỏng Hơn 35%",
+  "shortDescription": "Mỏng nhẹ hơn 35% so với tròng thông thường, triệt tiêu viền mép dày đáy chai thẩm mỹ, tích hợp lọc ánh sáng xanh UV420 toàn diện cho người làm việc văn phòng cận độ cao.",
   "targetAudience": [
     "Người có độ cận cao từ -4.00 đến -10.00 Diop hoặc độ loạn từ -1.50 trở lên",
     "Người yêu cầu tính thẩm mỹ viền tròng không bị dày cộm chìa ra ngoài gọng kim loại",
@@ -81,6 +81,7 @@
       "rocky 1.67 bluecut"
     ]
   },
-  "consumerHeadline": "Cận Độ Cao Mỏng Nhẹ & Thẩm Mỹ",
-  "materialSubtitle": "Rocky 1.67 Aspheric BlueCut • Phôi siêu mỏng Mitsui MR-7 mỏng hơn 35%, tích hợp lọc ánh sáng xanh UV420"
+  "consumerHeadline": "Cận Nặng Mỏng Nhẹ & Lọc Ánh Sáng Xanh (-35% Độ Dày)",
+  "materialSubtitle": "Rocky 1.67 Aspheric BlueCut • Phôi siêu mỏng Mitsui MR-7, thiết kế phi cầu phẳng mỏng nhẹ và bảo vệ mắt số",
+  "targetPersona": "CẬN ĐỘ CAO VĂN PHÒNG (-4.00 ĐẾN -10.00D)"
 }

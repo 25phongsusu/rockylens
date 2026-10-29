@@ -9,22 +9,23 @@ import { Product } from './product-types';
 export type ViewMode = 'need' | 'tech';
 
 export const NEED_FILTERS = [
-  { id: 'all', label: 'Tất cả' },
-  { id: 'work', label: 'Làm việc & học tập' },
-  { id: 'outdoor', label: 'Ngoài trời & lái xe' },
-  { id: 'multifocal', label: 'Nhìn nhiều khoảng cách' },
-  { id: 'kids', label: 'Trẻ em' },
-  { id: 'rimless', label: 'Gọng khoan & độ bền' },
+  { id: 'all', label: 'Tất cả nhu cầu' },
+  { id: 'designer-bluecut', label: 'Designer đồ họa (Không đổi màu)' },
+  { id: 'office-photo', label: 'Văn phòng ra nắng (Đổi màu 2-in-1)' },
+  { id: 'driving-night', label: 'Lái xe ban đêm & Đi mưa' },
+  { id: 'high-index-rimless', label: 'Cận nặng mỏng nhẹ & Gọng khoan' },
+  { id: 'presbyopia-40', label: 'Người lớn tuổi (40+) Đa tròng' },
+  { id: 'kids-myopia', label: 'Trẻ em kiểm soát độ cận' },
 ];
 
 export const TECH_FILTERS = [
-  { id: 'all', label: 'Tất cả' },
-  { id: 'single', label: 'Đơn tròng' },
-  { id: 'bifocal', label: 'Hai tròng' },
-  { id: 'progressive', label: 'Đa tròng' },
-  { id: 'photochromic', label: 'Đổi màu' },
-  { id: 'bluecut', label: 'Lọc ánh sáng xanh' },
-  { id: 'thin-uv', label: 'Chống UV & Siêu mỏng' },
+  { id: 'all', label: 'Tất cả công nghệ' },
+  { id: 'bluecut', label: 'Lọc ánh sáng xanh UV420' },
+  { id: 'photochromic', label: 'Đổi màu quang học CAT 3' },
+  { id: 'progressive', label: 'Đa tròng Freeform 4K' },
+  { id: 'thin-uv', label: 'Siêu mỏng 1.60 - 1.74' },
+  { id: 'driving-special', label: 'Chống chói đèn pha LED' },
+  { id: 'dims', label: 'Vi thấu kính D.I.M.S' },
 ];
 
 interface ProductCatalogViewProps {
@@ -50,13 +51,14 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
       if (searchQuery.trim()) {
         const q = searchQuery.toLowerCase();
         const matchName = product.name.toLowerCase().includes(q);
+        const matchPersona = (product.targetPersona || '').toLowerCase().includes(q);
         const matchHeadline = (product.consumerHeadline || '').toLowerCase().includes(q);
         const matchSubtitle = (product.materialSubtitle || '').toLowerCase().includes(q);
         const matchTagline = (product.tagline || '').toLowerCase().includes(q);
         const matchDesc = product.shortDescription.toLowerCase().includes(q);
         const matchSku = (product.specifications?.sku || '').toLowerCase().includes(q);
         const matchIndex = (product.refractiveIndex || '').toLowerCase().includes(q);
-        if (!matchName && !matchHeadline && !matchSubtitle && !matchTagline && !matchDesc && !matchSku && !matchIndex) {
+        if (!matchName && !matchPersona && !matchHeadline && !matchSubtitle && !matchTagline && !matchDesc && !matchSku && !matchIndex) {
           return false;
         }
       }
@@ -66,39 +68,40 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
 
       if (viewMode === 'need') {
         switch (subFilter) {
-          case 'work':
+          case 'designer-bluecut':
             return ['rocky-156-bluecut-shmc', 'rocky-antifatigue-relax', 'rocky-167-ultra-thin-bluecut'].includes(product.slug);
-          case 'outdoor':
-            return ['rocky-driveshield-night-vision', 'rocky-trendy-photochromic-grey', 'rocky-trendy-photochromic-brown', 'rocky-polarized-driving-sports'].includes(product.slug);
-          case 'multifocal':
+          case 'office-photo':
+            return ['rocky-trendy-photochromic-grey', 'rocky-trendy-photochromic-brown'].includes(product.slug);
+          case 'driving-night':
+            return ['rocky-driveshield-night-vision', 'rocky-polarized-driving-sports'].includes(product.slug);
+          case 'high-index-rimless':
+            return ['rocky-160-mr8-aspheric', 'rocky-167-ultra-thin-bluecut', 'rocky-174-ultra-high-index'].includes(product.slug);
+          case 'presbyopia-40':
             return ['rocky-freeform-progressive-hd', 'rocky-progressive-short-corridor'].includes(product.slug);
-          case 'kids':
+          case 'kids-myopia':
             return ['rocky-myocontrol-dims-kids'].includes(product.slug);
-          case 'rimless':
-            return ['rocky-160-mr8-aspheric', 'rocky-174-ultra-high-index', 'rocky-trendy-photochromic-brown'].includes(product.slug);
           default:
             return true;
         }
       } else {
         // viewMode === 'tech'
         switch (subFilter) {
-          case 'single':
-            return product.categoryIds.includes('don-trong');
-          case 'bifocal':
-            return ['rocky-antifatigue-relax', 'rocky-progressive-short-corridor'].includes(product.slug);
-          case 'progressive':
-            return product.categoryIds.includes('da-trong');
-          case 'photochromic':
-            return product.categoryIds.includes('doi-mau');
           case 'bluecut':
-            return product.technologyIds.includes('uv420-bluecut');
+            return product.technologyIds.includes('uv420-bluecut') || ['rocky-156-bluecut-shmc', 'rocky-167-ultra-thin-bluecut', 'rocky-antifatigue-relax'].includes(product.slug);
+          case 'photochromic':
+            return product.categoryIds.includes('doi-mau') || ['rocky-trendy-photochromic-grey', 'rocky-trendy-photochromic-brown'].includes(product.slug);
+          case 'progressive':
+            return product.categoryIds.includes('da-trong') || ['rocky-freeform-progressive-hd', 'rocky-progressive-short-corridor'].includes(product.slug);
           case 'thin-uv':
             return (
-              ['1.67', '1.74'].includes(product.refractiveIndex || '') ||
+              ['1.60', '1.67', '1.74'].includes(product.refractiveIndex || '') ||
               product.technologyIds.includes('ultra-high-index-174') ||
-              product.slug === 'rocky-polarized-driving-sports' ||
-              product.slug === 'rocky-160-mr8-aspheric'
+              ['rocky-160-mr8-aspheric', 'rocky-167-ultra-thin-bluecut', 'rocky-174-ultra-high-index'].includes(product.slug)
             );
+          case 'driving-special':
+            return ['rocky-driveshield-night-vision', 'rocky-polarized-driving-sports'].includes(product.slug);
+          case 'dims':
+            return ['rocky-myocontrol-dims-kids'].includes(product.slug);
           default:
             return true;
         }
@@ -245,16 +248,21 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
                   </div>
                 </div>
 
-                {/* Product Title - Consumer Need-Focused Headline (Locked 2-line height for uniform alignment) */}
+                {/* Target Persona / Audience Tag (Directly Aligned with Home) */}
+                <div className="text-[11px] font-bold text-primary tracking-wide uppercase line-clamp-1 mb-1">
+                  {product.targetPersona || 'GIẢI PHÁP THỊ LỰC'}
+                </div>
+
+                {/* Need-Focused Headline (2 lines uniform height) */}
                 <h3 className="h-14 flex items-start text-base sm:text-lg font-bold text-heading leading-snug group-hover:text-primary transition-colors">
                   <Link href={`/trong-kinh/${product.slug}/`} className="line-clamp-2">
                     {product.consumerHeadline || product.name}
                   </Link>
                 </h3>
 
-                {/* Subtitle - Material & Detailed Specifications (Locked 2-line height for uniform alignment) */}
+                {/* Clear Consumer Problem & Solution Text */}
                 <p className="mt-1 h-12 text-xs sm:text-sm text-brand-muted line-clamp-2 leading-relaxed">
-                  {product.materialSubtitle || product.tagline || product.shortDescription}
+                  {product.shortDescription || product.materialSubtitle}
                 </p>
 
                 {/* Product Studio Lens Photograph (Fixed height for uniform grid) */}
