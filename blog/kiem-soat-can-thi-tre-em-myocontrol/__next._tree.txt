@@ -1,7 +1,7 @@
-:HL["/rockylens/_next/static/chunks/0hzgvgbd007z-.css","style"]
+:HL["/rockylens/_next/static/chunks/1ep3lfzis63mm.css","style"]
 :HL["/rockylens/assets/logo_rocky_transparent.png","image"]
 :HL["/rockylens/images/articles/blog_myocontrol.png","image"]
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":{"n":"slug","t":"d","k":"kiem-soat-can-thi-tre-em-myocontrol","s":[]},"h":96,"c":"$Q3"}]]
 1:[["children",{"s":"blog","h":64,"c":"$Q2"}]]
-0:{"b":"gTKMKVK0kcIM19l66C9IF","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
+0:{"b":"46Ddjx41hhUYJ304ekYFr","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
