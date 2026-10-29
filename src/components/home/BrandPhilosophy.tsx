@@ -13,7 +13,7 @@ export default function BrandPhilosophy() {
             <div className="relative rounded-3xl overflow-hidden shadow-sm bg-slate-100 group">
               <div className="aspect-[4/3] sm:aspect-[16/11] w-full relative">
                 <img
-                  src="/images/company/about-6.jpg"
+                  src="/images/company/t.png"
                   alt="Trải nghiệm thị giác tròng kính Rocky"
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
                 />

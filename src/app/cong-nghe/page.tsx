@@ -38,8 +38,8 @@ const corePillars: CorePillarItem[] = [
     badge: 'Phôi Vật Liệu',
     title: 'Phôi Quang Học Tinh Khiết',
     subtitle: 'Mitsui MR Series & BlueCut Monomer',
-    image: '/images/technologies/sol_kinh_khoan_va_dap.png',
-    imageAlt: 'Tròng kính phôi dẻo dai chống nứt vỡ Mitsui MR-8 dành cho gọng khoan',
+    image: '/images/technologies/tech_sec3_1.jpg',
+    imageAlt: 'Công nghệ phôi vật liệu quang học Mitsui MR dẻo dai',
     points: [
       {
         label: 'Mitsui MR-8 & MR-7:',
@@ -57,8 +57,8 @@ const corePillars: CorePillarItem[] = [
     badge: 'Hệ Lớp Phủ',
     title: 'Màng Phủ Chân Không Nano Đa Năng',
     subtitle: 'Nano Sapphire SHMC & DriveShield',
-    image: '/images/technologies/sol_kinh_lai_xe.png',
-    imageAlt: 'Tròng kính phủ Nano lọc chói đèn xe ban đêm và chống bám nước lá sen',
+    image: '/images/technologies/tech_sec3_2.jpg',
+    imageAlt: 'Công nghệ màng phủ chân không Nano siêu trượt nước lá sen và chống bám bụi',
     points: [
       {
         label: 'Super Hydrophobic:',
@@ -76,8 +76,8 @@ const corePillars: CorePillarItem[] = [
     badge: 'Thiết Kế Số',
     title: 'Thiết Kế Quang Học Số & Freeform',
     subtitle: 'Aspheric SPH & Digital Freeform 4K',
-    image: '/images/technologies/sol_da_trong.png',
-    imageAlt: 'Tròng kính đa tròng kỹ thuật số Freeform 4K nhìn rõ xa và gần',
+    image: '/images/technologies/tech_sec3_3.jpg',
+    imageAlt: 'Công nghệ thiết kế quang học số và khúc xạ đa tròng Freeform 4K',
     points: [
       {
         label: 'Aspheric (Phi cầu):',
