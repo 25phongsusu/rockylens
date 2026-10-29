@@ -269,11 +269,16 @@ export default function HeroSection() {
               }`}
             />
 
-            <div className="relative z-10 w-full max-w-xs sm:max-w-sm lg:max-w-[380px] aspect-square flex items-center justify-center">
+            <div
+              id="hero-lens-wrap"
+              className={`relative z-10 w-full max-w-xs sm:max-w-sm lg:max-w-[380px] aspect-square flex items-center justify-center transition-all duration-700 ${
+                isBanner ? 'lg:-translate-x-10 lg:-translate-y-4.5 scale-[1.02]' : ''
+              }`}
+            >
               
               <div
                 className={`relative w-full h-full flex items-center justify-center transition-all duration-700 ${
-                  isBanner ? 'scale-95 drop-shadow-[0_25px_50px_rgba(0,162,204,0.45)]' : ''
+                  isBanner ? 'drop-shadow-[0_25px_50px_rgba(0,162,204,0.45)]' : ''
                 }`}
               >
                 <Image
