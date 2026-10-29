@@ -33,9 +33,9 @@ export default function BrandPhilosophy() {
           {/* Right Column: Editorial Typography & Philosophy */}
           <div className="lg:col-span-7 order-1 lg:order-2 space-y-6">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-heading tracking-tight leading-[1.18]">
-              Thấu hiểu từng ánh nhìn. <br className="hidden sm:inline" />
+              Chọn đúng kính - <br className="hidden sm:inline" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--button-start)] via-[var(--button-middle)] to-[var(--button-end)]">
-                Chọn tròng kính, chọn giải pháp.
+                kiểm soát độ
               </span>
             </h2>
 
@@ -80,9 +80,6 @@ export default function BrandPhilosophy() {
                 <span>Khám phá giải pháp tròng kính</span>
                 <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
               </Link>
-              <span className="text-xs text-brand-muted mt-1">
-                Dẫn đến trang Tròng kính
-              </span>
             </div>
 
           </div>

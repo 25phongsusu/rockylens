@@ -436,75 +436,7 @@ export default function CongNghePage() {
         </section>
 
         {/* ========================================================= */}
-        {/* 5. CẨM NANG HƯỚNG DẪN & TƯ VẤN TỪ CHUYÊN GIA              */}
-        {/* ========================================================= */}
-        <section id="huong-dan" className="space-y-8 scroll-mt-24">
-          <div className="border-b border-[var(--color-border)]/40 pb-6">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-heading tracking-tight">
-              Cẩm Nang Hướng Dẫn &amp; Tư Vấn
-            </h2>
-            <p className="text-[var(--color-muted)] text-sm sm:text-base mt-2 max-w-3xl leading-relaxed">
-              Các chỉ dẫn thực tế giúp bạn nhận biết thời điểm cần nâng cấp tròng kính, thích nghi êm dịu với kính đa tròng và bảo quản tròng luôn sáng bóng như mới.
-            </p>
-          </div>
-
-          {/* 3 Lời khuyên Chuyên Gia */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="card-surface rounded-3xl p-6 sm:p-7 border border-[var(--color-border)]/50 shadow-xs flex flex-col justify-between bg-white">
-              <div>
-                <span className="px-3 py-1 rounded-full bg-[var(--site-bg-middle)]/60 text-heading text-xs font-bold border border-[var(--color-border)]/50">
-                  Lựa Chọn Theo Nghề Nghiệp
-                </span>
-                <h3 className="text-xl font-bold text-heading mt-3 mb-2">
-                  Đúng Tròng Cho Nhu Cầu
-                </h3>
-                <p className="text-xs sm:text-sm text-[var(--color-muted)] leading-relaxed">
-                  Dân IT / văn phòng nên ưu tiên dòng chống mỏi BlueCut UV420 Relax. Người thường xuyên di chuyển ngoài trời nên chọn Tròng Đổi Màu Trendy. Doanh nhân &amp; người trên 40 tuổi nên chọn Kính Đa Tròng Freeform HD.
-                </p>
-              </div>
-              <div className="mt-4 pt-4 border-t border-[var(--color-border)]/30 text-xs font-semibold text-[var(--color-muted)]">
-                Tối ưu sự thoải mái theo môi trường sinh hoạt thực tế
-              </div>
-            </div>
-
-            <div className="card-surface rounded-3xl p-6 sm:p-7 border border-[var(--color-border)]/50 shadow-xs flex flex-col justify-between bg-white">
-              <div>
-                <span className="px-3 py-1 rounded-full bg-[var(--site-bg-middle)]/60 text-heading text-xs font-bold border border-[var(--color-border)]/50">
-                  Thói Quen Sử Dụng
-                </span>
-                <h3 className="text-xl font-bold text-heading mt-3 mb-2">
-                  Bảo Quản Chuẩn Quang Học
-                </h3>
-                <p className="text-xs sm:text-sm text-[var(--color-muted)] leading-relaxed">
-                  Luôn xả sạch bụi dưới vòi nước trước khi lau bằng khăn vi sợi. Tuyệt đối không để kính trong cốp xe máy, taplo xe hơi dưới trời nắng vì nhiệt độ cao có thể gây nứt lớp váng phủ nano AR.
-                </p>
-              </div>
-              <div className="mt-4 pt-4 border-t border-[var(--color-border)]/30 text-xs font-semibold text-[var(--color-muted)]">
-                Tăng tuổi thọ lớp phủ từ 2 lên đến 3 - 5 năm sử dụng
-              </div>
-            </div>
-
-            <div className="card-surface rounded-3xl p-6 sm:p-7 border border-[var(--color-border)]/50 shadow-xs flex flex-col justify-between bg-white">
-              <div>
-                <span className="px-3 py-1 rounded-full bg-[var(--site-bg-middle)]/60 text-heading text-xs font-bold border border-[var(--color-border)]/50">
-                  Thời Điểm Thay Kính
-                </span>
-                <h3 className="text-xl font-bold text-heading mt-3 mb-2">
-                  Khi Nào Cần Thay Tròng Kính?
-                </h3>
-                <p className="text-xs sm:text-sm text-[var(--color-muted)] leading-relaxed">
-                  Nên kiểm tra định kỳ mỗi 12 tháng. Thay tròng ngay khi thấy mắt hay mỏi, nheo mắt nhìn xa, hoặc bề mặt tròng kính có nhiều vết xước dăm gây lóa mắt khó chịu khi lái xe ban đêm.
-                </p>
-              </div>
-              <div className="mt-4 pt-4 border-t border-[var(--color-border)]/30 text-xs font-semibold text-[var(--color-muted)]">
-                Bảo vệ sức khỏe nhãn khoa và an toàn sinh hoạt mỗi ngày
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ========================================================= */}
-        {/* 6. CÁC CÂU HỎI THƯỜNG GẶP (FAQ)                           */}
+        {/* 5. CÁC CÂU HỎI THƯỜNG GẶP (FAQ)                           */}
         {/* ========================================================= */}
         <section className="card-surface rounded-3xl p-8 sm:p-10 border border-[var(--color-border)]/50 shadow-xs bg-white">
           <div className="max-w-3xl mx-auto text-center mb-10">

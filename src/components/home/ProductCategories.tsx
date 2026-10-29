@@ -6,7 +6,7 @@ import { ArrowUpRight } from 'lucide-react';
 
 export const productSolutions = [
   {
-    num: '01 / 05',
+    num: '01 / 06',
     category: 'DÀNH CHO TÀI XẾ & DI CHUYỂN ĐÊM',
     filter: 'Ngoài trời',
     title: 'Lái Xe Ban Đêm & Đi Mưa (Chống Chói Đèn Pha)',
@@ -23,7 +23,7 @@ export const productSolutions = [
     warranty: '24 tháng chính hãng',
   },
   {
-    num: '02 / 05',
+    num: '02 / 06',
     category: 'DÀNH CHO DESIGNER & ĐỒ HỌA MÁY TÍNH',
     filter: 'Làm việc',
     title: 'Ngồi Máy Tính Đồ Họa (Lọc Ánh Sáng Xanh - KHÔNG Đổi Màu)',
@@ -40,7 +40,7 @@ export const productSolutions = [
     warranty: '24 tháng chính hãng',
   },
   {
-    num: '03 / 05',
+    num: '03 / 06',
     category: 'DÂN VĂN PHÒNG & NĂNG ĐỘNG (2 TRONG 1)',
     filter: 'Làm việc',
     title: 'Văn Phòng Hay Ra Nắng (Lọc Ánh Sáng Xanh + CÓ ĐỔI MÀU)',
@@ -57,7 +57,24 @@ export const productSolutions = [
     warranty: '24 tháng chính hãng',
   },
   {
-    num: '04 / 05',
+    num: '04 / 06',
+    category: 'CẬN ĐỘ CAO & GỌNG KHOAN THỜI TRANG',
+    filter: 'Chuyên biệt',
+    title: 'Cận Nặng Mỏng Nhẹ & Gọng Khoan Không Viền',
+    desc: 'Chiết suất cao 1.60 - 1.74 mỏng nhẹ hơn đến 45%, phôi Mitsui MR Nhật Bản siêu dai chống sứt mẻ ốc khoan, triệt tiêu viền dày đáy chai thẩm mỹ.',
+    image: '/uploads/solutions/sol_kinh_khoan_va_dap.png',
+    imageFit: 'cover' as const,
+    link: '/trong-kinh/rocky-160-mr8-aspheric/',
+    productName: 'Rocky Tough Aspheric MR Series',
+    subTag: 'Siêu Mỏng & Siêu Dai Chống Vỡ',
+    keyFeature: 'Mỏng nhẹ tối đa, dẻo dai tuyệt đối cho gọng khoan',
+    techProcess: 'Phôi Monomer Mitsui MR-8 / MR-7 / MR-174',
+    visionExperience: 'Đôi mắt tự nhiên, gọng kính nhẹ tênh trên sống mũi',
+    indexOption: '1.60 | 1.67 | 1.74 siêu mỏng',
+    warranty: '24 tháng chính hãng',
+  },
+  {
+    num: '05 / 06',
     category: 'NGƯỜI LỚN TUỔI & TRUNG NIÊN (40+)',
     filter: 'Làm việc',
     title: 'Người Lớn Tuổi Nhìn Xa - Trung - Gần (Đa Tròng)',
@@ -74,7 +91,7 @@ export const productSolutions = [
     warranty: '24 tháng chính hãng',
   },
   {
-    num: '05 / 05',
+    num: '06 / 06',
     category: 'TRẺ EM & HỌC SINH CẬN THỊ',
     filter: 'Chuyên biệt',
     title: 'Trẻ Em & Học Sinh (Kiểm Soát Tăng Độ Cận)',
@@ -151,11 +168,11 @@ export default function ProductCategories() {
 
         {/* 6 Solution Cards Grid - Increased 20% dimensions */}
         <div className="max-w-[1240px] mx-auto">
-          <div className="flex flex-wrap justify-center gap-6 pt-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-2">
             {filtered.map((item) => (
               <div
                 key={item.title}
-                className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-[390px] card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden"
+                className="w-full card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden"
               >
                 {/* Default Front View */}
                 <div>

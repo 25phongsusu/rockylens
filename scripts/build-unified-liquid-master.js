@@ -772,10 +772,10 @@ const html = `<!DOCTYPE html>
 
         <!-- 6 Solution Cards Grid - Increased 20% -->
         <div class="max-w-[1240px] mx-auto">
-          <div class="flex flex-wrap justify-center gap-6 pt-2" id="product-cards-grid">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-2" id="product-cards-grid">
             
                         <!-- Card 1: Tài Xế -->
-            <div class="product-sol-card w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-[390px] card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="outdoor">
+            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="outdoor">
               <div>
                 <div class="space-y-1 pb-2">
                   <div class="text-[11px] font-bold text-primary tracking-wide uppercase line-clamp-1">DÀNH CHO TÀI XẾ & DI CHUYỂN ĐÊM</div>
@@ -797,7 +797,7 @@ const html = `<!DOCTYPE html>
             </div>
 
             <!-- Card 2: Designer (Không Đổi Màu) -->
-            <div class="product-sol-card w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-[390px] card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="work">
+            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="work">
               <div>
                 <div class="space-y-1 pb-2">
                   <div class="text-[11px] font-bold text-primary tracking-wide uppercase line-clamp-1">DÀNH CHO DESIGNER & ĐỒ HỌA MÁY TÍNH</div>
@@ -819,7 +819,7 @@ const html = `<!DOCTYPE html>
             </div>
 
             <!-- Card 3: Dân Văn Phòng (Có Đổi Màu) -->
-            <div class="product-sol-card w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-[390px] card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="work">
+            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="work">
               <div>
                 <div class="space-y-1 pb-2">
                   <div class="text-[11px] font-bold text-primary tracking-wide uppercase line-clamp-1">DÂN VĂN PHÒNG & NĂNG ĐỘNG (2 TRONG 1)</div>
@@ -840,8 +840,30 @@ const html = `<!DOCTYPE html>
               </div>
             </div>
 
-            <!-- Card 4: Người Lớn Tuổi -->
-            <div class="product-sol-card w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-[390px] card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="work">
+                        <!-- Card 4: Cận Nặng Mỏng Nhẹ -->
+            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="special">
+              <div>
+                <div class="space-y-1 pb-2">
+                  <div class="text-[11px] font-bold text-primary tracking-wide uppercase line-clamp-1">CẬN ĐỘ CAO & GỌNG KHOAN THỜI TRANG</div>
+                  <h3 class="text-base sm:text-lg font-bold text-heading leading-snug h-14 flex items-start line-clamp-2">
+                    <a href="trong-kinh/rocky-160-mr8-aspheric/" class="hover:text-primary transition-colors">Cận Nặng Mỏng Nhẹ & Gọng Khoan Không Viền</a>
+                  </h3>
+                  <p class="text-brand-muted text-xs leading-relaxed line-clamp-2 h-10">Chiết suất cao 1.60 - 1.74 mỏng nhẹ hơn đến 45%, phôi Mitsui MR Nhật Bản siêu dai chống sứt mẻ ốc khoan, triệt tiêu viền dày đáy chai thẩm mỹ.</p>
+                </div>
+                <div class="h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
+                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_kinh_khoan_va_dap.png" alt="Cận Nặng Mỏng Nhẹ & Gọng Khoan Không Viền" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+              </div>
+              <div class="pt-3 mt-auto border-t border-slate-100 flex items-center">
+                <a href="trong-kinh/rocky-160-mr8-aspheric/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                  <span>Xem giải pháp</span>
+                  <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 5: Người Lớn Tuổi -->
+            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="work">
               <div>
                 <div class="space-y-1 pb-2">
                   <div class="text-[11px] font-bold text-primary tracking-wide uppercase line-clamp-1">NGƯỜI LỚN TUỔI & TRUNG NIÊN (40+)</div>
@@ -862,8 +884,8 @@ const html = `<!DOCTYPE html>
               </div>
             </div>
 
-            <!-- Card 5: Trẻ Em -->
-            <div class="product-sol-card w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-[390px] card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="special">
+            <!-- Card 6: Trẻ Em -->
+            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="special">
               <div>
                 <div class="space-y-1 pb-2">
                   <div class="text-[11px] font-bold text-primary tracking-wide uppercase line-clamp-1">TRẺ EM & HỌC SINH CẬN THỊ</div>
@@ -931,7 +953,7 @@ const html = `<!DOCTYPE html>
           <!-- Right Column: Editorial Typography & Philosophy -->
           <div class="lg:col-span-7 order-1 lg:order-2 space-y-6">
             <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-heading tracking-tight leading-[1.18]">
-              Thấu hiểu từng ánh nhìn. <br class="hidden sm:inline" /><span class="text-transparent bg-clip-text bg-gradient-to-r from-[var(--button-start)] via-[var(--button-middle)] to-[var(--button-end)]">Chọn tròng kính, chọn giải pháp.</span>
+              Chọn đúng kính - <br class="hidden sm:inline" /><span class="text-transparent bg-clip-text bg-gradient-to-r from-[var(--button-start)] via-[var(--button-middle)] to-[var(--button-end)]">kiểm soát độ</span>
             </h2>
 
             <div class="space-y-4 text-slate-700 text-lg sm:text-xl font-medium leading-relaxed">
@@ -970,7 +992,6 @@ const html = `<!DOCTYPE html>
                 <span>Khám phá giải pháp tròng kính</span>
                 <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
               </a>
-              <span class="text-xs text-slate-500 mt-1">Dẫn đến trang Tròng kính</span>
             </div>
 
           </div>

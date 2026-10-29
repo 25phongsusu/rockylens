@@ -37,8 +37,8 @@
   },
   "philosophy": {
     "tag": "TRIẾT LÝ SẢN PHẨM",
-    "title": "Thấu hiểu từng ánh nhìn.",
-    "highlight": "Chọn tròng kính, chọn giải pháp.",
+    "title": "Chọn đúng kính -",
+    "highlight": "kiểm soát độ",
     "desc": "Mỗi nhu cầu thị giác đều có những đặc điểm riêng. Rocky Lens mang đến các giải pháp tròng kính đa dạng, kết hợp công nghệ quang học và thông tin sản phẩm rõ ràng, giúp đối tác mắt kính tự tin tư vấn và người dùng dễ dàng tìm hiểu, lựa chọn tròng kính phù hợp.",
     "pillars": [
       {
@@ -120,6 +120,22 @@
         "techProcess": "Phủ xoay Spin-Coat nhạy sáng + Phôi BlueCut UV420",
         "visionExperience": "Bảo vệ mắt toàn diện: vừa làm việc số vừa chống nắng",
         "indexOption": "1.56 | 1.60 | 1.67",
+        "warranty": "24 tháng chính hãng",
+        "imageFit": "cover"
+      },
+      {
+        "category": "CẬN ĐỘ CAO & GỌNG KHOAN THỜI TRANG",
+        "filter": "Chuyên biệt",
+        "title": "Cận Nặng Mỏng Nhẹ & Gọng Khoan Không Viền",
+        "desc": "Chiết suất cao 1.60 - 1.74 mỏng nhẹ hơn đến 45%, phôi Mitsui MR Nhật Bản siêu dai chống sứt mẻ ốc khoan, triệt tiêu viền dày đáy chai thẩm mỹ.",
+        "image": "/uploads/solutions/sol_kinh_khoan_va_dap.png",
+        "link": "/trong-kinh/rocky-160-mr8-aspheric/",
+        "productName": "Rocky Tough Aspheric MR Series",
+        "subTag": "Siêu Mỏng & Siêu Dai Chống Vỡ",
+        "keyFeature": "Mỏng nhẹ tối đa, dẻo dai tuyệt đối cho gọng khoan",
+        "techProcess": "Phôi Monomer Mitsui MR-8 / MR-7 / MR-174",
+        "visionExperience": "Đôi mắt tự nhiên, gọng kính nhẹ tênh trên sống mũi",
+        "indexOption": "1.60 | 1.67 | 1.74 siêu mỏng",
         "warranty": "24 tháng chính hãng",
         "imageFit": "cover"
       },
