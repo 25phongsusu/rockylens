@@ -697,7 +697,7 @@
             <!-- Ambient Caustic Halo -->
             <div class="w-72 h-72 sm:w-[360px] sm:h-[360px] rounded-full bg-gradient-to-tr from-teal-200/50 via-cyan-100/40 to-sky-200/50 blur-3xl absolute pointer-events-none"></div>
 
-            <div class="relative z-10 w-full max-w-xs sm:max-w-sm lg:max-w-[380px] aspect-square flex items-center justify-center">
+            <div id="hero-lens-wrap" class="relative z-10 w-full max-w-xs sm:max-w-sm lg:max-w-[380px] aspect-square flex items-center justify-center transition-all duration-700">
               <div class="relative w-full h-full flex items-center justify-center">
                 <img src="assets/h-lens3.png" alt="Tròng kính quang học Rocky Lens Canada" class="object-contain p-2 transition-transform duration-700 hover:scale-105 drop-shadow-[0_25px_45px_rgba(11,123,138,0.28)] max-h-[340px]">
               </div>
@@ -1919,6 +1919,10 @@
           trust.classList.remove('text-brand-muted');
           trust.classList.add('text-slate-300');
         }
+        var lensWrap = document.getElementById('hero-lens-wrap');
+        if (lensWrap) {
+          lensWrap.classList.add('lg:-translate-x-10', 'lg:-translate-y-4.5', 'scale-[1.02]');
+        }
         specCards.forEach(function(card) {
           card.className = 'p-4 rounded-2xl hero-spec-card transition-all bg-white/10 backdrop-blur-md border border-white/20 text-white';
           var t = card.querySelector('.hero-spec-title');
@@ -1962,6 +1966,10 @@
         if (trust) {
           trust.classList.remove('text-slate-300');
           trust.classList.add('text-brand-muted');
+        }
+        var lensWrap = document.getElementById('hero-lens-wrap');
+        if (lensWrap) {
+          lensWrap.classList.remove('lg:-translate-x-10', 'lg:-translate-y-4.5', 'scale-[1.02]');
         }
         specCards.forEach(function(card) {
           card.className = 'p-4 rounded-2xl liquid-card hero-spec-card transition-all';
