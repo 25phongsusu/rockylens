@@ -55,14 +55,14 @@ export default function Header() {
 
       {/* APPLE FLUID NAVIGATION: STICKY FROSTED GLASS (MATCHES HOME EXACTLY) */}
       <header className="sticky top-0 z-40 bg-[var(--site-bg-start)]/90 backdrop-blur-md border-b border-[var(--color-border)] transition-shadow">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-6">
+        <div className="max-w-7xl mx-auto px-6 py-2.5 sm:py-3 flex items-center justify-between gap-6">
           
-          {/* Brand Logo with Real Rocky Image (+30% size) */}
+          {/* Brand Logo with Real Rocky Image (+50% size) */}
           <Link href="/" className="flex items-center gap-3 group">
             <img
               src="/assets/logo_rocky_transparent.png"
               alt="Rocky Lens Canada"
-              className="h-12 sm:h-[52px] w-auto object-contain transition-transform group-hover:scale-105"
+              className="h-16 sm:h-[76px] w-auto object-contain transition-transform group-hover:scale-105"
             />
           </Link>
 

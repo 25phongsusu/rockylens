@@ -53,7 +53,7 @@ export default function HeroSection() {
   return (
     <section
       id="brand-hero"
-      className={`relative overflow-hidden py-14 sm:py-20 lg:py-24 transition-all duration-700 ${
+      className={`relative overflow-hidden py-20 sm:py-28 lg:py-36 min-h-[780px] lg:min-h-[860px] flex flex-col justify-center transition-all duration-700 ${
         isBanner ? 'bg-[#001722] text-white' : 'site-background text-slate-800'
       }`}
     >
@@ -262,18 +262,18 @@ export default function HeroSection() {
             
             {/* Ambient Caustic Halo */}
             <div
-              className={`w-80 h-80 sm:w-96 sm:h-96 rounded-full blur-3xl absolute liquid-morph-1 pointer-events-none transition-opacity duration-700 ${
+              className={`w-96 h-96 sm:w-[480px] sm:h-[480px] rounded-full blur-3xl absolute liquid-morph-1 pointer-events-none transition-opacity duration-700 ${
                 isBanner
                   ? 'bg-gradient-to-tr from-cyan-500/20 via-teal-500/20 to-blue-500/10'
                   : 'bg-gradient-to-tr from-teal-200/50 via-cyan-100/40 to-sky-200/50'
               }`}
             />
 
-            <div className="relative z-10 w-full max-w-sm sm:max-w-md aspect-square flex items-center justify-center">
+            <div className="relative z-10 w-full max-w-md sm:max-w-lg lg:max-w-xl aspect-square flex items-center justify-center">
               
               <div
                 className={`relative w-full h-full flex items-center justify-center transition-all duration-700 ${
-                  isBanner ? 'scale-95 drop-shadow-[0_20px_45px_rgba(0,162,204,0.4)]' : ''
+                  isBanner ? 'scale-95 drop-shadow-[0_25px_50px_rgba(0,162,204,0.45)]' : ''
                 }`}
               >
                 <Image
@@ -281,8 +281,8 @@ export default function HeroSection() {
                   alt="Tròng kính quang học Rocky Lens Canada"
                   fill
                   priority
-                  className="object-contain p-2 transition-transform duration-700 hover:scale-105 drop-shadow-[0_20px_35px_rgba(11,123,138,0.22)]"
-                  sizes="(max-width: 1024px) 100vw, 450px"
+                  className="object-contain p-2 transition-transform duration-700 hover:scale-105 drop-shadow-[0_25px_45px_rgba(11,123,138,0.28)]"
+                  sizes="(max-width: 1024px) 100vw, 580px"
                 />
               </div>
 

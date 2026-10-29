@@ -567,7 +567,7 @@ const html = `<!DOCTYPE html>
       
       <!-- Brand Logo -->
       <a href="#" class="flex items-center gap-3">
-        <img src="assets/logo_rocky_transparent.png" alt="Rocky Lens Canada" class="h-12 sm:h-[52px] w-auto object-contain">
+        <img src="assets/logo_rocky_transparent.png" alt="Rocky Lens Canada" class="h-16 sm:h-[76px] w-auto object-contain">
       </a>
 
       <!-- Primary Multi-Page Navigation Items -->
@@ -593,7 +593,7 @@ const html = `<!DOCTYPE html>
     <!-- ========================================================= -->
     <!-- SECTION 1 — BRAND HERO                                    -->
     <!-- ========================================================= -->
-    <section id="brand-hero" class="relative overflow-hidden py-14 sm:py-20 lg:py-24 site-background text-slate-800 transition-all duration-700">
+    <section id="brand-hero" class="relative overflow-hidden py-20 sm:py-28 lg:py-36 min-h-[780px] lg:min-h-[860px] flex flex-col justify-center site-background text-slate-800 transition-all duration-700">
       <!-- ========================================================= -->
       <!-- CHẾ ĐỘ 2: CINEMATIC CANADIAN OPTICAL BANNER BACKGROUND   -->
       <!-- ========================================================= -->
@@ -713,11 +713,11 @@ const html = `<!DOCTYPE html>
           <!-- Right Column: Studio Lens Photograph -->
           <div class="lg:col-span-5 relative flex items-center justify-center lg:justify-start lg:-ml-4">
             <!-- Ambient Caustic Halo -->
-            <div class="w-80 h-80 sm:w-96 sm:h-96 rounded-full bg-gradient-to-tr from-teal-200/50 via-cyan-100/40 to-sky-200/50 blur-3xl absolute pointer-events-none"></div>
+            <div class="w-96 h-96 sm:w-[480px] sm:h-[480px] rounded-full bg-gradient-to-tr from-teal-200/50 via-cyan-100/40 to-sky-200/50 blur-3xl absolute pointer-events-none"></div>
 
-            <div class="relative z-10 w-full max-w-sm sm:max-w-md aspect-square flex items-center justify-center">
+            <div class="relative z-10 w-full max-w-md sm:max-w-lg lg:max-w-xl aspect-square flex items-center justify-center">
               <div class="relative w-full h-full flex items-center justify-center">
-                <img src="assets/h-lens3.png" alt="Tròng kính quang học Rocky Lens Canada" class="object-contain p-2 transition-transform duration-700 hover:scale-105 drop-shadow-[0_20px_35px_rgba(11,123,138,0.22)] max-h-[380px]">
+                <img src="assets/h-lens3.png" alt="Tròng kính quang học Rocky Lens Canada" class="object-contain p-2 transition-transform duration-700 hover:scale-105 drop-shadow-[0_25px_45px_rgba(11,123,138,0.28)] max-h-[520px]">
               </div>
             </div>
           </div>
