@@ -237,6 +237,40 @@ body {
   box-shadow: 0 8px 22px rgba(0, 59, 80, 0.42);
 }
 
+/* 8. Card Price Action Button (Text by default, button on hover) */
+.card-price-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.45rem 1rem;
+  border-radius: 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--button-middle, #00A2CC);
+  background: transparent;
+  border: none;
+  outline: none;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.card-price-btn:hover {
+  background: var(--gradient-button);
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 14px rgba(0, 162, 204, 0.28);
+  transform: translateY(-1.5px);
+}
+
+.card-price-btn:hover svg {
+  transform: translate(2px, -2px);
+  color: #FFFFFF !important;
+}
+
+.card-price-btn:active {
+  transform: translateY(0);
+}
+
 /* ========================================================
    APPLE LIQUID OPTICAL SYSTEM
    ======================================================== */
