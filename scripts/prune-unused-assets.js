@@ -20,7 +20,7 @@ function findFiles(dir, exts) {
 const codeFiles = [
   'index.html',
   ...findFiles('src', ['.ts', '.tsx', '.json', '.css']),
-  ...findFiles('content', ['.md']),
+  ...findFiles('content', ['.md', '.json']),
   ...findFiles('scripts', ['.js', '.mjs'])
 ];
 
@@ -38,7 +38,10 @@ const criticalKeep = [
   'SF-Pro-Display-Semibold',
   'SF-Pro-Display-Bold',
   'SF-Pro-Display-Heavy',
-  'Rocky_Lens_Catalogue_2025.pdf'
+  'Rocky_Lens_Catalogue_2025.pdf',
+  'images/real',
+  'assets/images/real',
+  'public/images/real'
 ];
 
 let deletedCount = 0;
@@ -54,7 +57,8 @@ function pruneDirectory(targetDir, isPublic = true) {
       ? path.relative('public', file).replace(/\\/g, '/')
       : path.relative('.', file).replace(/\\/g, '/');
 
-    const isCritical = criticalKeep.some(k => file.includes(k));
+    const normFile = file.replace(/\\/g, '/');
+    const isCritical = criticalKeep.some(k => normFile.includes(k));
     const isMentioned = allCodeText.includes(basename) ||
                         allCodeText.includes(rel) ||
                         allCodeText.includes('/' + rel);
