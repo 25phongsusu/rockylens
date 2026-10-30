@@ -4,4 +4,4 @@
 3:[["children",{"s":{"n":"slug","t":"d","k":"so-sanh-chiet-suat-trong-kinh","s":[]},"h":96,"c":"$Q4"}]]
 2:[["children",{"s":"bai-viet","h":96,"c":"$Q3"}]]
 1:[["children",{"s":"kham-pha-trong-kinh","h":64,"c":"$Q2"}]]
-0:{"b":"xftrhhIbCs8XEkq76SXi2","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
+0:{"b":"x3g6J818KrIbTaXhgTJD7","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
