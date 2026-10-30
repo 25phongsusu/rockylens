@@ -774,52 +774,7 @@ const html = `<!DOCTYPE html>
         <!-- 6 Solution Cards Grid - Increased 20% -->
         <div class="max-w-[1240px] mx-auto">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-2" id="product-cards-grid">
-            
-                        <!-- Card 1: Tài Xế -->
-            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="outdoor">
-              <div>
-                <div class="space-y-1 pb-2">
-                  <div class="text-[11px] font-bold text-primary tracking-wide uppercase line-clamp-1">DÀNH CHO TÀI XẾ & DI CHUYỂN ĐÊM</div>
-                  <h3 class="text-base sm:text-lg font-bold text-heading leading-snug h-14 flex items-start line-clamp-2">
-                    <a href="trong-kinh/rocky-driveshield-night-vision/" class="hover:text-primary transition-colors">Lái Xe Ban Đêm & Đi Mưa (Chống Chói Đèn Pha)</a>
-                  </h3>
-                  <p class="text-brand-muted text-xs leading-relaxed line-clamp-2 h-10">Triệt tiêu ánh sáng chói lóa từ đèn pha LED đối diện, tăng cường độ tương phản và trượt nước mưa tối đa giúp lái xe an toàn, không bị lóa mắt.</p>
-                </div>
-                <div class="h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
-                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_kinh_lai_xe.png" alt="Lái Xe Ban Đêm & Đi Mưa (Chống Chói Đèn Pha)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                </div>
-              </div>
-              <div class="pt-3 mt-auto border-t border-slate-100 flex items-center">
-                <a href="trong-kinh/rocky-driveshield-night-vision/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
-                  <span>Xem giải pháp</span>
-                  <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
-                </a>
-              </div>
-            </div>
-
-            <!-- Card 2: Designer (Không Đổi Màu) -->
-            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="work">
-              <div>
-                <div class="space-y-1 pb-2">
-                  <div class="text-[11px] font-bold text-primary tracking-wide uppercase line-clamp-1">DÀNH CHO DESIGNER & ĐỒ HỌA MÁY TÍNH</div>
-                  <h3 class="text-base sm:text-lg font-bold text-heading leading-snug h-14 flex items-start line-clamp-2">
-                    <a href="trong-kinh/rocky-156-bluecut-shmc/" class="hover:text-primary transition-colors">Ngồi Máy Tính Đồ Họa (Lọc Ánh Sáng Xanh - KHÔNG Đổi Màu)</a>
-                  </h3>
-                  <p class="text-brand-muted text-xs leading-relaxed line-clamp-2 h-10">Dành cho designer, lập trình viên, dựng video: tròng trong suốt 99.8% cả trong nhà lẫn ngoài trời, lọc ánh sáng xanh tím có hại mà tuyệt đối không ngả vàng, chuẩn màu 100%.</p>
-                </div>
-                <div class="h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
-                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_chong_tia_uv.png" alt="Ngồi Máy Tính Đồ Họa (Lọc Ánh Sáng Xanh - KHÔNG Đổi Màu)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                </div>
-              </div>
-              <div class="pt-3 mt-auto border-t border-slate-100 flex items-center">
-                <a href="trong-kinh/rocky-156-bluecut-shmc/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
-                  <span>Xem giải pháp</span>
-                  <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
-                </a>
-              </div>
-            </div>
-
-            <!-- Card 3: Dân Văn Phòng (Có Đổi Màu) -->
+            <!-- Card 1: Văn Phòng Hay Ra Nắng (Lọc Ánh Sáng Xanh + CÓ ĐỔI MÀU) -->
             <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="work">
               <div>
                 <div class="space-y-1 pb-2">
@@ -827,10 +782,10 @@ const html = `<!DOCTYPE html>
                   <h3 class="text-base sm:text-lg font-bold text-heading leading-snug h-14 flex items-start line-clamp-2">
                     <a href="trong-kinh/rocky-trendy-photochromic-grey/" class="hover:text-primary transition-colors">Văn Phòng Hay Ra Nắng (Lọc Ánh Sáng Xanh + CÓ ĐỔI MÀU)</a>
                   </h3>
-                  <p class="text-brand-muted text-xs leading-relaxed line-clamp-2 h-10">Trong nhà lọc ánh sáng xanh máy tính êm dịu mắt, bước ra nắng tự động chuyển màu râm chuẩn CAT 3 chống tia cực tím UV400 và chói lóa tiện lợi 2 trong 1.</p>
+                  <p class="text-brand-muted text-xs leading-relaxed line-clamp-2 h-10">Trong phòng làm việc lọc ánh sáng xanh máy tính êm dịu mắt, khi ra nắng tròng tự động đổi màu râm chống chói và cản 100% tia UV tiện lợi 2 trong 1.</p>
                 </div>
                 <div class="h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
-                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_doi_mau.png" alt="Văn Phòng Hay Ra Nắng (Lọc Ánh Sáng Xanh + CÓ ĐỔI MÀU)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_asx_doi_mau.png" alt="Văn Phòng Hay Ra Nắng (Lọc Ánh Sáng Xanh + CÓ ĐỔI MÀU)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
               </div>
               <div class="pt-3 mt-auto border-t border-slate-100 flex items-center">
@@ -841,40 +796,84 @@ const html = `<!DOCTYPE html>
               </div>
             </div>
 
-                        <!-- Card 4: Cận Nặng Mỏng Nhẹ -->
-            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="special">
+            <!-- Card 2: Ngồi Máy Tính Đồ Họa (Lọc Ánh Sáng Xanh - KHÔNG Đổi Màu) -->
+            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="work">
               <div>
                 <div class="space-y-1 pb-2">
-                  <div class="text-[11px] font-bold text-primary tracking-wide uppercase line-clamp-1">CẬN ĐỘ CAO & GỌNG KHOAN THỜI TRANG</div>
+                  <div class="text-[11px] font-bold text-primary tracking-wide uppercase line-clamp-1">DÀNH CHO DESIGNER & ĐỒ HỌA MÁY TÍNH</div>
                   <h3 class="text-base sm:text-lg font-bold text-heading leading-snug h-14 flex items-start line-clamp-2">
-                    <a href="trong-kinh/rocky-160-mr8-aspheric/" class="hover:text-primary transition-colors">Cận Nặng Mỏng Nhẹ & Gọng Khoan Không Viền</a>
+                    <a href="trong-kinh/rocky-156-bluecut-shmc/" class="hover:text-primary transition-colors">Ngồi Máy Tính Đồ Họa (Lọc Ánh Sáng Xanh - KHÔNG Đổi Màu)</a>
                   </h3>
-                  <p class="text-brand-muted text-xs leading-relaxed line-clamp-2 h-10">Chiết suất cao 1.60 - 1.74 mỏng nhẹ hơn đến 45%, phôi Mitsui MR Nhật Bản siêu dai chống sứt mẻ ốc khoan, triệt tiêu viền dày đáy chai thẩm mỹ.</p>
+                  <p class="text-brand-muted text-xs leading-relaxed line-clamp-2 h-10">Dành cho designer, lập trình viên: tròng trong suốt 99.8% chuẩn màu 100% không ngả vàng, lọc ánh sáng xanh tím có hại giúp giảm mỏi và khô rát mắt.</p>
                 </div>
                 <div class="h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
-                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_kinh_khoan_va_dap.png" alt="Cận Nặng Mỏng Nhẹ & Gọng Khoan Không Viền" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_asx_trong_suot.png" alt="Ngồi Máy Tính Đồ Họa (Lọc Ánh Sáng Xanh - KHÔNG Đổi Màu)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
               </div>
               <div class="pt-3 mt-auto border-t border-slate-100 flex items-center">
-                <a href="trong-kinh/rocky-160-mr8-aspheric/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                <a href="trong-kinh/rocky-156-bluecut-shmc/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                   <span>Xem giải pháp</span>
                   <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
               </div>
             </div>
 
-            <!-- Card 5: Người Lớn Tuổi -->
+            <!-- Card 3: Người Hoạt Động Ngoài Trời (Chống Tia UV400 / UV420 Tối Đa) -->
+            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="outdoor">
+              <div>
+                <div class="space-y-1 pb-2">
+                  <div class="text-[11px] font-bold text-primary tracking-wide uppercase line-clamp-1">HOẠT ĐỘNG NGOÀI TRỜI & THỂ THAO</div>
+                  <h3 class="text-base sm:text-lg font-bold text-heading leading-snug h-14 flex items-start line-clamp-2">
+                    <a href="trong-kinh/rocky-167-ultra-thin-bluecut/" class="hover:text-primary transition-colors">Người Hoạt Động Ngoài Trời (Chống Tia UV400 / UV420 Tối Đa)</a>
+                  </h3>
+                  <p class="text-brand-muted text-xs leading-relaxed line-clamp-2 h-10">Ngăn chặn triệt để 100% tia cực tím độc hại UV400 và UV420, phòng ngừa thoái hóa điểm vàng, lớp phủ Nano Sapphire chống trầy xước và bám bụi.</p>
+                </div>
+                <div class="h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
+                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_chong_uv.png" alt="Người Hoạt Động Ngoài Trời (Chống Tia UV400 / UV420 Tối Đa)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+              </div>
+              <div class="pt-3 mt-auto border-t border-slate-100 flex items-center">
+                <a href="trong-kinh/rocky-167-ultra-thin-bluecut/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                  <span>Xem giải pháp</span>
+                  <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 4: Lái Xe Ban Đêm & Đi Mưa (Chống Chói Đèn Pha LED) -->
+            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="outdoor">
+              <div>
+                <div class="space-y-1 pb-2">
+                  <div class="text-[11px] font-bold text-primary tracking-wide uppercase line-clamp-1">DÀNH CHO TÀI XẾ & DI CHUYỂN ĐÊM</div>
+                  <h3 class="text-base sm:text-lg font-bold text-heading leading-snug h-14 flex items-start line-clamp-2">
+                    <a href="trong-kinh/rocky-driveshield-night-vision/" class="hover:text-primary transition-colors">Lái Xe Ban Đêm & Đi Mưa (Chống Chói Đèn Pha LED)</a>
+                  </h3>
+                  <p class="text-brand-muted text-xs leading-relaxed line-clamp-2 h-10">Triệt tiêu quầng sáng chói lóa từ đèn pha LED đối diện, tăng cường độ tương phản nhìn rõ biển báo và vạch đường ban đêm, trượt nước mưa tối đa.</p>
+                </div>
+                <div class="h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
+                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_driveshield.png" alt="Lái Xe Ban Đêm & Đi Mưa (Chống Chói Đèn Pha LED)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+              </div>
+              <div class="pt-3 mt-auto border-t border-slate-100 flex items-center">
+                <a href="trong-kinh/rocky-driveshield-night-vision/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                  <span>Xem giải pháp</span>
+                  <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 5: Người Lớn Tuổi Nhìn Xa - Trung - Gần (Đa Tròng Liền Mạch) -->
             <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="work">
               <div>
                 <div class="space-y-1 pb-2">
                   <div class="text-[11px] font-bold text-primary tracking-wide uppercase line-clamp-1">NGƯỜI LỚN TUỔI & TRUNG NIÊN (40+)</div>
                   <h3 class="text-base sm:text-lg font-bold text-heading leading-snug h-14 flex items-start line-clamp-2">
-                    <a href="trong-kinh/rocky-freeform-progressive-hd/" class="hover:text-primary transition-colors">Người Lớn Tuổi Nhìn Xa - Trung - Gần (Đa Tròng)</a>
+                    <a href="trong-kinh/rocky-freeform-progressive-hd/" class="hover:text-primary transition-colors">Người Lớn Tuổi Nhìn Xa - Trung - Gần (Đa Tròng Liền Mạch)</a>
                   </h3>
-                  <p class="text-brand-muted text-xs leading-relaxed line-clamp-2 h-10">Xóa bỏ ranh giới đường lằn hai tròng, hỗ trợ chuyển vùng nhìn mượt mà: đọc sách báo, xem điện thoại, làm việc máy tính đến đi lại lái xe chỉ trong 1 cặp kính.</p>
+                  <p class="text-brand-muted text-xs leading-relaxed line-clamp-2 h-10">Xóa bỏ ranh giới đường lằn hai tròng, chuyển tiếp mượt mà mọi cự ly: đọc sách báo, xem điện thoại, nhìn máy tính đến đi lại lái xe trong 1 cặp kính.</p>
                 </div>
                 <div class="h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
-                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_da_trong.png" alt="Người Lớn Tuổi Nhìn Xa - Trung - Gần (Đa Tròng)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_da_trong.png" alt="Người Lớn Tuổi Nhìn Xa - Trung - Gần (Đa Tròng Liền Mạch)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
               </div>
               <div class="pt-3 mt-auto border-t border-slate-100 flex items-center">
@@ -885,22 +884,88 @@ const html = `<!DOCTYPE html>
               </div>
             </div>
 
-            <!-- Card 6: Trẻ Em -->
+            <!-- Card 6: Trẻ Em & Học Sinh (Kiểm Soát Tăng Độ Cận Học Đường) -->
             <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="special">
               <div>
                 <div class="space-y-1 pb-2">
                   <div class="text-[11px] font-bold text-primary tracking-wide uppercase line-clamp-1">TRẺ EM & HỌC SINH CẬN THỊ</div>
                   <h3 class="text-base sm:text-lg font-bold text-heading leading-snug h-14 flex items-start line-clamp-2">
-                    <a href="trong-kinh/rocky-myocontrol-dims-kids/" class="hover:text-primary transition-colors">Trẻ Em & Học Sinh (Kiểm Soát Tăng Độ Cận)</a>
+                    <a href="trong-kinh/rocky-myocontrol-dims-kids/" class="hover:text-primary transition-colors">Trẻ Em & Học Sinh (Kiểm Soát Tăng Độ Cận Học Đường)</a>
                   </h3>
-                  <p class="text-brand-muted text-xs leading-relaxed line-clamp-2 h-10">Ứng dụng công nghệ vi thấu kính D.I.M.S làm chậm tốc độ tăng độ cận học đường đến 60%, vật liệu kháng va đập an toàn tuyệt đối cho trẻ vui chơi học tập.</p>
+                  <p class="text-brand-muted text-xs leading-relaxed line-clamp-2 h-10">Ứng dụng công nghệ vi thấu kính Defocus 360° làm chậm tốc độ tăng độ cận học đường đến 60%, giúp bảo vệ trục nhãn cầu và giữ gìn thị lực cho bé.</p>
                 </div>
                 <div class="h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
-                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_kiem_soat_can_thi.png" alt="Trẻ Em & Học Sinh (Kiểm Soát Tăng Độ Cận)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_defocus_tre_em.png" alt="Trẻ Em & Học Sinh (Kiểm Soát Tăng Độ Cận Học Đường)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
               </div>
               <div class="pt-3 mt-auto border-t border-slate-100 flex items-center">
                 <a href="trong-kinh/rocky-myocontrol-dims-kids/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                  <span>Xem giải pháp</span>
+                  <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 7: Kính Cận Đổi Màu Thời Trang (Bộ Sưu Tập Màu Cá Tính) -->
+            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="outdoor">
+              <div>
+                <div class="space-y-1 pb-2">
+                  <div class="text-[11px] font-bold text-primary tracking-wide uppercase line-clamp-1">THỜI TRANG & PHONG CÁCH XU HƯỚNG</div>
+                  <h3 class="text-base sm:text-lg font-bold text-heading leading-snug h-14 flex items-start line-clamp-2">
+                    <a href="trong-kinh/rocky-chameleon-photochromic/" class="hover:text-primary transition-colors">Kính Cận Đổi Màu Thời Trang (Bộ Sưu Tập Màu Cá Tính)</a>
+                  </h3>
+                  <p class="text-brand-muted text-xs leading-relaxed line-clamp-2 h-10">Biến chiếc kính cận thành kính râm sành điệu với bộ sưu tập màu sắc xu hướng: Khói Titan, Trà Hổ Phách, Xanh Sapphire... đổi màu nhạy sáng khi ra nắng.</p>
+                </div>
+                <div class="h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
+                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_thoi_trang_doi_mau.png" alt="Kính Cận Đổi Màu Thời Trang (Bộ Sưu Tập Màu Cá Tính)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+              </div>
+              <div class="pt-3 mt-auto border-t border-slate-100 flex items-center">
+                <a href="trong-kinh/rocky-chameleon-photochromic/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                  <span>Xem giải pháp</span>
+                  <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 8: Gọng Khoan Bắt Ốc & Kính Không Viền (Chất Liệu Siêu Dai MR-8) -->
+            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="special">
+              <div>
+                <div class="space-y-1 pb-2">
+                  <div class="text-[11px] font-bold text-primary tracking-wide uppercase line-clamp-1">GỌNG KHOAN & KÍNH KHÔNG VIỀN</div>
+                  <h3 class="text-base sm:text-lg font-bold text-heading leading-snug h-14 flex items-start line-clamp-2">
+                    <a href="trong-kinh/rocky-160-mr8-aspheric/" class="hover:text-primary transition-colors">Gọng Khoan Bắt Ốc & Kính Không Viền (Chất Liệu Siêu Dai MR-8)</a>
+                  </h3>
+                  <p class="text-brand-muted text-xs leading-relaxed line-clamp-2 h-10">Chất liệu Mitsui MR-8 Nhật Bản siêu dẻo dai và chịu lực uốn đỉnh cao, bắt ốc khoan chắc chắn không lo rạn nứt mép kính, thanh thoát và sang trọng.</p>
+                </div>
+                <div class="h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
+                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_kinh_khoan.png" alt="Gọng Khoan Bắt Ốc & Kính Không Viền (Chất Liệu Siêu Dai MR-8)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+              </div>
+              <div class="pt-3 mt-auto border-t border-slate-100 flex items-center">
+                <a href="trong-kinh/rocky-160-mr8-aspheric/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                  <span>Xem giải pháp</span>
+                  <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 9: Độ Cận Viễn Nặng (Tròng Siêu Mỏng Chiết Suất 1.67 - 1.74) -->
+            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="special">
+              <div>
+                <div class="space-y-1 pb-2">
+                  <div class="text-[11px] font-bold text-primary tracking-wide uppercase line-clamp-1">CẬN VIỄN NẶNG & SIÊU MỎNG NHẸ</div>
+                  <h3 class="text-base sm:text-lg font-bold text-heading leading-snug h-14 flex items-start line-clamp-2">
+                    <a href="trong-kinh/rocky-174-ultra-high-index/" class="hover:text-primary transition-colors">Độ Cận Viễn Nặng (Tròng Siêu Mỏng Chiết Suất 1.67 - 1.74)</a>
+                  </h3>
+                  <p class="text-brand-muted text-xs leading-relaxed line-clamp-2 h-10">Chiết suất cao 1.67 và 1.74 mỏng nhẹ hơn đến 45%, triệt tiêu độ dày đáy chai ở mép tròng, mắt nhìn tự nhiên không bị thu nhỏ khi lên gọng kính.</p>
+                </div>
+                <div class="h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
+                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/sol_sieu_mong_do_cao.png" alt="Độ Cận Viễn Nặng (Tròng Siêu Mỏng Chiết Suất 1.67 - 1.74)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+              </div>
+              <div class="pt-3 mt-auto border-t border-slate-100 flex items-center">
+                <a href="trong-kinh/rocky-174-ultra-high-index/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                   <span>Xem giải pháp</span>
                   <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>

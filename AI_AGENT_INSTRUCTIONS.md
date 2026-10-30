@@ -1,6 +1,6 @@
 # HƯỚNG DẪN DÀNH CHO AI AGENT & DEVELOPER (MAINTENANCE & CONTRIBUTION GUIDE)
 
-> **Dành cho AI Agent:** Khi người dùng yêu cầu chỉnh sửa, cập nhật, bảo trì hoặc phát triển thêm tính năng cho dự án này, bạn **BẮT BUỘC** phải đọc và tuân thủ các quy tắc trong tài liệu này trước khi thực hiện bất kỳ thay đổi nào.
+> **Dành cho AI Agent:** Khi người dùng yêu cầu chỉnh sửa, cập nhật, bảo trì hoặc phát triển thêm tính năng cho dự án này, bạn **BẮT BUỘC** phải đọc và tuân thủ các quy tắc trong tài liệu này và sổ tay chi tiết [**README_AI.md**](README_AI.md) trước khi thực hiện bất kỳ thay đổi nào.
 
 ---
 
@@ -157,19 +157,27 @@ Nội dung...
 
 ## 5. QUY TRÌNH KIỂM THỬ BẮT BUỘC TRƯỚC KHI BÀN GIAO
 
-Mỗi khi AI Agent thực hiện thay đổi, **BẮT BUỘC** phải chạy 2 bước sau:
+Mỗi khi AI Agent thực hiện thay đổi, **BẮT BUỘC** phải chạy các bước sau:
 
-### Bước 1: Kiểm định tính toàn vẹn dữ liệu
+### Bước 1: Kiểm định tính toàn vẹn dữ liệu và cấu trúc trang chủ
 ```bash
-node scripts/validate-content.js
+python scripts/sync_home.py --check
 ```
-*Lệnh này kiểm tra tính duy nhất của ID, Slug, tính hợp lệ của Frontmatter và các trường bắt buộc.*
+*Lệnh này kiểm tra tính hợp lệ của schema, các sản phẩm nổi bật, trụ cột công nghệ và bài viết.*
 
-### Bước 2: Kiểm tra biên dịch tĩnh (Static Build Check)
+### Bước 2: Đồng bộ nội dung (nếu có chỉnh sửa trang chủ)
 ```bash
-npm run build
+python scripts/sync_home.py --apply
 ```
-*Lệnh này đảm bảo toàn bộ mã nguồn TypeScript, JSX, cấu hình SSG và 29+ trang tĩnh biên dịch 100% không có lỗi.*
+
+### Bước 3: Kiểm tra biên dịch tĩnh (Static Build Check)
+```bash
+# Trên Windows PowerShell, sử dụng npm.cmd:
+npm.cmd run build
+```
+*Lệnh này đảm bảo toàn bộ mã nguồn TypeScript, JSX, cấu hình SSG và 39+ trang tĩnh biên dịch 100% không có lỗi.*
+
+*(Xem chi tiết hơn tại [README_AI.md](README_AI.md))*
 
 ---
 
