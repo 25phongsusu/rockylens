@@ -8,11 +8,9 @@ import {
   Award,
   Layers,
   Sparkles,
-  Download,
   Phone,
   ArrowRight,
   CheckCircle,
-  FileText,
   Eye,
   SunMedium,
   Car,
@@ -108,9 +106,9 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
         {/* Top Product Overview Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          {/* 2. Hình ảnh sản phẩm (Left) */}
-          <div className="lg:col-span-5 space-y-4">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+          {/* Child 1: Hình ảnh sản phẩm (Left Top) */}
+          <div className="lg:col-span-5 lg:col-start-1 lg:row-start-1 space-y-4">
             <div className="relative aspect-square rounded-3xl bg-slate-50 border border-[var(--color-border)]/50 p-8 flex items-center justify-center overflow-hidden shadow-xs">
               {product.badge && (
                 <span className="absolute top-4 left-4 z-10 px-3 py-1 rounded-md text-xs font-bold tracking-wide uppercase button-primary">
@@ -153,40 +151,11 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
                 ))}
               </div>
             )}
-
-            {/* Quick B2B Direct Action Box - Light & Fresh Modern Theme */}
-            <div className="p-5 rounded-2xl section-background border border-[var(--color-border)]/60 shadow-sm space-y-3">
-              <div className="text-xs font-bold text-heading uppercase tracking-wider">
-                Kết Nối Đại Lý Kính Mắt &amp; Lab RX
-              </div>
-              <p className="text-xs text-[var(--color-muted)] leading-relaxed font-medium">
-                Đăng ký nhận bảng giá sỉ và danh mục phôi tròng kính Rocky Lens chính hãng.
-              </p>
-              <div className="flex gap-3 pt-1">
-                <a
-                  href={siteConfig.zalo.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-1 inline-flex items-center justify-center space-x-1.5 py-2.5 px-4 rounded-xl text-xs font-bold button-primary"
-                >
-                  <span>Nhắn Zalo Đại Lý</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </a>
-                <a
-                  href={`tel:${siteConfig.phones.hotline}`}
-                  className="inline-flex items-center justify-center py-2.5 px-3 rounded-xl text-xs font-semibold bg-white border border-[var(--color-border)] hover:border-[var(--color-primary)] text-heading hover:bg-[var(--site-bg-start)] transition-colors shadow-xs"
-                  title="Gọi Hotline B2B"
-                >
-                  <Phone className="w-3.5 h-3.5" />
-                </a>
-              </div>
-            </div>
           </div>
 
-          {/* Right Column: Information Hierarchy */}
-          <div className="lg:col-span-7 space-y-8">
+          {/* Child 2: Thông tin & Bộ chọn phân loại Shopee (Right Full) */}
+          <div className="lg:col-span-7 lg:col-start-6 lg:row-start-1 lg:row-span-2 space-y-6">
             <div>
-              {/* 3. Tên sản phẩm */}
               <div className="flex flex-wrap items-center gap-2 mb-3">
                 <div className="inline-block text-xs font-semibold uppercase tracking-wider text-[var(--color-primary)] bg-[var(--site-bg-middle)]/60 px-3 py-1 rounded-full border border-[var(--color-border)]/40">
                   Canada Opticians Official
@@ -211,7 +180,7 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
                 </p>
               ) : null}
 
-              {/* 4. Mô tả ngắn dễ hiểu */}
+              {/* Mô tả ngắn dễ hiểu */}
               <div className="mt-4 p-4 rounded-xl bg-[var(--site-bg-start)]/60 border border-[var(--color-border)]/50 text-xs sm:text-sm text-heading leading-relaxed">
                 {product.shortDescription}
               </div>
@@ -219,8 +188,11 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
 
             {/* Shopee-style Variant Selector & Pricing Box */}
             <ShopeeProductSelector product={product} />
+          </div>
 
-            {/* 5. Lợi ích và đặc điểm nổi bật (B2C) */}
+          {/* Child 3: Chi tiết Lợi ích, Đối tượng & Thông số kỹ thuật (Left Bottom - Bỏ qua bên trái) */}
+          <div className="lg:col-span-5 lg:col-start-1 lg:row-start-2 space-y-8">
+            {/* Lợi ích và đặc điểm nổi bật */}
             <div>
               <h2 className="text-lg font-bold text-heading mb-4 flex items-center space-x-2">
                 <Sparkles className="w-5 h-5 text-[var(--button-middle)]" />
@@ -249,7 +221,7 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
               </div>
             </div>
 
-            {/* 8. Đối tượng và nhu cầu sử dụng phù hợp */}
+            {/* Đối tượng và nhu cầu sử dụng phù hợp */}
             {product.targetAudience && product.targetAudience.length > 0 && (
               <div className="p-5 rounded-2xl bg-[var(--site-bg-middle)]/30 border border-[var(--color-border)]/50">
                 <h3 className="text-sm font-bold text-heading mb-3 flex items-center space-x-2">
@@ -267,7 +239,7 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
               </div>
             )}
 
-            {/* 7. Thông số kỹ thuật B2B */}
+            {/* Thông số kỹ thuật B2B */}
             <div>
               <h2 className="text-lg font-bold text-heading mb-4 flex items-center space-x-2">
                 <Layers className="w-5 h-5 text-[var(--color-primary)]" />
@@ -276,32 +248,33 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
               <ProductSpecifications specifications={product.specifications} />
             </div>
 
-            {/* 9. Tài liệu catalogue nếu có */}
-            {product.documents && product.documents.length > 0 && (
-              <div className="p-4 rounded-xl border border-[var(--color-border)]/50 bg-white flex items-center justify-between">
-                <div className="flex items-center space-x-3">
-                  <FileText className="w-5 h-5 text-[var(--color-primary)]" />
-                  <div>
-                    <div className="text-xs font-bold text-heading">
-                      {product.documents[0].title}
-                    </div>
-                    <div className="text-[11px] text-[var(--color-muted)]">
-                      Định dạng {product.documents[0].type} • {product.documents[0].size}
-                    </div>
-                  </div>
-                </div>
-
+            {/* Quick B2B Direct Action Box */}
+            <div className="p-5 rounded-2xl section-background border border-[var(--color-border)]/60 shadow-sm space-y-3">
+              <div className="text-xs font-bold text-heading uppercase tracking-wider">
+                Kết Nối Đại Lý Kính Mắt &amp; Lab RX
+              </div>
+              <p className="text-xs text-[var(--color-muted)] leading-relaxed font-medium">
+                Đăng ký nhận bảng giá sỉ và danh mục phôi tròng kính Rocky Lens chính hãng.
+              </p>
+              <div className="flex gap-3 pt-1">
                 <a
-                  href={product.documents[0].url}
+                  href={siteConfig.zalo.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center space-x-1 px-3 py-1.5 rounded-lg text-xs font-semibold button-primary"
+                  className="flex-1 inline-flex items-center justify-center space-x-1.5 py-2.5 px-4 rounded-xl text-xs font-bold button-primary"
                 >
-                  <Download className="w-3.5 h-3.5" />
-                  <span>Tải Về</span>
+                  <span>Nhắn Zalo Đại Lý</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </a>
+                <a
+                  href={`tel:${siteConfig.phones.hotline}`}
+                  className="inline-flex items-center justify-center py-2.5 px-3 rounded-xl text-xs font-semibold bg-white border border-[var(--color-border)] hover:border-[var(--color-primary)] text-heading hover:bg-[var(--site-bg-start)] transition-colors shadow-xs"
+                  title="Gọi Hotline B2B"
+                >
+                  <Phone className="w-3.5 h-3.5" />
                 </a>
               </div>
-            )}
+            </div>
           </div>
         </div>
 
