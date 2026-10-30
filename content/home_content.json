@@ -76,10 +76,10 @@
     ],
     "items": [
       {
-        "category": "DÂN VĂN PHÒNG & NĂNG ĐỘNG (2 TRONG 1)",
+        "category": "TIỆN LỢI TRONG NHÀ & RA NẮNG",
         "filter": "Làm việc",
-        "title": "Văn Phòng Hay Ra Nắng (Lọc Ánh Sáng Xanh + CÓ ĐỔI MÀU)",
-        "desc": "Trong phòng làm việc lọc ánh sáng xanh máy tính êm dịu mắt, khi ra nắng tròng tự động đổi màu râm chống chói và cản 100% tia UV tiện lợi 2 trong 1.",
+        "title": "Dành cho văn phòng hay ra ngoài nắng (Lọc ASX + Đổi màu)",
+        "desc": "Trong nhà lọc ánh sáng xanh máy tính êm dịu mắt, bước ra nắng tròng tự động đổi màu râm chống chói và cản 100% tia UV tiện lợi 2 trong 1.",
         "image": "/uploads/solutions/sol_doi_mau.png",
         "link": "/trong-kinh/rocky-trendy-photochromic-grey/",
         "productName": "Rocky Trendy Smart BlueCut Photo",
@@ -92,15 +92,15 @@
         "imageFit": "cover"
       },
       {
-        "category": "DÀNH CHO DESIGNER & ĐỒ HỌA MÁY TÍNH",
+        "category": "THIẾT BỊ SỐ & CHUẨN MÀU 100%",
         "filter": "Làm việc",
-        "title": "Ngồi Máy Tính Đồ Họa (Lọc Ánh Sáng Xanh - KHÔNG Đổi Màu)",
-        "desc": "Dành cho designer, lập trình viên: tròng trong suốt 99.8% chuẩn màu 100% không ngả vàng, lọc ánh sáng xanh tím có hại giúp giảm mỏi và khô rát mắt.",
+        "title": "Dành cho thiết kế đồ họa & ngồi máy tính (Trong suốt không ngả vàng)",
+        "desc": "Dành cho designer, lập trình viên: tròng trong suốt 99.8% chuẩn màu 100% không ngả vàng, lọc ánh sáng xanh tím có hại giúp giảm mỏi mắt.",
         "image": "/uploads/solutions/sol_chong_tia_uv.png",
         "link": "/trong-kinh/rocky-156-bluecut-shmc/",
         "productName": "Rocky BlueCut UV420 Pure Clear",
         "subTag": "Trong Suốt 99.8% & Chuẩn Màu 100%",
-        "keyFeature": "Lọc ánh sáng xanh màn hình, không ngả vàng, không đổi màu",
+        "keyFeature": "Lọc ánh sáng xanh màn hình, không ngả vàng, chuẩn màu đồ họa",
         "techProcess": "Phôi Monomer UV420 hấp thụ sâu khử tia bức xạ",
         "visionExperience": "Mắt êm dịu, không mỏi, hình ảnh chuẩn xác tuyệt đối",
         "indexOption": "1.56 | 1.60 | 1.67 | 1.74",
@@ -108,9 +108,9 @@
         "imageFit": "cover"
       },
       {
-        "category": "HOẠT ĐỘNG NGOÀI TRỜI & THỂ THAO",
+        "category": "BẢO VỆ MẮT NGOÀI TRỜI GẮT",
         "filter": "Ngoài trời",
-        "title": "Người Hoạt Động Ngoài Trời (Chống Tia UV400 / UV420 Tối Đa)",
+        "title": "Dành cho người hay hoạt động ngoài trời (Chống UV400 / UV420 tối đa)",
         "desc": "Ngăn chặn triệt để 100% tia cực tím độc hại UV400 và UV420, phòng ngừa thoái hóa điểm vàng, lớp phủ Nano Sapphire chống trầy xước và bám bụi.",
         "image": "/uploads/solutions/sol_chong_uv.png",
         "link": "/trong-kinh/rocky-167-ultra-thin-bluecut/",
@@ -124,9 +124,9 @@
         "imageFit": "cover"
       },
       {
-        "category": "DÀNH CHO TÀI XẾ & DI CHUYỂN ĐÊM",
+        "category": "LÁI XE ĐÊM & ĐI MƯA AN TOÀN",
         "filter": "Ngoài trời",
-        "title": "Lái Xe Ban Đêm & Đi Mưa (Chống Chói Đèn Pha LED)",
+        "title": "Dành cho tài xế & người hay lái xe ban đêm (Chống chói đèn pha LED)",
         "desc": "Triệt tiêu quầng sáng chói lóa từ đèn pha LED đối diện, tăng cường độ tương phản nhìn rõ biển báo và vạch đường ban đêm, trượt nước mưa tối đa.",
         "image": "/uploads/solutions/sol_kinh_lai_xe.png",
         "link": "/trong-kinh/rocky-driveshield-night-vision/",
@@ -140,10 +140,10 @@
         "imageFit": "cover"
       },
       {
-        "category": "NGƯỜI LỚN TUỔI & TRUNG NIÊN (40+)",
+        "category": "THỊ LỰC TOÀN DIỆN MỌI CỰ LY",
         "filter": "Làm việc",
-        "title": "Người Lớn Tuổi Nhìn Xa - Trung - Gần (Đa Tròng Liền Mạch)",
-        "desc": "Xóa bỏ ranh giới đường lằn hai tròng, chuyển tiếp mượt mà mọi cự ly: đọc sách báo, xem điện thoại, nhìn máy tính đến đi lại lái xe trong 1 cặp kính.",
+        "title": "Dành cho người lớn tuổi & lão thị (Đa tròng nhìn Xa - Trung - Gần)",
+        "desc": "Xóa bỏ đường lằn hai tròng, chuyển tiếp êm ái mọi cự ly: đọc sách báo, xem điện thoại, làm việc máy tính đến đi lại lái xe trong 1 cặp kính duy nhất.",
         "image": "/uploads/solutions/sol_da_trong.png",
         "link": "/trong-kinh/rocky-freeform-progressive-hd/",
         "productName": "CanRx Freeform HD Progressive",
@@ -156,9 +156,9 @@
         "imageFit": "cover"
       },
       {
-        "category": "TRẺ EM & HỌC SINH CẬN THỊ",
+        "category": "BẢO VỆ MẮT HỌC ĐƯỜNG",
         "filter": "Chuyên biệt",
-        "title": "Trẻ Em & Học Sinh (Kiểm Soát Tăng Độ Cận Học Đường)",
+        "title": "Dành cho trẻ em & học sinh cận thị (Kiểm soát tăng độ cận)",
         "desc": "Ứng dụng công nghệ vi thấu kính Defocus 360° làm chậm tốc độ tăng độ cận học đường đến 60%, giúp bảo vệ trục nhãn cầu và giữ gìn thị lực cho bé.",
         "image": "/uploads/solutions/sol_kiem_soat_can_thi.png",
         "link": "/trong-kinh/rocky-myocontrol-dims-kids/",
@@ -172,15 +172,15 @@
         "imageFit": "cover"
       },
       {
-        "category": "THỜI TRANG & PHONG CÁCH XU HƯỚNG",
+        "category": "PHONG CÁCH XU HƯỚNG CÁ TÍNH",
         "filter": "Ngoài trời",
-        "title": "Kính Cận Đổi Màu Thời Trang (Bộ Sưu Tập Màu Cá Tính)",
-        "desc": "Biến chiếc kính cận thành kính râm sành điệu với bộ sưu tập màu sắc xu hướng: Khói Titan, Trà Hổ Phách, Xanh Sapphire... đổi màu nhạy sáng khi ra nắng.",
+        "title": "Dành cho tín đồ thời trang (Kính cận đổi màu đa sắc cá tính)",
+        "desc": "Biến chiếc kính cận thành kính râm sành điệu với bộ sưu tập 7 sắc màu xu hướng: Khói Titan, Trà Hổ Phách, Xanh Sapphire... đổi màu nhạy sáng khi ra nắng.",
         "image": "/uploads/solutions/sol_thoi_trang_doi_mau.png",
         "link": "/trong-kinh/rocky-chameleon-photochromic/",
         "productName": "Rocky Trendy Style Photochromic",
         "subTag": "Bộ Sưu Tập Màu Đổi Thời Thượng",
-        "keyFeature": "Đổi màu nhanh nhạy theo cường độ tia UV, đa sắc phong cách",
+        "keyFeature": "Đổi màu nhanh nhạy theo tia UV, 7 sắc màu thời thượng",
         "techProcess": "Lớp phủ xoay ma trận màu Spin-Coat + Váng dầu SHMC",
         "visionExperience": "Thời trang cá tính, bảo vệ mắt chống chói lóa ngoài trời",
         "indexOption": "1.56 | 1.60 Trendy",
@@ -188,10 +188,10 @@
         "imageFit": "cover"
       },
       {
-        "category": "GỌNG KHOAN & KÍNH KHÔNG VIỀN",
+        "category": "CHUYÊN GỌNG KHOAN BẮT ỐC",
         "filter": "Chuyên biệt",
-        "title": "Gọng Khoan Bắt Ốc & Kính Không Viền (Chất Liệu Siêu Dai MR-8)",
-        "desc": "Chất liệu Mitsui MR-8 Nhật Bản siêu dẻo dai và chịu lực uốn đỉnh cao, bắt ốc khoan chắc chắn không lo rạn nứt mép kính, thanh thoát và sang trọng.",
+        "title": "Dành cho người đeo gọng khoan, không viền (Siêu dai MR-8 chống vỡ)",
+        "desc": "Chất liệu Mitsui MR-8 Nhật Bản siêu dẻo dai và chịu lực uốn đỉnh cao, khoan bắt ốc chắc chắn không lo rạn nứt mép kính, thanh thoát và sang trọng.",
         "image": "/uploads/solutions/sol_kinh_khoan_va_dap.png",
         "link": "/trong-kinh/rocky-160-mr8-aspheric/",
         "productName": "Rocky MR-8 Tough Rimless Drill",
@@ -204,15 +204,15 @@
         "imageFit": "cover"
       },
       {
-        "category": "CẬN VIỄN NẶNG & SIÊU MỎNG NHẸ",
+        "category": "CẬN NẶNG ĐỘ CAO (TRÊN -4.00)",
         "filter": "Chuyên biệt",
-        "title": "Độ Cận Viễn Nặng (Tròng Siêu Mỏng Chiết Suất 1.67 - 1.74)",
+        "title": "Dành cho người cận nặng độ cao (Tròng siêu mỏng nhẹ 1.67 - 1.74)",
         "desc": "Chiết suất cao 1.67 và 1.74 mỏng nhẹ hơn đến 45%, triệt tiêu độ dày đáy chai ở mép tròng, mắt nhìn tự nhiên không bị thu nhỏ khi lên gọng kính.",
         "image": "/uploads/solutions/sol_sieu_mong_do_cao.png",
         "link": "/trong-kinh/rocky-174-ultra-high-index/",
         "productName": "Rocky Ultra Thin 1.74 Aspheric",
         "subTag": "Mỏng Hơn Đến 45% & Triệt Tiêu Đáy Chai",
-        "keyFeature": "Chiết suất siêu mỏng 1.67 - 1.74, thiết kế phẳng phi cầu ASP",
+        "keyFeature": "Chiết suất siêu mỏng 1.67 - 1.74, triệt tiêu viền dày đáy chai",
         "techProcess": "Phôi Monomer chiết suất cao + Thiết kế quang học Aspheric",
         "visionExperience": "Đôi mắt tự nhiên không bị thu nhỏ, tròng nhẹ êm trên sống mũi",
         "indexOption": "1.67 | 1.74 Ultra Thin",
