@@ -294,9 +294,10 @@ const html = `<!DOCTYPE html>
       background: var(--gradient-button);
       color: #FFFFFF;
       font-weight: 700;
-      text-shadow: 0 1px 2px rgba(0, 59, 80, 0.7);
-      box-shadow: 0 4px 14px rgba(0, 162, 204, 0.32), inset 0 1px 1px rgba(255, 255, 255, 0.4);
-      border: 1px solid rgba(49, 127, 147, 0.35);
+      text-shadow: 0 1px 2px rgba(0, 59, 80, 0.4);
+      box-shadow: 0 4px 14px rgba(0, 162, 204, 0.28);
+      border: none;
+      outline: none;
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -339,8 +340,9 @@ const html = `<!DOCTYPE html>
       background: var(--gradient-b2b);
       color: #FFFFFF;
       font-weight: 700;
-      box-shadow: 0 4px 14px rgba(0, 59, 80, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.25);
-      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 4px 14px rgba(0, 59, 80, 0.3);
+      border: none;
+      outline: none;
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -385,8 +387,10 @@ const html = `<!DOCTYPE html>
       background: var(--gradient-button);
       color: #FFFFFF;
       border-radius: 9999px;
-      text-shadow: 0 1px 2px rgba(0, 59, 80, 0.7);
-      box-shadow: 0 4px 14px rgba(0, 162, 204, 0.32), inset 0 1px 1px rgba(255, 255, 255, 0.4);
+      border: none;
+      outline: none;
+      text-shadow: 0 1px 2px rgba(0, 59, 80, 0.4);
+      box-shadow: 0 4px 14px rgba(0, 162, 204, 0.28);
       transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
       display: inline-flex;
       align-items: center;
@@ -790,7 +794,7 @@ const html = `<!DOCTYPE html>
                 </div>
               </div>
               <div class="pt-3 mt-auto border-t border-slate-100 flex items-center h-12">
-                <a href="trong-kinh/rocky-156-bluecut-shmc/" class="w-full py-2 px-4 rounded-xl text-xs sm:text-sm font-bold text-white button-primary shadow-xs hover:shadow-md inline-flex items-center justify-center gap-1.5 opacity-0 group-hover:opacity-100 translate-y-1.5 group-hover:translate-y-0 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto">
+                <a href="trong-kinh/rocky-156-bluecut-shmc/" class="w-full py-2 px-4 rounded-xl text-xs sm:text-sm font-bold text-white button-primary border-0 inline-flex items-center justify-center gap-1.5 opacity-0 group-hover:opacity-100 translate-y-1.5 group-hover:translate-y-0 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto">
                   <span>Xem Giá</span>
                   <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
@@ -812,7 +816,7 @@ const html = `<!DOCTYPE html>
                 </div>
               </div>
               <div class="pt-3 mt-auto border-t border-slate-100 flex items-center h-12">
-                <a href="trong-kinh/rocky-trendy-photochromic-grey/" class="w-full py-2 px-4 rounded-xl text-xs sm:text-sm font-bold text-white button-primary shadow-xs hover:shadow-md inline-flex items-center justify-center gap-1.5 opacity-0 group-hover:opacity-100 translate-y-1.5 group-hover:translate-y-0 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto">
+                <a href="trong-kinh/rocky-trendy-photochromic-grey/" class="w-full py-2 px-4 rounded-xl text-xs sm:text-sm font-bold text-white button-primary border-0 inline-flex items-center justify-center gap-1.5 opacity-0 group-hover:opacity-100 translate-y-1.5 group-hover:translate-y-0 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto">
                   <span>Xem Giá</span>
                   <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
@@ -834,7 +838,7 @@ const html = `<!DOCTYPE html>
                 </div>
               </div>
               <div class="pt-3 mt-auto border-t border-slate-100 flex items-center h-12">
-                <a href="trong-kinh/rocky-167-ultra-thin-bluecut/" class="w-full py-2 px-4 rounded-xl text-xs sm:text-sm font-bold text-white button-primary shadow-xs hover:shadow-md inline-flex items-center justify-center gap-1.5 opacity-0 group-hover:opacity-100 translate-y-1.5 group-hover:translate-y-0 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto">
+                <a href="trong-kinh/rocky-167-ultra-thin-bluecut/" class="w-full py-2 px-4 rounded-xl text-xs sm:text-sm font-bold text-white button-primary border-0 inline-flex items-center justify-center gap-1.5 opacity-0 group-hover:opacity-100 translate-y-1.5 group-hover:translate-y-0 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto">
                   <span>Xem Giá</span>
                   <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
@@ -856,7 +860,7 @@ const html = `<!DOCTYPE html>
                 </div>
               </div>
               <div class="pt-3 mt-auto border-t border-slate-100 flex items-center h-12">
-                <a href="trong-kinh/rocky-driveshield-night-vision/" class="w-full py-2 px-4 rounded-xl text-xs sm:text-sm font-bold text-white button-primary shadow-xs hover:shadow-md inline-flex items-center justify-center gap-1.5 opacity-0 group-hover:opacity-100 translate-y-1.5 group-hover:translate-y-0 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto">
+                <a href="trong-kinh/rocky-driveshield-night-vision/" class="w-full py-2 px-4 rounded-xl text-xs sm:text-sm font-bold text-white button-primary border-0 inline-flex items-center justify-center gap-1.5 opacity-0 group-hover:opacity-100 translate-y-1.5 group-hover:translate-y-0 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto">
                   <span>Xem Giá</span>
                   <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
@@ -878,7 +882,7 @@ const html = `<!DOCTYPE html>
                 </div>
               </div>
               <div class="pt-3 mt-auto border-t border-slate-100 flex items-center h-12">
-                <a href="trong-kinh/rocky-freeform-progressive-hd/" class="w-full py-2 px-4 rounded-xl text-xs sm:text-sm font-bold text-white button-primary shadow-xs hover:shadow-md inline-flex items-center justify-center gap-1.5 opacity-0 group-hover:opacity-100 translate-y-1.5 group-hover:translate-y-0 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto">
+                <a href="trong-kinh/rocky-freeform-progressive-hd/" class="w-full py-2 px-4 rounded-xl text-xs sm:text-sm font-bold text-white button-primary border-0 inline-flex items-center justify-center gap-1.5 opacity-0 group-hover:opacity-100 translate-y-1.5 group-hover:translate-y-0 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto">
                   <span>Xem Giá</span>
                   <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
@@ -900,7 +904,7 @@ const html = `<!DOCTYPE html>
                 </div>
               </div>
               <div class="pt-3 mt-auto border-t border-slate-100 flex items-center h-12">
-                <a href="trong-kinh/rocky-myocontrol-dims-kids/" class="w-full py-2 px-4 rounded-xl text-xs sm:text-sm font-bold text-white button-primary shadow-xs hover:shadow-md inline-flex items-center justify-center gap-1.5 opacity-0 group-hover:opacity-100 translate-y-1.5 group-hover:translate-y-0 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto">
+                <a href="trong-kinh/rocky-myocontrol-dims-kids/" class="w-full py-2 px-4 rounded-xl text-xs sm:text-sm font-bold text-white button-primary border-0 inline-flex items-center justify-center gap-1.5 opacity-0 group-hover:opacity-100 translate-y-1.5 group-hover:translate-y-0 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto">
                   <span>Xem Giá</span>
                   <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
@@ -922,7 +926,7 @@ const html = `<!DOCTYPE html>
                 </div>
               </div>
               <div class="pt-3 mt-auto border-t border-slate-100 flex items-center h-12">
-                <a href="trong-kinh/rocky-chameleon-photochromic/" class="w-full py-2 px-4 rounded-xl text-xs sm:text-sm font-bold text-white button-primary shadow-xs hover:shadow-md inline-flex items-center justify-center gap-1.5 opacity-0 group-hover:opacity-100 translate-y-1.5 group-hover:translate-y-0 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto">
+                <a href="trong-kinh/rocky-chameleon-photochromic/" class="w-full py-2 px-4 rounded-xl text-xs sm:text-sm font-bold text-white button-primary border-0 inline-flex items-center justify-center gap-1.5 opacity-0 group-hover:opacity-100 translate-y-1.5 group-hover:translate-y-0 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto">
                   <span>Xem Giá</span>
                   <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
@@ -944,7 +948,7 @@ const html = `<!DOCTYPE html>
                 </div>
               </div>
               <div class="pt-3 mt-auto border-t border-slate-100 flex items-center h-12">
-                <a href="trong-kinh/rocky-160-mr8-aspheric/" class="w-full py-2 px-4 rounded-xl text-xs sm:text-sm font-bold text-white button-primary shadow-xs hover:shadow-md inline-flex items-center justify-center gap-1.5 opacity-0 group-hover:opacity-100 translate-y-1.5 group-hover:translate-y-0 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto">
+                <a href="trong-kinh/rocky-160-mr8-aspheric/" class="w-full py-2 px-4 rounded-xl text-xs sm:text-sm font-bold text-white button-primary border-0 inline-flex items-center justify-center gap-1.5 opacity-0 group-hover:opacity-100 translate-y-1.5 group-hover:translate-y-0 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto">
                   <span>Xem Giá</span>
                   <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
@@ -966,7 +970,7 @@ const html = `<!DOCTYPE html>
                 </div>
               </div>
               <div class="pt-3 mt-auto border-t border-slate-100 flex items-center h-12">
-                <a href="trong-kinh/rocky-174-ultra-high-index/" class="w-full py-2 px-4 rounded-xl text-xs sm:text-sm font-bold text-white button-primary shadow-xs hover:shadow-md inline-flex items-center justify-center gap-1.5 opacity-0 group-hover:opacity-100 translate-y-1.5 group-hover:translate-y-0 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto">
+                <a href="trong-kinh/rocky-174-ultra-high-index/" class="w-full py-2 px-4 rounded-xl text-xs sm:text-sm font-bold text-white button-primary border-0 inline-flex items-center justify-center gap-1.5 opacity-0 group-hover:opacity-100 translate-y-1.5 group-hover:translate-y-0 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto">
                   <span>Xem Giá</span>
                   <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>

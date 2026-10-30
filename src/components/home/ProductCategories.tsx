@@ -264,7 +264,7 @@ export default function ProductCategories() {
                 <div className="pt-3.5 mt-auto border-t border-slate-100 flex items-center h-12">
                   <Link
                     href={item.link}
-                    className="w-full py-2 px-4 rounded-xl text-xs sm:text-sm font-bold text-white button-primary shadow-xs hover:shadow-md inline-flex items-center justify-center gap-1.5 opacity-0 group-hover:opacity-100 translate-y-1.5 group-hover:translate-y-0 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto"
+                    className="w-full py-2 px-4 rounded-xl text-xs sm:text-sm font-bold text-white button-primary border-0 inline-flex items-center justify-center gap-1.5 opacity-0 group-hover:opacity-100 translate-y-1.5 group-hover:translate-y-0 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto"
                   >
                     <span>Xem Giá</span>
                     <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -279,7 +279,7 @@ export default function ProductCategories() {
         <div className="text-center pt-3">
           <Link
             href="/trong-kinh/"
-            className="button-primary inline-flex items-center gap-2 px-7 py-3 rounded-full text-xs sm:text-sm font-bold shadow-md hover:shadow-lg transition-all duration-300"
+            className="button-primary border-0 inline-flex items-center gap-2 px-7 py-3 rounded-full text-xs sm:text-sm font-bold transition-all duration-300"
           >
             <span>Xem thêm giải pháp tròng kính</span>
             <span>&rarr;</span>
