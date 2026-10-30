@@ -69,9 +69,14 @@ export default function ProductCard({ product }: ProductCardProps) {
 
         {/* Action Link (NO PRICE, NO CART) */}
         <div className="mt-5 pt-3.5 border-t border-slate-100 flex items-center justify-between shrink-0">
-          <span className="text-[11px] text-slate-400 font-medium">
-            Mã: {product.specifications.sku || 'RL-STD'}
-          </span>
+          <div className="flex flex-col">
+            <span className="text-[10px] text-slate-400 font-semibold uppercase tracking-wider">
+              {product.specifications.sku || 'Giá niêm yết'}
+            </span>
+            <span className="text-sm font-black text-rose-600">
+              {product.formattedPrice || '1.000.000 ₫'}
+            </span>
+          </div>
           <Link
             href={`/trong-kinh/${product.slug}/`}
             className="inline-flex items-center space-x-1 text-xs font-semibold text-primary group-hover:text-[var(--color-primary-hover)] transition-colors"

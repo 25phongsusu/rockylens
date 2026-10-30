@@ -65,6 +65,8 @@ export interface Product {
   documents?: ProductDocument[];
   relatedArticleIds: string[];
   relatedProductIds?: string[];
+  price?: number;
+  formattedPrice?: string;
   seo: ProductSEO;
 }
 

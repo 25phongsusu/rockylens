@@ -29,6 +29,7 @@ import ProductSpecifications from '@/components/products/ProductSpecifications';
 import ProductGrid from '@/components/products/ProductGrid';
 import RelatedArticles from '@/components/content/RelatedArticles';
 import ContactCTA from '@/components/shared/ContactCTA';
+import ShopeeProductSelector from '@/components/products/ShopeeProductSelector';
 import { constructMetadata } from '@/lib/seo/metadata';
 import { productSchema } from '@/lib/seo/structured-data';
 import { siteConfig } from '@/config/site';
@@ -215,6 +216,9 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
                 {product.shortDescription}
               </div>
             </div>
+
+            {/* Shopee-style Variant Selector & Pricing Box */}
+            <ShopeeProductSelector product={product} />
 
             {/* 5. Lợi ích và đặc điểm nổi bật (B2C) */}
             <div>
