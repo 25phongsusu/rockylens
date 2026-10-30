@@ -791,7 +791,7 @@ const html = `<!DOCTYPE html>
               </div>
               <div class="pt-3 mt-auto border-t border-slate-100 flex items-center">
                 <a href="trong-kinh/rocky-156-bluecut-shmc/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
-                  <span>Xem giải pháp</span>
+                  <span>Xem Giá</span>
                   <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
               </div>
@@ -813,7 +813,7 @@ const html = `<!DOCTYPE html>
               </div>
               <div class="pt-3 mt-auto border-t border-slate-100 flex items-center">
                 <a href="trong-kinh/rocky-trendy-photochromic-grey/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
-                  <span>Xem giải pháp</span>
+                  <span>Xem Giá</span>
                   <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
               </div>
@@ -835,7 +835,7 @@ const html = `<!DOCTYPE html>
               </div>
               <div class="pt-3 mt-auto border-t border-slate-100 flex items-center">
                 <a href="trong-kinh/rocky-167-ultra-thin-bluecut/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
-                  <span>Xem giải pháp</span>
+                  <span>Xem Giá</span>
                   <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
               </div>
@@ -857,7 +857,7 @@ const html = `<!DOCTYPE html>
               </div>
               <div class="pt-3 mt-auto border-t border-slate-100 flex items-center">
                 <a href="trong-kinh/rocky-driveshield-night-vision/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
-                  <span>Xem giải pháp</span>
+                  <span>Xem Giá</span>
                   <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
               </div>
@@ -879,7 +879,7 @@ const html = `<!DOCTYPE html>
               </div>
               <div class="pt-3 mt-auto border-t border-slate-100 flex items-center">
                 <a href="trong-kinh/rocky-freeform-progressive-hd/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
-                  <span>Xem giải pháp</span>
+                  <span>Xem Giá</span>
                   <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
               </div>
@@ -901,7 +901,7 @@ const html = `<!DOCTYPE html>
               </div>
               <div class="pt-3 mt-auto border-t border-slate-100 flex items-center">
                 <a href="trong-kinh/rocky-myocontrol-dims-kids/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
-                  <span>Xem giải pháp</span>
+                  <span>Xem Giá</span>
                   <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
               </div>
@@ -923,7 +923,7 @@ const html = `<!DOCTYPE html>
               </div>
               <div class="pt-3 mt-auto border-t border-slate-100 flex items-center">
                 <a href="trong-kinh/rocky-chameleon-photochromic/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
-                  <span>Xem giải pháp</span>
+                  <span>Xem Giá</span>
                   <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
               </div>
@@ -945,7 +945,7 @@ const html = `<!DOCTYPE html>
               </div>
               <div class="pt-3 mt-auto border-t border-slate-100 flex items-center">
                 <a href="trong-kinh/rocky-160-mr8-aspheric/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
-                  <span>Xem giải pháp</span>
+                  <span>Xem Giá</span>
                   <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
               </div>
@@ -967,7 +967,7 @@ const html = `<!DOCTYPE html>
               </div>
               <div class="pt-3 mt-auto border-t border-slate-100 flex items-center">
                 <a href="trong-kinh/rocky-174-ultra-high-index/" class="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all">
-                  <span>Xem giải pháp</span>
+                  <span>Xem Giá</span>
                   <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
               </div>

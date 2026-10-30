@@ -266,7 +266,7 @@ export default function ProductCategories() {
                     href={item.link}
                     className="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all"
                   >
-                    <span>Xem giải pháp</span>
+                    <span>Xem Giá</span>
                     <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </Link>
                 </div>
