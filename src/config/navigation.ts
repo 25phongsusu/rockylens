@@ -32,6 +32,10 @@ export const mainNavigation: NavItem[] = [
     href: '/blog/',
   },
   {
+    title: 'Sự Kiện',
+    href: '/su-kien/',
+  },
+  {
     title: 'Đối tác',
     href: '/danh-cho-doi-tac/',
   },
@@ -61,6 +65,7 @@ export const footerNavigation = {
   ],
   company: [
     { title: 'Về chúng tôi', href: '/ve-chung-toi/' },
+    { title: 'Sự kiện & Hoạt động', href: '/su-kien/' },
     { title: 'Dành cho đối tác B2B', href: '/danh-cho-doi-tac/' },
     { title: 'Hệ thống phân phối', href: '/lien-he/' },
     { title: 'Liên hệ hợp tác', href: '/lien-he/' },

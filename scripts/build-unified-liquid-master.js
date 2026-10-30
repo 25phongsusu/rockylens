@@ -577,6 +577,7 @@ const html = `<!DOCTYPE html>
         <a href="rx-lab/" class="hover:text-[var(--color-primary)] transition-colors">RX &amp; Lab</a>
         <a href="cong-nghe/" class="hover:text-[var(--color-primary)] transition-colors">Công Nghệ</a>
         <a href="blog/" class="hover:text-[var(--color-primary)] transition-colors">Blog</a>
+        <a href="su-kien/" class="hover:text-[var(--color-primary)] transition-colors">Sự Kiện</a>
         <a href="danh-cho-doi-tac/" class="hover:text-[var(--color-primary)] transition-colors">Đối tác</a>
       </nav>
 
