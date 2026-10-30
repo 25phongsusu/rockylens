@@ -261,10 +261,10 @@ export default function ProductCategories() {
                   </div>
                 </div>
 
-                <div className="pt-3.5 mt-auto border-t border-slate-100 flex items-center">
+                <div className="pt-3.5 mt-auto border-t border-slate-100 flex items-center h-12">
                   <Link
                     href={item.link}
-                    className="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-2 transition-all"
+                    className="w-full py-2 px-4 rounded-xl text-xs sm:text-sm font-bold text-white button-primary shadow-xs hover:shadow-md inline-flex items-center justify-center gap-1.5 opacity-0 group-hover:opacity-100 translate-y-1.5 group-hover:translate-y-0 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto"
                   >
                     <span>Xem Giá</span>
                     <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
