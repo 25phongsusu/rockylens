@@ -272,7 +272,7 @@ export default function HeroSection() {
             <div
               id="hero-lens-wrap"
               className={`relative z-10 w-full max-w-xs sm:max-w-sm lg:max-w-[380px] aspect-square flex items-center justify-center transition-all duration-700 ${
-                isBanner ? 'lg:-translate-x-10 lg:-translate-y-4.5 scale-[1.02]' : ''
+                isBanner ? 'lg:-translate-x-3 lg:-translate-y-2 scale-[1.02]' : ''
               }`}
             >
               
