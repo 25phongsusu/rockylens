@@ -299,14 +299,9 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
 
               {/* Bottom Action Footer (Anchored to bottom across all cards) */}
               <div className="mt-4 pt-3.5 border-t border-slate-100 flex items-center justify-between shrink-0">
-                <div className="flex flex-col">
-                  <span className="text-[10px] text-slate-400 font-semibold uppercase tracking-wider">
-                    {product.specifications.sku || 'Giá niêm yết'}
-                  </span>
-                  <span className="text-sm sm:text-base font-black text-rose-600">
-                    {product.formattedPrice || '1.000.000 ₫'}
-                  </span>
-                </div>
+                <span className="text-[11px] font-mono text-slate-400">
+                  {product.specifications.sku || 'RL-CAN'}
+                </span>
                 <Link
                   href={`/trong-kinh/${product.slug}/`}
                   className="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-1.5 transition-all"
