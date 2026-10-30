@@ -213,7 +213,7 @@ export default function HeroSection() {
             <div className="pt-3 flex flex-wrap items-center justify-center lg:justify-start gap-3.5">
               <Link
                 href="#trong-kinh"
-                className="liquid-btn-primary px-7 py-3.5 text-xs sm:text-sm font-bold shadow-md flex items-center space-x-2"
+                className="liquid-btn-primary px-7 py-3.5 text-xs sm:text-sm font-bold flex items-center space-x-2"
               >
                 <span>Tìm Tròng Kính Phù Hợp Với Bạn</span>
                 <ArrowRight className="w-4 h-4" />

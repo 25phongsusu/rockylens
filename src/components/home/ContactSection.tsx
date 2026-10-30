@@ -58,7 +58,7 @@ export default function ContactSection() {
               <button
                 type="button"
                 onClick={openB2BQuoteModal}
-                className="w-full inline-flex items-center justify-center space-x-2 py-3 px-5 rounded-full font-bold text-xs button-primary cursor-pointer shadow-xs"
+                className="w-full inline-flex items-center justify-center space-x-2 py-3 px-5 rounded-full font-bold text-xs button-primary cursor-pointer"
               >
                 <span>Nhận Báo Giá Cho Đại Lý</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
@@ -99,7 +99,7 @@ export default function ContactSection() {
               <button
                 type="button"
                 onClick={openB2BQuoteModal}
-                className="flex-1 py-3 px-4 rounded-full button-primary font-bold text-xs inline-flex items-center justify-center gap-2 cursor-pointer shadow-xs"
+                className="flex-1 py-3 px-4 rounded-full button-primary font-bold text-xs inline-flex items-center justify-center gap-2 cursor-pointer"
               >
                 <span>Nhận Báo Giá Cho Đại Lý</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />

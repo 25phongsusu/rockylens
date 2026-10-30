@@ -294,10 +294,14 @@ const html = `<!DOCTYPE html>
       background: var(--gradient-button);
       color: #FFFFFF;
       font-weight: 700;
-      text-shadow: 0 1px 2px rgba(0, 59, 80, 0.4);
-      box-shadow: 0 4px 14px rgba(0, 162, 204, 0.28);
-      border: none;
-      outline: none;
+      text-shadow: none !important;
+      border: none !important;
+      border-width: 0 !important;
+      outline: none !important;
+      --tw-ring-offset-shadow: 0 0 #0000 !important;
+      --tw-ring-shadow: 0 0 #0000 !important;
+      --tw-shadow: 0 0 #0000 !important;
+      box-shadow: 0 4px 14px rgba(0, 162, 204, 0.32) !important;
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -307,7 +311,8 @@ const html = `<!DOCTYPE html>
     .button-primary:hover {
       filter: brightness(1.08);
       transform: translateY(-1.5px);
-      box-shadow: 0 8px 22px rgba(0, 162, 204, 0.42);
+      --tw-shadow: 0 0 #0000 !important;
+      box-shadow: 0 8px 22px rgba(0, 162, 204, 0.42) !important;
     }
     .button-primary:active {
       transform: translateY(0);
@@ -340,14 +345,25 @@ const html = `<!DOCTYPE html>
       background: var(--gradient-b2b);
       color: #FFFFFF;
       font-weight: 700;
-      box-shadow: 0 4px 14px rgba(0, 59, 80, 0.3);
-      border: none;
-      outline: none;
+      border: none !important;
+      border-width: 0 !important;
+      outline: none !important;
+      text-shadow: none !important;
+      --tw-ring-offset-shadow: 0 0 #0000 !important;
+      --tw-ring-shadow: 0 0 #0000 !important;
+      --tw-shadow: 0 0 #0000 !important;
+      box-shadow: 0 4px 14px rgba(0, 59, 80, 0.35) !important;
       display: inline-flex;
       align-items: center;
       justify-content: center;
       transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
       cursor: pointer;
+    }
+    .button-b2b:hover {
+      filter: brightness(1.12);
+      transform: translateY(-1.5px);
+      --tw-shadow: 0 0 #0000 !important;
+      box-shadow: 0 8px 22px rgba(0, 59, 80, 0.45) !important;
     }
     .card-price-btn {
       display: inline-flex;
@@ -359,19 +375,35 @@ const html = `<!DOCTYPE html>
       font-weight: 700;
       color: var(--button-middle, #00A2CC);
       background: transparent;
-      border: 1px solid transparent;
-      outline: none;
+      border: none !important;
+      border-width: 0 !important;
+      outline: none !important;
+      text-shadow: none !important;
+      --tw-ring-offset-shadow: 0 0 #0000 !important;
+      --tw-ring-shadow: 0 0 #0000 !important;
+      --tw-shadow: 0 0 #0000 !important;
+      box-shadow: none !important;
       transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
       cursor: pointer;
       text-decoration: none;
     }
+    /* When card is hovered OR button is hovered, immediately show button! */
+    .group:hover .card-price-btn,
+    .product-sol-card:hover .card-price-btn,
     .card-price-btn:hover {
-      background: var(--gradient-button);
+      background: var(--gradient-button) !important;
       color: #FFFFFF !important;
-      border-color: transparent;
-      box-shadow: 0 4px 14px rgba(0, 162, 204, 0.28);
+      border: none !important;
+      border-width: 0 !important;
+      outline: none !important;
+      --tw-ring-offset-shadow: 0 0 #0000 !important;
+      --tw-ring-shadow: 0 0 #0000 !important;
+      --tw-shadow: 0 0 #0000 !important;
+      box-shadow: 0 4px 14px rgba(0, 162, 204, 0.32) !important;
       transform: translateY(-1.5px);
     }
+    .group:hover .card-price-btn svg,
+    .product-sol-card:hover .card-price-btn svg,
     .card-price-btn:hover svg {
       transform: translate(2px, -2px);
       color: #FFFFFF !important;
@@ -417,10 +449,14 @@ const html = `<!DOCTYPE html>
       background: var(--gradient-button);
       color: #FFFFFF;
       border-radius: 9999px;
-      border: none;
-      outline: none;
-      text-shadow: 0 1px 2px rgba(0, 59, 80, 0.4);
-      box-shadow: 0 4px 14px rgba(0, 162, 204, 0.28);
+      border: none !important;
+      border-width: 0 !important;
+      outline: none !important;
+      text-shadow: none !important;
+      --tw-ring-offset-shadow: 0 0 #0000 !important;
+      --tw-ring-shadow: 0 0 #0000 !important;
+      --tw-shadow: 0 0 #0000 !important;
+      box-shadow: 0 4px 14px rgba(0, 162, 204, 0.32) !important;
       transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
       display: inline-flex;
       align-items: center;
@@ -429,7 +465,8 @@ const html = `<!DOCTYPE html>
     .liquid-btn-primary:hover {
       filter: brightness(1.08);
       transform: translateY(-1px);
-      box-shadow: 0 8px 20px rgba(0, 162, 204, 0.42);
+      --tw-shadow: 0 0 #0000 !important;
+      box-shadow: 0 8px 20px rgba(0, 162, 204, 0.42) !important;
     }
     .liquid-btn-secondary {
       background: rgba(255, 255, 255, 0.92);
@@ -617,7 +654,7 @@ const html = `<!DOCTYPE html>
 
       <!-- Action Button: Open B2B Dealer Quote Modal -->
       <div class="flex items-center gap-3">
-        <button type="button" onclick="openB2BQuoteModal()" class="px-5 py-2.5 rounded-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold text-base transition-all text-center cursor-pointer shadow-xs hover:shadow-md active:scale-95">
+        <button type="button" onclick="openB2BQuoteModal()" class="button-primary px-5 py-2.5 rounded-full text-base active:scale-95">
           Nhận Báo Giá Đại Lý
         </button>
       </div>
@@ -720,7 +757,7 @@ const html = `<!DOCTYPE html>
 
             <!-- Dual CTAs: Tìm Tròng Kính Phù Hợp Với Bạn & Nhận Báo Giá Đại Lý -->
             <div class="pt-3 flex flex-wrap items-center justify-center lg:justify-start gap-3.5">
-              <a href="#trong-kinh" class="liquid-btn-primary px-7 py-3.5 text-xs sm:text-sm font-bold shadow-md flex items-center space-x-2">
+              <a href="#trong-kinh" class="liquid-btn-primary px-7 py-3.5 text-xs sm:text-sm font-bold flex items-center space-x-2">
                 <span>Tìm Tròng Kính Phù Hợp Với Bạn</span>
                 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
               </a>
@@ -1010,7 +1047,7 @@ const html = `<!DOCTYPE html>
         </div>
         <!-- Bottom CTA Button: Xem thêm -->
         <div class="text-center pt-3">
-          <a href="trong-kinh/" class="button-primary inline-flex items-center gap-2 px-7 py-3 rounded-full text-xs sm:text-sm font-bold shadow-md hover:shadow-lg transition-all duration-300">
+          <a href="trong-kinh/" class="button-primary inline-flex items-center gap-2 px-7 py-3 rounded-full text-xs sm:text-sm font-bold transition-all duration-300">
             <span>Xem thêm giải pháp tròng kính</span>
             <span>&rarr;</span>
           </a>

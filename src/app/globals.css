@@ -145,10 +145,14 @@ body {
   background: var(--gradient-button);
   color: #FFFFFF;
   font-weight: 700;
-  text-shadow: 0 1px 2px rgba(0, 59, 80, 0.4);
-  box-shadow: 0 4px 14px rgba(0, 162, 204, 0.28);
-  border: none;
-  outline: none;
+  text-shadow: none !important;
+  border: none !important;
+  border-width: 0 !important;
+  outline: none !important;
+  --tw-ring-offset-shadow: 0 0 #0000 !important;
+  --tw-ring-shadow: 0 0 #0000 !important;
+  --tw-shadow: 0 0 #0000 !important;
+  box-shadow: 0 4px 14px rgba(0, 162, 204, 0.32) !important;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -159,7 +163,8 @@ body {
 .button-primary:hover {
   filter: brightness(1.08);
   transform: translateY(-1.5px);
-  box-shadow: 0 8px 22px rgba(0, 162, 204, 0.4);
+  --tw-shadow: 0 0 #0000 !important;
+  box-shadow: 0 8px 22px rgba(0, 162, 204, 0.42) !important;
 }
 
 .button-primary:active {
@@ -221,9 +226,14 @@ body {
   background: var(--gradient-b2b);
   color: #FFFFFF;
   font-weight: 700;
-  box-shadow: 0 4px 14px rgba(0, 59, 80, 0.3);
-  border: none;
-  outline: none;
+  border: none !important;
+  border-width: 0 !important;
+  outline: none !important;
+  text-shadow: none !important;
+  --tw-ring-offset-shadow: 0 0 #0000 !important;
+  --tw-ring-shadow: 0 0 #0000 !important;
+  --tw-shadow: 0 0 #0000 !important;
+  box-shadow: 0 4px 14px rgba(0, 59, 80, 0.35) !important;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -234,10 +244,11 @@ body {
 .button-b2b:hover {
   filter: brightness(1.12);
   transform: translateY(-1.5px);
-  box-shadow: 0 8px 22px rgba(0, 59, 80, 0.42);
+  --tw-shadow: 0 0 #0000 !important;
+  box-shadow: 0 8px 22px rgba(0, 59, 80, 0.45) !important;
 }
 
-/* 8. Card Price Action Button (Text by default, button on hover) */
+/* 8. Card Price Action Button (Text by default, button on card or button hover) */
 .card-price-btn {
   display: inline-flex;
   align-items: center;
@@ -248,20 +259,37 @@ body {
   font-weight: 700;
   color: var(--button-middle, #00A2CC);
   background: transparent;
-  border: none;
-  outline: none;
+  border: none !important;
+  border-width: 0 !important;
+  outline: none !important;
+  text-shadow: none !important;
+  --tw-ring-offset-shadow: 0 0 #0000 !important;
+  --tw-ring-shadow: 0 0 #0000 !important;
+  --tw-shadow: 0 0 #0000 !important;
+  box-shadow: none !important;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   cursor: pointer;
   text-decoration: none;
 }
 
+/* When card is hovered OR button is hovered, immediately show button! */
+.group:hover .card-price-btn,
+.product-sol-card:hover .card-price-btn,
 .card-price-btn:hover {
-  background: var(--gradient-button);
+  background: var(--gradient-button) !important;
   color: #FFFFFF !important;
-  box-shadow: 0 4px 14px rgba(0, 162, 204, 0.28);
+  border: none !important;
+  border-width: 0 !important;
+  outline: none !important;
+  --tw-ring-offset-shadow: 0 0 #0000 !important;
+  --tw-ring-shadow: 0 0 #0000 !important;
+  --tw-shadow: 0 0 #0000 !important;
+  box-shadow: 0 4px 14px rgba(0, 162, 204, 0.32) !important;
   transform: translateY(-1.5px);
 }
 
+.group:hover .card-price-btn svg,
+.product-sol-card:hover .card-price-btn svg,
 .card-price-btn:hover svg {
   transform: translate(2px, -2px);
   color: #FFFFFF !important;

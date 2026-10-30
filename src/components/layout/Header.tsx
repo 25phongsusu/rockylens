@@ -89,7 +89,7 @@ export default function Header() {
             <button
               type="button"
               onClick={() => setIsB2BModalOpen(true)}
-              className="button-primary hidden sm:inline-block px-5 py-2.5 rounded-full text-base transition-all text-center cursor-pointer shadow-xs hover:shadow-md active:scale-95"
+              className="button-primary hidden sm:inline-block px-5 py-2.5 rounded-full text-base transition-all text-center cursor-pointer active:scale-95"
             >
               Nhận Báo Giá Đại Lý
             </button>
