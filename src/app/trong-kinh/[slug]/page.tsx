@@ -107,92 +107,55 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
         {/* Top Product Overview Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
-          {/* Child 1: Hình ảnh sản phẩm (Left Top) */}
-          <div className="lg:col-span-5 lg:col-start-1 lg:row-start-1 space-y-4">
-            <div className="relative aspect-square rounded-3xl bg-slate-50 border border-[var(--color-border)]/50 p-8 flex items-center justify-center overflow-hidden shadow-xs">
-              {product.badge && (
-                <span className="absolute top-4 left-4 z-10 px-3 py-1 rounded-md text-xs font-bold tracking-wide uppercase button-primary">
-                  {product.badge}
-                </span>
-              )}
-              {product.refractiveIndex && (
-                <span className="absolute top-4 right-4 z-10 px-2.5 py-1 rounded-md text-xs font-bold bg-[var(--b2b-end)] text-white shadow-xs">
-                  Index {product.refractiveIndex}
-                </span>
-              )}
-
-              <div className="relative w-full h-full flex items-center justify-center">
-                <Image
-                  src={product.featuredImage || product.images[0]}
-                  alt={product.name}
-                  fill
-                  priority
-                  className="object-contain p-4"
-                  sizes="(max-width: 1024px) 100vw, 500px"
-                />
-              </div>
-            </div>
-
-            {/* Gallery Thumbnails if multiple images */}
-            {product.images.length > 1 && (
-              <div className="flex gap-3">
-                {product.images.map((img, idx) => (
-                  <div
-                    key={idx}
-                    className="relative w-20 h-20 rounded-xl bg-slate-50 border border-[var(--color-border)]/50 overflow-hidden p-2"
-                  >
-                    <Image
-                      src={img}
-                      alt={`${product.name} góc ${idx + 1}`}
-                      fill
-                      className="object-contain p-1"
-                    />
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
-
-          {/* Child 2: Thông tin & Bộ chọn phân loại Shopee (Right Full) */}
-          <div className="lg:col-span-7 lg:col-start-6 lg:row-start-1 lg:row-span-2 space-y-6">
-            <div>
-              <div className="flex flex-wrap items-center gap-2 mb-3">
-                <div className="inline-block text-xs font-semibold uppercase tracking-wider text-[var(--color-primary)] bg-[var(--site-bg-middle)]/60 px-3 py-1 rounded-full border border-[var(--color-border)]/40">
-                  Canada Opticians Official
-                </div>
-                {product.consumerHeadline && (
-                  <div className="inline-block text-xs font-bold text-teal-800 bg-teal-50 px-3 py-1 rounded-full border border-teal-200">
-                    Phù hợp: {product.consumerHeadline}
-                  </div>
+          {/* CỘT TRÁI (Left Column: Hình ảnh + Lợi ích + Đối tượng + Thông số kỹ thuật) */}
+          <div className="lg:col-span-5 space-y-8">
+            {/* Hình ảnh sản phẩm & Thumbnails */}
+            <div className="space-y-4">
+              <div className="relative aspect-square rounded-3xl bg-slate-50 border border-[var(--color-border)]/50 p-8 flex items-center justify-center overflow-hidden shadow-xs">
+                {product.badge && (
+                  <span className="absolute top-4 left-4 z-10 px-3 py-1 rounded-md text-xs font-bold tracking-wide uppercase button-primary">
+                    {product.badge}
+                  </span>
                 )}
-              </div>
-              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-heading tracking-tight leading-tight">
-                {product.name}
-              </h1>
+                {product.refractiveIndex && (
+                  <span className="absolute top-4 right-4 z-10 px-2.5 py-1 rounded-md text-xs font-bold bg-[var(--b2b-end)] text-white shadow-xs">
+                    Index {product.refractiveIndex}
+                  </span>
+                )}
 
-              {product.materialSubtitle ? (
-                <p className="mt-2 text-sm sm:text-base font-medium text-slate-700">
-                  {product.materialSubtitle}
-                </p>
-              ) : product.tagline ? (
-                <p className="mt-2 text-sm sm:text-base font-medium text-[var(--color-muted)]">
-                  {product.tagline}
-                </p>
-              ) : null}
-
-              {/* Mô tả ngắn dễ hiểu */}
-              <div className="mt-4 p-4 rounded-xl bg-[var(--site-bg-start)]/60 border border-[var(--color-border)]/50 text-xs sm:text-sm text-heading leading-relaxed">
-                {product.shortDescription}
+                <div className="relative w-full h-full flex items-center justify-center">
+                  <Image
+                    src={product.featuredImage || product.images[0]}
+                    alt={product.name}
+                    fill
+                    priority
+                    className="object-contain p-4"
+                    sizes="(max-width: 1024px) 100vw, 500px"
+                  />
+                </div>
               </div>
+
+              {/* Gallery Thumbnails if multiple images */}
+              {product.images.length > 1 && (
+                <div className="flex gap-3">
+                  {product.images.map((img, idx) => (
+                    <div
+                      key={idx}
+                      className="relative w-20 h-20 rounded-xl bg-slate-50 border border-[var(--color-border)]/50 overflow-hidden p-2"
+                    >
+                      <Image
+                        src={img}
+                        alt={`${product.name} góc ${idx + 1}`}
+                        fill
+                        className="object-contain p-1"
+                      />
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
 
-            {/* Shopee-style Variant Selector & Pricing Box */}
-            <ShopeeProductSelector product={product} />
-          </div>
-
-          {/* Child 3: Chi tiết Lợi ích, Đối tượng & Thông số kỹ thuật (Left Bottom - Bỏ qua bên trái) */}
-          <div className="lg:col-span-5 lg:col-start-1 lg:row-start-2 space-y-8">
-            {/* Lợi ích và đặc điểm nổi bật */}
+            {/* Lợi ích và đặc điểm nổi bật (Nằm sát ngay dưới ảnh tròng kính) */}
             <div>
               <h2 className="text-lg font-bold text-heading mb-4 flex items-center space-x-2">
                 <Sparkles className="w-5 h-5 text-[var(--button-middle)]" />
@@ -275,6 +238,43 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
                 </a>
               </div>
             </div>
+          </div>
+
+          {/* CỘT PHẢI (Right Column: Tiêu đề + Bộ chọn phân loại Shopee) */}
+          <div className="lg:col-span-7 space-y-6">
+            <div>
+              <div className="flex flex-wrap items-center gap-2 mb-3">
+                <div className="inline-block text-xs font-semibold uppercase tracking-wider text-[var(--color-primary)] bg-[var(--site-bg-middle)]/60 px-3 py-1 rounded-full border border-[var(--color-border)]/40">
+                  Canada Opticians Official
+                </div>
+                {product.consumerHeadline && (
+                  <div className="inline-block text-xs font-bold text-teal-800 bg-teal-50 px-3 py-1 rounded-full border border-teal-200">
+                    Phù hợp: {product.consumerHeadline}
+                  </div>
+                )}
+              </div>
+              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-heading tracking-tight leading-tight">
+                {product.name}
+              </h1>
+
+              {product.materialSubtitle ? (
+                <p className="mt-2 text-sm sm:text-base font-medium text-slate-700">
+                  {product.materialSubtitle}
+                </p>
+              ) : product.tagline ? (
+                <p className="mt-2 text-sm sm:text-base font-medium text-[var(--color-muted)]">
+                  {product.tagline}
+                </p>
+              ) : null}
+
+              {/* Mô tả ngắn dễ hiểu */}
+              <div className="mt-4 p-4 rounded-xl bg-[var(--site-bg-start)]/60 border border-[var(--color-border)]/50 text-xs sm:text-sm text-heading leading-relaxed">
+                {product.shortDescription}
+              </div>
+            </div>
+
+            {/* Shopee-style Variant Selector & Pricing Box */}
+            <ShopeeProductSelector product={product} />
           </div>
         </div>
 
