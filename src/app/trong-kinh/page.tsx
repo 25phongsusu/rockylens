@@ -28,9 +28,9 @@ export default function ProductsPage() {
           </div>
 
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-heading">
-            Chọn Đúng Kính -{' '}
+            Chống Ánh Sáng Xanh{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--button-start)] via-[var(--button-middle)] to-[var(--button-end)]">
-              Đúng Nhu Cầu Thị Giác
+              Cùng Rocky
             </span>
           </h1>
 
