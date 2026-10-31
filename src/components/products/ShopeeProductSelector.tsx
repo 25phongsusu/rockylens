@@ -4,16 +4,8 @@ import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
 import {
   Check,
-  ShieldCheck,
-  Sparkles,
   Phone,
   MapPin,
-  Glasses,
-  Lightbulb,
-  Award,
-  Layers,
-  ChevronRight,
-  Info,
 } from 'lucide-react';
 import { Product } from '@/features/products/product-types';
 import {
@@ -138,17 +130,14 @@ export default function ShopeeProductSelector({ product }: ShopeeProductSelector
 
         {/* Cam kết tiêu chuẩn chất lượng */}
         <div className="text-xs space-y-1.5 text-slate-700 border-l border-slate-200/80 pl-4 hidden md:block">
-          <div className="flex items-center gap-2 font-semibold">
-            <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0" />
-            <span>Tiêu chuẩn y tế ISO 13485:2016</span>
+          <div className="font-semibold text-slate-700">
+            • Tiêu chuẩn y tế ISO 13485:2016
           </div>
-          <div className="flex items-center gap-2 font-semibold">
-            <Sparkles className="w-4 h-4 text-amber-500 shrink-0" />
-            <span>Bảo hành váng phủ 24 tháng chính hãng</span>
+          <div className="font-semibold text-slate-700">
+            • Bảo hành váng phủ 24 tháng chính hãng
           </div>
-          <div className="flex items-center gap-2 font-semibold">
-            <Glasses className="w-4 h-4 text-primary shrink-0" />
-            <span>Khắc laser ký hiệu chống hàng giả</span>
+          <div className="font-semibold text-slate-700">
+            • Khắc laser ký hiệu chống hàng giả
           </div>
         </div>
       </div>
@@ -167,15 +156,8 @@ export default function ShopeeProductSelector({ product }: ShopeeProductSelector
                 className="space-y-2.5 p-3.5 sm:p-4 rounded-xl bg-slate-50/80 border border-slate-200/90"
               >
                 <div className="flex items-center justify-between text-xs sm:text-sm">
-                  <span className="font-bold text-heading uppercase tracking-wide flex items-center gap-1.5">
-                    {group.type === 'color' ? (
-                      <Sparkles className="w-4 h-4 text-amber-500" />
-                    ) : group.type === 'add' ? (
-                      <Layers className="w-4 h-4 text-primary" />
-                    ) : (
-                      <Glasses className="w-4 h-4 text-primary" />
-                    )}
-                    <span>{group.label}</span>
+                  <span className="font-bold text-heading uppercase tracking-wide">
+                    {group.label}
                   </span>
                   <span
                     className="font-bold text-xs"
@@ -336,10 +318,7 @@ export default function ShopeeProductSelector({ product }: ShopeeProductSelector
 
         {/* Cam kết dịch vụ đại lý đối tác */}
         <div className="flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-2 px-1 pt-1">
-          <span className="flex items-center gap-1.5">
-            <Glasses className="w-4 h-4" style={{ color: theme.primaryColor }} />
-            <span>Đo khúc xạ thị lực &amp; cắt mài chuẩn tâm miễn phí tại hệ thống đại lý</span>
-          </span>
+          <span>Đo khúc xạ thị lực &amp; cắt mài chuẩn tâm miễn phí tại hệ thống đại lý</span>
           <span className="text-slate-400 font-medium hidden sm:inline">
             Phân phối bởi Clearly Vietnam Co., LTD
           </span>

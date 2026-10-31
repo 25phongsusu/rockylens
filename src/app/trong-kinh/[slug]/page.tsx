@@ -4,19 +4,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import {
-  ShieldCheck,
-  Award,
-  Layers,
-  Sparkles,
-  Phone,
-  ArrowRight,
-  CheckCircle,
-  Eye,
-  SunMedium,
-  Car,
-  Cpu,
-} from 'lucide-react';
-import {
   getAllProducts,
   getProductBySlug,
   getRelatedProducts,
@@ -59,17 +46,6 @@ export async function generateMetadata({
     keywords: product.seo.keywords,
   });
 }
-
-const benefitIconMap: Record<string, React.ReactNode> = {
-  ShieldCheck: <ShieldCheck className="w-5 h-5 text-[var(--color-primary)]" />,
-  Sparkles: <Sparkles className="w-5 h-5 text-[var(--button-middle)]" />,
-  Eye: <Eye className="w-5 h-5 text-[var(--color-primary)]" />,
-  Award: <Award className="w-5 h-5 text-[var(--button-middle)]" />,
-  Layers: <Layers className="w-5 h-5 text-[var(--color-primary)]" />,
-  SunMedium: <SunMedium className="w-5 h-5 text-[var(--button-middle)]" />,
-  Cpu: <Cpu className="w-5 h-5 text-[var(--color-primary)]" />,
-  Car: <Car className="w-5 h-5 text-[var(--color-primary)]" />,
-};
 
 export default async function ProductDetailPage({ params }: ProductDetailPageProps) {
   const { slug } = await params;
@@ -133,9 +109,8 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
 
             {/* Lợi ích và đặc điểm nổi bật (Nằm sát ngay dưới ảnh tròng kính) */}
             <div>
-              <h2 className="text-lg font-bold text-heading mb-4 flex items-center space-x-2">
-                <Sparkles className="w-5 h-5 text-[var(--button-middle)]" />
-                <span>Lợi Ích Và Đặc Điểm Nổi Bật</span>
+              <h2 className="text-lg font-bold text-heading mb-4">
+                Lợi Ích Và Đặc Điểm Nổi Bật
               </h2>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -144,14 +119,9 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
                     key={idx}
                     className="p-4 rounded-xl border border-[var(--color-border)]/50 bg-white shadow-2xs hover:border-[var(--color-primary)] transition-colors"
                   >
-                    <div className="flex items-center space-x-2.5 mb-2">
-                      <div className="w-8 h-8 rounded-lg bg-[var(--site-bg-middle)]/50 flex items-center justify-center">
-                        {benefitIconMap[benefit.icon || 'ShieldCheck']}
-                      </div>
-                      <h3 className="text-xs sm:text-sm font-bold text-heading">
-                        {benefit.title}
-                      </h3>
-                    </div>
+                    <h3 className="text-xs sm:text-sm font-bold text-heading mb-1.5">
+                      {benefit.title}
+                    </h3>
                     <p className="text-xs text-[var(--color-muted)] leading-relaxed">
                       {benefit.description}
                     </p>
@@ -163,9 +133,8 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
             {/* Đối tượng và nhu cầu sử dụng phù hợp */}
             {product.targetAudience && product.targetAudience.length > 0 && (
               <div className="p-5 rounded-2xl bg-[var(--site-bg-middle)]/30 border border-[var(--color-border)]/50">
-                <h3 className="text-sm font-bold text-heading mb-3 flex items-center space-x-2">
-                  <CheckCircle className="w-4 h-4 text-[var(--color-primary)]" />
-                  <span>Đối Tượng Phù Hợp Sử Dụng</span>
+                <h3 className="text-sm font-bold text-heading mb-3">
+                  Đối Tượng Phù Hợp Sử Dụng
                 </h3>
                 <ul className="space-y-2 text-xs text-[var(--color-muted)]">
                   {product.targetAudience.map((aud, idx) => (
@@ -180,9 +149,8 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
 
             {/* Thông số kỹ thuật chuẩn quang học */}
             <div>
-              <h2 className="text-lg font-bold text-heading mb-4 flex items-center space-x-2">
-                <Layers className="w-5 h-5 text-[var(--color-primary)]" />
-                <span>Thông Số Kỹ Thuật Chuẩn Quang Học Canada</span>
+              <h2 className="text-lg font-bold text-heading mb-4">
+                Thông Số Kỹ Thuật Chuẩn Quang Học Canada
               </h2>
               <ProductSpecifications specifications={product.specifications} />
             </div>
@@ -192,14 +160,12 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
           <div className="lg:col-span-7 space-y-6">
             <div>
               <div className="flex flex-wrap items-center gap-2 mb-3">
-                <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[var(--color-primary)] bg-[var(--site-bg-middle)]/60 px-3 py-1 rounded-full border border-[var(--color-border)]/40">
-                  <ShieldCheck className="w-3.5 h-3.5" />
-                  <span>Canada Opticians Official</span>
+                <div className="inline-block text-xs font-bold uppercase tracking-wider text-[var(--color-primary)] bg-[var(--site-bg-middle)]/60 px-3 py-1 rounded-full border border-[var(--color-border)]/40">
+                  Canada Opticians Official
                 </div>
                 {product.consumerHeadline && (
-                  <div className="inline-flex items-center gap-1.5 text-xs font-bold text-teal-800 bg-teal-50/90 px-3 py-1 rounded-full border border-teal-200/80 shadow-2xs">
-                    <Sparkles className="w-3.5 h-3.5 text-teal-600" />
-                    <span>Giải pháp: {product.consumerHeadline}</span>
+                  <div className="inline-block text-xs font-bold text-teal-800 bg-teal-50/90 px-3 py-1 rounded-full border border-teal-200/80 shadow-2xs">
+                    Giải pháp: {product.consumerHeadline}
                   </div>
                 )}
               </div>
@@ -228,15 +194,14 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
                   {theme.featureTags.map((tag) => (
                     <span
                       key={tag}
-                      className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1 rounded-lg border shadow-2xs"
+                      className="inline-block text-xs font-bold px-3 py-1 rounded-lg border shadow-2xs"
                       style={{
                         backgroundColor: theme.lightBgHex,
                         borderColor: `${theme.primaryColor}35`,
                         color: theme.accentTextHex || theme.primaryColor,
                       }}
                     >
-                      <Sparkles className="w-3 h-3 opacity-70" />
-                      <span>{tag}</span>
+                      {tag}
                     </span>
                   ))}
                 </div>
