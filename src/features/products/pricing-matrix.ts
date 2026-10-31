@@ -1367,6 +1367,7 @@ export interface FeatureTheme {
   accentTextHex: string; // Màu chữ nhấn
   priceGradient: string; // Nền giá
   colorDots?: { name: string; hex: string }[];
+  featureTags?: string[];
 }
 
 export const FEATURE_THEMES: Record<string, FeatureTheme> = {
@@ -1383,6 +1384,7 @@ export const FEATURE_THEMES: Record<string, FeatureTheme> = {
     lightBgHex: '#eaf6fa',
     accentTextHex: '#1d96b8',
     priceGradient: 'linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #ffffff 100%)',
+    featureTags: ['Công nghệ chống ASX', 'Thiết kế siêu phẳng ASP', 'Hạn chế chói cao cấp', 'Chống tia UV'],
   },
 
   // Trang 1: LỌC ÁNH SÁNG XANH THÔNG MINH (SHMC) -> Teal Green (#0c857d / #3bac9c)
@@ -1398,6 +1400,7 @@ export const FEATURE_THEMES: Record<string, FeatureTheme> = {
     lightBgHex: '#eaf7f5',
     accentTextHex: '#0c857d',
     priceGradient: 'linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 50%, #ffffff 100%)',
+    featureTags: ['Siêu mỏng', 'Lọc ASX thông minh', 'Hạn chế bám bẩn & vân tay', 'Hạn chế chói cao cấp', 'Chống tia UV'],
   },
 
   // Trang 2: ĐỔI MÀU TRENDY (SHMC) -> Mint Pastel Aqua (#91cbce / #1495a3) + 6 Màu Sắc
@@ -1421,6 +1424,7 @@ export const FEATURE_THEMES: Record<string, FeatureTheme> = {
       { name: 'Hồng', hex: '#ec4899' },
       { name: 'Tím', hex: '#9333ea' },
     ],
+    featureTags: ['Đổi màu siêu nhanh', 'BST 6 màu thời thượng', 'Chống tia UV', 'Hạn chế chói cao cấp'],
   },
 
   // Trang 2: ĐỔI MÀU SMART (SHMC) -> Deep Purple / Tím Mận (#543570 / #462465)
@@ -1441,6 +1445,7 @@ export const FEATURE_THEMES: Record<string, FeatureTheme> = {
       { name: 'Trà', hex: '#b45309' },
       { name: 'Nâu Amber', hex: '#d97706' },
     ],
+    featureTags: ['Tự đổi màu theo UV', 'Lọc ASX thông minh', 'Bản 1.61 MR-8 Nâu Amber', 'Chống tia UV', 'Hạn chế chói cao cấp'],
   },
 
   // Trang 2: ĐỔI MÀU EDITION (ASP) -> Sapphire Tech Navy (#2c5284 / #10477c)
@@ -1460,6 +1465,7 @@ export const FEATURE_THEMES: Record<string, FeatureTheme> = {
       { name: 'Khói', hex: '#64748b' },
       { name: 'Trà', hex: '#b45309' },
     ],
+    featureTags: ['Hạn chế trầy xước tốt', 'Lọc ASX thông minh', 'Đổi màu siêu nhanh', 'Chống tia UV', 'Hạn chế chói cao cấp'],
   },
 
   // Trang 3: CHỐNG TIA UV (SHMC) -> Amber Golden Orange (#eea232 / #d97706)
@@ -1475,6 +1481,7 @@ export const FEATURE_THEMES: Record<string, FeatureTheme> = {
     lightBgHex: '#fffbeb',
     accentTextHex: '#d97706',
     priceGradient: 'linear-gradient(135deg, #fffbeb 0%, #fef3c7 50%, #ffffff 100%)',
+    featureTags: ['Công nghệ ASX độc quyền', 'Thiết kế siêu phẳng ASP', 'Mỏng nhẹ 30-35%', 'Cứng gấp 5 lần', 'Chống tia UV400'],
   },
 
   // Trang 3: KÍNH KHOAN VÀ CHỐNG VA ĐẬP (SHMC) -> Steel Blue (#5a798c / #334155)
@@ -1490,6 +1497,7 @@ export const FEATURE_THEMES: Record<string, FeatureTheme> = {
     lightBgHex: '#f1f5f9',
     accentTextHex: '#334155',
     priceGradient: 'linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #ffffff 100%)',
+    featureTags: ['Vật liệu siêu bền MR-8', 'Tốt nhất kính khoan', 'Chống vỡ tuyệt đối', 'Hạn chế bám bẩn & vân tay'],
   },
 
   // Trang 3: DRIVESHIELD (SHMC) -> Midnight Driver Navy & Ruby AR (#2d426f / #be123c)
@@ -1505,6 +1513,7 @@ export const FEATURE_THEMES: Record<string, FeatureTheme> = {
     lightBgHex: '#f8fafc',
     accentTextHex: '#be123c',
     priceGradient: 'linear-gradient(135deg, #f8fafc 0%, #ffe4e6 50%, #ffffff 100%)',
+    featureTags: ['Ngăn ASX có hại', 'Lớp phủ Ruby Coating', 'Tăng độ sắc nét ban đêm', 'Hạn chế chói cao cấp', 'Chống tia UV'],
   },
 
   // Trang 4: HAI TRÒNG (SHMC) INVISIBLE -> Emerald Forest Green (#418d56 / #2d6c3e)
@@ -1520,6 +1529,7 @@ export const FEATURE_THEMES: Record<string, FeatureTheme> = {
     lightBgHex: '#f0fdf4',
     accentTextHex: '#2d6c3e',
     priceGradient: 'linear-gradient(135deg, #f0fdf4 0%, #dcfce7 50%, #ffffff 100%)',
+    featureTags: ['Không đường viền', 'Tối ưu hóa tầm nhìn', 'Đọc sách & Nhìn xa', 'Lọc và chống ASX', 'Chống tia UV'],
   },
 
   // Trang 4: ĐA TRÒNG (SHMC) -> Burgundy Crimson Wine Red (#a9372d / #8c261d)
@@ -1535,6 +1545,7 @@ export const FEATURE_THEMES: Record<string, FeatureTheme> = {
     lightBgHex: '#fef2f2',
     accentTextHex: '#8c261d',
     priceGradient: 'linear-gradient(135deg, #fef2f2 0%, #fee2e2 50%, #ffffff 100%)',
+    featureTags: ['Công nghệ Freeform 4K', 'Tầm nhìn xa - trung - gần', 'Dễ sử dụng', 'Mỏng đến 20%', 'Dễ vệ sinh'],
   },
 
   // Trang 4: MYOPIA CONTROL (SHMC) -> Pediatric Ocean Sky Blue (#699ebb / #21729b)
@@ -1550,6 +1561,7 @@ export const FEATURE_THEMES: Record<string, FeatureTheme> = {
     lightBgHex: '#f0f9ff',
     accentTextHex: '#21729b',
     priceGradient: 'linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #ffffff 100%)',
+    featureTags: ['Vi thấu kính D.I.M.S', 'Kiểm soát gia tăng độ cận', 'Chống bể Polycarbonate', 'Dễ vệ sinh', 'Chống tia UV'],
   },
 
   // 9 sản phẩm nhu cầu trang chủ (Home Solutions)
@@ -1565,6 +1577,7 @@ export const FEATURE_THEMES: Record<string, FeatureTheme> = {
     lightBgHex: '#eaf6fa',
     accentTextHex: '#1d96b8',
     priceGradient: 'linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #ffffff 100%)',
+    featureTags: ['Trong suốt 99.8%', 'Chuẩn màu 100%', 'Không ngả vàng', 'Lọc ASX UV420'],
   },
   'rocky-trendy-photochromic-grey': {
     slug: 'rocky-trendy-photochromic-grey',
@@ -1582,6 +1595,7 @@ export const FEATURE_THEMES: Record<string, FeatureTheme> = {
       { name: 'Khói Titan', hex: '#64748b' },
       { name: 'Trà Hổ Phách', hex: '#b45309' },
     ],
+    featureTags: ['Đổi màu 2-in-1', 'Tiện lợi văn phòng & ra nắng', 'Cản 100% tia UV', 'Lọc ASX máy tính'],
   },
   'rocky-167-ultra-thin-bluecut': {
     slug: 'rocky-167-ultra-thin-bluecut',
@@ -1595,6 +1609,7 @@ export const FEATURE_THEMES: Record<string, FeatureTheme> = {
     lightBgHex: '#fffbeb',
     accentTextHex: '#d97706',
     priceGradient: 'linear-gradient(135deg, #fffbeb 0%, #fef3c7 50%, #ffffff 100%)',
+    featureTags: ['Mỏng nhẹ 35%', 'Cận nặng thẩm mỹ', 'Lọc ASX UV420', 'Thiết kế siêu phẳng ASP'],
   },
   'rocky-driveshield-night-vision': {
     slug: 'rocky-driveshield-night-vision',
@@ -1608,6 +1623,7 @@ export const FEATURE_THEMES: Record<string, FeatureTheme> = {
     lightBgHex: '#f8fafc',
     accentTextHex: '#be123c',
     priceGradient: 'linear-gradient(135deg, #f8fafc 0%, #ffe4e6 50%, #ffffff 100%)',
+    featureTags: ['Tài xế lái xe ban đêm', 'Giảm lóa đèn LED', 'Ruby AR Multi-Matrix', 'Tăng độ tương phản'],
   },
   'rocky-freeform-progressive-hd': {
     slug: 'rocky-freeform-progressive-hd',
@@ -1621,6 +1637,7 @@ export const FEATURE_THEMES: Record<string, FeatureTheme> = {
     lightBgHex: '#fef2f2',
     accentTextHex: '#8c261d',
     priceGradient: 'linear-gradient(135deg, #fef2f2 0%, #fee2e2 50%, #ffffff 100%)',
+    featureTags: ['Người lớn tuổi (40+)', 'Xa - trung - gần liền mạch', 'Freeform HD kỹ thuật số', 'Không gợn sóng'],
   },
   'rocky-myocontrol-dims-kids': {
     slug: 'rocky-myocontrol-dims-kids',
@@ -1634,6 +1651,7 @@ export const FEATURE_THEMES: Record<string, FeatureTheme> = {
     lightBgHex: '#f0f9ff',
     accentTextHex: '#21729b',
     priceGradient: 'linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #ffffff 100%)',
+    featureTags: ['Trẻ em học đường', 'Kiểm soát cận thị tiến triển', '1164 Vi thấu kính D.I.M.S', 'Chống va đập an toàn'],
   },
   'rocky-chameleon-photochromic': {
     slug: 'rocky-chameleon-photochromic',
@@ -1655,6 +1673,7 @@ export const FEATURE_THEMES: Record<string, FeatureTheme> = {
       { name: 'Hồng', hex: '#ec4899' },
       { name: 'Tím', hex: '#9333ea' },
     ],
+    featureTags: ['BST 6 Sắc màu cá tính', 'Kính râm đổi màu siêu nhanh', 'Thời trang phong cách', 'Chống 100% UV'],
   },
   'rocky-160-mr8-aspheric': {
     slug: 'rocky-160-mr8-aspheric',
@@ -1668,6 +1687,7 @@ export const FEATURE_THEMES: Record<string, FeatureTheme> = {
     lightBgHex: '#f1f5f9',
     accentTextHex: '#334155',
     priceGradient: 'linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #ffffff 100%)',
+    featureTags: ['Gọng khoan bắt ốc', 'Monomer Mitsui MR-8', 'Siêu dai chống nứt vỡ', 'Độ truyền quang 99.8%'],
   },
   'rocky-174-ultra-high-index': {
     slug: 'rocky-174-ultra-high-index',
@@ -1681,6 +1701,7 @@ export const FEATURE_THEMES: Record<string, FeatureTheme> = {
     lightBgHex: '#eef4fa',
     accentTextHex: '#10477c',
     priceGradient: 'linear-gradient(135deg, #eff6ff 0%, #dbeafe 50%, #ffffff 100%)',
+    featureTags: ['Cận rất nặng (-10D đến -15D)', 'Chiết suất 1.74 siêu mỏng', 'Nhẹ hơn 45%', 'Thẩm mỹ mép kính phẳng'],
   },
 };
 

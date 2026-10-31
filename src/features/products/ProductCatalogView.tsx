@@ -307,15 +307,15 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
                   boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
                 }}
               >
-                {/* 1. Header Banner màu sắc Y CHANG BẢNG BÁO GIÁ */}
+                {/* 1. Header Banner màu sắc Y CHANG BẢNG BÁO GIÁ (Bỏ hoàn toàn số trang) */}
                 <div
                   className="px-4 py-2.5 text-white flex items-center justify-between text-xs font-bold tracking-wider uppercase shadow-xs shrink-0"
                   style={{ background: theme.bannerGradient }}
                 >
                   <span className="truncate drop-shadow-xs">{theme.pdfSectionTitle}</span>
 
-                  {theme.colorDots && theme.colorDots.length > 0 ? (
-                    <div className="flex items-center gap-1 shrink-0 ml-2 bg-black/20 px-2 py-0.5 rounded-full backdrop-blur-xs">
+                  {theme.colorDots && theme.colorDots.length > 0 && (
+                    <div className="flex items-center gap-1 shrink-0 ml-2 bg-black/25 px-2 py-0.5 rounded-full backdrop-blur-xs">
                       {theme.colorDots.map((dot) => (
                         <span
                           key={dot.name}
@@ -324,11 +324,10 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
                           title={dot.name}
                         />
                       ))}
+                      <span className="text-[10px] font-bold text-white/95 ml-1">
+                        {theme.colorDots.length} Màu
+                      </span>
                     </div>
-                  ) : (
-                    <span className="text-[10px] font-semibold bg-white/20 px-2 py-0.5 rounded-full shrink-0 ml-2">
-                      Trang {theme.pdfPage} Bảng giá
-                    </span>
                   )}
                 </div>
 
@@ -377,6 +376,26 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
                       {product.consumerHeadline || product.name}
                     </Link>
                   </h3>
+
+                  {/* Small Feature Tags (Mấy cái tag nhỏ tính năng nổi bật) */}
+                  {theme.featureTags && theme.featureTags.length > 0 && (
+                    <div className="flex flex-wrap gap-1.5 my-2">
+                      {theme.featureTags.map((tag) => (
+                        <span
+                          key={tag}
+                          className="inline-flex items-center gap-1 text-[11px] font-semibold px-2 py-0.5 rounded-md border shadow-2xs"
+                          style={{
+                            backgroundColor: theme.lightBgHex,
+                            borderColor: `${theme.primaryColor}30`,
+                            color: theme.accentTextHex || theme.primaryColor,
+                          }}
+                        >
+                          <Sparkles className="w-2.5 h-2.5 shrink-0 opacity-70" />
+                          <span>{tag}</span>
+                        </span>
+                      ))}
+                    </div>
+                  )}
 
                   {/* Clear Consumer Problem & Solution Text */}
                   <p className="mt-1 h-12 text-xs sm:text-sm text-brand-muted line-clamp-2 leading-relaxed">

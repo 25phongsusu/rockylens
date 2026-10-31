@@ -28,6 +28,7 @@ import ProductGrid from '@/components/products/ProductGrid';
 import RelatedArticles from '@/components/content/RelatedArticles';
 import ContactCTA from '@/components/shared/ContactCTA';
 import ShopeeProductSelector from '@/components/products/ShopeeProductSelector';
+import { getProductTheme } from '@/features/products/pricing-matrix';
 import { constructMetadata } from '@/lib/seo/metadata';
 import { productSchema } from '@/lib/seo/structured-data';
 import { siteConfig } from '@/config/site';
@@ -81,6 +82,7 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
     notFound();
   }
 
+  const theme = getProductTheme(product.slug);
   const relatedProducts = getRelatedProducts(product, 3);
   const allArticles = getAllArticles();
   const relatedArticles = allArticles.filter((art) =>
@@ -271,6 +273,26 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
               <div className="mt-4 p-4 rounded-xl bg-[var(--site-bg-start)]/60 border border-[var(--color-border)]/50 text-xs sm:text-sm text-heading leading-relaxed">
                 {product.shortDescription}
               </div>
+
+              {/* Tag nhỏ tính năng nổi bật theo Bảng giá */}
+              {theme.featureTags && theme.featureTags.length > 0 && (
+                <div className="flex flex-wrap gap-2 mt-4">
+                  {theme.featureTags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1 rounded-lg border shadow-2xs"
+                      style={{
+                        backgroundColor: theme.lightBgHex,
+                        borderColor: `${theme.primaryColor}35`,
+                        color: theme.accentTextHex || theme.primaryColor,
+                      }}
+                    >
+                      <Sparkles className="w-3 h-3 opacity-70" />
+                      <span>{tag}</span>
+                    </span>
+                  ))}
+                </div>
+              )}
             </div>
 
             {/* Shopee-style Variant Selector & Pricing Box */}
