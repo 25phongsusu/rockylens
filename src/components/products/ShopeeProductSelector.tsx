@@ -16,14 +16,36 @@ import {
   Info,
 } from 'lucide-react';
 import { Product } from '@/features/products/product-types';
-import { getProductPricingConfig, ProductPricingSchema } from '@/features/products/pricing-matrix';
+import {
+  getProductPricingConfig,
+  getProductTheme,
+  ProductPricingSchema,
+  FeatureTheme,
+} from '@/features/products/pricing-matrix';
 import { siteConfig } from '@/config/site';
 
 interface ShopeeProductSelectorProps {
   product: Product;
 }
 
+// Bảng màu cho các tùy chọn đổi màu thị giác
+const COLOR_SWATCH_MAP: Record<string, string> = {
+  khoi: '#71717a',
+  tra: '#b45309',
+  xanh_duong: '#2563eb',
+  xanh_la: '#16a34a',
+  hong: '#ec4899',
+  tim: '#9333ea',
+  amber: '#d97706',
+  grey: '#71717a',
+  brown: '#b45309',
+};
+
 export default function ShopeeProductSelector({ product }: ShopeeProductSelectorProps) {
+  const theme: FeatureTheme = useMemo(() => {
+    return getProductTheme(product.slug);
+  }, [product.slug]);
+
   const pricingConfig: ProductPricingSchema | null = useMemo(() => {
     return getProductPricingConfig(product.slug);
   }, [product.slug]);
@@ -68,7 +90,7 @@ export default function ShopeeProductSelector({ product }: ShopeeProductSelector
     };
   }, [pricingConfig, selected, product]);
 
-  // Tính giá gốc giả định (+20%) để hiển thị ưu đãi niêm yết
+  // Tính giá gốc giả định (+25%) để hiển thị ưu đãi niêm yết
   const originalPriceFormatted = useMemo(() => {
     const raw = Math.round((pricingResult.price * 1.25) / 10000) * 10000;
     return `${raw.toLocaleString('vi-VN')} ₫`;
@@ -77,24 +99,37 @@ export default function ShopeeProductSelector({ product }: ShopeeProductSelector
   return (
     <div className="rounded-2xl border-2 border-slate-200/90 bg-white p-4 sm:p-6 shadow-sm space-y-6 my-6">
       {/* ========================================================
-          1. BẢNG GIÁ BÁN LẺ NIÊM YẾT CHÍNH HÃNG (GIÁ LẺ DUY NHẤT)
+          1. BẢNG GIÁ BÁN LẺ NIÊM YẾT CHÍNH HÃNG (THEO MÀU Y CHANG BẢNG GIÁ)
           ======================================================== */}
-      <div className="p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-rose-50/95 via-amber-50/50 to-slate-50 border border-rose-200/80 flex flex-wrap items-center justify-between gap-4">
+      <div
+        className="p-4 sm:p-5 rounded-2xl border flex flex-wrap items-center justify-between gap-4 transition-all"
+        style={{
+          background: theme.priceGradient,
+          borderColor: `${theme.primaryColor}35`,
+          boxShadow: `0 4px 20px ${theme.primaryColor}12`,
+        }}
+      >
         <div>
           <div className="flex items-center gap-2 mb-1.5">
-            <span className="text-[11px] font-black uppercase tracking-wider text-rose-700 bg-rose-200/70 px-2.5 py-0.5 rounded-md">
+            <span
+              className="text-[11px] font-black uppercase tracking-wider text-white px-2.5 py-0.5 rounded-md shadow-2xs"
+              style={{ backgroundColor: theme.primaryColor }}
+            >
               GIÁ BÁN LẺ NIÊM YẾT
             </span>
             <span className="text-xs font-semibold text-slate-400 line-through">
               {originalPriceFormatted}
             </span>
-            <span className="text-[11px] font-bold text-rose-700 bg-white px-1.5 py-0.2 rounded border border-rose-200 shadow-2xs">
+            <span className="text-[11px] font-bold text-slate-700 bg-white px-1.5 py-0.2 rounded border border-slate-200 shadow-2xs">
               -20% Ưu đãi hãng
             </span>
           </div>
 
           <div className="flex items-baseline gap-2.5">
-            <span className="text-3xl sm:text-4xl font-black text-rose-600 tracking-tight">
+            <span
+              className="text-3xl sm:text-4xl font-black tracking-tight"
+              style={{ color: theme.primaryColor }}
+            >
               {pricingResult.formattedPrice}
             </span>
             <span className="text-xs font-semibold text-slate-600">
@@ -103,13 +138,18 @@ export default function ShopeeProductSelector({ product }: ShopeeProductSelector
           </div>
 
           <div className="text-[11px] text-slate-500 mt-1 flex items-center gap-1.5">
-            <span className="inline-block w-2 h-2 rounded-full bg-emerald-500" />
-            <span>Phân phối chính hãng Canada Opticians • Áp dụng giá lẻ toàn quốc</span>
+            <span
+              className="inline-block w-2 h-2 rounded-full"
+              style={{ backgroundColor: theme.primaryColor }}
+            />
+            <span>
+              {theme.pdfSectionTitle} • Phân phối chính hãng Canada Opticians
+            </span>
           </div>
         </div>
 
         {/* Cam kết tiêu chuẩn chất lượng */}
-        <div className="text-xs space-y-1.5 text-slate-700 border-l border-rose-200/80 pl-4 hidden md:block">
+        <div className="text-xs space-y-1.5 text-slate-700 border-l border-slate-200/80 pl-4 hidden md:block">
           <div className="flex items-center gap-2 font-semibold">
             <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0" />
             <span>Tiêu chuẩn y tế ISO 13485:2016</span>
@@ -126,11 +166,11 @@ export default function ShopeeProductSelector({ product }: ShopeeProductSelector
       </div>
 
       {/* ========================================================
-          2. CÁC NHÓM TÙY CHỌN CHI TIẾT (THEO FILE BẢNG GIÁ LẺ HOẶC THEO NHU CẦU)
+          2. CÁC NHÓM TÙY CHỌN CHI TIẾT
           ======================================================== */}
       {pricingConfig ? (
         <div className="space-y-5">
-          {pricingConfig.selectorGroups.map((group, groupIdx) => {
+          {pricingConfig.selectorGroups.map((group) => {
             const currentSelectedOptionId = selected[group.id] || group.options[0]?.id;
 
             return (
@@ -149,7 +189,10 @@ export default function ShopeeProductSelector({ product }: ShopeeProductSelector
                     )}
                     <span>{group.label}</span>
                   </span>
-                  <span className="text-primary font-bold text-xs">
+                  <span
+                    className="font-bold text-xs"
+                    style={{ color: theme.primaryColor }}
+                  >
                     {group.options.find((o) => o.id === currentSelectedOptionId)?.label}
                   </span>
                 </div>
@@ -166,6 +209,7 @@ export default function ShopeeProductSelector({ product }: ShopeeProductSelector
                 >
                   {group.options.map((opt) => {
                     const isSelected = currentSelectedOptionId === opt.id;
+                    const swatchColor = COLOR_SWATCH_MAP[opt.id];
 
                     return (
                       <button
@@ -174,20 +218,42 @@ export default function ShopeeProductSelector({ product }: ShopeeProductSelector
                         onClick={() => handleSelectOption(group.id, opt.id)}
                         className={`p-3 rounded-xl border text-left transition-all cursor-pointer relative flex flex-col justify-between ${
                           isSelected
-                            ? 'border-rose-500 bg-rose-50/90 text-rose-950 shadow-xs ring-2 ring-rose-500/20'
+                            ? 'shadow-xs ring-2'
                             : 'border-slate-200 bg-white hover:bg-slate-100/80 text-slate-800 shadow-2xs'
                         }`}
+                        style={
+                          isSelected
+                            ? {
+                                borderColor: theme.primaryColor,
+                                backgroundColor: `${theme.primaryColor}0d`,
+                                outlineColor: `${theme.primaryColor}30`,
+                              }
+                            : {}
+                        }
                       >
-                        <div className="flex items-start justify-between gap-1 w-full">
-                          <span
-                            className={`text-xs sm:text-sm font-bold leading-snug ${
-                              isSelected ? 'text-rose-700' : 'text-slate-900'
-                            }`}
-                          >
-                            {opt.label}
-                          </span>
+                        <div className="flex items-start justify-between gap-1.5 w-full">
+                          <div className="flex items-center gap-2">
+                            {swatchColor && (
+                              <span
+                                className="w-3.5 h-3.5 rounded-full shrink-0 border border-slate-300 shadow-2xs"
+                                style={{ backgroundColor: swatchColor }}
+                              />
+                            )}
+                            <span
+                              className={`text-xs sm:text-sm font-bold leading-snug ${
+                                isSelected ? 'font-black' : 'text-slate-900'
+                              }`}
+                              style={isSelected ? { color: theme.primaryColor } : {}}
+                            >
+                              {opt.label}
+                            </span>
+                          </div>
+
                           {isSelected && (
-                            <div className="w-4 h-4 rounded-full bg-rose-600 text-white flex items-center justify-center shrink-0 mt-0.5">
+                            <div
+                              className="w-4 h-4 rounded-full text-white flex items-center justify-center shrink-0 mt-0.5"
+                              style={{ backgroundColor: theme.primaryColor }}
+                            >
                               <Check className="w-3 h-3 stroke-[3]" />
                             </div>
                           )}
@@ -196,15 +262,19 @@ export default function ShopeeProductSelector({ product }: ShopeeProductSelector
                         {opt.sub && (
                           <span
                             className={`text-[11px] mt-1 line-clamp-2 leading-relaxed ${
-                              isSelected ? 'text-rose-800/90 font-medium' : 'text-slate-500'
+                              isSelected ? 'font-medium opacity-90' : 'text-slate-500'
                             }`}
+                            style={isSelected ? { color: theme.primaryColor } : {}}
                           >
                             {opt.sub}
                           </span>
                         )}
 
                         {opt.badge && (
-                          <span className="inline-block mt-1.5 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-rose-100 text-rose-700 self-start">
+                          <span
+                            className="inline-block mt-1.5 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider text-white self-start shadow-2xs"
+                            style={{ backgroundColor: theme.primaryColor }}
+                          >
                             {opt.badge}
                           </span>
                         )}
@@ -232,7 +302,10 @@ export default function ShopeeProductSelector({ product }: ShopeeProductSelector
             <Check className="w-4 h-4 text-emerald-600" />
             <span>Cấu hình đã chọn theo Bảng giá lẻ:</span>
           </span>
-          <span className="font-black text-rose-600 text-base sm:text-lg">
+          <span
+            className="font-black text-base sm:text-lg"
+            style={{ color: theme.primaryColor }}
+          >
             {pricingResult.formattedPrice}
           </span>
         </div>
@@ -249,16 +322,17 @@ export default function ShopeeProductSelector({ product }: ShopeeProductSelector
 
       {/* ========================================================
           4. CỤM HÀNH ĐỘNG: BỎ NHẮN TIN TƯ VẤN CHỌN KÍNH
-             THAY BẰNG NÚT TÌM ĐẠI LÝ CHÍNH HÃNG & HOTLINE KỸ THUẬT
+             THAY BẰNG NÚT TÌM ĐẠI LÝ CHÍNH HÃNG THEO MÀU THEME
           ======================================================== */}
       <div className="space-y-3 pt-2">
         <div className="flex flex-col sm:flex-row gap-3">
-          {/* Nút 1: Tìm đại lý cắt kính gần nhất */}
+          {/* Nút 1: Tìm đại lý cắt kính gần nhất theo gradient màu bảng giá */}
           <Link
             href="/lien-he/"
-            className="flex-1 py-3.5 px-6 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-teal-700 via-teal-800 to-slate-900 hover:opacity-95 shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 text-center cursor-pointer"
+            className="flex-1 py-3.5 px-6 rounded-xl font-bold text-sm text-white hover:opacity-95 shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 text-center cursor-pointer"
+            style={{ background: theme.bannerGradient }}
           >
-            <MapPin className="w-4 h-4 text-teal-300" />
+            <MapPin className="w-4 h-4 text-white" />
             <span>Tìm Đại Lý Cắt Kính Chính Hãng Gần Nhất</span>
           </Link>
 
@@ -275,7 +349,7 @@ export default function ShopeeProductSelector({ product }: ShopeeProductSelector
         {/* Cam kết dịch vụ đại lý đối tác */}
         <div className="flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-2 px-1 pt-1">
           <span className="flex items-center gap-1.5">
-            <Glasses className="w-4 h-4 text-primary" />
+            <Glasses className="w-4 h-4" style={{ color: theme.primaryColor }} />
             <span>Đo khúc xạ thị lực &amp; cắt mài chuẩn tâm miễn phí tại hệ thống đại lý</span>
           </span>
           <span className="text-slate-400 font-medium hidden sm:inline">
