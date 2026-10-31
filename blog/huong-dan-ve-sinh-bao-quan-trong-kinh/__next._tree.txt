@@ -1,7 +1,7 @@
-:HL["/rockylens/_next/static/chunks/0gbhrrjksopsd.css","style"]
+:HL["/rockylens/_next/static/chunks/2_exzoly02wne.css","style"]
 :HL["/rockylens/assets/logo_rocky_transparent.png","image"]
 :HL["/rockylens/images/articles/blog_b2b_policy.png","image"]
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":{"n":"slug","t":"d","k":"huong-dan-ve-sinh-bao-quan-trong-kinh","s":[]},"h":96,"c":"$Q3"}]]
 1:[["children",{"s":"blog","h":64,"c":"$Q2"}]]
-0:{"b":"hEp9KdWwEavaq-AoOOFcz","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
+0:{"b":"OV1V02Ro3ynwcinLG15It","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
