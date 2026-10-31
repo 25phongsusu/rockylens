@@ -29,7 +29,6 @@ import ShopeeProductSelector from '@/components/products/ShopeeProductSelector';
 import { getProductTheme } from '@/features/products/pricing-matrix';
 import { constructMetadata } from '@/lib/seo/metadata';
 import { productSchema } from '@/lib/seo/structured-data';
-import { siteConfig } from '@/config/site';
 
 interface ProductDetailPageProps {
   params: Promise<{ slug: string }>;
@@ -186,50 +185,6 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
                 <span>Thông Số Kỹ Thuật Chuẩn Quang Học Canada</span>
               </h2>
               <ProductSpecifications specifications={product.specifications} />
-            </div>
-
-            {/* Cam Kết Chất Lượng & Dịch Vụ Khúc Xạ */}
-            <div className="p-5 rounded-2xl bg-gradient-to-br from-slate-50 via-white to-slate-50 border border-[var(--color-border)] shadow-xs space-y-3.5">
-              <div className="flex items-center space-x-2">
-                <ShieldCheck className="w-5 h-5 text-emerald-600 shrink-0" />
-                <h3 className="text-xs sm:text-sm font-bold text-heading uppercase tracking-wide">
-                  Cam Kết Chính Hãng &amp; Dịch Vụ Khúc Xạ
-                </h3>
-              </div>
-              <div className="space-y-2 text-xs text-slate-600">
-                <div className="flex items-start space-x-2">
-                  <span className="text-emerald-600 font-bold mt-0.5">✓</span>
-                  <span><strong>100% Bao bì niêm phong:</strong> Tròng xuất kho nguyên tem niêm phong, quét mã QR xuất xứ và khăn lau chính hãng.</span>
-                </div>
-                <div className="flex items-start space-x-2">
-                  <span className="text-emerald-600 font-bold mt-0.5">✓</span>
-                  <span><strong>Khắc laser ẩn:</strong> Ký hiệu nhận diện quang học Canada chống hàng giả soi rõ khi hà hơi.</span>
-                </div>
-                <div className="flex items-start space-x-2">
-                  <span className="text-emerald-600 font-bold mt-0.5">✓</span>
-                  <span><strong>Bảo hành váng phủ 24 tháng:</strong> Bảo hành điện tử 1 đổi 1 trên toàn quốc đối với lớp váng phủ quang học.</span>
-                </div>
-                <div className="flex items-start space-x-2">
-                  <span className="text-emerald-600 font-bold mt-0.5">✓</span>
-                  <span><strong>Đo mắt &amp; cắt mài miễn phí:</strong> Miễn phí công đo khúc xạ và mài lắp chuẩn tâm tại hệ thống đại lý.</span>
-                </div>
-              </div>
-              <div className="flex gap-2.5 pt-1">
-                <Link
-                  href="/lien-he/"
-                  className="flex-1 inline-flex items-center justify-center space-x-1.5 py-2.5 px-4 rounded-xl text-xs font-bold button-primary"
-                >
-                  <span>Tìm Đại Lý Cắt Kính Gần Nhất</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </Link>
-                <a
-                  href={`tel:${siteConfig.phones.hotline}`}
-                  className="inline-flex items-center justify-center py-2.5 px-3 rounded-xl text-xs font-semibold bg-white border border-[var(--color-border)] hover:border-[var(--color-primary)] text-heading hover:bg-[var(--site-bg-start)] transition-colors shadow-xs"
-                  title="Gọi Hotline Hỗ Trợ"
-                >
-                  <Phone className="w-3.5 h-3.5 text-emerald-600" />
-                </a>
-              </div>
             </div>
           </div>
 
