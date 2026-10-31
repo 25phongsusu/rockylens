@@ -1,0 +1,76 @@
+{
+  "id": "feat-002",
+  "slug": "rocky-smart-bluecontrol",
+  "status": "published",
+  "name": "Lọc Ánh Sáng Xanh Thông Minh (SHMC)",
+  "tagline": "Lọc Chọn Lọc Ánh Sáng Có Hại Mà Vẫn Duy Trì Độ Trong Suốt Tự Nhiên Của Thị Giác.",
+  "brandId": "rocky-lens",
+  "categoryIds": [
+    "don-trong"
+  ],
+  "technologyIds": [
+    "smart-bluecontrol",
+    "nano-shmc",
+    "crystal-sapphire"
+  ],
+  "refractiveIndex": "1.61 | 1.67",
+  "images": [
+    "/uploads/solutions/trong-kinh-do-hoa-designer-chuan-mau.png",
+    "/images/products/category-solution-1.png"
+  ],
+  "featuredImage": "/uploads/solutions/trong-kinh-do-hoa-designer-chuan-mau.png",
+  "badge": "Best Choice",
+  "shortDescription": "Dòng tròng kính được ứng dụng công nghệ chọn lọc ánh sáng xanh thế hệ mới, phủ lớp Crystal Sapphire cao cấp giảm chói và bóng xanh, cứng và bền hơn 3.5 lần so với tròng kính thông thường.",
+  "targetAudience": [
+    "Người cần độ trong suốt tuyệt đối không ngả vàng khi làm đồ họa và xem phim",
+    "Khách hàng có độ cận từ -2.00 đến -10.00 Diop mong muốn tròng kính mỏng nhẹ và kháng trầy xước vượt trội",
+    "Người nhạy cảm với ánh sáng phản quang bóng xanh ở bề mặt kính"
+  ],
+  "benefits": [
+    {
+      "title": "Lọc ASX Thông Minh",
+      "description": "Giữ lại phổ ánh sáng xanh ngọc có lợi điều hòa nhịp sinh học, cản triệt để ánh sáng xanh tím có hại.",
+      "icon": "Cpu"
+    },
+    {
+      "title": "Crystal Sapphire Coating",
+      "description": "Lớp phủ Sapphire siêu cứng giảm chói lóa và bóng xanh phản chiếu trên bề mặt kính, trong suốt 99.8%.",
+      "icon": "Sparkles"
+    },
+    {
+      "title": "Cứng & Bền Hơn 3.5 Lần",
+      "description": "Độ cứng bề mặt 9H chống trầy xước ưu việt khi lau chùi và sử dụng hàng ngày.",
+      "icon": "ShieldCheck"
+    }
+  ],
+  "specifications": {
+    "refractiveIndex": "1.61 / 1.67",
+    "designType": "Aspheric (ASP) Crystal Sapphire",
+    "sphRange": "+6.00 đến -10.00 Diop",
+    "cylRange": "PL đến -4.00 Diop",
+    "coating": "Crystal Sapphire Coating",
+    "material": "High Performance Optical Polymer",
+    "uvProtection": "UV400 & Smart BlueControl",
+    "sku": "RL-SMART-BC"
+  },
+  "relatedArticleIds": [
+    "giai-phap-chong-anh-sang-xanh-uv420"
+  ],
+  "relatedProductIds": [
+    "rocky-anh-sang-xanh-bluecut"
+  ],
+  "seo": {
+    "title": "Lọc Ánh Sáng Xanh Thông Minh Smart BlueControl | Rocky Lens",
+    "description": "Tròng kính Smart BlueControl Crystal Sapphire 1.61 và 1.67. Lọc ánh sáng xanh chọn lọc không bóng xanh, chính hãng Canada.",
+    "keywords": [
+      "smart bluecontrol",
+      "crystal sapphire",
+      "lọc ánh sáng xanh thông minh"
+    ]
+  },
+  "consumerHeadline": "Lọc Ánh Sáng Xanh Chọn Lọc (Không Bóng Xanh)",
+  "materialSubtitle": "Crystal Sapphire Coating • Giảm chói và bóng xanh, cứng gấp 3.5 lần, mỏng nhẹ 30%",
+  "targetPersona": "DÒNG THÔNG MINH TRONG SUỐT CAO CẤP",
+  "price": 886000,
+  "formattedPrice": "886.000 ₫"
+}

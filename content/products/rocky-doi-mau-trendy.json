@@ -1,0 +1,76 @@
+{
+  "id": "feat-003",
+  "slug": "rocky-doi-mau-trendy",
+  "status": "published",
+  "name": "Đổi Màu Trendy (SHMC)",
+  "tagline": "Ứng Dụng Hiệu Ứng Photochromic Siêu Nhanh Cùng Bộ Sưu Tập 6 Sắc Màu Thời Thượng.",
+  "brandId": "rocky-lens",
+  "categoryIds": [
+    "doi-mau"
+  ],
+  "technologyIds": [
+    "spin-coating",
+    "nano-shmc"
+  ],
+  "refractiveIndex": "1.56",
+  "images": [
+    "/uploads/solutions/trong-kinh-doi-mau-thoi-trang-trendy.png",
+    "/images/real/sol_doi_mau.png"
+  ],
+  "featuredImage": "/uploads/solutions/trong-kinh-doi-mau-thoi-trang-trendy.png",
+  "badge": "6 Màu Thời Thượng",
+  "shortDescription": "Tròng đổi màu quang học làm tối màu khi tiếp xúc tia UV ngoài trời. Sở hữu 6 màu sắc cá tính: Khói, Trà, Xanh dương, Xanh lá, Hồng, Tím, vừa là kính cận thị vừa là kính râm chống nắng.",
+  "targetAudience": [
+    "Người trẻ yêu thích thời trang, biến kính cận thành phụ kiện phong cách",
+    "Người thường xuyên di chuyển ngoài trời, lái xe ban ngày, du lịch",
+    "Khách hàng muốn bảo vệ mắt toàn diện khỏi tia UV với chi phí hợp lý"
+  ],
+  "benefits": [
+    {
+      "title": "Đổi Màu Siêu Nhanh",
+      "description": "Kích hoạt chuyển màu tối nhanh chóng ngay khi tiếp xúc tia UV và trả lại độ trong khi vào phòng.",
+      "icon": "SunMedium"
+    },
+    {
+      "title": "Sắc Màu Thời Thượng",
+      "description": "Khói (Grey), Trà (Brown), Xanh dương (Blue), Xanh lá (Green), Hồng (Pink), Tím (Purple).",
+      "icon": "Sparkles"
+    },
+    {
+      "title": "Chống Tia UV & Lọc Một Phần ASX",
+      "description": "Cản 100% bức xạ UV400 độc hại và hỗ trợ giảm bức xạ màn hình thiết bị.",
+      "icon": "ShieldCheck"
+    }
+  ],
+  "specifications": {
+    "refractiveIndex": "1.56",
+    "designType": "Photochromic Fast Reaction",
+    "sphRange": "PL đến -6.00 Diop",
+    "cylRange": "PL đến -2.00 Diop",
+    "coating": "Elite SHMC (Khói, Trà) / Sapphire (Xanh, Hồng, Tím)",
+    "material": "Optical Resin NK-55",
+    "uvProtection": "UV400",
+    "sku": "RL-TRENDY-6C"
+  },
+  "relatedArticleIds": [
+    "so-sanh-chiet-suat-trong-kinh"
+  ],
+  "relatedProductIds": [
+    "rocky-doi-mau-smart",
+    "rocky-doi-mau-edition"
+  ],
+  "seo": {
+    "title": "Tròng Kính Đổi Màu Trendy SHMC 6 Sắc Màu | Rocky Lens",
+    "description": "Tròng kính đổi màu Trendy SHMC 1.56 với 6 sắc màu thời thượng Khói, Trà, Xanh dương, Xanh lá, Hồng, Tím chính hãng Canada.",
+    "keywords": [
+      "đổi màu trendy",
+      "tròng kính đổi màu",
+      "kính cận đổi màu hồng tím xanh"
+    ]
+  },
+  "consumerHeadline": "Đổi Màu Nắng Đa Sắc Cá Tính (6 Màu Thời Thượng)",
+  "materialSubtitle": "BST 6 Sắc Màu • Khói, Trà, Xanh dương, Xanh lá, Hồng, Tím • Đổi màu siêu nhanh",
+  "targetPersona": "PHONG CÁCH XU HƯỚNG CÁ TÍNH",
+  "price": 688000,
+  "formattedPrice": "688.000 ₫"
+}

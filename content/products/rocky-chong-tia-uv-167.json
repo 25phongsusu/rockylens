@@ -1,0 +1,77 @@
+{
+  "id": "feat-006",
+  "slug": "rocky-chong-tia-uv-167",
+  "status": "published",
+  "name": "Chống Tia UV 1.67 (SHMC)",
+  "tagline": "Lá Chắn Giúp Ngăn Chặn Tới 100% Tia Cực Tím Từ Ánh Sáng Mặt Trời.",
+  "brandId": "rocky-lens",
+  "categoryIds": [
+    "don-trong"
+  ],
+  "technologyIds": [
+    "uv400-protection",
+    "nano-shmc",
+    "ultra-thin-167"
+  ],
+  "refractiveIndex": "1.67",
+  "images": [
+    "/uploads/solutions/trong-kinh-ngoai-troi-chong-tia-uv.png",
+    "/images/real/sol_chong_tia_uv.png"
+  ],
+  "featuredImage": "/uploads/solutions/trong-kinh-ngoai-troi-chong-tia-uv.png",
+  "badge": "100% UV Protection",
+  "shortDescription": "Tròng kính siêu mỏng 1.67 ASP UV ngăn chặn triệt để 100% tia cực tím, bảo vệ mắt khỏi tác hại đục thủy tinh thể và thoái hóa điểm vàng. Mỏng nhẹ 30-35%, cứng gấp 5 lần tròng thông thường.",
+  "targetAudience": [
+    "Người thường xuyên tiếp xúc với ánh nắng ngoài trời, tia UV phản xạ",
+    "Khách hàng có độ cận cao từ -3.00 đến -10.00 Diop cần tròng mỏng nhẹ thẩm mỹ",
+    "Người tìm kiếm tròng kính cứng cáp có thể lắp trên các mẫu gọng khoan"
+  ],
+  "benefits": [
+    {
+      "title": "Cản 100% Tia UV Mặt Trời",
+      "description": "Ngăn chặn bức xạ UVA và UVB gây bỏng giác mạc và thoái hóa võng mạc sớm.",
+      "icon": "ShieldCheck"
+    },
+    {
+      "title": "Chiết Xuất 1.67 Siêu Mỏng",
+      "description": "Mỏng hơn 30-35% so với tròng 1.56, mép kính phẳng gọn nhẹ tênh trên sống mũi.",
+      "icon": "Eye"
+    },
+    {
+      "title": "Cứng Gấp 5 Lần",
+      "description": "Kháng trầy xước ưu việt, độ bền cơ học cao có thể sử dụng làm kính khoan.",
+      "icon": "Award"
+    }
+  ],
+  "specifications": {
+    "refractiveIndex": "1.67",
+    "designType": "Aspheric (ASP) Super Thin",
+    "sphRange": "PL đến -10.00 Diop",
+    "cylRange": "PL đến -2.00 Diop",
+    "coating": "Elite SHMC",
+    "material": "High Index Optical Polymer 1.67",
+    "uvProtection": "100% UV400 & Lọc một phần ASX",
+    "sku": "RL-UV-167"
+  },
+  "relatedArticleIds": [
+    "so-sanh-chiet-suat-trong-kinh"
+  ],
+  "relatedProductIds": [
+    "rocky-167-ultra-thin-bluecut",
+    "rocky-174-ultra-high-index"
+  ],
+  "seo": {
+    "title": "Tròng Kính Chống Tia UV 1.67 ASP SHMC | Rocky Lens",
+    "description": "Tròng kính siêu mỏng 1.67 ASP UV chống tia cực tím 100%, bảo vệ mắt ngoài trời chính hãng Canada Opticians.",
+    "keywords": [
+      "chống tia uv 1.67",
+      "tròng kính 1.67",
+      "rocky uv 1.67"
+    ]
+  },
+  "consumerHeadline": "Lá Chắn Cực Tím 100% (Chiết Suất Siêu Mỏng 1.67)",
+  "materialSubtitle": "Mỏng nhẹ 30-35% • Cứng gấp 5 lần tròng thường • Ngăn triệt để bức xạ cực tím UV400",
+  "targetPersona": "HOẠT ĐỘNG NGOÀI TRỜI & CẬN ĐỘ CAO",
+  "price": 1028000,
+  "formattedPrice": "1.028.000 ₫"
+}

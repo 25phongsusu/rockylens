@@ -1,0 +1,87 @@
+{
+  "id": "prod-home-007",
+  "slug": "rocky-chameleon-photochromic",
+  "status": "published",
+  "name": "Tròng Kính Cận Đổi Màu Thời Trang Rocky Trendy Style Photochromic",
+  "tagline": "Biến Kính Cận Thành Kính Râm Sành Điệu Với BST 6 Sắc Màu Xu Hướng.",
+  "brandId": "rocky-lens",
+  "categoryIds": [
+    "doi-mau"
+  ],
+  "technologyIds": [
+    "spin-coating",
+    "nano-shmc",
+    "uv400-protection"
+  ],
+  "refractiveIndex": "1.56 | 1.61",
+  "images": [
+    "/uploads/solutions/trong-kinh-doi-mau-thoi-trang-trendy.png",
+    "/images/real/sol_doi_mau.png"
+  ],
+  "featuredImage": "/uploads/solutions/trong-kinh-doi-mau-thoi-trang-trendy.png",
+  "badge": "7 Sắc Màu Xu Hướng",
+  "shortDescription": "Bộ sưu tập 6 sắc màu thời thượng (Khói, Trà, Xanh dương, Xanh lá, Hồng, Tím) cùng phiên bản cao cấp Nâu Amber. Tự động chuyển đổi màu râm nhanh nhạy khi tiếp xúc tia UV ngoài trời, bảo vệ võng mạc tối đa.",
+  "targetAudience": [
+    "Tín đồ thời trang muốn sở hữu kính cận vừa là phụ kiện phong cách, vừa là kính râm ngoài trời",
+    "Người thường xuyên di chuyển ngoài trời, du lịch, chụp ảnh mong muốn màu tròng cá tính",
+    "Khách hàng tìm kiếm sự tiện lợi 2 trong 1 mà vẫn thời thượng và sang trọng"
+  ],
+  "benefits": [
+    {
+      "title": "Đổi Màu Siêu Nhanh Khi Ra Nắng",
+      "description": "Lớp phủ Spin-Coat nhạy sáng kích hoạt chuyển màu râm đậm chỉ trong 30 giây khi tiếp xúc bức xạ UV ngoài trời.",
+      "icon": "SunMedium"
+    },
+    {
+      "title": "Bộ Sưu Tập Màu Sắc Đa Dạng",
+      "description": "6 sắc màu thời thượng: Khói, Trà, Xanh dương, Xanh lá, Hồng, Tím cùng màu Nâu Amber quý phái.",
+      "icon": "Sparkles"
+    },
+    {
+      "title": "Ngăn Chặn 100% Tia Cực Tím UV400",
+      "description": "Bảo vệ võng mạc và vùng da quanh mắt khỏi tổn hại của ánh nắng gay gắt, chống chói lóa hiệu quả.",
+      "icon": "ShieldCheck"
+    }
+  ],
+  "specifications": {
+    "refractiveIndex": "1.56 | 1.61 MR-8",
+    "designType": "Aspheric (ASP) / Photochromic Fast Reaction",
+    "sphRange": "PL đến -6.00 / -10.00",
+    "cylRange": "0.00 đến -2.00",
+    "coating": "Elite SHMC / Nano Sapphire Crystal",
+    "material": "Optical Resin NK-55 / Monomer MR-8",
+    "uvProtection": "UV400 & Lọc ASX một phần",
+    "sku": "RL-TRENDY-PHOTO"
+  },
+  "documents": [
+    {
+      "title": "Catalogue BST Đổi Màu Rocky Trendy Style",
+      "url": "/documents/Rocky_Lens_Catalogue_2025.pdf",
+      "size": "4.2 MB",
+      "type": "PDF"
+    }
+  ],
+  "relatedArticleIds": [
+    "so-sanh-chiet-suat-trong-kinh",
+    "giai-phap-chong-anh-sang-xanh-uv420"
+  ],
+  "relatedProductIds": [
+    "rocky-trendy-photochromic-grey",
+    "rocky-156-bluecut-shmc"
+  ],
+  "seo": {
+    "title": "Tròng Kính Cận Đổi Màu Thời Trang Rocky Trendy Style | Rocky Lens",
+    "description": "Tròng kính cận đổi màu thời trang Rocky Trendy Style 6 màu cá tính. Tự động đổi màu râm chống chói, cản UV400 chính hãng Canada Opticians.",
+    "keywords": [
+      "tròng kính đổi màu",
+      "rocky lens trendy",
+      "kính cận đổi màu",
+      "photochromic 1.56"
+    ]
+  },
+  "consumerHeadline": "Kính Cận Đổi Màu Thời Trang (7 Sắc Màu Cá Tính)",
+  "materialSubtitle": "Rocky Trendy Style Photochromic • Lớp phủ xoay ma trận màu Spin-Coat + Váng dầu SHMC",
+  "targetPersona": "DÀNH CHO TÍN ĐỒ THỜI TRANG & NĂNG ĐỘNG",
+  "price": 688000,
+  "formattedPrice": "688.000 ₫"
+}

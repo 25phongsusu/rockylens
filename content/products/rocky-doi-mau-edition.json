@@ -1,0 +1,77 @@
+{
+  "id": "feat-005",
+  "slug": "rocky-doi-mau-edition",
+  "status": "published",
+  "name": "Đổi Màu Edition (ASP)",
+  "tagline": "Phiên Bản Tròng Kính Đổi Màu Cao Cấp Kết Hợp Công Nghệ Tiên Tiến Nhất.",
+  "brandId": "rocky-lens",
+  "categoryIds": [
+    "doi-mau"
+  ],
+  "technologyIds": [
+    "spin-coating",
+    "intelligent-blueselect",
+    "crystal-sapphire"
+  ],
+  "refractiveIndex": "1.56 | 1.61 MR8",
+  "images": [
+    "/images/technologies/sol_doi_mau.png",
+    "/images/products/category-solution-8.png"
+  ],
+  "featuredImage": "/images/technologies/sol_doi_mau.png",
+  "badge": "Premium Edition",
+  "shortDescription": "Dòng tròng kính cao cấp gồm Edition 9 và Edition 10. Ứng dụng công nghệ lọc ASX Intelligent BlueSelect và phủ xoay Spin Coating giúp lên màu đậm, đều và nhanh nhất, tăng tính thẩm mỹ vượt trội.",
+  "targetAudience": [
+    "Khách hàng phân khúc cao cấp đòi hỏi tốc độ chuyển màu và độ đậm màu vượt trội",
+    "Người muốn kính có độ bền hạn chế trầy xước gấp 3 lần tròng thông thường",
+    "Doanh nhân đeo kính gọng khoan bắt ốc với phôi MR-8 Edition 10"
+  ],
+  "benefits": [
+    {
+      "title": "Đổi Màu Tối Đậm & Đều Màu",
+      "description": "Công nghệ Spin Coating cao cấp giúp phân tử màu phân bổ đều trên toàn bộ bề mặt cong thấu kính.",
+      "icon": "SunMedium"
+    },
+    {
+      "title": "Intelligent BlueSelect",
+      "description": "Công nghệ chọn lọc ánh sáng xanh thế hệ mới cho màu sắc tự nhiên không ám vàng.",
+      "icon": "Cpu"
+    },
+    {
+      "title": "Kháng Trầy Xước Vượt Trội",
+      "description": "Phủ Crystal Sapphire hạn chế trầy xước gấp 3 lần, độ bền bỉ dài lâu.",
+      "icon": "ShieldCheck"
+    }
+  ],
+  "specifications": {
+    "refractiveIndex": "1.56 / 1.61 MR-8",
+    "designType": "Aspheric (ASP) Edition Series",
+    "sphRange": "PL đến -10.00 / +6.00 đến +0.25",
+    "cylRange": "PL đến -2.00",
+    "coating": "Crystal Sapphire Premium",
+    "material": "Monomer Mitsui MR-8 / Optical Resin",
+    "uvProtection": "UV400 & Intelligent BlueSelect",
+    "sku": "RL-EDITION-SERIES"
+  },
+  "relatedArticleIds": [
+    "so-sanh-chiet-suat-trong-kinh"
+  ],
+  "relatedProductIds": [
+    "rocky-doi-mau-smart",
+    "rocky-doi-mau-trendy"
+  ],
+  "seo": {
+    "title": "Tròng Kính Đổi Màu Edition 9 & 10 | Rocky Lens Canada",
+    "description": "Tròng kính đổi màu cao cấp Edition 9 và Edition 10 phôi Mitsui MR-8 Crystal Sapphire. Lên màu đậm đều, chính hãng Canada.",
+    "keywords": [
+      "đổi màu edition 9",
+      "edition 10 mr8",
+      "rocky lens edition"
+    ]
+  },
+  "consumerHeadline": "Phân Khúc Cao Cấp Edition 9 & Edition 10",
+  "materialSubtitle": "Công nghệ Spin Coating lên màu đậm đều • Lọc ASX Intelligent BlueSelect • Crystal Sapphire",
+  "targetPersona": "PHÂN KHÚC THƯỢNG LƯU & DOANH NHÂN",
+  "price": 999000,
+  "formattedPrice": "999.000 ₫"
+}

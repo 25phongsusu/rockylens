@@ -15,11 +15,10 @@
   ],
   "refractiveIndex": "1.56 / 1.60",
   "images": [
-    "/images/products/category-solution-2.png",
-    "/images/products/lens-lão thị.jpg",
-    "/images/technologies/Artboard_2_progressive.png"
+    "/uploads/solutions/trong-kinh-da-trong-xa-trung-gan.png",
+    "/images/real/sol_xa_trung_gan_2048.png"
   ],
-  "featuredImage": "/images/products/category-solution-2.png",
+  "featuredImage": "/uploads/solutions/trong-kinh-da-trong-xa-trung-gan.png",
   "badge": "Đa Tròng Liền Mạch",
   "shortDescription": "Xóa bỏ hoàn toàn đường lằn 2 tròng: đọc sách báo, xem tin nhắn điện thoại, làm việc máy tính đến đi lại lái xe chỉ trong 1 cặp kính duy nhất, không choáng váng chao lắc.",
   "targetAudience": [

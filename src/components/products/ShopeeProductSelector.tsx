@@ -1,433 +1,286 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
 import {
   Check,
   ShieldCheck,
   Sparkles,
   Phone,
-  MessageCircle,
   MapPin,
   Glasses,
   Lightbulb,
+  Award,
+  Layers,
+  ChevronRight,
+  Info,
 } from 'lucide-react';
 import { Product } from '@/features/products/product-types';
+import { getProductPricingConfig, ProductPricingSchema } from '@/features/products/pricing-matrix';
 import { siteConfig } from '@/config/site';
 
 interface ShopeeProductSelectorProps {
   product: Product;
 }
 
-// 1. Độ Cận / Viễn (SPH)
-const SPHERE_OPTIONS = [
-  { id: '0.00', label: '0.00 (Không độ)' },
-  { id: 'can-nhe', label: 'Cận nhẹ (0.25 - 2.00)' },
-  { id: 'can-vua', label: 'Cận vừa (2.25 - 4.00)' },
-  { id: 'can-cao', label: 'Cận cao (4.25 - 6.00)' },
-  { id: 'can-nang', label: 'Cận nặng (> 6.00)' },
-  { id: 'vien-thi', label: 'Viễn thị / Lão thị' },
-];
-
-// 2. Độ Loạn Thị (CYL) - Độc lập có thể kết hợp cùng độ cận
-const CYLINDER_OPTIONS = [
-  { id: 'none', label: 'Không loạn (0.00)' },
-  { id: 'loan-nhe', label: 'Loạn nhẹ (0.25 - 1.00)' },
-  { id: 'loan-vua', label: 'Loạn vừa (1.25 - 2.00)' },
-  { id: 'loan-cao', label: 'Loạn cao (> 2.00)' },
-];
-
-// 3. Chiết suất & Độ mỏng (Index) - Chọn thuần State, không chuyển trang gây nhảy giật
-const INDEX_OPTIONS = [
-  {
-    id: '1.56',
-    label: '1.56 (Chuẩn)',
-    sub: 'Độ cận nhẹ < 3.00 Diop',
-  },
-  {
-    id: '1.60',
-    label: '1.60 (Mỏng nhẹ / MR-8)',
-    sub: 'Siêu dai chống vỡ gọng khoan',
-  },
-  {
-    id: '1.67',
-    label: '1.67 (Siêu mỏng)',
-    sub: 'Nhẹ hơn 35%, cho cận 3 - 7 độ',
-  },
-  {
-    id: '1.74',
-    label: '1.74 (Cực mỏng phẳng)',
-    sub: 'Triệt tiêu đáy chai, cận > 7 độ',
-  },
-];
-
-// 4. Tính năng lọc ánh sáng xanh
-const BLUECUT_OPTIONS = [
-  { id: 'uv420-pure', label: 'Lọc ASX UV420 Pure Clear (Chuẩn màu không ám vàng)' },
-  { id: 'shmc-blue', label: 'Lọc ASX SHMC Phản xạ ánh xanh tím tiêu chuẩn' },
-  { id: 'none', label: 'Trong suốt cơ bản (Khử 100% tia cực tím UV400)' },
-];
-
-// 5. Tính năng đổi màu khi ra nắng (Photochromic)
-const PHOTO_OPTIONS = [
-  { id: 'clear', label: 'Không đổi màu (Trong suốt)' },
-  { id: 'grey', label: 'Tự đổi màu Khói (Grey Transition)' },
-  { id: 'brown', label: 'Tự đổi màu Trà (Brown Transition)' },
-];
-
 export default function ShopeeProductSelector({ product }: ShopeeProductSelectorProps) {
-  // Xác định chiết suất mặc định ban đầu theo sản phẩm
-  const currentInitialIndex =
-    INDEX_OPTIONS.find((opt) => product.refractiveIndex?.includes(opt.id))?.id || '1.56';
-  const isPhotoProduct =
-    product.slug.includes('photochromic') || product.categoryIds.includes('doi-mau');
-  const initialPhoto = product.slug.includes('brown')
-    ? 'brown'
-    : isPhotoProduct
-    ? 'grey'
-    : 'clear';
+  const pricingConfig: ProductPricingSchema | null = useMemo(() => {
+    return getProductPricingConfig(product.slug);
+  }, [product.slug]);
 
-  // State các tuỳ chọn - Hoàn toàn không chuyển URL để tránh nhảy giật
-  const [selectedSphere, setSelectedSphere] = useState<string>('can-vua');
-  const [selectedCylinder, setSelectedCylinder] = useState<string>('none');
-  const [selectedIndex, setSelectedIndex] = useState<string>(currentInitialIndex);
-  const [selectedBluecut, setSelectedBluecut] = useState<string>('uv420-pure');
-  const [selectedPhoto, setSelectedPhoto] = useState<string>(initialPhoto);
+  // Khởi tạo state mặc định cho các nhóm bộ chọn
+  const initialSelected = useMemo(() => {
+    const init: Record<string, string> = {};
+    if (pricingConfig) {
+      pricingConfig.selectorGroups.forEach((group) => {
+        if (group.options.length > 0) {
+          init[group.id] = group.options[0].id;
+        }
+      });
+    }
+    return init;
+  }, [pricingConfig]);
 
-  // Giá niêm yết cố định 1.000.000đ
-  const basePrice = '1.000.000 ₫';
-  const originalPrice = '1.250.000 ₫';
+  const [selected, setSelected] = useState<Record<string, string>>(initialSelected);
 
-  // Nhãn hiển thị
-  const sphereLabel = SPHERE_OPTIONS.find((o) => o.id === selectedSphere)?.label || selectedSphere;
-  const cylinderLabel =
-    CYLINDER_OPTIONS.find((o) => o.id === selectedCylinder)?.label || selectedCylinder;
-  const indexObj = INDEX_OPTIONS.find((o) => o.id === selectedIndex);
-  const indexLabel = indexObj ? indexObj.label : selectedIndex;
-  const bluecutLabel =
-    BLUECUT_OPTIONS.find((o) => o.id === selectedBluecut)?.label || selectedBluecut;
-  const photoLabel = PHOTO_OPTIONS.find((o) => o.id === selectedPhoto)?.label || selectedPhoto;
+  // Khi click thay đổi một tùy chọn trong nhóm
+  const handleSelectOption = (groupId: string, optionId: string) => {
+    setSelected((prev) => ({
+      ...prev,
+      [groupId]: optionId,
+    }));
+  };
 
-  // Lời khuyên khúc xạ quang học thông minh
-  let opticalAdvice = '';
-  if (selectedSphere === 'can-cao') {
-    opticalAdvice =
-      '💡 Gợi ý khúc xạ: Với độ cận 4.25 - 6.00 Diop, bạn nên ưu tiên chọn Chiết suất 1.60 hoặc 1.67 để viền tròng mỏng nhẹ thẩm mỹ.';
-  } else if (selectedSphere === 'can-nang') {
-    opticalAdvice =
-      '💡 Gợi ý khúc xạ: Với độ cận trên 6.00 Diop, tròng 1.56 sẽ rất dày. Nên chọn Chiết suất 1.67 hoặc 1.74 để tròng mỏng phẳng và mắt không bị thu nhỏ.';
-  } else if (selectedCylinder === 'loan-cao') {
-    opticalAdvice =
-      '💡 Lưu ý độ loạn: Loạn thị trên 2.00 Diop cần kỹ thuật viên định tâm trục đồng tử chính xác khi gia công lắp ráp.';
-  }
+  // Tính giá bán lẻ chính xác từ ma trận giá
+  const pricingResult = useMemo(() => {
+    if (pricingConfig) {
+      return pricingConfig.calculatePrice(selected);
+    }
+    // Fallback nếu không có trong pricing matrix
+    const fallbackPrice = product.price || 560000;
+    return {
+      price: fallbackPrice,
+      formattedPrice: product.formattedPrice || `${fallbackPrice.toLocaleString('vi-VN')} ₫`,
+      summaryLines: [
+        { label: 'Sản phẩm', value: product.name },
+        { label: 'Chiết suất', value: product.refractiveIndex || 'Tiêu chuẩn' },
+      ],
+    };
+  }, [pricingConfig, selected, product]);
 
-  // Soạn tin nhắn Zalo đầy đủ cấu hình đã chọn (Không có Size Phi)
-  const zaloMessage = encodeURIComponent(
-    `Xin chào RockyLens! Tôi muốn tư vấn lắp đặt tròng kính:\n` +
-      `• Sản phẩm: ${product.name}\n` +
-      `• Độ Cận/Viễn (SPH): ${sphereLabel}\n` +
-      `• Kèm Độ Loạn (CYL): ${cylinderLabel}\n` +
-      `• Chiết suất: ${indexLabel}\n` +
-      `• Lọc ánh sáng xanh: ${bluecutLabel.split('(')[0].trim()}\n` +
-      `• Tùy chọn đổi màu: ${photoLabel.split('(')[0].trim()}\n` +
-      `• Giá tham khảo: 1.000.000 ₫\n` +
-      `Nhờ chuyên viên khúc xạ tư vấn giúp tôi!`
-  );
-
-  const zaloUrlWithMsg = `https://zalo.me/0982264464?text=${zaloMessage}`;
+  // Tính giá gốc giả định (+20%) để hiển thị ưu đãi niêm yết
+  const originalPriceFormatted = useMemo(() => {
+    const raw = Math.round((pricingResult.price * 1.25) / 10000) * 10000;
+    return `${raw.toLocaleString('vi-VN')} ₫`;
+  }, [pricingResult.price]);
 
   return (
-    <div className="rounded-2xl border-2 border-slate-200/90 bg-white p-4 sm:p-6 shadow-sm space-y-5 my-6">
+    <div className="rounded-2xl border-2 border-slate-200/90 bg-white p-4 sm:p-6 shadow-sm space-y-6 my-6">
       {/* ========================================================
-          1. SHOPEE PRICE BANNER
+          1. BẢNG GIÁ BÁN LẺ NIÊM YẾT CHÍNH HÃNG (GIÁ LẺ DUY NHẤT)
           ======================================================== */}
-      <div className="p-4 rounded-xl bg-gradient-to-r from-rose-50/90 via-amber-50/40 to-slate-50 border border-rose-100 flex flex-wrap items-center justify-between gap-3">
+      <div className="p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-rose-50/95 via-amber-50/50 to-slate-50 border border-rose-200/80 flex flex-wrap items-center justify-between gap-4">
         <div>
-          <div className="flex items-center gap-2 mb-1">
-            <span className="text-[11px] font-bold uppercase tracking-wider text-rose-600 bg-rose-100/90 px-2 py-0.5 rounded">
-              Giá Bán Lẻ Niêm Yết
+          <div className="flex items-center gap-2 mb-1.5">
+            <span className="text-[11px] font-black uppercase tracking-wider text-rose-700 bg-rose-200/70 px-2.5 py-0.5 rounded-md">
+              GIÁ BÁN LẺ NIÊM YẾT
             </span>
             <span className="text-xs font-semibold text-slate-400 line-through">
-              {originalPrice}
+              {originalPriceFormatted}
             </span>
-            <span className="text-[11px] font-bold text-rose-700 bg-rose-200/60 px-1.5 py-0.2 rounded">
-              -20%
+            <span className="text-[11px] font-bold text-rose-700 bg-white px-1.5 py-0.2 rounded border border-rose-200 shadow-2xs">
+              -20% Ưu đãi hãng
             </span>
           </div>
-          <div className="flex items-baseline gap-2">
-            <span className="text-2xl sm:text-3xl font-black text-rose-600 tracking-tight">
-              {basePrice}
+
+          <div className="flex items-baseline gap-2.5">
+            <span className="text-3xl sm:text-4xl font-black text-rose-600 tracking-tight">
+              {pricingResult.formattedPrice}
             </span>
-            <span className="text-xs font-medium text-slate-500">
-              / Cặp tròng chính hãng (Đã gồm công cắt)
+            <span className="text-xs font-semibold text-slate-600">
+              / Cặp tròng chính hãng (Đã gồm công cắt mài)
             </span>
+          </div>
+
+          <div className="text-[11px] text-slate-500 mt-1 flex items-center gap-1.5">
+            <span className="inline-block w-2 h-2 rounded-full bg-emerald-500" />
+            <span>Phân phối chính hãng Canada Opticians • Áp dụng giá lẻ toàn quốc</span>
           </div>
         </div>
 
-        <div className="text-xs space-y-1 text-slate-600 border-l border-rose-200/60 pl-3 hidden sm:block">
-          <div className="flex items-center gap-1.5 font-medium">
-            <ShieldCheck className="w-4 h-4 text-emerald-600" />
-            <span>Chính hãng Canada ISO 13485</span>
+        {/* Cam kết tiêu chuẩn chất lượng */}
+        <div className="text-xs space-y-1.5 text-slate-700 border-l border-rose-200/80 pl-4 hidden md:block">
+          <div className="flex items-center gap-2 font-semibold">
+            <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0" />
+            <span>Tiêu chuẩn y tế ISO 13485:2016</span>
           </div>
-          <div className="flex items-center gap-1.5 font-medium">
-            <Sparkles className="w-4 h-4 text-amber-500" />
-            <span>Bảo hành lớp váng 24 tháng</span>
+          <div className="flex items-center gap-2 font-semibold">
+            <Sparkles className="w-4 h-4 text-amber-500 shrink-0" />
+            <span>Bảo hành váng phủ 24 tháng chính hãng</span>
+          </div>
+          <div className="flex items-center gap-2 font-semibold">
+            <Glasses className="w-4 h-4 text-primary shrink-0" />
+            <span>Khắc laser ký hiệu chống hàng giả</span>
           </div>
         </div>
       </div>
 
       {/* ========================================================
-          1. ĐỘ KHÚC XẠ MẮT (SPH + CYL)
+          2. CÁC NHÓM TÙY CHỌN CHI TIẾT (THEO FILE BẢNG GIÁ LẺ HOẶC THEO NHU CẦU)
           ======================================================== */}
-      <div className="space-y-3 p-3.5 sm:p-4 rounded-xl bg-slate-50/70 border border-slate-200/80">
-        <div className="flex items-center justify-between">
-          <span className="font-bold text-xs sm:text-sm text-heading uppercase tracking-wide flex items-center gap-1.5">
-            <Glasses className="w-4 h-4 text-primary" />
-            <span>1. Độ Khúc Xạ Mắt (Toa Kính)</span>
-          </span>
-          <span className="text-[11px] text-slate-500">Chọn độ cận và kèm độ loạn (nếu có)</span>
-        </div>
+      {pricingConfig ? (
+        <div className="space-y-5">
+          {pricingConfig.selectorGroups.map((group, groupIdx) => {
+            const currentSelectedOptionId = selected[group.id] || group.options[0]?.id;
 
-        {/* 1.1 SPH */}
-        <div className="space-y-1.5">
-          <div className="text-xs font-semibold text-slate-700 flex items-center justify-between">
-            <span>• Độ Cận / Viễn (SPH):</span>
-            <span className="text-primary font-bold">{sphereLabel}</span>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-            {SPHERE_OPTIONS.map((sph) => {
-              const isSelected = selectedSphere === sph.id;
-              return (
-                <button
-                  key={sph.id}
-                  type="button"
-                  onClick={() => setSelectedSphere(sph.id)}
-                  className={`px-3 py-2 rounded-lg text-left text-xs transition-colors cursor-pointer border flex items-center justify-between ${
-                    isSelected
-                      ? 'border-rose-500 bg-rose-50/80 text-rose-800 font-bold shadow-2xs ring-1 ring-rose-500'
-                      : 'border-slate-200 bg-white hover:bg-slate-100 text-slate-700'
-                  }`}
-                >
-                  <span className="truncate">{sph.label}</span>
-                  {isSelected && <Check className="w-3.5 h-3.5 text-rose-600 shrink-0 ml-1" />}
-                </button>
-              );
-            })}
-          </div>
-        </div>
-
-        {/* 1.2 CYL */}
-        <div className="space-y-1.5 pt-2 border-t border-slate-200/70">
-          <div className="text-xs font-semibold text-slate-700 flex items-center justify-between">
-            <span>• Kèm Độ Loạn Thị (CYL):</span>
-            <span className="text-primary font-bold">{cylinderLabel}</span>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
-            {CYLINDER_OPTIONS.map((cyl) => {
-              const isSelected = selectedCylinder === cyl.id;
-              return (
-                <button
-                  key={cyl.id}
-                  type="button"
-                  onClick={() => setSelectedCylinder(cyl.id)}
-                  className={`px-2.5 py-2 rounded-lg text-xs transition-colors cursor-pointer border text-center flex items-center justify-center gap-1 ${
-                    isSelected
-                      ? 'border-rose-500 bg-rose-50/80 text-rose-800 font-bold shadow-2xs ring-1 ring-rose-500'
-                      : 'border-slate-200 bg-white hover:bg-slate-100 text-slate-700'
-                  }`}
-                >
-                  <span className="truncate">{cyl.label}</span>
-                  {isSelected && <Check className="w-3 h-3 text-rose-600 shrink-0" />}
-                </button>
-              );
-            })}
-          </div>
-        </div>
-
-        {/* Lời khuyên khúc xạ động */}
-        {opticalAdvice && (
-          <div className="p-2.5 rounded-lg bg-amber-50 border border-amber-200 text-xs text-amber-900 flex items-start gap-2 leading-relaxed">
-            <Lightbulb className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
-            <span>{opticalAdvice}</span>
-          </div>
-        )}
-      </div>
-
-      {/* ========================================================
-          2. CHIẾT SUẤT & ĐỘ MỎNG (INDEX) - CHỌN THUẦN STATE KHÔNG LINK
-          ======================================================== */}
-      <div className="space-y-2">
-        <div className="flex items-center justify-between text-xs">
-          <span className="font-bold text-heading uppercase tracking-wide">
-            2. Chiết Suất &amp; Độ Mỏng
-          </span>
-          <span className="text-primary font-bold">{indexLabel}</span>
-        </div>
-
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
-          {INDEX_OPTIONS.map((opt) => {
-            const isSelected = selectedIndex === opt.id;
             return (
-              <button
-                key={opt.id}
-                type="button"
-                onClick={() => setSelectedIndex(opt.id)}
-                className={`p-2.5 rounded-xl border text-left transition-colors cursor-pointer relative ${
-                  isSelected
-                    ? 'border-rose-500 bg-rose-50/70 text-rose-900 shadow-2xs ring-1 ring-rose-500'
-                    : 'border-slate-200 bg-white hover:bg-slate-50 text-slate-700'
-                }`}
+              <div
+                key={group.id}
+                className="space-y-2.5 p-3.5 sm:p-4 rounded-xl bg-slate-50/80 border border-slate-200/90"
               >
-                <div className="flex items-center justify-between">
-                  <span className="text-xs font-bold">{opt.label}</span>
-                  {isSelected && <Check className="w-3.5 h-3.5 text-rose-600 shrink-0" />}
+                <div className="flex items-center justify-between text-xs sm:text-sm">
+                  <span className="font-bold text-heading uppercase tracking-wide flex items-center gap-1.5">
+                    {group.type === 'color' ? (
+                      <Sparkles className="w-4 h-4 text-amber-500" />
+                    ) : group.type === 'add' ? (
+                      <Layers className="w-4 h-4 text-primary" />
+                    ) : (
+                      <Glasses className="w-4 h-4 text-primary" />
+                    )}
+                    <span>{group.label}</span>
+                  </span>
+                  <span className="text-primary font-bold text-xs">
+                    {group.options.find((o) => o.id === currentSelectedOptionId)?.label}
+                  </span>
                 </div>
-                <span className="text-[10px] text-slate-500 line-clamp-1 block mt-0.5">
-                  {opt.sub}
-                </span>
-              </button>
+
+                {/* Grid các nút tùy chọn */}
+                <div
+                  className={`grid gap-2 ${
+                    group.options.length <= 2
+                      ? 'grid-cols-1 sm:grid-cols-2'
+                      : group.options.length <= 4
+                      ? 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-2'
+                      : 'grid-cols-2 sm:grid-cols-3'
+                  }`}
+                >
+                  {group.options.map((opt) => {
+                    const isSelected = currentSelectedOptionId === opt.id;
+
+                    return (
+                      <button
+                        key={opt.id}
+                        type="button"
+                        onClick={() => handleSelectOption(group.id, opt.id)}
+                        className={`p-3 rounded-xl border text-left transition-all cursor-pointer relative flex flex-col justify-between ${
+                          isSelected
+                            ? 'border-rose-500 bg-rose-50/90 text-rose-950 shadow-xs ring-2 ring-rose-500/20'
+                            : 'border-slate-200 bg-white hover:bg-slate-100/80 text-slate-800 shadow-2xs'
+                        }`}
+                      >
+                        <div className="flex items-start justify-between gap-1 w-full">
+                          <span
+                            className={`text-xs sm:text-sm font-bold leading-snug ${
+                              isSelected ? 'text-rose-700' : 'text-slate-900'
+                            }`}
+                          >
+                            {opt.label}
+                          </span>
+                          {isSelected && (
+                            <div className="w-4 h-4 rounded-full bg-rose-600 text-white flex items-center justify-center shrink-0 mt-0.5">
+                              <Check className="w-3 h-3 stroke-[3]" />
+                            </div>
+                          )}
+                        </div>
+
+                        {opt.sub && (
+                          <span
+                            className={`text-[11px] mt-1 line-clamp-2 leading-relaxed ${
+                              isSelected ? 'text-rose-800/90 font-medium' : 'text-slate-500'
+                            }`}
+                          >
+                            {opt.sub}
+                          </span>
+                        )}
+
+                        {opt.badge && (
+                          <span className="inline-block mt-1.5 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-rose-100 text-rose-700 self-start">
+                            {opt.badge}
+                          </span>
+                        )}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
             );
           })}
         </div>
-      </div>
+      ) : (
+        /* Fallback thông thường nếu không tìm thấy schema */
+        <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-600">
+          Sản phẩm có đầy đủ các chiết suất 1.56, 1.60 MR-8, 1.67 và 1.74 theo tiêu chuẩn Canada Opticians.
+        </div>
+      )}
 
       {/* ========================================================
-          3. TÍNH NĂNG BẢO VỆ MẮT (ÁNH SÁNG XANH & ĐỔI MÀU NẮNG)
+          3. TÓM TẮT CẤU HÌNH & BẢNG GIÁ LẺ TƯƠNG ỨNG
           ======================================================== */}
-      <div className="space-y-3 pt-2 border-t border-slate-100">
-        {/* 3.1 Lọc ánh sáng xanh */}
-        <div className="space-y-1.5">
-          <div className="flex items-center justify-between text-xs">
-            <span className="font-bold text-heading uppercase tracking-wide">
-              3. Lọc Ánh Sáng Xanh Màn Hình (ASX)
-            </span>
-            <span className="text-[11px] text-primary font-semibold">
-              {bluecutLabel.split('(')[0]}
-            </span>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
-            {BLUECUT_OPTIONS.map((bc) => {
-              const isSelected = selectedBluecut === bc.id;
-              return (
-                <button
-                  key={bc.id}
-                  type="button"
-                  onClick={() => setSelectedBluecut(bc.id)}
-                  className={`p-2 rounded-lg text-xs transition-colors cursor-pointer border text-left flex items-start gap-1.5 ${
-                    isSelected
-                      ? 'border-rose-500 bg-rose-50 text-rose-700 font-bold shadow-2xs ring-1 ring-rose-500'
-                      : 'border-slate-200 bg-white hover:bg-slate-50 text-slate-700'
-                  }`}
-                >
-                  {isSelected && <Check className="w-3.5 h-3.5 text-rose-600 shrink-0 mt-0.5" />}
-                  <span className="text-[11px] leading-snug">{bc.label}</span>
-                </button>
-              );
-            })}
-          </div>
+      <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs space-y-2.5">
+        <div className="flex items-center justify-between pb-2 border-b border-slate-200">
+          <span className="font-bold text-slate-900 text-xs sm:text-sm flex items-center gap-1.5">
+            <Check className="w-4 h-4 text-emerald-600" />
+            <span>Cấu hình đã chọn theo Bảng giá lẻ:</span>
+          </span>
+          <span className="font-black text-rose-600 text-base sm:text-lg">
+            {pricingResult.formattedPrice}
+          </span>
         </div>
 
-        {/* 3.2 Đổi màu khi ra nắng */}
-        <div className="space-y-1.5 pt-2 border-t border-slate-100">
-          <div className="flex items-center justify-between text-xs">
-            <span className="font-bold text-heading uppercase tracking-wide">
-              4. Tùy Chọn Đổi Màu Khi Ra Nắng
-            </span>
-            <span className="text-[11px] text-primary font-semibold">
-              {photoLabel.split('(')[0]}
-            </span>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
-            {PHOTO_OPTIONS.map((pho) => {
-              const isSelected = selectedPhoto === pho.id;
-              return (
-                <button
-                  key={pho.id}
-                  type="button"
-                  onClick={() => setSelectedPhoto(pho.id)}
-                  className={`p-2.5 rounded-xl border text-xs font-medium cursor-pointer transition-colors flex items-center justify-between ${
-                    isSelected
-                      ? 'border-rose-500 bg-rose-50 text-rose-700 font-bold shadow-2xs ring-1 ring-rose-500'
-                      : 'border-slate-200 bg-white hover:bg-slate-50 text-slate-700'
-                  }`}
-                >
-                  <span>{pho.label}</span>
-                  {isSelected && <Check className="w-3.5 h-3.5 text-rose-600 shrink-0 ml-1" />}
-                </button>
-              );
-            })}
-          </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5 text-slate-700 text-xs">
+          {pricingResult.summaryLines.map((line, idx) => (
+            <div key={idx} className="flex items-baseline justify-between sm:justify-start gap-2">
+              <span className="text-slate-500 font-medium shrink-0">• {line.label}:</span>
+              <span className="font-bold text-slate-900 text-right sm:text-left">{line.value}</span>
+            </div>
+          ))}
         </div>
       </div>
 
       {/* ========================================================
-          TÓM TẮT CẤU HÌNH THEO TOA KÍNH (GỌN GÀNG, KHÔNG SIZE PHI)
+          4. CỤM HÀNH ĐỘNG: BỎ NHẮN TIN TƯ VẤN CHỌN KÍNH
+             THAY BẰNG NÚT TÌM ĐẠI LÝ CHÍNH HÃNG & HOTLINE KỸ THUẬT
           ======================================================== */}
-      <div className="p-3.5 sm:p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs space-y-2">
-        <div className="flex items-center justify-between pb-1.5 border-b border-slate-200">
-          <span className="font-bold text-slate-800">Cấu hình toa kính bạn đã chọn:</span>
-          <span className="font-black text-rose-600 text-sm sm:text-base">{basePrice}</span>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1 text-slate-600 text-[11px]">
-          <div>
-            • Độ Cận/Viễn (SPH): <b className="text-slate-900">{sphereLabel}</b>
-          </div>
-          <div>
-            • Kèm Độ Loạn (CYL): <b className="text-slate-900">{cylinderLabel}</b>
-          </div>
-          <div>
-            • Chiết suất: <b className="text-slate-900">{indexLabel}</b>
-          </div>
-          <div>
-            • Ánh sáng xanh: <b className="text-slate-900">{bluecutLabel.split('(')[0].trim()}</b>
-          </div>
-          <div className="sm:col-span-2">
-            • Đổi màu râm: <b className="text-slate-900">{photoLabel.split('(')[0].trim()}</b>
-          </div>
-        </div>
-      </div>
-
-      {/* ========================================================
-          CỤM NÚT HÀNH ĐỘNG SHOPEE
-          ======================================================== */}
-      <div className="space-y-2.5 pt-1">
+      <div className="space-y-3 pt-2">
         <div className="flex flex-col sm:flex-row gap-3">
-          {/* Nút chính Shopee Zalo Action */}
-          <a
-            href={zaloUrlWithMsg}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-1 py-3.5 px-6 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-[#ee4d2d] to-[#ff5722] hover:opacity-95 shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 text-center"
-          >
-            <MessageCircle className="w-4 h-4 fill-white" />
-            <span>Tư Vấn Toa Kính Này Qua Zalo</span>
-          </a>
-
-          {/* Nút phụ: Tìm cửa hàng kính gần nhất */}
+          {/* Nút 1: Tìm đại lý cắt kính gần nhất */}
           <Link
             href="/lien-he/"
-            className="py-3.5 px-5 rounded-xl font-bold text-sm text-slate-700 bg-white border border-slate-300 hover:border-primary hover:text-primary hover:bg-slate-50 transition-colors flex items-center justify-center gap-2 text-center shadow-xs"
+            className="flex-1 py-3.5 px-6 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-teal-700 via-teal-800 to-slate-900 hover:opacity-95 shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 text-center cursor-pointer"
           >
-            <MapPin className="w-4 h-4 text-primary" />
-            <span>Tìm Đại Lý Cắt Kính</span>
+            <MapPin className="w-4 h-4 text-teal-300" />
+            <span>Tìm Đại Lý Cắt Kính Chính Hãng Gần Nhất</span>
           </Link>
-        </div>
 
-        {/* Hotline hỗ trợ */}
-        <div className="flex items-center justify-between text-xs text-slate-500 px-1">
-          <span className="flex items-center gap-1">
-            <Glasses className="w-3.5 h-3.5 text-primary" />
-            <span>Miễn phí đo thị lực &amp; lắp ráp chuẩn theo toa</span>
-          </span>
+          {/* Nút 2: Gọi Hotline hỗ trợ kỹ thuật */}
           <a
             href={`tel:${siteConfig.phones.hotline}`}
-            className="font-bold text-slate-700 hover:text-primary flex items-center gap-1"
+            className="py-3.5 px-6 rounded-xl font-bold text-sm text-slate-800 bg-white border border-slate-300 hover:border-primary hover:text-primary hover:bg-slate-50 transition-colors flex items-center justify-center gap-2 text-center shadow-xs"
           >
-            <Phone className="w-3 h-3 text-emerald-600" />
+            <Phone className="w-4 h-4 text-emerald-600" />
             <span>Hotline: 0982 264 464</span>
           </a>
+        </div>
+
+        {/* Cam kết dịch vụ đại lý đối tác */}
+        <div className="flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-2 px-1 pt-1">
+          <span className="flex items-center gap-1.5">
+            <Glasses className="w-4 h-4 text-primary" />
+            <span>Đo khúc xạ thị lực &amp; cắt mài chuẩn tâm miễn phí tại hệ thống đại lý</span>
+          </span>
+          <span className="text-slate-400 font-medium hidden sm:inline">
+            Phân phối bởi Clearly Vietnam Co., LTD
+          </span>
         </div>
       </div>
     </div>

@@ -1,0 +1,79 @@
+{
+  "id": "feat-004",
+  "slug": "rocky-doi-mau-smart",
+  "status": "published",
+  "name": "Đổi Màu Smart (SHMC)",
+  "tagline": "Tự Động Đổi Màu Theo Cường Độ Tia Cực Tím Và Lọc Ánh Sáng Xanh Thông Minh.",
+  "brandId": "rocky-lens",
+  "categoryIds": [
+    "doi-mau",
+    "don-trong"
+  ],
+  "technologyIds": [
+    "smart-bluecontrol",
+    "spin-coating",
+    "nano-shmc"
+  ],
+  "refractiveIndex": "1.56 | 1.61 | 1.67",
+  "images": [
+    "/uploads/solutions/trong-kinh-van-phong-chong-asx-doi-mau.png",
+    "/images/products/category-solution-8.png"
+  ],
+  "featuredImage": "/uploads/solutions/trong-kinh-van-phong-chong-asx-doi-mau.png",
+  "badge": "Best Choice & New",
+  "shortDescription": "Sự kết hợp hoàn hảo giữa lọc ánh sáng xanh màn hình trong nhà và đổi màu râm chống nắng khi ra đường. Bổ sung phiên bản 1.61 MR8 Nâu Amber thời thượng cho kính gọng khoan bắt ốc.",
+  "targetAudience": [
+    "Dân văn phòng, người làm việc công sở hay phải đi ra ngoài gặp khách hàng",
+    "Người muốn giải pháp kính mắt tất cả trong một: vừa bảo vệ màn hình vừa chống chói nắng",
+    "Doanh nhân sử dụng kính gọng khoan bắt ốc cần màu Nâu Amber sang trọng"
+  ],
+  "benefits": [
+    {
+      "title": "Lọc ASX Thông Minh Trong Nhà",
+      "description": "Giảm mỏi mắt kỹ thuật số khi ngồi máy tính, lướt điện thoại kéo dài trong phòng.",
+      "icon": "Cpu"
+    },
+    {
+      "title": "Tự Đổi Màu Theo Tia Cực Tím",
+      "description": "Độ đậm màu linh hoạt theo mức độ nắng gắt ngoài trời, dịu mát mắt tức thì.",
+      "icon": "SunMedium"
+    },
+    {
+      "title": "Phiên Bản 1.61 MR8 Nâu Amber Độc Quyền",
+      "description": "Sắc nâu hổ phách ấm áp sang trọng, làm từ phôi Mitsui MR-8 chịu lực tuyệt đối.",
+      "icon": "Award"
+    }
+  ],
+  "specifications": {
+    "refractiveIndex": "1.56 / 1.61 MR-8 / 1.67",
+    "designType": "Aspheric (ASP) Smart BlueCut Photo",
+    "sphRange": "+6.00 đến -10.00 Diop",
+    "cylRange": "PL đến -4.00 Diop",
+    "coating": "Sapphire / Elite SHMC",
+    "material": "Optical Resin NK-55 / Monomer MR-8",
+    "uvProtection": "UV400 & Smart ASX",
+    "sku": "RL-SMART-PHOTO"
+  },
+  "relatedArticleIds": [
+    "giai-phap-chong-anh-sang-xanh-uv420"
+  ],
+  "relatedProductIds": [
+    "rocky-doi-mau-trendy",
+    "rocky-doi-mau-edition"
+  ],
+  "seo": {
+    "title": "Tròng Kính Đổi Màu Smart Lọc ASX | Rocky Lens Canada",
+    "description": "Tròng kính đổi màu Smart lọc ánh sáng xanh 1.56, 1.61, 1.61 MR8 Nâu Amber, 1.67 chính hãng Canada Opticians.",
+    "keywords": [
+      "đổi màu smart",
+      "lọc asx đổi màu",
+      "mr8 nâu amber",
+      "rocky lens smart"
+    ]
+  },
+  "consumerHeadline": "Lọc ASX Trong Nhà & Đổi Màu Ngoài Trời (2-in-1)",
+  "materialSubtitle": "Tự động đổi màu theo tia cực tím + Lọc ASX thông minh • Có phiên bản 1.61 MR8 Nâu Amber",
+  "targetPersona": "DÂN VĂN PHÒNG & THƯỜNG XUYÊN DI CHUYỂN",
+  "price": 788000,
+  "formattedPrice": "788.000 ₫"
+}

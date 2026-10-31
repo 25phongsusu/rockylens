@@ -16,11 +16,10 @@
   ],
   "refractiveIndex": "1.60",
   "images": [
-    "/images/products/category-solution-3.png",
-    "/images/products/driveshield-4.jpg",
-    "/images/products/driveshield-13.png"
+    "/uploads/solutions/trong-kinh-lai-xe-ban-dem-driveshield.png",
+    "/images/real/driveshield_night.jpg"
   ],
-  "featuredImage": "/images/products/category-solution-3.png",
+  "featuredImage": "/uploads/solutions/trong-kinh-lai-xe-ban-dem-driveshield.png",
   "badge": "Chuyên Lái Xe Đêm",
   "shortDescription": "Triệt tiêu ánh sáng chói lóa từ đèn pha LED đối diện, tăng cường độ tương phản và trượt nước mưa tối đa giúp lái xe an toàn, không bị lóa mắt khi di chuyển đêm.",
   "targetAudience": [

@@ -1,0 +1,77 @@
+{
+  "id": "feat-010",
+  "slug": "rocky-da-trong-freeform",
+  "status": "published",
+  "name": "Đa Tròng Freeform (SHMC)",
+  "tagline": "Kính Đa Tròng Cho Tầm Nhìn Rõ Nét Ở Mọi Khoảng Cách, Tiện Lợi Và Trẻ Trung.",
+  "brandId": "rocky-lens",
+  "categoryIds": [
+    "da-trong"
+  ],
+  "technologyIds": [
+    "canrx-freeform",
+    "smooth-optics",
+    "crystal-sapphire"
+  ],
+  "refractiveIndex": "1.56 | 1.61",
+  "images": [
+    "/uploads/solutions/trong-kinh-da-trong-xa-trung-gan.png",
+    "/images/real/sol_xa_trung_gan_2048.png"
+  ],
+  "featuredImage": "/uploads/solutions/trong-kinh-da-trong-xa-trung-gan.png",
+  "badge": "Freeform 4K HD",
+  "shortDescription": "Công nghệ gia công kỹ thuật số Freeform 4K chuyển tiếp mượt mà giữa 3 vùng nhìn Xa - Trung - Gần. Giúp người đeo đọc sách, xem máy tính và lái xe liền mạch chỉ trong một cặp kính duy nhất.",
+  "targetAudience": [
+    "Người lớn tuổi từ 40+ có độ lão thị kèm cận, viễn hoặc loạn thị",
+    "Nhân viên văn phòng, quản lý cần chuyển đổi liên tục giữa máy tính và quan sát xung quanh",
+    "Người tìm kiếm sự tiện lợi không phải tháo kính ra vào khi đọc sách"
+  ],
+  "benefits": [
+    {
+      "title": "Thiết Kế Freeform 4K Sắc Nét",
+      "description": "Tính toán bề mặt vi điểm mặt sau triệt tiêu quang sai vùng ngoại biên, mở rộng hành lang thị giác.",
+      "icon": "Cpu"
+    },
+    {
+      "title": "Chuyển Tiếp Êm Ái Smooth Optics",
+      "description": "Mắt lướt êm ái giữa nhìn xa, nhìn màn hình và đọc sách báo mà không bị gián đoạn hay chóng mặt.",
+      "icon": "Eye"
+    },
+    {
+      "title": "Đầy Đủ Tùy Chọn Đổi Màu & Lọc ASX",
+      "description": "Tích hợp màng lọc ánh sáng xanh hoặc công nghệ đổi màu râm tiện lợi khi ra ngoài trời.",
+      "icon": "SunMedium"
+    }
+  ],
+  "specifications": {
+    "refractiveIndex": "1.56 / 1.61",
+    "designType": "Digital Freeform Progressive (Corridor 4+9mm / UltraView)",
+    "sphRange": "-2.00 đến +3.00 Diop",
+    "addRange": "+1.00 đến +3.00 Diop",
+    "coating": "Elite SHMC / Crystal Sapphire",
+    "material": "High Index Optical Resin",
+    "uvProtection": "UV400 & Lọc ASX thông minh",
+    "sku": "RL-PROGRESSIVE-FF"
+  },
+  "relatedArticleIds": [
+    "so-sanh-chiet-suat-trong-kinh"
+  ],
+  "relatedProductIds": [
+    "rocky-freeform-progressive-hd",
+    "rocky-hai-trong-invisible"
+  ],
+  "seo": {
+    "title": "Tròng Kính Đa Tròng Freeform 4K Digital | Rocky Lens",
+    "description": "Bảng giá lẻ tròng kính đa tròng Freeform HD Digital 1.56 và 1.61 UltraView chính hãng Canada Opticians.",
+    "keywords": [
+      "đa tròng freeform",
+      "kính đa tròng rocky",
+      "ultraview 4k"
+    ]
+  },
+  "consumerHeadline": "Đa Tròng Kỹ Thuật Số Liền Mạch (Xa - Trung - Gần)",
+  "materialSubtitle": "Công nghệ Freeform 4K vi điểm • Hành lang thị giác rộng rãi • Thích nghi tức thì",
+  "targetPersona": "LÃO THỊ & DOANH NHÂN TRUNG NIÊN",
+  "price": 950000,
+  "formattedPrice": "950.000 ₫"
+}

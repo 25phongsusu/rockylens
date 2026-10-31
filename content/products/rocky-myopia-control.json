@@ -1,0 +1,76 @@
+{
+  "id": "feat-011",
+  "slug": "rocky-myopia-control",
+  "status": "published",
+  "name": "Myopia Control (SHMC) - Kiểm Soát Cận Trẻ Em",
+  "tagline": "Lựa Chọn Ưu Việt Giúp Làm Chậm Sự Tiến Triển Cận Thị Học Đường Ở Trẻ.",
+  "brandId": "rocky-lens",
+  "categoryIds": [
+    "kiem-soat-can-thi"
+  ],
+  "technologyIds": [
+    "defocus-dims",
+    "nano-shmc",
+    "polycarbonate-impact"
+  ],
+  "refractiveIndex": "1.56 | 1.59 Polycarbonate",
+  "images": [
+    "/uploads/solutions/trong-kinh-kiem-soat-can-thi-tre-em.png",
+    "/images/real/myopia_defocus_diagram.png"
+  ],
+  "featuredImage": "/uploads/solutions/trong-kinh-kiem-soat-can-thi-tre-em.png",
+  "badge": "Vi Thấu Kính D.I.M.S",
+  "shortDescription": "Phương pháp kiểm soát cận thị bằng tròng kính vi thấu kính phân kỳ chu biên Defocus. Giúp làm chậm quá trình dài ra của trục nhãn cầu ở trẻ em và thanh thiếu niên lên đến 60%, bảo vệ thị lực tương lai cho bé.",
+  "targetAudience": [
+    "Trẻ em từ 6 đến 16 tuổi có độ cận đang tiến triển tăng nhanh mỗi năm",
+    "Học sinh học tập với cường độ cao, hay sử dụng máy tính và máy tính bảng",
+    "Phụ huynh tìm kiếm giải pháp ngăn ngừa độ cận nặng và thoái hóa võng mạc cho con"
+  ],
+  "benefits": [
+    {
+      "title": "1164 Micro-Lens Vi Thấu Kính",
+      "description": "12 vòng tròn hội tụ hình ảnh trước võng mạc, ức chế tín hiệu tăng sinh trục nhãn cầu.",
+      "icon": "Cpu"
+    },
+    {
+      "title": "Làm Chậm Tăng Độ Đến 60%",
+      "description": "Được chứng minh lâm sàng giảm thiểu đáng kể tốc độ tăng độ cận so với tròng đơn tròng thông thường.",
+      "icon": "ShieldCheck"
+    },
+    {
+      "title": "Vật Liệu Polycarbonate Chống Bể",
+      "description": "Chống va đập an toàn tuyệt đối khi trẻ chơi đùa, chạy nhảy thể thao ở trường.",
+      "icon": "Award"
+    }
+  ],
+  "specifications": {
+    "refractiveIndex": "1.56 / 1.59 Polycarbonate",
+    "designType": "Defocus 360° / Intelligent Micro-Lens Technology",
+    "sphRange": "PL đến -6.00 Diop",
+    "cylRange": "PL đến -2.00 Diop",
+    "coating": "Elite SHMC Hạn chế trầy xước",
+    "material": "Polycarbonate Impact Resistant / High Index Resin",
+    "uvProtection": "UV400 & Lọc ánh sáng xanh",
+    "sku": "RL-MYOPIA-KIDS"
+  },
+  "relatedArticleIds": [
+    "kiem-soat-can-thi-tre-em-myocontrol"
+  ],
+  "relatedProductIds": [
+    "rocky-myocontrol-dims-kids"
+  ],
+  "seo": {
+    "title": "Tròng Kính Kiểm Soát Cận Thị Myopia Control DIMS | Rocky Lens",
+    "description": "Bảng giá lẻ tròng kính kiểm soát cận thị trẻ em Digital 360 Defocus & Intelligent Micro-Lens D.I.M.S chính hãng Canada.",
+    "keywords": [
+      "kiểm soát cận thị",
+      "myopia control",
+      "tròng kính dims trẻ em"
+    ]
+  },
+  "consumerHeadline": "Kiểm Soát Cận Thị Tiến Triển (Vi Thấu Kính 1164 D.I.M.S)",
+  "materialSubtitle": "Công nghệ Defocus 360° & Micro-Lens • Polycarbonate chống vỡ • Làm chậm tăng độ",
+  "targetPersona": "TRẺ EM & HỌC SINH CẬN TIẾN TRIỂN",
+  "price": 960000,
+  "formattedPrice": "960.000 ₫"
+}

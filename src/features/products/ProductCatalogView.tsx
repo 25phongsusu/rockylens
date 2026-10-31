@@ -3,29 +3,58 @@
 import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Glasses, ArrowUpRight, Search, X, Sparkles, Check } from 'lucide-react';
+import { Glasses, ArrowUpRight, Search, X, Sparkles, Check, Layers, SlidersHorizontal } from 'lucide-react';
 import { Product } from './product-types';
 
 export type ViewMode = 'need' | 'tech';
 
+// 9 Slugs theo đúng thứ tự Trang Chủ (home_content.json)
+export const NEED_SLUGS_ORDER = [
+  'rocky-156-bluecut-shmc',
+  'rocky-trendy-photochromic-grey',
+  'rocky-167-ultra-thin-bluecut',
+  'rocky-driveshield-night-vision',
+  'rocky-freeform-progressive-hd',
+  'rocky-myocontrol-dims-kids',
+  'rocky-chameleon-photochromic',
+  'rocky-160-mr8-aspheric',
+  'rocky-174-ultra-high-index',
+];
+
+// 11 Slugs theo đúng thứ tự 4 trang Bảng giá lẻ PDF
+export const FEATURE_SLUGS_ORDER = [
+  // Trang 1
+  'rocky-anh-sang-xanh-bluecut',
+  'rocky-smart-bluecontrol',
+  // Trang 2
+  'rocky-doi-mau-trendy',
+  'rocky-doi-mau-smart',
+  'rocky-doi-mau-edition',
+  // Trang 3
+  'rocky-chong-tia-uv-167',
+  'rocky-kinh-khoan-chong-va-dap',
+  'rocky-driveshield-ruby',
+  // Trang 4
+  'rocky-hai-trong-invisible',
+  'rocky-da-trong-freeform',
+  'rocky-myopia-control',
+];
+
 export const NEED_FILTERS = [
-  { id: 'all', label: 'Tất cả nhu cầu' },
-  { id: 'designer-bluecut', label: 'Designer đồ họa (Không đổi màu)' },
-  { id: 'office-photo', label: 'Văn phòng ra nắng (Đổi màu 2-in-1)' },
-  { id: 'driving-night', label: 'Lái xe ban đêm & Đi mưa' },
-  { id: 'high-index-rimless', label: 'Cận nặng mỏng nhẹ & Gọng khoan' },
-  { id: 'presbyopia-40', label: 'Người lớn tuổi (40+) Đa tròng' },
-  { id: 'kids-myopia', label: 'Trẻ em kiểm soát độ cận' },
+  { id: 'all', label: 'Tất cả nhu cầu (9 giải pháp)' },
+  { id: 'lam-viec', label: 'Làm việc & Đồ họa' },
+  { id: 'ngoai-troi', label: 'Ngoài trời & Lái xe' },
+  { id: 'chuyen-biet', label: 'Chuyên biệt (Lão thị, Trẻ em, Gọng khoan)' },
 ];
 
 export const TECH_FILTERS = [
-  { id: 'all', label: 'Tất cả công nghệ' },
-  { id: 'bluecut', label: 'Lọc ánh sáng xanh UV420' },
-  { id: 'photochromic', label: 'Đổi màu quang học CAT 3' },
-  { id: 'progressive', label: 'Đa tròng Freeform 4K' },
-  { id: 'thin-uv', label: 'Siêu mỏng 1.60 - 1.74' },
-  { id: 'driving-special', label: 'Chống chói đèn pha LED' },
-  { id: 'dims', label: 'Vi thấu kính D.I.M.S' },
+  { id: 'all', label: 'Tất cả tính năng (11 dòng tròng)' },
+  { id: 'asx', label: 'Ánh sáng xanh' },
+  { id: 'doi-mau', label: 'Đổi màu quang học' },
+  { id: 'kinh-khoan', label: 'Kính khoan & Chống vỡ' },
+  { id: 'lai-xe', label: 'Lái xe DriveShield' },
+  { id: 'da-trong', label: 'Đa tròng & Hai tròng' },
+  { id: 'myopia', label: 'Kiểm soát cận thị' },
 ];
 
 interface ProductCatalogViewProps {
@@ -44,10 +73,22 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
 
   const currentFilters = viewMode === 'need' ? NEED_FILTERS : TECH_FILTERS;
 
-  // Filter products based on active viewMode, subFilter, and searchQuery
+  // Filter & sort products based on active viewMode, subFilter, and searchQuery
   const filteredProducts = useMemo(() => {
-    return initialProducts.filter((product) => {
-      // 1. Text search match
+    // 1. Lọc danh sách cơ bản theo Tab
+    let baseList: Product[] = [];
+    if (viewMode === 'need') {
+      baseList = NEED_SLUGS_ORDER.map((slug) =>
+        initialProducts.find((p) => p.slug === slug)
+      ).filter(Boolean) as Product[];
+    } else {
+      baseList = FEATURE_SLUGS_ORDER.map((slug) =>
+        initialProducts.find((p) => p.slug === slug)
+      ).filter(Boolean) as Product[];
+    }
+
+    return baseList.filter((product) => {
+      // 2. Search match
       if (searchQuery.trim()) {
         const q = searchQuery.toLowerCase();
         const matchName = product.name.toLowerCase().includes(q);
@@ -58,50 +99,65 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
         const matchDesc = product.shortDescription.toLowerCase().includes(q);
         const matchSku = (product.specifications?.sku || '').toLowerCase().includes(q);
         const matchIndex = (product.refractiveIndex || '').toLowerCase().includes(q);
-        if (!matchName && !matchPersona && !matchHeadline && !matchSubtitle && !matchTagline && !matchDesc && !matchSku && !matchIndex) {
+        if (
+          !matchName &&
+          !matchPersona &&
+          !matchHeadline &&
+          !matchSubtitle &&
+          !matchTagline &&
+          !matchDesc &&
+          !matchSku &&
+          !matchIndex
+        ) {
           return false;
         }
       }
 
-      // 2. Sub-filter match
+      // 3. Sub-filter match
       if (subFilter === 'all') return true;
 
       if (viewMode === 'need') {
         switch (subFilter) {
-          case 'designer-bluecut':
-            return ['rocky-156-bluecut-shmc', 'rocky-antifatigue-relax', 'rocky-167-ultra-thin-bluecut'].includes(product.slug);
-          case 'office-photo':
-            return ['rocky-trendy-photochromic-grey', 'rocky-trendy-photochromic-brown'].includes(product.slug);
-          case 'driving-night':
-            return ['rocky-driveshield-night-vision', 'rocky-polarized-driving-sports'].includes(product.slug);
-          case 'high-index-rimless':
-            return ['rocky-160-mr8-aspheric', 'rocky-167-ultra-thin-bluecut', 'rocky-174-ultra-high-index'].includes(product.slug);
-          case 'presbyopia-40':
-            return ['rocky-freeform-progressive-hd', 'rocky-progressive-short-corridor'].includes(product.slug);
-          case 'kids-myopia':
-            return ['rocky-myocontrol-dims-kids'].includes(product.slug);
+          case 'lam-viec':
+            return [
+              'rocky-156-bluecut-shmc',
+              'rocky-trendy-photochromic-grey',
+              'rocky-freeform-progressive-hd',
+            ].includes(product.slug);
+          case 'ngoai-troi':
+            return [
+              'rocky-167-ultra-thin-bluecut',
+              'rocky-driveshield-night-vision',
+              'rocky-chameleon-photochromic',
+            ].includes(product.slug);
+          case 'chuyen-biet':
+            return [
+              'rocky-myocontrol-dims-kids',
+              'rocky-160-mr8-aspheric',
+              'rocky-174-ultra-high-index',
+            ].includes(product.slug);
           default:
             return true;
         }
       } else {
         // viewMode === 'tech'
         switch (subFilter) {
-          case 'bluecut':
-            return product.technologyIds.includes('uv420-bluecut') || ['rocky-156-bluecut-shmc', 'rocky-167-ultra-thin-bluecut', 'rocky-antifatigue-relax'].includes(product.slug);
-          case 'photochromic':
-            return product.categoryIds.includes('doi-mau') || ['rocky-trendy-photochromic-grey', 'rocky-trendy-photochromic-brown'].includes(product.slug);
-          case 'progressive':
-            return product.categoryIds.includes('da-trong') || ['rocky-freeform-progressive-hd', 'rocky-progressive-short-corridor'].includes(product.slug);
-          case 'thin-uv':
-            return (
-              ['1.60', '1.67', '1.74'].includes(product.refractiveIndex || '') ||
-              product.technologyIds.includes('ultra-high-index-174') ||
-              ['rocky-160-mr8-aspheric', 'rocky-167-ultra-thin-bluecut', 'rocky-174-ultra-high-index'].includes(product.slug)
-            );
-          case 'driving-special':
-            return ['rocky-driveshield-night-vision', 'rocky-polarized-driving-sports'].includes(product.slug);
-          case 'dims':
-            return ['rocky-myocontrol-dims-kids'].includes(product.slug);
+          case 'asx':
+            return ['rocky-anh-sang-xanh-bluecut', 'rocky-smart-bluecontrol'].includes(product.slug);
+          case 'doi-mau':
+            return [
+              'rocky-doi-mau-trendy',
+              'rocky-doi-mau-smart',
+              'rocky-doi-mau-edition',
+            ].includes(product.slug);
+          case 'kinh-khoan':
+            return ['rocky-kinh-khoan-chong-va-dap'].includes(product.slug);
+          case 'lai-xe':
+            return ['rocky-driveshield-ruby'].includes(product.slug);
+          case 'da-trong':
+            return ['rocky-hai-trong-invisible', 'rocky-da-trong-freeform'].includes(product.slug);
+          case 'myopia':
+            return ['rocky-myopia-control'].includes(product.slug);
           default:
             return true;
         }
@@ -112,7 +168,7 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
   return (
     <div className="space-y-8">
       {/* ========================================================
-          1. TOP VIEW MODE SWITCHER (Theo nhu cầu vs Theo loại & tính năng)
+          1. TOP VIEW MODE SWITCHER (Theo nhu cầu vs Theo tính năng)
           ======================================================== */}
       <div className="flex flex-col items-center justify-center space-y-4">
         {/* Segmented Capsule Control */}
@@ -126,7 +182,7 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
                 : 'text-slate-700 hover:text-heading'
             }`}
           >
-            Theo nhu cầu
+            Theo nhu cầu (Trang chủ)
           </button>
           <button
             type="button"
@@ -137,7 +193,7 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
                 : 'text-slate-700 hover:text-heading'
             }`}
           >
-            Theo loại &amp; tính năng
+            Theo tính năng (Bảng giá lẻ)
           </button>
         </div>
 
@@ -186,7 +242,7 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
 
         <div className="flex items-center space-x-3 w-full sm:w-auto justify-between sm:justify-end text-xs text-brand-muted">
           <span>
-            Hiển thị <strong className="text-heading font-bold">{filteredProducts.length}</strong> sản phẩm
+            Hiển thị <strong className="text-heading font-bold">{filteredProducts.length}</strong> sản phẩm ({viewMode === 'need' ? 'Theo nhu cầu' : 'Theo tính năng'})
           </span>
           {(subFilter !== 'all' || searchQuery.trim() !== '') && (
             <button
@@ -205,7 +261,7 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
       </div>
 
       {/* ========================================================
-          3. PRODUCT CATALOGUE GRID (Dùng chung catalogue)
+          3. PRODUCT CATALOGUE GRID (Không hiện giá thô trên trang /trong-kinh)
           ======================================================== */}
       {filteredProducts.length === 0 ? (
         <div className="text-center py-16 px-4 bg-white rounded-2xl border border-dashed border-slate-200 max-w-lg mx-auto">
@@ -248,12 +304,12 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
                   </div>
                 </div>
 
-                {/* Target Persona / Audience Tag (Directly Aligned with Home) */}
+                {/* Target Persona / Audience Tag */}
                 <div className="text-[11px] font-bold text-primary tracking-wide uppercase line-clamp-1 mb-1">
-                  {product.targetPersona || 'GIẢI PHÁP THỊ LỰC'}
+                  {product.targetPersona || (viewMode === 'need' ? 'GIẢI PHÁP THỊ LỰC' : 'TÍNH NĂNG QUANG HỌC')}
                 </div>
 
-                {/* Need-Focused Headline (2 lines uniform height) */}
+                {/* Consumer Headline or Product Name */}
                 <h3 className="h-14 flex items-start text-base sm:text-lg font-bold text-heading leading-snug group-hover:text-primary transition-colors">
                   <Link href={`/trong-kinh/${product.slug}/`} className="line-clamp-2">
                     {product.consumerHeadline || product.name}
@@ -276,7 +332,7 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
                   />
                 </div>
 
-                {/* Micro Specs Rows (Fixed height for uniform rows) */}
+                {/* Micro Specs Rows */}
                 <div className="space-y-1.5 text-xs">
                   {product.specifications.coating && (
                     <div className="h-8 flex justify-between items-center px-3 rounded-lg bg-[var(--site-bg-start)]">
@@ -297,7 +353,7 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
                 </div>
               </div>
 
-              {/* Bottom Action Footer (Anchored to bottom across all cards) */}
+              {/* Bottom Action Footer: Bỏ giá, chỉ hiện nút Xem chi tiết */}
               <div className="mt-4 pt-3.5 border-t border-slate-100 flex items-center justify-between shrink-0">
                 <span className="text-[11px] font-mono text-slate-400">
                   {product.specifications.sku || 'RL-CAN'}
@@ -306,7 +362,7 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
                   href={`/trong-kinh/${product.slug}/`}
                   className="text-xs sm:text-sm font-bold text-primary hover:text-[var(--color-primary-hover)] inline-flex items-center gap-1 group-hover:gap-1.5 transition-all"
                 >
-                  <span>Xem chi tiết</span>
+                  <span>Xem chi tiết &amp; chọn giá</span>
                   <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </Link>
               </div>

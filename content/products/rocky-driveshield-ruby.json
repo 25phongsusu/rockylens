@@ -1,0 +1,77 @@
+{
+  "id": "feat-008",
+  "slug": "rocky-driveshield-ruby",
+  "status": "published",
+  "name": "DriveShield (SHMC) - Chuyên Dụng Lái Xe",
+  "tagline": "Tối Ưu Hóa Tầm Nhìn, Triệt Tiêu Quầng Chói Đèn Pha, Trượt Nước Mưa Tuyệt Đối.",
+  "brandId": "rocky-lens",
+  "categoryIds": [
+    "lai-xe"
+  ],
+  "technologyIds": [
+    "ruby-coating",
+    "nano-shmc",
+    "mitsui-mr8"
+  ],
+  "refractiveIndex": "1.56 | 1.61 MR-8",
+  "images": [
+    "/uploads/solutions/trong-kinh-lai-xe-ban-dem-driveshield.png",
+    "/images/real/driveshield_night.jpg"
+  ],
+  "featuredImage": "/uploads/solutions/trong-kinh-lai-xe-ban-dem-driveshield.png",
+  "badge": "Night Vision Ruby",
+  "shortDescription": "Tròng kính chuyên dụng lái xe giúp tối ưu hóa tầm nhìn và giảm chói lóa từ đèn xe đối diện và ánh sáng phản xạ mặt đường. Lớp phủ Ruby AR Multi-Matrix chống bám bụi và trượt nước mưa tối đa.",
+  "targetAudience": [
+    "Tài xế ô tô, người thường xuyên điều khiển phương tiện ban đêm hoặc trời mưa",
+    "Người bị quáng gà, lóa mắt khi gặp đèn pha LED, Xenon của xe ngược chiều",
+    "Khách hàng mong muốn tầm nhìn sắc nét và an toàn trên mọi cung đường"
+  ],
+  "benefits": [
+    {
+      "title": "Lọc Quang Sai Chói Đèn LED",
+      "description": "Giảm quầng sáng chói lóa từ đèn pha xe đối diện, tăng cường độ tương phản nhìn rõ biển báo.",
+      "icon": "Car"
+    },
+    {
+      "title": "Lớp Phủ Ruby AR Cao Cấp",
+      "description": "Công nghệ lớp phủ Ruby phản quang sắc nét, hạn chế tối đa bám bụi và tan hơi nước mưa tức thì.",
+      "icon": "Sparkles"
+    },
+    {
+      "title": "Tùy Chọn Phôi MR-8 Siêu Bền",
+      "description": "Phiên bản 1.61 MR8 dẻo dai chịu lực va đập, thích hợp với mọi loại khung gọng.",
+      "icon": "ShieldCheck"
+    }
+  ],
+  "specifications": {
+    "refractiveIndex": "1.56 / 1.61 MR-8",
+    "designType": "Aspheric (ASP) DriveShield Night & Day",
+    "sphRange": "+6.00 đến -8.00 Diop",
+    "cylRange": "PL đến -2.00 Diop",
+    "coating": "Ruby AR Multi-Matrix Coating",
+    "material": "Optical Resin NK-55 / Monomer Mitsui MR-8",
+    "uvProtection": "UV400 & Giảm chói đèn xe",
+    "sku": "RL-DRIVESHIELD"
+  },
+  "relatedArticleIds": [
+    "cong-nghe-kinh-lai-xe-driveshield"
+  ],
+  "relatedProductIds": [
+    "rocky-driveshield-night-vision"
+  ],
+  "seo": {
+    "title": "Tròng Kính Lái Xe Ban Đêm DriveShield Ruby | Rocky Lens",
+    "description": "Tròng kính chuyên dụng lái xe ban đêm DriveShield Ruby 1.56 và 1.61 MR-8 chống chói đèn xe LED chính hãng Canada.",
+    "keywords": [
+      "driveshield",
+      "kính lái xe ban đêm",
+      "chống chói đèn pha",
+      "ruby ar"
+    ]
+  },
+  "consumerHeadline": "Chống Chói Đèn Pha Đêm & Đi Mưa An Toàn",
+  "materialSubtitle": "Lớp phủ Ruby AR Multi-Matrix • Giảm nhiễu ánh sáng chói lóa • Tăng tương phản đường sá",
+  "targetPersona": "TÀI XẾ & NGƯỜI HAY DI CHUYỂN BAN ĐÊM",
+  "price": 1000000,
+  "formattedPrice": "1.000.000 ₫"
+}

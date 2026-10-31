@@ -15,11 +15,10 @@
   ],
   "refractiveIndex": "1.67",
   "images": [
-    "/images/products/category-solution-1.png",
-    "/images/products/lens-lão thị.jpg",
-    "/images/technologies/sol_anh_sang_xanh.png"
+    "/uploads/solutions/trong-kinh-ngoai-troi-chong-tia-uv.png",
+    "/images/real/sol_chong_tia_uv.png"
   ],
-  "featuredImage": "/images/products/category-solution-1.png",
+  "featuredImage": "/uploads/solutions/trong-kinh-ngoai-troi-chong-tia-uv.png",
   "badge": "Mỏng Hơn 35%",
   "shortDescription": "Mỏng nhẹ hơn 35% so với tròng thông thường, triệt tiêu viền mép dày đáy chai thẩm mỹ, tích hợp lọc ánh sáng xanh UV420 toàn diện cho người làm việc văn phòng cận độ cao.",
   "targetAudience": [

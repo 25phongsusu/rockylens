@@ -1,0 +1,79 @@
+{
+  "id": "feat-001",
+  "slug": "rocky-anh-sang-xanh-bluecut",
+  "status": "published",
+  "name": "Ánh Sáng Xanh - BlueCut (SHMC)",
+  "tagline": "Giải Pháp Tối Ưu Ngăn Ánh Sáng Xanh Có Hại Bước Sóng Ngắn Năng Lượng Cao.",
+  "brandId": "rocky-lens",
+  "categoryIds": [
+    "don-trong"
+  ],
+  "technologyIds": [
+    "uv420-bluecut",
+    "nano-shmc",
+    "aspheric-design"
+  ],
+  "refractiveIndex": "1.56 | 1.61 | 1.67 | 1.74",
+  "images": [
+    "/uploads/solutions/trong-kinh-do-hoa-designer-chuan-mau.png",
+    "/images/products/category-solution-1.png"
+  ],
+  "featuredImage": "/uploads/solutions/trong-kinh-do-hoa-designer-chuan-mau.png",
+  "badge": "Tiêu Chuẩn ISO 13485",
+  "shortDescription": "Dòng tròng kính ngăn ánh sáng xanh năng lượng cao từ màn hình điện thoại, máy tính và đèn LED. Thiết kế siêu phẳng Aspheric (ASP) giúp giảm méo hình vùng rìa, hạn chế chói cao cấp và cản 100% tia UV.",
+  "targetAudience": [
+    "Người sử dụng máy tính, thiết bị điện tử liên tục trên 6 tiếng mỗi ngày",
+    "Học sinh, sinh viên, nhân viên văn phòng và lập trình viên",
+    "Khách hàng có độ cận từ nhẹ đến rất cao (tới -15.00 Diop và loạn đến -6.00 Diop)"
+  ],
+  "benefits": [
+    {
+      "title": "Công Nghệ Ngăn ASX Mới Nhất",
+      "description": "Lọc dải ánh sáng xanh tím có hại từ 400 - 420nm, giảm nhức mắt, khô rát mắt và chống thoái hóa điểm vàng.",
+      "icon": "ShieldCheck"
+    },
+    {
+      "title": "Thiết Kế Siêu Phẳng ASP",
+      "description": "Tối ưu hóa quang sai vùng rìa, mang lại tầm nhìn tự nhiên, sắc nét và thẩm mỹ mỏng phẳng.",
+      "icon": "Eye"
+    },
+    {
+      "title": "Hạn Chế Chói Cao Cấp",
+      "description": "Lớp phủ váng dầu Super Hydrophobic Multi-Coated chống lóa đèn đêm, trượt nước mưa và dễ vệ sinh.",
+      "icon": "Sparkles"
+    }
+  ],
+  "specifications": {
+    "refractiveIndex": "1.56 / 1.61 MR-8 / 1.67 / 1.74",
+    "designType": "Aspheric (ASP) Single Vision",
+    "sphRange": "+6.00 đến -15.00 Diop",
+    "cylRange": "PL đến -6.00 Diop",
+    "coating": "Elite SHMC / Lux MR-8",
+    "material": "Optical Resin NK-55 / Mitsui MR-8 / MR-174",
+    "uvProtection": "UV400 & BlueCut UV420",
+    "sku": "RL-FEAT-BLUECUT"
+  },
+  "relatedArticleIds": [
+    "giai-phap-chong-anh-sang-xanh-uv420",
+    "so-sanh-chiet-suat-trong-kinh"
+  ],
+  "relatedProductIds": [
+    "rocky-smart-bluecontrol",
+    "rocky-156-bluecut-shmc"
+  ],
+  "seo": {
+    "title": "Tròng Kính Ánh Sáng Xanh - BlueCut (SHMC) | Rocky Lens Canada",
+    "description": "Bảng giá lẻ chính hãng tròng kính chống ánh sáng xanh BlueCut SHMC 1.56, 1.61 MR-8, 1.67, 1.74. Bảo hành váng 24 tháng.",
+    "keywords": [
+      "bluecut shmc",
+      "tròng kính ánh sáng xanh",
+      "rocky bluecut",
+      "tròng kính 1.56 1.67"
+    ]
+  },
+  "consumerHeadline": "Lọc Ánh Sáng Xanh Tiêu Chuẩn (1.56 - 1.74)",
+  "materialSubtitle": "Công nghệ ngăn ánh sáng xanh thế hệ mới • Phôi trong suốt, tầm nhìn sắc nét, hạn chế chói cao cấp",
+  "targetPersona": "CÔNG NGHỆ BẢO VỆ MẮT SỐ TIÊU CHUẨN",
+  "price": 560000,
+  "formattedPrice": "560.000 ₫"
+}

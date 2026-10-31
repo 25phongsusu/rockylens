@@ -1,0 +1,77 @@
+{
+  "id": "feat-009",
+  "slug": "rocky-hai-trong-invisible",
+  "status": "published",
+  "name": "Hai Tròng (SHMC) Invisible",
+  "tagline": "Thiết Kế Không Đường Viền Tăng Tính Thẩm Mỹ, Nhìn Rõ Xa Và Gần.",
+  "brandId": "rocky-lens",
+  "categoryIds": [
+    "ho-tro-dieu-tiet",
+    "da-trong"
+  ],
+  "technologyIds": [
+    "invisible-bifocal",
+    "nano-shmc"
+  ],
+  "refractiveIndex": "1.56",
+  "images": [
+    "/images/products/category-solution-5.png",
+    "/images/technologies/sol_da_trong.png"
+  ],
+  "featuredImage": "/images/products/category-solution-5.png",
+  "badge": "Không Đường Viền",
+  "shortDescription": "Tròng kính hai tròng công nghệ Invisible xóa bỏ đường lằn phân cách truyền thống, mang lại diện mạo trẻ trung và thẩm mỹ. Tích hợp khả năng chống ánh sáng xanh hoặc đổi màu lọc ASX tiện lợi.",
+  "targetAudience": [
+    "Người bước vào độ tuổi lão thị (từ 40 tuổi) cần kính đọc sách và nhìn xa",
+    "Người e ngại đường lằn hai tròng truyền thống làm lộ tuổi tác",
+    "Khách hàng muốn làm quen với kính nhìn đa khoảng cách dễ dàng với chi phí tiết kiệm"
+  ],
+  "benefits": [
+    {
+      "title": "Thiết Kế Invisible Không Đường Lằn",
+      "description": "Bề mặt liền mạch như kính đơn tròng bình thường, giấu tuổi và tăng vẻ tự tin thẩm mỹ.",
+      "icon": "Eye"
+    },
+    {
+      "title": "Dễ Dàng Thích Nghi Ngay Lần Đầu",
+      "description": "Vùng nhìn xa và nhìn gần phân định rõ ràng, không gây cảm giác lắc lư choáng ngợp.",
+      "icon": "CheckCircle"
+    },
+    {
+      "title": "Bảo Vệ Khỏi Ánh Sáng Xanh & UV",
+      "description": "Lọc bức xạ có hại từ màn hình điện thoại khi đọc sách báo và xem tivi.",
+      "icon": "ShieldCheck"
+    }
+  ],
+  "specifications": {
+    "refractiveIndex": "1.56",
+    "designType": "Invisible Seamless Bifocal",
+    "sphRange": "-2.00 đến +3.00 Diop",
+    "addRange": "+1.00 đến +3.00 Diop",
+    "coating": "Elite SHMC",
+    "material": "High Quality Optical Resin",
+    "uvProtection": "UV400 & Lọc ASX",
+    "sku": "RL-BIFOCAL-INV"
+  },
+  "relatedArticleIds": [
+    "so-sanh-chiet-suat-trong-kinh"
+  ],
+  "relatedProductIds": [
+    "rocky-da-trong-freeform",
+    "rocky-freeform-progressive-hd"
+  ],
+  "seo": {
+    "title": "Hai Tròng Invisible Không Đường Lằn | Rocky Lens Canada",
+    "description": "Tròng kính hai tròng Invisible 1.56 không đường lằn chống ASX và đổi màu chính hãng Canada Opticians.",
+    "keywords": [
+      "hai tròng invisible",
+      "kính hai tròng không đường lằn",
+      "rocky bifocal"
+    ]
+  },
+  "consumerHeadline": "Kính Hai Tròng Trẻ Trung (Không Đường Lằn)",
+  "materialSubtitle": "Thiết kế Invisible thẩm mỹ không đường viền • Nhìn xa & đọc sách gần • Chống ASX",
+  "targetPersona": "NGƯỜI LÃNH THỊ BƯỚC ĐẦU (40+)",
+  "price": 590000,
+  "formattedPrice": "590.000 ₫"
+}

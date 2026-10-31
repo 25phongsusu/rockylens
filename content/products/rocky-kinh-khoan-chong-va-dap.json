@@ -1,0 +1,77 @@
+{
+  "id": "feat-007",
+  "slug": "rocky-kinh-khoan-chong-va-dap",
+  "status": "published",
+  "name": "Kính Khoan & Chống Va Đập (SHMC)",
+  "tagline": "Độ Bền Cơ Học Vượt Trội, Chống Va Đập Mạnh, Chuyên Dụng Gọng Bắt Ốc.",
+  "brandId": "rocky-lens",
+  "categoryIds": [
+    "kinh-khoan"
+  ],
+  "technologyIds": [
+    "mitsui-mr8",
+    "nano-shmc",
+    "crystal-sapphire"
+  ],
+  "refractiveIndex": "1.58 | 1.60 | 1.61 MR-8",
+  "images": [
+    "/uploads/solutions/trong-kinh-gong-khoan-chong-vo-mr8.png",
+    "/images/real/sol_kinh_khoan_va_dap.png"
+  ],
+  "featuredImage": "/uploads/solutions/trong-kinh-gong-khoan-chong-vo-mr8.png",
+  "badge": "Chống Vỡ Tuyệt Đối",
+  "shortDescription": "Nhóm tròng kính chuyên dụng cho kính khoan với độ bền cơ học cao và khả năng chống va đập mạnh. Gồm tròng chống bể 1.58 ASX, Rocky-Safe 1.60 chịu lực gấp 10 lần, và các dòng phôi Mitsui MR-8.",
+  "targetAudience": [
+    "Người đeo kính gọng khoan bắt ốc, kính xẻ cước bán khung không viền",
+    "Người chơi thể thao, vận động viên, trẻ em hiếu động cần an toàn tuyệt đối",
+    "Doanh nhân yêu thích diện mạo thanh thoát của kính không viền"
+  ],
+  "benefits": [
+    {
+      "title": "Chịu Lực Va Đập Vượt Trội",
+      "description": "Vật liệu dẻo dai đàn hồi cao, không bao giờ lo nứt vỡ hay mẻ mép khoan bắt ốc.",
+      "icon": "ShieldCheck"
+    },
+    {
+      "title": "Rocky-Safe 1.60 Chịu Lực X10",
+      "description": "Polymer thế hệ mới chịu lực gấp 10 lần tròng thường, chỉ số Abbe 40 cho hình ảnh chuẩn HD.",
+      "icon": "Award"
+    },
+    {
+      "title": "Đa Dạng Tính Năng Đi Kèm",
+      "description": "Có đầy đủ tùy chọn: Lọc ASX, Chống chói lái xe DriveShield, và Đổi màu Smart Nâu Amber.",
+      "icon": "Sparkles"
+    }
+  ],
+  "specifications": {
+    "refractiveIndex": "1.58 / 1.60 / 1.61 MR-8",
+    "designType": "High Impact Rimless Drill Design",
+    "sphRange": "+6.00 đến -10.00 Diop",
+    "cylRange": "PL đến -2.00 Diop",
+    "coating": "Elite / Crystal Sapphire / Ruby",
+    "material": "Monomer Mitsui MR-8 / High Impact Polymer",
+    "uvProtection": "UV400 & Lọc ASX",
+    "sku": "RL-RIMLESS-MR8"
+  },
+  "relatedArticleIds": [
+    "so-sanh-chiet-suat-trong-kinh"
+  ],
+  "relatedProductIds": [
+    "rocky-160-mr8-aspheric"
+  ],
+  "seo": {
+    "title": "Tròng Kính Khoan & Chống Va Đập MR-8 | Rocky Lens",
+    "description": "Bảng giá lẻ tròng kính gọng khoan, chống vỡ chống va đập Mitsui MR-8 và Rocky-Safe 1.60 chính hãng Canada Opticians.",
+    "keywords": [
+      "kính khoan chống vỡ",
+      "mitsui mr8",
+      "rocky-safe 1.60",
+      "tròng chống bể"
+    ]
+  },
+  "consumerHeadline": "Chuyên Dụng Gọng Khoan Bắt Ốc & Vận Động",
+  "materialSubtitle": "Phôi Mitsui MR-8 & Polymer chịu lực X10 • Chống nứt mép khoan • An toàn cho mắt",
+  "targetPersona": "DOANH NHÂN & NGƯỜI CHƠI THỂ THAO",
+  "price": 790000,
+  "formattedPrice": "790.000 ₫"
+}
