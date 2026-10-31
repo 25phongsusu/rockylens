@@ -70,7 +70,7 @@ interface ProductCatalogViewProps {
 }
 
 export default function ProductCatalogView({ initialProducts }: ProductCatalogViewProps) {
-  const [viewMode, setViewMode] = useState<ViewMode>('tech'); // Mặc định mở theo tính năng bảng giá
+  const [viewMode, setViewMode] = useState<ViewMode>('need');
   const [subFilter, setSubFilter] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState<string>('');
 
@@ -184,17 +184,6 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
         <div className="inline-flex p-1.5 rounded-full bg-slate-200/90 border border-slate-300 shadow-inner">
           <button
             type="button"
-            onClick={() => handleModeChange('tech')}
-            className={`px-6 sm:px-9 py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all cursor-pointer ${
-              viewMode === 'tech'
-                ? 'bg-[var(--b2b-end)] text-white shadow-md'
-                : 'text-slate-700 hover:text-heading'
-            }`}
-          >
-            Theo tính năng (Bảng giá lẻ)
-          </button>
-          <button
-            type="button"
             onClick={() => handleModeChange('need')}
             className={`px-6 sm:px-9 py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all cursor-pointer ${
               viewMode === 'need'
@@ -202,7 +191,18 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
                 : 'text-slate-700 hover:text-heading'
             }`}
           >
-            Theo nhu cầu (Trang chủ)
+            Theo nhu cầu
+          </button>
+          <button
+            type="button"
+            onClick={() => handleModeChange('tech')}
+            className={`px-6 sm:px-9 py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all cursor-pointer ${
+              viewMode === 'tech'
+                ? 'bg-[var(--b2b-end)] text-white shadow-md'
+                : 'text-slate-700 hover:text-heading'
+            }`}
+          >
+            Theo tính năng
           </button>
         </div>
 
@@ -259,7 +259,7 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
 
         <div className="flex items-center space-x-3 w-full sm:w-auto justify-between sm:justify-end text-xs text-brand-muted">
           <span>
-            Hiển thị <strong className="text-heading font-bold">{filteredProducts.length}</strong> sản phẩm ({viewMode === 'tech' ? '11 tính năng Bảng giá lẻ' : '9 giải pháp Trang chủ'})
+            Hiển thị <strong className="text-heading font-bold">{filteredProducts.length}</strong> sản phẩm ({viewMode === 'need' ? 'Theo nhu cầu' : 'Theo tính năng'})
           </span>
           {(subFilter !== 'all' || searchQuery.trim() !== '') && (
             <button
