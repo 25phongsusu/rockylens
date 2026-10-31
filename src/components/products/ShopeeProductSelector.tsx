@@ -90,12 +90,6 @@ export default function ShopeeProductSelector({ product }: ShopeeProductSelector
     };
   }, [pricingConfig, selected, product]);
 
-  // Tính giá gốc giả định (+25%) để hiển thị ưu đãi niêm yết
-  const originalPriceFormatted = useMemo(() => {
-    const raw = Math.round((pricingResult.price * 1.25) / 10000) * 10000;
-    return `${raw.toLocaleString('vi-VN')} ₫`;
-  }, [pricingResult.price]);
-
   return (
     <div className="rounded-2xl border-2 border-slate-200/90 bg-white p-4 sm:p-6 shadow-sm space-y-6 my-6">
       {/* ========================================================
@@ -116,12 +110,6 @@ export default function ShopeeProductSelector({ product }: ShopeeProductSelector
               style={{ backgroundColor: theme.primaryColor }}
             >
               GIÁ BÁN LẺ NIÊM YẾT
-            </span>
-            <span className="text-xs font-semibold text-slate-400 line-through">
-              {originalPriceFormatted}
-            </span>
-            <span className="text-[11px] font-bold text-slate-700 bg-white px-1.5 py-0.2 rounded border border-slate-200 shadow-2xs">
-              -20% Ưu đãi hãng
             </span>
           </div>
 
