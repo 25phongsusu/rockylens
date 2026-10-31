@@ -58,7 +58,7 @@ export const PRICING_SCHEMAS: Record<string, ProductPricingSchema> = {
     selectorGroups: [
       {
         id: 'index',
-        label: '1. Chọn Chiết Xuất & Dòng Tròng',
+        label: '1. Chọn Chiết Suất & Dòng Tròng',
         type: 'index',
         options: [
           { id: '156-elite', label: '1.56 ASP BLUECUT (Elite)', sub: 'Ngăn ASX mới nhất, phôi trong suốt' },
@@ -201,7 +201,7 @@ export const PRICING_SCHEMAS: Record<string, ProductPricingSchema> = {
     selectorGroups: [
       {
         id: 'index',
-        label: '1. Chọn Chiết Xuất & Dòng Tròng',
+        label: '1. Chọn Chiết Suất & Dòng Tròng',
         type: 'index',
         options: [
           { id: '161-smart', label: '1.61 ASP SMART BLUECONTROL', sub: 'Lớp phủ Blue Sapphire, cứng gấp 3.5 lần' },
@@ -296,7 +296,7 @@ export const PRICING_SCHEMAS: Record<string, ProductPricingSchema> = {
       },
       {
         id: 'index',
-        label: '2. Chiết Xuất & Thiết Kế',
+        label: '2. Chiết Suất & Thiết Kế',
         type: 'index',
         options: [
           { id: '156-trendy', label: '1.56 SHMC Đổi Màu Siêu Nhanh', sub: 'SPH PL đến -6.00 | CYL PL đến -2.00' },
@@ -360,7 +360,7 @@ export const PRICING_SCHEMAS: Record<string, ProductPricingSchema> = {
     selectorGroups: [
       {
         id: 'model',
-        label: '1. Chọn Dòng Sản Phẩm & Chiết Xuất',
+        label: '1. Chọn Dòng Sản Phẩm & Chiết Suất',
         type: 'subproduct',
         options: [
           { id: '156-smart', label: '1.56 ASP Đổi Màu Lọc ASX (Sapphire)', sub: 'Best Choice - Hạn chế bám nước, bụi bẩn' },
@@ -697,7 +697,7 @@ export const PRICING_SCHEMAS: Record<string, ProductPricingSchema> = {
     selectorGroups: [
       {
         id: 'index',
-        label: '1. Chọn Chiết Xuất Tròng Kính',
+        label: '1. Chọn Chiết Suất Tròng Kính',
         type: 'index',
         options: [
           { id: '156-drive', label: '1.56 ASP DRIVESHIELD (Ruby)', sub: 'Giảm chói đèn xe, hạn chế bám bụi bẩn & bám nước' },
@@ -949,7 +949,7 @@ export const PRICING_SCHEMAS: Record<string, ProductPricingSchema> = {
     selectorGroups: [
       {
         id: 'index',
-        label: '1. Chọn Chiết Xuất & Độ Mỏng',
+        label: '1. Chọn Chiết Suất & Độ Mỏng',
         type: 'index',
         options: [
           { id: '156', label: '1.56 ASP (Tiêu Chuẩn)', sub: 'Cận nhẹ đến vừa, trong suốt 99.8%' },
@@ -1007,7 +1007,7 @@ export const PRICING_SCHEMAS: Record<string, ProductPricingSchema> = {
     selectorGroups: [
       {
         id: 'index',
-        label: '1. Chọn Chiết Xuất Phù Hợp',
+        label: '1. Chọn Chiết Suất Phù Hợp',
         type: 'index',
         options: [
           { id: '156', label: '1.56 ASP Đổi Màu Lọc ASX', sub: 'Tiêu chuẩn kinh tế, phủ Sapphire' },
@@ -1098,7 +1098,7 @@ export const PRICING_SCHEMAS: Record<string, ProductPricingSchema> = {
     selectorGroups: [
       {
         id: 'index',
-        label: '1. Chọn Chiết Xuất Tròng Kính',
+        label: '1. Chọn Chiết Suất Tròng Kính',
         type: 'index',
         options: [
           { id: '156', label: '1.56 ASP DriveShield Ruby', sub: 'Lọc quang sai chói đèn LED, trượt nước mưa' },
@@ -1234,7 +1234,7 @@ export const PRICING_SCHEMAS: Record<string, ProductPricingSchema> = {
       },
       {
         id: 'index',
-        label: '2. Chiết Xuất & Phân Cấp',
+        label: '2. Chiết Suất & Phân Cấp',
         type: 'index',
         options: [
           { id: '156-trendy', label: '1.56 Trendy Photo (688.000 ₫)', sub: 'Đổi màu nhạy sáng siêu nhanh' },
@@ -1312,7 +1312,7 @@ export const PRICING_SCHEMAS: Record<string, ProductPricingSchema> = {
     selectorGroups: [
       {
         id: 'index',
-        label: '1. Chọn Chiết Xuất Siêu Mỏng',
+        label: '1. Chọn Chiết Suất Siêu Mỏng',
         type: 'index',
         options: [
           { id: '167-bluecut', label: '1.67 ASP BlueCut Elite (1.228.000 ₫)', sub: 'Mỏng hơn 35%, triệt tiêu độ dày mép tròng' },
@@ -1628,7 +1628,7 @@ export const FEATURE_THEMES: Record<string, FeatureTheme> = {
   'rocky-freeform-progressive-hd': {
     slug: 'rocky-freeform-progressive-hd',
     pdfPage: 4,
-    pdfSectionTitle: 'LÃNH THỊ & NGƯỜI LỚN TUỔI (ĐA TRÒNG XA TRUNG GẦN)',
+    pdfSectionTitle: 'LÃO THỊ & NGƯỜI LỚN TUỔI (ĐA TRÒNG XA TRUNG GẦN)',
     primaryColor: '#8c261d',
     bannerGradient: 'linear-gradient(135deg, #a9372d 0%, #8c261d 100%)',
     badgeBgHex: '#8c261d',

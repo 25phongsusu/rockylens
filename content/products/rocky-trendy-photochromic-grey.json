@@ -2,8 +2,8 @@
   "id": "prod-005",
   "slug": "rocky-trendy-photochromic-grey",
   "status": "published",
-  "name": "Tròng Đổi Màu Nhanh Rocky Trendy Smart Khói 1.56 / 1.60",
-  "tagline": "1 Chiếc Kính. 2 Phong Cách. Tiện Lợi Tối Đa.",
+  "name": "Dành cho dân văn phòng & làm việc máy tính (Lọc ASX + Đổi màu)",
+  "tagline": "Rocky Trendy Smart BlueCut Photo • Lọc Ánh Sáng Xanh & Đổi Màu Nắng 2-in-1",
   "brandId": "rocky-lens",
   "categoryIds": [
     "doi-mau",
@@ -21,7 +21,7 @@
   ],
   "featuredImage": "/uploads/solutions/trong-kinh-van-phong-chong-asx-doi-mau.png",
   "badge": "Đổi Màu Khói 2-in-1",
-  "shortDescription": "Trong nhà lọc ánh sáng xanh máy tính êm dịu mắt, bước ra nắng lập tức chuyển màu râm khói chuẩn CAT 3 chống tia cực tím UV400 và chống chói lóa tiện lợi 2 trong 1.",
+  "shortDescription": "Trong phòng làm việc lọc ánh sáng xanh máy tính êm dịu mắt, bước ra nắng tròng tự động đổi màu râm chống chói và cản 100% tia UV tiện lợi 2 trong 1.",
   "targetAudience": [
     "Người thường xuyên di chuyển giữa văn phòng trong nhà và hoạt động ngoài trời",
     "Người có mắt nhạy cảm với ánh sáng chói, sợ lóa mắt khi đi xe máy",
@@ -29,18 +29,23 @@
   ],
   "benefits": [
     {
-      "title": "Đổi Màu Nhanh 30 Giây",
-      "description": "Phản ứng quang hóa nhạy bén, đậm màu đều và nhả lại màu trong suốt nhanh chóng khi bước vào nhà.",
-      "icon": "SunMedium"
-    },
-    {
-      "title": "Màu Xám Khói Thời Trang",
-      "description": "Tông màu thời thượng, giữ nguyên độ chân thực màu sắc cảnh vật tự nhiên xung quanh.",
+      "title": "Tính Năng Nổi Bật",
+      "description": "Lọc ánh sáng xanh trong nhà, ra nắng đổi màu râm tức thì",
       "icon": "Sparkles"
     },
     {
-      "title": "Chống 100% Tia Cực Tím UVA/UVB",
-      "description": "Bảo vệ toàn diện giác mạc và ngăn ngừa đục thủy tinh thể do tia tử ngoại.",
+      "title": "Công Nghệ Quang Học",
+      "description": "Phủ xoay Spin-Coat nhạy sáng + Phôi BlueCut UV420",
+      "icon": "Layers"
+    },
+    {
+      "title": "Trải Nghiệm Thị Giác",
+      "description": "Bảo vệ mắt toàn diện: vừa làm việc số vừa chống nắng",
+      "icon": "Eye"
+    },
+    {
+      "title": "Bảo Hành Chính Hãng",
+      "description": "Bảo hành điện tử 1 đổi 1 trong 24 tháng cho lớp váng phủ trên toàn quốc.",
       "icon": "ShieldCheck"
     }
   ],
@@ -81,8 +86,8 @@
       "rocky trendy đổi màu"
     ]
   },
-  "consumerHeadline": "Văn Phòng Hay Ra Nắng (Lọc Ánh Sáng Xanh + CÓ ĐỔI MÀU)",
-  "materialSubtitle": "Rocky Trendy Smart Photo Grey • Phủ xoay Spin-Coat chuyển màu nhanh kết hợp phôi BlueCut UV420 bảo vệ kép",
+  "consumerHeadline": "Lọc Ánh Sáng Xanh & Đổi Màu Nắng 2-in-1",
+  "materialSubtitle": "Rocky Trendy Smart BlueCut Photo • Lọc ánh sáng xanh trong nhà, ra nắng đổi màu râm tức thì",
   "targetPersona": "DÂN VĂN PHÒNG & NĂNG ĐỘNG (2 TRONG 1)",
   "price": 1000000,
   "formattedPrice": "1.000.000 ₫"

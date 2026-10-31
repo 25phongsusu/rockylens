@@ -26,7 +26,7 @@ export default function ProductSpecifications({
     <div className="overflow-hidden rounded-xl border border-slate-200 bg-white">
       <div className="bg-slate-50 px-5 py-3 border-b border-slate-200">
         <h4 className="text-sm font-bold text-slate-800 tracking-wide uppercase">
-          Bảng Thông Số Kỹ Thuật (B2B Optical Specifications)
+          Bảng Thông Số Kỹ Thuật Quang Học Chi Tiết
         </h4>
       </div>
       <div className="divide-y divide-slate-100">

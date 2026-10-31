@@ -2,8 +2,8 @@
   "id": "prod-home-007",
   "slug": "rocky-chameleon-photochromic",
   "status": "published",
-  "name": "Tròng Kính Cận Đổi Màu Thời Trang Rocky Trendy Style Photochromic",
-  "tagline": "Biến Kính Cận Thành Kính Râm Sành Điệu Với BST 6 Sắc Màu Xu Hướng.",
+  "name": "Dành cho tín đồ thời trang (Kính cận đổi màu đa sắc cá tính)",
+  "tagline": "Rocky Trendy Style Photochromic • Bộ Sưu Tập Màu Đổi Thời Thượng",
   "brandId": "rocky-lens",
   "categoryIds": [
     "doi-mau"
@@ -20,7 +20,7 @@
   ],
   "featuredImage": "/uploads/solutions/trong-kinh-doi-mau-thoi-trang-trendy.png",
   "badge": "7 Sắc Màu Xu Hướng",
-  "shortDescription": "Bộ sưu tập 6 sắc màu thời thượng (Khói, Trà, Xanh dương, Xanh lá, Hồng, Tím) cùng phiên bản cao cấp Nâu Amber. Tự động chuyển đổi màu râm nhanh nhạy khi tiếp xúc tia UV ngoài trời, bảo vệ võng mạc tối đa.",
+  "shortDescription": "Biến chiếc kính cận thành kính râm sành điệu với bộ sưu tập 7 sắc màu xu hướng: Khói Titan, Trà Hổ Phách, Xanh Sapphire... đổi màu nhạy sáng khi ra nắng.",
   "targetAudience": [
     "Tín đồ thời trang muốn sở hữu kính cận vừa là phụ kiện phong cách, vừa là kính râm ngoài trời",
     "Người thường xuyên di chuyển ngoài trời, du lịch, chụp ảnh mong muốn màu tròng cá tính",
@@ -28,18 +28,23 @@
   ],
   "benefits": [
     {
-      "title": "Đổi Màu Siêu Nhanh Khi Ra Nắng",
-      "description": "Lớp phủ Spin-Coat nhạy sáng kích hoạt chuyển màu râm đậm chỉ trong 30 giây khi tiếp xúc bức xạ UV ngoài trời.",
-      "icon": "SunMedium"
-    },
-    {
-      "title": "Bộ Sưu Tập Màu Sắc Đa Dạng",
-      "description": "6 sắc màu thời thượng: Khói, Trà, Xanh dương, Xanh lá, Hồng, Tím cùng màu Nâu Amber quý phái.",
+      "title": "Tính Năng Nổi Bật",
+      "description": "Đổi màu nhanh nhạy theo tia UV, 7 sắc màu thời thượng",
       "icon": "Sparkles"
     },
     {
-      "title": "Ngăn Chặn 100% Tia Cực Tím UV400",
-      "description": "Bảo vệ võng mạc và vùng da quanh mắt khỏi tổn hại của ánh nắng gay gắt, chống chói lóa hiệu quả.",
+      "title": "Công Nghệ Quang Học",
+      "description": "Lớp phủ xoay ma trận màu Spin-Coat + Váng dầu SHMC",
+      "icon": "Layers"
+    },
+    {
+      "title": "Trải Nghiệm Thị Giác",
+      "description": "Thời trang cá tính, bảo vệ mắt chống chói lóa ngoài trời",
+      "icon": "Eye"
+    },
+    {
+      "title": "Bảo Hành Chính Hãng",
+      "description": "Bảo hành điện tử 1 đổi 1 trong 24 tháng cho lớp váng phủ trên toàn quốc.",
       "icon": "ShieldCheck"
     }
   ],
@@ -79,8 +84,8 @@
       "photochromic 1.56"
     ]
   },
-  "consumerHeadline": "Kính Cận Đổi Màu Thời Trang (7 Sắc Màu Cá Tính)",
-  "materialSubtitle": "Rocky Trendy Style Photochromic • Lớp phủ xoay ma trận màu Spin-Coat + Váng dầu SHMC",
+  "consumerHeadline": "Bộ Sưu Tập Màu Đổi Thời Thượng",
+  "materialSubtitle": "Rocky Trendy Style Photochromic • Đổi màu nhanh nhạy theo tia UV, 7 sắc màu thời thượng",
   "targetPersona": "DÀNH CHO TÍN ĐỒ THỜI TRANG & NĂNG ĐỘNG",
   "price": 688000,
   "formattedPrice": "688.000 ₫"

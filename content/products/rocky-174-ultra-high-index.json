@@ -2,8 +2,8 @@
   "id": "prod-004",
   "slug": "rocky-174-ultra-high-index",
   "status": "published",
-  "name": "Tròng Siêu Mỏng Đỉnh Cao Rocky 1.74 Freeform Aspheric",
-  "tagline": "Giải pháp đỉnh cao về độ mỏng và thẩm mỹ quang học cho độ khúc xạ cực cao",
+  "name": "Độ Cận Viễn Nặng (Tròng Mỏng Chiết Suất 1.67 - 1.74)",
+  "tagline": "Rocky Ultra Thin 1.74 Aspheric • Chiết Suất 1.67 & 1.74 Mỏng Nhẹ",
   "brandId": "rocky-lens",
   "categoryIds": [
     "don-trong"
@@ -20,7 +20,7 @@
   ],
   "featuredImage": "/uploads/solutions/trong-kinh-mong-chiet-suat-cao-167-174.png",
   "badge": "Siêu Mỏng -45%",
-  "shortDescription": "Đỉnh cao mỏng nhẹ thế giới: mỏng hơn tới 45%, loại bỏ hoàn toàn hiện tượng mắt bị thu nhỏ hay viền đáy chai, nhẹ tênh trên sống mũi khi kết hợp cùng gọng kính cao cấp.",
+  "shortDescription": "Chiết suất cao 1.67 và 1.74 mỏng nhẹ hơn đến 45%, triệt tiêu độ dày đáy chai ở mép tròng, mắt nhìn tự nhiên không bị thu nhỏ khi lên gọng kính.",
   "targetAudience": [
     "Độ cận từ -7.00 đến -15.00 Diop hoặc viễn thị trên +5.00 Diop",
     "Doanh nhân, người mẫu, khách hàng đòi hỏi sự tinh tế và trọng lượng nhẹ tuyệt đối",
@@ -28,19 +28,24 @@
   ],
   "benefits": [
     {
-      "title": "Mỏng Hơn 45% - Nhẹ Hơn 35%",
-      "description": "Loại bỏ hoàn toàn cảm giác nặng sống mũi và đau vành tai khi đeo kính suốt ngày dài.",
+      "title": "Tính Năng Nổi Bật",
+      "description": "Chiết suất siêu mỏng 1.67 - 1.74, triệt tiêu viền dày đáy chai",
+      "icon": "Sparkles"
+    },
+    {
+      "title": "Công Nghệ Quang Học",
+      "description": "Phôi Monomer chiết suất cao + Thiết kế quang học Aspheric",
       "icon": "Layers"
     },
     {
-      "title": "Gia Công Kỹ Thuật Số Đơn Điểm",
-      "description": "Tối ưu hóa quang sai từng micromet bề mặt, cho trường nhìn rộng và chân thực tối đa.",
-      "icon": "Cpu"
+      "title": "Trải Nghiệm Thị Giác",
+      "description": "Đôi mắt tự nhiên không bị thu nhỏ, tròng nhẹ êm trên sống mũi",
+      "icon": "Eye"
     },
     {
-      "title": "Váng Phủ Kim Cương Siêu Bền",
-      "description": "Chống xước vượt bậc, chống chói lóa đèn xe và phản quang gương trong trẻo.",
-      "icon": "Sparkles"
+      "title": "Bảo Hành Chính Hãng",
+      "description": "Bảo hành điện tử 1 đổi 1 trong 24 tháng cho lớp váng phủ trên toàn quốc.",
+      "icon": "ShieldCheck"
     }
   ],
   "specifications": {
@@ -78,8 +83,8 @@
       "tròng kính cận nặng siêu mỏng"
     ]
   },
-  "consumerHeadline": "Cận Nặng Đỉnh Cao Siêu Mỏng Nhẹ (-45% Độ Dày)",
-  "materialSubtitle": "Rocky 1.74 Freeform Aspheric • Phôi cao cấp Mitsui MR-174 Nhật Bản, triệt tiêu quang sai vùng biên tối đa",
+  "consumerHeadline": "Chiết Suất 1.67 & 1.74 Mỏng Nhẹ",
+  "materialSubtitle": "Rocky Ultra Thin 1.74 Aspheric • Chiết suất siêu mỏng 1.67 - 1.74, triệt tiêu viền dày đáy chai",
   "targetPersona": "CẬN NẶNG ĐỘ CỰC CAO (-7.00 ĐẾN -15.00D)",
   "price": 1000000,
   "formattedPrice": "1.000.000 ₫"

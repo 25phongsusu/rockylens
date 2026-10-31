@@ -2,8 +2,8 @@
   "id": "prod-007",
   "slug": "rocky-freeform-progressive-hd",
   "status": "published",
-  "name": "Kính Đa Tròng Rocky Freeform HD Wide View 1.56 / 1.60",
-  "tagline": "Tầm nhìn chuyển tiếp êm ái, xóa bỏ ranh giới nhìn xa - trung - gần cho người lão thị",
+  "name": "Dành cho người lớn tuổi & lão thị (Đa tròng nhìn Xa - Trung - Gần)",
+  "tagline": "CanRx Freeform HD Progressive • Đa Tròng Kỹ Thuật Số Liền Mạch",
   "brandId": "rocky-lens",
   "categoryIds": [
     "da-trong"
@@ -20,7 +20,7 @@
   ],
   "featuredImage": "/uploads/solutions/trong-kinh-da-trong-xa-trung-gan.png",
   "badge": "Đa Tròng Liền Mạch",
-  "shortDescription": "Xóa bỏ hoàn toàn đường lằn 2 tròng: đọc sách báo, xem tin nhắn điện thoại, làm việc máy tính đến đi lại lái xe chỉ trong 1 cặp kính duy nhất, không choáng váng chao lắc.",
+  "shortDescription": "Xóa bỏ đường lằn hai tròng, chuyển tiếp êm ái mọi cự ly: đọc sách báo, xem điện thoại, làm việc máy tính đến đi lại lái xe trong 1 cặp kính duy nhất.",
   "targetAudience": [
     "Người từ 40 tuổi trở lên bắt đầu gặp hiện tượng lão thị (khó đọc sách, nhìn chữ điện thoại)",
     "Doanh nhân, nhà quản lý, bác sĩ, giáo viên cần chuyển đổi liên tục giữa nhìn bảng/máy tính và tài liệu",
@@ -28,19 +28,24 @@
   ],
   "benefits": [
     {
-      "title": "Vùng Nhìn Mở Rộng 40%",
-      "description": "Hạn chế tối đa hiện tượng méo hình biên, chuyển đổi thị giác êm dịu mượt mà.",
+      "title": "Tính Năng Nổi Bật",
+      "description": "Nhìn rõ mọi cự ly Xa - Trung - Gần không cần tháo kính",
+      "icon": "Sparkles"
+    },
+    {
+      "title": "Công Nghệ Quang Học",
+      "description": "Mài kỹ thuật số vi điểm Freeform HD mặt sau",
+      "icon": "Layers"
+    },
+    {
+      "title": "Trải Nghiệm Thị Giác",
+      "description": "Thích nghi dễ dàng, xóa bỏ cảm giác choáng váng lắc đầu",
       "icon": "Eye"
     },
     {
-      "title": "Dễ Thích Nghi Ngay Lần Đầu",
-      "description": "Hành lang điều tiết được tính toán mềm mại, chỉ mất 1-3 ngày làm quen thay vì nhiều tuần.",
-      "icon": "Cpu"
-    },
-    {
-      "title": "Thẩm Mỹ Không Vạch Phân Cách",
-      "description": "Bề mặt trơn láng như kính đơn tròng thông thường, không ai nhận ra bạn đang đeo kính lão.",
-      "icon": "Sparkles"
+      "title": "Bảo Hành Chính Hãng",
+      "description": "Bảo hành điện tử 1 đổi 1 trong 24 tháng cho lớp váng phủ trên toàn quốc.",
+      "icon": "ShieldCheck"
     }
   ],
   "specifications": {
@@ -81,8 +86,8 @@
       "rocky lens đa tròng"
     ]
   },
-  "consumerHeadline": "Người Lớn Tuổi Nhìn Xa - Trung - Gần (Đa Tròng Liền Mạch)",
-  "materialSubtitle": "CanRx Freeform HD Progressive • Mài kỹ thuật số vi điểm mặt sau Freeform HD, thích nghi êm dịu tức thì",
+  "consumerHeadline": "Đa Tròng Kỹ Thuật Số Liền Mạch",
+  "materialSubtitle": "CanRx Freeform HD Progressive • Nhìn rõ mọi cự ly Xa - Trung - Gần không cần tháo kính",
   "targetPersona": "NGƯỜI LỚN TUỔI & TRUNG NIÊN (40+)",
   "price": 1000000,
   "formattedPrice": "1.000.000 ₫"

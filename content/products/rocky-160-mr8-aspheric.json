@@ -2,8 +2,8 @@
   "id": "prod-002",
   "slug": "rocky-160-mr8-aspheric",
   "status": "published",
-  "name": "Tròng Kính Phi Cầu Rocky 1.60 MR-8 Aspheric Chống Vỡ",
-  "tagline": "Vật liệu dẻo dai đàn hồi cao cấp chuyên dụng cho mọi loại gọng kính bắt ốc và xẻ cước",
+  "name": "Dành cho người đeo gọng khoan, không viền (Siêu dai MR-8 chống vỡ)",
+  "tagline": "Rocky MR-8 Tough Rimless Drill • Phôi Mitsui MR-8 Bắt Ốc Chống Mẻ",
   "brandId": "rocky-lens",
   "categoryIds": [
     "don-trong",
@@ -20,7 +20,7 @@
   ],
   "featuredImage": "/uploads/solutions/trong-kinh-gong-khoan-chong-vo-mr8.png",
   "badge": "Siêu Dai Chống Vỡ",
-  "shortDescription": "Chiết suất 1.60 mỏng nhẹ hơn 20%, phôi Mitsui MR-8 Nhật Bản siêu dẻo dai chống sứt mẻ ốc khoan bắt vít, triệt tiêu viền dày đáy chai và chịu lực va đập tuyệt đối an toàn.",
+  "shortDescription": "Chất liệu Mitsui MR-8 Nhật Bản siêu dẻo dai và chịu lực uốn đỉnh cao, khoan bắt ốc chắc chắn không lo rạn nứt mép kính, thanh thoát và sang trọng.",
   "targetAudience": [
     "Khách hàng sử dụng gọng khoan không vành (rimless), gọng xẻ cước hoặc gọng thời trang cao cấp",
     "Người thường xuyên vận động thể thao, cần độ an toàn cơ học chống va đập vỡ tròng",
@@ -28,19 +28,24 @@
   ],
   "benefits": [
     {
-      "title": "Độ Dai Cơ Học Tuyệt Vời",
-      "description": "Chịu lực kéo và va đập gấp 6 lần vật liệu CR-39 thông thường, hoàn toàn không nứt vỡ khi khoan lỗ bắt ốc.",
-      "icon": "Award"
+      "title": "Tính Năng Nổi Bật",
+      "description": "Độ dai cơ học tuyệt hảo, chuyên dụng cho gọng khoan ốc",
+      "icon": "Sparkles"
     },
     {
-      "title": "Thiết Kế Phi Cầu Aspheric",
-      "description": "Bề mặt phẳng hơn, mắt nhìn tự nhiên không bị thu nhỏ mắt, mở rộng trường thị giác sắc nét ra tận rìa tròng.",
+      "title": "Công Nghệ Quang Học",
+      "description": "Monomer Mitsui MR-8 Nhật Bản liên kết phân tử chịu lực",
+      "icon": "Layers"
+    },
+    {
+      "title": "Trải Nghiệm Thị Giác",
+      "description": "Kính nhẹ tênh, diện mạo doanh nhân tinh tế và sang trọng",
       "icon": "Eye"
     },
     {
-      "title": "Chỉ Số Abbe Cao 41",
-      "description": "Giảm tán sắc màu sắc, mang lại hình ảnh sắc nét trong trẻo và hạn chế quang sai màu.",
-      "icon": "Sparkles"
+      "title": "Bảo Hành Chính Hãng",
+      "description": "Bảo hành điện tử 1 đổi 1 trong 24 tháng cho lớp váng phủ trên toàn quốc.",
+      "icon": "ShieldCheck"
     }
   ],
   "specifications": {
@@ -80,8 +85,8 @@
       "rocky 1.60 aspheric"
     ]
   },
-  "consumerHeadline": "Cận Nặng Mỏng Nhẹ & Gọng Khoan Không Viền",
-  "materialSubtitle": "Rocky Tough Aspheric MR-8 • Phôi Mitsui MR-8 Nhật Bản siêu dai chống nứt vỡ, chuyên dụng gọng khoan & xẻ cước",
+  "consumerHeadline": "Phôi Mitsui MR-8 Bắt Ốc Chống Mẻ",
+  "materialSubtitle": "Rocky MR-8 Tough Rimless Drill • Độ dai cơ học tuyệt hảo, chuyên dụng cho gọng khoan ốc",
   "targetPersona": "CẬN ĐỘ CAO & GỌNG KHOAN THỜI TRANG",
   "price": 1000000,
   "formattedPrice": "1.000.000 ₫"

@@ -2,8 +2,8 @@
   "id": "prod-009",
   "slug": "rocky-driveshield-night-vision",
   "status": "published",
-  "name": "Tròng Kính Chuyên Dụng Lái Xe Ban Đêm Rocky DriveShield 1.60",
-  "tagline": "Làm Chủ Mọi Cung Đường Đêm & Mưa.",
+  "name": "Dành cho tài xế & người hay lái xe ban đêm (Chống chói đèn pha LED)",
+  "tagline": "Rocky DriveShield Ruby AR • Tầm Nhìn Lái Xe An Toàn Đêm & Mưa",
   "brandId": "rocky-lens",
   "categoryIds": [
     "lai-xe",
@@ -21,7 +21,7 @@
   ],
   "featuredImage": "/uploads/solutions/trong-kinh-lai-xe-ban-dem-driveshield.png",
   "badge": "Chuyên Lái Xe Đêm",
-  "shortDescription": "Triệt tiêu ánh sáng chói lóa từ đèn pha LED đối diện, tăng cường độ tương phản và trượt nước mưa tối đa giúp lái xe an toàn, không bị lóa mắt khi di chuyển đêm.",
+  "shortDescription": "Triệt tiêu quầng sáng chói lóa từ đèn pha LED đối diện, tăng cường độ tương phản nhìn rõ biển báo và vạch đường ban đêm, trượt nước mưa tối đa.",
   "targetAudience": [
     "Tài xế lái xe đường dài, người thường xuyên điều khiển ô tô hoặc mô tô vào ban đêm",
     "Người thường xuyên cảm thấy chói mắt, lóa mắt khi gặp đèn pha xe đối diện",
@@ -29,19 +29,24 @@
   ],
   "benefits": [
     {
-      "title": "Giảm 64% Ánh Sáng Chói Lóa",
-      "description": "Bộ lọc chọn lọc phổ bước sóng giúp mắt thoải mái, không phải nheo mắt khi xe đối diện rọi đèn pha.",
-      "icon": "Car"
+      "title": "Tính Năng Nổi Bật",
+      "description": "Chống chói đèn pha LED & trượt nước mưa nhanh chóng",
+      "icon": "Sparkles"
     },
     {
-      "title": "Tăng Tương Phản Vạch Đường",
-      "description": "Tối ưu hóa tín hiệu thị giác, nhận biết biển báo và chướng ngại vật nhanh hơn 2 giây.",
+      "title": "Công Nghệ Quang Học",
+      "description": "Phủ Ruby AR Multi-Matrix & lọc phổ quang sai lóa",
+      "icon": "Layers"
+    },
+    {
+      "title": "Trải Nghiệm Thị Giác",
+      "description": "Dịu mắt, nhìn rõ vạch đường và biển báo trong đêm",
       "icon": "Eye"
     },
     {
-      "title": "Sử Dụng Được Cả Ngày Lẫn Đêm",
-      "description": "Không làm tối cảnh vật như kính râm thông thường, độ truyền sáng đạt chuẩn lái xe ban đêm.",
-      "icon": "SunMedium"
+      "title": "Bảo Hành Chính Hãng",
+      "description": "Bảo hành điện tử 1 đổi 1 trong 24 tháng cho lớp váng phủ trên toàn quốc.",
+      "icon": "ShieldCheck"
     }
   ],
   "specifications": {
@@ -80,8 +85,8 @@
       "rocky driveshield"
     ]
   },
-  "consumerHeadline": "Lái Xe Ban Đêm & Đi Mưa (Chống Chói Đèn Pha)",
-  "materialSubtitle": "Rocky DriveShield Ruby AR • Lớp phủ Ruby AR Multi-Matrix triệt tiêu ánh sáng chói pha LED & trượt nước mưa",
+  "consumerHeadline": "Tầm Nhìn Lái Xe An Toàn Đêm & Mưa",
+  "materialSubtitle": "Rocky DriveShield Ruby AR • Chống chói đèn pha LED & trượt nước mưa nhanh chóng",
   "targetPersona": "DÀNH CHO TÀI XẾ & DI CHUYỂN ĐÊM",
   "price": 1000000,
   "formattedPrice": "1.000.000 ₫"

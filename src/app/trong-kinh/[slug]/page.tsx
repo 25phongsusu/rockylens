@@ -179,39 +179,55 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
               </div>
             )}
 
-            {/* Thông số kỹ thuật B2B */}
+            {/* Thông số kỹ thuật chuẩn quang học */}
             <div>
               <h2 className="text-lg font-bold text-heading mb-4 flex items-center space-x-2">
                 <Layers className="w-5 h-5 text-[var(--color-primary)]" />
-                <span>Thông Số Kỹ Thuật Chi Tiết (B2B Optical Data)</span>
+                <span>Thông Số Kỹ Thuật Chuẩn Quang Học Canada</span>
               </h2>
               <ProductSpecifications specifications={product.specifications} />
             </div>
 
-            {/* Quick B2B Direct Action Box */}
-            <div className="p-5 rounded-2xl section-background border border-[var(--color-border)]/60 shadow-sm space-y-3">
-              <div className="text-xs font-bold text-heading uppercase tracking-wider">
-                Kết Nối Đại Lý Kính Mắt &amp; Lab RX
+            {/* Cam Kết Chất Lượng & Dịch Vụ Khúc Xạ */}
+            <div className="p-5 rounded-2xl bg-gradient-to-br from-slate-50 via-white to-slate-50 border border-[var(--color-border)] shadow-xs space-y-3.5">
+              <div className="flex items-center space-x-2">
+                <ShieldCheck className="w-5 h-5 text-emerald-600 shrink-0" />
+                <h3 className="text-xs sm:text-sm font-bold text-heading uppercase tracking-wide">
+                  Cam Kết Chính Hãng &amp; Dịch Vụ Khúc Xạ
+                </h3>
               </div>
-              <p className="text-xs text-[var(--color-muted)] leading-relaxed font-medium">
-                Đăng ký nhận bảng giá sỉ và danh mục phôi tròng kính Rocky Lens chính hãng.
-              </p>
-              <div className="flex gap-3 pt-1">
-                <a
-                  href={siteConfig.zalo.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
+              <div className="space-y-2 text-xs text-slate-600">
+                <div className="flex items-start space-x-2">
+                  <span className="text-emerald-600 font-bold mt-0.5">✓</span>
+                  <span><strong>100% Bao bì niêm phong:</strong> Tròng xuất kho nguyên tem niêm phong, quét mã QR xuất xứ và khăn lau chính hãng.</span>
+                </div>
+                <div className="flex items-start space-x-2">
+                  <span className="text-emerald-600 font-bold mt-0.5">✓</span>
+                  <span><strong>Khắc laser ẩn:</strong> Ký hiệu nhận diện quang học Canada chống hàng giả soi rõ khi hà hơi.</span>
+                </div>
+                <div className="flex items-start space-x-2">
+                  <span className="text-emerald-600 font-bold mt-0.5">✓</span>
+                  <span><strong>Bảo hành váng phủ 24 tháng:</strong> Bảo hành điện tử 1 đổi 1 trên toàn quốc đối với lớp váng phủ quang học.</span>
+                </div>
+                <div className="flex items-start space-x-2">
+                  <span className="text-emerald-600 font-bold mt-0.5">✓</span>
+                  <span><strong>Đo mắt &amp; cắt mài miễn phí:</strong> Miễn phí công đo khúc xạ và mài lắp chuẩn tâm tại hệ thống đại lý.</span>
+                </div>
+              </div>
+              <div className="flex gap-2.5 pt-1">
+                <Link
+                  href="/lien-he/"
                   className="flex-1 inline-flex items-center justify-center space-x-1.5 py-2.5 px-4 rounded-xl text-xs font-bold button-primary"
                 >
-                  <span>Nhắn Zalo Đại Lý</span>
+                  <span>Tìm Đại Lý Cắt Kính Gần Nhất</span>
                   <ArrowRight className="w-3.5 h-3.5" />
-                </a>
+                </Link>
                 <a
                   href={`tel:${siteConfig.phones.hotline}`}
                   className="inline-flex items-center justify-center py-2.5 px-3 rounded-xl text-xs font-semibold bg-white border border-[var(--color-border)] hover:border-[var(--color-primary)] text-heading hover:bg-[var(--site-bg-start)] transition-colors shadow-xs"
-                  title="Gọi Hotline B2B"
+                  title="Gọi Hotline Hỗ Trợ"
                 >
-                  <Phone className="w-3.5 h-3.5" />
+                  <Phone className="w-3.5 h-3.5 text-emerald-600" />
                 </a>
               </div>
             </div>
@@ -221,12 +237,14 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
           <div className="lg:col-span-7 space-y-6">
             <div>
               <div className="flex flex-wrap items-center gap-2 mb-3">
-                <div className="inline-block text-xs font-semibold uppercase tracking-wider text-[var(--color-primary)] bg-[var(--site-bg-middle)]/60 px-3 py-1 rounded-full border border-[var(--color-border)]/40">
-                  Canada Opticians Official
+                <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[var(--color-primary)] bg-[var(--site-bg-middle)]/60 px-3 py-1 rounded-full border border-[var(--color-border)]/40">
+                  <ShieldCheck className="w-3.5 h-3.5" />
+                  <span>Canada Opticians Official</span>
                 </div>
                 {product.consumerHeadline && (
-                  <div className="inline-block text-xs font-bold text-teal-800 bg-teal-50 px-3 py-1 rounded-full border border-teal-200">
-                    Phù hợp: {product.consumerHeadline}
+                  <div className="inline-flex items-center gap-1.5 text-xs font-bold text-teal-800 bg-teal-50/90 px-3 py-1 rounded-full border border-teal-200/80 shadow-2xs">
+                    <Sparkles className="w-3.5 h-3.5 text-teal-600" />
+                    <span>Giải pháp: {product.consumerHeadline}</span>
                   </div>
                 )}
               </div>
