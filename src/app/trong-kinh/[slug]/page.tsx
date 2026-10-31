@@ -130,25 +130,6 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
                   />
                 </div>
               </div>
-
-              {/* Gallery Thumbnails if multiple images */}
-              {product.images.length > 1 && (
-                <div className="flex gap-3">
-                  {product.images.map((img, idx) => (
-                    <div
-                      key={idx}
-                      className="relative w-20 h-20 rounded-xl bg-slate-50 border border-[var(--color-border)]/50 overflow-hidden p-2"
-                    >
-                      <Image
-                        src={img}
-                        alt={`${product.name} góc ${idx + 1}`}
-                        fill
-                        className="object-contain p-1"
-                      />
-                    </div>
-                  ))}
-                </div>
-              )}
             </div>
 
             {/* Lợi ích và đặc điểm nổi bật (Nằm sát ngay dưới ảnh tròng kính) */}
