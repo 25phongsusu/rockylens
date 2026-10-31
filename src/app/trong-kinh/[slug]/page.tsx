@@ -21,11 +21,9 @@ import {
   getProductBySlug,
   getRelatedProducts,
 } from '@/features/products/product-service';
-import { getAllArticles } from '@/features/articles/article-service';
 import Breadcrumbs from '@/components/shared/Breadcrumbs';
 import ProductSpecifications from '@/components/products/ProductSpecifications';
 import ProductGrid from '@/components/products/ProductGrid';
-import RelatedArticles from '@/components/content/RelatedArticles';
 import ContactCTA from '@/components/shared/ContactCTA';
 import ShopeeProductSelector from '@/components/products/ShopeeProductSelector';
 import { getProductTheme } from '@/features/products/pricing-matrix';
@@ -84,10 +82,6 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
 
   const theme = getProductTheme(product.slug);
   const relatedProducts = getRelatedProducts(product, 3);
-  const allArticles = getAllArticles();
-  const relatedArticles = allArticles.filter((art) =>
-    product.relatedArticleIds.includes(art.slug)
-  );
 
   const jsonLd = productSchema(product);
 
@@ -299,16 +293,6 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
             <ShopeeProductSelector product={product} />
           </div>
         </div>
-
-        {/* 10. Bài viết kiến thức liên quan */}
-        {relatedArticles.length > 0 && (
-          <div className="mt-16">
-            <RelatedArticles
-              articles={relatedArticles}
-              title={`Kiến Thức Quang Học Liên Quan Đến ${product.name}`}
-            />
-          </div>
-        )}
 
         {/* 11. Sản phẩm liên quan */}
         {relatedProducts.length > 0 && (
