@@ -5,21 +5,10 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X, ChevronRight, Phone, MessageSquare } from 'lucide-react';
 import { mainNavigation } from '@/config/navigation';
-import B2BQuoteModal from '@/components/common/B2BQuoteModal';
 
 export default function Header() {
   const pathname = usePathname();
   const [isMobileOpen, setIsMobileOpen] = useState(false);
-  const [isB2BModalOpen, setIsB2BModalOpen] = useState(false);
-
-  React.useEffect(() => {
-    const handler = () => setIsB2BModalOpen(true);
-    window.addEventListener('open-b2b-modal', handler);
-    (window as any).openB2BQuoteModal = handler;
-    return () => {
-      window.removeEventListener('open-b2b-modal', handler);
-    };
-  }, []);
 
   const isActive = (href: string) => {
     if (href === '/') return pathname === '/' || pathname === '';
@@ -28,7 +17,7 @@ export default function Header() {
 
   return (
     <>
-      {/* TOP SLIM BAR: OFFICIAL IDENTITY & CONTACT (MATCHES HOME EXACTLY) */}
+      {/* TOP SLIM BAR: OFFICIAL IDENTITY & CONTACT */}
       <div className="bg-[var(--b2b-end)] text-white py-1 px-6 text-base">
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
           <div className="flex items-center gap-3">
@@ -39,7 +28,7 @@ export default function Header() {
           </div>
           <div className="flex items-center gap-6 text-base font-medium">
             <a href="tel:0933102653" className="text-white hover:text-[var(--button-start)] transition-colors">
-              Hotline B2B: 0933 102 653
+              Hotline: 0933 102 653
             </a>
             <a
               href="https://zalo.me/0933102653"
@@ -47,17 +36,17 @@ export default function Header() {
               rel="noopener noreferrer"
               className="text-[var(--button-start)] hover:text-white transition-colors"
             >
-              Zalo B2B Đại Lý
+              Tư Vấn Zalo
             </a>
           </div>
         </div>
       </div>
 
-      {/* APPLE FLUID NAVIGATION: STICKY FROSTED GLASS (MATCHES HOME EXACTLY) */}
+      {/* APPLE FLUID NAVIGATION: STICKY FROSTED GLASS */}
       <header className="sticky top-0 z-40 bg-[var(--site-bg-start)]/90 backdrop-blur-md border-b border-[var(--color-border)] transition-shadow">
         <div className="max-w-7xl mx-auto px-6 py-1 sm:py-1.5 flex items-center justify-between gap-6">
           
-          {/* Brand Logo with Real Rocky Image (+50% size) */}
+          {/* Brand Logo with Real Rocky Image */}
           <Link href="/" className="flex items-center gap-3 group">
             <img
               src="/assets/logo_rocky_transparent.png"
@@ -84,15 +73,14 @@ export default function Header() {
             })}
           </nav>
 
-          {/* Action Button: Open B2B Dealer Quote Modal */}
+          {/* Action Button: Tìm Đại Lý Gần Nhất */}
           <div className="flex items-center gap-3">
-            <button
-              type="button"
-              onClick={() => setIsB2BModalOpen(true)}
+            <Link
+              href="/lien-he/"
               className="button-primary hidden sm:inline-block px-5 py-2.5 rounded-full text-base transition-all text-center cursor-pointer active:scale-95"
             >
-              Nhận Báo Giá Đại Lý
-            </button>
+              Tìm Đại Lý Gần Nhất
+            </Link>
 
             {/* Mobile Hamburger Toggle */}
             <button
@@ -130,20 +118,17 @@ export default function Header() {
             </nav>
 
             <div className="pt-3 border-t border-[var(--color-border)] space-y-3">
-              <button
-                type="button"
-                onClick={() => {
-                  setIsMobileOpen(false);
-                  setIsB2BModalOpen(true);
-                }}
-                className="button-primary w-full py-3 rounded-full text-base text-center transition-all cursor-pointer"
+              <Link
+                href="/lien-he/"
+                onClick={() => setIsMobileOpen(false)}
+                className="button-primary w-full py-3 rounded-full text-base text-center transition-all cursor-pointer block"
               >
-                Nhận Báo Giá Đại Lý
-              </button>
+                Tìm Đại Lý Gần Nhất
+              </Link>
               <div className="flex items-center justify-around text-sm font-medium text-slate-600 pt-1">
                 <a href="tel:0933102653" className="flex items-center gap-1.5 hover:text-[var(--color-primary)]">
                   <Phone className="w-4 h-4 text-[var(--color-primary)]" />
-                  <span>Hotline B2B: 0933 102 653</span>
+                  <span>Hotline: 0933 102 653</span>
                 </a>
                 <a
                   href="https://zalo.me/0933102653"
@@ -152,19 +137,13 @@ export default function Header() {
                   className="flex items-center gap-1.5 text-[var(--color-primary)] hover:text-[var(--color-primary-hover)]"
                 >
                   <MessageSquare className="w-4 h-4" />
-                  <span>Zalo B2B Đại Lý</span>
+                  <span>Tư Vấn Zalo</span>
                 </a>
               </div>
             </div>
           </div>
         )}
       </header>
-
-      {/* B2B Dealer Quote Modal */}
-      <B2BQuoteModal
-        isOpen={isB2BModalOpen}
-        onClose={() => setIsB2BModalOpen(false)}
-      />
     </>
   );
 }

@@ -20,7 +20,6 @@ import {
 import Breadcrumbs from '@/components/shared/Breadcrumbs';
 import SectionHeading from '@/components/shared/SectionHeading';
 import ContactCTA from '@/components/shared/ContactCTA';
-import B2BQuoteButton from '@/components/common/B2BQuoteButton';
 import { constructMetadata } from '@/lib/seo/metadata';
 import { siteConfig } from '@/config/site';
 import { CATEGORIES } from '@/features/products/product-types';
@@ -75,7 +74,15 @@ export default function PartnerPage() {
             </p>
 
             <div className="pt-2 flex flex-wrap gap-4">
-              <B2BQuoteButton />
+              <a
+                href={siteConfig.zalo.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="button-primary px-6 py-3.5 rounded-xl font-bold text-sm shadow-md transition-all inline-flex items-center gap-2"
+              >
+                <span>Liên Hệ Hợp Tác Đại Lý</span>
+                <ArrowUpRight className="w-4 h-4" />
+              </a>
 
               <a
                 href={siteConfig.zalo.url}

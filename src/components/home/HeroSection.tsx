@@ -143,7 +143,7 @@ export default function HeroSection() {
             >
               Rocky Lens - <br className="hidden sm:inline" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--button-start)] via-[var(--button-middle)] to-[var(--button-end)]">
-                nhà phân phối tròng kính từ Canada
+                trọn vẹn tầm nhìn, chuẩn sắc nét Canada
               </span>
             </h1>
 
@@ -153,7 +153,7 @@ export default function HeroSection() {
                 isBanner ? 'text-slate-200' : 'text-brand-muted'
               }`}
             >
-              Rocky Lens tự hào là đơn vị phân phối tròng kính B2B và gia công Lab công nghệ quốc tế tại Việt Nam. Với hệ sinh thái sản phẩm toàn diện - từ tròng kính cận, tròng kính đổi màu đến tròng kính chống ánh sáng xanh - chúng tôi mang đến giải pháp nguồn hàng trọn gói, ổn định, đồng hành cùng sự phát triển bền vững của các hệ thống cửa hàng kính mắt trên toàn quốc.
+              Rocky Lens kế thừa chuẩn mực quang học Canada Opticians, kết hợp công nghệ vật liệu tiên tiến và triết lý 'Sáng mắt sáng lòng'. Với hệ sinh thái sản phẩm toàn diện — từ tròng kính cận, đổi màu thông minh, chống ánh sáng xanh đến kính lái xe và kiểm soát cận thị — chúng tôi mang đến tầm nhìn sắc nét, an tâm và thoải mái nhất cho người tiêu dùng tại hơn 500+ đại lý mắt kính uy tín trên toàn quốc.
             </p>
 
             {/* 3 Apple Liquid Spec Cards */}
@@ -209,7 +209,7 @@ export default function HeroSection() {
               </div>
             </div>
 
-            {/* Action Buttons: Tìm Tròng Kính Phù Hợp Với Bạn & Nhận Báo Giá Đại Lý */}
+            {/* Action Buttons: Tìm Tròng Kính Phù Hợp Với Bạn & Tìm Cửa Hàng Gần Bạn */}
             <div className="pt-3 flex flex-wrap items-center justify-center lg:justify-start gap-3.5">
               <Link
                 href="#trong-kinh"
@@ -219,21 +219,16 @@ export default function HeroSection() {
                 <ArrowRight className="w-4 h-4" />
               </Link>
 
-              <button
-                type="button"
-                onClick={() => {
-                  if (typeof window !== 'undefined') {
-                    window.dispatchEvent(new CustomEvent('open-b2b-modal'));
-                  }
-                }}
+              <Link
+                href="/lien-he/"
                 className={`px-6 py-3.5 text-xs sm:text-sm font-bold flex items-center space-x-2 cursor-pointer transition-all rounded-full ${
                   isBanner
                     ? 'bg-white/15 hover:bg-white/25 text-white border border-white/30 backdrop-blur-md'
                     : 'liquid-btn-secondary'
                 }`}
               >
-                <span>Nhận Báo Giá Đại Lý</span>
-              </button>
+                <span>Tìm Cửa Hàng Gần Bạn</span>
+              </Link>
             </div>
 
             {/* Micro Trust Indicators */}

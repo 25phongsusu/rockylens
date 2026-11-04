@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import {
   Calendar,
   MapPin,
@@ -24,8 +25,6 @@ import {
   allGalleryPhotos,
   EventItem,
 } from './event-data';
-import B2BQuoteButton from '@/components/common/B2BQuoteButton';
-import { openB2BQuoteModal } from '@/components/common/B2BQuoteModal';
 
 export default function EventsView() {
   const [activeCategory, setActiveCategory] = useState<string>('all');
@@ -208,13 +207,12 @@ export default function EventsView() {
                   <ChevronRight className="w-4 h-4" />
                 </button>
 
-                <button
-                  type="button"
-                  onClick={openB2BQuoteModal}
-                  className="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 transition-colors cursor-pointer"
+                <Link
+                  href="/lien-he/"
+                  className="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 transition-colors cursor-pointer inline-flex items-center"
                 >
                   Liên Hệ Phối Hợp
-                </button>
+                </Link>
               </div>
             </div>
           </article>
@@ -288,16 +286,19 @@ export default function EventsView() {
           </p>
 
           <div className="flex flex-wrap items-center gap-4 pt-2">
-            <B2BQuoteButton className="button-primary px-6 py-3 rounded-full font-bold text-sm shadow-md transition-all cursor-pointer">
+            <Link
+              href="/lien-he/"
+              className="button-primary px-6 py-3 rounded-full font-bold text-sm shadow-md transition-all cursor-pointer inline-flex items-center"
+            >
               Đăng Ký Phối Hợp Tổ Chức
-            </B2BQuoteButton>
+            </Link>
 
             <a
               href="tel:0933102653"
               className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-white/10 hover:bg-white/20 text-white font-semibold text-sm transition-colors border border-white/20"
             >
               <Phone className="w-4 h-4 text-cyan-300" />
-              <span>Hotline B2B: 0933 102 653</span>
+              <span>Hotline: 0933 102 653</span>
             </a>
 
             <a
@@ -426,16 +427,13 @@ export default function EventsView() {
                 >
                   Đóng cửa sổ
                 </button>
-                <button
-                  type="button"
-                  onClick={() => {
-                    setSelectedEvent(null);
-                    openB2BQuoteModal();
-                  }}
-                  className="button-primary px-6 py-2.5 rounded-full font-bold text-sm shadow-sm hover:shadow-md transition-all cursor-pointer"
+                <Link
+                  href="/lien-he/"
+                  onClick={() => setSelectedEvent(null)}
+                  className="button-primary px-6 py-2.5 rounded-full font-bold text-sm shadow-sm hover:shadow-md transition-all cursor-pointer inline-flex items-center"
                 >
-                  Liên Hệ Hợp Tác Sự Kiện
-                </button>
+                  Liên Hệ Phối Hợp Sự Kiện
+                </Link>
               </div>
             </div>
           </div>

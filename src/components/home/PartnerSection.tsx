@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { openB2BQuoteModal } from '@/components/common/B2BQuoteModal';
+import Link from 'next/link';
 
 export const partnerFeatures = [
   {
@@ -49,14 +49,13 @@ export default function PartnerSection() {
           </div>
 
           <div className="shrink-0 pb-1">
-            <button
-              type="button"
-              onClick={openB2BQuoteModal}
+            <Link
+              href="/danh-cho-doi-tac/"
               className="px-6 py-3 rounded-full bg-white text-[#003B50] font-bold text-sm hover:bg-slate-100 transition-all cursor-pointer shadow-md inline-flex items-center gap-1.5 active:scale-95"
             >
-              <span>Liên hệ hợp tác</span>
+              <span>Tìm hiểu chính sách đối tác</span>
               <span>&#8599;</span>
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -82,19 +81,14 @@ export default function PartnerSection() {
           <span className="text-[11px] font-bold uppercase tracking-widest text-cyan-300">
             KẾT NỐI TRỰC TIẾP
           </span>
-          <a
-            href="tel:0933102653"
-            className="font-bold text-white hover:text-cyan-200 transition-colors"
-          >
+          <a href="tel:0933102653" className="font-bold text-white hover:text-cyan-200 transition-colors">
             0933 102 653
           </a>
-          <a
-            href="mailto:b2b@rockylens.com"
-            className="text-white/80 hover:text-white transition-colors"
-          >
+          <a href="mailto:b2b@rockylens.com" className="text-white/80 hover:text-white transition-colors">
             b2b@rockylens.com
           </a>
         </div>
+
       </div>
     </section>
   );

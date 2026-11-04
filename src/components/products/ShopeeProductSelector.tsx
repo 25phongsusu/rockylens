@@ -4,7 +4,6 @@ import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
 import {
   Check,
-  Phone,
   MapPin,
 } from 'lucide-react';
 import { Product } from '@/features/products/product-types';
@@ -14,7 +13,6 @@ import {
   ProductPricingSchema,
   FeatureTheme,
 } from '@/features/products/pricing-matrix';
-import { siteConfig } from '@/config/site';
 
 interface ShopeeProductSelectorProps {
   product: Product;
@@ -291,29 +289,19 @@ export default function ShopeeProductSelector({ product }: ShopeeProductSelector
       </div>
 
       {/* ========================================================
-          4. CỤM HÀNH ĐỘNG: BỎ NHẮN TIN TƯ VẤN CHỌN KÍNH
-             THAY BẰNG NÚT TÌM ĐẠI LÝ CHÍNH HÃNG THEO MÀU THEME
+          4. CỤM HÀNH ĐỘNG: TÌM ĐẠI LÝ CHÍNH HÃNG THEO MÀU THEME
           ======================================================== */}
       <div className="space-y-3 pt-2">
-        <div className="flex flex-col sm:flex-row gap-3">
-          {/* Nút 1: Tìm đại lý cắt kính gần nhất theo gradient màu bảng giá */}
+        <div>
+          {/* Nút: Tìm đại lý cắt kính gần nhất theo gradient màu bảng giá */}
           <Link
             href="/lien-he/"
-            className="flex-1 py-3.5 px-6 rounded-xl font-bold text-sm text-white hover:opacity-95 shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 text-center cursor-pointer"
+            className="w-full py-4 px-6 rounded-xl font-bold text-sm text-white hover:opacity-95 shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2.5 text-center cursor-pointer"
             style={{ background: theme.bannerGradient }}
           >
             <MapPin className="w-4 h-4 text-white" />
             <span>Tìm Đại Lý Cắt Kính Chính Hãng Gần Nhất</span>
           </Link>
-
-          {/* Nút 2: Gọi Hotline hỗ trợ kỹ thuật */}
-          <a
-            href={`tel:${siteConfig.phones.hotline}`}
-            className="py-3.5 px-6 rounded-xl font-bold text-sm text-slate-800 bg-white border border-slate-300 hover:border-primary hover:text-primary hover:bg-slate-50 transition-colors flex items-center justify-center gap-2 text-center shadow-xs"
-          >
-            <Phone className="w-4 h-4 text-emerald-600" />
-            <span>Hotline: 0982 264 464</span>
-          </a>
         </div>
 
         {/* Cam kết dịch vụ đại lý đối tác */}

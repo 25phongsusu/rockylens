@@ -16,6 +16,10 @@ export const mainNavigation: NavItem[] = [
     href: '/',
   },
   {
+    title: 'Về Chúng Tôi',
+    href: '/ve-chung-toi/',
+  },
+  {
     title: 'Sản Phẩm',
     href: '/trong-kinh/',
   },

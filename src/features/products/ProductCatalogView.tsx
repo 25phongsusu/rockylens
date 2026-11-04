@@ -444,7 +444,7 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
                     className="text-xs sm:text-sm font-bold inline-flex items-center gap-1 group-hover:gap-1.5 transition-all"
                     style={{ color: theme.primaryColor }}
                   >
-                    <span>Xem chi tiết &amp; chọn giá</span>
+                    <span>Xem chi tiết tròng kính</span>
                     <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </Link>
                 </div>

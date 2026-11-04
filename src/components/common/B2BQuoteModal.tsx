@@ -60,13 +60,13 @@ export default function B2BQuoteModal({ isOpen, onClose }: B2BQuoteModalProps) {
         {/* Header */}
         <div className="space-y-2 pr-8">
           <span className="px-3.5 py-1.5 rounded-full bg-[var(--site-bg-start)] text-[var(--color-primary)] text-sm font-bold inline-block border border-[var(--color-border)]">
-            Dành Cho Cửa Hàng &amp; Đại Lý Mắt Kính
+            Hỗ Trợ &amp; Tư Vấn Trực Tiếp
           </span>
           <h3 className="text-2xl sm:text-3xl font-black text-heading tracking-tight leading-snug">
-            Nhận Báo Giá Đại Lý &amp; Chính Sách Chiết Khấu
+            Tư Vấn Tròng Kính &amp; Tìm Điểm Bán Gần Nhất
           </h3>
           <p className="text-brand-muted text-sm leading-relaxed">
-            Bảng giá sỉ các dòng tròng Rocky sẵn kho và chính sách hợp tác Lab RX Freeform kỹ thuật số được gửi trực tiếp, bảo mật cho đối tác kinh doanh.
+            Chuyên viên khúc xạ Rocky Lens sẵn sàng tư vấn giải pháp chiết suất phù hợp và chỉ dẫn đại lý chính hãng gần bạn nhất.
           </p>
         </div>
 
@@ -79,7 +79,7 @@ export default function B2BQuoteModal({ isOpen, onClose }: B2BQuoteModalProps) {
             className="button-primary w-full py-3.5 px-6 rounded-2xl text-base flex items-center justify-center gap-3 shadow-sm cursor-pointer"
           >
             <MessageSquare className="w-5 h-5 fill-current" />
-            <span>Nhận Báo Giá File PDF Qua Zalo Ngay</span>
+            <span>Nhận Tư Vấn Trực Tiếp Qua Zalo Ngay</span>
           </a>
 
           <a
@@ -87,14 +87,14 @@ export default function B2BQuoteModal({ isOpen, onClose }: B2BQuoteModalProps) {
             className="button-secondary w-full py-3 px-6 rounded-2xl text-base flex items-center justify-center gap-3 cursor-pointer"
           >
             <Phone className="w-5 h-5 text-[var(--color-primary)]" />
-            <span>Hotline Phụ Trách B2B: 0933 102 653</span>
+            <span>Hotline Hỗ Trợ: 0933 102 653</span>
           </a>
         </div>
 
         {/* Quick Inquiry Mini Form */}
         <div className="border-t border-slate-100 pt-5 space-y-4">
           <div className="text-sm font-semibold text-slate-700">
-            Hoặc để lại thông tin nhanh, chuyên viên Rocky sẽ gửi bảng giá qua Zalo:
+            Hoặc để lại thông tin nhanh, chuyên viên Rocky sẽ liên hệ tư vấn qua Zalo:
           </div>
 
           {isSubmitted ? (
@@ -138,7 +138,7 @@ export default function B2BQuoteModal({ isOpen, onClose }: B2BQuoteModalProps) {
                 type="submit"
                 className="button-b2b w-full py-3 rounded-xl text-sm cursor-pointer flex items-center justify-center gap-2"
               >
-                <span>Gửi Yêu Cầu Nhận Báo Giá &amp; Catalog</span>
+                <span>Gửi Yêu Cầu Tư Vấn</span>
               </button>
             </form>
           )}

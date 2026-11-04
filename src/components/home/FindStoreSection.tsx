@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { openB2BQuoteModal } from '@/components/common/B2BQuoteModal';
+import Link from 'next/link';
 
 export default function FindStoreSection() {
   return (
@@ -53,37 +53,36 @@ export default function FindStoreSection() {
 
         </div>
 
-        {/* Direct Dealer Partnership Box */}
+        {/* Direct Store Locator CTA Box */}
         <div className="section-background p-8 sm:p-10 rounded-3xl border border-[var(--color-border)]/60 flex flex-col lg:flex-row items-center justify-between gap-8 shadow-xs">
           <div className="space-y-2 text-center lg:text-left">
             <div className="text-2xl sm:text-3xl font-black text-heading">
-              Bạn Là Cửa Hàng Mắt Kính Muốn Trở Thành Đại Lý Rocky Lens?
+              Cần Tìm Điểm Đo Cắt Kính Rocky Gần Bạn Nhất?
             </div>
             <p className="text-[var(--color-muted)] text-base max-w-xl">
-              Kết nối ngay với bộ phận phát triển đại lý để nhận chính sách chiết khấu sỉ độc quyền, tài trợ kệ POSM trưng bày, máy test tròng và hỗ trợ gia công Lab RX chuẩn xác.
+              Đội ngũ chuyên viên Rocky luôn sẵn sàng chỉ dẫn cửa hàng mắt kính đối tác ủy quyền chính hãng gần khu vực bạn sinh sống, được trang bị đầy đủ máy test tròng và kỹ thuật viên khúc xạ chuyên môn.
             </p>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-4 shrink-0">
-            <button
-              type="button"
-              onClick={openB2BQuoteModal}
-              className="button-primary font-bold text-base text-center cursor-pointer shadow-xs"
+            <Link
+              href="/lien-he/"
+              className="button-primary font-bold text-base text-center cursor-pointer shadow-xs px-6 py-3.5 rounded-full inline-flex items-center gap-2"
             >
-              Nhận Báo Giá Cho Đại Lý
-            </button>
+              <span>Xem Danh Sách Điểm Bán</span>
+            </Link>
             <a
               href="https://zalo.me/0933102653"
               target="_blank"
               rel="noopener noreferrer"
-              className="button-secondary font-bold text-base text-center shadow-xs"
+              className="button-secondary font-bold text-base text-center shadow-xs px-6 py-3.5 rounded-full inline-flex items-center gap-2"
             >
-              Zalo B2B Đại Lý
+              <span>Nhắn Zalo Chỉ Dẫn Điểm Bán</span>
             </a>
           </div>
         </div>
 
         <div className="text-center text-sm text-slate-500">
-          * Rocky Lens phân phối độc quyền cho các cửa hàng mắt kính &amp; phòng khám nhãn khoa. Không bán lẻ trực tuyến.
+          * Tròng kính Rocky chính hãng luôn đi kèm bao bì niêm phong, khăn lau chuyên dụng và chế độ bảo hành điện tử chính hãng.
         </div>
 
       </div>

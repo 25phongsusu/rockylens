@@ -18,7 +18,6 @@ import {
   HelpCircle,
 } from 'lucide-react';
 import Breadcrumbs from '@/components/shared/Breadcrumbs';
-import B2BQuoteButton from '@/components/common/B2BQuoteButton';
 import { constructMetadata } from '@/lib/seo/metadata';
 
 export const metadata: Metadata = constructMetadata({
@@ -190,12 +189,14 @@ export default function RxLabPage() {
 
           {/* Action Buttons */}
           <div className="mt-8 flex flex-wrap items-center gap-3">
-            <B2BQuoteButton
+            <a
+              href="https://zalo.me/0933102653"
+              target="_blank"
+              rel="noopener noreferrer"
               className="button-primary px-6 py-3 rounded-full text-base font-bold shadow-md hover:shadow-lg transition-all cursor-pointer active:scale-95 inline-flex items-center gap-2"
-              showIcon={false}
             >
-              Gửi Đơn Đặt Lab RX
-            </B2BQuoteButton>
+              <span>Tư Vấn Kỹ Thuật Lab RX</span>
+            </a>
             <a
               href="tel:0933102653"
               className="px-6 py-3 rounded-full bg-white/10 hover:bg-white/20 text-white border border-white/30 text-base font-semibold backdrop-blur-md transition-all inline-flex items-center gap-2"
@@ -475,15 +476,18 @@ export default function RxLabPage() {
             <div className="lg:col-span-5 bg-white/10 p-6 sm:p-8 rounded-2xl border border-white/15 backdrop-blur-md space-y-4 text-center lg:text-left">
               <h3 className="text-lg font-bold text-white">Bạn cần gia công toa kính khó?</h3>
               <p className="text-xs sm:text-sm text-slate-300">
-                Gửi thông số toa kính (SPH, CYL, AXIS, PD, ADD) để kỹ thuật viên Lab Rocky phân tích và báo giá sỉ ngay lập tức.
+                Gửi thông số toa kính (SPH, CYL, AXIS, PD, ADD) để kỹ thuật viên Lab Rocky phân tích và tư vấn kỹ thuật chính xác nhất.
               </p>
               <div className="space-y-2 pt-2">
-                <B2BQuoteButton
+                <a
+                  href="https://zalo.me/0933102653"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-full py-3 rounded-full button-primary text-sm font-bold shadow-md cursor-pointer hover:shadow-lg transition-all inline-flex items-center justify-center gap-2"
-                  showIcon={false}
                 >
-                  Gửi Toa Đặt Lab Trực Tuyến
-                </B2BQuoteButton>
+                  <MessageSquare className="w-4 h-4" />
+                  <span>Gửi Toa Tư Vấn Kỹ Thuật Qua Zalo</span>
+                </a>
                 <a
                   href="https://zalo.me/0933102653"
                   target="_blank"

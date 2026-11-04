@@ -9,9 +9,8 @@ import {
   Sparkles,
   CheckCircle2,
   PhoneCall,
-  FileSpreadsheet,
+  MapPin,
 } from 'lucide-react';
-import { openB2BQuoteModal } from '@/components/common/B2BQuoteModal';
 import { siteConfig } from '@/config/site';
 
 interface ContactCTAProps {
@@ -34,25 +33,24 @@ export default function ContactCTA({
             <div className="space-y-2 text-center lg:text-left">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold text-teal-700 bg-teal-50 border border-teal-200/70 w-fit mx-auto lg:mx-0">
                 <Building2 className="w-3.5 h-3.5" />
-                <span>Dành Cho Cửa Hàng & Lab RX</span>
+                <span>Dành Cho Cửa Hàng &amp; Lab RX</span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-heading tracking-tight">
                 {title || 'Bạn Là Cửa Hàng Mắt Kính Muốn Trở Thành Đại Lý Rocky Lens?'}
               </h2>
               <p className="text-brand-muted text-sm sm:text-base max-w-xl leading-relaxed">
                 {description ||
-                  'Kết nối ngay với bộ phận phát triển đại lý để nhận chính sách chiết khấu sỉ độc quyền, tài trợ kệ POSM trưng bày, máy test tròng và hỗ trợ gia công Lab RX chuẩn xác.'}
+                  'Kết nối ngay với bộ phận phát triển đại lý để nhận chính sách phân phối, tài trợ kệ POSM trưng bày, máy test tròng và hỗ trợ gia công Lab RX chuẩn xác.'}
               </p>
             </div>
             <div className="flex flex-wrap items-center justify-center gap-4 shrink-0">
-              <button
-                type="button"
-                onClick={openB2BQuoteModal}
+              <Link
+                href="/danh-cho-doi-tac/"
                 className="button-primary px-7 py-3.5 rounded-full text-base text-center cursor-pointer shadow-xs flex items-center gap-2"
               >
-                <FileSpreadsheet className="w-4 h-4" />
-                <span>Nhận Báo Giá Cho Đại Lý</span>
-              </button>
+                <span>Xem Chính Sách Đại Lý</span>
+                <ArrowRight className="w-4 h-4" />
+              </Link>
               <a
                 href={siteConfig.zalo.url}
                 target="_blank"
@@ -60,7 +58,7 @@ export default function ContactCTA({
                 className="button-secondary px-7 py-3.5 rounded-full text-base text-center shadow-xs flex items-center gap-2"
               >
                 <PhoneCall className="w-4 h-4" />
-                <span>Zalo B2B Đại Lý</span>
+                <span>Liên Hệ Zalo Đối Tác</span>
               </a>
             </div>
           </div>
@@ -83,7 +81,7 @@ export default function ContactCTA({
             Kết Nối Đúng Nhu Cầu Của Bạn
           </h2>
           <p className="text-brand-muted text-sm sm:text-base mt-2.5 leading-relaxed">
-            Dù bạn là người đeo kính tìm kiếm giải pháp thị lực phù hợp hay cửa hàng quang học muốn gia tăng doanh số, Rocky Lens luôn sẵn sàng đồng hành.
+            Dù bạn là người đeo kính tìm kiếm giải pháp thị lực phù hợp hay cửa hàng quang học muốn gia tăng uy tín và chất lượng phục vụ, Rocky Lens luôn sẵn sàng đồng hành.
           </p>
         </div>
 
@@ -110,7 +108,7 @@ export default function ContactCTA({
               <div className="space-y-2.5 mb-8">
                 <div className="flex items-center gap-2 text-xs sm:text-sm text-slate-700 font-medium">
                   <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
-                  <span>100% tròng đạt chuẩn UV400, chống chói & hạn chế trầy xước</span>
+                  <span>100% tròng đạt chuẩn UV400, chống chói &amp; hạn chế trầy xước</span>
                 </div>
                 <div className="flex items-center gap-2 text-xs sm:text-sm text-slate-700 font-medium">
                   <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
@@ -122,17 +120,18 @@ export default function ContactCTA({
             {/* Actions */}
             <div className="flex flex-wrap items-center gap-3 pt-5 border-t border-slate-100 relative z-10">
               <Link
-                href="/trong-kinh/"
+                href="/lien-he/"
                 className="button-primary px-6 py-3 rounded-full text-xs sm:text-sm font-bold shadow-xs flex items-center gap-2"
               >
-                <span>Xem Catalogue Tròng Kính</span>
-                <ArrowRight className="w-4 h-4" />
+                <MapPin className="w-4 h-4" />
+                <span>Tìm Đại Lý Gần Bạn</span>
               </Link>
               <Link
-                href="/blog/"
-                className="button-secondary px-5 py-3 rounded-full text-xs sm:text-sm font-bold"
+                href="/trong-kinh/"
+                className="button-secondary px-5 py-3 rounded-full text-xs sm:text-sm font-bold flex items-center gap-1.5"
               >
-                <span>Cẩm Nang Thị Lực</span>
+                <span>Xem Catalogue Tròng Kính</span>
+                <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </div>
           </div>
@@ -145,38 +144,37 @@ export default function ContactCTA({
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold text-teal-300 bg-teal-950/60 border border-teal-500/30 w-fit mb-4">
                 <Building2 className="w-3.5 h-3.5" />
-                <span>Dành Cho Cửa Hàng & Lab RX</span>
+                <span>Dành Cho Cửa Hàng &amp; Lab RX</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight mb-3">
-                Hợp Tác Trở Thành Đại Lý Ủy Quyền
+                Hợp Tác Phân Phối Cùng Rocky Lens
               </h3>
               <p className="text-slate-200 text-sm sm:text-base leading-relaxed mb-6">
-                Nhận chính sách chiết khấu sỉ độc quyền, tài trợ kệ tủ POSM trưng bày, máy test tròng quang học và dịch vụ gia công Lab RX chuẩn xác từ Clearly Vietnam.
+                Chính sách đối tác minh bạch, tài trợ tủ kệ POSM trưng bày, bộ thử tròng quang học và giải pháp gia công Lab RX chuẩn xác từ Clearly Vietnam.
               </p>
 
               {/* Quick highlights */}
               <div className="space-y-2.5 mb-8">
                 <div className="flex items-center gap-2 text-xs sm:text-sm text-slate-200 font-medium">
                   <CheckCircle2 className="w-4 h-4 text-teal-400 shrink-0" />
-                  <span>Chiết khấu sỉ đại lý cạnh tranh & chính sách bảo hành 12 tháng</span>
+                  <span>Hỗ trợ đại lý tận tâm &amp; chính sách bảo hành 12 tháng chính hãng</span>
                 </div>
                 <div className="flex items-center gap-2 text-xs sm:text-sm text-slate-200 font-medium">
                   <CheckCircle2 className="w-4 h-4 text-teal-400 shrink-0" />
-                  <span>Cung cấp tài liệu marketing, bộ thử tròng & máy test UV/Bluecut</span>
+                  <span>Cung cấp tài liệu marketing, bộ thử tròng &amp; máy test UV/Bluecut</span>
                 </div>
               </div>
             </div>
 
             {/* Actions */}
             <div className="flex flex-wrap items-center gap-3 pt-5 border-t border-white/10 relative z-10">
-              <button
-                type="button"
-                onClick={openB2BQuoteModal}
+              <Link
+                href="/danh-cho-doi-tac/"
                 className="px-6 py-3 rounded-full text-xs sm:text-sm font-bold bg-[#00A2CC] hover:bg-[#00b4e3] text-slate-950 transition-all shadow-xs flex items-center gap-2 cursor-pointer"
               >
-                <FileSpreadsheet className="w-4 h-4" />
-                <span>Nhận Báo Giá Cho Đại Lý</span>
-              </button>
+                <span>Xem Chính Sách Đại Lý</span>
+                <ArrowRight className="w-4 h-4" />
+              </Link>
               <a
                 href={siteConfig.zalo.url}
                 target="_blank"
@@ -184,7 +182,7 @@ export default function ContactCTA({
                 className="px-5 py-3 rounded-full text-xs sm:text-sm font-bold bg-white/10 hover:bg-white/20 border border-white/20 text-white transition-all flex items-center gap-2"
               >
                 <PhoneCall className="w-4 h-4" />
-                <span>Zalo B2B Đại Lý</span>
+                <span>Zalo Đối Tác</span>
               </a>
             </div>
           </div>

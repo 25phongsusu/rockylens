@@ -12,7 +12,7 @@ interface B2BQuoteButtonProps {
 
 export default function B2BQuoteButton({
   className = 'button-primary px-6 py-3.5 rounded-full font-bold text-sm shadow-md transition-all cursor-pointer',
-  children = 'Nhận Báo Giá Cho Đại Lý',
+  children = 'Tư Vấn Chọn Tròng Kính',
   showIcon = true,
 }: B2BQuoteButtonProps) {
   return (

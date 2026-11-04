@@ -155,10 +155,10 @@ const html = `<!DOCTYPE html>
           },
           {
             "@type": "Question",
-            "name": "Cửa hàng mắt kính muốn liên hệ nhập tròng Rocky và nhận báo giá đại lý như thế nào?",
+            "name": "Cửa hàng mắt kính muốn liên hệ nhập tròng Rocky và hợp tác phân phối như thế nào?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Quý đại lý và phòng khám có thể liên hệ trực tiếp Hotline/Zalo B2B 0933 102 653 hoặc nhấn nút 'Nhận Báo Giá Đại Lý' trên website để được bộ phận B2B Rocky Lens gửi bảng giá sỉ và chính sách chiết khấu trong 15 phút."
+              "text": "Quý đại lý và phòng khám có thể liên hệ trực tiếp Hotline/Zalo B2B 0933 102 653 hoặc truy cập trang Dành Cho Đối Tác hoặc nhắn tin qua Zalo 0933 102 653 để được đội ngũ phụ trách đại lý hỗ trợ trong 15 phút."
             }
           }
         ]
@@ -644,6 +644,7 @@ const html = `<!DOCTYPE html>
       <!-- Primary Multi-Page Navigation Items -->
       <nav class="hidden lg:flex items-center gap-8 text-base font-semibold text-slate-800">
         <a href="index.html" class="text-[var(--color-primary)] font-bold">Trang chủ</a>
+        <a href="ve-chung-toi/" class="hover:text-[var(--color-primary)] transition-colors">Về Chúng Tôi</a>
         <a href="trong-kinh/" class="hover:text-[var(--color-primary)] transition-colors">Sản Phẩm</a>
         <a href="rx-lab/" class="hover:text-[var(--color-primary)] transition-colors">RX &amp; Lab</a>
         <a href="cong-nghe/" class="hover:text-[var(--color-primary)] transition-colors">Công Nghệ</a>
@@ -652,11 +653,11 @@ const html = `<!DOCTYPE html>
         <a href="danh-cho-doi-tac/" class="hover:text-[var(--color-primary)] transition-colors">Đối tác</a>
       </nav>
 
-      <!-- Action Button: Open B2B Dealer Quote Modal -->
+      <!-- Action Button: Tìm Đại Lý Gần Nhất -->
       <div class="flex items-center gap-3">
-        <button type="button" onclick="openB2BQuoteModal()" class="button-primary px-5 py-2.5 rounded-full text-base active:scale-95">
-          Nhận Báo Giá Đại Lý
-        </button>
+        <a href="lien-he/" class="button-primary px-5 py-2.5 rounded-full text-base active:scale-95 inline-block text-center">
+          Tìm Đại Lý Gần Nhất
+        </a>
       </div>
 
     </div>
@@ -726,12 +727,12 @@ const html = `<!DOCTYPE html>
             <h1 id="hero-title" class="text-3xl sm:text-5xl lg:text-[52px] font-black text-heading tracking-tight leading-[1.15] transition-colors">
               Rocky Lens - <br class="hidden sm:inline" />
               <span class="text-transparent bg-clip-text bg-gradient-to-r from-[var(--button-start)] via-[var(--button-middle)] to-[var(--button-end)]">
-                nhà phân phối tròng kính từ Canada
+                trọn vẹn tầm nhìn, chuẩn sắc nét Canada
               </span>
             </h1>
 
             <p id="hero-desc" class="text-brand-muted text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0 transition-colors">
-              Rocky Lens tự hào là đơn vị phân phối tròng kính B2B và gia công Lab công nghệ quốc tế tại Việt Nam. Với hệ sinh thái sản phẩm toàn diện - từ tròng kính cận, tròng kính đổi màu đến tròng kính chống ánh sáng xanh - chúng tôi mang đến giải pháp nguồn hàng trọn gói, ổn định, đồng hành cùng sự phát triển bền vững của các hệ thống cửa hàng kính mắt trên toàn quốc.
+              Rocky Lens kế thừa chuẩn mực quang học Canada Opticians, kết hợp công nghệ vật liệu tiên tiến và triết lý 'Sáng mắt sáng lòng'. Với hệ sinh thái sản phẩm toàn diện — từ tròng kính cận, đổi màu thông minh, chống ánh sáng xanh đến kính lái xe và kiểm soát cận thị — chúng tôi mang đến tầm nhìn sắc nét, an tâm và thoải mái nhất cho người tiêu dùng tại hơn 500+ đại lý mắt kính uy tín trên toàn quốc.
             </p>
 
             <!-- 3 Apple Liquid Spec Cards -->
@@ -755,15 +756,15 @@ const html = `<!DOCTYPE html>
               </div>
             </div>
 
-            <!-- Dual CTAs: Tìm Tròng Kính Phù Hợp Với Bạn & Nhận Báo Giá Đại Lý -->
+            <!-- Dual CTAs: Tìm Tròng Kính Phù Hợp Với Bạn & Tìm Cửa Hàng Gần Bạn -->
             <div class="pt-3 flex flex-wrap items-center justify-center lg:justify-start gap-3.5">
               <a href="#trong-kinh" class="liquid-btn-primary px-7 py-3.5 text-xs sm:text-sm font-bold flex items-center space-x-2">
                 <span>Tìm Tròng Kính Phù Hợp Với Bạn</span>
                 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
               </a>
-              <button id="hero-b2b-btn" type="button" onclick="openB2BQuoteModal()" class="liquid-btn-secondary px-6 py-3.5 text-xs sm:text-sm font-bold flex items-center space-x-2 cursor-pointer transition-all">
-                <span>Nhận Báo Giá Đại Lý</span>
-              </button>
+              <a href="lien-he/" id="hero-b2b-btn" class="liquid-btn-secondary px-6 py-3.5 text-xs sm:text-sm font-bold flex items-center space-x-2 cursor-pointer transition-all">
+                <span>Tìm Cửa Hàng Gần Bạn</span>
+              </a>
             </div>
 
             <!-- Micro Trust Indicators -->
@@ -1762,8 +1763,8 @@ const html = `<!DOCTYPE html>
             </div>
 
             <div class="shrink-0 pb-1">
-              <button type="button" onclick="openB2BQuoteModal()" class="px-6 py-3 rounded-full bg-white text-[#003B50] font-bold text-sm hover:bg-slate-100 transition-all cursor-pointer shadow-md inline-flex items-center gap-1.5 active:scale-95">
-                <span>Liên hệ hợp tác</span>
+              <a href="danh-cho-doi-tac/" class="px-6 py-3 rounded-full bg-white text-[#003B50] font-bold text-sm hover:bg-slate-100 transition-all cursor-pointer shadow-md inline-flex items-center gap-1.5 active:scale-95">
+                <span>Tìm hiểu chính sách đối tác</span>
                 <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
               </button>
             </div>
@@ -1965,10 +1966,10 @@ const html = `<!DOCTYPE html>
           Dành Cho Cửa Hàng &amp; Đại Lý Mắt Kính
         </span>
         <h3 id="b2bModalTitle" class="text-2xl sm:text-3xl font-black text-heading tracking-tight leading-snug">
-          Nhận Báo Giá Đại Lý &amp; Chính Sách Chiết Khấu
+          Tư Vấn Tròng Kính &amp; Tìm Điểm Bán Gần Nhất
         </h3>
         <p class="text-slate-600 text-sm leading-relaxed">
-          Bảng giá sỉ các dòng tròng Rocky sẵn kho và chính sách hợp tác Lab RX Freeform kỹ thuật số được gửi trực tiếp, bảo mật cho đối tác kinh doanh.
+          Chuyên viên khúc xạ Rocky Lens sẵn sàng tư vấn giải pháp chiết suất phù hợp và chỉ dẫn đại lý chính hãng có sẵn máy test tròng gần bạn nhất.
         </p>
       </div>
 
@@ -1978,7 +1979,7 @@ const html = `<!DOCTYPE html>
           <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
             <path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.38A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"/>
           </svg>
-          <span>Nhận Báo Giá File PDF Qua Zalo Ngay</span>
+          <span>Nhận Tư Vấn Trực Tiếp Qua Zalo Ngay</span>
         </a>
 
         <a href="tel:0933102653" class="w-full py-3 px-6 rounded-2xl bg-slate-100 hover:bg-slate-200 text-heading font-bold text-base flex items-center justify-center gap-3 transition-colors cursor-pointer">
@@ -1992,22 +1993,22 @@ const html = `<!DOCTYPE html>
       <!-- Quick Inquiry Mini Form -->
       <div class="border-t border-slate-100 pt-5 space-y-4">
         <div class="text-sm font-semibold text-slate-700">
-          Hoặc để lại thông tin nhanh, chuyên viên Rocky sẽ gửi bảng giá qua Zalo:
+          Hoặc để lại thông tin nhanh, chuyên viên Rocky sẽ liên hệ tư vấn qua Zalo:
         </div>
         <form id="b2bQuickForm" onsubmit="handleB2BSubmit(event)" class="space-y-3">
           <div>
-            <input type="text" id="b2bStoreName" required placeholder="Tên Cửa hàng mắt kính / Đơn vị (*)" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-[var(--color-primary)] focus:outline-none text-sm text-heading bg-slate-50 focus:bg-white transition-colors">
+            <input type="text" id="b2bStoreName" required placeholder="Họ và tên của bạn (*)" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-[var(--color-primary)] focus:outline-none text-sm text-heading bg-slate-50 focus:bg-white transition-colors">
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <input type="tel" id="b2bPhone" required placeholder="Số điện thoại / Zalo (*)" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-[var(--color-primary)] focus:outline-none text-sm text-heading bg-slate-50 focus:bg-white transition-colors">
             <input type="text" id="b2bCity" required placeholder="Tỉnh / Thành phố (*)" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:border-[var(--color-primary)] focus:outline-none text-sm text-heading bg-slate-50 focus:bg-white transition-colors">
           </div>
           <button type="submit" class="w-full py-3 rounded-xl bg-[var(--b2b-end)] hover:bg-[var(--color-primary)] text-white font-bold text-sm transition-colors cursor-pointer">
-            Gửi Yêu Cầu Nhận Báo Giá &amp; Catalog
+            Gửi Yêu Cầu Tư Vấn Điểm Bán Gần Nhất
           </button>
         </form>
         <div id="b2bSuccessMsg" class="hidden text-center text-sm font-bold text-teal-600 bg-teal-50 py-2.5 px-3 rounded-xl">
-          ✓ Cảm ơn bạn! Chuyên viên Rocky sẽ gửi bảng giá qua Zalo cho bạn trong ít phút.
+          ✓ Cảm ơn bạn! Chuyên viên Rocky sẽ liên hệ hỗ trợ bạn qua Zalo trong ít phút.
         </div>
       </div>
 
