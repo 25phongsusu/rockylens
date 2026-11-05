@@ -3,7 +3,6 @@ import { Metadata } from 'next';
 import { getAllProducts } from '@/features/products/product-service';
 import ProductCatalogView from '@/features/products/ProductCatalogView';
 import Breadcrumbs from '@/components/shared/Breadcrumbs';
-import ContactCTA from '@/components/shared/ContactCTA';
 import { constructMetadata } from '@/lib/seo/metadata';
 
 export const metadata: Metadata = constructMetadata({
@@ -46,9 +45,6 @@ export default function ProductsPage() {
           <ProductCatalogView initialProducts={products} />
         </Suspense>
       </div>
-
-      {/* Bottom B2B Partner CTA */}
-      <ContactCTA />
     </div>
   );
 }
