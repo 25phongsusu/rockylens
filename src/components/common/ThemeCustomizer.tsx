@@ -34,6 +34,36 @@ export const THEME_PRESETS: { name: string; desc: string; colors: ThemeColors }[
     colors: DEFAULT_THEME,
   },
   {
+    name: 'Light Blue (Pantone 2915 C)',
+    desc: 'Xanh dương quang học sáng trong Pantone 2915 C',
+    colors: {
+      siteBgStart: '#F0F8FC',
+      siteBgMiddle: '#D8EEF8',
+      siteBgEnd: '#A8D7EC',
+      buttonStart: '#72B5D3',
+      buttonMiddle: '#428CAE',
+      buttonEnd: '#2B789C',
+      b2bStart: '#428CAE',
+      b2bMiddle: '#2B789C',
+      b2bEnd: '#163F56',
+    },
+  },
+  {
+    name: 'Deep Teal (Pantone 5415 C)',
+    desc: 'Xanh mòng két trầm công nghệ cao cấp Pantone 5415 C',
+    colors: {
+      siteBgStart: '#F0F6F7',
+      siteBgMiddle: '#D5E6E9',
+      siteBgEnd: '#A3C8CE',
+      buttonStart: '#4E93A2',
+      buttonMiddle: '#2F6F7F',
+      buttonEnd: '#215C6B',
+      b2bStart: '#2F6F7F',
+      b2bMiddle: '#215C6B',
+      b2bEnd: '#144956',
+    },
+  },
+  {
     name: 'Deep Sapphire Ocean',
     desc: 'Xanh biển sâu sapphire sang trọng & công nghệ',
     colors: {
@@ -144,9 +174,29 @@ export default function ThemeCustomizer() {
   const [activeTab, setActiveTab] = useState<'bg' | 'btn' | 'b2b' | 'presets'>('presets');
   const [copied, setCopied] = useState(false);
 
-  // Load from localStorage on mount
+  // Load from localStorage or URL query on mount
   useEffect(() => {
     try {
+      if (typeof window !== 'undefined') {
+        const params = new URLSearchParams(window.location.search);
+        const queryTheme = (params.get('theme') || params.get('preset') || '').toLowerCase();
+        let matched: ThemeColors | null = null;
+        if (queryTheme === 'light-blue' || queryTheme === 'pantone-light-blue' || queryTheme === '1') {
+          matched = THEME_PRESETS[1].colors;
+        } else if (queryTheme === 'deep-teal' || queryTheme === 'pantone-deep-teal' || queryTheme === '2') {
+          matched = THEME_PRESETS[2].colors;
+        }
+
+        if (matched) {
+          setColors(matched);
+          applyThemeToDocument(matched);
+          try {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(matched));
+          } catch {}
+          return;
+        }
+      }
+
       const saved = localStorage.getItem(STORAGE_KEY);
       if (saved) {
         const parsed = JSON.parse(saved);
