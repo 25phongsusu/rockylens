@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@source "../";
+@config "../../tailwind.config.ts";
 
 /* ========================================================
    ROCKYLENS GLOBAL DESIGN SYSTEM — SINGLE SOURCE OF TRUTH

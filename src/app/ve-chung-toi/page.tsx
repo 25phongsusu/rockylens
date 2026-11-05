@@ -9,23 +9,20 @@ import {
   HeartHandshake,
   CheckCircle2,
   Globe,
-  Users,
-  Eye,
-  Layers,
-  Sparkles,
   MapPin,
   ArrowRight,
   Heart,
   Cpu,
-  Glasses,
-  Check,
+  Sparkles,
   Store,
+  Phone,
+  FileCheck,
+  Eye,
+  Check,
 } from 'lucide-react';
 import Breadcrumbs from '@/components/shared/Breadcrumbs';
 import SectionHeading from '@/components/shared/SectionHeading';
-import ContactCTA from '@/components/shared/ContactCTA';
 import { constructMetadata } from '@/lib/seo/metadata';
-import { siteConfig } from '@/config/site';
 
 export const metadata: Metadata = constructMetadata({
   title: 'Về Chúng Tôi — Rocky Lens Canada • Sáng Mắt Sáng Lòng',
@@ -124,42 +121,49 @@ export default function AboutUsPage() {
       {/* =========================================================
           1. HERO BANNER: HERITAGE & SLOGAN
           ========================================================= */}
-      <section className="b2b-gradient text-white py-16 sm:py-24 px-4 sm:px-6 relative overflow-hidden">
-        <div className="absolute right-0 top-0 w-96 h-96 bg-[var(--button-start)]/20 rounded-full blur-3xl pointer-events-none" />
+      <section
+        className="relative py-16 sm:py-24 px-4 sm:px-6 lg:px-8 text-white overflow-hidden shadow-2xl"
+        style={{ background: 'var(--gradient-b2b, linear-gradient(120deg, #00A2CC 0%, #007A99 50%, #003B50 100%))' }}
+      >
+        {/* Glow decoration */}
+        <div className="absolute right-0 top-0 w-96 h-96 bg-cyan-400/20 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute left-1/4 -bottom-24 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
 
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="max-w-3xl space-y-5">
-            <span className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/20 text-white text-xs font-semibold backdrop-blur-xs">
-              <Award className="w-3.5 h-3.5 text-amber-300" />
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/20 text-cyan-200 text-xs font-semibold backdrop-blur-md">
+              <span className="w-2 h-2 rounded-full bg-cyan-300 animate-pulse" />
               <span>Canada Opticians Heritage • Tiêu Chuẩn Bắc Mỹ</span>
-            </span>
+            </div>
 
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight text-white uppercase">
               SÁNG MẮT SÁNG LÒNG — NÂNG TẦM THỊ LỰC NGƯỜI VIỆT
             </h1>
 
-            <p className="text-white/90 text-base sm:text-lg leading-relaxed">
-              Rocky Lens được cố vấn và chuyển giao công nghệ trực tiếp từ đội ngũ chuyên gia khúc xạ tại Canada. Chúng tôi kết hợp chuẩn mực quang học Bắc Mỹ với tinh thần phụng sự nhân văn, hướng tới kiến tạo một cộng đồng <strong className="text-amber-300 font-bold">nhìn rõ – sống đẹp – nghĩ tử tế</strong>.
+            <p className="text-cyan-50/90 text-base sm:text-lg leading-relaxed">
+              Rocky Lens được cố vấn và chuyển giao công nghệ trực tiếp từ đội ngũ chuyên gia khúc xạ tại Canada, phân phối độc quyền tại Việt Nam bởi Clearly Vietnam. Chúng tôi kết hợp chuẩn mực quang học khắt khe của Bắc Mỹ với tinh thần phụng sự nhân văn, hướng tới kiến tạo một cộng đồng{' '}
+              <strong className="text-white font-bold underline decoration-cyan-400 decoration-2 underline-offset-4">
+                nhìn rõ – sống đẹp – nghĩ tử tế
+              </strong>.
             </p>
 
             {/* Quick Metrics */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4 border-t border-white/15">
-              <div>
-                <div className="text-2xl sm:text-3xl font-black text-amber-300">20+</div>
-                <div className="text-xs text-white/70 mt-1">Năm Kinh Nghiệm Khúc Xạ</div>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-white/15">
+              <div className="p-4 rounded-xl bg-white/[0.08] border border-white/15 backdrop-blur-sm">
+                <div className="text-2xl sm:text-3xl font-black text-cyan-300">20+</div>
+                <div className="text-xs text-white/80 mt-1 font-medium">Năm Chuyển Giao Công Nghệ</div>
               </div>
-              <div>
+              <div className="p-4 rounded-xl bg-white/[0.08] border border-white/15 backdrop-blur-sm">
                 <div className="text-2xl sm:text-3xl font-black text-cyan-300">500+</div>
-                <div className="text-xs text-white/70 mt-1">Đại Lý Mắt Kính Toàn Quốc</div>
+                <div className="text-xs text-white/80 mt-1 font-medium">Đại Lý Mắt Kính Toàn Quốc</div>
               </div>
-              <div>
-                <div className="text-2xl sm:text-3xl font-black text-emerald-300">100.000+</div>
-                <div className="text-xs text-white/70 mt-1">Cặp Tròng Phục Vụ Hàng Năm</div>
+              <div className="p-4 rounded-xl bg-white/[0.08] border border-white/15 backdrop-blur-sm">
+                <div className="text-2xl sm:text-3xl font-black text-cyan-300">100.000+</div>
+                <div className="text-xs text-white/80 mt-1 font-medium">Cặp Tròng Phục Vụ Hàng Năm</div>
               </div>
-              <div>
+              <div className="p-4 rounded-xl bg-white/[0.08] border border-white/15 backdrop-blur-sm">
                 <div className="text-2xl sm:text-3xl font-black text-white">ISO 9001</div>
-                <div className="text-xs text-white/70 mt-1">&amp; Tiêu Chuẩn CE Châu Âu</div>
+                <div className="text-xs text-white/80 mt-1 font-medium">&amp; Tiêu Chuẩn CE Châu Âu</div>
               </div>
             </div>
           </div>
@@ -169,51 +173,51 @@ export default function AboutUsPage() {
       {/* =========================================================
           2. BRAND STORY & PHILOSOPHY ("SÁNG MẮT SÁNG LÒNG")
           ========================================================= */}
-      <section className="py-20 sm:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <section className="py-16 sm:py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
             {/* Story Text */}
-            <div className="lg:col-span-6 space-y-6">
-              <span className="text-xs font-bold uppercase tracking-wider text-[var(--color-primary)] bg-[var(--site-bg-middle)]/60 px-3 py-1 rounded-full border border-[var(--color-border)]/40">
+            <div className="space-y-6">
+              <span className="inline-block text-xs font-bold uppercase tracking-wider text-[var(--button-middle,#00A2CC)] bg-cyan-50 px-3 py-1 rounded-full border border-cyan-200">
                 Câu Chuyện Thương Hiệu
               </span>
 
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-heading tracking-tight leading-snug">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#003B50] tracking-tight leading-snug">
                 Hành Trình Mang Chuẩn Mực Quang Học Canada Về Việt Nam
               </h2>
 
-              <p className="text-sm sm:text-base text-[var(--color-muted)] leading-relaxed">
+              <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
                 Được sáng lập với sự cố vấn từ các chuyên gia quang học Canada Opticians, thương hiệu Rocky Lens chính thức hiện diện tại Việt Nam nhằm giải quyết một trăn trở lớn: người tiêu dùng xứng đáng có được những cặp tròng kính chất lượng y tế quốc tế với mức chi phí minh bạch, chuẩn xác và đúng giá trị thực.
               </p>
 
-              <div className="p-5 rounded-2xl bg-[var(--site-bg-start)] border border-[var(--color-border)]/60 space-y-2">
-                <div className="flex items-center gap-2 text-sm font-bold text-heading">
+              <div className="p-5 rounded-2xl bg-cyan-50/70 border border-cyan-200/80 space-y-2">
+                <div className="flex items-center gap-2 text-sm font-bold text-[#003B50]">
                   <Sparkles className="w-4 h-4 text-amber-500 shrink-0" />
                   <span>Triết Lý &quot;Sáng Mắt Sáng Lòng&quot;</span>
                 </div>
-                <p className="text-xs sm:text-sm text-[var(--color-muted)] leading-relaxed">
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Chúng tôi tin rằng đôi mắt là cửa sổ tâm hồn. Khi đôi mắt nhìn thấy thế giới rõ nét, không mỏi mệt và được che chở trước các tia có hại, con người ta dễ dàng cảm nhận sự ấm áp của cuộc sống, mở rộng lòng mình và cùng nhau nghĩ những điều thiện lành, tử tế.
                 </p>
               </div>
 
-              <p className="text-sm sm:text-base text-[var(--color-muted)] leading-relaxed">
+              <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
                 Không chỉ dừng lại ở các dòng tròng kính đơn thông thường, Rocky Lens đã xây dựng năng lực phòng Lab RX kỹ thuật số, áp dụng công nghệ Freeform 3D để cá nhân hóa thông số khúc xạ riêng biệt cho từng người đeo, tối ưu hóa theo thể trạng khuôn mặt và thói quen sinh hoạt của người Việt.
               </p>
 
               <div className="pt-2">
                 <Link
                   href="/trong-kinh/"
-                  className="inline-flex items-center gap-2 text-sm font-bold text-[var(--color-primary)] hover:underline"
+                  className="inline-flex items-center gap-2 text-sm font-bold text-[var(--button-middle,#00A2CC)] hover:text-[#003B50] transition-colors"
                 >
-                  <span>Khám phá 12 dòng sản phẩm tròng kính Rocky</span>
+                  <span>Khám phá các dòng sản phẩm tròng kính Rocky</span>
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
             </div>
 
             {/* Story Visual */}
-            <div className="lg:col-span-6">
-              <div className="relative aspect-4/3 rounded-3xl overflow-hidden shadow-2xl border border-[var(--color-border)]/60 group">
+            <div>
+              <div className="relative h-[320px] sm:h-[420px] w-full rounded-3xl overflow-hidden shadow-2xl border border-slate-200 group">
                 <Image
                   src="/images/banners/about-banner.png"
                   alt="Trụ sở và nhà máy Rocky Lens Canada Opticians"
@@ -222,11 +226,11 @@ export default function AboutUsPage() {
                   sizes="(max-width: 1024px) 100vw, 600px"
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex flex-col justify-end p-6 sm:p-8">
-                  <div className="inline-block px-3 py-1 rounded-md bg-amber-400 text-slate-950 text-xs font-bold uppercase tracking-wider mb-2 w-fit">
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/20 to-transparent flex flex-col justify-end p-6 sm:p-8">
+                  <div className="inline-block px-3 py-1 rounded-md bg-amber-400 text-slate-950 text-xs font-bold uppercase tracking-wider mb-2 w-fit shadow-xs">
                     Canada Opticians Official
                   </div>
-                  <p className="text-white text-base sm:text-lg font-bold">
+                  <p className="text-white text-base sm:text-lg font-bold leading-snug">
                     Tiêu chuẩn kiểm soát chất lượng quang học nghiêm ngặt theo chuẩn Bắc Mỹ
                   </p>
                 </div>
@@ -239,35 +243,35 @@ export default function AboutUsPage() {
       {/* =========================================================
           3. 4 CORE VALUES (GIÁ TRỊ CỐT LÕI)
           ========================================================= */}
-      <section className="py-20 section-background border-t border-b border-[var(--color-border)]/40">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <section className="py-16 sm:py-24 bg-slate-50 border-t border-b border-slate-200/80">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             badge="Giá Trị Cốt Lõi"
             title="4 Trụ Cột Vững Chắc Xây Dựng Niềm Tin"
             description="Mỗi sản phẩm tròng kính Rocky Lens xuất xưởng là kết tinh của khoa học chính xác, công nghệ tiên tiến và lương tâm người làm nghề quang học."
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {coreValues.map((val, idx) => {
               const IconComp = val.icon;
               return (
                 <div
                   key={idx}
-                  className="card-surface p-6 sm:p-7 rounded-2xl border border-[var(--color-border)]/60 shadow-xs hover:shadow-md hover:border-[var(--color-primary)] transition-all flex flex-col justify-between group"
+                  className="bg-white p-6 sm:p-7 rounded-2xl border border-slate-200/80 shadow-xs hover:shadow-lg hover:border-[var(--button-middle,#00A2CC)] transition-all flex flex-col justify-between group"
                 >
                   <div className="space-y-4">
-                    <div className="w-12 h-12 rounded-xl bg-[var(--site-bg-middle)] flex items-center justify-center text-[var(--color-primary)] group-hover:bg-[var(--color-primary)] group-hover:text-white transition-colors">
+                    <div className="w-12 h-12 rounded-xl bg-cyan-50 flex items-center justify-center text-[var(--button-middle,#00A2CC)] group-hover:bg-[var(--button-middle,#00A2CC)] group-hover:text-white transition-colors">
                       <IconComp className="w-6 h-6" />
                     </div>
                     <div className="space-y-1">
                       <span className="text-[11px] font-bold uppercase tracking-wider text-amber-600 block">
                         {val.tag}
                       </span>
-                      <h3 className="text-lg font-bold text-heading">
+                      <h3 className="text-lg font-bold text-[#003B50]">
                         {val.title}
                       </h3>
                     </div>
-                    <p className="text-xs sm:text-sm text-[var(--color-muted)] leading-relaxed">
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       {val.description}
                     </p>
                   </div>
@@ -281,15 +285,18 @@ export default function AboutUsPage() {
       {/* =========================================================
           4. NĂNG LỰC LAB RX FREEFORM & CÔNG NGHỆ QUANG HỌC
           ========================================================= */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <section className="py-16 sm:py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
             {/* Visual Box */}
-            <div className="lg:col-span-5 order-2 lg:order-1">
-              <div className="p-8 rounded-3xl b2b-gradient text-white shadow-xl relative overflow-hidden space-y-6">
-                <div className="absolute -right-8 -bottom-8 w-48 h-48 bg-white/5 rounded-full blur-2xl pointer-events-none" />
+            <div>
+              <div
+                className="p-8 sm:p-10 rounded-3xl text-white shadow-xl relative overflow-hidden space-y-6"
+                style={{ background: 'var(--gradient-b2b, linear-gradient(120deg, #00A2CC 0%, #007A99 50%, #003B50 100%))' }}
+              >
+                <div className="absolute -right-8 -bottom-8 w-48 h-48 bg-white/10 rounded-full blur-2xl pointer-events-none" />
 
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-cyan-300 text-xs font-semibold border border-white/15">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/15 text-cyan-200 text-xs font-semibold border border-white/20">
                   <Factory className="w-3.5 h-3.5" />
                   <span>Năng Lực Sản Xuất RX Lab</span>
                 </div>
@@ -298,21 +305,21 @@ export default function AboutUsPage() {
                   Gia Công Kỹ Thuật Số Chuẩn Xác Từng Micro
                 </h3>
 
-                <p className="text-white/85 text-xs sm:text-sm leading-relaxed">
+                <p className="text-cyan-50/90 text-xs sm:text-sm leading-relaxed">
                   Hệ thống máy mài phay kỹ thuật số nhập khẩu đồng bộ, cho phép xử lý các dải độ phức tạp: độ cận viễn cao, độ loạn cao và đa tròng lũy tiến theo từng chuyển động thị giác thực tế.
                 </p>
 
                 <div className="space-y-3 pt-2">
-                  <div className="flex items-center gap-2 text-xs sm:text-sm text-white/90">
-                    <CheckCircle2 className="w-4 h-4 text-teal-300 shrink-0" />
-                    <span>Dung sai công suất cực tiểu &plusmn;0.01D</span>
+                  <div className="flex items-center gap-2.5 text-xs sm:text-sm text-white">
+                    <CheckCircle2 className="w-4 h-4 text-cyan-300 shrink-0" />
+                    <span>Dung sai công suất cực tiểu &plusmn;0.01 Diop</span>
                   </div>
-                  <div className="flex items-center gap-2 text-xs sm:text-sm text-white/90">
-                    <CheckCircle2 className="w-4 h-4 text-teal-300 shrink-0" />
-                    <span>Bảo hành váng phủ 12 tháng chính hãng</span>
+                  <div className="flex items-center gap-2.5 text-xs sm:text-sm text-white">
+                    <CheckCircle2 className="w-4 h-4 text-cyan-300 shrink-0" />
+                    <span>Bảo hành lớp váng phủ 12 tháng chính hãng</span>
                   </div>
-                  <div className="flex items-center gap-2 text-xs sm:text-sm text-white/90">
-                    <CheckCircle2 className="w-4 h-4 text-teal-300 shrink-0" />
+                  <div className="flex items-center gap-2.5 text-xs sm:text-sm text-white">
+                    <CheckCircle2 className="w-4 h-4 text-cyan-300 shrink-0" />
                     <span>Cá nhân hóa theo thông số gọng kính cá nhân</span>
                   </div>
                 </div>
@@ -320,7 +327,7 @@ export default function AboutUsPage() {
                 <div className="pt-2">
                   <Link
                     href="/rx-lab/"
-                    className="button-primary inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-bold"
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-[#003B50] text-xs font-bold shadow-md hover:bg-cyan-50 active:scale-95 transition-all"
                   >
                     <span>Tìm hiểu quy trình Lab RX</span>
                     <ArrowRight className="w-4 h-4" />
@@ -330,16 +337,16 @@ export default function AboutUsPage() {
             </div>
 
             {/* Highlights Grid */}
-            <div className="lg:col-span-7 order-1 lg:order-2 space-y-6">
-              <span className="text-xs font-bold uppercase tracking-wider text-[var(--color-primary)] bg-[var(--site-bg-middle)]/60 px-3 py-1 rounded-full border border-[var(--color-border)]/40">
+            <div className="space-y-6">
+              <span className="inline-block text-xs font-bold uppercase tracking-wider text-[var(--button-middle,#00A2CC)] bg-cyan-50 px-3 py-1 rounded-full border border-cyan-200">
                 Công Nghệ Sản Xuất
               </span>
 
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-heading tracking-tight leading-snug">
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#003B50] tracking-tight leading-snug">
                 Nền Tảng Công Nghệ Lớp Phủ &amp; Thiết Kế Kính Đỉnh Cao
               </h2>
 
-              <p className="text-sm text-[var(--color-muted)] leading-relaxed">
+              <p className="text-sm text-slate-600 leading-relaxed">
                 Rocky Lens trang bị buồng mạ chân không ion hóa tiên tiến, kết hợp các thế hệ lớp phủ độc quyền giúp tròng kính trong suốt hơn, bền bỉ hơn và mang lại tầm nhìn dễ chịu suốt ngày dài.
               </p>
 
@@ -347,15 +354,15 @@ export default function AboutUsPage() {
                 {labHighlights.map((hl, idx) => (
                   <div
                     key={idx}
-                    className="p-4 rounded-xl border border-[var(--color-border)]/60 bg-white shadow-2xs hover:border-[var(--color-primary)] transition-colors"
+                    className="p-4 rounded-xl border border-slate-200 bg-slate-50/60 hover:bg-white hover:border-[var(--button-middle,#00A2CC)] transition-all shadow-2xs"
                   >
-                    <div className="flex items-center gap-2 font-bold text-sm text-heading mb-1.5">
-                      <span className="w-6 h-6 rounded-full bg-[var(--site-bg-middle)] text-[var(--color-primary)] flex items-center justify-center text-xs font-black shrink-0">
+                    <div className="flex items-center gap-2.5 font-bold text-sm text-[#003B50] mb-1.5">
+                      <span className="w-6 h-6 rounded-full bg-cyan-100 text-[var(--button-middle,#00A2CC)] flex items-center justify-center text-xs font-black shrink-0">
                         {idx + 1}
                       </span>
                       <span>{hl.title}</span>
                     </div>
-                    <p className="text-xs text-[var(--color-muted)] leading-relaxed pl-8">
+                    <p className="text-xs text-slate-600 leading-relaxed pl-8">
                       {hl.desc}
                     </p>
                   </div>
@@ -369,8 +376,8 @@ export default function AboutUsPage() {
       {/* =========================================================
           5. GALLERY: ĐỘI NGŨ CHUYÊN VIÊN & HOẠT ĐỘNG
           ========================================================= */}
-      <section className="py-20 section-background border-t border-b border-[var(--color-border)]/40">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <section className="py-16 sm:py-24 bg-slate-50 border-t border-b border-slate-200/80">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             badge="Hình Ảnh Thực Tế"
             title="Đội Ngũ Chuyên Viên & Cơ Sở Hoạt Động"
@@ -381,9 +388,9 @@ export default function AboutUsPage() {
             {companyPhotos.map((photo, idx) => (
               <div
                 key={idx}
-                className="card-surface rounded-2xl overflow-hidden shadow-xs border border-[var(--color-border)]/50 group"
+                className="bg-white rounded-2xl overflow-hidden shadow-xs border border-slate-200/80 group hover:shadow-md transition-all"
               >
-                <div className="relative aspect-4/3 overflow-hidden">
+                <div className="relative h-48 w-full overflow-hidden bg-slate-100">
                   <Image
                     src={photo.src}
                     alt={photo.caption}
@@ -393,7 +400,7 @@ export default function AboutUsPage() {
                   />
                 </div>
                 <div className="p-4">
-                  <p className="text-xs text-heading font-medium leading-relaxed">
+                  <p className="text-xs text-[#003B50] font-medium leading-relaxed">
                     {photo.caption}
                   </p>
                 </div>
@@ -406,8 +413,8 @@ export default function AboutUsPage() {
       {/* =========================================================
           6. CSR: TRÁCH NHIỆM XÃ HỘI & HOẠT ĐỘNG THIỆN NGUYỆN
           ========================================================= */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <section className="py-16 sm:py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             badge="Trách Nhiệm Xã Hội"
             title="Lan Tỏa Ánh Sáng — Phụng Sự Cộng Đồng"
@@ -418,9 +425,9 @@ export default function AboutUsPage() {
             {csrPhotos.map((item, idx) => (
               <div
                 key={idx}
-                className="card-surface rounded-2xl overflow-hidden border border-[var(--color-border)]/60 shadow-xs flex flex-col justify-between hover:shadow-md transition-shadow group"
+                className="bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-xs flex flex-col justify-between hover:shadow-md transition-shadow group"
               >
-                <div className="relative aspect-16/10 overflow-hidden">
+                <div className="relative h-52 w-full overflow-hidden bg-slate-100">
                   <Image
                     src={item.src}
                     alt={item.title}
@@ -431,14 +438,14 @@ export default function AboutUsPage() {
                 </div>
                 <div className="p-5 space-y-2 flex-1 flex flex-col justify-between">
                   <div>
-                    <h3 className="text-base font-bold text-heading group-hover:text-[var(--color-primary)] transition-colors">
+                    <h3 className="text-base font-bold text-[#003B50] group-hover:text-[var(--button-middle,#00A2CC)] transition-colors">
                       {item.title}
                     </h3>
-                    <p className="text-xs sm:text-sm text-[var(--color-muted)] leading-relaxed mt-1.5">
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mt-1.5">
                       {item.desc}
                     </p>
                   </div>
-                  <div className="pt-3 border-t border-[var(--color-border)]/30 text-xs font-semibold text-[var(--color-primary)] flex items-center gap-1.5">
+                  <div className="pt-3 border-t border-slate-100 text-xs font-semibold text-[var(--button-middle,#00A2CC)] flex items-center gap-1.5">
                     <Heart className="w-3.5 h-3.5 text-rose-500 fill-rose-500" />
                     <span>Vì ánh mắt trẻ thơ Việt Nam</span>
                   </div>
@@ -450,7 +457,7 @@ export default function AboutUsPage() {
           <div className="mt-8 text-center">
             <Link
               href="/su-kien/"
-              className="inline-flex items-center gap-2 text-sm font-bold text-[var(--color-primary)] hover:underline"
+              className="inline-flex items-center gap-2 text-sm font-bold text-[var(--button-middle,#00A2CC)] hover:text-[#003B50] transition-colors"
             >
               <span>Xem tất cả tin tức sự kiện &amp; hội nghị nhãn khoa</span>
               <ArrowRight className="w-4 h-4" />
@@ -462,11 +469,11 @@ export default function AboutUsPage() {
       {/* =========================================================
           7. CERTIFICATIONS & ACCREDITATIONS (ISO, CE, FDA)
           ========================================================= */}
-      <section id="chung-nhan" className="py-20 section-background border-t border-b border-[var(--color-border)]/40">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <section id="chung-nhan" className="py-16 sm:py-24 bg-slate-50 border-t border-b border-slate-200/80">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             badge="Kiểm Định Quốc Tế"
-            title="Chứng Nhận Tiêu Chuẩn Chất Lượng & Y Tế"
+            title="Chứng Nhận Tiêu Chuẩn Chất Lượng &amp; Y Tế"
             description="Tất cả các dòng tròng kính Rocky Lens đều vượt qua các bài kiểm tra quang sai và được cấp chứng chỉ kiểm định chất lượng theo chuẩn quốc tế."
           />
 
@@ -474,9 +481,9 @@ export default function AboutUsPage() {
             {certImages.map((cert, idx) => (
               <div
                 key={idx}
-                className="card-surface rounded-2xl p-4 border border-[var(--color-border)]/60 flex flex-col items-center justify-between text-center shadow-xs hover:border-[var(--color-primary)] hover:shadow-md transition-all group"
+                className="bg-white rounded-2xl p-4 border border-slate-200/80 flex flex-col items-center justify-between text-center shadow-xs hover:border-[var(--button-middle,#00A2CC)] hover:shadow-md transition-all group"
               >
-                <div className="relative aspect-3/4 w-full rounded-xl overflow-hidden mb-3 bg-slate-50 border border-slate-100">
+                <div className="relative h-64 w-full rounded-xl overflow-hidden mb-3 bg-slate-50 border border-slate-100">
                   <Image
                     src={cert.src}
                     alt={cert.title}
@@ -486,10 +493,10 @@ export default function AboutUsPage() {
                   />
                 </div>
                 <div>
-                  <h4 className="text-xs sm:text-sm font-bold text-heading">
+                  <h4 className="text-xs sm:text-sm font-bold text-[#003B50]">
                     {cert.title}
                   </h4>
-                  <p className="text-[11px] text-[var(--color-muted)] mt-1 line-clamp-2">
+                  <p className="text-[11px] text-slate-500 mt-1 line-clamp-2">
                     {cert.desc}
                   </p>
                 </div>
@@ -502,53 +509,61 @@ export default function AboutUsPage() {
       {/* =========================================================
           8. DISTRIBUTION HUBS: VĂN PHÒNG & KHO VẬN 2 MIỀN
           ========================================================= */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <section className="py-16 sm:py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             badge="Mạng Lưới Vận Hành"
             title="Hệ Thống Tổng Kho Phân Phối 2 Đầu Bắc — Nam"
             description="Đảm bảo tốc độ giao hàng nhanh chóng cho hơn 500+ đại lý cửa hàng mắt kính và bệnh viện nhãn khoa trên khắp 63 tỉnh thành."
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {/* Chi nhánh Miền Bắc */}
-            <div className="p-6 sm:p-8 rounded-3xl border border-[var(--color-border)]/60 bg-white shadow-xs space-y-4 hover:border-[var(--color-primary)] transition-colors">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 text-slate-800 text-xs font-bold">
-                <Store className="w-3.5 h-3.5 text-[var(--color-primary)]" />
+            <div className="p-6 sm:p-8 rounded-3xl border border-slate-200 bg-slate-50/60 shadow-xs space-y-4 hover:border-[var(--button-middle,#00A2CC)] hover:bg-white transition-all">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-100 text-[#003B50] text-xs font-bold">
+                <Store className="w-3.5 h-3.5 text-[var(--button-middle,#00A2CC)]" />
                 <span>Tổng Kho &amp; Văn Phòng Miền Bắc</span>
               </div>
-              <h3 className="text-xl font-black text-heading">
+              <h3 className="text-xl font-black text-[#003B50]">
                 Trung Tâm Phân Phối Hà Nội
               </h3>
-              <div className="space-y-2 text-xs sm:text-sm text-[var(--color-muted)]">
+              <div className="space-y-2 text-xs sm:text-sm text-slate-600">
                 <div className="flex items-start gap-2.5">
-                  <MapPin className="w-4 h-4 text-[var(--color-primary)] shrink-0 mt-0.5" />
+                  <MapPin className="w-4 h-4 text-[var(--button-middle,#00A2CC)] shrink-0 mt-0.5" />
                   <span>90A Đặng Tiến Đông, Phường Ô Chợ Dừa, Quận Đống Đa, Hà Nội</span>
                 </div>
                 <div className="flex items-center gap-2.5">
-                  <Globe className="w-4 h-4 text-[var(--color-primary)] shrink-0" />
+                  <Globe className="w-4 h-4 text-[var(--button-middle,#00A2CC)] shrink-0" />
                   <span>Thời gian làm việc: 08:00 – 17:30 (Thứ 2 – Thứ 7)</span>
+                </div>
+                <div className="flex items-center gap-2.5 font-bold text-[#003B50]">
+                  <Phone className="w-4 h-4 text-[var(--button-middle,#00A2CC)] shrink-0" />
+                  <a href="tel:0933102653" className="hover:underline">Hotline: 0933 102 653</a>
                 </div>
               </div>
             </div>
 
             {/* Chi nhánh Miền Nam */}
-            <div className="p-6 sm:p-8 rounded-3xl border border-[var(--color-border)]/60 bg-white shadow-xs space-y-4 hover:border-[var(--color-primary)] transition-colors">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 text-slate-800 text-xs font-bold">
-                <Store className="w-3.5 h-3.5 text-[var(--color-primary)]" />
+            <div className="p-6 sm:p-8 rounded-3xl border border-slate-200 bg-slate-50/60 shadow-xs space-y-4 hover:border-[var(--button-middle,#00A2CC)] hover:bg-white transition-all">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-100 text-[#003B50] text-xs font-bold">
+                <Store className="w-3.5 h-3.5 text-[var(--button-middle,#00A2CC)]" />
                 <span>Tổng Kho &amp; Văn Phòng Miền Nam</span>
               </div>
-              <h3 className="text-xl font-black text-heading">
+              <h3 className="text-xl font-black text-[#003B50]">
                 Trung Tâm Phân Phối TP. Hồ Chí Minh
               </h3>
-              <div className="space-y-2 text-xs sm:text-sm text-[var(--color-muted)]">
+              <div className="space-y-2 text-xs sm:text-sm text-slate-600">
                 <div className="flex items-start gap-2.5">
-                  <MapPin className="w-4 h-4 text-[var(--color-primary)] shrink-0 mt-0.5" />
+                  <MapPin className="w-4 h-4 text-[var(--button-middle,#00A2CC)] shrink-0 mt-0.5" />
                   <span>324/1 Lý Thường Kiệt, Phường Diên Hồng (Tân Bình), TP. Hồ Chí Minh</span>
                 </div>
                 <div className="flex items-center gap-2.5">
-                  <Globe className="w-4 h-4 text-[var(--color-primary)] shrink-0" />
+                  <Globe className="w-4 h-4 text-[var(--button-middle,#00A2CC)] shrink-0" />
                   <span>Thời gian làm việc: 08:00 – 17:30 (Thứ 2 – Thứ 7)</span>
+                </div>
+                <div className="flex items-center gap-2.5 font-bold text-[#003B50]">
+                  <Phone className="w-4 h-4 text-[var(--button-middle,#00A2CC)] shrink-0" />
+                  <a href="tel:0933102653" className="hover:underline">Hotline: 0933 102 653</a>
                 </div>
               </div>
             </div>
@@ -557,9 +572,55 @@ export default function AboutUsPage() {
       </section>
 
       {/* =========================================================
-          9. CONTACT CTA: DẪN DẮT NGƯỜI ĐEO & ĐẠI LÝ
+          9. CONSUMER-FIRST CALL TO ACTION (CTA)
           ========================================================= */}
-      <ContactCTA />
+      <section
+        className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 text-white text-center relative overflow-hidden"
+        style={{ background: 'var(--gradient-b2b, linear-gradient(120deg, #00A2CC 0%, #007A99 50%, #003B50 100%))' }}
+      >
+        <div className="absolute right-0 top-0 w-80 h-80 bg-white/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute left-0 bottom-0 w-80 h-80 bg-cyan-400/10 rounded-full blur-3xl pointer-events-none" />
+
+        <div className="max-w-4xl mx-auto relative z-10 space-y-6">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/20 text-cyan-200 text-xs font-semibold backdrop-blur-md">
+            <Eye className="w-3.5 h-3.5" />
+            <span>Trải Nghiệm Tròng Kính Canada Chính Hãng</span>
+          </div>
+
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight leading-tight">
+            Sẵn Sàng Nâng Tầm Thị Lực Cho Đôi Mắt Bạn?
+          </h2>
+
+          <p className="text-cyan-50/90 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
+            Khám phá tròng kính Rocky Lens chính hãng tại hơn 500+ cửa hàng kính mắt và phòng khám nhãn khoa liên kết trên toàn quốc để nhận tư vấn khúc xạ chuẩn y khoa.
+          </p>
+
+          <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
+            <Link
+              href="/lien-he/"
+              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-white text-[#003B50] font-bold text-sm hover:bg-cyan-50 shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-95 transition-all"
+            >
+              <span>Tìm Đại Lý Gần Nhất</span>
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+
+            <Link
+              href="/trong-kinh/"
+              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-white/10 border border-white/25 text-white font-bold text-sm hover:bg-white/20 active:scale-95 transition-all backdrop-blur-sm"
+            >
+              <span>Xem Bảng Sản Phẩm</span>
+            </Link>
+          </div>
+
+          <div className="pt-6 border-t border-white/15 text-xs text-cyan-100/80">
+            <span>Dành cho quý đối tác cửa hàng &amp; phòng khám: </span>
+            <Link href="/danh-cho-doi-tac/" className="text-cyan-200 font-bold hover:underline">
+              Tìm hiểu chính sách đối tác RockyLens &rarr;
+            </Link>
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 }
