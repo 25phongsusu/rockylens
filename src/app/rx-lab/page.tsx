@@ -478,24 +478,15 @@ export default function RxLabPage() {
               <p className="text-xs sm:text-sm text-slate-300">
                 Gửi thông số toa kính (SPH, CYL, AXIS, PD, ADD) để kỹ thuật viên Lab Rocky phân tích và tư vấn kỹ thuật chính xác nhất.
               </p>
-              <div className="space-y-2 pt-2">
+              <div className="pt-2">
                 <a
                   href="https://zalo.me/0933102653"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full py-3 rounded-full button-primary text-sm font-bold shadow-md cursor-pointer hover:shadow-lg transition-all inline-flex items-center justify-center gap-2"
+                  className="w-full py-3.5 rounded-full button-primary text-sm font-bold shadow-md cursor-pointer hover:shadow-lg transition-all inline-flex items-center justify-center gap-2 active:scale-95"
                 >
                   <MessageSquare className="w-4 h-4" />
-                  <span>Gửi Toa Tư Vấn Kỹ Thuật Qua Zalo</span>
-                </a>
-                <a
-                  href="https://zalo.me/0933102653"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full py-3 rounded-full bg-white/15 hover:bg-white/25 text-white border border-white/30 text-xs sm:text-sm font-semibold transition-all inline-flex items-center justify-center gap-2"
-                >
-                  <MessageSquare className="w-4 h-4 text-teal-300" />
-                  <span>Gửi Toa Qua Zalo Lab (0933 102 653)</span>
+                  <span>Gửi Toa Tư Vấn Kỹ Thuật Qua Zalo (0933 102 653)</span>
                 </a>
               </div>
             </div>
