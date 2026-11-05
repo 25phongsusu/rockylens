@@ -2345,6 +2345,36 @@
         colors: customizerDefaults
       },
       {
+        name: 'Light Blue (Pantone 2915 C)',
+        desc: 'Xanh dương quang học sáng trong Pantone 2915 C',
+        colors: {
+          siteBgStart: '#F0F8FC',
+          siteBgMiddle: '#D8EEF8',
+          siteBgEnd: '#A8D7EC',
+          buttonStart: '#72B5D3',
+          buttonMiddle: '#428CAE',
+          buttonEnd: '#2B789C',
+          b2bStart: '#428CAE',
+          b2bMiddle: '#2B789C',
+          b2bEnd: '#163F56'
+        }
+      },
+      {
+        name: 'Deep Teal (Pantone 5415 C)',
+        desc: 'Xanh mòng két trầm công nghệ cao cấp Pantone 5415 C',
+        colors: {
+          siteBgStart: '#F0F6F7',
+          siteBgMiddle: '#D5E6E9',
+          siteBgEnd: '#A3C8CE',
+          buttonStart: '#4E93A2',
+          buttonMiddle: '#2F6F7F',
+          buttonEnd: '#215C6B',
+          b2bStart: '#2F6F7F',
+          b2bMiddle: '#215C6B',
+          b2bEnd: '#144956'
+        }
+      },
+      {
         name: 'Deep Sapphire Ocean',
         desc: 'Xanh biển sâu sapphire sang trọng & công nghệ',
         colors: {
@@ -2594,11 +2624,24 @@
       }
     }
 
-    // Init theme from storage
+    // Init theme from storage or URL query (?theme=light-blue or ?theme=deep-teal)
     try {
-      var savedTheme = localStorage.getItem(STORAGE_KEY);
-      if (savedTheme) {
-        currentTheme = JSON.parse(savedTheme);
+      var urlParams = new URLSearchParams(window.location.search);
+      var queryPreset = (urlParams.get('theme') || urlParams.get('preset') || '').toLowerCase();
+      var foundPreset = null;
+      if (queryPreset === 'light-blue' || queryPreset === 'pantone-light-blue' || queryPreset === '1') {
+        foundPreset = customizerPresets[1];
+      } else if (queryPreset === 'deep-teal' || queryPreset === 'pantone-deep-teal' || queryPreset === '2') {
+        foundPreset = customizerPresets[2];
+      }
+      if (foundPreset) {
+        currentTheme = Object.assign({}, foundPreset.colors);
+        try { localStorage.setItem(STORAGE_KEY, JSON.stringify(currentTheme)); } catch(e) {}
+      } else {
+        var savedTheme = localStorage.getItem(STORAGE_KEY);
+        if (savedTheme) {
+          currentTheme = JSON.parse(savedTheme);
+        }
       }
     } catch (e) {}
     applyCustomTheme(currentTheme);
@@ -2698,12 +2741,44 @@
           </div>
         </button>
 
-        <!-- Preset 1 -->
+        <!-- Preset 1: Light Blue (Pantone 2915 C) -->
         <button type="button" id="presetBtn_1" onclick="applyPreset(1)" class="w-full p-3 rounded-2xl border text-left flex items-center justify-between transition-all cursor-pointer border-slate-200/80 bg-white hover:border-slate-300 hover:bg-slate-50/60">
           <div class="space-y-1">
             <div class="text-xs font-bold text-slate-900 flex items-center gap-1.5">
-              <span>Deep Sapphire Ocean</span>
+              <span>Light Blue (Pantone 2915 C)</span>
               <span id="presetCheck_1" class="hidden"><svg class="w-3.5 h-3.5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+            </div>
+            <div class="text-[11px] text-slate-500">Xanh dương quang học sáng trong Pantone 2915 C</div>
+          </div>
+          <div class="flex items-center -space-x-1.5 shrink-0 pl-3">
+            <div class="w-5 h-5 rounded-full border border-white shadow-2xs" style="background-color: #D8EEF8;"></div>
+            <div class="w-5 h-5 rounded-full border border-white shadow-2xs" style="background-color: #428CAE;"></div>
+            <div class="w-5 h-5 rounded-full border border-white shadow-2xs" style="background-color: #2B789C;"></div>
+          </div>
+        </button>
+
+        <!-- Preset 2: Deep Teal (Pantone 5415 C) -->
+        <button type="button" id="presetBtn_2" onclick="applyPreset(2)" class="w-full p-3 rounded-2xl border text-left flex items-center justify-between transition-all cursor-pointer border-slate-200/80 bg-white hover:border-slate-300 hover:bg-slate-50/60">
+          <div class="space-y-1">
+            <div class="text-xs font-bold text-slate-900 flex items-center gap-1.5">
+              <span>Deep Teal (Pantone 5415 C)</span>
+              <span id="presetCheck_2" class="hidden"><svg class="w-3.5 h-3.5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+            </div>
+            <div class="text-[11px] text-slate-500">Xanh mòng két trầm công nghệ cao cấp Pantone 5415 C</div>
+          </div>
+          <div class="flex items-center -space-x-1.5 shrink-0 pl-3">
+            <div class="w-5 h-5 rounded-full border border-white shadow-2xs" style="background-color: #D5E6E9;"></div>
+            <div class="w-5 h-5 rounded-full border border-white shadow-2xs" style="background-color: #2F6F7F;"></div>
+            <div class="w-5 h-5 rounded-full border border-white shadow-2xs" style="background-color: #144956;"></div>
+          </div>
+        </button>
+
+        <!-- Preset 3: Deep Sapphire Ocean -->
+        <button type="button" id="presetBtn_3" onclick="applyPreset(3)" class="w-full p-3 rounded-2xl border text-left flex items-center justify-between transition-all cursor-pointer border-slate-200/80 bg-white hover:border-slate-300 hover:bg-slate-50/60">
+          <div class="space-y-1">
+            <div class="text-xs font-bold text-slate-900 flex items-center gap-1.5">
+              <span>Deep Sapphire Ocean</span>
+              <span id="presetCheck_3" class="hidden"><svg class="w-3.5 h-3.5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
             </div>
             <div class="text-[11px] text-slate-500">Xanh biển sâu sapphire sang trọng &amp; công nghệ</div>
           </div>
@@ -2714,12 +2789,12 @@
           </div>
         </button>
 
-        <!-- Preset 2 -->
-        <button type="button" id="presetBtn_2" onclick="applyPreset(2)" class="w-full p-3 rounded-2xl border text-left flex items-center justify-between transition-all cursor-pointer border-slate-200/80 bg-white hover:border-slate-300 hover:bg-slate-50/60">
+        <!-- Preset 4: Emerald Optical Health -->
+        <button type="button" id="presetBtn_4" onclick="applyPreset(4)" class="w-full p-3 rounded-2xl border text-left flex items-center justify-between transition-all cursor-pointer border-slate-200/80 bg-white hover:border-slate-300 hover:bg-slate-50/60">
           <div class="space-y-1">
             <div class="text-xs font-bold text-slate-900 flex items-center gap-1.5">
               <span>Emerald Optical Health</span>
-              <span id="presetCheck_2" class="hidden"><svg class="w-3.5 h-3.5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+              <span id="presetCheck_4" class="hidden"><svg class="w-3.5 h-3.5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
             </div>
             <div class="text-[11px] text-slate-500">Xanh ngọc lục bảo y khoa dịu mát &amp; an tâm</div>
           </div>
@@ -2730,12 +2805,12 @@
           </div>
         </button>
 
-        <!-- Preset 3 -->
-        <button type="button" id="presetBtn_3" onclick="applyPreset(3)" class="w-full p-3 rounded-2xl border text-left flex items-center justify-between transition-all cursor-pointer border-slate-200/80 bg-white hover:border-slate-300 hover:bg-slate-50/60">
+        <!-- Preset 5: Royal Amethyst -->
+        <button type="button" id="presetBtn_5" onclick="applyPreset(5)" class="w-full p-3 rounded-2xl border text-left flex items-center justify-between transition-all cursor-pointer border-slate-200/80 bg-white hover:border-slate-300 hover:bg-slate-50/60">
           <div class="space-y-1">
             <div class="text-xs font-bold text-slate-900 flex items-center gap-1.5">
               <span>Royal Amethyst</span>
-              <span id="presetCheck_3" class="hidden"><svg class="w-3.5 h-3.5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+              <span id="presetCheck_5" class="hidden"><svg class="w-3.5 h-3.5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
             </div>
             <div class="text-[11px] text-slate-500">Tím quang phổ thấu kính tinh tế &amp; độc đáo</div>
           </div>
@@ -2746,12 +2821,12 @@
           </div>
         </button>
 
-        <!-- Preset 4 -->
-        <button type="button" id="presetBtn_4" onclick="applyPreset(4)" class="w-full p-3 rounded-2xl border text-left flex items-center justify-between transition-all cursor-pointer border-slate-200/80 bg-white hover:border-slate-300 hover:bg-slate-50/60">
+        <!-- Preset 6: Titanium Apple Slate -->
+        <button type="button" id="presetBtn_6" onclick="applyPreset(6)" class="w-full p-3 rounded-2xl border text-left flex items-center justify-between transition-all cursor-pointer border-slate-200/80 bg-white hover:border-slate-300 hover:bg-slate-50/60">
           <div class="space-y-1">
             <div class="text-xs font-bold text-slate-900 flex items-center gap-1.5">
               <span>Titanium Apple Slate</span>
-              <span id="presetCheck_4" class="hidden"><svg class="w-3.5 h-3.5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+              <span id="presetCheck_6" class="hidden"><svg class="w-3.5 h-3.5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
             </div>
             <div class="text-[11px] text-slate-500">Xám bạc tối giản, trung tính hiện đại chuẩn Apple</div>
           </div>
