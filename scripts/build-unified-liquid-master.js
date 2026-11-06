@@ -1307,14 +1307,14 @@ const html = `<!DOCTYPE html>
         <!-- 6 Solution Cards Grid - Increased 20% -->
         <div class="max-w-[1240px] mx-auto">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-2" id="product-cards-grid">
-            <!-- Card 1: Dành cho thiết kế đồ họa & ngồi máy tính (Trong suốt không ngả vàng) -->
+            <!-- Card 1: Dành cho thiết kế đồ họa & ngồi máy tính (Trong suốt không đổi màu) -->
             <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1" data-group="work">
               <div class="space-y-3">
                 <div class="h-48 sm:h-54 w-full rounded-2xl overflow-hidden bg-slate-900/10 relative">
-                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/trong-kinh-do-hoa-designer-chuan-mau.png" alt="Tròng kính thiết kế đồ họa designer chuẩn màu 100% không ngả vàng Rocky BlueCut UV420" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                  <img loading="lazy" decoding="async" src="assets/uploads/solutions/trong-kinh-do-hoa-designer-chuan-mau.png" alt="Tròng kính thiết kế đồ họa designer chuẩn màu 100% không đổi màu Rocky BlueCut UV420" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
                 <h3 class="text-base sm:text-lg font-bold text-heading group-hover:text-primary transition-colors leading-snug line-clamp-2 min-h-[3rem] flex items-start">
-                  <a href="trong-kinh/rocky-156-bluecut-shmc/">Dành cho thiết kế đồ họa &amp; ngồi máy tính (Trong suốt không ngả vàng)</a>
+                  <a href="trong-kinh/rocky-156-bluecut-shmc/">Dành cho thiết kế đồ họa &amp; ngồi máy tính (Trong suốt không đổi màu)</a>
                 </h3>
               </div>
               <div class="pt-2 mt-auto flex items-center">
