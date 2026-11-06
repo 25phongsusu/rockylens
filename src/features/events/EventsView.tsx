@@ -155,7 +155,7 @@ export default function EventsView() {
 
               {/* Stats Highlights */}
               {event.stats && (
-                <div className="grid grid-cols-3 gap-2 py-3 px-4 rounded-2xl bg-[var(--site-bg-middle)]/30 border border-[var(--color-border)]/50">
+                <div className="grid grid-cols-3 gap-2 py-3 px-4 rounded-2xl bg-slate-50 border border-slate-200/80">
                   {event.stats.map((st, i) => (
                     <div key={i} className="text-center">
                       <div className="text-sm sm:text-base font-black text-[var(--color-primary)]">
@@ -225,7 +225,7 @@ export default function EventsView() {
       <section className="space-y-8 pt-8 border-t border-[var(--color-border)]/70">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
           <div className="space-y-2">
-            <span className="inline-flex items-center space-x-1.5 text-xs font-bold uppercase tracking-wider text-[var(--color-primary)] bg-[var(--site-bg-middle)]/60 px-3 py-1 rounded-full border border-[var(--color-border)]/50">
+            <span className="inline-flex items-center space-x-1.5 text-xs font-bold uppercase tracking-wider text-sky-700 dark:text-cyan-300 bg-sky-50 dark:bg-white/10 px-3.5 py-1 rounded-full border border-sky-200/80 dark:border-white/15 shadow-2xs">
               <Sparkles className="w-3.5 h-3.5" />
               <span>Thư Viện Khoảnh Khắc Thực Tế</span>
             </span>
@@ -372,8 +372,8 @@ export default function EventsView() {
               </div>
 
               {/* Highlights */}
-              <div className="p-5 rounded-2xl bg-[var(--site-bg-middle)]/30 border border-[var(--color-border)]/60 space-y-3">
-                <h4 className="text-sm font-bold uppercase tracking-wider text-[var(--color-primary)] flex items-center gap-1.5">
+              <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-3">
+                <h4 className="text-sm font-bold uppercase tracking-wider text-sky-700 flex items-center gap-1.5">
                   <CheckCircle2 className="w-4 h-4" />
                   <span>Điểm Nhấn Sự Kiện</span>
                 </h4>

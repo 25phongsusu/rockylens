@@ -30,7 +30,7 @@ export default function ContactSection() {
           {/* Box 1: Dành Cho Khách Hàng & Người Đeo Kính */}
           <div className="card-surface rounded-[32px] p-8 border border-[var(--color-border)]/50 shadow-md flex flex-col justify-between">
             <div>
-              <div className="w-12 h-12 rounded-2xl bg-[var(--site-bg-middle)]/60 border border-[var(--color-border)]/50 flex items-center justify-center text-[var(--color-primary)] mb-6">
+              <div className="w-12 h-12 rounded-2xl bg-sky-50 border border-sky-100 flex items-center justify-center text-sky-600 mb-6">
                 <Store className="w-6 h-6" />
               </div>
 

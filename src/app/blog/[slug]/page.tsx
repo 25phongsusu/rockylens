@@ -91,7 +91,7 @@ export default async function BlogArticleDetailPage({ params }: BlogArticlePageP
           </Link>
 
           <div className="space-y-4">
-            <span className="px-3.5 py-1.5 rounded-full text-xs font-bold bg-[var(--site-bg-middle)]/60 text-heading border border-[var(--color-border)]/50 uppercase tracking-wider inline-block">
+            <span className="px-3.5 py-1.5 rounded-full text-xs font-bold bg-sky-50 text-sky-700 border border-sky-200/80 uppercase tracking-wider inline-block shadow-2xs">
               {article.categoryName}
             </span>
 
@@ -141,7 +141,7 @@ export default async function BlogArticleDetailPage({ params }: BlogArticlePageP
               {article.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="px-3 py-1 rounded-lg bg-[var(--site-bg-start)] text-xs font-semibold text-heading border border-[var(--color-border)]/40"
+                  className="px-3 py-1 rounded-lg bg-slate-100 text-xs font-semibold text-slate-700 border border-slate-200/80"
                 >
                   #{tag}
                 </span>

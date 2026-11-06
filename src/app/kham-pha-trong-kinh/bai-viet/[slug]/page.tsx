@@ -91,7 +91,7 @@ export default async function ArticleDetailPage({ params }: ArticlePageProps) {
 
         {/* Category & Title */}
         <div className="space-y-4">
-          <span className="inline-block text-xs font-bold uppercase tracking-wider text-[var(--color-primary)] bg-[var(--site-bg-middle)]/50 px-3 py-1 rounded-full border border-[var(--color-border)]/40">
+          <span className="inline-block text-xs font-bold uppercase tracking-wider text-sky-700 bg-sky-50 px-3 py-1 rounded-full border border-sky-200/80 shadow-2xs">
             {article.categoryName}
           </span>
 
@@ -141,7 +141,7 @@ export default async function ArticleDetailPage({ params }: ArticlePageProps) {
             {article.tags.map((tag) => (
               <span
                 key={tag}
-                className="text-xs font-medium px-3 py-1 bg-[var(--site-bg-start)] text-heading border border-[var(--color-border)]/40 rounded-full"
+                className="text-xs font-medium px-3 py-1 bg-slate-100 text-slate-700 border border-slate-200/80 rounded-full"
               >
                 #{tag}
               </span>

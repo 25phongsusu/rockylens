@@ -51,7 +51,7 @@ export default function BlogIndexPage() {
               Khám phá giải pháp quang học tối ưu phù hợp với thói quen sinh hoạt và thị lực của bạn
             </p>
           </div>
-          <div className="text-sm font-semibold text-heading bg-[var(--site-bg-middle)]/60 px-4 py-2 rounded-full border border-[var(--color-border)]/50 self-start sm:self-auto">
+          <div className="text-xs sm:text-sm font-bold text-sky-700 dark:text-sky-300 bg-sky-50 dark:bg-white/10 px-4 py-2 rounded-full border border-sky-200/80 dark:border-white/15 self-start sm:self-auto shadow-2xs">
             {articles.length} bài viết xuất bản
           </div>
         </div>

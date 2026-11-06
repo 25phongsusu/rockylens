@@ -6,7 +6,7 @@ export default function NotFound() {
   return (
     <div className="min-h-[70vh] flex items-center justify-center site-background px-4 py-16">
       <div className="max-w-md w-full text-center space-y-6 card-surface p-8 sm:p-10 rounded-3xl border border-[var(--color-border)]/50 shadow-xl">
-        <div className="w-16 h-16 rounded-2xl bg-[var(--site-bg-middle)]/60 border border-[var(--color-border)]/60 flex items-center justify-center text-[var(--color-primary)] mx-auto">
+        <div className="w-16 h-16 rounded-2xl bg-sky-50 border border-sky-100 flex items-center justify-center text-sky-600 mx-auto">
           <HelpCircle className="w-8 h-8" />
         </div>
 

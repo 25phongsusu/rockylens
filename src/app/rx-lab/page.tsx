@@ -213,7 +213,7 @@ export default function RxLabPage() {
       {/* ========================================================= */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 space-y-10">
         <div className="text-center max-w-3xl mx-auto space-y-3">
-          <div className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-[var(--site-bg-middle)]/60 text-primary text-xs font-bold border border-[var(--color-border)]/60">
+          <div className="inline-flex items-center space-x-1.5 px-3.5 py-1 rounded-full bg-sky-50 dark:bg-white/10 text-sky-700 dark:text-cyan-300 text-xs font-bold border border-sky-200/80 dark:border-white/15 shadow-2xs">
             <Wrench className="w-3.5 h-3.5" />
             <span>Năng Lực Đặt Đánh Toa Khó</span>
           </div>
@@ -233,7 +233,7 @@ export default function RxLabPage() {
             >
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
-                  <div className="w-12 h-12 rounded-2xl bg-[var(--site-bg-middle)]/50 text-[var(--color-primary)] flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 rounded-2xl bg-sky-50 border border-sky-100 text-sky-600 flex items-center justify-center group-hover:scale-110 transition-transform">
                     <cap.icon className="w-6 h-6" />
                   </div>
                   <span className="text-xs font-bold px-3 py-1 rounded-full bg-slate-100 text-slate-700">
@@ -341,7 +341,7 @@ export default function RxLabPage() {
       {/* ========================================================= */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 space-y-10">
         <div className="text-center max-w-3xl mx-auto space-y-3">
-          <div className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-[var(--site-bg-middle)]/60 text-primary text-xs font-bold border border-[var(--color-border)]/60">
+          <div className="inline-flex items-center space-x-1.5 px-3.5 py-1 rounded-full bg-sky-50 dark:bg-white/10 text-sky-700 dark:text-cyan-300 text-xs font-bold border border-sky-200/80 dark:border-white/15 shadow-2xs">
             <Scan className="w-3.5 h-3.5" />
             <span>Quy Trình Khép Kín</span>
           </div>
@@ -360,7 +360,7 @@ export default function RxLabPage() {
               className="p-5 rounded-2xl bg-white border border-[var(--color-border)]/70 shadow-xs flex flex-col justify-between hover:border-[var(--color-primary)] transition-colors"
             >
               <div>
-                <div className="w-10 h-10 rounded-xl bg-[var(--site-bg-middle)]/60 text-[var(--color-primary)] font-black flex items-center justify-center text-sm mb-3">
+                <div className="w-10 h-10 rounded-xl bg-sky-50 border border-sky-100 text-sky-700 font-black flex items-center justify-center text-sm mb-3">
                   {item.step}
                 </div>
                 <h3 className="font-bold text-heading text-sm mb-2 leading-snug">
@@ -380,7 +380,7 @@ export default function RxLabPage() {
       {/* ========================================================= */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 py-10 space-y-8">
         <div className="text-center max-w-3xl mx-auto space-y-3">
-          <div className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-[var(--site-bg-middle)]/60 text-primary text-xs font-bold border border-[var(--color-border)]/60">
+          <div className="inline-flex items-center space-x-1.5 px-3.5 py-1 rounded-full bg-sky-50 dark:bg-white/10 text-sky-700 dark:text-cyan-300 text-xs font-bold border border-sky-200/80 dark:border-white/15 shadow-2xs">
             <Layers className="w-3.5 h-3.5" />
             <span>Bảng Quy Chuẩn Gia Công</span>
           </div>
@@ -500,7 +500,7 @@ export default function RxLabPage() {
       {/* ========================================================= */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 py-12 space-y-6">
         <div className="text-center space-y-2">
-          <span className="inline-flex items-center space-x-1 text-xs font-bold uppercase tracking-wider text-[var(--color-primary)] bg-[var(--site-bg-middle)]/60 px-3 py-1 rounded-full border border-[var(--color-border)]/50">
+          <span className="inline-flex items-center space-x-1 text-xs font-bold uppercase tracking-wider text-sky-700 dark:text-cyan-300 bg-sky-50 dark:bg-white/10 px-3.5 py-1 rounded-full border border-sky-200/80 dark:border-white/15 shadow-2xs">
             <HelpCircle className="w-3.5 h-3.5" />
             <span>Giải Đáp Về Dịch Vụ Lab</span>
           </span>

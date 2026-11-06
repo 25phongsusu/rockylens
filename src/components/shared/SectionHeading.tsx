@@ -28,7 +28,7 @@ export default function SectionHeading({
           className={`inline-block text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-3 ${
             dark
               ? 'bg-[var(--button-middle)]/20 text-[var(--button-start)] border border-[var(--button-middle)]/40'
-              : 'bg-[var(--site-bg-middle)]/50 text-[var(--color-primary)] border border-[var(--color-border)]'
+              : 'bg-sky-50 dark:bg-white/10 text-sky-700 dark:text-cyan-300 border border-sky-200/80 dark:border-white/15 shadow-2xs'
           }`}
         >
           {badge}

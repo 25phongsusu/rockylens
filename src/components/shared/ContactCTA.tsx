@@ -29,7 +29,7 @@ export default function ContactCTA({
     return (
       <section className="py-12 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="bg-[var(--site-bg-start)] p-8 sm:p-10 rounded-3xl flex flex-col lg:flex-row items-center justify-between gap-8 border border-[var(--color-border)] shadow-xs">
+          <div className="card-surface p-8 sm:p-10 rounded-3xl flex flex-col lg:flex-row items-center justify-between gap-8 border border-[var(--color-border)] shadow-xs">
             <div className="space-y-2 text-center lg:text-left">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold text-teal-700 bg-teal-50 border border-teal-200/70 w-fit mx-auto lg:mx-0">
                 <Building2 className="w-3.5 h-3.5" />

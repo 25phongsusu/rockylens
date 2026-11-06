@@ -12,7 +12,7 @@ export default function ProductCard({ product }: ProductCardProps) {
   return (
     <div className="group card-surface rounded-2xl hover:border-[var(--button-middle)] shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col h-full overflow-hidden">
       {/* Product Image & Badge */}
-      <div className="relative aspect-4/3 bg-[var(--site-bg-start)] overflow-hidden border-b border-[var(--color-border)] flex items-center justify-center p-6 shrink-0">
+      <div className="relative aspect-4/3 bg-slate-50 overflow-hidden border-b border-[var(--color-border)] flex items-center justify-center p-6 shrink-0">
         {product.badge && (
           <span className="absolute top-3 left-3 z-10 px-2.5 py-1 rounded-md text-[11px] font-bold tracking-wide uppercase bg-[var(--button-middle)] text-white shadow-xs">
             {product.badge}
@@ -42,7 +42,7 @@ export default function ProductCard({ product }: ProductCardProps) {
           {/* Tech labels / category tags */}
           <div className="flex flex-wrap gap-1.5 mb-2.5 h-6">
             {product.specifications.coating && (
-              <span className="inline-flex items-center space-x-1 text-[11px] font-medium text-primary bg-[var(--site-bg-middle)]/40 px-2 py-0.5 rounded">
+              <span className="inline-flex items-center space-x-1 text-[11px] font-semibold text-sky-700 bg-sky-50 border border-sky-200/60 px-2 py-0.5 rounded">
                 <Sparkles className="w-3 h-3" />
                 <span>{product.specifications.coating.split(' ')[0]}</span>
               </span>

@@ -400,17 +400,17 @@ export default function ProductCategories() {
 
                     {/* Brand Title */}
                     <div className="space-y-0.5">
-                      <div className="text-xl font-black text-slate-900 tracking-tight flex items-baseline gap-1">
+                      <div className="text-xl font-black text-heading tracking-tight flex items-baseline gap-1">
                         <span>{p.brand}</span>
                         <span className="text-base font-medium text-primary">{p.subBrand}</span>
                       </div>
-                      <div className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
+                      <div className="text-[11px] font-semibold text-brand-muted uppercase tracking-wider">
                         {p.series}
                       </div>
                     </div>
 
                     {/* Punchy 2-line Headline */}
-                    <p className="text-sm font-bold text-slate-800 leading-snug line-clamp-2 min-h-[2.5rem] mt-2 mb-4">
+                    <p className="text-sm font-bold text-heading leading-snug line-clamp-2 min-h-[2.5rem] mt-2 mb-4">
                       {p.headline}
                     </p>
                   </div>

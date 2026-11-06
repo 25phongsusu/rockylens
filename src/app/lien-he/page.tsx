@@ -63,7 +63,7 @@ export default function ContactPage() {
           {/* Card 1: Hotline Hỗ Trợ */}
           <div className="p-8 rounded-3xl card-surface border border-[var(--color-border)]/60 shadow-xs flex flex-col justify-between">
             <div>
-              <div className="w-12 h-12 rounded-2xl bg-[var(--site-bg-middle)]/60 border border-[var(--color-border)]/50 flex items-center justify-center text-[var(--color-primary)] mb-6">
+              <div className="w-12 h-12 rounded-2xl bg-sky-50 border border-sky-100 flex items-center justify-center text-sky-600 mb-6">
                 <Phone className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-heading mb-2">Hotline Hỗ Trợ Khách Hàng</h3>

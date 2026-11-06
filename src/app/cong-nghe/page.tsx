@@ -227,7 +227,7 @@ export default function CongNghePage() {
         {/* ========================================================= */}
         <section id="tru-cot-cong-nghe" className="space-y-8 scroll-mt-24">
           <div className="text-center max-w-3xl mx-auto space-y-2">
-            <span className="inline-block px-3 py-1 rounded-full bg-[var(--site-bg-middle)]/60 text-primary text-xs font-bold border border-[var(--color-border)]/60">
+            <span className="inline-block px-3.5 py-1 rounded-full bg-sky-50 dark:bg-white/10 text-sky-700 dark:text-cyan-300 text-xs font-bold border border-sky-200/80 dark:border-white/15 shadow-2xs">
               4 Công Nghệ Quang Học Độc Quyền
             </span>
             <h2 className="text-2xl sm:text-3xl font-black text-heading tracking-tight">
@@ -258,7 +258,7 @@ export default function CongNghePage() {
 
                   {/* Header: Number & Badge (No icons) */}
                   <div className="flex items-center justify-between pt-1">
-                    <span className="w-8 h-8 rounded-lg bg-[var(--site-bg-middle)]/60 text-[var(--color-primary)] font-black flex items-center justify-center text-xs">
+                    <span className="w-8 h-8 rounded-lg bg-sky-50 border border-sky-100 text-sky-700 font-black flex items-center justify-center text-xs">
                       {tech.number}
                     </span>
                     <span className="text-[11px] font-bold px-2.5 py-1 rounded-full bg-slate-100 text-slate-700">
@@ -301,7 +301,7 @@ export default function CongNghePage() {
         {/* ========================================================= */}
         <section id="tra-cuu-chiet-suat" className="space-y-6 scroll-mt-24">
           <div className="text-center max-w-3xl mx-auto space-y-2">
-            <div className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-[var(--site-bg-middle)]/60 text-primary text-xs font-bold border border-[var(--color-border)]/60">
+            <div className="inline-flex items-center space-x-1.5 px-3.5 py-1 rounded-full bg-sky-50 dark:bg-white/10 text-sky-700 dark:text-cyan-300 text-xs font-bold border border-sky-200/80 dark:border-white/15 shadow-2xs">
               <Cpu className="w-3.5 h-3.5" />
               <span>Cẩm Nang Quang Học Thực Tế</span>
             </div>
@@ -367,7 +367,7 @@ export default function CongNghePage() {
         {/* ========================================================= */}
         <section id="faq-quang-hoc" className="max-w-4xl mx-auto space-y-6 scroll-mt-24">
           <div className="text-center space-y-2">
-            <span className="inline-flex items-center space-x-1 text-xs font-bold uppercase tracking-wider text-[var(--color-primary)] bg-[var(--site-bg-middle)]/60 px-3 py-1 rounded-full border border-[var(--color-border)]/50">
+            <span className="inline-flex items-center space-x-1 text-xs font-bold uppercase tracking-wider text-sky-700 dark:text-cyan-300 bg-sky-50 dark:bg-white/10 px-3.5 py-1 rounded-full border border-sky-200/80 dark:border-white/15 shadow-2xs">
               <HelpCircle className="w-3.5 h-3.5" />
               <span>Giải Đáp Quang Học Nhanh</span>
             </span>

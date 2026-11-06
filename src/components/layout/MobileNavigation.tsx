@@ -22,7 +22,7 @@ export default function MobileNavigation() {
         onClick={toggleOpen}
         aria-label={isOpen ? 'Đóng menu' : 'Mở menu điều hướng'}
         aria-expanded={isOpen}
-        className="p-2.5 rounded-lg text-slate-700 hover:text-[var(--color-primary)] hover:bg-[var(--site-bg-start)] transition-colors focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
+        className="p-2.5 rounded-lg text-slate-700 hover:text-[var(--color-primary)] hover:bg-slate-50 hover:text-sky-600 transition-colors focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
       >
         {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
       </button>
@@ -43,10 +43,10 @@ export default function MobileNavigation() {
         }`}
       >
         {/* Drawer Header */}
-        <div className="p-5 border-b border-[var(--color-border)]/40 flex items-center justify-between bg-[var(--site-bg-start)]">
+        <div className="p-5 border-b border-slate-200 flex items-center justify-between bg-slate-50">
           <Link href="/" onClick={closeMenu} className="flex items-center space-x-2">
             <span className="text-xl font-bold tracking-tight text-heading">ROCKY LENS</span>
-            <span className="text-xs font-semibold px-2 py-0.5 rounded bg-[var(--site-bg-middle)] text-heading border border-[var(--color-border)]/50">B2B Đại Lý</span>
+            <span className="text-xs font-bold px-2 py-0.5 rounded bg-sky-50 text-sky-700 border border-sky-200">B2B Đại Lý</span>
           </Link>
           <button
             onClick={closeMenu}
@@ -68,8 +68,8 @@ export default function MobileNavigation() {
                   onClick={closeMenu}
                   className={`flex items-center justify-between px-3.5 py-3 rounded-lg font-medium text-base transition-colors ${
                     isActive
-                      ? 'bg-[var(--site-bg-middle)]/60 text-heading font-semibold'
-                      : 'text-slate-700 hover:bg-[var(--site-bg-start)] hover:text-[var(--color-primary)]'
+                      ? 'bg-sky-50 text-sky-700 font-bold'
+                      : 'text-slate-700 hover:bg-slate-50 hover:text-sky-600'
                   }`}
                 >
                   <span>{item.title}</span>
@@ -83,7 +83,7 @@ export default function MobileNavigation() {
                         key={sub.href}
                         href={sub.href}
                         onClick={closeMenu}
-                        className="block px-3 py-2 text-xs text-slate-600 hover:text-[var(--color-primary)] rounded hover:bg-[var(--site-bg-start)]"
+                        className="block px-3 py-2 text-xs text-slate-600 hover:text-[var(--color-primary)] rounded hover:bg-slate-50 hover:text-sky-600"
                       >
                         {sub.title}
                       </Link>
@@ -96,7 +96,7 @@ export default function MobileNavigation() {
         </nav>
 
         {/* Drawer Footer Actions */}
-        <div className="p-4 border-t border-[var(--color-border)]/40 bg-[var(--site-bg-start)] space-y-2.5">
+        <div className="p-4 border-t border-slate-200 bg-slate-50 space-y-2.5">
           <a
             href={siteConfig.zalo.url}
             target="_blank"

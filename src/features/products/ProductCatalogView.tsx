@@ -188,7 +188,7 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
             className={`px-6 sm:px-9 py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all cursor-pointer ${
               viewMode === 'need'
                 ? 'bg-[var(--b2b-end)] text-white shadow-md'
-                : 'text-slate-700 hover:text-heading'
+                : 'text-slate-700 hover:text-slate-900'
             }`}
           >
             Theo nhu cầu
@@ -199,7 +199,7 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
             className={`px-6 sm:px-9 py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all cursor-pointer ${
               viewMode === 'tech'
                 ? 'bg-[var(--b2b-end)] text-white shadow-md'
-                : 'text-slate-700 hover:text-heading'
+                : 'text-slate-700 hover:text-slate-900'
             }`}
           >
             Theo tính năng
@@ -416,17 +416,17 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
                   {/* Micro Specs Rows */}
                   <div className="space-y-1.5 text-xs">
                     {product.specifications.coating && (
-                      <div className="h-8 flex justify-between items-center px-3 rounded-lg bg-[var(--site-bg-start)]">
-                        <span className="text-brand-muted text-[11px] font-medium shrink-0">Lớp phủ:</span>
-                        <span className="font-semibold text-heading text-[11px] text-right truncate ml-2">
+                      <div className="h-8 flex justify-between items-center px-3 rounded-lg bg-slate-50 border border-slate-100">
+                        <span className="text-slate-500 text-[11px] font-medium shrink-0">Lớp phủ:</span>
+                        <span className="font-bold text-slate-800 text-[11px] text-right truncate ml-2">
                           {product.specifications.coating.split('(')[0]}
                         </span>
                       </div>
                     )}
                     {product.specifications.material && (
-                      <div className="h-8 flex justify-between items-center px-3 rounded-lg bg-[var(--site-bg-start)]">
-                        <span className="text-brand-muted text-[11px] font-medium shrink-0">Vật liệu:</span>
-                        <span className="font-semibold text-heading text-[11px] text-right truncate ml-2">
+                      <div className="h-8 flex justify-between items-center px-3 rounded-lg bg-slate-50 border border-slate-100">
+                        <span className="text-slate-500 text-[11px] font-medium shrink-0">Vật liệu:</span>
+                        <span className="font-bold text-slate-800 text-[11px] text-right truncate ml-2">
                           {product.specifications.material}
                         </span>
                       </div>

@@ -59,7 +59,7 @@ export default function B2BQuoteModal({ isOpen, onClose }: B2BQuoteModalProps) {
 
         {/* Header */}
         <div className="space-y-2 pr-8">
-          <span className="px-3.5 py-1.5 rounded-full bg-[var(--site-bg-start)] text-[var(--color-primary)] text-sm font-bold inline-block border border-[var(--color-border)]">
+          <span className="px-3.5 py-1.5 rounded-full bg-sky-50 text-sky-700 text-sm font-bold inline-block border border-sky-200/80 shadow-2xs">
             Hỗ Trợ &amp; Tư Vấn Trực Tiếp
           </span>
           <h3 className="text-2xl sm:text-3xl font-black text-heading tracking-tight leading-snug">

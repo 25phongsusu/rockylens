@@ -122,6 +122,8 @@ body {
 }
 
 /* Apple Frosted Navbar in dark mode */
+[data-theme="dark"] header,
+.theme-dark header,
 [data-theme="dark"] header.apple-nav-blur,
 [data-theme="dark"] #mainHeader,
 .theme-dark #mainHeader {
@@ -131,47 +133,72 @@ body {
   border-color: rgba(255, 255, 255, 0.12) !important;
 }
 
+[data-theme="dark"] header a,
+.theme-dark header a,
 [data-theme="dark"] header.apple-nav-blur a,
 [data-theme="dark"] #mainHeader a,
 .theme-dark #mainHeader a {
   color: #FFFFFF !important;
 }
 
+[data-theme="dark"] header a:hover,
+.theme-dark header a:hover,
 [data-theme="dark"] header.apple-nav-blur a:hover,
 [data-theme="dark"] #mainHeader a:hover,
 .theme-dark #mainHeader a:hover {
   color: var(--button-start) !important;
 }
 
-/* Inside white cards, ensure dark text remains razor sharp */
+/* Inside white cards and card surfaces, ensure dark text remains razor sharp */
 [data-theme="dark"] .bg-white,
-.theme-dark .bg-white {
+.theme-dark .bg-white,
+[data-theme="dark"] .card-surface,
+.theme-dark .card-surface {
   color: #0F172A;
 }
 
 [data-theme="dark"] .bg-white .text-heading,
-.theme-dark .bg-white .text-heading {
+.theme-dark .bg-white .text-heading,
+[data-theme="dark"] .card-surface .text-heading,
+.theme-dark .card-surface .text-heading {
   color: #0F172A !important;
 }
 
 [data-theme="dark"] .bg-white .text-brand-muted,
-.theme-dark .bg-white .text-brand-muted {
+.theme-dark .bg-white .text-brand-muted,
+[data-theme="dark"] .card-surface .text-brand-muted,
+.theme-dark .card-surface .text-brand-muted {
   color: #475569 !important;
 }
 
 [data-theme="dark"] .bg-white .text-slate-700,
-.theme-dark .bg-white .text-slate-700 {
+.theme-dark .bg-white .text-slate-700,
+[data-theme="dark"] .card-surface .text-slate-700,
+.theme-dark .card-surface .text-slate-700 {
   color: #334155 !important;
 }
 
 [data-theme="dark"] .bg-white .text-slate-800,
-.theme-dark .bg-white .text-slate-800 {
+.theme-dark .bg-white .text-slate-800,
+[data-theme="dark"] .card-surface .text-slate-800,
+.theme-dark .card-surface .text-slate-800 {
   color: #1E293B !important;
 }
 
 [data-theme="dark"] .bg-white a.text-primary,
-.theme-dark .bg-white a.text-primary {
+.theme-dark .bg-white a.text-primary,
+[data-theme="dark"] .card-surface a.text-primary,
+.theme-dark .card-surface a.text-primary {
   color: var(--button-middle) !important;
+}
+
+/* Failsafe: Prevent dark background boxes inside white cards */
+[data-theme="dark"] .bg-white [class*="bg-[var(--site-bg-"],
+.theme-dark .bg-white [class*="bg-[var(--site-bg-"],
+[data-theme="dark"] .card-surface [class*="bg-[var(--site-bg-"],
+.theme-dark .card-surface [class*="bg-[var(--site-bg-"] {
+  background-color: #F8FAFC !important;
+  border-color: #E2E8F0 !important;
 }
 
 /* Hero Badge & Switcher on dark */

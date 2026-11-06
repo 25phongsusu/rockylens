@@ -56,7 +56,7 @@ export default function Header() {
           </Link>
 
           {/* Primary Multi-Page Navigation Items */}
-          <nav className="hidden lg:flex items-center gap-8 text-base font-semibold text-slate-800">
+          <nav className="hidden lg:flex items-center gap-8 text-base font-semibold text-slate-800 dark:text-white">
             {mainNavigation.map((item) => {
               const active = isActive(item.href);
               return (
@@ -107,7 +107,7 @@ export default function Header() {
                     href={item.href}
                     onClick={() => setIsMobileOpen(false)}
                     className={`flex items-center justify-between py-2 text-base font-semibold ${
-                      active ? 'text-[var(--color-primary)] font-bold' : 'text-slate-800'
+                      active ? 'text-[var(--color-primary)] font-bold' : 'text-slate-800 dark:text-white'
                     }`}
                   >
                     <span>{item.title}</span>

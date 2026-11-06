@@ -132,14 +132,14 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
 
             {/* Đối tượng và nhu cầu sử dụng phù hợp */}
             {product.targetAudience && product.targetAudience.length > 0 && (
-              <div className="p-5 rounded-2xl bg-[var(--site-bg-middle)]/30 border border-[var(--color-border)]/50">
-                <h3 className="text-sm font-bold text-heading mb-3">
+              <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200/80">
+                <h3 className="text-sm font-bold text-slate-900 mb-3">
                   Đối Tượng Phù Hợp Sử Dụng
                 </h3>
-                <ul className="space-y-2 text-xs text-[var(--color-muted)]">
+                <ul className="space-y-2 text-xs text-slate-600">
                   {product.targetAudience.map((aud, idx) => (
                     <li key={idx} className="flex items-start space-x-2">
-                      <span className="text-[var(--color-primary)] font-bold mt-0.5">•</span>
+                      <span className="text-sky-600 font-bold mt-0.5">•</span>
                       <span>{aud}</span>
                     </li>
                   ))}
@@ -160,7 +160,7 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
           <div className="lg:col-span-7 space-y-6">
             <div>
               <div className="flex flex-wrap items-center gap-2 mb-3">
-                <div className="inline-block text-xs font-bold uppercase tracking-wider text-[var(--color-primary)] bg-[var(--site-bg-middle)]/60 px-3 py-1 rounded-full border border-[var(--color-border)]/40">
+                <div className="inline-block text-xs font-bold uppercase tracking-wider text-sky-700 bg-sky-50 px-3 py-1 rounded-full border border-sky-200/80 shadow-2xs">
                   Canada Opticians Official
                 </div>
                 {product.consumerHeadline && (
@@ -184,7 +184,7 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
               ) : null}
 
               {/* Mô tả ngắn dễ hiểu */}
-              <div className="mt-4 p-4 rounded-xl bg-[var(--site-bg-start)]/60 border border-[var(--color-border)]/50 text-xs sm:text-sm text-heading leading-relaxed">
+              <div className="mt-4 p-4 rounded-xl bg-slate-50 border border-slate-200/80 text-xs sm:text-sm text-slate-700 leading-relaxed">
                 {product.shortDescription}
               </div>
 

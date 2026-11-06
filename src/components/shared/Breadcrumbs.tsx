@@ -25,11 +25,11 @@ export default function Breadcrumbs({ items }: BreadcrumbsProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <nav aria-label="Breadcrumb" className="py-3 px-4 sm:px-6 bg-[var(--site-bg-start)] border-b border-[var(--color-border)]">
-        <div className="max-w-7xl mx-auto flex items-center space-x-2 text-xs text-slate-500 overflow-x-auto whitespace-nowrap">
+      <nav aria-label="Breadcrumb" className="py-3 px-4 sm:px-6 bg-slate-50/90 dark:bg-black/20 backdrop-blur-md border-b border-slate-200/80 dark:border-white/10">
+        <div className="max-w-7xl mx-auto flex items-center space-x-2 text-xs text-slate-600 dark:text-slate-300 overflow-x-auto whitespace-nowrap">
           <Link
             href="/"
-            className="inline-flex items-center space-x-1 hover:text-[var(--color-primary)] transition-colors"
+            className="inline-flex items-center space-x-1 hover:text-sky-600 dark:hover:text-white transition-colors"
           >
             <Home className="w-3.5 h-3.5" />
             <span className="sr-only">Trang chủ</span>
@@ -41,13 +41,13 @@ export default function Breadcrumbs({ items }: BreadcrumbsProps) {
               <React.Fragment key={item.href}>
                 <ChevronRight className="w-3.5 h-3.5 text-slate-400 shrink-0" />
                 {isLast ? (
-                  <span className="text-heading font-medium truncate max-w-xs sm:max-w-md">
+                  <span className="text-slate-900 dark:text-white font-bold truncate max-w-xs sm:max-w-md">
                     {item.label}
                   </span>
                 ) : (
                   <Link
                     href={item.href}
-                    className="hover:text-[var(--color-primary)] transition-colors truncate"
+                    className="hover:text-sky-600 dark:hover:text-white transition-colors truncate"
                   >
                     {item.label}
                   </Link>
