@@ -370,36 +370,40 @@ const html = `<!DOCTYPE html>
       align-items: center;
       gap: 0.375rem;
       padding: 0.45rem 1rem;
-      border-radius: 0.75rem;
+      border-radius: 9999px;
       font-size: 0.8125rem;
       font-weight: 700;
-      color: var(--button-middle, #00A2CC);
-      background: transparent;
-      border: none !important;
-      border-width: 0 !important;
-      outline: none !important;
-      text-shadow: none !important;
-      --tw-ring-offset-shadow: 0 0 #0000 !important;
-      --tw-ring-shadow: 0 0 #0000 !important;
-      --tw-shadow: 0 0 #0000 !important;
-      box-shadow: none !important;
+      color: #00A2CC;
+      background: rgba(0, 162, 204, 0.08);
+      border: 1px solid rgba(0, 162, 204, 0.25);
       transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
       cursor: pointer;
       text-decoration: none;
     }
-    /* When card is hovered OR button is hovered, immediately show button! */
+    .card-price-btn svg {
+      color: inherit;
+      transition: transform 0.25s ease;
+    }
+    
+    [data-theme="dark"] .card-price-btn,
+    .theme-dark .card-price-btn {
+      color: #72B5D3 !important;
+      background: rgba(114, 181, 211, 0.12) !important;
+      border: 1px solid rgba(114, 181, 211, 0.35) !important;
+    }
+    [data-theme="dark"] .card-price-btn svg,
+    .theme-dark .card-price-btn svg {
+      color: #72B5D3 !important;
+    }
+
+    /* When card is hovered OR button is hovered: White text + vibrant gradient background */
     .group:hover .card-price-btn,
     .product-sol-card:hover .card-price-btn,
     .card-price-btn:hover {
       background: var(--gradient-button) !important;
       color: #FFFFFF !important;
-      border: none !important;
-      border-width: 0 !important;
-      outline: none !important;
-      --tw-ring-offset-shadow: 0 0 #0000 !important;
-      --tw-ring-shadow: 0 0 #0000 !important;
-      --tw-shadow: 0 0 #0000 !important;
-      box-shadow: 0 4px 14px rgba(0, 162, 204, 0.32) !important;
+      border-color: transparent !important;
+      box-shadow: 0 4px 14px rgba(0, 162, 204, 0.4) !important;
       transform: translateY(-1.5px);
     }
     .group:hover .card-price-btn svg,
@@ -407,6 +411,27 @@ const html = `<!DOCTYPE html>
     .card-price-btn:hover svg {
       transform: translate(2px, -2px);
       color: #FFFFFF !important;
+    }
+
+    [data-theme="dark"] .group:hover .card-price-btn,
+    [data-theme="dark"] .product-sol-card:hover .card-price-btn,
+    [data-theme="dark"] .card-price-btn:hover,
+    .theme-dark .group:hover .card-price-btn,
+    .theme-dark .product-sol-card:hover .card-price-btn,
+    .theme-dark .card-price-btn:hover {
+      background: var(--gradient-button) !important;
+      color: #FFFFFF !important;
+      border-color: transparent !important;
+      box-shadow: 0 4px 14px rgba(0, 162, 204, 0.45) !important;
+    }
+    [data-theme="dark"] .group:hover .card-price-btn svg,
+    [data-theme="dark"] .product-sol-card:hover .card-price-btn svg,
+    [data-theme="dark"] .card-price-btn:hover svg,
+    .theme-dark .group:hover .card-price-btn svg,
+    .theme-dark .product-sol-card:hover .card-price-btn svg,
+    .theme-dark .card-price-btn:hover svg {
+      color: #FFFFFF !important;
+      transform: translate(2px, -2px);
     }
     .card-price-btn:active {
       transform: translateY(0);
@@ -1730,7 +1755,7 @@ const html = `<!DOCTYPE html>
             <!-- Group 1: Chứng chỉ Canada -->
             <div class="space-y-3">
               <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">
-                <div class="rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(0)">
+                <div class="rounded-2xl border-2 border-white/90 shadow-md aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-xl hover:border-white transition-all duration-300 bg-slate-100" onclick="openCertModal(0)">
                   <img loading="lazy" decoding="async" src="assets/images/bangkhen/11.jpg" alt="The College of Opticians of Ontario - Optician Certificate" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[var(--b2b-end)]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
                     <div class="w-10 h-10 rounded-full bg-white/95 text-[var(--color-primary)] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
@@ -1740,7 +1765,7 @@ const html = `<!DOCTYPE html>
                     </div>
                   </div>
                 </div>
-                <div class="rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(1)">
+                <div class="rounded-2xl border-2 border-white/90 shadow-md aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-xl hover:border-white transition-all duration-300 bg-slate-100" onclick="openCertModal(1)">
                   <img loading="lazy" decoding="async" src="assets/images/bangkhen/12.jpg" alt="The College of Opticians of Ontario - Optician Certificate" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[var(--b2b-end)]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
                     <div class="w-10 h-10 rounded-full bg-white/95 text-[var(--color-primary)] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
@@ -1750,7 +1775,7 @@ const html = `<!DOCTYPE html>
                     </div>
                   </div>
                 </div>
-                <div class="rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(2)">
+                <div class="rounded-2xl border-2 border-white/90 shadow-md aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-xl hover:border-white transition-all duration-300 bg-slate-100" onclick="openCertModal(2)">
                   <img loading="lazy" decoding="async" src="assets/images/bangkhen/13.jpg" alt="The College of Opticians of Ontario - Optician Certificate" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[var(--b2b-end)]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
                     <div class="w-10 h-10 rounded-full bg-white/95 text-[var(--color-primary)] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
@@ -1760,7 +1785,7 @@ const html = `<!DOCTYPE html>
                     </div>
                   </div>
                 </div>
-                <div class="rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(3)">
+                <div class="rounded-2xl border-2 border-white/90 shadow-md aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-xl hover:border-white transition-all duration-300 bg-slate-100" onclick="openCertModal(3)">
                   <img loading="lazy" decoding="async" src="assets/images/bangkhen/14.jpg" alt="The College of Opticians of Ontario - Optician Certificate" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[var(--b2b-end)]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
                     <div class="w-10 h-10 rounded-full bg-white/95 text-[var(--color-primary)] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
@@ -1770,7 +1795,7 @@ const html = `<!DOCTYPE html>
                     </div>
                   </div>
                 </div>
-                <div class="rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(4)">
+                <div class="rounded-2xl border-2 border-white/90 shadow-md aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-xl hover:border-white transition-all duration-300 bg-slate-100" onclick="openCertModal(4)">
                   <img loading="lazy" decoding="async" src="assets/images/bangkhen/15.jpg" alt="Georgian College - Optician Diploma" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[var(--b2b-end)]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
                     <div class="w-10 h-10 rounded-full bg-white/95 text-[var(--color-primary)] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
@@ -1780,7 +1805,7 @@ const html = `<!DOCTYPE html>
                     </div>
                   </div>
                 </div>
-                <div class="rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(5)">
+                <div class="rounded-2xl border-2 border-white/90 shadow-md aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-xl hover:border-white transition-all duration-300 bg-slate-100" onclick="openCertModal(5)">
                   <img loading="lazy" decoding="async" src="assets/images/bangkhen/16.jpg" alt="National Association of Canadian Optician Regulators" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[var(--b2b-end)]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
                     <div class="w-10 h-10 rounded-full bg-white/95 text-[var(--color-primary)] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
@@ -1799,7 +1824,7 @@ const html = `<!DOCTYPE html>
             <!-- Group 2: Tiêu chuẩn quốc tế & Giải thưởng châu Á -->
             <div class="space-y-3">
               <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-                <div class="rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(6)">
+                <div class="rounded-2xl border-2 border-white/90 shadow-md aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-xl hover:border-white transition-all duration-300 bg-slate-100" onclick="openCertModal(6)">
                   <img loading="lazy" decoding="async" src="assets/images/bangkhen/1.jpg" alt="Giấy chứng nhận ISO 13485:2016 Rocky Lens" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[var(--b2b-end)]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
                     <div class="w-10 h-10 rounded-full bg-white/95 text-[var(--color-primary)] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
@@ -1809,7 +1834,7 @@ const html = `<!DOCTYPE html>
                     </div>
                   </div>
                 </div>
-                <div class="rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(7)">
+                <div class="rounded-2xl border-2 border-white/90 shadow-md aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-xl hover:border-white transition-all duration-300 bg-slate-100" onclick="openCertModal(7)">
                   <img loading="lazy" decoding="async" src="assets/images/bangkhen/2.jpg" alt="Thương hiệu uy tín hội nhập Châu Á 2024" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[var(--b2b-end)]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
                     <div class="w-10 h-10 rounded-full bg-white/95 text-[var(--color-primary)] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
@@ -1819,7 +1844,7 @@ const html = `<!DOCTYPE html>
                     </div>
                   </div>
                 </div>
-                <div class="rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(8)">
+                <div class="rounded-2xl border-2 border-white/90 shadow-md aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-xl hover:border-white transition-all duration-300 bg-slate-100" onclick="openCertModal(8)">
                   <img loading="lazy" decoding="async" src="assets/images/bangkhen/3.jpg" alt="Sản phẩm dịch vụ chất lượng Châu Á 2024" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[var(--b2b-end)]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
                     <div class="w-10 h-10 rounded-full bg-white/95 text-[var(--color-primary)] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
@@ -1829,7 +1854,7 @@ const html = `<!DOCTYPE html>
                     </div>
                   </div>
                 </div>
-                <div class="rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(9)">
+                <div class="rounded-2xl border-2 border-white/90 shadow-md aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-xl hover:border-white transition-all duration-300 bg-slate-100" onclick="openCertModal(9)">
                   <img loading="lazy" decoding="async" src="assets/images/bangkhen/4.jpg" alt="The Best of Vietnam 2024 - Top 20 Sản phẩm tốt nhất" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[var(--b2b-end)]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
                     <div class="w-10 h-10 rounded-full bg-white/95 text-[var(--color-primary)] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
@@ -1848,7 +1873,7 @@ const html = `<!DOCTYPE html>
             <!-- Group 3: Hoạt động vì cộng đồng -->
             <div class="space-y-3">
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
-                <div class="rounded-2xl shadow-xs aspect-[4/3] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(10)">
+                <div class="rounded-2xl border-2 border-white/90 shadow-md aspect-[4/3] overflow-hidden group relative cursor-pointer hover:shadow-xl hover:border-white transition-all duration-300 bg-slate-100" onclick="openCertModal(10)">
                   <img loading="lazy" decoding="async" src="assets/images/bangkhen/31.jpg" alt="Giấy khen Hội cứu trợ trẻ em tàn tật Việt Nam" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[var(--b2b-end)]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
                     <div class="w-10 h-10 rounded-full bg-white/95 text-[var(--color-primary)] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
@@ -1858,7 +1883,7 @@ const html = `<!DOCTYPE html>
                     </div>
                   </div>
                 </div>
-                <div class="rounded-2xl shadow-xs aspect-[4/3] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100" onclick="openCertModal(11)">
+                <div class="rounded-2xl border-2 border-white/90 shadow-md aspect-[4/3] overflow-hidden group relative cursor-pointer hover:shadow-xl hover:border-white transition-all duration-300 bg-slate-100" onclick="openCertModal(11)">
                   <img loading="lazy" decoding="async" src="assets/images/bangkhen/32.jpg" alt="Giấy khen Hội nạn nhân chất độc da cam / Dioxin" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
                   <div class="absolute inset-0 bg-[var(--b2b-end)]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
                     <div class="w-10 h-10 rounded-full bg-white/95 text-[var(--color-primary)] flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
@@ -1891,9 +1916,7 @@ const html = `<!DOCTYPE html>
 
           <!-- Infinite Marquee Moving from Right to Left slowly -->
           <div class="relative w-full overflow-hidden py-4 sm:py-6">
-            <!-- Left & Right Gradient Shadows -->
-            <div class="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-28 bg-gradient-to-r from-[var(--site-bg-start)] to-transparent z-10"></div>
-            <div class="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-28 bg-gradient-to-l from-[var(--site-bg-start)] to-transparent z-10"></div>
+            <!-- Left & Right Gradient Shadows removed for clean borderless logos -->
 
             <div class="animate-marquee gap-6 sm:gap-8 items-center">
               <!-- Set 1: 10 Partner Logos with Cards -->
