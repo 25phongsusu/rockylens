@@ -96,6 +96,113 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* ========================================================
+   ESSILOR-STYLE DARK BLUE BACKGROUND & WHITE TYPOGRAPHY
+   ======================================================== */
+[data-theme="dark"],
+.theme-dark {
+  --color-heading: #FFFFFF;
+  --color-text: #FFFFFF;
+  --color-muted: #CBD5E1;
+}
+
+[data-theme="dark"] .text-heading,
+.theme-dark .text-heading {
+  color: #FFFFFF !important;
+}
+
+[data-theme="dark"] .text-brand-muted,
+.theme-dark .text-brand-muted {
+  color: #CBD5E1 !important;
+}
+
+[data-theme="dark"] .text-slate-700,
+.theme-dark .text-slate-700 {
+  color: #E2E8F0 !important;
+}
+
+/* Apple Frosted Navbar in dark mode */
+[data-theme="dark"] header.apple-nav-blur,
+[data-theme="dark"] #mainHeader,
+.theme-dark #mainHeader {
+  background-color: rgba(1, 14, 61, 0.90) !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+[data-theme="dark"] header.apple-nav-blur a,
+[data-theme="dark"] #mainHeader a,
+.theme-dark #mainHeader a {
+  color: #F8FAFC !important;
+}
+
+/* Inside white cards, ensure dark text remains razor sharp */
+[data-theme="dark"] .bg-white,
+.theme-dark .bg-white {
+  color: #0F172A;
+}
+
+[data-theme="dark"] .bg-white .text-heading,
+.theme-dark .bg-white .text-heading {
+  color: #0F172A !important;
+}
+
+[data-theme="dark"] .bg-white .text-brand-muted,
+.theme-dark .bg-white .text-brand-muted {
+  color: #475569 !important;
+}
+
+[data-theme="dark"] .bg-white .text-slate-700,
+.theme-dark .bg-white .text-slate-700 {
+  color: #334155 !important;
+}
+
+[data-theme="dark"] .bg-white .text-slate-800,
+.theme-dark .bg-white .text-slate-800 {
+  color: #1E293B !important;
+}
+
+[data-theme="dark"] .bg-white a.text-primary,
+.theme-dark .bg-white a.text-primary {
+  color: var(--button-middle) !important;
+}
+
+/* Hero Badge & Switcher on dark */
+[data-theme="dark"] #hero-badge,
+.theme-dark #hero-badge {
+  background: rgba(255, 255, 255, 0.12) !important;
+  color: #38BDF8 !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+[data-theme="dark"] #hero-switcher-wrap,
+.theme-dark #hero-switcher-wrap {
+  background: rgba(1, 14, 61, 0.75) !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+[data-theme="dark"] #hero-switcher-wrap button.text-slate-600,
+.theme-dark #hero-switcher-wrap button.text-slate-600 {
+  color: #CBD5E1 !important;
+}
+
+/* Hero spec cards in dark mode */
+[data-theme="dark"] .liquid-card,
+.theme-dark .liquid-card {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+  color: #FFFFFF !important;
+}
+
+[data-theme="dark"] .liquid-card .text-heading,
+.theme-dark .liquid-card .text-heading {
+  color: #FFFFFF !important;
+}
+
+[data-theme="dark"] .liquid-card .text-brand-muted,
+.theme-dark .liquid-card .text-brand-muted {
+  color: #CBD5E1 !important;
+}
+
 ::selection {
   background-color: var(--button-middle);
   color: #FFFFFF;

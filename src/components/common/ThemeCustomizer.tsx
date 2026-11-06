@@ -13,6 +13,10 @@ export interface ThemeColors {
   b2bStart: string;
   b2bMiddle: string;
   b2bEnd: string;
+  headingColor?: string;
+  textColor?: string;
+  mutedColor?: string;
+  isDark?: boolean;
 }
 
 export const DEFAULT_THEME: ThemeColors = {
@@ -61,6 +65,63 @@ export const THEME_PRESETS: { name: string; desc: string; colors: ThemeColors }[
       b2bStart: '#215C6B',
       b2bMiddle: '#144956',
       b2bEnd: '#072128',
+    },
+  },
+  {
+    name: 'Nền Xanh Essilor — Chữ Trắng',
+    desc: 'Nền xanh sâu thẳm Essilor (#010E3D → #0D52A0) & chữ trắng chuẩn Essilor',
+    colors: {
+      siteBgStart: '#010E3D',
+      siteBgMiddle: '#082759',
+      siteBgEnd: '#0D52A0',
+      buttonStart: '#0088CE',
+      buttonMiddle: '#00669E',
+      buttonEnd: '#004B75',
+      b2bStart: '#001A72',
+      b2bMiddle: '#010E3D',
+      b2bEnd: '#000B26',
+      headingColor: '#FFFFFF',
+      textColor: '#FFFFFF',
+      mutedColor: '#CBD5E1',
+      isDark: true,
+    },
+  },
+  {
+    name: 'Màu Thương Hiệu 1 — Nền Đậm Chữ Trắng',
+    desc: 'Tone Rocky 1 xanh sâu (#091E2C → #2B789C) & chữ trắng sang trọng',
+    colors: {
+      siteBgStart: '#091E2C',
+      siteBgMiddle: '#153E55',
+      siteBgEnd: '#2B789C',
+      buttonStart: '#72B5D3',
+      buttonMiddle: '#428CAE',
+      buttonEnd: '#2B789C',
+      b2bStart: '#153E55',
+      b2bMiddle: '#091E2C',
+      b2bEnd: '#05121B',
+      headingColor: '#FFFFFF',
+      textColor: '#FFFFFF',
+      mutedColor: '#CBD5E1',
+      isDark: true,
+    },
+  },
+  {
+    name: 'Màu Thương Hiệu 2 — Nền Đậm Chữ Trắng',
+    desc: 'Tone Rocky 2 mòng két sâu (#061C22 → #144956) & chữ trắng sang trọng',
+    colors: {
+      siteBgStart: '#061C22',
+      siteBgMiddle: '#0E333D',
+      siteBgEnd: '#144956',
+      buttonStart: '#3D8293',
+      buttonMiddle: '#2F6F7F',
+      buttonEnd: '#215C6B',
+      b2bStart: '#0E333D',
+      b2bMiddle: '#061C22',
+      b2bEnd: '#030E11',
+      headingColor: '#FFFFFF',
+      textColor: '#FFFFFF',
+      mutedColor: '#CBD5E1',
+      isDark: true,
     },
   },
   {
@@ -146,9 +207,22 @@ export function applyThemeToDocument(colors: ThemeColors) {
   root.style.setProperty('--b2b-middle', colors.b2bMiddle);
   root.style.setProperty('--b2b-end', colors.b2bEnd);
 
-  root.style.setProperty('--color-heading', colors.b2bEnd);
-  root.style.setProperty('--color-text', colors.b2bEnd);
-  root.style.setProperty('--color-border', colors.siteBgEnd);
+  if (colors.isDark) {
+    root.setAttribute('data-theme', 'dark');
+    if (document.body) document.body.setAttribute('data-theme', 'dark');
+    root.style.setProperty('--color-heading', colors.headingColor || '#FFFFFF');
+    root.style.setProperty('--color-text', colors.textColor || '#FFFFFF');
+    root.style.setProperty('--color-muted', colors.mutedColor || '#CBD5E1');
+    root.style.setProperty('--color-border', 'rgba(255, 255, 255, 0.2)');
+  } else {
+    root.removeAttribute('data-theme');
+    if (document.body) document.body.removeAttribute('data-theme');
+    root.style.setProperty('--color-heading', colors.b2bEnd);
+    root.style.setProperty('--color-text', colors.b2bEnd);
+    root.style.setProperty('--color-muted', '#476773');
+    root.style.setProperty('--color-border', colors.siteBgEnd);
+  }
+
   root.style.setProperty('--color-primary', colors.buttonMiddle);
   root.style.setProperty('--color-primary-hover', colors.buttonEnd);
   root.style.setProperty('--color-primary-light', colors.siteBgStart);
@@ -190,6 +264,12 @@ export default function ThemeCustomizer() {
           matched = THEME_PRESETS[1].colors;
         } else if (queryTheme === 'deep-teal' || queryTheme === 'pantone-deep-teal' || queryTheme === '2' || queryTheme === 'mau-thuong-hieu-2' || queryTheme === 'thuong-hieu-2' || queryTheme === 'brand-2') {
           matched = THEME_PRESETS[2].colors;
+        } else if (queryTheme === 'essilor' || queryTheme === 'nen-xanh-essilor' || queryTheme === 'essilor-blue' || queryTheme === '3') {
+          matched = THEME_PRESETS[3].colors;
+        } else if (queryTheme === 'brand-1-dark' || queryTheme === 'mau-1-dam' || queryTheme === '4') {
+          matched = THEME_PRESETS[4].colors;
+        } else if (queryTheme === 'brand-2-dark' || queryTheme === 'mau-2-dam' || queryTheme === '5') {
+          matched = THEME_PRESETS[5].colors;
         }
 
         if (matched) {

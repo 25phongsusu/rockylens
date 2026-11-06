@@ -555,6 +555,113 @@ const html = `<!DOCTYPE html>
       color: var(--color-text);
     }
 
+    /* ========================================================
+       ESSILOR-STYLE DARK BLUE BACKGROUND & WHITE TYPOGRAPHY
+       ======================================================== */
+    [data-theme="dark"],
+    .theme-dark {
+      --color-heading: #FFFFFF;
+      --color-text: #FFFFFF;
+      --color-muted: #CBD5E1;
+    }
+
+    [data-theme="dark"] .text-heading,
+    .theme-dark .text-heading {
+      color: #FFFFFF !important;
+    }
+
+    [data-theme="dark"] .text-brand-muted,
+    .theme-dark .text-brand-muted {
+      color: #CBD5E1 !important;
+    }
+
+    [data-theme="dark"] .text-slate-700,
+    .theme-dark .text-slate-700 {
+      color: #E2E8F0 !important;
+    }
+
+    /* Apple Frosted Navbar in dark mode */
+    [data-theme="dark"] header.apple-nav-blur,
+    [data-theme="dark"] #mainHeader,
+    .theme-dark #mainHeader {
+      background-color: rgba(1, 14, 61, 0.92) !important;
+      border-color: rgba(255, 255, 255, 0.12) !important;
+    }
+
+    [data-theme="dark"] header.apple-nav-blur a,
+    [data-theme="dark"] #mainHeader a,
+    .theme-dark #mainHeader a {
+      color: #F8FAFC !important;
+    }
+
+    /* Inside white cards, ensure dark text remains razor sharp */
+    [data-theme="dark"] .bg-white,
+    .theme-dark .bg-white {
+      color: #0F172A;
+    }
+
+    [data-theme="dark"] .bg-white .text-heading,
+    .theme-dark .bg-white .text-heading {
+      color: #0F172A !important;
+    }
+
+    [data-theme="dark"] .bg-white .text-brand-muted,
+    .theme-dark .bg-white .text-brand-muted {
+      color: #475569 !important;
+    }
+
+    [data-theme="dark"] .bg-white .text-slate-700,
+    .theme-dark .bg-white .text-slate-700 {
+      color: #334155 !important;
+    }
+
+    [data-theme="dark"] .bg-white .text-slate-800,
+    .theme-dark .bg-white .text-slate-800 {
+      color: #1E293B !important;
+    }
+
+    [data-theme="dark"] .bg-white a.text-primary,
+    .theme-dark .bg-white a.text-primary {
+      color: var(--button-middle) !important;
+    }
+
+    /* Hero Badge & Switcher on dark */
+    [data-theme="dark"] #hero-badge,
+    .theme-dark #hero-badge {
+      background: rgba(255, 255, 255, 0.12) !important;
+      color: #38BDF8 !important;
+      border-color: rgba(255, 255, 255, 0.2) !important;
+    }
+
+    [data-theme="dark"] #hero-switcher-wrap,
+    .theme-dark #hero-switcher-wrap {
+      background: rgba(1, 14, 61, 0.75) !important;
+      border-color: rgba(255, 255, 255, 0.2) !important;
+    }
+
+    [data-theme="dark"] #hero-switcher-wrap button.text-slate-600,
+    .theme-dark #hero-switcher-wrap button.text-slate-600 {
+      color: #CBD5E1 !important;
+    }
+
+    /* Hero spec cards in dark mode */
+    [data-theme="dark"] .liquid-card,
+    .theme-dark .liquid-card {
+      background: rgba(255, 255, 255, 0.1) !important;
+      border-color: rgba(255, 255, 255, 0.2) !important;
+      color: #FFFFFF !important;
+    }
+
+    [data-theme="dark"] .liquid-card .text-heading,
+    .theme-dark .liquid-card .text-heading {
+      color: #FFFFFF !important;
+    }
+
+    [data-theme="dark"] .liquid-card .text-brand-muted,
+    .theme-dark .liquid-card .text-brand-muted {
+      color: #CBD5E1 !important;
+    }
+
     /* Apple Frosted Glass Sticky Navigation */
     .apple-nav-blur {
       background-color: rgba(245, 245, 247, 0.90);
@@ -2399,6 +2506,63 @@ const html = `<!DOCTYPE html>
           b2bMiddle: '#144956',
           b2bEnd: '#072128'
         }
+      },,
+      {
+        name: 'Nền Xanh Essilor — Chữ Trắng',
+        desc: 'Nền xanh sâu thẳm Essilor (#010E3D → #0D52A0) & chữ trắng chuẩn Essilor',
+        colors: {
+          siteBgStart: '#010E3D',
+          siteBgMiddle: '#082759',
+          siteBgEnd: '#0D52A0',
+          buttonStart: '#0088CE',
+          buttonMiddle: '#00669E',
+          buttonEnd: '#004B75',
+          b2bStart: '#001A72',
+          b2bMiddle: '#010E3D',
+          b2bEnd: '#000B26',
+          headingColor: '#FFFFFF',
+          textColor: '#FFFFFF',
+          mutedColor: '#CBD5E1',
+          isDark: true
+        }
+      },
+      {
+        name: 'Màu Thương Hiệu 1 — Nền Đậm Chữ Trắng',
+        desc: 'Tone Rocky 1 xanh sâu (#091E2C → #2B789C) & chữ trắng sang trọng',
+        colors: {
+          siteBgStart: '#091E2C',
+          siteBgMiddle: '#153E55',
+          siteBgEnd: '#2B789C',
+          buttonStart: '#72B5D3',
+          buttonMiddle: '#428CAE',
+          buttonEnd: '#2B789C',
+          b2bStart: '#153E55',
+          b2bMiddle: '#091E2C',
+          b2bEnd: '#05121B',
+          headingColor: '#FFFFFF',
+          textColor: '#FFFFFF',
+          mutedColor: '#CBD5E1',
+          isDark: true
+        }
+      },
+      {
+        name: 'Màu Thương Hiệu 2 — Nền Đậm Chữ Trắng',
+        desc: 'Tone Rocky 2 mòng két sâu (#061C22 → #144956) & chữ trắng sang trọng',
+        colors: {
+          siteBgStart: '#061C22',
+          siteBgMiddle: '#0E333D',
+          siteBgEnd: '#144956',
+          buttonStart: '#3D8293',
+          buttonMiddle: '#2F6F7F',
+          buttonEnd: '#215C6B',
+          b2bStart: '#0E333D',
+          b2bMiddle: '#061C22',
+          b2bEnd: '#030E11',
+          headingColor: '#FFFFFF',
+          textColor: '#FFFFFF',
+          mutedColor: '#CBD5E1',
+          isDark: true
+        }
       },
       {
         name: 'Deep Sapphire Ocean',
@@ -2479,9 +2643,21 @@ const html = `<!DOCTYPE html>
       root.style.setProperty('--b2b-middle', colors.b2bMiddle);
       root.style.setProperty('--b2b-end', colors.b2bEnd);
 
-      root.style.setProperty('--color-heading', colors.b2bEnd);
-      root.style.setProperty('--color-text', colors.b2bEnd);
-      root.style.setProperty('--color-border', colors.siteBgEnd);
+      if (colors.isDark) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        if (document.body) document.body.setAttribute('data-theme', 'dark');
+        root.style.setProperty('--color-heading', colors.headingColor || '#FFFFFF');
+        root.style.setProperty('--color-text', colors.textColor || '#FFFFFF');
+        root.style.setProperty('--color-muted', colors.mutedColor || '#CBD5E1');
+        root.style.setProperty('--color-border', 'rgba(255, 255, 255, 0.2)');
+      } else {
+        document.documentElement.removeAttribute('data-theme');
+        if (document.body) document.body.removeAttribute('data-theme');
+        root.style.setProperty('--color-heading', colors.b2bEnd);
+        root.style.setProperty('--color-text', colors.b2bEnd);
+        root.style.setProperty('--color-muted', '#476773');
+        root.style.setProperty('--color-border', colors.siteBgEnd);
+      }
       root.style.setProperty('--color-primary', colors.buttonMiddle);
       root.style.setProperty('--color-primary-hover', colors.buttonEnd);
       root.style.setProperty('--color-primary-light', colors.siteBgStart);
@@ -2664,6 +2840,12 @@ const html = `<!DOCTYPE html>
         foundPreset = customizerPresets[1];
       } else if (queryPreset === 'deep-teal' || queryPreset === 'pantone-deep-teal' || queryPreset === '2' || queryPreset === 'mau-thuong-hieu-2' || queryPreset === 'thuong-hieu-2' || queryPreset === 'brand-2') {
         foundPreset = customizerPresets[2];
+      } else if (queryPreset === 'essilor' || queryPreset === 'nen-xanh-essilor' || queryPreset === 'essilor-blue' || queryPreset === '3') {
+        foundPreset = customizerPresets[3];
+      } else if (queryPreset === 'brand-1-dark' || queryPreset === 'mau-1-dam' || queryPreset === '4') {
+        foundPreset = customizerPresets[4];
+      } else if (queryPreset === 'brand-2-dark' || queryPreset === 'mau-2-dam' || queryPreset === '5') {
+        foundPreset = customizerPresets[5];
       }
       if (foundPreset) {
         currentTheme = Object.assign({}, foundPreset.colors);
@@ -2756,11 +2938,11 @@ const html = `<!DOCTYPE html>
           Chọn Bảng Màu Mẫu Thiết Kế Sẵn:
         </div>
         
-        <!-- Preset 0 -->
+        <!-- Preset 0: Gốc -->
         <button type="button" id="presetBtn_0" onclick="applyPreset(0)" class="w-full p-3 rounded-2xl border text-left flex items-center justify-between transition-all cursor-pointer border-slate-200/80 bg-white hover:border-slate-300 hover:bg-slate-50/60">
           <div class="space-y-1">
             <div class="text-xs font-bold text-slate-900 flex items-center gap-1.5">
-              <span>Rocky Canada Cyan</span>
+              <span>Rocky Canada Cyan (Gốc)</span>
               <span id="presetCheck_0" class="hidden"><svg class="w-3.5 h-3.5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
             </div>
             <div class="text-[11px] text-slate-500">Bản sắc quang học nguyên bản thanh khiết</div>
@@ -2772,14 +2954,14 @@ const html = `<!DOCTYPE html>
           </div>
         </button>
 
-        <!-- Preset 1: Light Blue (Pantone 2915 C) -->
+        <!-- Preset 1: Màu Thương Hiệu 1 (Nền Sáng) -->
         <button type="button" id="presetBtn_1" onclick="applyPreset(1)" class="w-full p-3 rounded-2xl border text-left flex items-center justify-between transition-all cursor-pointer border-slate-200/80 bg-white hover:border-slate-300 hover:bg-slate-50/60">
           <div class="space-y-1">
             <div class="text-xs font-bold text-slate-900 flex items-center gap-1.5">
               <span>Màu Thương Hiệu 1</span>
               <span id="presetCheck_1" class="hidden"><svg class="w-3.5 h-3.5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
             </div>
-            <div class="text-[11px] text-slate-500">Light Blue (Pantone 2915 C) — Đổ màu toàn bộ nền website</div>
+            <div class="text-[11px] text-slate-500">Light Blue (Pantone 2915 C) — Nền xanh sáng</div>
           </div>
           <div class="flex items-center -space-x-1.5 shrink-0 pl-3">
             <div class="w-5 h-5 rounded-full border border-white shadow-2xs" style="background-color: #72B5D3;"></div>
@@ -2788,14 +2970,14 @@ const html = `<!DOCTYPE html>
           </div>
         </button>
 
-        <!-- Preset 2: Deep Teal (Pantone 5415 C) -->
+        <!-- Preset 2: Màu Thương Hiệu 2 (Nền Sáng) -->
         <button type="button" id="presetBtn_2" onclick="applyPreset(2)" class="w-full p-3 rounded-2xl border text-left flex items-center justify-between transition-all cursor-pointer border-slate-200/80 bg-white hover:border-slate-300 hover:bg-slate-50/60">
           <div class="space-y-1">
             <div class="text-xs font-bold text-slate-900 flex items-center gap-1.5">
               <span>Màu Thương Hiệu 2</span>
               <span id="presetCheck_2" class="hidden"><svg class="w-3.5 h-3.5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
             </div>
-            <div class="text-[11px] text-slate-500">Deep Teal (Pantone 5415 C) — Đổ màu toàn bộ nền website</div>
+            <div class="text-[11px] text-slate-500">Deep Teal (Pantone 5415 C) — Nền xanh mòng két</div>
           </div>
           <div class="flex items-center -space-x-1.5 shrink-0 pl-3">
             <div class="w-5 h-5 rounded-full border border-white shadow-2xs" style="background-color: #3D8293;"></div>
@@ -2804,12 +2986,61 @@ const html = `<!DOCTYPE html>
           </div>
         </button>
 
-        <!-- Preset 3: Deep Sapphire Ocean -->
-        <button type="button" id="presetBtn_3" onclick="applyPreset(3)" class="w-full p-3 rounded-2xl border text-left flex items-center justify-between transition-all cursor-pointer border-slate-200/80 bg-white hover:border-slate-300 hover:bg-slate-50/60">
+        <!-- Preset 3: Nền Xanh Essilor — Chữ Trắng (NEW) -->
+        <button type="button" id="presetBtn_3" onclick="applyPreset(3)" class="w-full p-3 rounded-2xl border text-left flex items-center justify-between transition-all cursor-pointer border-sky-400/40 bg-gradient-to-r from-blue-950/20 to-sky-900/10 hover:border-sky-400 hover:bg-sky-950/30">
+          <div class="space-y-1">
+            <div class="text-xs font-black text-blue-900 flex items-center gap-1.5">
+              <span>Nền Xanh Essilor — Chữ Trắng</span>
+              <span class="px-1.5 py-0.5 rounded text-[9px] font-bold bg-blue-600 text-white">ESSILOR</span>
+              <span id="presetCheck_3" class="hidden"><svg class="w-3.5 h-3.5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+            </div>
+            <div class="text-[11px] text-slate-600">Nền xanh sâu (#010E3D → #0D52A0) & chữ trắng tinh khôi</div>
+          </div>
+          <div class="flex items-center -space-x-1.5 shrink-0 pl-3">
+            <div class="w-5 h-5 rounded-full border border-white shadow-2xs" style="background-color: #010E3D;"></div>
+            <div class="w-5 h-5 rounded-full border border-white shadow-2xs" style="background-color: #0D52A0;"></div>
+            <div class="w-5 h-5 rounded-full border border-white shadow-2xs" style="background-color: #0088CE;"></div>
+          </div>
+        </button>
+
+        <!-- Preset 4: Màu Thương Hiệu 1 — Nền Đậm Chữ Trắng (NEW) -->
+        <button type="button" id="presetBtn_4" onclick="applyPreset(4)" class="w-full p-3 rounded-2xl border text-left flex items-center justify-between transition-all cursor-pointer border-cyan-400/40 bg-gradient-to-r from-slate-900/15 to-cyan-950/15 hover:border-cyan-400 hover:bg-cyan-950/30">
+          <div class="space-y-1">
+            <div class="text-xs font-black text-cyan-950 flex items-center gap-1.5">
+              <span>Màu Thương Hiệu 1 — Nền Đậm Chữ Trắng</span>
+              <span id="presetCheck_4" class="hidden"><svg class="w-3.5 h-3.5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+            </div>
+            <div class="text-[11px] text-slate-600">Tone Rocky 1 xanh sâu (#091E2C → #2B789C) & chữ trắng</div>
+          </div>
+          <div class="flex items-center -space-x-1.5 shrink-0 pl-3">
+            <div class="w-5 h-5 rounded-full border border-white shadow-2xs" style="background-color: #091E2C;"></div>
+            <div class="w-5 h-5 rounded-full border border-white shadow-2xs" style="background-color: #153E55;"></div>
+            <div class="w-5 h-5 rounded-full border border-white shadow-2xs" style="background-color: #72B5D3;"></div>
+          </div>
+        </button>
+
+        <!-- Preset 5: Màu Thương Hiệu 2 — Nền Đậm Chữ Trắng (NEW) -->
+        <button type="button" id="presetBtn_5" onclick="applyPreset(5)" class="w-full p-3 rounded-2xl border text-left flex items-center justify-between transition-all cursor-pointer border-teal-400/40 bg-gradient-to-r from-emerald-950/15 to-teal-950/15 hover:border-teal-400 hover:bg-teal-950/30">
+          <div class="space-y-1">
+            <div class="text-xs font-black text-teal-950 flex items-center gap-1.5">
+              <span>Màu Thương Hiệu 2 — Nền Đậm Chữ Trắng</span>
+              <span id="presetCheck_5" class="hidden"><svg class="w-3.5 h-3.5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+            </div>
+            <div class="text-[11px] text-slate-600">Tone Rocky 2 mòng két (#061C22 → #144956) & chữ trắng</div>
+          </div>
+          <div class="flex items-center -space-x-1.5 shrink-0 pl-3">
+            <div class="w-5 h-5 rounded-full border border-white shadow-2xs" style="background-color: #061C22;"></div>
+            <div class="w-5 h-5 rounded-full border border-white shadow-2xs" style="background-color: #0E333D;"></div>
+            <div class="w-5 h-5 rounded-full border border-white shadow-2xs" style="background-color: #3D8293;"></div>
+          </div>
+        </button>
+
+        <!-- Preset 6: Deep Sapphire Ocean -->
+        <button type="button" id="presetBtn_6" onclick="applyPreset(6)" class="w-full p-3 rounded-2xl border text-left flex items-center justify-between transition-all cursor-pointer border-slate-200/80 bg-white hover:border-slate-300 hover:bg-slate-50/60">
           <div class="space-y-1">
             <div class="text-xs font-bold text-slate-900 flex items-center gap-1.5">
               <span>Deep Sapphire Ocean</span>
-              <span id="presetCheck_3" class="hidden"><svg class="w-3.5 h-3.5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+              <span id="presetCheck_6" class="hidden"><svg class="w-3.5 h-3.5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
             </div>
             <div class="text-[11px] text-slate-500">Xanh biển sâu sapphire sang trọng &amp; công nghệ</div>
           </div>
@@ -2820,12 +3051,12 @@ const html = `<!DOCTYPE html>
           </div>
         </button>
 
-        <!-- Preset 4: Emerald Optical Health -->
-        <button type="button" id="presetBtn_4" onclick="applyPreset(4)" class="w-full p-3 rounded-2xl border text-left flex items-center justify-between transition-all cursor-pointer border-slate-200/80 bg-white hover:border-slate-300 hover:bg-slate-50/60">
+        <!-- Preset 7: Emerald Optical Health -->
+        <button type="button" id="presetBtn_7" onclick="applyPreset(7)" class="w-full p-3 rounded-2xl border text-left flex items-center justify-between transition-all cursor-pointer border-slate-200/80 bg-white hover:border-slate-300 hover:bg-slate-50/60">
           <div class="space-y-1">
             <div class="text-xs font-bold text-slate-900 flex items-center gap-1.5">
               <span>Emerald Optical Health</span>
-              <span id="presetCheck_4" class="hidden"><svg class="w-3.5 h-3.5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+              <span id="presetCheck_7" class="hidden"><svg class="w-3.5 h-3.5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
             </div>
             <div class="text-[11px] text-slate-500">Xanh ngọc lục bảo y khoa dịu mát &amp; an tâm</div>
           </div>
@@ -2836,12 +3067,12 @@ const html = `<!DOCTYPE html>
           </div>
         </button>
 
-        <!-- Preset 5: Royal Amethyst -->
-        <button type="button" id="presetBtn_5" onclick="applyPreset(5)" class="w-full p-3 rounded-2xl border text-left flex items-center justify-between transition-all cursor-pointer border-slate-200/80 bg-white hover:border-slate-300 hover:bg-slate-50/60">
+        <!-- Preset 8: Royal Amethyst -->
+        <button type="button" id="presetBtn_8" onclick="applyPreset(8)" class="w-full p-3 rounded-2xl border text-left flex items-center justify-between transition-all cursor-pointer border-slate-200/80 bg-white hover:border-slate-300 hover:bg-slate-50/60">
           <div class="space-y-1">
             <div class="text-xs font-bold text-slate-900 flex items-center gap-1.5">
               <span>Royal Amethyst</span>
-              <span id="presetCheck_5" class="hidden"><svg class="w-3.5 h-3.5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+              <span id="presetCheck_8" class="hidden"><svg class="w-3.5 h-3.5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
             </div>
             <div class="text-[11px] text-slate-500">Tím quang phổ thấu kính tinh tế &amp; độc đáo</div>
           </div>
@@ -2852,12 +3083,12 @@ const html = `<!DOCTYPE html>
           </div>
         </button>
 
-        <!-- Preset 6: Titanium Apple Slate -->
-        <button type="button" id="presetBtn_6" onclick="applyPreset(6)" class="w-full p-3 rounded-2xl border text-left flex items-center justify-between transition-all cursor-pointer border-slate-200/80 bg-white hover:border-slate-300 hover:bg-slate-50/60">
+        <!-- Preset 9: Titanium Apple Slate -->
+        <button type="button" id="presetBtn_9" onclick="applyPreset(9)" class="w-full p-3 rounded-2xl border text-left flex items-center justify-between transition-all cursor-pointer border-slate-200/80 bg-white hover:border-slate-300 hover:bg-slate-50/60">
           <div class="space-y-1">
             <div class="text-xs font-bold text-slate-900 flex items-center gap-1.5">
               <span>Titanium Apple Slate</span>
-              <span id="presetCheck_6" class="hidden"><svg class="w-3.5 h-3.5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+              <span id="presetCheck_9" class="hidden"><svg class="w-3.5 h-3.5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
             </div>
             <div class="text-[11px] text-slate-500">Xám bạc tối giản, trung tính hiện đại chuẩn Apple</div>
           </div>
@@ -2867,7 +3098,7 @@ const html = `<!DOCTYPE html>
             <div class="w-5 h-5 rounded-full border border-white shadow-2xs" style="background-color: #0F172A;"></div>
           </div>
         </button>
-      </div>
+      </div></div>
 
       <!-- Tab: Background -->
       <div id="tabContent_bg" class="space-y-3 hidden">
