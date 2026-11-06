@@ -33,96 +33,85 @@ export const DEFAULT_THEME: ThemeColors = {
 
 export const THEME_PRESETS: { name: string; desc: string; colors: ThemeColors }[] = [
   {
-    name: 'Rocky Canada Cyan',
-    desc: 'Bản sắc quang học nguyên bản thanh khiết',
-    colors: DEFAULT_THEME,
-  },
-  {
-    name: 'Màu Thương Hiệu 1',
-    desc: 'Light Blue (Pantone 2915 C) — Đổ màu toàn bộ nền website',
+    name: 'Màu Thương Hiệu 1 (Style Essilor — Nền Xanh & Chữ Trắng)',
+    desc: 'Tone Rocky 1 (Pantone 2915 C) — Nền xanh đậm sang trọng & chữ trắng chuẩn Essilor',
     colors: {
-      siteBgStart: '#72B5D3',
-      siteBgMiddle: '#5AA1C1',
-      siteBgEnd: '#428CAE',
-      buttonStart: '#2B789C',
-      buttonMiddle: '#1F6182',
-      buttonEnd: '#13445C',
-      b2bStart: '#2B789C',
-      b2bMiddle: '#1F6182',
-      b2bEnd: '#0C2B3B',
-    },
-  },
-  {
-    name: 'Màu Thương Hiệu 2',
-    desc: 'Deep Teal (Pantone 5415 C) — Đổ màu toàn bộ nền website',
-    colors: {
-      siteBgStart: '#3D8293',
-      siteBgMiddle: '#2F6F7F',
-      siteBgEnd: '#215C6B',
-      buttonStart: '#144956',
-      buttonMiddle: '#0D3640',
-      buttonEnd: '#072128',
-      b2bStart: '#215C6B',
-      b2bMiddle: '#144956',
-      b2bEnd: '#072128',
-    },
-  },
-  {
-    name: 'Nền Xanh Essilor — Chữ Trắng',
-    desc: 'Nền xanh sâu thẳm Essilor (#010E3D → #0D52A0) & chữ trắng chuẩn Essilor',
-    colors: {
-      siteBgStart: '#010E3D',
-      siteBgMiddle: '#082759',
-      siteBgEnd: '#0D52A0',
-      buttonStart: '#0088CE',
-      buttonMiddle: '#00669E',
-      buttonEnd: '#004B75',
-      b2bStart: '#001A72',
-      b2bMiddle: '#010E3D',
-      b2bEnd: '#000B26',
-      headingColor: '#FFFFFF',
-      textColor: '#FFFFFF',
-      mutedColor: '#CBD5E1',
-      isDark: true,
-    },
-  },
-  {
-    name: 'Màu Thương Hiệu 1 — Nền Đậm Chữ Trắng',
-    desc: 'Tone Rocky 1 xanh sâu (#091E2C → #2B789C) & chữ trắng sang trọng',
-    colors: {
-      siteBgStart: '#091E2C',
-      siteBgMiddle: '#153E55',
+      siteBgStart: '#0B2535',
+      siteBgMiddle: '#194963',
       siteBgEnd: '#2B789C',
       buttonStart: '#72B5D3',
       buttonMiddle: '#428CAE',
       buttonEnd: '#2B789C',
-      b2bStart: '#153E55',
-      b2bMiddle: '#091E2C',
-      b2bEnd: '#05121B',
+      b2bStart: '#194963',
+      b2bMiddle: '#0E3043',
+      b2bEnd: '#081D29',
       headingColor: '#FFFFFF',
       textColor: '#FFFFFF',
-      mutedColor: '#CBD5E1',
+      mutedColor: '#CFE4ED',
       isDark: true,
     },
   },
   {
-    name: 'Màu Thương Hiệu 2 — Nền Đậm Chữ Trắng',
-    desc: 'Tone Rocky 2 mòng két sâu (#061C22 → #144956) & chữ trắng sang trọng',
+    name: 'Màu Thương Hiệu 2 (Style Essilor — Nền Mòng Két & Chữ Trắng)',
+    desc: 'Tone Rocky 2 (Pantone 5415 C) — Nền mòng két đậm sang trọng & chữ trắng chuẩn Essilor',
     colors: {
-      siteBgStart: '#061C22',
-      siteBgMiddle: '#0E333D',
+      siteBgStart: '#09252C',
+      siteBgMiddle: '#103B46',
       siteBgEnd: '#144956',
       buttonStart: '#3D8293',
       buttonMiddle: '#2F6F7F',
       buttonEnd: '#215C6B',
-      b2bStart: '#0E333D',
-      b2bMiddle: '#061C22',
-      b2bEnd: '#030E11',
+      b2bStart: '#103B46',
+      b2bMiddle: '#0C2D35',
+      b2bEnd: '#051A1F',
       headingColor: '#FFFFFF',
       textColor: '#FFFFFF',
-      mutedColor: '#CBD5E1',
+      mutedColor: '#CFE0E3',
       isDark: true,
     },
+  },
+  {
+    name: 'Màu Thương Hiệu 1 (Nền Sáng — Light Blue)',
+    desc: 'Tone Rocky 1 (Pantone 2915 C) — Nền xanh sáng thanh lịch',
+    colors: {
+      siteBgStart: '#E8F4F9',
+      siteBgMiddle: '#D2E9F3',
+      siteBgEnd: '#A8D5E7',
+      buttonStart: '#72B5D3',
+      buttonMiddle: '#5AA1C1',
+      buttonEnd: '#2B789C',
+      b2bStart: '#5AA1C1',
+      b2bMiddle: '#428CAE',
+      b2bEnd: '#2B789C',
+      headingColor: '#103242',
+      textColor: '#103242',
+      mutedColor: '#476773',
+      isDark: false,
+    },
+  },
+  {
+    name: 'Màu Thương Hiệu 2 (Nền Sáng — Deep Teal)',
+    desc: 'Tone Rocky 2 (Pantone 5415 C) — Nền mòng két sáng thanh lịch',
+    colors: {
+      siteBgStart: '#E6EFF1',
+      siteBgMiddle: '#CFE0E3',
+      siteBgEnd: '#A1C3C9',
+      buttonStart: '#3D8293',
+      buttonMiddle: '#2F6F7F',
+      buttonEnd: '#144956',
+      b2bStart: '#2F6F7F',
+      b2bMiddle: '#215C6B',
+      b2bEnd: '#144956',
+      headingColor: '#072128',
+      textColor: '#072128',
+      mutedColor: '#476773',
+      isDark: false,
+    },
+  },
+  {
+    name: 'Rocky Canada Cyan (Gốc)',
+    desc: 'Bản sắc quang học nguyên bản thanh khiết',
+    colors: DEFAULT_THEME,
   },
   {
     name: 'Deep Sapphire Ocean',
@@ -260,16 +249,54 @@ export default function ThemeCustomizer() {
         const params = new URLSearchParams(window.location.search);
         const queryTheme = (params.get('theme') || params.get('preset') || '').toLowerCase();
         let matched: ThemeColors | null = null;
-        if (queryTheme === 'light-blue' || queryTheme === 'pantone-light-blue' || queryTheme === '1' || queryTheme === 'mau-thuong-hieu-1' || queryTheme === 'thuong-hieu-1' || queryTheme === 'brand-1') {
+        if (
+          queryTheme === 'brand-1' ||
+          queryTheme === '1' ||
+          queryTheme === 'brand-1-essilor' ||
+          queryTheme === 'essilor-1' ||
+          queryTheme === 'essilor' ||
+          queryTheme === 'nen-xanh-essilor' ||
+          queryTheme === 'mau-1-essilor' ||
+          queryTheme === 'brand-1-dark'
+        ) {
+          matched = THEME_PRESETS[0].colors;
+        } else if (
+          queryTheme === 'brand-2' ||
+          queryTheme === '2' ||
+          queryTheme === 'brand-2-essilor' ||
+          queryTheme === 'essilor-2' ||
+          queryTheme === 'mau-2-essilor' ||
+          queryTheme === 'brand-2-dark'
+        ) {
           matched = THEME_PRESETS[1].colors;
-        } else if (queryTheme === 'deep-teal' || queryTheme === 'pantone-deep-teal' || queryTheme === '2' || queryTheme === 'mau-thuong-hieu-2' || queryTheme === 'thuong-hieu-2' || queryTheme === 'brand-2') {
+        } else if (
+          queryTheme === 'brand-1-light' ||
+          queryTheme === 'mau-thuong-hieu-1' ||
+          queryTheme === 'light-blue' ||
+          queryTheme === 'brand-1-sang'
+        ) {
           matched = THEME_PRESETS[2].colors;
-        } else if (queryTheme === 'essilor' || queryTheme === 'nen-xanh-essilor' || queryTheme === 'essilor-blue' || queryTheme === '3') {
+        } else if (
+          queryTheme === 'brand-2-light' ||
+          queryTheme === 'mau-thuong-hieu-2' ||
+          queryTheme === 'deep-teal' ||
+          queryTheme === 'brand-2-sang'
+        ) {
           matched = THEME_PRESETS[3].colors;
-        } else if (queryTheme === 'brand-1-dark' || queryTheme === 'mau-1-dam' || queryTheme === '4') {
+        } else if (
+          queryTheme === 'original' ||
+          queryTheme === 'goc' ||
+          queryTheme === '0'
+        ) {
           matched = THEME_PRESETS[4].colors;
-        } else if (queryTheme === 'brand-2-dark' || queryTheme === 'mau-2-dam' || queryTheme === '5') {
+        } else if (queryTheme === 'sapphire') {
           matched = THEME_PRESETS[5].colors;
+        } else if (queryTheme === 'emerald') {
+          matched = THEME_PRESETS[6].colors;
+        } else if (queryTheme === 'amethyst') {
+          matched = THEME_PRESETS[7].colors;
+        } else if (queryTheme === 'slate') {
+          matched = THEME_PRESETS[8].colors;
         }
 
         if (matched) {

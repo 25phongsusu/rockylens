@@ -97,13 +97,13 @@ body {
 }
 
 /* ========================================================
-   ESSILOR-STYLE DARK BLUE BACKGROUND & WHITE TYPOGRAPHY
+   BRAND ESSILOR-STYLE DARK BLUE / TEAL BACKGROUND & WHITE TYPOGRAPHY
    ======================================================== */
 [data-theme="dark"],
 .theme-dark {
   --color-heading: #FFFFFF;
   --color-text: #FFFFFF;
-  --color-muted: #CBD5E1;
+  --color-muted: #CFE4ED;
 }
 
 [data-theme="dark"] .text-heading,
@@ -113,7 +113,7 @@ body {
 
 [data-theme="dark"] .text-brand-muted,
 .theme-dark .text-brand-muted {
-  color: #CBD5E1 !important;
+  color: #CFE4ED !important;
 }
 
 [data-theme="dark"] .text-slate-700,
@@ -125,14 +125,22 @@ body {
 [data-theme="dark"] header.apple-nav-blur,
 [data-theme="dark"] #mainHeader,
 .theme-dark #mainHeader {
-  background-color: rgba(1, 14, 61, 0.90) !important;
+  background-color: rgba(10, 35, 45, 0.92) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border-color: rgba(255, 255, 255, 0.12) !important;
 }
 
 [data-theme="dark"] header.apple-nav-blur a,
 [data-theme="dark"] #mainHeader a,
 .theme-dark #mainHeader a {
-  color: #F8FAFC !important;
+  color: #FFFFFF !important;
+}
+
+[data-theme="dark"] header.apple-nav-blur a:hover,
+[data-theme="dark"] #mainHeader a:hover,
+.theme-dark #mainHeader a:hover {
+  color: var(--button-start) !important;
 }
 
 /* Inside white cards, ensure dark text remains razor sharp */
@@ -170,19 +178,19 @@ body {
 [data-theme="dark"] #hero-badge,
 .theme-dark #hero-badge {
   background: rgba(255, 255, 255, 0.12) !important;
-  color: #38BDF8 !important;
+  color: var(--button-start) !important;
   border-color: rgba(255, 255, 255, 0.2) !important;
 }
 
 [data-theme="dark"] #hero-switcher-wrap,
 .theme-dark #hero-switcher-wrap {
-  background: rgba(1, 14, 61, 0.75) !important;
+  background: rgba(10, 35, 45, 0.75) !important;
   border-color: rgba(255, 255, 255, 0.2) !important;
 }
 
 [data-theme="dark"] #hero-switcher-wrap button.text-slate-600,
 .theme-dark #hero-switcher-wrap button.text-slate-600 {
-  color: #CBD5E1 !important;
+  color: #CFE4ED !important;
 }
 
 /* Hero spec cards in dark mode */
@@ -200,7 +208,7 @@ body {
 
 [data-theme="dark"] .liquid-card .text-brand-muted,
 .theme-dark .liquid-card .text-brand-muted {
-  color: #CBD5E1 !important;
+  color: #CFE4ED !important;
 }
 
 ::selection {
