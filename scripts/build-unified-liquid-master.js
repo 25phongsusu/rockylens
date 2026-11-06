@@ -2383,7 +2383,8 @@ const html = `<!DOCTYPE html>
           b2bStart: '#2B789C',
           b2bMiddle: '#1F6182',
           b2bEnd: '#0C2B3B'
-        },
+        }
+      },
       {
         name: 'Màu Thương Hiệu 2',
         desc: 'Deep Teal (Pantone 5415 C) — Đổ màu toàn bộ nền website',
@@ -2397,7 +2398,8 @@ const html = `<!DOCTYPE html>
           b2bStart: '#215C6B',
           b2bMiddle: '#144956',
           b2bEnd: '#072128'
-        },
+        }
+      },
       {
         name: 'Deep Sapphire Ocean',
         desc: 'Xanh biển sâu sapphire sang trọng & công nghệ',
