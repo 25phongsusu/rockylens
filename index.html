@@ -941,7 +941,335 @@
           </div>
         </div>
 
-        <!-- Category Filter Tabs -->
+                <!-- Mode Switcher Bar (Phong cách Essilor vs Lưới danh mục tiêu chuẩn) -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-2 pb-1 border-b border-slate-200/60 dark:border-white/10">
+          <div class="inline-flex p-1 rounded-2xl bg-white/80 dark:bg-white/10 backdrop-blur-md border border-slate-200/90 dark:border-white/15 shadow-xs">
+            <button
+              type="button"
+              id="productModeBtn_essilor"
+              onclick="setProductDisplayMode('essilor')"
+              class="flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer bg-gradient-to-r from-[var(--button-start)] to-[var(--button-middle)] text-white shadow-xs"
+            >
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+              <span>Phong Cách Essilor (Showcase)</span>
+              <span class="px-1.5 py-0.5 rounded text-[9px] font-extrabold bg-white/20 text-white">HOT</span>
+            </button>
+            <button
+              type="button"
+              id="productModeBtn_grid"
+              onclick="setProductDisplayMode('grid')"
+              class="flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white"
+            >
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>
+              <span>Lưới Danh Mục Tiêu Chuẩn (Grid)</span>
+            </button>
+          </div>
+
+          <div class="text-xs text-brand-muted" id="productModeHint">
+            Chế độ Showcase 4 cột phong cách Essilor quốc tế
+          </div>
+        </div>
+
+        <!-- VIEW 1: ESSILOR SHOWCASE CAROUSEL -->
+        <div id="product-view-essilor" class="relative max-w-[1340px] mx-auto py-2">
+          <!-- Navigation Arrows -->
+          <button
+            type="button"
+            onclick="scrollEssilorCarousel(-1)"
+            class="absolute -left-3 sm:-left-5 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white dark:bg-slate-800 shadow-xl border border-slate-200/90 dark:border-white/10 flex items-center justify-center text-slate-700 dark:text-white hover:text-primary hover:scale-110 active:scale-95 transition-all cursor-pointer"
+            aria-label="Xem sản phẩm trước"
+          >
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <button
+            type="button"
+            onclick="scrollEssilorCarousel(1)"
+            class="absolute -right-3 sm:-right-5 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white dark:bg-slate-800 shadow-xl border border-slate-200/90 dark:border-white/10 flex items-center justify-center text-slate-700 dark:text-white hover:text-primary hover:scale-110 active:scale-95 transition-all cursor-pointer"
+            aria-label="Xem sản phẩm tiếp theo"
+          >
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+
+          <div
+            id="essilor-carousel-track"
+            class="flex gap-5 sm:gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory py-4 px-1 no-scrollbar"
+          >
+              <!-- Essilor Card: Rocky. BlueCut -->
+              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start bg-white rounded-3xl p-4 sm:p-5 border border-slate-200/80 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                <div>
+                  <div class="rounded-2xl overflow-hidden aspect-square relative mb-4 bg-slate-100">
+                    <img src="assets/uploads/solutions/trong-kinh-do-hoa-designer-chuan-mau.png" alt="Kính đơn tròng thế hệ mới trong suốt 99.8% chuẩn màu cho dân thiết kế &amp; văn phòng" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute top-3 left-3 flex items-center gap-1.5 bg-black/45 backdrop-blur-md px-2.5 py-1 rounded-full text-white text-[10px] font-bold shadow-xs tracking-wider uppercase">
+                      <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+                      <span>Rocky Canada</span>
+                    </div>
+                  </div>
+
+                  <div class="space-y-0.5">
+                    <div class="text-xl font-black text-slate-900 tracking-tight flex items-baseline gap-1">
+                      <span>Rocky.</span>
+                      <span class="text-base font-medium text-primary">BlueCut</span>
+                    </div>
+                    <div class="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
+                      UV420 Start Clear
+                    </div>
+                  </div>
+
+                  <p class="text-sm font-bold text-slate-800 leading-snug line-clamp-2 min-h-[2.5rem] mt-2 mb-4">
+                    Kính đơn tròng thế hệ mới trong suốt 99.8% chuẩn màu cho dân thiết kế &amp; văn phòng
+                  </p>
+                </div>
+
+                <a href="trong-kinh/rocky-156-bluecut-shmc/" class="w-full py-2.5 px-6 rounded-full font-bold text-sm text-white bg-[var(--button-middle)] hover:bg-[var(--button-end)] transition-all text-center flex items-center justify-center shadow-xs group-hover:shadow-md">
+                  <span>Khám phá ngay</span>
+                </a>
+              </div>
+              <!-- Essilor Card: Rocky. Trendy -->
+              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start bg-white rounded-3xl p-4 sm:p-5 border border-slate-200/80 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                <div>
+                  <div class="rounded-2xl overflow-hidden aspect-square relative mb-4 bg-slate-100">
+                    <img src="assets/uploads/solutions/trong-kinh-van-phong-chong-asx-doi-mau.png" alt="Người bạn đồng hành tốt nhất lọc ánh sáng xanh và đổi màu râm tức thì ra nắng" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute top-3 left-3 flex items-center gap-1.5 bg-black/45 backdrop-blur-md px-2.5 py-1 rounded-full text-white text-[10px] font-bold shadow-xs tracking-wider uppercase">
+                      <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+                      <span>Rocky Canada</span>
+                    </div>
+                  </div>
+
+                  <div class="space-y-0.5">
+                    <div class="text-xl font-black text-slate-900 tracking-tight flex items-baseline gap-1">
+                      <span>Rocky.</span>
+                      <span class="text-base font-medium text-primary">Trendy</span>
+                    </div>
+                    <div class="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
+                      Smart Photochromic
+                    </div>
+                  </div>
+
+                  <p class="text-sm font-bold text-slate-800 leading-snug line-clamp-2 min-h-[2.5rem] mt-2 mb-4">
+                    Người bạn đồng hành tốt nhất lọc ánh sáng xanh và đổi màu râm tức thì ra nắng
+                  </p>
+                </div>
+
+                <a href="trong-kinh/rocky-trendy-photochromic-grey/" class="w-full py-2.5 px-6 rounded-full font-bold text-sm text-white bg-[var(--button-middle)] hover:bg-[var(--button-end)] transition-all text-center flex items-center justify-center shadow-xs group-hover:shadow-md">
+                  <span>Khám phá ngay</span>
+                </a>
+              </div>
+              <!-- Essilor Card: Rocky. DriveShield -->
+              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start bg-white rounded-3xl p-4 sm:p-5 border border-slate-200/80 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                <div>
+                  <div class="rounded-2xl overflow-hidden aspect-square relative mb-4 bg-slate-100">
+                    <img src="assets/uploads/solutions/trong-kinh-lai-xe-ban-dem-driveshield.png" alt="Sắc nét tức thì ngay cả khi di chuyển, chống chói đèn pha LED và trượt nước mưa" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute top-3 left-3 flex items-center gap-1.5 bg-black/45 backdrop-blur-md px-2.5 py-1 rounded-full text-white text-[10px] font-bold shadow-xs tracking-wider uppercase">
+                      <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+                      <span>Rocky Canada</span>
+                    </div>
+                  </div>
+
+                  <div class="space-y-0.5">
+                    <div class="text-xl font-black text-slate-900 tracking-tight flex items-baseline gap-1">
+                      <span>Rocky.</span>
+                      <span class="text-base font-medium text-primary">DriveShield</span>
+                    </div>
+                    <div class="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
+                      Ruby AR Night Vision
+                    </div>
+                  </div>
+
+                  <p class="text-sm font-bold text-slate-800 leading-snug line-clamp-2 min-h-[2.5rem] mt-2 mb-4">
+                    Sắc nét tức thì ngay cả khi di chuyển, chống chói đèn pha LED và trượt nước mưa
+                  </p>
+                </div>
+
+                <a href="trong-kinh/rocky-driveshield-night-vision/" class="w-full py-2.5 px-6 rounded-full font-bold text-sm text-white bg-[var(--button-middle)] hover:bg-[var(--button-end)] transition-all text-center flex items-center justify-center shadow-xs group-hover:shadow-md">
+                  <span>Khám phá ngay</span>
+                </a>
+              </div>
+              <!-- Essilor Card: CanRx. Freeform -->
+              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start bg-white rounded-3xl p-4 sm:p-5 border border-slate-200/80 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                <div>
+                  <div class="rounded-2xl overflow-hidden aspect-square relative mb-4 bg-slate-100">
+                    <img src="assets/uploads/solutions/trong-kinh-da-trong-xa-trung-gan.png" alt="Cảm giác thoải mái cho mắt cả ngày dài, nhìn rõ liền mạch mọi cự ly Xa - Gần" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute top-3 left-3 flex items-center gap-1.5 bg-black/45 backdrop-blur-md px-2.5 py-1 rounded-full text-white text-[10px] font-bold shadow-xs tracking-wider uppercase">
+                      <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+                      <span>Rocky Canada</span>
+                    </div>
+                  </div>
+
+                  <div class="space-y-0.5">
+                    <div class="text-xl font-black text-slate-900 tracking-tight flex items-baseline gap-1">
+                      <span>CanRx.</span>
+                      <span class="text-base font-medium text-primary">Freeform</span>
+                    </div>
+                    <div class="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
+                      Progressive HD Series
+                    </div>
+                  </div>
+
+                  <p class="text-sm font-bold text-slate-800 leading-snug line-clamp-2 min-h-[2.5rem] mt-2 mb-4">
+                    Cảm giác thoải mái cho mắt cả ngày dài, nhìn rõ liền mạch mọi cự ly Xa - Gần
+                  </p>
+                </div>
+
+                <a href="trong-kinh/rocky-freeform-progressive-hd/" class="w-full py-2.5 px-6 rounded-full font-bold text-sm text-white bg-[var(--button-middle)] hover:bg-[var(--button-end)] transition-all text-center flex items-center justify-center shadow-xs group-hover:shadow-md">
+                  <span>Khám phá ngay</span>
+                </a>
+              </div>
+              <!-- Essilor Card: Defocus. MyoControl -->
+              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start bg-white rounded-3xl p-4 sm:p-5 border border-slate-200/80 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                <div>
+                  <div class="rounded-2xl overflow-hidden aspect-square relative mb-4 bg-slate-100">
+                    <img src="assets/uploads/solutions/trong-kinh-kiem-soat-can-thi-tre-em.png" alt="Giải pháp khoa học tiên tiến giúp kiểm soát và làm chậm tiến triển độ cận ở trẻ em" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute top-3 left-3 flex items-center gap-1.5 bg-black/45 backdrop-blur-md px-2.5 py-1 rounded-full text-white text-[10px] font-bold shadow-xs tracking-wider uppercase">
+                      <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+                      <span>Rocky Canada</span>
+                    </div>
+                  </div>
+
+                  <div class="space-y-0.5">
+                    <div class="text-xl font-black text-slate-900 tracking-tight flex items-baseline gap-1">
+                      <span>Defocus.</span>
+                      <span class="text-base font-medium text-primary">MyoControl</span>
+                    </div>
+                    <div class="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
+                      Kids DIMS HD
+                    </div>
+                  </div>
+
+                  <p class="text-sm font-bold text-slate-800 leading-snug line-clamp-2 min-h-[2.5rem] mt-2 mb-4">
+                    Giải pháp khoa học tiên tiến giúp kiểm soát và làm chậm tiến triển độ cận ở trẻ em
+                  </p>
+                </div>
+
+                <a href="trong-kinh/rocky-myocontrol-dims-kids/" class="w-full py-2.5 px-6 rounded-full font-bold text-sm text-white bg-[var(--button-middle)] hover:bg-[var(--button-end)] transition-all text-center flex items-center justify-center shadow-xs group-hover:shadow-md">
+                  <span>Khám phá ngay</span>
+                </a>
+              </div>
+              <!-- Essilor Card: Rocky. Chameleon -->
+              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start bg-white rounded-3xl p-4 sm:p-5 border border-slate-200/80 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                <div>
+                  <div class="rounded-2xl overflow-hidden aspect-square relative mb-4 bg-slate-100">
+                    <img src="assets/uploads/solutions/trong-kinh-doi-mau-thoi-trang-trendy.png" alt="Biến chiếc kính cận thành kính râm sành điệu với bộ sưu tập 7 sắc màu cá tính" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute top-3 left-3 flex items-center gap-1.5 bg-black/45 backdrop-blur-md px-2.5 py-1 rounded-full text-white text-[10px] font-bold shadow-xs tracking-wider uppercase">
+                      <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+                      <span>Rocky Canada</span>
+                    </div>
+                  </div>
+
+                  <div class="space-y-0.5">
+                    <div class="text-xl font-black text-slate-900 tracking-tight flex items-baseline gap-1">
+                      <span>Rocky.</span>
+                      <span class="text-base font-medium text-primary">Chameleon</span>
+                    </div>
+                    <div class="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
+                      Trendy 7 Colors
+                    </div>
+                  </div>
+
+                  <p class="text-sm font-bold text-slate-800 leading-snug line-clamp-2 min-h-[2.5rem] mt-2 mb-4">
+                    Biến chiếc kính cận thành kính râm sành điệu với bộ sưu tập 7 sắc màu cá tính
+                  </p>
+                </div>
+
+                <a href="trong-kinh/rocky-chameleon-photochromic/" class="w-full py-2.5 px-6 rounded-full font-bold text-sm text-white bg-[var(--button-middle)] hover:bg-[var(--button-end)] transition-all text-center flex items-center justify-center shadow-xs group-hover:shadow-md">
+                  <span>Khám phá ngay</span>
+                </a>
+              </div>
+              <!-- Essilor Card: Rocky. MR-8 -->
+              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start bg-white rounded-3xl p-4 sm:p-5 border border-slate-200/80 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                <div>
+                  <div class="rounded-2xl overflow-hidden aspect-square relative mb-4 bg-slate-100">
+                    <img src="assets/uploads/solutions/trong-kinh-gong-khoan-chong-vo-mr8.png" alt="Phôi siêu dẻo dai chịu lực uốn đỉnh cao, bắt ốc chắc chắn cho gọng không viền" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute top-3 left-3 flex items-center gap-1.5 bg-black/45 backdrop-blur-md px-2.5 py-1 rounded-full text-white text-[10px] font-bold shadow-xs tracking-wider uppercase">
+                      <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+                      <span>Rocky Canada</span>
+                    </div>
+                  </div>
+
+                  <div class="space-y-0.5">
+                    <div class="text-xl font-black text-slate-900 tracking-tight flex items-baseline gap-1">
+                      <span>Rocky.</span>
+                      <span class="text-base font-medium text-primary">MR-8</span>
+                    </div>
+                    <div class="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
+                      Tough Rimless Drill
+                    </div>
+                  </div>
+
+                  <p class="text-sm font-bold text-slate-800 leading-snug line-clamp-2 min-h-[2.5rem] mt-2 mb-4">
+                    Phôi siêu dẻo dai chịu lực uốn đỉnh cao, bắt ốc chắc chắn cho gọng không viền
+                  </p>
+                </div>
+
+                <a href="trong-kinh/rocky-160-mr8-aspheric/" class="w-full py-2.5 px-6 rounded-full font-bold text-sm text-white bg-[var(--button-middle)] hover:bg-[var(--button-end)] transition-all text-center flex items-center justify-center shadow-xs group-hover:shadow-md">
+                  <span>Khám phá ngay</span>
+                </a>
+              </div>
+              <!-- Essilor Card: Rocky. UltraThin -->
+              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start bg-white rounded-3xl p-4 sm:p-5 border border-slate-200/80 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                <div>
+                  <div class="rounded-2xl overflow-hidden aspect-square relative mb-4 bg-slate-100">
+                    <img src="assets/uploads/solutions/trong-kinh-mong-chiet-suat-cao-167-174.png" alt="Thẩm mỹ mỏng nhẹ tối ưu, triệt tiêu độ dày đáy chai cho mắt có độ cận viễn nặng" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute top-3 left-3 flex items-center gap-1.5 bg-black/45 backdrop-blur-md px-2.5 py-1 rounded-full text-white text-[10px] font-bold shadow-xs tracking-wider uppercase">
+                      <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+                      <span>Rocky Canada</span>
+                    </div>
+                  </div>
+
+                  <div class="space-y-0.5">
+                    <div class="text-xl font-black text-slate-900 tracking-tight flex items-baseline gap-1">
+                      <span>Rocky.</span>
+                      <span class="text-base font-medium text-primary">UltraThin</span>
+                    </div>
+                    <div class="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
+                      1.74 High Index
+                    </div>
+                  </div>
+
+                  <p class="text-sm font-bold text-slate-800 leading-snug line-clamp-2 min-h-[2.5rem] mt-2 mb-4">
+                    Thẩm mỹ mỏng nhẹ tối ưu, triệt tiêu độ dày đáy chai cho mắt có độ cận viễn nặng
+                  </p>
+                </div>
+
+                <a href="trong-kinh/rocky-174-ultra-high-index/" class="w-full py-2.5 px-6 rounded-full font-bold text-sm text-white bg-[var(--button-middle)] hover:bg-[var(--button-end)] transition-all text-center flex items-center justify-center shadow-xs group-hover:shadow-md">
+                  <span>Khám phá ngay</span>
+                </a>
+              </div>
+              <!-- Essilor Card: Rocky. MaxShield -->
+              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start bg-white rounded-3xl p-4 sm:p-5 border border-slate-200/80 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                <div>
+                  <div class="rounded-2xl overflow-hidden aspect-square relative mb-4 bg-slate-100">
+                    <img src="assets/uploads/solutions/trong-kinh-ngoai-troi-chong-tia-uv.png" alt="Bảo vệ võng mạc tối đa, ngăn chặn 100% tia cực tím độc hại UV400 và UV420 ngoài trời" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute top-3 left-3 flex items-center gap-1.5 bg-black/45 backdrop-blur-md px-2.5 py-1 rounded-full text-white text-[10px] font-bold shadow-xs tracking-wider uppercase">
+                      <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+                      <span>Rocky Canada</span>
+                    </div>
+                  </div>
+
+                  <div class="space-y-0.5">
+                    <div class="text-xl font-black text-slate-900 tracking-tight flex items-baseline gap-1">
+                      <span>Rocky.</span>
+                      <span class="text-base font-medium text-primary">MaxShield</span>
+                    </div>
+                    <div class="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
+                      UV420 Solar Guard
+                    </div>
+                  </div>
+
+                  <p class="text-sm font-bold text-slate-800 leading-snug line-clamp-2 min-h-[2.5rem] mt-2 mb-4">
+                    Bảo vệ võng mạc tối đa, ngăn chặn 100% tia cực tím độc hại UV400 và UV420 ngoài trời
+                  </p>
+                </div>
+
+                <a href="trong-kinh/rocky-167-ultra-thin-bluecut/" class="w-full py-2.5 px-6 rounded-full font-bold text-sm text-white bg-[var(--button-middle)] hover:bg-[var(--button-end)] transition-all text-center flex items-center justify-center shadow-xs group-hover:shadow-md">
+                  <span>Khám phá ngay</span>
+                </a>
+              </div>
+          </div>
+        </div>
+
+        <!-- VIEW 2: STANDARD GRID WITH CATEGORY TABS -->
+        <div id="product-view-grid" class="space-y-6 hidden">
+          <!-- Category Filter Tabs -->
         <div class="flex flex-wrap items-center gap-2 pt-1" id="product-filter-tabs">
           <button type="button" onclick="filterProductSolutions('all', this)" class="product-filter-btn px-4 sm:px-5 py-1.5 sm:py-2 rounded-full text-xs font-bold transition-all cursor-pointer bg-[var(--b2b-end)] text-white shadow-xs">
             Tất cả
@@ -1148,6 +1476,8 @@
             <span>&rarr;</span>
           </a>
         </div>
+
+                </div>
 
         <!-- Footnote text from preview.png -->
         <div class="pt-2 text-center text-xs text-brand-muted">
@@ -2716,6 +3046,21 @@
         panel.style.display = 'flex';
         if (toggleText) toggleText.innerText = 'Đóng Bảng Màu';
         applyCustomTheme(currentTheme);
+
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var pStyle = (urlParams.get('product_style') || urlParams.get('style') || urlParams.get('view') || '').toLowerCase();
+      if (pStyle === 'grid' || pStyle === 'standard') {
+        setProductDisplayMode('grid');
+      } else if (pStyle === 'essilor') {
+        setProductDisplayMode('essilor');
+      } else {
+        var savedMode = localStorage.getItem('rocky_product_mode');
+        if (savedMode === 'grid') setProductDisplayMode('grid');
+        else setProductDisplayMode('essilor');
+      }
+    } catch(e) {}
+
       } else {
         panel.style.display = 'none';
         if (toggleText) toggleText.innerText = 'Tùy Biến Màu Sắc';
@@ -2727,6 +3072,49 @@
     window.resetCustomTheme = resetCustomTheme;
     window.onCustomColorChange = onCustomColorChange;
     window.copyThemeCSS = copyThemeCSS;
+
+    function setProductDisplayMode(mode) {
+      var viewEssilor = document.getElementById('product-view-essilor');
+      var viewGrid = document.getElementById('product-view-grid');
+      var btnEssilor = document.getElementById('productModeBtn_essilor');
+      var btnGrid = document.getElementById('productModeBtn_grid');
+      var hint = document.getElementById('productModeHint');
+
+      if (mode === 'grid') {
+        if (viewEssilor) viewEssilor.classList.add('hidden');
+        if (viewGrid) viewGrid.classList.remove('hidden');
+        if (btnGrid) {
+          btnGrid.className = 'flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer bg-gradient-to-r from-[var(--button-start)] to-[var(--button-middle)] text-white shadow-xs';
+        }
+        if (btnEssilor) {
+          btnEssilor.className = 'flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white';
+        }
+        if (hint) hint.innerText = 'Chế độ lưới lọc theo nhóm nhu cầu';
+      } else {
+        if (viewGrid) viewGrid.classList.add('hidden');
+        if (viewEssilor) viewEssilor.classList.remove('hidden');
+        if (btnEssilor) {
+          btnEssilor.className = 'flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer bg-gradient-to-r from-[var(--button-start)] to-[var(--button-middle)] text-white shadow-xs';
+        }
+        if (btnGrid) {
+          btnGrid.className = 'flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white';
+        }
+        if (hint) hint.innerText = 'Chế độ Showcase 4 cột phong cách Essilor quốc tế';
+      }
+      try {
+        localStorage.setItem('rocky_product_mode', mode);
+      } catch (e) {}
+    }
+
+    function scrollEssilorCarousel(direction) {
+      var track = document.getElementById('essilor-carousel-track');
+      if (!track) return;
+      track.scrollBy({ left: direction * 320, behavior: 'smooth' });
+    }
+
+    window.setProductDisplayMode = setProductDisplayMode;
+    window.scrollEssilorCarousel = scrollEssilorCarousel;
+
 
     document.addEventListener('click', function(e) {
       var panel = document.getElementById('themeCustomizerPanel');
@@ -2745,17 +3133,62 @@
       val = val.toUpperCase();
       currentTheme[key] = val;
       applyCustomTheme(currentTheme);
+
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var pStyle = (urlParams.get('product_style') || urlParams.get('style') || urlParams.get('view') || '').toLowerCase();
+      if (pStyle === 'grid' || pStyle === 'standard') {
+        setProductDisplayMode('grid');
+      } else if (pStyle === 'essilor') {
+        setProductDisplayMode('essilor');
+      } else {
+        var savedMode = localStorage.getItem('rocky_product_mode');
+        if (savedMode === 'grid') setProductDisplayMode('grid');
+        else setProductDisplayMode('essilor');
+      }
+    } catch(e) {}
+
     }
 
     function applyPreset(idx) {
       if (!customizerPresets[idx]) return;
       currentTheme = Object.assign({}, customizerPresets[idx].colors);
       applyCustomTheme(currentTheme);
+
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var pStyle = (urlParams.get('product_style') || urlParams.get('style') || urlParams.get('view') || '').toLowerCase();
+      if (pStyle === 'grid' || pStyle === 'standard') {
+        setProductDisplayMode('grid');
+      } else if (pStyle === 'essilor') {
+        setProductDisplayMode('essilor');
+      } else {
+        var savedMode = localStorage.getItem('rocky_product_mode');
+        if (savedMode === 'grid') setProductDisplayMode('grid');
+        else setProductDisplayMode('essilor');
+      }
+    } catch(e) {}
+
     }
 
     function resetCustomTheme() {
       currentTheme = Object.assign({}, customizerDefaults);
       applyCustomTheme(currentTheme);
+
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var pStyle = (urlParams.get('product_style') || urlParams.get('style') || urlParams.get('view') || '').toLowerCase();
+      if (pStyle === 'grid' || pStyle === 'standard') {
+        setProductDisplayMode('grid');
+      } else if (pStyle === 'essilor') {
+        setProductDisplayMode('essilor');
+      } else {
+        var savedMode = localStorage.getItem('rocky_product_mode');
+        if (savedMode === 'grid') setProductDisplayMode('grid');
+        else setProductDisplayMode('essilor');
+      }
+    } catch(e) {}
+
       try {
         localStorage.removeItem(STORAGE_KEY);
       } catch (e) {}
@@ -2867,8 +3300,38 @@
     } catch (e) {}
     applyCustomTheme(currentTheme);
 
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var pStyle = (urlParams.get('product_style') || urlParams.get('style') || urlParams.get('view') || '').toLowerCase();
+      if (pStyle === 'grid' || pStyle === 'standard') {
+        setProductDisplayMode('grid');
+      } else if (pStyle === 'essilor') {
+        setProductDisplayMode('essilor');
+      } else {
+        var savedMode = localStorage.getItem('rocky_product_mode');
+        if (savedMode === 'grid') setProductDisplayMode('grid');
+        else setProductDisplayMode('essilor');
+      }
+    } catch(e) {}
+
+
     window.addEventListener('DOMContentLoaded', function() {
       applyCustomTheme(currentTheme);
+
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var pStyle = (urlParams.get('product_style') || urlParams.get('style') || urlParams.get('view') || '').toLowerCase();
+      if (pStyle === 'grid' || pStyle === 'standard') {
+        setProductDisplayMode('grid');
+      } else if (pStyle === 'essilor') {
+        setProductDisplayMode('essilor');
+      } else {
+        var savedMode = localStorage.getItem('rocky_product_mode');
+        if (savedMode === 'grid') setProductDisplayMode('grid');
+        else setProductDisplayMode('essilor');
+      }
+    } catch(e) {}
+
     });
   </script>
 

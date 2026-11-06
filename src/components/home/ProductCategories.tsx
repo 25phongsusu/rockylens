@@ -1,8 +1,8 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, Sparkles, LayoutGrid, ChevronLeft, ChevronRight } from 'lucide-react';
 
 export const productSolutions = [
   {
@@ -169,8 +169,114 @@ export const productSolutions = [
   },
 ];
 
+
+export const essilorShowcaseProducts = [
+  {
+    brand: 'Rocky.',
+    subBrand: 'BlueCut',
+    series: 'UV420 Start Clear',
+    headline: 'Kính đơn tròng thế hệ mới trong suốt 99.8% chuẩn màu cho dân thiết kế & văn phòng',
+    image: '/uploads/solutions/trong-kinh-do-hoa-designer-chuan-mau.png',
+    link: '/trong-kinh/rocky-156-bluecut-shmc/',
+  },
+  {
+    brand: 'Rocky.',
+    subBrand: 'Trendy',
+    series: 'Smart Photochromic',
+    headline: 'Người bạn đồng hành tốt nhất lọc ánh sáng xanh và đổi màu râm tức thì ra nắng',
+    image: '/uploads/solutions/trong-kinh-van-phong-chong-asx-doi-mau.png',
+    link: '/trong-kinh/rocky-trendy-photochromic-grey/',
+  },
+  {
+    brand: 'Rocky.',
+    subBrand: 'DriveShield',
+    series: 'Ruby AR Night Vision',
+    headline: 'Sắc nét tức thì ngay cả khi di chuyển, chống chói đèn pha LED và trượt nước mưa',
+    image: '/uploads/solutions/trong-kinh-lai-xe-ban-dem-driveshield.png',
+    link: '/trong-kinh/rocky-driveshield-night-vision/',
+  },
+  {
+    brand: 'CanRx.',
+    subBrand: 'Freeform',
+    series: 'Progressive HD Series',
+    headline: 'Cảm giác thoải mái cho mắt cả ngày dài, nhìn rõ liền mạch mọi cự ly Xa - Gần',
+    image: '/uploads/solutions/trong-kinh-da-trong-xa-trung-gan.png',
+    link: '/trong-kinh/rocky-freeform-progressive-hd/',
+  },
+  {
+    brand: 'Defocus.',
+    subBrand: 'MyoControl',
+    series: 'Kids DIMS HD',
+    headline: 'Giải pháp khoa học tiên tiến giúp kiểm soát và làm chậm tiến triển độ cận ở trẻ em',
+    image: '/uploads/solutions/trong-kinh-kiem-soat-can-thi-tre-em.png',
+    link: '/trong-kinh/rocky-myocontrol-dims-kids/',
+  },
+  {
+    brand: 'Rocky.',
+    subBrand: 'Chameleon',
+    series: 'Trendy 7 Colors',
+    headline: 'Biến chiếc kính cận thành kính râm sành điệu với bộ sưu tập 7 sắc màu cá tính',
+    image: '/uploads/solutions/trong-kinh-doi-mau-thoi-trang-trendy.png',
+    link: '/trong-kinh/rocky-chameleon-photochromic/',
+  },
+  {
+    brand: 'Rocky.',
+    subBrand: 'MR-8',
+    series: 'Tough Rimless Drill',
+    headline: 'Phôi siêu dẻo dai chịu lực uốn đỉnh cao, bắt ốc chắc chắn cho gọng không viền',
+    image: '/uploads/solutions/trong-kinh-gong-khoan-chong-vo-mr8.png',
+    link: '/trong-kinh/rocky-160-mr8-aspheric/',
+  },
+  {
+    brand: 'Rocky.',
+    subBrand: 'UltraThin',
+    series: '1.74 High Index',
+    headline: 'Thẩm mỹ mỏng nhẹ tối ưu, triệt tiêu độ dày đáy chai cho mắt có độ cận viễn nặng',
+    image: '/uploads/solutions/trong-kinh-mong-chiet-suat-cao-167-174.png',
+    link: '/trong-kinh/rocky-174-ultra-high-index/',
+  },
+  {
+    brand: 'Rocky.',
+    subBrand: 'MaxShield',
+    series: 'UV420 Solar Guard',
+    headline: 'Bảo vệ võng mạc tối đa, ngăn chặn 100% tia cực tím độc hại UV400 và UV420 ngoài trời',
+    image: '/uploads/solutions/trong-kinh-ngoai-troi-chong-tia-uv.png',
+    link: '/trong-kinh/rocky-167-ultra-thin-bluecut/',
+  },
+];
+
 export default function ProductCategories() {
   const [activeFilter, setActiveFilter] = useState('Tất cả');
+  const [displayMode, setDisplayMode] = useState<'essilor' | 'grid'>('essilor');
+  const carouselRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const mode = (params.get('product_style') || params.get('style') || params.get('view') || '').toLowerCase();
+      if (mode === 'grid' || mode === 'standard') {
+        setDisplayMode('grid');
+      } else if (mode === 'essilor') {
+        setDisplayMode('essilor');
+      } else {
+        const saved = localStorage.getItem('rocky_product_mode');
+        if (saved === 'grid') setDisplayMode('grid');
+        else if (saved === 'essilor') setDisplayMode('essilor');
+      }
+    } catch {}
+  }, []);
+
+  const handleModeChange = (mode: 'essilor' | 'grid') => {
+    setDisplayMode(mode);
+    try {
+      localStorage.setItem('rocky_product_mode', mode);
+    } catch {}
+  };
+
+  const scrollCarousel = (direction: number) => {
+    if (!carouselRef.current) return;
+    carouselRef.current.scrollBy({ left: direction * 320, behavior: 'smooth' });
+  };
 
   const filtered = activeFilter === 'Tất cả'
     ? productSolutions
@@ -207,67 +313,189 @@ export default function ProductCategories() {
             </Link>
           </div>
         </div>
-
-        {/* Category Filter Tabs */}
-        <div className="flex flex-wrap items-center gap-2 pt-1">
-          {['Tất cả', 'Làm việc', 'Ngoài trời', 'Chuyên biệt'].map((filter) => (
+        {/* Mode Switcher Bar */}
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-2 pb-1 border-b border-slate-200/60 dark:border-white/10">
+          <div className="inline-flex p-1 rounded-2xl bg-white/80 dark:bg-white/10 backdrop-blur-md border border-slate-200/90 dark:border-white/15 shadow-xs">
             <button
-              key={filter}
               type="button"
-              onClick={() => setActiveFilter(filter)}
-              className={`px-4 sm:px-5 py-1.5 sm:py-2 rounded-full text-xs font-bold transition-all cursor-pointer ${
-                activeFilter === filter
-                  ? 'bg-[var(--b2b-end)] text-white shadow-xs'
-                  : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-200/90'
+              onClick={() => handleModeChange('essilor')}
+              className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                displayMode === 'essilor'
+                  ? 'bg-gradient-to-r from-[var(--button-start)] to-[var(--button-middle)] text-white shadow-xs'
+                  : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white'
               }`}
             >
-              {filter}
+              <Sparkles className="w-3.5 h-3.5" />
+              <span>Phong Cách Essilor (Showcase)</span>
+              <span className={`px-1.5 py-0.5 rounded text-[9px] font-extrabold ${
+                displayMode === 'essilor' ? 'bg-white/20 text-white' : 'bg-blue-100 text-blue-800 dark:bg-white/15 dark:text-cyan-300'
+              }`}>
+                HOT
+              </span>
             </button>
-          ))}
-        </div>
+            <button
+              type="button"
+              onClick={() => handleModeChange('grid')}
+              className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                displayMode === 'grid'
+                  ? 'bg-gradient-to-r from-[var(--button-start)] to-[var(--button-middle)] text-white shadow-xs'
+                  : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white'
+              }`}
+            >
+              <LayoutGrid className="w-3.5 h-3.5" />
+              <span>Lưới Danh Mục Tiêu Chuẩn (Grid)</span>
+            </button>
+          </div>
 
-        {/* 9 Solution Cards Grid */}
-        <div className="max-w-[1240px] mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-2">
-            {filtered.map((item) => (
-              <div
-                key={item.title}
-                className="w-full card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden"
-              >
-                {/* Default Front View */}
-                <div>
-                  <div className="pb-2">
-                    <h3 className="text-base sm:text-lg font-bold text-heading leading-snug h-14 flex items-center line-clamp-2">
-                      <Link href={item.link} className="hover:text-primary transition-colors">
-                        {item.title}
-                      </Link>
-                    </h3>
-                  </div>
-
-                  <div className={`h-44 sm:h-48 w-full rounded-xl overflow-hidden relative my-2.5 flex items-center justify-center ${item.imageFit === 'cover' ? 'bg-slate-900/10' : 'bg-slate-50/50 p-2'}`}>
-                    <img
-                      src={item.image}
-                      alt={(item as { alt?: string }).alt || item.title}
-                      loading="lazy"
-                      decoding="async"
-                      className={`w-full h-full group-hover:scale-105 transition-transform duration-500 ${item.imageFit === 'cover' ? 'object-cover' : 'object-contain'}`}
-                    />
-                  </div>
-                </div>
-
-                <div className="pt-3.5 mt-auto border-t border-slate-100 flex items-center">
-                  <Link
-                    href={item.link}
-                    className="card-price-btn -ml-1 text-xs sm:text-sm"
-                  >
-                    <span>Xem Giá</span>
-                    <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                  </Link>
-                </div>
-              </div>
-            ))}
+          <div className="text-xs text-brand-muted">
+            {displayMode === 'essilor' ? 'Chế độ Showcase 4 cột phong cách Essilor quốc tế' : 'Chế độ lưới lọc theo nhóm nhu cầu'}
           </div>
         </div>
+
+        {/* VIEW 1: ESSILOR SHOWCASE CAROUSEL */}
+        {displayMode === 'essilor' && (
+          <div className="relative max-w-[1340px] mx-auto py-2">
+            {/* Navigation Arrows */}
+            <button
+              type="button"
+              onClick={() => scrollCarousel(-1)}
+              className="absolute -left-3 sm:-left-5 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white dark:bg-slate-800 shadow-xl border border-slate-200/90 dark:border-white/10 flex items-center justify-center text-slate-700 dark:text-white hover:text-primary hover:scale-110 active:scale-95 transition-all cursor-pointer"
+              aria-label="Xem sản phẩm trước"
+            >
+              <ChevronLeft className="w-5 h-5" />
+            </button>
+            <button
+              type="button"
+              onClick={() => scrollCarousel(1)}
+              className="absolute -right-3 sm:-right-5 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white dark:bg-slate-800 shadow-xl border border-slate-200/90 dark:border-white/10 flex items-center justify-center text-slate-700 dark:text-white hover:text-primary hover:scale-110 active:scale-95 transition-all cursor-pointer"
+              aria-label="Xem sản phẩm tiếp theo"
+            >
+              <ChevronRight className="w-5 h-5" />
+            </button>
+
+            <div
+              ref={carouselRef}
+              className="flex gap-5 sm:gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory py-4 px-1 no-scrollbar"
+            >
+              {essilorShowcaseProducts.map((p, idx) => (
+                <div
+                  key={idx}
+                  className="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start bg-white rounded-3xl p-4 sm:p-5 border border-slate-200/80 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
+                >
+                  {/* Top Lifestyle Photo */}
+                  <div>
+                    <div className="rounded-2xl overflow-hidden aspect-square relative mb-4 bg-slate-100">
+                      <img
+                        src={p.image}
+                        alt={p.headline}
+                        loading="lazy"
+                        decoding="async"
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                      <div className="absolute top-3 left-3 flex items-center gap-1.5 bg-black/45 backdrop-blur-md px-2.5 py-1 rounded-full text-white text-[10px] font-bold shadow-xs tracking-wider uppercase">
+                        <span className="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+                        <span>Rocky Canada</span>
+                      </div>
+                    </div>
+
+                    {/* Brand Title */}
+                    <div className="space-y-0.5">
+                      <div className="text-xl font-black text-slate-900 tracking-tight flex items-baseline gap-1">
+                        <span>{p.brand}</span>
+                        <span className="text-base font-medium text-primary">{p.subBrand}</span>
+                      </div>
+                      <div className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
+                        {p.series}
+                      </div>
+                    </div>
+
+                    {/* Punchy 2-line Headline */}
+                    <p className="text-sm font-bold text-slate-800 leading-snug line-clamp-2 min-h-[2.5rem] mt-2 mb-4">
+                      {p.headline}
+                    </p>
+                  </div>
+
+                  {/* Full-width Solid Pill Button */}
+                  <Link
+                    href={p.link}
+                    className="w-full py-2.5 px-6 rounded-full font-bold text-sm text-white bg-[var(--button-middle)] hover:bg-[var(--button-end)] transition-all text-center flex items-center justify-center shadow-xs group-hover:shadow-md"
+                  >
+                    <span>Khám phá ngay</span>
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* VIEW 2: STANDARD GRID WITH CATEGORY TABS */}
+        {displayMode === 'grid' && (
+          <div className="space-y-6">
+            {/* Category Filter Tabs */}
+            <div className="flex flex-wrap items-center gap-2 pt-1">
+              {['Tất cả', 'Làm việc', 'Ngoài trời', 'Chuyên biệt'].map((filter) => (
+                <button
+                  key={filter}
+                  type="button"
+                  onClick={() => setActiveFilter(filter)}
+                  className={`px-4 sm:px-5 py-1.5 sm:py-2 rounded-full text-xs font-bold transition-all cursor-pointer ${
+                    activeFilter === filter
+                      ? 'bg-[var(--b2b-end)] text-white shadow-xs'
+                      : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-200/90'
+                  }`}
+                >
+                  {filter}
+                </button>
+              ))}
+            </div>
+
+            {/* 9 Solution Cards Grid */}
+            <div className="max-w-[1240px] mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-2">
+                {filtered.map((item) => (
+                  <div
+                    key={item.title}
+                    className="w-full card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden"
+                  >
+                    {/* Default Front View */}
+                    <div>
+                      <div className="pb-2">
+                        <h3 className="text-base sm:text-lg font-bold text-heading leading-snug h-14 flex items-center line-clamp-2">
+                          <Link href={item.link} className="hover:text-primary transition-colors">
+                            {item.title}
+                          </Link>
+                        </h3>
+                      </div>
+
+                      <div className={`h-44 sm:h-48 w-full rounded-xl overflow-hidden relative my-2.5 flex items-center justify-center ${item.imageFit === 'cover' ? 'bg-slate-900/10' : 'bg-slate-50/50 p-2'}`}>
+                        <img
+                          src={item.image}
+                          alt={(item as { alt?: string }).alt || item.title}
+                          loading="lazy"
+                          decoding="async"
+                          className={`w-full h-full group-hover:scale-105 transition-transform duration-500 ${item.imageFit === 'cover' ? 'object-cover' : 'object-contain'}`}
+                        />
+                      </div>
+                    </div>
+
+                    <div className="pt-3.5 mt-auto border-t border-slate-100 flex items-center">
+                      <Link
+                        href={item.link}
+                        className="card-price-btn -ml-1 text-xs sm:text-sm"
+                      >
+                        <span>Xem Giá</span>
+                        <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                      </Link>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+
+                
+
 
         {/* Bottom CTA Button: Xem thêm */}
         <div className="text-center pt-3">
