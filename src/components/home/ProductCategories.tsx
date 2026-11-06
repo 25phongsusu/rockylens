@@ -236,18 +236,12 @@ export default function ProductCategories() {
               >
                 {/* Default Front View */}
                 <div>
-                  <div className="space-y-1.5 pb-2">
-                    <div className="text-xs font-bold text-primary tracking-wide uppercase line-clamp-1">
-                      {item.category}
-                    </div>
-                    <h3 className="text-base sm:text-lg font-bold text-heading leading-snug h-14 flex items-start line-clamp-2">
+                  <div className="pb-2">
+                    <h3 className="text-base sm:text-lg font-bold text-heading leading-snug h-14 flex items-center line-clamp-2">
                       <Link href={item.link} className="hover:text-primary transition-colors">
                         {item.title}
                       </Link>
                     </h3>
-                    <p className="text-brand-muted text-xs sm:text-sm leading-relaxed line-clamp-2 h-10">
-                      {item.desc}
-                    </p>
                   </div>
 
                   <div className={`h-44 sm:h-48 w-full rounded-xl overflow-hidden relative my-2.5 flex items-center justify-center ${item.imageFit === 'cover' ? 'bg-slate-900/10' : 'bg-slate-50/50 p-2'}`}>
