@@ -89,7 +89,9 @@ html {
 
 body {
   color: var(--color-text);
-  background-color: var(--site-bg-start);
+  background: var(--gradient-site);
+  background-attachment: fixed;
+  min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

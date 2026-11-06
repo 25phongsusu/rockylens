@@ -28,7 +28,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }}
         />
       </head>
-      <body className="flex flex-col min-h-screen antialiased text-slate-800 bg-white">
+      <body className="flex flex-col min-h-screen antialiased text-slate-800">
         <Header />
         <main id="main-content" className="flex-grow">
           {children}

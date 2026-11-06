@@ -35,32 +35,32 @@ export const THEME_PRESETS: { name: string; desc: string; colors: ThemeColors }[
   },
   {
     name: 'Màu Thương Hiệu 1',
-    desc: 'Light Blue (Pantone 2915 C) — Xanh quang học thanh khiết',
+    desc: 'Light Blue (Pantone 2915 C) — Đổ màu toàn bộ nền website',
     colors: {
-      siteBgStart: '#F0F8FC',
-      siteBgMiddle: '#D8EEF8',
-      siteBgEnd: '#A8D7EC',
-      buttonStart: '#72B5D3',
-      buttonMiddle: '#428CAE',
-      buttonEnd: '#2B789C',
-      b2bStart: '#428CAE',
-      b2bMiddle: '#2B789C',
-      b2bEnd: '#163F56',
+      siteBgStart: '#72B5D3',
+      siteBgMiddle: '#5AA1C1',
+      siteBgEnd: '#428CAE',
+      buttonStart: '#2B789C',
+      buttonMiddle: '#1F6182',
+      buttonEnd: '#13445C',
+      b2bStart: '#2B789C',
+      b2bMiddle: '#1F6182',
+      b2bEnd: '#0C2B3B',
     },
   },
   {
     name: 'Màu Thương Hiệu 2',
-    desc: 'Deep Teal (Pantone 5415 C) — Xanh mòng két trầm cao cấp',
+    desc: 'Deep Teal (Pantone 5415 C) — Đổ màu toàn bộ nền website',
     colors: {
-      siteBgStart: '#F0F6F7',
-      siteBgMiddle: '#D5E6E9',
-      siteBgEnd: '#A3C8CE',
-      buttonStart: '#4E93A2',
-      buttonMiddle: '#2F6F7F',
-      buttonEnd: '#215C6B',
-      b2bStart: '#2F6F7F',
-      b2bMiddle: '#215C6B',
-      b2bEnd: '#144956',
+      siteBgStart: '#3D8293',
+      siteBgMiddle: '#2F6F7F',
+      siteBgEnd: '#215C6B',
+      buttonStart: '#144956',
+      buttonMiddle: '#0D3640',
+      buttonEnd: '#072128',
+      b2bStart: '#215C6B',
+      b2bMiddle: '#144956',
+      b2bEnd: '#072128',
     },
   },
   {
@@ -166,6 +166,11 @@ export function applyThemeToDocument(colors: ThemeColors) {
     '--gradient-b2b',
     `linear-gradient(120deg, ${colors.b2bStart} 0%, ${colors.b2bMiddle} 50%, ${colors.b2bEnd} 100%)`
   );
+
+  if (document.body) {
+    document.body.style.background = `linear-gradient(135deg, ${colors.siteBgStart} 0%, ${colors.siteBgMiddle} 55%, ${colors.siteBgEnd} 100%)`;
+    document.body.style.backgroundAttachment = 'fixed';
+  }
 }
 
 export default function ThemeCustomizer() {
