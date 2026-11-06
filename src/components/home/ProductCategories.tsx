@@ -438,11 +438,7 @@ export default function ProductCategories() {
                   key={filter}
                   type="button"
                   onClick={() => setActiveFilter(filter)}
-                  className={`px-4 sm:px-5 py-1.5 sm:py-2 rounded-full text-xs font-bold transition-all cursor-pointer ${
-                    activeFilter === filter
-                      ? 'bg-[var(--b2b-end)] text-white shadow-xs'
-                      : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-200/90'
-                  }`}
+                  className={`product-filter-btn ${activeFilter === filter ? 'active' : ''}`}
                 >
                   {filter}
                 </button>

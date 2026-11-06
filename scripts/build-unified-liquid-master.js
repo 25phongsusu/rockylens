@@ -771,7 +771,59 @@ const html = `<!DOCTYPE html>
     .animate-marquee:hover {
       animation-play-state: paused;
     }
-  </style>
+  
+    /* Product Filter Tabs */
+    .product-filter-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem 1.25rem;
+      border-radius: 9999px;
+      font-size: 0.8125rem;
+      font-weight: 700;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: pointer;
+      text-decoration: none;
+      background: #FFFFFF;
+      color: #1E293B !important;
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    }
+    .product-filter-btn:hover {
+      background: #F8FAFC;
+      color: #0F172A !important;
+      border-color: rgba(0, 0, 0, 0.2);
+    }
+    .product-filter-btn.active {
+      background: var(--gradient-button, linear-gradient(110deg, #00A2CC 0%, #008080 100%)) !important;
+      color: #FFFFFF !important;
+      border-color: transparent !important;
+      box-shadow: 0 4px 14px rgba(0, 162, 204, 0.35) !important;
+    }
+    [data-theme="dark"] .product-filter-btn,
+    .theme-dark .product-filter-btn {
+      background: rgba(255, 255, 255, 0.12) !important;
+      color: #FFFFFF !important;
+      border: 1px solid rgba(255, 255, 255, 0.25) !important;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      box-shadow: none !important;
+    }
+    [data-theme="dark"] .product-filter-btn:hover,
+    .theme-dark .product-filter-btn:hover {
+      background: rgba(255, 255, 255, 0.22) !important;
+      color: #FFFFFF !important;
+      border-color: rgba(255, 255, 255, 0.4) !important;
+    }
+    [data-theme="dark"] .product-filter-btn.active,
+    .theme-dark .product-filter-btn.active {
+      background: #FFFFFF !important;
+      color: #082832 !important;
+      border-color: #FFFFFF !important;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3) !important;
+    }
+
+    </style>
 </head>
 <body class="text-heading selection:bg-[var(--color-primary)] selection:text-white" style="background: var(--gradient-site); background-attachment: fixed; min-height: 100vh;">
 
@@ -1315,16 +1367,16 @@ const html = `<!DOCTYPE html>
         <div id="product-view-grid" class="space-y-6 hidden">
           <!-- Category Filter Tabs -->
         <div class="flex flex-wrap items-center gap-2 pt-1" id="product-filter-tabs">
-          <button type="button" onclick="filterProductSolutions('all', this)" class="product-filter-btn px-4 sm:px-5 py-1.5 sm:py-2 rounded-full text-xs font-bold transition-all cursor-pointer bg-[var(--b2b-end)] text-white shadow-xs">
+          <button type="button" onclick="filterProductSolutions('all', this)" class="product-filter-btn active">
             Tất cả
           </button>
-          <button type="button" onclick="filterProductSolutions('work', this)" class="product-filter-btn px-4 sm:px-5 py-1.5 sm:py-2 rounded-full text-xs font-bold transition-all cursor-pointer bg-white text-slate-700 hover:bg-slate-100 border border-slate-200/90">
+          <button type="button" onclick="filterProductSolutions('work', this)" class="product-filter-btn">
             Làm việc
           </button>
-          <button type="button" onclick="filterProductSolutions('outdoor', this)" class="product-filter-btn px-4 sm:px-5 py-1.5 sm:py-2 rounded-full text-xs font-bold transition-all cursor-pointer bg-white text-slate-700 hover:bg-slate-100 border border-slate-200/90">
+          <button type="button" onclick="filterProductSolutions('outdoor', this)" class="product-filter-btn">
             Ngoài trời
           </button>
-          <button type="button" onclick="filterProductSolutions('special', this)" class="product-filter-btn px-4 sm:px-5 py-1.5 sm:py-2 rounded-full text-xs font-bold transition-all cursor-pointer bg-white text-slate-700 hover:bg-slate-100 border border-slate-200/90">
+          <button type="button" onclick="filterProductSolutions('special', this)" class="product-filter-btn">
             Chuyên biệt
           </button>
         </div>
@@ -2645,9 +2697,9 @@ const html = `<!DOCTYPE html>
       var buttons = document.querySelectorAll('.product-filter-btn');
       
       buttons.forEach(function(b) {
-        b.className = 'product-filter-btn px-5 py-2 rounded-full text-xs font-bold transition-all cursor-pointer bg-white text-slate-700 hover:bg-slate-100 border border-slate-200/90';
+        b.classList.remove('active');
       });
-      btn.className = 'product-filter-btn px-5 py-2 rounded-full text-xs font-bold transition-all cursor-pointer bg-[var(--b2b-end)] text-white shadow-xs';
+      if (btn) btn.classList.add('active');
 
       cards.forEach(function(card) {
         if (filter === 'all' || card.getAttribute('data-group') === filter) {
