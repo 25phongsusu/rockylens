@@ -380,7 +380,7 @@ export default function ProductCategories() {
               {essilorShowcaseProducts.map((p, idx) => (
                 <div
                   key={idx}
-                  className="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start bg-white rounded-3xl p-4 sm:p-5 border border-slate-200/80 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
+                  className="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1"
                 >
                   {/* Top Lifestyle Photo */}
                   <div>
@@ -455,19 +455,11 @@ export default function ProductCategories() {
                 {filtered.map((item) => (
                   <div
                     key={item.title}
-                    className="w-full card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden"
+                    className="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1"
                   >
-                    {/* Default Front View */}
-                    <div>
-                      <div className="pb-2">
-                        <h3 className="text-base sm:text-lg font-bold text-heading leading-snug h-14 flex items-center line-clamp-2">
-                          <Link href={item.link} className="hover:text-primary transition-colors">
-                            {item.title}
-                          </Link>
-                        </h3>
-                      </div>
-
-                      <div className={`h-44 sm:h-48 w-full rounded-xl overflow-hidden relative my-2.5 flex items-center justify-center ${item.imageFit === 'cover' ? 'bg-slate-900/10' : 'bg-slate-50/50 p-2'}`}>
+                    <div className="space-y-3">
+                      {/* Hình ảnh */}
+                      <div className={`h-48 sm:h-54 w-full rounded-2xl overflow-hidden relative ${item.imageFit === 'cover' ? 'bg-slate-900/10' : 'bg-white/10 backdrop-blur-xs p-2'}`}>
                         <img
                           src={item.image}
                           alt={(item as { alt?: string }).alt || item.title}
@@ -476,15 +468,23 @@ export default function ProductCategories() {
                           className={`w-full h-full group-hover:scale-105 transition-transform duration-500 ${item.imageFit === 'cover' ? 'object-cover' : 'object-contain'}`}
                         />
                       </div>
+
+                      {/* Text */}
+                      <h3 className="text-base sm:text-lg font-bold text-heading group-hover:text-primary transition-colors leading-snug line-clamp-2 min-h-[3rem] flex items-start">
+                        <Link href={item.link}>
+                          {item.title}
+                        </Link>
+                      </h3>
                     </div>
 
-                    <div className="pt-3.5 mt-auto border-t border-slate-100 flex items-center">
+                    {/* Xem Giá */}
+                    <div className="pt-2 mt-auto flex items-center">
                       <Link
                         href={item.link}
                         className="card-price-btn -ml-1 text-xs sm:text-sm"
                       >
                         <span>Xem Giá</span>
-                        <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                        <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-0.5" />
                       </Link>
                     </div>
                   </div>

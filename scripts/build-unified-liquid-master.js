@@ -1014,7 +1014,7 @@ const html = `<!DOCTYPE html>
             class="flex gap-5 sm:gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory py-4 px-1 no-scrollbar"
           >
               <!-- Essilor Card: Rocky. BlueCut -->
-              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start bg-white rounded-3xl p-4 sm:p-5 border border-slate-200/80 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
                 <div>
                   <div class="rounded-2xl overflow-hidden aspect-square relative mb-4 bg-slate-100">
                     <img src="assets/uploads/solutions/trong-kinh-do-hoa-designer-chuan-mau.png" alt="Kính đơn tròng thế hệ mới trong suốt 99.8% chuẩn màu cho dân thiết kế &amp; văn phòng" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1044,7 +1044,7 @@ const html = `<!DOCTYPE html>
                 </a>
               </div>
               <!-- Essilor Card: Rocky. Trendy -->
-              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start bg-white rounded-3xl p-4 sm:p-5 border border-slate-200/80 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
                 <div>
                   <div class="rounded-2xl overflow-hidden aspect-square relative mb-4 bg-slate-100">
                     <img src="assets/uploads/solutions/trong-kinh-van-phong-chong-asx-doi-mau.png" alt="Người bạn đồng hành tốt nhất lọc ánh sáng xanh và đổi màu râm tức thì ra nắng" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1074,7 +1074,7 @@ const html = `<!DOCTYPE html>
                 </a>
               </div>
               <!-- Essilor Card: Rocky. DriveShield -->
-              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start bg-white rounded-3xl p-4 sm:p-5 border border-slate-200/80 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
                 <div>
                   <div class="rounded-2xl overflow-hidden aspect-square relative mb-4 bg-slate-100">
                     <img src="assets/uploads/solutions/trong-kinh-lai-xe-ban-dem-driveshield.png" alt="Sắc nét tức thì ngay cả khi di chuyển, chống chói đèn pha LED và trượt nước mưa" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1104,7 +1104,7 @@ const html = `<!DOCTYPE html>
                 </a>
               </div>
               <!-- Essilor Card: CanRx. Freeform -->
-              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start bg-white rounded-3xl p-4 sm:p-5 border border-slate-200/80 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
                 <div>
                   <div class="rounded-2xl overflow-hidden aspect-square relative mb-4 bg-slate-100">
                     <img src="assets/uploads/solutions/trong-kinh-da-trong-xa-trung-gan.png" alt="Cảm giác thoải mái cho mắt cả ngày dài, nhìn rõ liền mạch mọi cự ly Xa - Gần" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1134,7 +1134,7 @@ const html = `<!DOCTYPE html>
                 </a>
               </div>
               <!-- Essilor Card: Defocus. MyoControl -->
-              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start bg-white rounded-3xl p-4 sm:p-5 border border-slate-200/80 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
                 <div>
                   <div class="rounded-2xl overflow-hidden aspect-square relative mb-4 bg-slate-100">
                     <img src="assets/uploads/solutions/trong-kinh-kiem-soat-can-thi-tre-em.png" alt="Giải pháp khoa học tiên tiến giúp kiểm soát và làm chậm tiến triển độ cận ở trẻ em" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1164,7 +1164,7 @@ const html = `<!DOCTYPE html>
                 </a>
               </div>
               <!-- Essilor Card: Rocky. Chameleon -->
-              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start bg-white rounded-3xl p-4 sm:p-5 border border-slate-200/80 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
                 <div>
                   <div class="rounded-2xl overflow-hidden aspect-square relative mb-4 bg-slate-100">
                     <img src="assets/uploads/solutions/trong-kinh-doi-mau-thoi-trang-trendy.png" alt="Biến chiếc kính cận thành kính râm sành điệu với bộ sưu tập 7 sắc màu cá tính" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1194,7 +1194,7 @@ const html = `<!DOCTYPE html>
                 </a>
               </div>
               <!-- Essilor Card: Rocky. MR-8 -->
-              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start bg-white rounded-3xl p-4 sm:p-5 border border-slate-200/80 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
                 <div>
                   <div class="rounded-2xl overflow-hidden aspect-square relative mb-4 bg-slate-100">
                     <img src="assets/uploads/solutions/trong-kinh-gong-khoan-chong-vo-mr8.png" alt="Phôi siêu dẻo dai chịu lực uốn đỉnh cao, bắt ốc chắc chắn cho gọng không viền" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1224,7 +1224,7 @@ const html = `<!DOCTYPE html>
                 </a>
               </div>
               <!-- Essilor Card: Rocky. UltraThin -->
-              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start bg-white rounded-3xl p-4 sm:p-5 border border-slate-200/80 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
                 <div>
                   <div class="rounded-2xl overflow-hidden aspect-square relative mb-4 bg-slate-100">
                     <img src="assets/uploads/solutions/trong-kinh-mong-chiet-suat-cao-167-174.png" alt="Thẩm mỹ mỏng nhẹ tối ưu, triệt tiêu độ dày đáy chai cho mắt có độ cận viễn nặng" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1254,7 +1254,7 @@ const html = `<!DOCTYPE html>
                 </a>
               </div>
               <!-- Essilor Card: Rocky. MaxShield -->
-              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start bg-white rounded-3xl p-4 sm:p-5 border border-slate-200/80 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
                 <div>
                   <div class="rounded-2xl overflow-hidden aspect-square relative mb-4 bg-slate-100">
                     <img src="assets/uploads/solutions/trong-kinh-ngoai-troi-chong-tia-uv.png" alt="Bảo vệ võng mạc tối đa, ngăn chặn 100% tia cực tím độc hại UV400 và UV420 ngoài trời" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1308,181 +1308,163 @@ const html = `<!DOCTYPE html>
         <div class="max-w-[1240px] mx-auto">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-2" id="product-cards-grid">
             <!-- Card 1: Dành cho thiết kế đồ họa & ngồi máy tính (Trong suốt không ngả vàng) -->
-            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="work">
-              <div>
-                <div class="pb-2">
-                  <h3 class="text-base sm:text-lg font-bold text-heading leading-snug h-14 flex items-center line-clamp-2">
-                    <a href="trong-kinh/rocky-156-bluecut-shmc/" class="hover:text-primary transition-colors">Dành cho thiết kế đồ họa &amp; ngồi máy tính (Trong suốt không ngả vàng)</a>
-                  </h3>
-                </div>
-                <div class="h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
+            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1" data-group="work">
+              <div class="space-y-3">
+                <div class="h-48 sm:h-54 w-full rounded-2xl overflow-hidden bg-slate-900/10 relative">
                   <img loading="lazy" decoding="async" src="assets/uploads/solutions/trong-kinh-do-hoa-designer-chuan-mau.png" alt="Tròng kính thiết kế đồ họa designer chuẩn màu 100% không ngả vàng Rocky BlueCut UV420" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
+                <h3 class="text-base sm:text-lg font-bold text-heading group-hover:text-primary transition-colors leading-snug line-clamp-2 min-h-[3rem] flex items-start">
+                  <a href="trong-kinh/rocky-156-bluecut-shmc/">Dành cho thiết kế đồ họa &amp; ngồi máy tính (Trong suốt không ngả vàng)</a>
+                </h3>
               </div>
-              <div class="pt-3 mt-auto border-t border-slate-100 flex items-center">
-                <a href="trong-kinh/rocky-156-bluecut-shmc/" class="card-price-btn -ml-1">
+              <div class="pt-2 mt-auto flex items-center">
+                <a href="trong-kinh/rocky-156-bluecut-shmc/" class="card-price-btn -ml-1 text-xs sm:text-sm">
                   <span>Xem Giá</span>
-                  <svg class="w-4 h-4 inline-block transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                  <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-1 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
               </div>
             </div>
 
             <!-- Card 2: Dành cho dân văn phòng & làm việc máy tính (Lọc ASX + Đổi màu) -->
-            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="work">
-              <div>
-                <div class="pb-2">
-                  <h3 class="text-base sm:text-lg font-bold text-heading leading-snug h-14 flex items-center line-clamp-2">
-                    <a href="trong-kinh/rocky-trendy-photochromic-grey/" class="hover:text-primary transition-colors">Dành cho dân văn phòng &amp; làm việc máy tính (Lọc ASX + Đổi màu)</a>
-                  </h3>
-                </div>
-                <div class="h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
+            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1" data-group="work">
+              <div class="space-y-3">
+                <div class="h-48 sm:h-54 w-full rounded-2xl overflow-hidden bg-slate-900/10 relative">
                   <img loading="lazy" decoding="async" src="assets/uploads/solutions/trong-kinh-van-phong-chong-asx-doi-mau.png" alt="Tròng kính dân văn phòng lọc ánh sáng xanh máy tính và tự đổi màu khi ra nắng Rocky Trendy Smart BlueCut Photo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
+                <h3 class="text-base sm:text-lg font-bold text-heading group-hover:text-primary transition-colors leading-snug line-clamp-2 min-h-[3rem] flex items-start">
+                  <a href="trong-kinh/rocky-trendy-photochromic-grey/">Dành cho dân văn phòng &amp; làm việc máy tính (Lọc ASX + Đổi màu)</a>
+                </h3>
               </div>
-              <div class="pt-3 mt-auto border-t border-slate-100 flex items-center">
-                <a href="trong-kinh/rocky-trendy-photochromic-grey/" class="card-price-btn -ml-1">
+              <div class="pt-2 mt-auto flex items-center">
+                <a href="trong-kinh/rocky-trendy-photochromic-grey/" class="card-price-btn -ml-1 text-xs sm:text-sm">
                   <span>Xem Giá</span>
-                  <svg class="w-4 h-4 inline-block transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                  <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-1 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
               </div>
             </div>
 
             <!-- Card 3: Dành cho người hay hoạt động ngoài trời (Chống UV400 / UV420 tối đa) -->
-            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="outdoor">
-              <div>
-                <div class="pb-2">
-                  <h3 class="text-base sm:text-lg font-bold text-heading leading-snug h-14 flex items-center line-clamp-2">
-                    <a href="trong-kinh/rocky-167-ultra-thin-bluecut/" class="hover:text-primary transition-colors">Dành cho người hay hoạt động ngoài trời (Chống UV400 / UV420 tối đa)</a>
-                  </h3>
-                </div>
-                <div class="h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
+            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1" data-group="outdoor">
+              <div class="space-y-3">
+                <div class="h-48 sm:h-54 w-full rounded-2xl overflow-hidden bg-slate-900/10 relative">
                   <img loading="lazy" decoding="async" src="assets/uploads/solutions/trong-kinh-ngoai-troi-chong-tia-uv.png" alt="Tròng kính hoạt động ngoài trời chống tia cực tím UV400 UV420 tối đa Rocky MaxShield Protect" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
+                <h3 class="text-base sm:text-lg font-bold text-heading group-hover:text-primary transition-colors leading-snug line-clamp-2 min-h-[3rem] flex items-start">
+                  <a href="trong-kinh/rocky-167-ultra-thin-bluecut/">Dành cho người hay hoạt động ngoài trời (Chống UV400 / UV420 tối đa)</a>
+                </h3>
               </div>
-              <div class="pt-3 mt-auto border-t border-slate-100 flex items-center">
-                <a href="trong-kinh/rocky-167-ultra-thin-bluecut/" class="card-price-btn -ml-1">
+              <div class="pt-2 mt-auto flex items-center">
+                <a href="trong-kinh/rocky-167-ultra-thin-bluecut/" class="card-price-btn -ml-1 text-xs sm:text-sm">
                   <span>Xem Giá</span>
-                  <svg class="w-4 h-4 inline-block transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                  <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-1 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
               </div>
             </div>
 
             <!-- Card 4: Dành cho tài xế & người hay lái xe ban đêm (Chống chói đèn pha LED) -->
-            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="outdoor">
-              <div>
-                <div class="pb-2">
-                  <h3 class="text-base sm:text-lg font-bold text-heading leading-snug h-14 flex items-center line-clamp-2">
-                    <a href="trong-kinh/rocky-driveshield-night-vision/" class="hover:text-primary transition-colors">Dành cho tài xế & người hay lái xe ban đêm (Chống chói đèn pha LED)</a>
-                  </h3>
-                </div>
-                <div class="h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
+            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1" data-group="outdoor">
+              <div class="space-y-3">
+                <div class="h-48 sm:h-54 w-full rounded-2xl overflow-hidden bg-slate-900/10 relative">
                   <img loading="lazy" decoding="async" src="assets/uploads/solutions/trong-kinh-lai-xe-ban-dem-driveshield.png" alt="Tròng kính lái xe ban đêm chống chói đèn pha LED và trượt nước mưa Rocky DriveShield Ruby AR" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
+                <h3 class="text-base sm:text-lg font-bold text-heading group-hover:text-primary transition-colors leading-snug line-clamp-2 min-h-[3rem] flex items-start">
+                  <a href="trong-kinh/rocky-driveshield-night-vision/">Dành cho tài xế & người hay lái xe ban đêm (Chống chói đèn pha LED)</a>
+                </h3>
               </div>
-              <div class="pt-3 mt-auto border-t border-slate-100 flex items-center">
-                <a href="trong-kinh/rocky-driveshield-night-vision/" class="card-price-btn -ml-1">
+              <div class="pt-2 mt-auto flex items-center">
+                <a href="trong-kinh/rocky-driveshield-night-vision/" class="card-price-btn -ml-1 text-xs sm:text-sm">
                   <span>Xem Giá</span>
-                  <svg class="w-4 h-4 inline-block transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                  <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-1 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
               </div>
             </div>
 
             <!-- Card 5: Dành cho người lớn tuổi & lão thị (Đa tròng nhìn Xa - Trung - Gần) -->
-            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="work">
-              <div>
-                <div class="pb-2">
-                  <h3 class="text-base sm:text-lg font-bold text-heading leading-snug h-14 flex items-center line-clamp-2">
-                    <a href="trong-kinh/rocky-freeform-progressive-hd/" class="hover:text-primary transition-colors">Dành cho người lớn tuổi & lão thị (Đa tròng nhìn Xa - Trung - Gần)</a>
-                  </h3>
-                </div>
-                <div class="h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
+            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1" data-group="work">
+              <div class="space-y-3">
+                <div class="h-48 sm:h-54 w-full rounded-2xl overflow-hidden bg-slate-900/10 relative">
                   <img loading="lazy" decoding="async" src="assets/uploads/solutions/trong-kinh-da-trong-xa-trung-gan.png" alt="Tròng kính đa tròng kỹ thuật số nhìn rõ 3 cự ly Xa Trung Gần liền mạch CanRx Freeform HD Progressive" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
+                <h3 class="text-base sm:text-lg font-bold text-heading group-hover:text-primary transition-colors leading-snug line-clamp-2 min-h-[3rem] flex items-start">
+                  <a href="trong-kinh/rocky-freeform-progressive-hd/">Dành cho người lớn tuổi & lão thị (Đa tròng nhìn Xa - Trung - Gần)</a>
+                </h3>
               </div>
-              <div class="pt-3 mt-auto border-t border-slate-100 flex items-center">
-                <a href="trong-kinh/rocky-freeform-progressive-hd/" class="card-price-btn -ml-1">
+              <div class="pt-2 mt-auto flex items-center">
+                <a href="trong-kinh/rocky-freeform-progressive-hd/" class="card-price-btn -ml-1 text-xs sm:text-sm">
                   <span>Xem Giá</span>
-                  <svg class="w-4 h-4 inline-block transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                  <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-1 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
               </div>
             </div>
 
             <!-- Card 6: Dành cho trẻ em & học sinh cận thị (Kiểm soát tăng độ cận) -->
-            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="special">
-              <div>
-                <div class="pb-2">
-                  <h3 class="text-base sm:text-lg font-bold text-heading leading-snug h-14 flex items-center line-clamp-2">
-                    <a href="trong-kinh/rocky-myocontrol-dims-kids/" class="hover:text-primary transition-colors">Dành cho trẻ em & học sinh cận thị (Kiểm soát tăng độ cận)</a>
-                  </h3>
-                </div>
-                <div class="h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
+            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1" data-group="special">
+              <div class="space-y-3">
+                <div class="h-48 sm:h-54 w-full rounded-2xl overflow-hidden bg-slate-900/10 relative">
                   <img loading="lazy" decoding="async" src="assets/uploads/solutions/trong-kinh-kiem-soat-can-thi-tre-em.png" alt="Tròng kính kiểm soát tiến triển độ cận thị cho trẻ em học sinh Defocus MyoControl Kids HD" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
+                <h3 class="text-base sm:text-lg font-bold text-heading group-hover:text-primary transition-colors leading-snug line-clamp-2 min-h-[3rem] flex items-start">
+                  <a href="trong-kinh/rocky-myocontrol-dims-kids/">Dành cho trẻ em & học sinh cận thị (Kiểm soát tăng độ cận)</a>
+                </h3>
               </div>
-              <div class="pt-3 mt-auto border-t border-slate-100 flex items-center">
-                <a href="trong-kinh/rocky-myocontrol-dims-kids/" class="card-price-btn -ml-1">
+              <div class="pt-2 mt-auto flex items-center">
+                <a href="trong-kinh/rocky-myocontrol-dims-kids/" class="card-price-btn -ml-1 text-xs sm:text-sm">
                   <span>Xem Giá</span>
-                  <svg class="w-4 h-4 inline-block transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                  <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-1 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
               </div>
             </div>
 
             <!-- Card 7: Dành cho tín đồ thời trang (Kính cận đổi màu đa sắc cá tính) -->
-            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="outdoor">
-              <div>
-                <div class="pb-2">
-                  <h3 class="text-base sm:text-lg font-bold text-heading leading-snug h-14 flex items-center line-clamp-2">
-                    <a href="trong-kinh/rocky-chameleon-photochromic/" class="hover:text-primary transition-colors">Dành cho tín đồ thời trang (Kính cận đổi màu đa sắc cá tính)</a>
-                  </h3>
-                </div>
-                <div class="h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
+            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1" data-group="outdoor">
+              <div class="space-y-3">
+                <div class="h-48 sm:h-54 w-full rounded-2xl overflow-hidden bg-slate-900/10 relative">
                   <img loading="lazy" decoding="async" src="assets/uploads/solutions/trong-kinh-doi-mau-thoi-trang-trendy.png" alt="Tròng kính cận đổi màu thời trang 7 sắc màu cá tính nhạy sáng ngoài trời Rocky Trendy Style Photochromic" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
+                <h3 class="text-base sm:text-lg font-bold text-heading group-hover:text-primary transition-colors leading-snug line-clamp-2 min-h-[3rem] flex items-start">
+                  <a href="trong-kinh/rocky-chameleon-photochromic/">Dành cho tín đồ thời trang (Kính cận đổi màu đa sắc cá tính)</a>
+                </h3>
               </div>
-              <div class="pt-3 mt-auto border-t border-slate-100 flex items-center">
-                <a href="trong-kinh/rocky-chameleon-photochromic/" class="card-price-btn -ml-1">
+              <div class="pt-2 mt-auto flex items-center">
+                <a href="trong-kinh/rocky-chameleon-photochromic/" class="card-price-btn -ml-1 text-xs sm:text-sm">
                   <span>Xem Giá</span>
-                  <svg class="w-4 h-4 inline-block transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                  <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-1 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
               </div>
             </div>
 
             <!-- Card 8: Dành cho người đeo gọng khoan, không viền (Siêu dai MR-8 chống vỡ) -->
-            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="special">
-              <div>
-                <div class="pb-2">
-                  <h3 class="text-base sm:text-lg font-bold text-heading leading-snug h-14 flex items-center line-clamp-2">
-                    <a href="trong-kinh/rocky-160-mr8-aspheric/" class="hover:text-primary transition-colors">Dành cho người đeo gọng khoan, không viền (Siêu dai MR-8 chống vỡ)</a>
-                  </h3>
-                </div>
-                <div class="h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
+            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1" data-group="special">
+              <div class="space-y-3">
+                <div class="h-48 sm:h-54 w-full rounded-2xl overflow-hidden bg-slate-900/10 relative">
                   <img loading="lazy" decoding="async" src="assets/uploads/solutions/trong-kinh-gong-khoan-chong-vo-mr8.png" alt="Tròng kính chuyên gọng khoan bắt ốc không viền phôi Mitsui MR-8 dẻo dai chống mẻ vỡ" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
+                <h3 class="text-base sm:text-lg font-bold text-heading group-hover:text-primary transition-colors leading-snug line-clamp-2 min-h-[3rem] flex items-start">
+                  <a href="trong-kinh/rocky-160-mr8-aspheric/">Dành cho người đeo gọng khoan, không viền (Siêu dai MR-8 chống vỡ)</a>
+                </h3>
               </div>
-              <div class="pt-3 mt-auto border-t border-slate-100 flex items-center">
-                <a href="trong-kinh/rocky-160-mr8-aspheric/" class="card-price-btn -ml-1">
+              <div class="pt-2 mt-auto flex items-center">
+                <a href="trong-kinh/rocky-160-mr8-aspheric/" class="card-price-btn -ml-1 text-xs sm:text-sm">
                   <span>Xem Giá</span>
-                  <svg class="w-4 h-4 inline-block transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                  <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-1 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
               </div>
             </div>
 
             <!-- Card 9: Độ Cận Viễn Nặng (Tròng Mỏng Chiết Suất 1.67 - 1.74) -->
-            <div class="product-sol-card card-surface rounded-2xl p-5 sm:p-6 shadow-xs hover:shadow-md hover:border-[var(--button-middle)] transition-all duration-300 flex flex-col justify-between h-full border border-[var(--color-border)]/50 group bg-white relative overflow-hidden" data-group="special">
-              <div>
-                <div class="pb-2">
-                  <h3 class="text-base sm:text-lg font-bold text-heading leading-snug h-14 flex items-center line-clamp-2">
-                    <a href="trong-kinh/rocky-174-ultra-high-index/" class="hover:text-primary transition-colors">Độ Cận Viễn Nặng (Tròng Mỏng Chiết Suất 1.67 - 1.74)</a>
-                  </h3>
-                </div>
-                <div class="h-44 sm:h-48 w-full rounded-xl overflow-hidden bg-slate-900/10 relative my-2.5 flex items-center justify-center">
+            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1" data-group="special">
+              <div class="space-y-3">
+                <div class="h-48 sm:h-54 w-full rounded-2xl overflow-hidden bg-slate-900/10 relative">
                   <img loading="lazy" decoding="async" src="assets/uploads/solutions/trong-kinh-mong-chiet-suat-cao-167-174.png" alt="Tròng kính mỏng chiết suất cao 1.67 và 1.74 triệt tiêu mép dày độ cận viễn nặng Rocky Ultra Thin" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
+                <h3 class="text-base sm:text-lg font-bold text-heading group-hover:text-primary transition-colors leading-snug line-clamp-2 min-h-[3rem] flex items-start">
+                  <a href="trong-kinh/rocky-174-ultra-high-index/">Độ Cận Viễn Nặng (Tròng Mỏng Chiết Suất 1.67 - 1.74)</a>
+                </h3>
               </div>
-              <div class="pt-3 mt-auto border-t border-slate-100 flex items-center">
-                <a href="trong-kinh/rocky-174-ultra-high-index/" class="card-price-btn -ml-1">
+              <div class="pt-2 mt-auto flex items-center">
+                <a href="trong-kinh/rocky-174-ultra-high-index/" class="card-price-btn -ml-1 text-xs sm:text-sm">
                   <span>Xem Giá</span>
-                  <svg class="w-4 h-4 inline-block transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                  <svg class="w-4 h-4 inline-block transition-transform group-hover:translate-x-1 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </a>
               </div>
             </div>

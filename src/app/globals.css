@@ -414,6 +414,26 @@ body {
   color: #FFFFFF !important;
 }
 
+
+[data-theme="dark"] .card-price-btn,
+.theme-dark .card-price-btn {
+  color: #72B5D3 !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+[data-theme="dark"] .group:hover .card-price-btn,
+[data-theme="dark"] .product-sol-card:hover .card-price-btn,
+[data-theme="dark"] .card-price-btn:hover,
+.theme-dark .group:hover .card-price-btn,
+.theme-dark .product-sol-card:hover .card-price-btn,
+.theme-dark .card-price-btn:hover {
+  background: var(--gradient-button) !important;
+  color: #FFFFFF !important;
+  border-color: transparent !important;
+  box-shadow: 0 4px 14px rgba(0, 162, 204, 0.4) !important;
+}
+
 .card-price-btn:active {
   transform: translateY(0);
 }
