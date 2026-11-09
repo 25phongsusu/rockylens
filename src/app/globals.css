@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *, .dark, .dark *));
 @source "../";
 @config "../../tailwind.config.ts";
 
@@ -189,18 +190,63 @@ body {
   color: #475569 !important;
 }
 
-[data-theme="dark"] .bg-white .text-slate-700,
-.theme-dark .bg-white .text-slate-700,
-[data-theme="dark"] .card-surface .text-slate-700,
-.theme-dark .card-surface .text-slate-700 {
-  color: #334155 !important;
+[data-theme="dark"] .bg-white .text-slate-900,
+.theme-dark .bg-white .text-slate-900,
+[data-theme="dark"] .card-surface .text-slate-900,
+.theme-dark .card-surface .text-slate-900,
+[data-theme="dark"] .bg-white.text-slate-900,
+.theme-dark .bg-white.text-slate-900 {
+  color: #0F172A !important;
 }
 
 [data-theme="dark"] .bg-white .text-slate-800,
 .theme-dark .bg-white .text-slate-800,
 [data-theme="dark"] .card-surface .text-slate-800,
-.theme-dark .card-surface .text-slate-800 {
+.theme-dark .card-surface .text-slate-800,
+[data-theme="dark"] .bg-white.text-slate-800,
+.theme-dark .bg-white.text-slate-800 {
   color: #1E293B !important;
+}
+
+[data-theme="dark"] .bg-white .text-slate-700,
+.theme-dark .bg-white .text-slate-700,
+[data-theme="dark"] .card-surface .text-slate-700,
+.theme-dark .card-surface .text-slate-700,
+[data-theme="dark"] .bg-white.text-slate-700,
+.theme-dark .bg-white.text-slate-700 {
+  color: #334155 !important;
+}
+
+[data-theme="dark"] .bg-white .text-slate-600,
+.theme-dark .bg-white .text-slate-600,
+[data-theme="dark"] .card-surface .text-slate-600,
+.theme-dark .card-surface .text-slate-600,
+[data-theme="dark"] .bg-white.text-slate-600,
+.theme-dark .bg-white.text-slate-600 {
+  color: #475569 !important;
+}
+
+[data-theme="dark"] .bg-white .text-slate-500,
+.theme-dark .bg-white .text-slate-500,
+[data-theme="dark"] .card-surface .text-slate-500,
+.theme-dark .card-surface .text-slate-500,
+[data-theme="dark"] .bg-white.text-slate-500,
+.theme-dark .bg-white.text-slate-500 {
+  color: #64748B !important;
+}
+
+[data-theme="dark"] .bg-white .text-slate-400,
+.theme-dark .bg-white .text-slate-400,
+[data-theme="dark"] .card-surface .text-slate-400,
+.theme-dark .card-surface .text-slate-400 {
+  color: #94A3B8 !important;
+}
+
+[data-theme="dark"] input.bg-white,
+.theme-dark input.bg-white,
+[data-theme="dark"] .bg-white input,
+.theme-dark .bg-white input {
+  color: #0F172A !important;
 }
 
 [data-theme="dark"] .bg-white a.text-primary,
@@ -217,6 +263,56 @@ body {
 .theme-dark .card-surface [class*="bg-[var(--site-bg-"] {
   background-color: #F8FAFC !important;
   border-color: #E2E8F0 !important;
+}
+
+[data-theme="dark"] .bg-white .bg-slate-50,
+.theme-dark .bg-white .bg-slate-50,
+[data-theme="dark"] .card-surface .bg-slate-50,
+.theme-dark .card-surface .bg-slate-50 {
+  background-color: #F8FAFC !important;
+  border-color: #E2E8F0 !important;
+}
+
+/* Catalog Mode Switcher on light & dark */
+.catalog-mode-switcher {
+  background: rgba(226, 232, 240, 0.9);
+  border: 1px solid rgba(203, 213, 225, 0.8);
+}
+.catalog-mode-switcher button {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.catalog-mode-switcher button.inactive {
+  color: #475569 !important;
+}
+.catalog-mode-switcher button.inactive:hover {
+  color: #0F172A !important;
+}
+.catalog-mode-switcher button.active {
+  background: var(--gradient-button, linear-gradient(110deg, #00A2CC 0%, #008080 100%)) !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 14px rgba(0, 162, 204, 0.35) !important;
+}
+
+[data-theme="dark"] .catalog-mode-switcher,
+.theme-dark .catalog-mode-switcher {
+  background: rgba(10, 35, 45, 0.75) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+[data-theme="dark"] .catalog-mode-switcher button.inactive,
+.theme-dark .catalog-mode-switcher button.inactive {
+  color: #CFE4ED !important;
+}
+[data-theme="dark"] .catalog-mode-switcher button.inactive:hover,
+.theme-dark .catalog-mode-switcher button.inactive:hover {
+  color: #FFFFFF !important;
+}
+[data-theme="dark"] .catalog-mode-switcher button.active,
+.theme-dark .catalog-mode-switcher button.active {
+  background: #FFFFFF !important;
+  color: #082832 !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4) !important;
 }
 
 /* Hero Badge & Switcher on dark */

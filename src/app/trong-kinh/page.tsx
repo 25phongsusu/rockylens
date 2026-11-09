@@ -21,7 +21,7 @@ export default function ProductsPage() {
       {/* Page Hero - Streamlined & Minimalist */}
       <section className="py-10 sm:py-14 px-4 sm:px-6 relative overflow-hidden text-center">
         <div className="max-w-4xl mx-auto relative z-10 space-y-3">
-          <div className="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-white/90 border border-[var(--color-border)] text-primary text-xs font-bold shadow-2xs">
+          <div className="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-white/90 dark:bg-white/10 backdrop-blur-md border border-[var(--color-border)] dark:border-white/15 text-primary dark:text-cyan-300 text-xs font-bold shadow-2xs">
             <span className="w-2 h-2 rounded-full bg-[var(--button-middle)]" />
             <span className="tracking-wide uppercase font-semibold">Giải Pháp Thị Lực Theo Đối Tượng &amp; Nhu Cầu</span>
           </div>

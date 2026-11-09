@@ -181,14 +181,14 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
           ======================================================== */}
       <div className="flex flex-col items-center justify-center space-y-4">
         {/* Segmented Capsule Control */}
-        <div className="inline-flex p-1.5 rounded-full bg-slate-200/90 border border-slate-300 shadow-inner">
+        <div className="catalog-mode-switcher inline-flex p-1.5 rounded-full bg-slate-200/90 dark:bg-black/35 backdrop-blur-md border border-slate-300/80 dark:border-white/15 shadow-inner">
           <button
             type="button"
             onClick={() => handleModeChange('need')}
             className={`px-6 sm:px-9 py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all cursor-pointer ${
               viewMode === 'need'
-                ? 'bg-[var(--b2b-end)] text-white shadow-md'
-                : 'text-slate-700 hover:text-slate-900'
+                ? 'active bg-gradient-to-r from-[var(--button-start)] to-[var(--button-middle)] text-white shadow-md'
+                : 'inactive text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white'
             }`}
           >
             Theo nhu cầu
@@ -198,8 +198,8 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
             onClick={() => handleModeChange('tech')}
             className={`px-6 sm:px-9 py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all cursor-pointer ${
               viewMode === 'tech'
-                ? 'bg-[var(--b2b-end)] text-white shadow-md'
-                : 'text-slate-700 hover:text-slate-900'
+                ? 'active bg-gradient-to-r from-[var(--button-start)] to-[var(--button-middle)] text-white shadow-md'
+                : 'inactive text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white'
             }`}
           >
             Theo tính năng
@@ -209,16 +209,13 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
         {/* Sub-Filter Pills with Color Dots matching PDF */}
         <div className="flex flex-wrap items-center justify-center gap-2 pt-1 max-w-4xl">
           {currentFilters.map((f) => {
+            const isActive = subFilter === f.id;
             return (
               <button
                 key={f.id}
                 type="button"
                 onClick={() => setSubFilter(f.id)}
-                className={`px-4 sm:px-5 py-2 rounded-full text-xs font-bold transition-all cursor-pointer inline-flex items-center gap-2 ${
-                  subFilter === f.id
-                    ? 'bg-[var(--color-primary)] text-white shadow-xs'
-                    : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-200/90 shadow-2xs'
-                }`}
+                className={`product-filter-btn ${isActive ? 'active' : ''}`}
               >
                 {f.dotColor ? (
                   <span
@@ -244,7 +241,7 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Tìm theo tên, chiết suất, tính năng..."
-            className="w-full pl-10 pr-4 py-2 text-xs bg-white border border-slate-200/90 rounded-xl focus:outline-none focus:ring-2 focus:ring-[var(--button-middle)] focus:border-transparent transition-all shadow-2xs"
+            className="w-full pl-10 pr-4 py-2 text-xs bg-white text-slate-900 placeholder:text-slate-400 border border-slate-200/90 rounded-xl focus:outline-none focus:ring-2 focus:ring-[var(--button-middle)] focus:border-transparent transition-all shadow-2xs"
           />
           {searchQuery && (
             <button
