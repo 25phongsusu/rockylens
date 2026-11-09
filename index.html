@@ -608,6 +608,24 @@
       color: var(--button-start) !important;
     }
 
+    /* Logo Switcher for Light vs Dark/Preset themes in Menu bar */
+    .logo-dark {
+      display: none !important;
+    }
+    .logo-default {
+      display: block !important;
+    }
+
+    [data-theme="dark"] .logo-default,
+    .theme-dark .logo-default {
+      display: none !important;
+    }
+
+    [data-theme="dark"] .logo-dark,
+    .theme-dark .logo-dark {
+      display: block !important;
+    }
+
     /* Inside white cards, ensure dark text remains razor sharp */
     [data-theme="dark"] .bg-white,
     .theme-dark .bg-white {
@@ -828,7 +846,8 @@
       
       <!-- Brand Logo -->
       <a href="#" class="flex items-center gap-3">
-        <img src="assets/logo_rocky_transparent.png" alt="Rocky Lens Canada" class="h-16 sm:h-[76px] w-auto object-contain">
+        <img src="assets/logo_rocky_transparent.png" alt="Rocky Lens Canada" class="h-16 sm:h-[76px] w-auto object-contain logo-default">
+        <img src="assets/logo_rocky_white.png" alt="Rocky Lens Canada" class="h-16 sm:h-[76px] w-auto object-contain logo-dark hidden">
       </a>
 
       <!-- Primary Multi-Page Navigation Items -->
@@ -2348,7 +2367,7 @@
         
         <!-- Col 1: Brand Info -->
         <div class="space-y-4">
-          <img src="assets/logo_rocky_transparent.png" alt="Rocky Lens" class="h-10 w-auto object-contain brightness-0 invert">
+          <img src="assets/logo_rocky_white.png" alt="Rocky Lens" class="h-10 w-auto object-contain">
           <p class="text-slate-300 font-medium text-base leading-relaxed">
             Thương hiệu tròng kính quang học Canada, phân phối độc quyền tại Việt Nam bởi Công ty Cổ phần Clearly Vietnam.
           </p>
@@ -3000,12 +3019,25 @@
       root.style.setProperty('--b2b-middle', colors.b2bMiddle);
       root.style.setProperty('--b2b-end', colors.b2bEnd);
 
-      if (colors.isDark) {
+      function isColorDark(hex) {
+        if (!hex || typeof hex !== 'string' || !hex.startsWith('#')) return false;
+        var c = hex.substring(1);
+        var rgb = parseInt(c.length === 3 ? c.split('').map(function(x) { return x + x; }).join('') : c, 16);
+        if (isNaN(rgb)) return false;
+        var r = (rgb >> 16) & 0xff;
+        var g = (rgb >> 8) & 0xff;
+        var b = (rgb >> 0) & 0xff;
+        return (0.2126 * r + 0.7152 * g + 0.0722 * b) < 128;
+      }
+
+      var isDark = Boolean(colors.isDark || isColorDark(colors.siteBgStart));
+
+      if (isDark) {
         document.documentElement.setAttribute('data-theme', 'dark');
         if (document.body) document.body.setAttribute('data-theme', 'dark');
         root.style.setProperty('--color-heading', colors.headingColor || '#FFFFFF');
         root.style.setProperty('--color-text', colors.textColor || '#FFFFFF');
-        root.style.setProperty('--color-muted', colors.mutedColor || '#CBD5E1');
+        root.style.setProperty('--color-muted', colors.mutedColor || '#CFE4ED');
         root.style.setProperty('--color-border', 'rgba(255, 255, 255, 0.2)');
       } else {
         document.documentElement.removeAttribute('data-theme');
@@ -3014,6 +3046,16 @@
         root.style.setProperty('--color-text', colors.b2bEnd);
         root.style.setProperty('--color-muted', '#476773');
         root.style.setProperty('--color-border', colors.siteBgEnd);
+      }
+
+      var defaultLogos = document.querySelectorAll('.logo-default');
+      var darkLogos = document.querySelectorAll('.logo-dark');
+      if (isDark) {
+        defaultLogos.forEach(function(el) { el.style.setProperty('display', 'none', 'important'); });
+        darkLogos.forEach(function(el) { el.style.setProperty('display', 'block', 'important'); });
+      } else {
+        defaultLogos.forEach(function(el) { el.style.setProperty('display', 'block', 'important'); });
+        darkLogos.forEach(function(el) { el.style.setProperty('display', 'none', 'important'); });
       }
       root.style.setProperty('--color-primary', colors.buttonMiddle);
       root.style.setProperty('--color-primary-hover', colors.buttonEnd);

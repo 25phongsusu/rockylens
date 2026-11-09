@@ -10,9 +10,9 @@ export default function Footer() {
           {/* Col 1: Brand Info */}
           <div className="space-y-4">
             <img
-              src="/assets/logo_rocky_transparent.png"
+              src="/assets/logo_rocky_white.png"
               alt="Rocky Lens"
-              className="h-10 w-auto object-contain brightness-0 invert"
+              className="h-10 w-auto object-contain"
             />
             <p className="text-slate-400 font-medium text-base leading-relaxed">
               Thương hiệu tròng kính quang học Canada, phân phối độc quyền tại Việt Nam bởi Công ty Cổ phần Clearly Vietnam.

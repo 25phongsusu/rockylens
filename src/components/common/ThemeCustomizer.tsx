@@ -177,6 +177,18 @@ export const THEME_PRESETS: { name: string; desc: string; colors: ThemeColors }[
 
 const STORAGE_KEY = 'rockylens_custom_theme_colors';
 
+function isColorDark(hex: string): boolean {
+  if (!hex || !hex.startsWith('#')) return false;
+  const c = hex.substring(1);
+  const rgb = parseInt(c.length === 3 ? c.split('').map((x) => x + x).join('') : c, 16);
+  if (isNaN(rgb)) return false;
+  const r = (rgb >> 16) & 0xff;
+  const g = (rgb >> 8) & 0xff;
+  const b = (rgb >> 0) & 0xff;
+  const luma = 0.2126 * r + 0.7152 * g + 0.0722 * b;
+  return luma < 128;
+}
+
 export function applyThemeToDocument(colors: ThemeColors) {
   if (typeof document === 'undefined') return;
   const root = document.documentElement;
@@ -196,12 +208,14 @@ export function applyThemeToDocument(colors: ThemeColors) {
   root.style.setProperty('--b2b-middle', colors.b2bMiddle);
   root.style.setProperty('--b2b-end', colors.b2bEnd);
 
-  if (colors.isDark) {
+  const isDarkTheme = colors.isDark ?? isColorDark(colors.siteBgStart);
+
+  if (isDarkTheme) {
     root.setAttribute('data-theme', 'dark');
     if (document.body) document.body.setAttribute('data-theme', 'dark');
     root.style.setProperty('--color-heading', colors.headingColor || '#FFFFFF');
     root.style.setProperty('--color-text', colors.textColor || '#FFFFFF');
-    root.style.setProperty('--color-muted', colors.mutedColor || '#CBD5E1');
+    root.style.setProperty('--color-muted', colors.mutedColor || '#CFE4ED');
     root.style.setProperty('--color-border', 'rgba(255, 255, 255, 0.2)');
   } else {
     root.removeAttribute('data-theme');
@@ -210,6 +224,25 @@ export function applyThemeToDocument(colors: ThemeColors) {
     root.style.setProperty('--color-text', colors.b2bEnd);
     root.style.setProperty('--color-muted', '#476773');
     root.style.setProperty('--color-border', colors.siteBgEnd);
+  }
+
+  // Explicitly update logos if present in DOM
+  const defaultLogos = document.querySelectorAll<HTMLElement>('.logo-default');
+  const darkLogos = document.querySelectorAll<HTMLElement>('.logo-dark');
+  if (isDarkTheme) {
+    defaultLogos.forEach((el) => {
+      el.style.display = 'none';
+    });
+    darkLogos.forEach((el) => {
+      el.style.display = 'block';
+    });
+  } else {
+    defaultLogos.forEach((el) => {
+      el.style.display = 'block';
+    });
+    darkLogos.forEach((el) => {
+      el.style.display = 'none';
+    });
   }
 
   root.style.setProperty('--color-primary', colors.buttonMiddle);

@@ -32,6 +32,7 @@ for (const file of codeFiles) {
 const criticalKeep = [
   'h-lens3.png',
   'logo_rocky_transparent.png',
+  'logo_rocky_white.png',
   'logo_rocky_white_text.png',
   'SF-Pro-Display-Regular',
   'SF-Pro-Display-Medium',

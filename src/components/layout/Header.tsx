@@ -51,7 +51,12 @@ export default function Header() {
             <img
               src="/assets/logo_rocky_transparent.png"
               alt="Rocky Lens Canada"
-              className="h-16 sm:h-[76px] w-auto object-contain transition-transform group-hover:scale-105"
+              className="h-16 sm:h-[76px] w-auto object-contain transition-transform group-hover:scale-105 logo-default"
+            />
+            <img
+              src="/assets/logo_rocky_white.png"
+              alt="Rocky Lens Canada"
+              className="h-16 sm:h-[76px] w-auto object-contain transition-transform group-hover:scale-105 logo-dark hidden"
             />
           </Link>
 

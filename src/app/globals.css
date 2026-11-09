@@ -149,6 +149,24 @@ body {
   color: var(--button-start) !important;
 }
 
+/* Logo Switcher for Light vs Dark/Preset themes in Menu bar */
+.logo-dark {
+  display: none !important;
+}
+.logo-default {
+  display: block !important;
+}
+
+[data-theme="dark"] .logo-default,
+.theme-dark .logo-default {
+  display: none !important;
+}
+
+[data-theme="dark"] .logo-dark,
+.theme-dark .logo-dark {
+  display: block !important;
+}
+
 /* Inside white cards and card surfaces, ensure dark text remains razor sharp */
 [data-theme="dark"] .bg-white,
 .theme-dark .bg-white,
