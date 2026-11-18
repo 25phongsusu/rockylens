@@ -791,18 +791,67 @@ const html = `<!DOCTYPE html>
     }
   
     
-    /* Home Product Cards: Rich Shadow & No Stroke */
+    /* Home Product Cards: Lean Outline Style (No Fill, Outline Border Only) */
     .product-sol-card,
     #essilor-carousel-track > div {
-      border: 0 !important;
-      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04) !important;
-      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+      background: transparent !important;
+      background-color: transparent !important;
+      border: 1.5px solid var(--color-border, rgba(0, 162, 204, 0.25)) !important;
+      box-shadow: none !important;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
     }
     .product-sol-card:hover,
     #essilor-carousel-track > div:hover {
-      border: 0 !important;
-      box-shadow: 0 20px 35px -8px rgba(0, 0, 0, 0.16), 0 10px 15px -5px rgba(0, 0, 0, 0.08) !important;
-      transform: translateY(-4px) !important;
+      background: rgba(255, 255, 255, 0.06) !important;
+      border-color: var(--button-middle, #00A2CC) !important;
+      box-shadow: 0 8px 24px -4px rgba(0, 162, 204, 0.18) !important;
+      transform: translateY(-3px) !important;
+    }
+
+    [data-theme="dark"] .product-sol-card,
+    [data-theme="dark"] #essilor-carousel-track > div,
+    .theme-dark .product-sol-card,
+    .theme-dark #essilor-carousel-track > div {
+      background: transparent !important;
+      background-color: transparent !important;
+      border: 1.5px solid rgba(255, 255, 255, 0.22) !important;
+      box-shadow: none !important;
+    }
+
+    [data-theme="dark"] .product-sol-card:hover,
+    [data-theme="dark"] #essilor-carousel-track > div:hover,
+    .theme-dark .product-sol-card:hover,
+    .theme-dark #essilor-carousel-track > div:hover {
+      background: rgba(255, 255, 255, 0.06) !important;
+      border-color: #5BCDE5 !important;
+      box-shadow: 0 8px 24px -4px rgba(91, 205, 229, 0.25) !important;
+    }
+
+    /* Essilor Card Lean Button: Outline style */
+    #essilor-carousel-track > div a {
+      background: transparent !important;
+      color: var(--button-middle, #00A2CC) !important;
+      border: 1.5px solid var(--button-middle, #00A2CC) !important;
+      box-shadow: none !important;
+      transition: all 0.25s ease !important;
+    }
+    #essilor-carousel-track > div a:hover {
+      background: var(--gradient-button, linear-gradient(110deg, #00A2CC 0%, #007A99 100%)) !important;
+      color: #FFFFFF !important;
+      border-color: transparent !important;
+      box-shadow: 0 4px 14px rgba(0, 162, 204, 0.35) !important;
+    }
+    [data-theme="dark"] #essilor-carousel-track > div a,
+    .theme-dark #essilor-carousel-track > div a {
+      color: #5BCDE5 !important;
+      border-color: #5BCDE5 !important;
+      background: transparent !important;
+    }
+    [data-theme="dark"] #essilor-carousel-track > div a:hover,
+    .theme-dark #essilor-carousel-track > div a:hover {
+      background: #5BCDE5 !important;
+      color: #003B50 !important;
+      border-color: #5BCDE5 !important;
     }
 
     /* Product Filter Tabs */
@@ -1085,7 +1134,7 @@ const html = `<!DOCTYPE html>
             class="flex gap-5 sm:gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory py-4 px-1 no-scrollbar"
           >
               <!-- Essilor Card: Rocky. BlueCut -->
-              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0">
+              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-transparent border border-[var(--color-border)] dark:border-white/20 hover:border-[var(--button-middle)] dark:hover:border-cyan-400">
                 <div>
                   <div class="rounded-2xl overflow-hidden aspect-square relative mb-4 bg-slate-100">
                     <img src="assets/uploads/solutions/trong-kinh-do-hoa-designer-chuan-mau.png" alt="Kính đơn tròng thế hệ mới trong suốt 99.8% chuẩn màu cho dân thiết kế &amp; văn phòng" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1096,16 +1145,16 @@ const html = `<!DOCTYPE html>
                   </div>
 
                   <div class="space-y-0.5">
-                    <div class="text-xl font-black text-slate-900 tracking-tight flex items-baseline gap-1">
+                    <div class="text-xl font-black text-heading tracking-tight flex items-baseline gap-1">
                       <span>Rocky.</span>
                       <span class="text-base font-medium text-primary">BlueCut</span>
                     </div>
-                    <div class="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
+                    <div class="text-[11px] font-semibold text-brand-muted uppercase tracking-wider">
                       UV420 Start Clear
                     </div>
                   </div>
 
-                  <p class="text-sm font-bold text-slate-800 leading-snug line-clamp-2 min-h-[2.5rem] mt-2 mb-4">
+                  <p class="text-sm font-semibold text-heading/90 leading-snug line-clamp-2 min-h-[2.5rem] mt-2 mb-4">
                     Kính đơn tròng thế hệ mới trong suốt 99.8% chuẩn màu cho dân thiết kế &amp; văn phòng
                   </p>
                 </div>
@@ -1115,7 +1164,7 @@ const html = `<!DOCTYPE html>
                 </a>
               </div>
               <!-- Essilor Card: Rocky. Trendy -->
-              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0">
+              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-transparent border border-[var(--color-border)] dark:border-white/20 hover:border-[var(--button-middle)] dark:hover:border-cyan-400">
                 <div>
                   <div class="rounded-2xl overflow-hidden aspect-square relative mb-4 bg-slate-100">
                     <img src="assets/uploads/solutions/trong-kinh-van-phong-chong-asx-doi-mau.png" alt="Người bạn đồng hành tốt nhất lọc ánh sáng xanh và đổi màu râm tức thì ra nắng" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1126,16 +1175,16 @@ const html = `<!DOCTYPE html>
                   </div>
 
                   <div class="space-y-0.5">
-                    <div class="text-xl font-black text-slate-900 tracking-tight flex items-baseline gap-1">
+                    <div class="text-xl font-black text-heading tracking-tight flex items-baseline gap-1">
                       <span>Rocky.</span>
                       <span class="text-base font-medium text-primary">Trendy</span>
                     </div>
-                    <div class="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
+                    <div class="text-[11px] font-semibold text-brand-muted uppercase tracking-wider">
                       Smart Photochromic
                     </div>
                   </div>
 
-                  <p class="text-sm font-bold text-slate-800 leading-snug line-clamp-2 min-h-[2.5rem] mt-2 mb-4">
+                  <p class="text-sm font-semibold text-heading/90 leading-snug line-clamp-2 min-h-[2.5rem] mt-2 mb-4">
                     Người bạn đồng hành tốt nhất lọc ánh sáng xanh và đổi màu râm tức thì ra nắng
                   </p>
                 </div>
@@ -1145,7 +1194,7 @@ const html = `<!DOCTYPE html>
                 </a>
               </div>
               <!-- Essilor Card: Rocky. DriveShield -->
-              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0">
+              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-transparent border border-[var(--color-border)] dark:border-white/20 hover:border-[var(--button-middle)] dark:hover:border-cyan-400">
                 <div>
                   <div class="rounded-2xl overflow-hidden aspect-square relative mb-4 bg-slate-100">
                     <img src="assets/uploads/solutions/trong-kinh-lai-xe-ban-dem-driveshield.png" alt="Sắc nét tức thì ngay cả khi di chuyển, chống chói đèn pha LED và trượt nước mưa" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1156,16 +1205,16 @@ const html = `<!DOCTYPE html>
                   </div>
 
                   <div class="space-y-0.5">
-                    <div class="text-xl font-black text-slate-900 tracking-tight flex items-baseline gap-1">
+                    <div class="text-xl font-black text-heading tracking-tight flex items-baseline gap-1">
                       <span>Rocky.</span>
                       <span class="text-base font-medium text-primary">DriveShield</span>
                     </div>
-                    <div class="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
+                    <div class="text-[11px] font-semibold text-brand-muted uppercase tracking-wider">
                       Ruby AR Night Vision
                     </div>
                   </div>
 
-                  <p class="text-sm font-bold text-slate-800 leading-snug line-clamp-2 min-h-[2.5rem] mt-2 mb-4">
+                  <p class="text-sm font-semibold text-heading/90 leading-snug line-clamp-2 min-h-[2.5rem] mt-2 mb-4">
                     Sắc nét tức thì ngay cả khi di chuyển, chống chói đèn pha LED và trượt nước mưa
                   </p>
                 </div>
@@ -1175,7 +1224,7 @@ const html = `<!DOCTYPE html>
                 </a>
               </div>
               <!-- Essilor Card: CanRx. Freeform -->
-              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0">
+              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-transparent border border-[var(--color-border)] dark:border-white/20 hover:border-[var(--button-middle)] dark:hover:border-cyan-400">
                 <div>
                   <div class="rounded-2xl overflow-hidden aspect-square relative mb-4 bg-slate-100">
                     <img src="assets/uploads/solutions/trong-kinh-da-trong-xa-trung-gan.png" alt="Cảm giác thoải mái cho mắt cả ngày dài, nhìn rõ liền mạch mọi cự ly Xa - Gần" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1186,16 +1235,16 @@ const html = `<!DOCTYPE html>
                   </div>
 
                   <div class="space-y-0.5">
-                    <div class="text-xl font-black text-slate-900 tracking-tight flex items-baseline gap-1">
+                    <div class="text-xl font-black text-heading tracking-tight flex items-baseline gap-1">
                       <span>CanRx.</span>
                       <span class="text-base font-medium text-primary">Freeform</span>
                     </div>
-                    <div class="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
+                    <div class="text-[11px] font-semibold text-brand-muted uppercase tracking-wider">
                       Progressive HD Series
                     </div>
                   </div>
 
-                  <p class="text-sm font-bold text-slate-800 leading-snug line-clamp-2 min-h-[2.5rem] mt-2 mb-4">
+                  <p class="text-sm font-semibold text-heading/90 leading-snug line-clamp-2 min-h-[2.5rem] mt-2 mb-4">
                     Cảm giác thoải mái cho mắt cả ngày dài, nhìn rõ liền mạch mọi cự ly Xa - Gần
                   </p>
                 </div>
@@ -1205,7 +1254,7 @@ const html = `<!DOCTYPE html>
                 </a>
               </div>
               <!-- Essilor Card: Defocus. MyoControl -->
-              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0">
+              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-transparent border border-[var(--color-border)] dark:border-white/20 hover:border-[var(--button-middle)] dark:hover:border-cyan-400">
                 <div>
                   <div class="rounded-2xl overflow-hidden aspect-square relative mb-4 bg-slate-100">
                     <img src="assets/uploads/solutions/trong-kinh-kiem-soat-can-thi-tre-em.png" alt="Giải pháp khoa học tiên tiến giúp kiểm soát và làm chậm tiến triển độ cận ở trẻ em" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1216,16 +1265,16 @@ const html = `<!DOCTYPE html>
                   </div>
 
                   <div class="space-y-0.5">
-                    <div class="text-xl font-black text-slate-900 tracking-tight flex items-baseline gap-1">
+                    <div class="text-xl font-black text-heading tracking-tight flex items-baseline gap-1">
                       <span>Defocus.</span>
                       <span class="text-base font-medium text-primary">MyoControl</span>
                     </div>
-                    <div class="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
+                    <div class="text-[11px] font-semibold text-brand-muted uppercase tracking-wider">
                       Kids DIMS HD
                     </div>
                   </div>
 
-                  <p class="text-sm font-bold text-slate-800 leading-snug line-clamp-2 min-h-[2.5rem] mt-2 mb-4">
+                  <p class="text-sm font-semibold text-heading/90 leading-snug line-clamp-2 min-h-[2.5rem] mt-2 mb-4">
                     Giải pháp khoa học tiên tiến giúp kiểm soát và làm chậm tiến triển độ cận ở trẻ em
                   </p>
                 </div>
@@ -1235,7 +1284,7 @@ const html = `<!DOCTYPE html>
                 </a>
               </div>
               <!-- Essilor Card: Rocky. Chameleon -->
-              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0">
+              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-transparent border border-[var(--color-border)] dark:border-white/20 hover:border-[var(--button-middle)] dark:hover:border-cyan-400">
                 <div>
                   <div class="rounded-2xl overflow-hidden aspect-square relative mb-4 bg-slate-100">
                     <img src="assets/uploads/solutions/trong-kinh-doi-mau-thoi-trang-trendy.png" alt="Biến chiếc kính cận thành kính râm sành điệu với bộ sưu tập 7 sắc màu cá tính" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1246,16 +1295,16 @@ const html = `<!DOCTYPE html>
                   </div>
 
                   <div class="space-y-0.5">
-                    <div class="text-xl font-black text-slate-900 tracking-tight flex items-baseline gap-1">
+                    <div class="text-xl font-black text-heading tracking-tight flex items-baseline gap-1">
                       <span>Rocky.</span>
                       <span class="text-base font-medium text-primary">Chameleon</span>
                     </div>
-                    <div class="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
+                    <div class="text-[11px] font-semibold text-brand-muted uppercase tracking-wider">
                       Trendy 7 Colors
                     </div>
                   </div>
 
-                  <p class="text-sm font-bold text-slate-800 leading-snug line-clamp-2 min-h-[2.5rem] mt-2 mb-4">
+                  <p class="text-sm font-semibold text-heading/90 leading-snug line-clamp-2 min-h-[2.5rem] mt-2 mb-4">
                     Biến chiếc kính cận thành kính râm sành điệu với bộ sưu tập 7 sắc màu cá tính
                   </p>
                 </div>
@@ -1265,7 +1314,7 @@ const html = `<!DOCTYPE html>
                 </a>
               </div>
               <!-- Essilor Card: Rocky. MR-8 -->
-              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0">
+              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-transparent border border-[var(--color-border)] dark:border-white/20 hover:border-[var(--button-middle)] dark:hover:border-cyan-400">
                 <div>
                   <div class="rounded-2xl overflow-hidden aspect-square relative mb-4 bg-slate-100">
                     <img src="assets/uploads/solutions/trong-kinh-gong-khoan-chong-vo-mr8.png" alt="Phôi siêu dẻo dai chịu lực uốn đỉnh cao, bắt ốc chắc chắn cho gọng không viền" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1276,16 +1325,16 @@ const html = `<!DOCTYPE html>
                   </div>
 
                   <div class="space-y-0.5">
-                    <div class="text-xl font-black text-slate-900 tracking-tight flex items-baseline gap-1">
+                    <div class="text-xl font-black text-heading tracking-tight flex items-baseline gap-1">
                       <span>Rocky.</span>
                       <span class="text-base font-medium text-primary">MR-8</span>
                     </div>
-                    <div class="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
+                    <div class="text-[11px] font-semibold text-brand-muted uppercase tracking-wider">
                       Tough Rimless Drill
                     </div>
                   </div>
 
-                  <p class="text-sm font-bold text-slate-800 leading-snug line-clamp-2 min-h-[2.5rem] mt-2 mb-4">
+                  <p class="text-sm font-semibold text-heading/90 leading-snug line-clamp-2 min-h-[2.5rem] mt-2 mb-4">
                     Phôi siêu dẻo dai chịu lực uốn đỉnh cao, bắt ốc chắc chắn cho gọng không viền
                   </p>
                 </div>
@@ -1295,7 +1344,7 @@ const html = `<!DOCTYPE html>
                 </a>
               </div>
               <!-- Essilor Card: Rocky. UltraThin -->
-              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0">
+              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-transparent border border-[var(--color-border)] dark:border-white/20 hover:border-[var(--button-middle)] dark:hover:border-cyan-400">
                 <div>
                   <div class="rounded-2xl overflow-hidden aspect-square relative mb-4 bg-slate-100">
                     <img src="assets/uploads/solutions/trong-kinh-mong-chiet-suat-cao-167-174.png" alt="Thẩm mỹ mỏng nhẹ tối ưu, triệt tiêu độ dày đáy chai cho mắt có độ cận viễn nặng" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1306,16 +1355,16 @@ const html = `<!DOCTYPE html>
                   </div>
 
                   <div class="space-y-0.5">
-                    <div class="text-xl font-black text-slate-900 tracking-tight flex items-baseline gap-1">
+                    <div class="text-xl font-black text-heading tracking-tight flex items-baseline gap-1">
                       <span>Rocky.</span>
                       <span class="text-base font-medium text-primary">UltraThin</span>
                     </div>
-                    <div class="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
+                    <div class="text-[11px] font-semibold text-brand-muted uppercase tracking-wider">
                       1.74 High Index
                     </div>
                   </div>
 
-                  <p class="text-sm font-bold text-slate-800 leading-snug line-clamp-2 min-h-[2.5rem] mt-2 mb-4">
+                  <p class="text-sm font-semibold text-heading/90 leading-snug line-clamp-2 min-h-[2.5rem] mt-2 mb-4">
                     Thẩm mỹ mỏng nhẹ tối ưu, triệt tiêu độ dày đáy chai cho mắt có độ cận viễn nặng
                   </p>
                 </div>
@@ -1325,7 +1374,7 @@ const html = `<!DOCTYPE html>
                 </a>
               </div>
               <!-- Essilor Card: Rocky. MaxShield -->
-              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0">
+              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-transparent border border-[var(--color-border)] dark:border-white/20 hover:border-[var(--button-middle)] dark:hover:border-cyan-400">
                 <div>
                   <div class="rounded-2xl overflow-hidden aspect-square relative mb-4 bg-slate-100">
                     <img src="assets/uploads/solutions/trong-kinh-ngoai-troi-chong-tia-uv.png" alt="Bảo vệ võng mạc tối đa, ngăn chặn 100% tia cực tím độc hại UV400 và UV420 ngoài trời" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1336,16 +1385,16 @@ const html = `<!DOCTYPE html>
                   </div>
 
                   <div class="space-y-0.5">
-                    <div class="text-xl font-black text-slate-900 tracking-tight flex items-baseline gap-1">
+                    <div class="text-xl font-black text-heading tracking-tight flex items-baseline gap-1">
                       <span>Rocky.</span>
                       <span class="text-base font-medium text-primary">MaxShield</span>
                     </div>
-                    <div class="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
+                    <div class="text-[11px] font-semibold text-brand-muted uppercase tracking-wider">
                       UV420 Solar Guard
                     </div>
                   </div>
 
-                  <p class="text-sm font-bold text-slate-800 leading-snug line-clamp-2 min-h-[2.5rem] mt-2 mb-4">
+                  <p class="text-sm font-semibold text-heading/90 leading-snug line-clamp-2 min-h-[2.5rem] mt-2 mb-4">
                     Bảo vệ võng mạc tối đa, ngăn chặn 100% tia cực tím độc hại UV400 và UV420 ngoài trời
                   </p>
                 </div>
@@ -1379,7 +1428,7 @@ const html = `<!DOCTYPE html>
         <div class="max-w-[1240px] mx-auto">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-2" id="product-cards-grid">
             <!-- Card 1: Dành cho thiết kế đồ họa & ngồi máy tính (Trong suốt không đổi màu) -->
-            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0" data-group="work">
+            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-transparent border border-[var(--color-border)] dark:border-white/20 hover:border-[var(--button-middle)] dark:hover:border-cyan-400" data-group="work">
               <div class="space-y-3">
                 <div class="h-48 sm:h-54 w-full rounded-2xl overflow-hidden bg-slate-900/10 relative">
                   <img loading="lazy" decoding="async" src="assets/uploads/solutions/trong-kinh-do-hoa-designer-chuan-mau.png" alt="Tròng kính thiết kế đồ họa designer chuẩn màu 100% không đổi màu Rocky BlueCut UV420" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1397,7 +1446,7 @@ const html = `<!DOCTYPE html>
             </div>
 
             <!-- Card 2: Dành cho dân văn phòng & làm việc máy tính (Lọc ASX + Đổi màu) -->
-            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0" data-group="work">
+            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-transparent border border-[var(--color-border)] dark:border-white/20 hover:border-[var(--button-middle)] dark:hover:border-cyan-400" data-group="work">
               <div class="space-y-3">
                 <div class="h-48 sm:h-54 w-full rounded-2xl overflow-hidden bg-slate-900/10 relative">
                   <img loading="lazy" decoding="async" src="assets/uploads/solutions/trong-kinh-van-phong-chong-asx-doi-mau.png" alt="Tròng kính dân văn phòng lọc ánh sáng xanh máy tính và tự đổi màu khi ra nắng Rocky Trendy Smart BlueCut Photo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1415,7 +1464,7 @@ const html = `<!DOCTYPE html>
             </div>
 
             <!-- Card 3: Dành cho người hay hoạt động ngoài trời (Chống UV400 / UV420 tối đa) -->
-            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0" data-group="outdoor">
+            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-transparent border border-[var(--color-border)] dark:border-white/20 hover:border-[var(--button-middle)] dark:hover:border-cyan-400" data-group="outdoor">
               <div class="space-y-3">
                 <div class="h-48 sm:h-54 w-full rounded-2xl overflow-hidden bg-slate-900/10 relative">
                   <img loading="lazy" decoding="async" src="assets/uploads/solutions/trong-kinh-ngoai-troi-chong-tia-uv.png" alt="Tròng kính hoạt động ngoài trời chống tia cực tím UV400 UV420 tối đa Rocky MaxShield Protect" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1433,7 +1482,7 @@ const html = `<!DOCTYPE html>
             </div>
 
             <!-- Card 4: Dành cho tài xế & người hay lái xe ban đêm (Chống chói đèn pha LED) -->
-            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0" data-group="outdoor">
+            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-transparent border border-[var(--color-border)] dark:border-white/20 hover:border-[var(--button-middle)] dark:hover:border-cyan-400" data-group="outdoor">
               <div class="space-y-3">
                 <div class="h-48 sm:h-54 w-full rounded-2xl overflow-hidden bg-slate-900/10 relative">
                   <img loading="lazy" decoding="async" src="assets/uploads/solutions/trong-kinh-lai-xe-ban-dem-driveshield.png" alt="Tròng kính lái xe ban đêm chống chói đèn pha LED và trượt nước mưa Rocky DriveShield Ruby AR" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1451,7 +1500,7 @@ const html = `<!DOCTYPE html>
             </div>
 
             <!-- Card 5: Dành cho người lớn tuổi & lão thị (Đa tròng nhìn Xa - Trung - Gần) -->
-            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0" data-group="work">
+            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-transparent border border-[var(--color-border)] dark:border-white/20 hover:border-[var(--button-middle)] dark:hover:border-cyan-400" data-group="work">
               <div class="space-y-3">
                 <div class="h-48 sm:h-54 w-full rounded-2xl overflow-hidden bg-slate-900/10 relative">
                   <img loading="lazy" decoding="async" src="assets/uploads/solutions/trong-kinh-da-trong-xa-trung-gan.png" alt="Tròng kính đa tròng kỹ thuật số nhìn rõ 3 cự ly Xa Trung Gần liền mạch CanRx Freeform HD Progressive" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1469,7 +1518,7 @@ const html = `<!DOCTYPE html>
             </div>
 
             <!-- Card 6: Dành cho trẻ em & học sinh cận thị (Kiểm soát tăng độ cận) -->
-            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0" data-group="special">
+            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-transparent border border-[var(--color-border)] dark:border-white/20 hover:border-[var(--button-middle)] dark:hover:border-cyan-400" data-group="special">
               <div class="space-y-3">
                 <div class="h-48 sm:h-54 w-full rounded-2xl overflow-hidden bg-slate-900/10 relative">
                   <img loading="lazy" decoding="async" src="assets/uploads/solutions/trong-kinh-kiem-soat-can-thi-tre-em.png" alt="Tròng kính kiểm soát tiến triển độ cận thị cho trẻ em học sinh Defocus MyoControl Kids HD" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1487,7 +1536,7 @@ const html = `<!DOCTYPE html>
             </div>
 
             <!-- Card 7: Dành cho tín đồ thời trang (Kính cận đổi màu đa sắc cá tính) -->
-            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0" data-group="outdoor">
+            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-transparent border border-[var(--color-border)] dark:border-white/20 hover:border-[var(--button-middle)] dark:hover:border-cyan-400" data-group="outdoor">
               <div class="space-y-3">
                 <div class="h-48 sm:h-54 w-full rounded-2xl overflow-hidden bg-slate-900/10 relative">
                   <img loading="lazy" decoding="async" src="assets/uploads/solutions/trong-kinh-doi-mau-thoi-trang-trendy.png" alt="Tròng kính cận đổi màu thời trang 7 sắc màu cá tính nhạy sáng ngoài trời Rocky Trendy Style Photochromic" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1505,7 +1554,7 @@ const html = `<!DOCTYPE html>
             </div>
 
             <!-- Card 8: Dành cho người đeo gọng khoan, không viền (Siêu dai MR-8 chống vỡ) -->
-            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0" data-group="special">
+            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-transparent border border-[var(--color-border)] dark:border-white/20 hover:border-[var(--button-middle)] dark:hover:border-cyan-400" data-group="special">
               <div class="space-y-3">
                 <div class="h-48 sm:h-54 w-full rounded-2xl overflow-hidden bg-slate-900/10 relative">
                   <img loading="lazy" decoding="async" src="assets/uploads/solutions/trong-kinh-gong-khoan-chong-vo-mr8.png" alt="Tròng kính chuyên gọng khoan bắt ốc không viền phôi Mitsui MR-8 dẻo dai chống mẻ vỡ" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1523,7 +1572,7 @@ const html = `<!DOCTYPE html>
             </div>
 
             <!-- Card 9: Độ Cận Viễn Nặng (Tròng Mỏng Chiết Suất 1.67 - 1.74) -->
-            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0" data-group="special">
+            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-transparent border border-[var(--color-border)] dark:border-white/20 hover:border-[var(--button-middle)] dark:hover:border-cyan-400" data-group="special">
               <div class="space-y-3">
                 <div class="h-48 sm:h-54 w-full rounded-2xl overflow-hidden bg-slate-900/10 relative">
                   <img loading="lazy" decoding="async" src="assets/uploads/solutions/trong-kinh-mong-chiet-suat-cao-167-174.png" alt="Tròng kính mỏng chiết suất cao 1.67 và 1.74 triệt tiêu mép dày độ cận viễn nặng Rocky Ultra Thin" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">

@@ -127,10 +127,19 @@ def main():
     print("\n[2/5] Generating Master Static Landing Page (index.html)...")
     run_cmd("node scripts/build-unified-liquid-master.js")
 
+    is_quick = "--quick" in sys.argv or "--fast" in sys.argv
+
     # 3. Next.js Static Export
-    print("\n[3/5] Running Next.js static build (output -> out/)...")
-    build_cmd = "npx.cmd next build" if sys.platform == "win32" else "npx next build"
-    run_cmd(build_cmd)
+    if is_quick:
+        print("\n[3/5] [QUICK MODE] Bỏ qua build 53 trang tĩnh Next.js. Sử dụng artifacts có sẵn...")
+        if not os.path.exists(OUT_DIR):
+            print("  [WARN] Thư mục out/ chưa tồn tại. Chạy build 1 lần để khởi tạo...")
+            build_cmd = "npx.cmd next build" if sys.platform == "win32" else "npx next build"
+            run_cmd(build_cmd)
+    else:
+        print("\n[3/5] Running Next.js static build (output -> out/)...")
+        build_cmd = "npx.cmd next build" if sys.platform == "win32" else "npx next build"
+        run_cmd(build_cmd)
 
     # 4. Sync out/ & static assets to Rocky-Deploy
     print("\n[4/5] Copying compiled artifacts to Rocky-Deploy...")

@@ -334,7 +334,7 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
               return (
                 <div
                   key={product.id}
-                  className="group flex flex-col justify-between h-full bg-white dark:bg-slate-800/90 rounded-2xl p-4 sm:p-5 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 border-0 overflow-hidden"
+                  className="group flex flex-col justify-between h-full bg-transparent rounded-2xl p-4 sm:p-5 border-1.5 border-[var(--color-border)] dark:border-white/20 hover:border-[var(--button-middle)] dark:hover:border-cyan-400 transition-all duration-300 hover:-translate-y-1.5 overflow-hidden"
                 >
                   <div>
                     {/* Thumbnail tròng kính sạch sẽ, không tag, không stroke */}

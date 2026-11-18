@@ -380,7 +380,7 @@ export default function ProductCategories() {
               {essilorShowcaseProducts.map((p, idx) => (
                 <div
                   key={idx}
-                  className="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0"
+                  className="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-transparent border border-[var(--color-border)] dark:border-white/20 hover:border-[var(--button-middle)] dark:hover:border-cyan-400"
                 >
                   {/* Top Lifestyle Photo */}
                   <div>
@@ -418,7 +418,7 @@ export default function ProductCategories() {
                   {/* Full-width Solid Pill Button */}
                   <Link
                     href={p.link}
-                    className="w-full py-2.5 px-6 rounded-full font-bold text-sm text-white bg-[var(--button-middle)] hover:bg-[var(--button-end)] transition-all text-center flex items-center justify-center shadow-xs group-hover:shadow-md"
+                    className="w-full py-2.5 px-6 rounded-full font-bold text-sm border-1.5 border-[var(--button-middle)] dark:border-cyan-400 text-[var(--button-middle)] dark:text-cyan-300 bg-transparent hover:bg-[var(--button-middle)] hover:text-white dark:hover:bg-cyan-400 dark:hover:text-slate-900 transition-all text-center flex items-center justify-center"
                   >
                     <span>Khám phá ngay</span>
                   </Link>
@@ -451,7 +451,7 @@ export default function ProductCategories() {
                 {filtered.map((item) => (
                   <div
                     key={item.title}
-                    className="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0"
+                    className="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-transparent border border-[var(--color-border)] dark:border-white/20 hover:border-[var(--button-middle)] dark:hover:border-cyan-400"
                   >
                     <div className="space-y-3">
                       {/* Hình ảnh */}

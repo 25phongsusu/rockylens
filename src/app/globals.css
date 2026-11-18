@@ -725,18 +725,67 @@ body {
 }
 
 
-    /* Home Product Cards: Rich Shadow & No Stroke */
+    /* Home Product Cards: Lean Outline Style (No Fill, Outline Border Only) */
     .product-sol-card,
     #essilor-carousel-track > div {
-      border: 0 !important;
-      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04) !important;
-      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+      background: transparent !important;
+      background-color: transparent !important;
+      border: 1.5px solid var(--color-border, rgba(0, 162, 204, 0.25)) !important;
+      box-shadow: none !important;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
     }
     .product-sol-card:hover,
     #essilor-carousel-track > div:hover {
-      border: 0 !important;
-      box-shadow: 0 20px 35px -8px rgba(0, 0, 0, 0.16), 0 10px 15px -5px rgba(0, 0, 0, 0.08) !important;
-      transform: translateY(-4px) !important;
+      background: rgba(255, 255, 255, 0.06) !important;
+      border-color: var(--button-middle, #00A2CC) !important;
+      box-shadow: 0 8px 24px -4px rgba(0, 162, 204, 0.18) !important;
+      transform: translateY(-3px) !important;
+    }
+
+    [data-theme="dark"] .product-sol-card,
+    [data-theme="dark"] #essilor-carousel-track > div,
+    .theme-dark .product-sol-card,
+    .theme-dark #essilor-carousel-track > div {
+      background: transparent !important;
+      background-color: transparent !important;
+      border: 1.5px solid rgba(255, 255, 255, 0.22) !important;
+      box-shadow: none !important;
+    }
+
+    [data-theme="dark"] .product-sol-card:hover,
+    [data-theme="dark"] #essilor-carousel-track > div:hover,
+    .theme-dark .product-sol-card:hover,
+    .theme-dark #essilor-carousel-track > div:hover {
+      background: rgba(255, 255, 255, 0.06) !important;
+      border-color: #5BCDE5 !important;
+      box-shadow: 0 8px 24px -4px rgba(91, 205, 229, 0.25) !important;
+    }
+
+    /* Essilor Card Lean Button: Outline style */
+    #essilor-carousel-track > div a {
+      background: transparent !important;
+      color: var(--button-middle, #00A2CC) !important;
+      border: 1.5px solid var(--button-middle, #00A2CC) !important;
+      box-shadow: none !important;
+      transition: all 0.25s ease !important;
+    }
+    #essilor-carousel-track > div a:hover {
+      background: var(--gradient-button, linear-gradient(110deg, #00A2CC 0%, #007A99 100%)) !important;
+      color: #FFFFFF !important;
+      border-color: transparent !important;
+      box-shadow: 0 4px 14px rgba(0, 162, 204, 0.35) !important;
+    }
+    [data-theme="dark"] #essilor-carousel-track > div a,
+    .theme-dark #essilor-carousel-track > div a {
+      color: #5BCDE5 !important;
+      border-color: #5BCDE5 !important;
+      background: transparent !important;
+    }
+    [data-theme="dark"] #essilor-carousel-track > div a:hover,
+    .theme-dark #essilor-carousel-track > div a:hover {
+      background: #5BCDE5 !important;
+      color: #003B50 !important;
+      border-color: #5BCDE5 !important;
     }
 
     /* Product Filter Tabs */
