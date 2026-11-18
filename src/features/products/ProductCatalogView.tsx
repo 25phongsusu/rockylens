@@ -334,22 +334,22 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
               return (
                 <div
                   key={product.id}
-                  className="group flex flex-col justify-between h-full bg-transparent rounded-2xl p-4 sm:p-5 border-1.5 border-[var(--color-border)] dark:border-white/20 hover:border-[var(--button-middle)] dark:hover:border-cyan-400 transition-all duration-300 hover:-translate-y-1.5 overflow-hidden"
+                  className="group flex flex-col justify-between h-full bg-transparent border-0 p-0 shadow-none transition-all duration-300 hover:-translate-y-1.5"
                 >
                   <div>
-                    {/* Thumbnail tròng kính sạch sẽ, không tag, không stroke */}
-                    <div className="aspect-[4/3] w-full rounded-xl overflow-hidden bg-slate-50 dark:bg-slate-900/40 relative mb-4 flex items-center justify-center p-2 border-0">
+                    {/* Hình ảnh bo góc có shadow riêng biệt, KHÔNG có khung trắng */}
+                    <div className="aspect-[4/3] w-full rounded-2xl overflow-hidden relative shadow-md group-hover:shadow-2xl transition-all duration-500 bg-slate-900/10">
                       <Image
                         src={product.featuredImage || product.images[0] || '/uploads/solutions/trong-kinh-do-hoa-designer-chuan-mau.png'}
                         alt={needTitle}
                         fill
-                        className="object-contain p-2 group-hover:scale-105 transition-transform duration-500"
+                        className="object-cover group-hover:scale-105 transition-transform duration-500"
                         sizes="(max-width: 768px) 100vw, 380px"
                       />
                     </div>
 
                     {/* Chỉ giữ đúng tên: Chữ in hoa, màu xanh giống button, font đậm */}
-                    <h3 className="text-sm sm:text-base font-extrabold uppercase tracking-tight leading-snug line-clamp-2 min-h-[2.75rem] flex items-start text-primary dark:text-cyan-300 group-hover:text-[var(--button-end)] transition-colors">
+                    <h3 className="text-base sm:text-lg font-extrabold uppercase tracking-tight leading-snug line-clamp-2 min-h-[2.75rem] flex items-start text-primary dark:text-cyan-300 group-hover:text-[var(--button-end)] transition-colors mt-3">
                       <Link href={`/trong-kinh/${product.slug}/`}>
                         {needTitle}
                       </Link>
@@ -357,10 +357,10 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
                   </div>
 
                   {/* Nút Xem Giá: Chữ màu xanh, hover màu trắng */}
-                  <div className="pt-3 mt-auto flex items-center">
+                  <div className="pt-2 mt-auto flex items-center">
                     <Link
                       href={`/trong-kinh/${product.slug}/`}
-                      className="card-price-btn text-xs sm:text-sm"
+                      className="card-price-btn -ml-0.5 text-xs sm:text-sm"
                     >
                       <span>Xem Giá</span>
                       <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-0.5" />

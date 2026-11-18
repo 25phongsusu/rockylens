@@ -726,7 +726,27 @@ body {
 
 
     /* Home Product Cards: Lean Outline Style (No Fill, Outline Border Only) */
-    .product-sol-card,
+    /* Product Solution Cards (Theo nhu cầu): Không khung trắng, chỉ hình ảnh shadow */
+    .product-sol-card {
+      background: transparent !important;
+      background-color: transparent !important;
+      border: 0 !important;
+      box-shadow: none !important;
+      padding: 0 !important;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    }
+    .product-sol-card .h-48,
+    .product-sol-card .aspect-\[4\/3\] {
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05) !important;
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    }
+    .product-sol-card:hover .h-48,
+    .product-sol-card:hover .aspect-\[4\/3\] {
+      box-shadow: 0 20px 35px -8px rgba(0, 0, 0, 0.2), 0 10px 15px -5px rgba(0, 0, 0, 0.08) !important;
+      transform: translateY(-4px) !important;
+    }
+
+    /* Essilor Carousel Cards: Lean Outline Style */
     #essilor-carousel-track > div {
       background: transparent !important;
       background-color: transparent !important;
@@ -734,7 +754,6 @@ body {
       box-shadow: none !important;
       transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
     }
-    .product-sol-card:hover,
     #essilor-carousel-track > div:hover {
       background: rgba(255, 255, 255, 0.06) !important;
       border-color: var(--button-middle, #00A2CC) !important;

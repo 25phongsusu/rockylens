@@ -451,22 +451,22 @@ export default function ProductCategories() {
                 {filtered.map((item) => (
                   <div
                     key={item.title}
-                    className="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-transparent border border-[var(--color-border)] dark:border-white/20 hover:border-[var(--button-middle)] dark:hover:border-cyan-400"
+                    className="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1.5 bg-transparent border-0 p-0 shadow-none"
                   >
-                    <div className="space-y-3">
-                      {/* Hình ảnh */}
-                      <div className={`h-48 sm:h-54 w-full rounded-2xl overflow-hidden relative ${item.imageFit === 'cover' ? 'bg-slate-900/10' : 'bg-white/10 backdrop-blur-xs p-2'}`}>
+                    <div>
+                      {/* Hình ảnh bo góc có shadow riêng biệt, KHÔNG có khung trắng */}
+                      <div className="h-48 sm:h-54 w-full rounded-2xl overflow-hidden relative shadow-md group-hover:shadow-2xl transition-all duration-500 bg-slate-900/10">
                         <img
                           src={item.image}
                           alt={(item as { alt?: string }).alt || item.title}
                           loading="lazy"
                           decoding="async"
-                          className={`w-full h-full group-hover:scale-105 transition-transform duration-500 ${item.imageFit === 'cover' ? 'object-cover' : 'object-contain'}`}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         />
                       </div>
 
                       {/* Text */}
-                      <h3 className="text-base sm:text-lg font-bold text-heading group-hover:text-primary transition-colors leading-snug line-clamp-2 min-h-[3rem] flex items-start">
+                      <h3 className="text-base sm:text-lg font-bold text-heading group-hover:text-primary transition-colors leading-snug line-clamp-2 min-h-[3rem] flex items-start mt-3">
                         <Link href={item.link}>
                           {item.title}
                         </Link>
@@ -477,7 +477,7 @@ export default function ProductCategories() {
                     <div className="pt-2 mt-auto flex items-center">
                       <Link
                         href={item.link}
-                        className="card-price-btn -ml-1 text-xs sm:text-sm"
+                        className="card-price-btn -ml-0.5 text-xs sm:text-sm"
                       >
                         <span>Xem Giá</span>
                         <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-0.5" />
