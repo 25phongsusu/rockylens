@@ -3,24 +3,8 @@
     "badge": "Thương Hiệu Tròng Kính Canada Opticians",
     "headlinePrefix": "Rocky Lens -",
     "headlineHighlight": "trọn vẹn tầm nhìn, chuẩn sắc nét Canada",
-    "subheadline": "Rocky Lens kế thừa chuẩn mực quang học Canada Opticians, kết hợp công nghệ vật liệu tiên tiến và triết lý 'Sáng mắt sáng lòng'. Với hệ sinh thái sản phẩm toàn diện — từ tròng kính cận, đổi màu thông minh, chống ánh sáng xanh đến kính lái xe và kiểm soát cận thị — chúng tôi mang đến tầm nhìn sắc nét, an tâm và thoải mái nhất cho người tiêu dùng tại hơn 500+ đại lý mắt kính uy tín trên toàn quốc.",
-    "specCards": [
-      {
-        "title": "MITSUI MONOMER MR™",
-        "highlight": "Trong Suốt 99.8%",
-        "sub": "Truyền quang cao, quang sai cực thấp"
-      },
-      {
-        "title": "NANO SAPPHIRE 9H",
-        "highlight": "Trượt Nước >115°",
-        "sub": "Kháng trầy xước, không đọng nước mưa"
-      },
-      {
-        "title": "CANRX FREEFORM 4K",
-        "highlight": "Sai Số < 0.01 Diop",
-        "sub": "Gia công kỹ thuật số cá nhân hóa"
-      }
-    ],
+    "subheadline": "",
+    "specCards": [],
     "ctaPrimary": {
       "text": "Tìm Tròng Kính Phù Hợp Với Bạn",
       "link": "#trong-kinh"
@@ -30,11 +14,7 @@
       "link": "/lien-he/"
     },
     "heroImage": "/assets/h-lens3.png",
-    "trustIndicators": [
-      "Ontario Opticians No. 6181",
-      "ISO 13485:2016 Medical Quality",
-      "Bảo hành điện tử 1 đổi 1 24T"
-    ]
+    "trustIndicators": []
   },
   "philosophy": {
     "tag": "TRIẾT LÝ SẢN PHẨM",

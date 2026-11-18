@@ -725,6 +725,20 @@ body {
 }
 
 
+    /* Home Product Cards: Rich Shadow & No Stroke */
+    .product-sol-card,
+    #essilor-carousel-track > div {
+      border: 0 !important;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04) !important;
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    }
+    .product-sol-card:hover,
+    #essilor-carousel-track > div:hover {
+      border: 0 !important;
+      box-shadow: 0 20px 35px -8px rgba(0, 0, 0, 0.16), 0 10px 15px -5px rgba(0, 0, 0, 0.08) !important;
+      transform: translateY(-4px) !important;
+    }
+
     /* Product Filter Tabs */
     .product-filter-btn {
       display: inline-flex;

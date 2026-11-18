@@ -241,6 +241,43 @@ export default function AboutUsPage() {
       </section>
 
       {/* =========================================================
+          2.5. CHUẨN MỰC QUANG HỌC & CÔNG NGHỆ VẬT LIỆU (Canada Heritage)
+          ========================================================= */}
+      <section className="py-12 sm:py-16 bg-slate-50/60 border-t border-slate-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+          <div className="max-w-3xl space-y-3">
+            <span className="inline-block text-xs font-bold uppercase tracking-wider text-primary bg-cyan-50 px-3 py-1 rounded-full border border-cyan-200">
+              Công Nghệ Vật Liệu &amp; Hệ Sinh Thái Toàn Diện
+            </span>
+            <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-medium">
+              Rocky Lens kế thừa chuẩn mực quang học Canada Opticians, kết hợp công nghệ vật liệu tiên tiến và triết lý &apos;Sáng mắt sáng lòng&apos;. Với hệ sinh thái sản phẩm toàn diện — từ tròng kính cận, đổi màu thông minh, chống ánh sáng xanh đến kính lái xe và kiểm soát cận thị — chúng tôi mang đến tầm nhìn sắc nét, an tâm và thoải mái nhất cho người tiêu dùng tại hơn 500+ đại lý mắt kính uy tín trên toàn quốc.
+            </p>
+          </div>
+
+          {/* 3 Apple Liquid Spec Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2 text-left">
+            <div className="p-5 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:shadow-md transition-all">
+              <div className="text-xs font-bold text-primary uppercase tracking-wide">Mitsui Monomer MR™</div>
+              <div className="text-lg font-black text-slate-900 mt-1">Trong Suốt 99.8%</div>
+              <div className="text-xs text-slate-500 mt-1">Truyền quang cao, quang sai cực thấp</div>
+            </div>
+
+            <div className="p-5 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:shadow-md transition-all">
+              <div className="text-xs font-bold text-[var(--button-end)] uppercase tracking-wide">Nano Sapphire 9H</div>
+              <div className="text-lg font-black text-slate-900 mt-1">Trượt Nước &gt;115°</div>
+              <div className="text-xs text-slate-500 mt-1">Kháng trầy xước, không đọng nước mưa</div>
+            </div>
+
+            <div className="p-5 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:shadow-md transition-all">
+              <div className="text-xs font-bold text-[#003B50] uppercase tracking-wide">CanRx Freeform 4K</div>
+              <div className="text-lg font-black text-slate-900 mt-1">Sai Số &lt; 0.01 Diop</div>
+              <div className="text-xs text-slate-500 mt-1">Gia công kỹ thuật số cá nhân hóa</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* =========================================================
           3. 4 CORE VALUES (GIÁ TRỊ CỐT LÕI)
           ========================================================= */}
       <section className="py-16 sm:py-24 bg-slate-50 border-t border-b border-slate-200/80">

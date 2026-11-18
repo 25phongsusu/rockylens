@@ -771,6 +771,21 @@
       animation-play-state: paused;
     }
   
+    
+    /* Home Product Cards: Rich Shadow & No Stroke */
+    .product-sol-card,
+    #essilor-carousel-track > div {
+      border: 0 !important;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04) !important;
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    }
+    .product-sol-card:hover,
+    #essilor-carousel-track > div:hover {
+      border: 0 !important;
+      box-shadow: 0 20px 35px -8px rgba(0, 0, 0, 0.16), 0 10px 15px -5px rgba(0, 0, 0, 0.08) !important;
+      transform: translateY(-4px) !important;
+    }
+
     /* Product Filter Tabs */
     .product-filter-btn {
       display: inline-flex;
@@ -940,33 +955,8 @@
               </span>
             </h1>
 
-            <p id="hero-desc" class="text-brand-muted text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0 transition-colors">
-              Rocky Lens kế thừa chuẩn mực quang học Canada Opticians, kết hợp công nghệ vật liệu tiên tiến và triết lý 'Sáng mắt sáng lòng'. Với hệ sinh thái sản phẩm toàn diện — từ tròng kính cận, đổi màu thông minh, chống ánh sáng xanh đến kính lái xe và kiểm soát cận thị — chúng tôi mang đến tầm nhìn sắc nét, an tâm và thoải mái nhất cho người tiêu dùng tại hơn 500+ đại lý mắt kính uy tín trên toàn quốc.
-            </p>
-
-            <!-- 3 Apple Liquid Spec Cards -->
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 text-left" id="hero-spec-cards">
-              <div class="p-4 rounded-2xl liquid-card hero-spec-card transition-all">
-                <div class="text-xs font-bold text-primary uppercase hero-spec-tag">Mitsui Monomer MR™</div>
-                <div class="text-sm font-black text-heading mt-1 hero-spec-title">Trong Suốt 99.8%</div>
-                <div class="text-[11px] text-brand-muted mt-0.5 hero-spec-sub">Truyền quang cao, quang sai cực thấp</div>
-              </div>
-
-              <div class="p-4 rounded-2xl liquid-card hero-spec-card transition-all">
-                <div class="text-xs font-bold text-[var(--button-end)] uppercase hero-spec-tag">Nano Sapphire 9H</div>
-                <div class="text-sm font-black text-heading mt-1 hero-spec-title">Trượt Nước &gt;115°</div>
-                <div class="text-[11px] text-brand-muted mt-0.5 hero-spec-sub">Kháng trầy xước, không đọng nước mưa</div>
-              </div>
-
-              <div class="p-4 rounded-2xl liquid-card hero-spec-card transition-all">
-                <div class="text-xs font-bold text-heading uppercase hero-spec-tag">CanRx Freeform 4K</div>
-                <div class="text-sm font-black text-heading mt-1 hero-spec-title">Sai Số &lt; 0.01 Diop</div>
-                <div class="text-[11px] text-brand-muted mt-0.5 hero-spec-sub">Gia công kỹ thuật số cá nhân hóa</div>
-              </div>
-            </div>
-
             <!-- Dual CTAs: Tìm Tròng Kính Phù Hợp Với Bạn & Tìm Cửa Hàng Gần Bạn -->
-            <div class="pt-3 flex flex-wrap items-center justify-center lg:justify-start gap-3.5">
+            <div class="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-3.5">
               <a href="#trong-kinh" class="liquid-btn-primary px-7 py-3.5 text-xs sm:text-sm font-bold flex items-center space-x-2">
                 <span>Tìm Tròng Kính Phù Hợp Với Bạn</span>
                 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
@@ -974,21 +964,6 @@
               <a href="lien-he/" id="hero-b2b-btn" class="liquid-btn-secondary px-6 py-3.5 text-xs sm:text-sm font-bold flex items-center space-x-2 cursor-pointer transition-all">
                 <span>Tìm Cửa Hàng Gần Bạn</span>
               </a>
-            </div>
-
-            <!-- Micro Trust Indicators -->
-            <div id="hero-trust" class="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-4 text-xs text-brand-muted font-medium transition-colors">
-              <span class="flex items-center gap-1.5">
-                <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
-                <span>Ontario Opticians No. 6181</span>
-              </span>
-              <span>&bull;</span>
-              <span class="flex items-center gap-1.5">
-                <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-                <span>ISO 13485:2016 Medical Quality</span>
-              </span>
-              <span>&bull;</span>
-              <span>Bảo hành điện tử 1 đổi 1 24T</span>
             </div>
 
           </div>
@@ -1091,7 +1066,7 @@
             class="flex gap-5 sm:gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory py-4 px-1 no-scrollbar"
           >
               <!-- Essilor Card: Rocky. BlueCut -->
-              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
+              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0">
                 <div>
                   <div class="rounded-2xl overflow-hidden aspect-square relative mb-4 bg-slate-100">
                     <img src="assets/uploads/solutions/trong-kinh-do-hoa-designer-chuan-mau.png" alt="Kính đơn tròng thế hệ mới trong suốt 99.8% chuẩn màu cho dân thiết kế &amp; văn phòng" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1121,7 +1096,7 @@
                 </a>
               </div>
               <!-- Essilor Card: Rocky. Trendy -->
-              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
+              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0">
                 <div>
                   <div class="rounded-2xl overflow-hidden aspect-square relative mb-4 bg-slate-100">
                     <img src="assets/uploads/solutions/trong-kinh-van-phong-chong-asx-doi-mau.png" alt="Người bạn đồng hành tốt nhất lọc ánh sáng xanh và đổi màu râm tức thì ra nắng" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1151,7 +1126,7 @@
                 </a>
               </div>
               <!-- Essilor Card: Rocky. DriveShield -->
-              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
+              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0">
                 <div>
                   <div class="rounded-2xl overflow-hidden aspect-square relative mb-4 bg-slate-100">
                     <img src="assets/uploads/solutions/trong-kinh-lai-xe-ban-dem-driveshield.png" alt="Sắc nét tức thì ngay cả khi di chuyển, chống chói đèn pha LED và trượt nước mưa" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1181,7 +1156,7 @@
                 </a>
               </div>
               <!-- Essilor Card: CanRx. Freeform -->
-              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
+              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0">
                 <div>
                   <div class="rounded-2xl overflow-hidden aspect-square relative mb-4 bg-slate-100">
                     <img src="assets/uploads/solutions/trong-kinh-da-trong-xa-trung-gan.png" alt="Cảm giác thoải mái cho mắt cả ngày dài, nhìn rõ liền mạch mọi cự ly Xa - Gần" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1211,7 +1186,7 @@
                 </a>
               </div>
               <!-- Essilor Card: Defocus. MyoControl -->
-              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
+              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0">
                 <div>
                   <div class="rounded-2xl overflow-hidden aspect-square relative mb-4 bg-slate-100">
                     <img src="assets/uploads/solutions/trong-kinh-kiem-soat-can-thi-tre-em.png" alt="Giải pháp khoa học tiên tiến giúp kiểm soát và làm chậm tiến triển độ cận ở trẻ em" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1241,7 +1216,7 @@
                 </a>
               </div>
               <!-- Essilor Card: Rocky. Chameleon -->
-              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
+              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0">
                 <div>
                   <div class="rounded-2xl overflow-hidden aspect-square relative mb-4 bg-slate-100">
                     <img src="assets/uploads/solutions/trong-kinh-doi-mau-thoi-trang-trendy.png" alt="Biến chiếc kính cận thành kính râm sành điệu với bộ sưu tập 7 sắc màu cá tính" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1271,7 +1246,7 @@
                 </a>
               </div>
               <!-- Essilor Card: Rocky. MR-8 -->
-              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
+              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0">
                 <div>
                   <div class="rounded-2xl overflow-hidden aspect-square relative mb-4 bg-slate-100">
                     <img src="assets/uploads/solutions/trong-kinh-gong-khoan-chong-vo-mr8.png" alt="Phôi siêu dẻo dai chịu lực uốn đỉnh cao, bắt ốc chắc chắn cho gọng không viền" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1301,7 +1276,7 @@
                 </a>
               </div>
               <!-- Essilor Card: Rocky. UltraThin -->
-              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
+              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0">
                 <div>
                   <div class="rounded-2xl overflow-hidden aspect-square relative mb-4 bg-slate-100">
                     <img src="assets/uploads/solutions/trong-kinh-mong-chiet-suat-cao-167-174.png" alt="Thẩm mỹ mỏng nhẹ tối ưu, triệt tiêu độ dày đáy chai cho mắt có độ cận viễn nặng" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1331,7 +1306,7 @@
                 </a>
               </div>
               <!-- Essilor Card: Rocky. MaxShield -->
-              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
+              <div class="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0">
                 <div>
                   <div class="rounded-2xl overflow-hidden aspect-square relative mb-4 bg-slate-100">
                     <img src="assets/uploads/solutions/trong-kinh-ngoai-troi-chong-tia-uv.png" alt="Bảo vệ võng mạc tối đa, ngăn chặn 100% tia cực tím độc hại UV400 và UV420 ngoài trời" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1385,7 +1360,7 @@
         <div class="max-w-[1240px] mx-auto">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-2" id="product-cards-grid">
             <!-- Card 1: Dành cho thiết kế đồ họa & ngồi máy tính (Trong suốt không đổi màu) -->
-            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1" data-group="work">
+            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0" data-group="work">
               <div class="space-y-3">
                 <div class="h-48 sm:h-54 w-full rounded-2xl overflow-hidden bg-slate-900/10 relative">
                   <img loading="lazy" decoding="async" src="assets/uploads/solutions/trong-kinh-do-hoa-designer-chuan-mau.png" alt="Tròng kính thiết kế đồ họa designer chuẩn màu 100% không đổi màu Rocky BlueCut UV420" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1403,7 +1378,7 @@
             </div>
 
             <!-- Card 2: Dành cho dân văn phòng & làm việc máy tính (Lọc ASX + Đổi màu) -->
-            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1" data-group="work">
+            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0" data-group="work">
               <div class="space-y-3">
                 <div class="h-48 sm:h-54 w-full rounded-2xl overflow-hidden bg-slate-900/10 relative">
                   <img loading="lazy" decoding="async" src="assets/uploads/solutions/trong-kinh-van-phong-chong-asx-doi-mau.png" alt="Tròng kính dân văn phòng lọc ánh sáng xanh máy tính và tự đổi màu khi ra nắng Rocky Trendy Smart BlueCut Photo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1421,7 +1396,7 @@
             </div>
 
             <!-- Card 3: Dành cho người hay hoạt động ngoài trời (Chống UV400 / UV420 tối đa) -->
-            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1" data-group="outdoor">
+            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0" data-group="outdoor">
               <div class="space-y-3">
                 <div class="h-48 sm:h-54 w-full rounded-2xl overflow-hidden bg-slate-900/10 relative">
                   <img loading="lazy" decoding="async" src="assets/uploads/solutions/trong-kinh-ngoai-troi-chong-tia-uv.png" alt="Tròng kính hoạt động ngoài trời chống tia cực tím UV400 UV420 tối đa Rocky MaxShield Protect" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1439,7 +1414,7 @@
             </div>
 
             <!-- Card 4: Dành cho tài xế & người hay lái xe ban đêm (Chống chói đèn pha LED) -->
-            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1" data-group="outdoor">
+            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0" data-group="outdoor">
               <div class="space-y-3">
                 <div class="h-48 sm:h-54 w-full rounded-2xl overflow-hidden bg-slate-900/10 relative">
                   <img loading="lazy" decoding="async" src="assets/uploads/solutions/trong-kinh-lai-xe-ban-dem-driveshield.png" alt="Tròng kính lái xe ban đêm chống chói đèn pha LED và trượt nước mưa Rocky DriveShield Ruby AR" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1457,7 +1432,7 @@
             </div>
 
             <!-- Card 5: Dành cho người lớn tuổi & lão thị (Đa tròng nhìn Xa - Trung - Gần) -->
-            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1" data-group="work">
+            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0" data-group="work">
               <div class="space-y-3">
                 <div class="h-48 sm:h-54 w-full rounded-2xl overflow-hidden bg-slate-900/10 relative">
                   <img loading="lazy" decoding="async" src="assets/uploads/solutions/trong-kinh-da-trong-xa-trung-gan.png" alt="Tròng kính đa tròng kỹ thuật số nhìn rõ 3 cự ly Xa Trung Gần liền mạch CanRx Freeform HD Progressive" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1475,7 +1450,7 @@
             </div>
 
             <!-- Card 6: Dành cho trẻ em & học sinh cận thị (Kiểm soát tăng độ cận) -->
-            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1" data-group="special">
+            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0" data-group="special">
               <div class="space-y-3">
                 <div class="h-48 sm:h-54 w-full rounded-2xl overflow-hidden bg-slate-900/10 relative">
                   <img loading="lazy" decoding="async" src="assets/uploads/solutions/trong-kinh-kiem-soat-can-thi-tre-em.png" alt="Tròng kính kiểm soát tiến triển độ cận thị cho trẻ em học sinh Defocus MyoControl Kids HD" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1493,7 +1468,7 @@
             </div>
 
             <!-- Card 7: Dành cho tín đồ thời trang (Kính cận đổi màu đa sắc cá tính) -->
-            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1" data-group="outdoor">
+            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0" data-group="outdoor">
               <div class="space-y-3">
                 <div class="h-48 sm:h-54 w-full rounded-2xl overflow-hidden bg-slate-900/10 relative">
                   <img loading="lazy" decoding="async" src="assets/uploads/solutions/trong-kinh-doi-mau-thoi-trang-trendy.png" alt="Tròng kính cận đổi màu thời trang 7 sắc màu cá tính nhạy sáng ngoài trời Rocky Trendy Style Photochromic" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1511,7 +1486,7 @@
             </div>
 
             <!-- Card 8: Dành cho người đeo gọng khoan, không viền (Siêu dai MR-8 chống vỡ) -->
-            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1" data-group="special">
+            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0" data-group="special">
               <div class="space-y-3">
                 <div class="h-48 sm:h-54 w-full rounded-2xl overflow-hidden bg-slate-900/10 relative">
                   <img loading="lazy" decoding="async" src="assets/uploads/solutions/trong-kinh-gong-khoan-chong-vo-mr8.png" alt="Tròng kính chuyên gọng khoan bắt ốc không viền phôi Mitsui MR-8 dẻo dai chống mẻ vỡ" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1529,7 +1504,7 @@
             </div>
 
             <!-- Card 9: Độ Cận Viễn Nặng (Tròng Mỏng Chiết Suất 1.67 - 1.74) -->
-            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1" data-group="special">
+            <div class="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0" data-group="special">
               <div class="space-y-3">
                 <div class="h-48 sm:h-54 w-full rounded-2xl overflow-hidden bg-slate-900/10 relative">
                   <img loading="lazy" decoding="async" src="assets/uploads/solutions/trong-kinh-mong-chiet-suat-cao-167-174.png" alt="Tròng kính mỏng chiết suất cao 1.67 và 1.74 triệt tiêu mép dày độ cận viễn nặng Rocky Ultra Thin" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -2597,15 +2572,15 @@
           title.classList.add('text-white');
         }
         if (desc) {
-          desc.classList.remove('text-brand-muted');
-          desc.classList.add('text-slate-200');
+          if (desc) desc.classList.remove('text-brand-muted');
+          if (desc) desc.classList.add('text-slate-200');
         }
         if (b2bBtn) {
           b2bBtn.className = 'px-6 py-3.5 text-xs sm:text-sm font-bold flex items-center space-x-2 cursor-pointer transition-all rounded-full bg-white/15 hover:bg-white/25 text-white border border-white/30 backdrop-blur-md';
         }
         if (trust) {
-          trust.classList.remove('text-brand-muted');
-          trust.classList.add('text-slate-300');
+          if (trust) trust.classList.remove('text-brand-muted');
+          if (trust) trust.classList.add('text-slate-300');
         }
         var lensWrap = document.getElementById('hero-lens-wrap');
         if (lensWrap) {
@@ -2645,15 +2620,15 @@
           title.classList.add('text-heading');
         }
         if (desc) {
-          desc.classList.remove('text-slate-200');
-          desc.classList.add('text-brand-muted');
+          if (desc) desc.classList.remove('text-slate-200');
+          if (desc) desc.classList.add('text-brand-muted');
         }
         if (b2bBtn) {
           b2bBtn.className = 'liquid-btn-secondary px-6 py-3.5 text-xs sm:text-sm font-bold flex items-center space-x-2 cursor-pointer transition-all';
         }
         if (trust) {
-          trust.classList.remove('text-slate-300');
-          trust.classList.add('text-brand-muted');
+          if (trust) trust.classList.remove('text-slate-300');
+          if (trust) trust.classList.add('text-brand-muted');
         }
         var lensWrap = document.getElementById('hero-lens-wrap');
         if (lensWrap) {

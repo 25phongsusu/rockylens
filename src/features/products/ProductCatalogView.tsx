@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Glasses, ArrowUpRight, Search, X, Sparkles, Check, Layers, SlidersHorizontal } from 'lucide-react';
@@ -10,6 +10,19 @@ import { getProductTheme, FEATURE_THEMES } from './pricing-matrix';
 export type ViewMode = 'need' | 'tech';
 
 // 9 Slugs theo đúng thứ tự Trang Chủ (home_content.json)
+
+export const NEED_TITLES_MAP: Record<string, string> = {
+  'rocky-156-bluecut-shmc': 'DÀNH CHO DESIGNER & ĐỒ HỌA MÁY TÍNH',
+  'rocky-trendy-photochromic-grey': 'DÀNH CHO DÂN VĂN PHÒNG & LÀM VIỆC MÁY TÍNH',
+  'rocky-167-ultra-thin-bluecut': 'DÀNH CHO NGƯỜI HAY HOẠT ĐỘNG NGOÀI TRỜI',
+  'rocky-driveshield-night-vision': 'DÀNH CHO TÀI XẾ & NGƯỜI HAY LÁI XE BAN ĐÊM',
+  'rocky-freeform-progressive-hd': 'DÀNH CHO NGƯỜI LỚN TUỔI & LÃO THỊ',
+  'rocky-myocontrol-dims-kids': 'DÀNH CHO TRẺ EM & HỌC SINH CẬN THỊ',
+  'rocky-chameleon-photochromic': 'DÀNH CHO TÍN ĐỒ THỜI TRANG',
+  'rocky-160-mr8-aspheric': 'DÀNH CHO NGƯỜI ĐEO GỌNG KHOAN, KHÔNG VIỀN',
+  'rocky-174-ultra-high-index': 'DÀNH CHO NGƯỜI ĐỘ CẬN VIỄN NẶNG',
+};
+
 export const NEED_SLUGS_ORDER = [
   'rocky-156-bluecut-shmc',
   'rocky-trendy-photochromic-grey',
@@ -74,9 +87,26 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
   const [subFilter, setSubFilter] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState<string>('');
 
+  useEffect(() => {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const mode = (params.get('mode') || params.get('view') || '').toLowerCase();
+      if (mode === 'tech' || mode === 'tinh-nang') {
+        setViewMode('tech');
+      } else if (mode === 'need' || mode === 'nhu-cau') {
+        setViewMode('need');
+      }
+    } catch {}
+  }, []);
+
   const handleModeChange = (newMode: ViewMode) => {
     setViewMode(newMode);
     setSubFilter('all');
+    try {
+      const url = new URL(window.location.href);
+      url.searchParams.set('mode', newMode);
+      window.history.replaceState({}, '', url.toString());
+    } catch {}
   };
 
   const currentFilters = viewMode === 'need' ? NEED_FILTERS : TECH_FILTERS;
@@ -296,6 +326,54 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
           {filteredProducts.map((product) => {
             const theme = getProductTheme(product.slug);
 
+            // ========================================================
+            // CHẾ ĐỘ 1: THEO NHU CẦU — TỐI GIẢN CHỈ GIỮ TÊN, THUMBNAIL, BUTTON MÀU XANH
+            // ========================================================
+            if (viewMode === 'need') {
+              const needTitle = NEED_TITLES_MAP[product.slug] || product.consumerHeadline || product.name;
+              return (
+                <div
+                  key={product.id}
+                  className="group flex flex-col justify-between h-full bg-white dark:bg-slate-800/90 rounded-2xl p-4 sm:p-5 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 border-0 overflow-hidden"
+                >
+                  <div>
+                    {/* Thumbnail tròng kính sạch sẽ, không tag, không stroke */}
+                    <div className="aspect-[4/3] w-full rounded-xl overflow-hidden bg-slate-50 dark:bg-slate-900/40 relative mb-4 flex items-center justify-center p-2 border-0">
+                      <Image
+                        src={product.featuredImage || product.images[0] || '/uploads/solutions/trong-kinh-do-hoa-designer-chuan-mau.png'}
+                        alt={needTitle}
+                        fill
+                        className="object-contain p-2 group-hover:scale-105 transition-transform duration-500"
+                        sizes="(max-width: 768px) 100vw, 380px"
+                      />
+                    </div>
+
+                    {/* Chỉ giữ đúng tên: Chữ in hoa, màu xanh giống button, font đậm */}
+                    <h3 className="text-sm sm:text-base font-extrabold uppercase tracking-tight leading-snug line-clamp-2 min-h-[2.75rem] flex items-start text-primary dark:text-cyan-300 group-hover:text-[var(--button-end)] transition-colors">
+                      <Link href={`/trong-kinh/${product.slug}/`}>
+                        {needTitle}
+                      </Link>
+                    </h3>
+                  </div>
+
+                  {/* Nút Xem Giá: Chữ màu xanh, hover màu trắng */}
+                  <div className="pt-3 mt-auto flex items-center">
+                    <Link
+                      href={`/trong-kinh/${product.slug}/`}
+                      className="card-price-btn text-xs sm:text-sm"
+                    >
+                      <span>Xem Giá</span>
+                      <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-0.5" />
+                    </Link>
+                  </div>
+                </div>
+              );
+            }
+
+            // ========================================================
+            // CHẾ ĐỘ 2: THEO TÍNH NĂNG — ĐẦY ĐỦ THÔNG SỐ QUANG HỌC & BẢNG GIÁ
+            // ========================================================
+
             return (
               <div
                 key={product.id}
@@ -364,7 +442,7 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
                     className="text-[11px] font-bold tracking-wide uppercase line-clamp-1 mb-1"
                     style={{ color: theme.primaryColor }}
                   >
-                    {product.targetPersona || (viewMode === 'need' ? 'GIẢI PHÁP THỊ LỰC' : 'TÍNH NĂNG QUANG HỌC')}
+                    {product.targetPersona || 'TÍNH NĂNG QUANG HỌC'}
                   </div>
 
                   {/* Consumer Headline or Product Name */}

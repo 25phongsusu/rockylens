@@ -380,7 +380,7 @@ export default function ProductCategories() {
               {essilorShowcaseProducts.map((p, idx) => (
                 <div
                   key={idx}
-                  className="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1"
+                  className="w-[280px] sm:w-[300px] lg:w-[295px] shrink-0 snap-start transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0"
                 >
                   {/* Top Lifestyle Photo */}
                   <div>
@@ -451,7 +451,7 @@ export default function ProductCategories() {
                 {filtered.map((item) => (
                   <div
                     key={item.title}
-                    className="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1"
+                    className="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1.5 p-4 sm:p-5 rounded-3xl bg-white dark:bg-slate-800/90 shadow-md hover:shadow-2xl border-0"
                   >
                     <div className="space-y-3">
                       {/* Hình ảnh */}

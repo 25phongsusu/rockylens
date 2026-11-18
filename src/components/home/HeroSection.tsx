@@ -147,70 +147,8 @@ export default function HeroSection() {
               </span>
             </h1>
 
-            {/* Subheadline */}
-            <p
-              className={`text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0 transition-colors ${
-                isBanner ? 'text-slate-200' : 'text-brand-muted'
-              }`}
-            >
-              Rocky Lens kế thừa chuẩn mực quang học Canada Opticians, kết hợp công nghệ vật liệu tiên tiến và triết lý 'Sáng mắt sáng lòng'. Với hệ sinh thái sản phẩm toàn diện — từ tròng kính cận, đổi màu thông minh, chống ánh sáng xanh đến kính lái xe và kiểm soát cận thị — chúng tôi mang đến tầm nhìn sắc nét, an tâm và thoải mái nhất cho người tiêu dùng tại hơn 500+ đại lý mắt kính uy tín trên toàn quốc.
-            </p>
-
-            {/* 3 Apple Liquid Spec Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 text-left">
-              <div
-                className={`p-4 rounded-2xl transition-all ${
-                  isBanner
-                    ? 'bg-white/10 backdrop-blur-md border border-white/20 text-white'
-                    : 'liquid-card'
-                }`}
-              >
-                <div className="text-xs font-bold text-cyan-400 uppercase">Mitsui Monomer MR™</div>
-                <div className={`text-sm font-black mt-1 ${isBanner ? 'text-white' : 'text-heading'}`}>
-                  Trong Suốt 99.8%
-                </div>
-                <div className={`text-[11px] mt-0.5 ${isBanner ? 'text-slate-300' : 'text-brand-muted'}`}>
-                  Truyền quang cao, quang sai cực thấp
-                </div>
-              </div>
-
-              <div
-                className={`p-4 rounded-2xl transition-all ${
-                  isBanner
-                    ? 'bg-white/10 backdrop-blur-md border border-white/20 text-white'
-                    : 'liquid-card'
-                }`}
-              >
-                <div className="text-xs font-bold text-teal-300 uppercase">Nano Sapphire 9H</div>
-                <div className={`text-sm font-black mt-1 ${isBanner ? 'text-white' : 'text-heading'}`}>
-                  Trượt Nước &gt;115°
-                </div>
-                <div className={`text-[11px] mt-0.5 ${isBanner ? 'text-slate-300' : 'text-brand-muted'}`}>
-                  Kháng trầy xước, không đọng nước mưa
-                </div>
-              </div>
-
-              <div
-                className={`p-4 rounded-2xl transition-all ${
-                  isBanner
-                    ? 'bg-white/10 backdrop-blur-md border border-white/20 text-white'
-                    : 'liquid-card'
-                }`}
-              >
-                <div className={`text-xs font-bold uppercase ${isBanner ? 'text-white' : 'text-heading'}`}>
-                  CanRx Freeform 4K
-                </div>
-                <div className={`text-sm font-black mt-1 ${isBanner ? 'text-white' : 'text-heading'}`}>
-                  Sai Số &lt; 0.01 Diop
-                </div>
-                <div className={`text-[11px] mt-0.5 ${isBanner ? 'text-slate-300' : 'text-brand-muted'}`}>
-                  Gia công kỹ thuật số cá nhân hóa
-                </div>
-              </div>
-            </div>
-
             {/* Action Buttons: Tìm Tròng Kính Phù Hợp Với Bạn & Tìm Cửa Hàng Gần Bạn */}
-            <div className="pt-3 flex flex-wrap items-center justify-center lg:justify-start gap-3.5">
+            <div className="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-3.5">
               <Link
                 href="#trong-kinh"
                 className="liquid-btn-primary px-7 py-3.5 text-xs sm:text-sm font-bold flex items-center space-x-2"
@@ -229,25 +167,6 @@ export default function HeroSection() {
               >
                 <span>Tìm Cửa Hàng Gần Bạn</span>
               </Link>
-            </div>
-
-            {/* Micro Trust Indicators */}
-            <div
-              className={`pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-4 text-xs font-medium transition-colors ${
-                isBanner ? 'text-slate-300' : 'text-brand-muted'
-              }`}
-            >
-              <span className="flex items-center gap-1.5">
-                <Award className="w-4 h-4 text-cyan-400" />
-                <span>Ontario Opticians No. 6181</span>
-              </span>
-              <span>&bull;</span>
-              <span className="flex items-center gap-1.5">
-                <ShieldCheck className="w-4 h-4 text-emerald-400" />
-                <span>ISO 13485:2016 Medical Quality</span>
-              </span>
-              <span>&bull;</span>
-              <span>Bảo hành điện tử 1 đổi 1 24T</span>
             </div>
 
           </div>
