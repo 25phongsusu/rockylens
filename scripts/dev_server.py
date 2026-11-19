@@ -26,16 +26,16 @@ class RockyDevHandler(http.server.SimpleHTTPRequestHandler):
         if not clean_path or clean_path == 'index.html':
             return os.path.join(ROOT, "index.html")
             
-        # 2. Files in workspace root (assets, images, uploads, documents, etc.)
-        local_root = os.path.join(ROOT, clean_path.replace('/', os.sep))
-        if os.path.exists(local_root) and not os.path.isdir(local_root):
-            return local_root
-            
-        # 3. Directories in workspace root that contain index.html
-        if os.path.isdir(local_root):
-            idx_file = os.path.join(local_root, "index.html")
-            if os.path.exists(idx_file):
-                return idx_file
+        # 2. Files in workspace root or public/ (assets, images, uploads, documents, etc.)
+        rel_path = clean_path.replace('/', os.sep)
+        for base in (ROOT, os.path.join(ROOT, "public")):
+            candidate = os.path.join(base, rel_path)
+            if os.path.exists(candidate) and not os.path.isdir(candidate):
+                return candidate
+            if os.path.isdir(candidate):
+                idx_file = os.path.join(candidate, "index.html")
+                if os.path.exists(idx_file):
+                    return idx_file
 
         # 4. Files in out/ (Next.js prebuilt pages)
         local_out = os.path.join(OUT, clean_path.replace('/', os.sep))

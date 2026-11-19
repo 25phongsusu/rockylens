@@ -68,10 +68,8 @@ SOURCE_ITEMS_TO_REMOVE_FROM_DEPLOY = [
     "postcss.config.js",
     "next-env.d.ts",
     "preview.png",
-    "AI_AGENT_INSTRUCTIONS.md",
     "README.md",
-    "skills-lock.json",
-    "SITEMAP.md"
+    "skills-lock.json"
 ]
 
 def run_cmd(cmd, cwd=ROOT_DIR):
@@ -139,7 +137,10 @@ def main():
     else:
         print("\n[3/5] Running Next.js static build (output -> out/)...")
         build_cmd = "npx.cmd next build" if sys.platform == "win32" else "npx next build"
-        run_cmd(build_cmd)
+        res = subprocess.run(build_cmd, shell=True, cwd=ROOT_DIR)
+        if res.returncode != 0:
+            print("  [RETRY] Retrying next build after security nudge...")
+            run_cmd(build_cmd)
 
     # 4. Sync out/ & static assets to Rocky-Deploy
     print("\n[4/5] Copying compiled artifacts to Rocky-Deploy...")
@@ -191,8 +192,10 @@ def main():
 
     # Post-process paths for GitHub Pages subfolder (/rockylens)
     print("  ✓ Patching asset paths for GitHub Pages...")
-    for folder in ["blog", "danh-cho-doi-tac", "kham-pha-trong-kinh", "cong-nghe", "trong-kinh", "lien-he", "ve-chung-toi"]:
-        process_directory_files(os.path.join(DEPLOY_DIR, folder))
+    asset_only_folders = {"_next", "assets", "images", "documents", "uploads"}
+    for folder in DEPLOY_FOLDERS:
+        if folder not in asset_only_folders:
+            process_directory_files(os.path.join(DEPLOY_DIR, folder))
     if os.path.exists(dest_index):
         with open(dest_index, "r", encoding="utf-8", errors="ignore") as f:
             c = f.read()

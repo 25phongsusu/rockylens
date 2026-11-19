@@ -23,3 +23,26 @@ Tất cả các AI Agent (Claude, Cursor, Copilot, Gemini, GPT...) khi tiếp nh
    - Kiểm tra dữ liệu: `python scripts/sync_home.py --check`
    - Build tĩnh Next.js: `npm.cmd run build` (trên Windows PowerShell dùng `npm.cmd`).
 
+---
+
+### ⚡ BẢN ĐỒ ROUTE & COMPONENT (QUICK ROUTE MAP)
+*Truy cập trực tiếp file tương ứng, KHÔNG scan thư mục từ đầu:*
+
+| Route URL | File Component / Page chính | File Dữ liệu / Nội dung liên quan |
+| :--- | :--- | :--- |
+| **Trang chủ (`/`)** | `src/components/home/*.tsx` | `content/home_content.json` |
+| **Catalogue Sản phẩm (`/san-pham`, `/trong-kinh`)** | `src/features/products/ProductCatalogView.tsx` | `content/products/*.json`, `pricing-matrix.ts` |
+| **Chi tiết sản phẩm (`/trong-kinh/[slug]`)** | `src/app/trong-kinh/[slug]/page.tsx` | `content/products/<slug>.json` |
+| **Công nghệ (`/cong-nghe`)** | `src/app/cong-nghe/page.tsx` | `content/technologies/*.json` |
+| **RX Lab (`/rx-lab`)** | `src/app/rx-lab/page.tsx` | `src/components/home/RxLabSection.tsx` |
+| **Blog & Cẩm nang (`/blog`, `/kham-pha-trong-kinh`)**| `src/app/blog/page.tsx`, `[slug]/page.tsx` | `content/articles/**/*.md` |
+| **Đối tác B2B (`/danh-cho-doi-tac`)** | `src/app/danh-cho-doi-tac/page.tsx` | `content/brands/*.json` |
+| **Về chúng tôi (`/ve-chung-toi`)** | `src/app/ve-chung-toi/page.tsx` | `src/config/site.ts` |
+| **Liên hệ & Kho (`/lien-he`)** | `src/app/lien-he/page.tsx` | `src/config/site.ts` |
+| **Master Static Landing** | `scripts/build-unified-liquid-master.js` | `index.html` (chỉ sinh tự động qua node script) |
+
+### 🚀 NGUYÊN TẮC TỐC ĐỘ DÀNH CHO AI AGENT:
+- **Tìm kiếm:** Luôn ưu tiên dùng `git ls-files` hoặc `git grep -n "keyword" src/` (truy xuất từ Git index siêu tốc, không dùng lệnh quét đĩa sâu qua `node_modules`/`.next`).
+- **Phạm vi sửa đổi:** Tập trung chính xác vào component đích được yêu cầu, không sửa lan man sang các component khác nếu không có chỉ định.
+- **Tối ưu thời gian phản hồi:** Với các chỉnh sửa CSS, HTML, text hoặc link đơn giản, không tự ý chạy full `npm run build` (tốn 20-30s build 53 trang tĩnh) trừ khi người dùng yêu cầu build/deploy hoặc sửa logic phức tạp.
+

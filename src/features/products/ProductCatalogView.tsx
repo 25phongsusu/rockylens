@@ -82,6 +82,18 @@ interface ProductCatalogViewProps {
   initialProducts: Product[];
 }
 
+const CATEGORY_PARAM_MAP: Record<string, { mode: ViewMode; filter: string }> = {
+  'don-trong': { mode: 'tech', filter: 'asx' },
+  asx: { mode: 'tech', filter: 'asx' },
+  'da-trong': { mode: 'tech', filter: 'da-trong' },
+  'doi-mau': { mode: 'tech', filter: 'doi-mau' },
+  'lai-xe': { mode: 'tech', filter: 'lai-xe' },
+  'kiem-soat-can-thi': { mode: 'tech', filter: 'myopia' },
+  myopia: { mode: 'tech', filter: 'myopia' },
+  uv: { mode: 'tech', filter: 'uv' },
+  'kinh-khoan': { mode: 'tech', filter: 'kinh-khoan' },
+};
+
 export default function ProductCatalogView({ initialProducts }: ProductCatalogViewProps) {
   const [viewMode, setViewMode] = useState<ViewMode>('need');
   const [subFilter, setSubFilter] = useState<string>('all');
@@ -90,6 +102,12 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
   useEffect(() => {
     try {
       const params = new URLSearchParams(window.location.search);
+      const category = (params.get('category') || params.get('filter') || '').toLowerCase();
+      if (category && CATEGORY_PARAM_MAP[category]) {
+        setViewMode(CATEGORY_PARAM_MAP[category].mode);
+        setSubFilter(CATEGORY_PARAM_MAP[category].filter);
+        return;
+      }
       const mode = (params.get('mode') || params.get('view') || '').toLowerCase();
       if (mode === 'tech' || mode === 'tinh-nang') {
         setViewMode('tech');
@@ -336,8 +354,11 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
                   key={product.id}
                   className="group flex flex-col justify-between h-full bg-transparent border-0 p-0 shadow-none transition-all duration-300 hover:-translate-y-1.5"
                 >
-                  <div>
-                    {/* Hình ảnh bo góc có shadow riêng biệt, KHÔNG có khung trắng */}
+                  <Link
+                    href={`/trong-kinh/${product.slug}/`}
+                    className="block cursor-pointer no-underline group/link"
+                  >
+                    {/* Hình ảnh bo góc có shadow riêng biệt, click vào hình mở trang chi tiết */}
                     <div className="aspect-[4/3] w-full rounded-2xl overflow-hidden relative shadow-md group-hover:shadow-2xl transition-all duration-500 bg-slate-900/10">
                       <Image
                         src={product.featuredImage || product.images[0] || '/uploads/solutions/trong-kinh-do-hoa-designer-chuan-mau.png'}
@@ -348,13 +369,11 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
                       />
                     </div>
 
-                    {/* Chỉ giữ đúng tên: Chữ in hoa, màu xanh giống button, font đậm */}
+                    {/* Chỉ giữ đúng tên: Chữ in hoa, màu xanh giống button, font đậm, click vào chữ mở trang chi tiết */}
                     <h3 className="text-base sm:text-lg font-extrabold uppercase tracking-tight leading-snug line-clamp-2 min-h-[2.75rem] flex items-start text-primary dark:text-cyan-300 group-hover:text-[var(--button-end)] transition-colors mt-3">
-                      <Link href={`/trong-kinh/${product.slug}/`}>
-                        {needTitle}
-                      </Link>
+                      {needTitle}
                     </h3>
-                  </div>
+                  </Link>
 
                   {/* Nút Xem Giá: Chữ màu xanh, hover màu trắng */}
                   <div className="pt-2 mt-auto flex items-center">
@@ -447,7 +466,7 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
 
                   {/* Consumer Headline or Product Name */}
                   <h3 className="h-14 flex items-start text-base sm:text-lg font-bold text-heading leading-snug group-hover:text-primary transition-colors">
-                    <Link href={`/trong-kinh/${product.slug}/`} className="line-clamp-2">
+                    <Link href={`/trong-kinh/${product.slug}/`} className="line-clamp-2 w-full block hover:underline">
                       {product.consumerHeadline || product.name}
                     </Link>
                   </h3>
@@ -478,7 +497,10 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
                   </p>
 
                   {/* Product Studio Lens Photograph */}
-                  <div className="h-44 w-full rounded-xl overflow-hidden bg-slate-50/70 relative my-3 flex items-center justify-center p-2 border border-slate-100">
+                  <Link
+                    href={`/trong-kinh/${product.slug}/`}
+                    className="block h-44 w-full rounded-xl overflow-hidden bg-slate-50/70 relative my-3 flex items-center justify-center p-2 border border-slate-100 cursor-pointer"
+                  >
                     <Image
                       src={product.featuredImage || product.images[0] || '/uploads/solutions/trong-kinh-do-hoa-designer-chuan-mau.png'}
                       alt={product.name}
@@ -486,7 +508,7 @@ export default function ProductCatalogView({ initialProducts }: ProductCatalogVi
                       className="object-contain p-2 group-hover:scale-105 transition-transform duration-500"
                       sizes="(max-width: 768px) 100vw, 380px"
                     />
-                  </div>
+                  </Link>
 
                   {/* Micro Specs Rows */}
                   <div className="space-y-1.5 text-xs">

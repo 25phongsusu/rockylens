@@ -90,7 +90,7 @@ export function articleSchema(article: Article) {
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `${siteConfig.url}/kham-pha-trong-kinh/bai-viet/${article.slug}/`,
+      '@id': `${siteConfig.url}/blog/${article.slug}/`,
     },
   };
 }

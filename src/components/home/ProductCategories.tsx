@@ -384,7 +384,7 @@ export default function ProductCategories() {
                 >
                   {/* Top Lifestyle Photo */}
                   <div>
-                    <div className="rounded-2xl overflow-hidden aspect-square relative mb-4 bg-slate-100">
+                    <Link href={p.link} className="block rounded-2xl overflow-hidden aspect-square relative mb-4 bg-slate-100 cursor-pointer">
                       <img
                         src={p.image}
                         alt={p.headline}
@@ -396,7 +396,7 @@ export default function ProductCategories() {
                         <span className="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
                         <span>Rocky Canada</span>
                       </div>
-                    </div>
+                    </Link>
 
                     {/* Brand Title */}
                     <div className="space-y-0.5">
@@ -411,7 +411,9 @@ export default function ProductCategories() {
 
                     {/* Punchy 2-line Headline */}
                     <p className="text-sm font-bold text-heading leading-snug line-clamp-2 min-h-[2.5rem] mt-2 mb-4">
-                      {p.headline}
+                      <Link href={p.link} className="hover:text-primary transition-colors block">
+                        {p.headline}
+                      </Link>
                     </p>
                   </div>
 
@@ -453,8 +455,11 @@ export default function ProductCategories() {
                     key={item.title}
                     className="product-sol-card group flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1.5 bg-transparent border-0 p-0 shadow-none"
                   >
-                    <div>
-                      {/* Hình ảnh bo góc có shadow riêng biệt, KHÔNG có khung trắng */}
+                    <Link
+                      href={item.link}
+                      className="block cursor-pointer no-underline"
+                    >
+                      {/* Hình ảnh bo góc có shadow riêng biệt, click vào hình mở trang chi tiết */}
                       <div className="h-48 sm:h-54 w-full rounded-2xl overflow-hidden relative shadow-md group-hover:shadow-2xl transition-all duration-500 bg-slate-900/10">
                         <img
                           src={item.image}
@@ -467,11 +472,9 @@ export default function ProductCategories() {
 
                       {/* Text */}
                       <h3 className="text-base sm:text-lg font-bold text-heading group-hover:text-primary transition-colors leading-snug line-clamp-2 min-h-[3rem] flex items-start mt-3">
-                        <Link href={item.link}>
-                          {item.title}
-                        </Link>
+                        {item.title}
                       </h3>
-                    </div>
+                    </Link>
 
                     {/* Xem Giá */}
                     <div className="pt-2 mt-auto flex items-center">

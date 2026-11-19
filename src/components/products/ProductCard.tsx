@@ -12,7 +12,10 @@ export default function ProductCard({ product }: ProductCardProps) {
   return (
     <div className="group card-surface rounded-2xl hover:border-[var(--button-middle)] shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col h-full overflow-hidden">
       {/* Product Image & Badge */}
-      <div className="relative aspect-4/3 bg-slate-50 overflow-hidden border-b border-[var(--color-border)] flex items-center justify-center p-6 shrink-0">
+      <Link
+        href={`/trong-kinh/${product.slug}/`}
+        className="block relative aspect-4/3 bg-slate-50 overflow-hidden border-b border-[var(--color-border)] flex items-center justify-center p-6 shrink-0 cursor-pointer"
+      >
         {product.badge && (
           <span className="absolute top-3 left-3 z-10 px-2.5 py-1 rounded-md text-[11px] font-bold tracking-wide uppercase bg-[var(--button-middle)] text-white shadow-xs">
             {product.badge}
@@ -34,7 +37,7 @@ export default function ProductCard({ product }: ProductCardProps) {
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
-      </div>
+      </Link>
 
       {/* Content */}
       <div className="p-5 flex-1 flex flex-col justify-between">
@@ -56,7 +59,7 @@ export default function ProductCard({ product }: ProductCardProps) {
 
           {/* Title */}
           <h3 className="h-12 flex items-start font-bold text-base text-heading group-hover:text-primary transition-colors">
-            <Link href={`/trong-kinh/${product.slug}/`} className="line-clamp-2">
+            <Link href={`/trong-kinh/${product.slug}/`} className="line-clamp-2 w-full block hover:underline">
               {product.consumerHeadline || product.name}
             </Link>
           </h3>
