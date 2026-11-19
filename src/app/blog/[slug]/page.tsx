@@ -8,8 +8,8 @@ import {
   getAllArticles,
   getArticleBySlug,
   getRelatedArticles,
-} from '@/features/articles/article-service';
-import { getAllProducts } from '@/features/products/product-service';
+} from '@/lib/content/load-articles';
+import { getAllProducts } from '@/lib/content/load-products';
 import Breadcrumbs from '@/components/shared/Breadcrumbs';
 import MarkdownContent from '@/components/content/MarkdownContent';
 import ProductGrid from '@/components/products/ProductGrid';
@@ -17,7 +17,7 @@ import RelatedArticles from '@/components/content/RelatedArticles';
 import ContactCTA from '@/components/shared/ContactCTA';
 import { constructMetadata } from '@/lib/seo/metadata';
 import { articleSchema } from '@/lib/seo/structured-data';
-import { formatDate } from '@/lib/utils';
+import { assetUrl, formatDate } from '@/lib/utils';
 
 interface BlogArticlePageProps {
   params: Promise<{ slug: string }>;
@@ -121,7 +121,7 @@ export default async function BlogArticleDetailPage({ params }: BlogArticlePageP
           {article.coverImage && (
             <div className="relative aspect-16/9 rounded-3xl overflow-hidden bg-slate-100 shadow-sm border border-[var(--color-border)]/40">
               <img
-                src={article.coverImage}
+                src={assetUrl(article.coverImage)}
                 alt={article.title}
                 className="w-full h-full object-cover"
               />

@@ -23,6 +23,7 @@ import {
 import Breadcrumbs from '@/components/shared/Breadcrumbs';
 import SectionHeading from '@/components/shared/SectionHeading';
 import { constructMetadata } from '@/lib/seo/metadata';
+import { assetUrl } from '@/lib/utils';
 
 export const metadata: Metadata = constructMetadata({
   title: 'Về Chúng Tôi — Rocky Lens Canada • Sáng Mắt Sáng Lòng',
@@ -219,7 +220,7 @@ export default function AboutUsPage() {
             <div>
               <div className="relative h-[320px] sm:h-[420px] w-full rounded-3xl overflow-hidden shadow-2xl border border-slate-200 group">
                 <Image
-                  src="/images/banners/about-banner.png"
+                  src={assetUrl('/images/banners/about-banner.png')}
                   alt="Trụ sở và nhà máy Rocky Lens Canada Opticians"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -429,7 +430,7 @@ export default function AboutUsPage() {
               >
                 <div className="relative h-48 w-full overflow-hidden bg-slate-100">
                   <Image
-                    src={photo.src}
+                    src={assetUrl(photo.src)}
                     alt={photo.caption}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -466,7 +467,7 @@ export default function AboutUsPage() {
               >
                 <div className="relative h-52 w-full overflow-hidden bg-slate-100">
                   <Image
-                    src={item.src}
+                    src={assetUrl(item.src)}
                     alt={item.title}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -522,7 +523,7 @@ export default function AboutUsPage() {
               >
                 <div className="relative h-64 w-full rounded-xl overflow-hidden mb-3 bg-slate-50 border border-slate-100">
                   <Image
-                    src={cert.src}
+                    src={assetUrl(cert.src)}
                     alt={cert.title}
                     fill
                     className="object-contain p-2 group-hover:scale-105 transition-transform duration-300"

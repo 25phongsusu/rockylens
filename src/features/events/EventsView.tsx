@@ -25,6 +25,7 @@ import {
   allGalleryPhotos,
   EventItem,
 } from './event-data';
+import { assetUrl } from '@/lib/utils';
 
 export default function EventsView() {
   const [activeCategory, setActiveCategory] = useState<string>('all');
@@ -107,7 +108,7 @@ export default function EventsView() {
               onClick={() => setSelectedEvent(event)}
             >
               <img
-                src={event.coverImage}
+                src={assetUrl(event.coverImage)}
                 alt={event.title}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
@@ -182,7 +183,7 @@ export default function EventsView() {
                       className="relative aspect-4/3 rounded-xl overflow-hidden border border-slate-200 cursor-pointer group/thumb"
                     >
                       <img
-                        src={img.src}
+                        src={assetUrl(img.src)}
                         alt={img.caption}
                         className="w-full h-full object-cover transition-transform group-hover/thumb:scale-110"
                       />
@@ -246,7 +247,7 @@ export default function EventsView() {
               className="group relative aspect-square rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/80 cursor-pointer shadow-2xs hover:shadow-md transition-all hover:scale-[1.02]"
             >
               <img
-                src={photo.src}
+                src={assetUrl(photo.src)}
                 alt={photo.title}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
@@ -333,7 +334,7 @@ export default function EventsView() {
             {/* Modal Hero Image */}
             <div className="relative aspect-16/9 w-full bg-slate-900">
               <img
-                src={selectedEvent.coverImage}
+                src={assetUrl(selectedEvent.coverImage)}
                 alt={selectedEvent.title}
                 className="w-full h-full object-cover"
               />
@@ -399,7 +400,7 @@ export default function EventsView() {
                       className="group/img relative aspect-4/3 rounded-xl overflow-hidden border border-slate-200 bg-slate-100"
                     >
                       <img
-                        src={img.src}
+                        src={assetUrl(img.src)}
                         alt={img.caption}
                         className="w-full h-full object-cover transition-transform group-hover/img:scale-105"
                       />
@@ -484,7 +485,7 @@ export default function EventsView() {
             onClick={(e) => e.stopPropagation()}
           >
             <img
-              src={allGalleryPhotos[lightboxIndex].src}
+              src={assetUrl(allGalleryPhotos[lightboxIndex].src)}
               alt={allGalleryPhotos[lightboxIndex].title}
               className="max-h-[70vh] w-auto max-w-full rounded-2xl object-contain shadow-2xl"
             />

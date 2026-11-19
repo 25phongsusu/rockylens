@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRight, Layers, ShieldCheck, Sparkles } from 'lucide-react';
 import { Product } from '@/features/products/product-types';
+import { assetUrl } from '@/lib/utils';
 
 interface ProductCardProps {
   product: Product;
@@ -30,7 +31,7 @@ export default function ProductCard({ product }: ProductCardProps) {
 
         <div className="relative w-full h-full transition-transform duration-500 group-hover:scale-105 flex items-center justify-center">
           <Image
-            src={product.featuredImage || product.images[0] || '/images/products/category-solution-1.png'}
+            src={assetUrl(product.featuredImage || product.images[0] || '/images/products/category-solution-1.png')}
             alt={product.name}
             fill
             className="object-contain p-2"

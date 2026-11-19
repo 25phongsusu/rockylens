@@ -16,11 +16,11 @@ Tất cả các AI Agent (Claude, Cursor, Copilot, Gemini, GPT...) khi tiếp nh
 👉 [**README_AI.md**](README_AI.md)
 
 ### Nguyên tắc cốt lõi:
-1. **Nhánh làm việc:** Luôn làm việc trên nhánh `source`. Nhánh `main` chỉ dùng để deploy tĩnh cho GitHub Pages.
-2. **Kiến trúc SSG:** 100% Static HTML export (`output: 'export'`). Tuyệt đối KHÔNG cài đặt DB server (SQL/Prisma/MongoDB...), không tạo giỏ hàng/thanh toán e-commerce hay portal đại lý động.
-3. **Single Source of Truth cho Trang Chủ:** Sửa nội dung tại `content/home_content.json` rồi chạy `python scripts/sync_home.py --apply`. Không sửa chay trực tiếp `index.html`.
+1. **Nhánh làm việc:** Luôn làm việc trên nhánh `source`. Nhánh `main` chỉ dùng để deploy tĩnh cho GitHub Pages (`../Rocky-Deploy`).
+2. **Kiến trúc SSG thống nhất:** 100% Static HTML export (`output: 'export'`) từ Next.js (`out/`). Tuyệt đối KHÔNG cài đặt DB server (SQL/Prisma/MongoDB...), không tạo giỏ hàng/thanh toán e-commerce hay portal đại lý động.
+3. **Single Source of Truth cho Trang Chủ:** `src/components/home/*.tsx` đọc trực tiếp từ `content/home_content.json`.
 4. **Kiểm tra trước khi commit:**
-   - Kiểm tra dữ liệu: `python scripts/sync_home.py --check`
+   - Kiểm tra dữ liệu & ảnh: `npm.cmd run check` (`node scripts/check_site.mjs`)
    - Build tĩnh Next.js: `npm.cmd run build` (trên Windows PowerShell dùng `npm.cmd`).
 
 ---
@@ -30,16 +30,16 @@ Tất cả các AI Agent (Claude, Cursor, Copilot, Gemini, GPT...) khi tiếp nh
 
 | Route URL | File Component / Page chính | File Dữ liệu / Nội dung liên quan |
 | :--- | :--- | :--- |
-| **Trang chủ (`/`)** | `src/components/home/*.tsx` | `content/home_content.json` |
-| **Catalogue Sản phẩm (`/san-pham`, `/trong-kinh`)** | `src/features/products/ProductCatalogView.tsx` | `content/products/*.json`, `pricing-matrix.ts` |
-| **Chi tiết sản phẩm (`/trong-kinh/[slug]`)** | `src/app/trong-kinh/[slug]/page.tsx` | `content/products/<slug>.json` |
-| **Công nghệ (`/cong-nghe`)** | `src/app/cong-nghe/page.tsx` | `content/technologies/*.json` |
-| **RX Lab (`/rx-lab`)** | `src/app/rx-lab/page.tsx` | `src/components/home/RxLabSection.tsx` |
-| **Blog & Cẩm nang (`/blog`, `/kham-pha-trong-kinh`)**| `src/app/blog/page.tsx`, `[slug]/page.tsx` | `content/articles/**/*.md` |
-| **Đối tác B2B (`/danh-cho-doi-tac`)** | `src/app/danh-cho-doi-tac/page.tsx` | `content/brands/*.json` |
+| **Trang chủ (`/`)** | `src/app/page.tsx`, `src/components/home/*.tsx` | `content/home_content.json` |
+| **Catalogue Sản phẩm (`/san-pham`, `/trong-kinh`)** | `src/components/products/CatalogPageShell.tsx`, `src/features/products/ProductCatalogView.tsx` | `content/products/*.json`, `pricing-matrix.ts` |
+| **Chi tiết sản phẩm (`/trong-kinh/[slug]`)** | `src/app/trong-kinh/[slug]/page.tsx` | `content/products/<slug>.json`, `pricing-matrix.ts` |
+| **Công nghệ (`/cong-nghe`)** | `src/app/cong-nghe/page.tsx` | Dữ liệu trong page |
+| **RX Lab (`/rx-lab`)** | `src/app/rx-lab/page.tsx` | Dữ liệu trong page |
+| **Blog & Cẩm nang (`/blog`, `/kham-pha-trong-kinh`)** | `src/app/blog/page.tsx`, `[slug]/page.tsx` | `content/articles/**/*.md` |
+| **Đối tác B2B (`/danh-cho-doi-tac`)** | `src/app/danh-cho-doi-tac/page.tsx` | `src/config/site.ts` |
 | **Về chúng tôi (`/ve-chung-toi`)** | `src/app/ve-chung-toi/page.tsx` | `src/config/site.ts` |
 | **Liên hệ & Kho (`/lien-he`)** | `src/app/lien-he/page.tsx` | `src/config/site.ts` |
-| **Master Static Landing** | `scripts/build-unified-liquid-master.js` | `index.html` (chỉ sinh tự động qua node script) |
+| **Deploy GitHub Pages** | `scripts/deploy_to_github.py` | Đồng bộ `out/` sang `../Rocky-Deploy` |
 
 ### 🚀 NGUYÊN TẮC TỐC ĐỘ DÀNH CHO AI AGENT:
 - **Tìm kiếm:** Luôn ưu tiên dùng `git ls-files` hoặc `git grep -n "keyword" src/` (truy xuất từ Git index siêu tốc, không dùng lệnh quét đĩa sâu qua `node_modules`/`.next`).

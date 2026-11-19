@@ -5,34 +5,30 @@ import Link from 'next/link';
 import Image from 'next/image';
 import {
   ArrowRight,
-  ShieldCheck,
-  Award,
   Sparkles,
   Image as ImageIcon,
 } from 'lucide-react';
+import homeContent from '@/../content/home_content.json';
+import { assetUrl } from '@/lib/utils';
 
 export default function HeroSection() {
   const [mode, setMode] = useState<'standard' | 'banner'>('standard');
+  const hero = homeContent.hero;
 
   useEffect(() => {
-    // Check URL query param ?mode=banner or ?view=banner
-    if (typeof window !== 'undefined') {
+    try {
       const params = new URLSearchParams(window.location.search);
       const modeParam = params.get('mode') || params.get('view');
-      if (modeParam === 'banner') {
+      const saved = localStorage.getItem('rocky_hero_mode');
+      if (modeParam === 'banner' || (!modeParam && saved === 'banner')) {
         setMode('banner');
-      } else {
-        const saved = localStorage.getItem('rocky_hero_mode');
-        if (saved === 'banner') {
-          setMode('banner');
-        }
       }
-    }
+    } catch {}
   }, []);
 
   const switchMode = (newMode: 'standard' | 'banner') => {
     setMode(newMode);
-    if (typeof window !== 'undefined') {
+    try {
       localStorage.setItem('rocky_hero_mode', newMode);
       const url = new URL(window.location.href);
       if (newMode === 'banner') {
@@ -42,13 +38,10 @@ export default function HeroSection() {
         url.searchParams.delete('view');
       }
       window.history.replaceState({}, '', url.toString());
-    }
+    } catch {}
   };
 
   const isBanner = mode === 'banner';
-  const basePath =
-    process.env.NEXT_PUBLIC_BASE_PATH ||
-    (typeof window !== 'undefined' && window.location.pathname.startsWith('/rockylens') ? '/rockylens' : '');
 
   return (
     <section
@@ -57,26 +50,21 @@ export default function HeroSection() {
         isBanner ? 'bg-[#001722] text-white' : 'site-background text-slate-800'
       }`}
     >
-      {/* ========================================================= */}
-      {/* CHẾ ĐỘ 2: CINEMATIC CANADIAN OPTICAL BANNER BACKGROUND   */}
-      {/* ========================================================= */}
+      {/* Banner Mode Background */}
       <div
         className={`absolute inset-0 z-0 bg-cover bg-center transition-opacity duration-700 pointer-events-none ${
           isBanner ? 'opacity-100' : 'opacity-0'
         }`}
         style={{
-          backgroundImage: `url('${basePath}/images/banners/banner_hero_mode.jpg')`,
+          backgroundImage: `url('${assetUrl('/images/banners/banner_hero_mode.jpg')}')`,
           backgroundPosition: 'right 30% center',
         }}
       >
-        {/* Optical gradient overlay ensuring 100% typography contrast & readability */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#001722]/98 via-[#002433]/85 to-transparent sm:to-[#002433]/40" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#001722] via-transparent to-[#001722]/60" />
       </div>
 
-      {/* ========================================================= */}
-      {/* CHẾ ĐỘ 1: APPLE LIQUID CAUSTIC LIGHT ORBS                */}
-      {/* ========================================================= */}
+      {/* Liquid Caustic Light Orbs */}
       {!isBanner && (
         <>
           <div className="absolute -top-32 -left-32 w-[400px] h-[400px] bg-gradient-to-tr from-[var(--site-bg-end)]/40 via-[var(--site-bg-middle)]/30 to-[var(--button-start)]/30 rounded-full blur-[100px] liquid-morph-1 pointer-events-none" />
@@ -85,10 +73,7 @@ export default function HeroSection() {
       )}
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
-        
-        {/* ========================================================= */}
-        {/* SEGMENTED MODE SWITCHER: CHẾ ĐỘ 1 vs CHẾ ĐỘ 2            */}
-        {/* ========================================================= */}
+        {/* Segmented Mode Switcher */}
         <div className="flex items-center justify-center lg:justify-start mb-4">
           <div className="inline-flex items-center p-1 rounded-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border border-slate-300/70 shadow-sm transition-all">
             <button
@@ -119,11 +104,8 @@ export default function HeroSection() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
-          
-          {/* Left Column: Product Discovery Journey Hero Narrative */}
+          {/* Left Column */}
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
-            
-            {/* Apple-style Capsule Badge */}
             <div
               className={`inline-flex items-center space-x-2 px-4 py-1.5 rounded-full text-xs font-bold shadow-xs transition-colors ${
                 isBanner
@@ -132,49 +114,50 @@ export default function HeroSection() {
               }`}
             >
               <span className="w-2 h-2 rounded-full bg-[var(--button-middle)]" />
-              <span className="tracking-wide uppercase font-semibold">Thương Hiệu Tròng Kính Canada Opticians</span>
+              <span className="tracking-wide uppercase font-semibold">{hero.badge}</span>
             </div>
 
-            {/* Main Headline */}
             <h1
               className={`text-3xl sm:text-5xl lg:text-[52px] font-black tracking-tight leading-[1.15] transition-colors ${
                 isBanner ? 'text-white' : 'text-heading'
               }`}
             >
-              Rocky Lens - <br className="hidden sm:inline" />
+              {hero.headlinePrefix} <br className="hidden sm:inline" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--button-start)] via-[var(--button-middle)] to-[var(--button-end)]">
-                trọn vẹn tầm nhìn, chuẩn sắc nét Canada
+                {hero.headlineHighlight}
               </span>
             </h1>
 
-            {/* Action Buttons: Tìm Tròng Kính Phù Hợp Với Bạn & Tìm Cửa Hàng Gần Bạn */}
+            {hero.subheadline && (
+              <p className={`text-sm sm:text-base max-w-2xl mx-auto lg:mx-0 leading-relaxed ${isBanner ? 'text-slate-200' : 'text-brand-muted'}`}>
+                {hero.subheadline}
+              </p>
+            )}
+
             <div className="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-3.5">
               <Link
-                href="#trong-kinh"
+                href={hero.ctaPrimary.link}
                 className="liquid-btn-primary px-7 py-3.5 text-xs sm:text-sm font-bold flex items-center space-x-2"
               >
-                <span>Tìm Tròng Kính Phù Hợp Với Bạn</span>
+                <span>{hero.ctaPrimary.text}</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
 
               <Link
-                href="/lien-he/"
+                href={hero.ctaSecondary.link}
                 className={`px-6 py-3.5 text-xs sm:text-sm font-bold flex items-center space-x-2 cursor-pointer transition-all rounded-full ${
                   isBanner
                     ? 'bg-white/15 hover:bg-white/25 text-white border border-white/30 backdrop-blur-md'
                     : 'liquid-btn-secondary'
                 }`}
               >
-                <span>Tìm Cửa Hàng Gần Bạn</span>
+                <span>{hero.ctaSecondary.text}</span>
               </Link>
             </div>
-
           </div>
 
-          {/* Right Column: Hero Visual Asset */}
+          {/* Right Column */}
           <div className="lg:col-span-5 relative flex items-center justify-center lg:justify-start lg:-ml-4">
-            
-            {/* Ambient Caustic Halo */}
             <div
               className={`w-72 h-72 sm:w-[360px] sm:h-[360px] rounded-full blur-3xl absolute liquid-morph-1 pointer-events-none transition-opacity duration-700 ${
                 isBanner
@@ -189,14 +172,13 @@ export default function HeroSection() {
                 isBanner ? 'lg:-translate-x-3 lg:-translate-y-2 scale-[1.02]' : ''
               }`}
             >
-              
               <div
                 className={`relative w-full h-full flex items-center justify-center transition-all duration-700 ${
                   isBanner ? 'drop-shadow-[0_25px_50px_rgba(0,162,204,0.45)]' : ''
                 }`}
               >
                 <Image
-                  src="/assets/h-lens3.png"
+                  src={assetUrl(hero.heroImage)}
                   alt="Tròng kính quang học Rocky Lens Canada"
                   fill
                   priority
@@ -204,11 +186,8 @@ export default function HeroSection() {
                   sizes="(max-width: 1024px) 100vw, 580px"
                 />
               </div>
-
             </div>
-
           </div>
-
         </div>
       </div>
     </section>

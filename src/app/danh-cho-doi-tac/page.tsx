@@ -23,6 +23,7 @@ import ContactCTA from '@/components/shared/ContactCTA';
 import { constructMetadata } from '@/lib/seo/metadata';
 import { siteConfig } from '@/config/site';
 import { CATEGORIES } from '@/features/products/product-types';
+import { assetUrl } from '@/lib/utils';
 
 export const metadata: Metadata = constructMetadata({
   title: 'Dành Cho Đối Tác & Đại Lý Kính Mắt B2B',
@@ -95,7 +96,7 @@ export default function PartnerPage() {
               </a>
 
               <a
-                href="/documents/Rocky_Lens_Catalogue_2025.pdf"
+                href={assetUrl('/documents/Rocky_Lens_Catalogue_2025.pdf')}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center space-x-2 px-6 py-3.5 rounded-xl text-sm font-semibold bg-white/15 hover:bg-white/25 text-white border border-white/25 transition-all"

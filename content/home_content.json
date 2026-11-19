@@ -71,7 +71,8 @@
         "indexOption": "1.56 | 1.60 | 1.67 | 1.74",
         "warranty": "24 tháng chính hãng",
         "imageFit": "cover",
-        "alt": "Tròng kính thiết kế đồ họa designer chuẩn màu 100% không đổi màu Rocky BlueCut UV420"
+        "alt": "Tròng kính thiết kế đồ họa designer chuẩn màu 100% không đổi màu Rocky BlueCut UV420",
+        "showcase": { "order": 1, "brand": "Rocky.", "subBrand": "BlueCut", "series": "UV420 Start Clear", "headline": "Kính đơn tròng thế hệ mới trong suốt 99.8% chuẩn màu cho dân thiết kế & văn phòng" }
       },
       {
         "category": "TIỆN LỢI VĂN PHÒNG & RA NẮNG (2-IN-1)",
@@ -88,7 +89,8 @@
         "indexOption": "1.56 | 1.60 | 1.67",
         "warranty": "24 tháng chính hãng",
         "imageFit": "cover",
-        "alt": "Tròng kính dân văn phòng lọc ánh sáng xanh máy tính và tự đổi màu khi ra nắng Rocky Trendy Smart BlueCut Photo"
+        "alt": "Tròng kính dân văn phòng lọc ánh sáng xanh máy tính và tự đổi màu khi ra nắng Rocky Trendy Smart BlueCut Photo",
+        "showcase": { "order": 2, "brand": "Rocky.", "subBrand": "Trendy", "series": "Smart Photochromic", "headline": "Người bạn đồng hành tốt nhất lọc ánh sáng xanh và đổi màu râm tức thì ra nắng" }
       },
       {
         "category": "BẢO VỆ MẮT NGOÀI TRỜI GẮT",
@@ -105,7 +107,8 @@
         "indexOption": "1.56 | 1.60 | 1.67 ASP",
         "warranty": "24 tháng chính hãng",
         "imageFit": "cover",
-        "alt": "Tròng kính hoạt động ngoài trời chống tia cực tím UV400 UV420 tối đa Rocky MaxShield Protect"
+        "alt": "Tròng kính hoạt động ngoài trời chống tia cực tím UV400 UV420 tối đa Rocky MaxShield Protect",
+        "showcase": { "order": 9, "brand": "Rocky.", "subBrand": "MaxShield", "series": "UV420 Solar Guard", "headline": "Bảo vệ võng mạc tối đa, ngăn chặn 100% tia cực tím độc hại UV400 và UV420 ngoài trời" }
       },
       {
         "category": "LÁI XE ĐÊM & ĐI MƯA AN TOÀN",
@@ -122,7 +125,8 @@
         "indexOption": "1.56 | 1.60 | 1.67",
         "warranty": "24 tháng chính hãng",
         "imageFit": "cover",
-        "alt": "Tròng kính lái xe ban đêm chống chói đèn pha LED và trượt nước mưa Rocky DriveShield Ruby AR"
+        "alt": "Tròng kính lái xe ban đêm chống chói đèn pha LED và trượt nước mưa Rocky DriveShield Ruby AR",
+        "showcase": { "order": 3, "brand": "Rocky.", "subBrand": "DriveShield", "series": "Ruby AR Night Vision", "headline": "Sắc nét tức thì ngay cả khi di chuyển, chống chói đèn pha LED và trượt nước mưa" }
       },
       {
         "category": "THỊ LỰC TOÀN DIỆN MỌI CỰ LY",
@@ -139,7 +143,8 @@
         "indexOption": "1.56 | 1.60 | 1.67",
         "warranty": "24 tháng chính hãng",
         "imageFit": "cover",
-        "alt": "Tròng kính đa tròng kỹ thuật số nhìn rõ 3 cự ly Xa Trung Gần liền mạch CanRx Freeform HD Progressive"
+        "alt": "Tròng kính đa tròng kỹ thuật số nhìn rõ 3 cự ly Xa Trung Gần liền mạch CanRx Freeform HD Progressive",
+        "showcase": { "order": 4, "brand": "CanRx.", "subBrand": "Freeform", "series": "Progressive HD Series", "headline": "Cảm giác thoải mái cho mắt cả ngày dài, nhìn rõ liền mạch mọi cự ly Xa - Gần" }
       },
       {
         "category": "BẢO VỆ MẮT HỌC ĐƯỜNG",
@@ -156,7 +161,8 @@
         "indexOption": "1.56 | 1.60",
         "warranty": "24 tháng chính hãng",
         "imageFit": "cover",
-        "alt": "Tròng kính kiểm soát tiến triển độ cận thị cho trẻ em học sinh Defocus MyoControl Kids HD"
+        "alt": "Tròng kính kiểm soát tiến triển độ cận thị cho trẻ em học sinh Defocus MyoControl Kids HD",
+        "showcase": { "order": 5, "brand": "Defocus.", "subBrand": "MyoControl", "series": "Kids DIMS HD", "headline": "Giải pháp khoa học tiên tiến giúp kiểm soát và làm chậm tiến triển độ cận ở trẻ em" }
       },
       {
         "category": "PHONG CÁCH XU HƯỚNG CÁ TÍNH",
@@ -173,7 +179,8 @@
         "indexOption": "1.56 | 1.60 Trendy",
         "warranty": "24 tháng chính hãng",
         "imageFit": "cover",
-        "alt": "Tròng kính cận đổi màu thời trang 7 sắc màu cá tính nhạy sáng ngoài trời Rocky Trendy Style Photochromic"
+        "alt": "Tròng kính cận đổi màu thời trang 7 sắc màu cá tính nhạy sáng ngoài trời Rocky Trendy Style Photochromic",
+        "showcase": { "order": 6, "brand": "Rocky.", "subBrand": "Chameleon", "series": "Trendy 7 Colors", "headline": "Biến chiếc kính cận thành kính râm sành điệu với bộ sưu tập 7 sắc màu cá tính" }
       },
       {
         "category": "CHUYÊN GỌNG KHOAN BẮT ỐC",
@@ -190,7 +197,8 @@
         "indexOption": "1.60 | 1.67 MR Series",
         "warranty": "24 tháng chính hãng",
         "imageFit": "cover",
-        "alt": "Tròng kính chuyên gọng khoan bắt ốc không viền phôi Mitsui MR-8 dẻo dai chống mẻ vỡ"
+        "alt": "Tròng kính chuyên gọng khoan bắt ốc không viền phôi Mitsui MR-8 dẻo dai chống mẻ vỡ",
+        "showcase": { "order": 7, "brand": "Rocky.", "subBrand": "MR-8", "series": "Tough Rimless Drill", "headline": "Phôi siêu dẻo dai chịu lực uốn đỉnh cao, bắt ốc chắc chắn cho gọng không viền" }
       },
       {
         "category": "CẬN VIỄN NẶNG & TRÒNG MỎNG NHẸ",
@@ -207,7 +215,8 @@
         "indexOption": "1.67 | 1.74 Ultra Thin",
         "warranty": "24 tháng chính hãng",
         "imageFit": "cover",
-        "alt": "Tròng kính mỏng chiết suất cao 1.67 và 1.74 triệt tiêu mép dày độ cận viễn nặng Rocky Ultra Thin"
+        "alt": "Tròng kính mỏng chiết suất cao 1.67 và 1.74 triệt tiêu mép dày độ cận viễn nặng Rocky Ultra Thin",
+        "showcase": { "order": 8, "brand": "Rocky.", "subBrand": "UltraThin", "series": "1.74 High Index", "headline": "Thẩm mỹ mỏng nhẹ tối ưu, triệt tiêu độ dày đáy chai cho mắt có độ cận viễn nặng" }
       }
     ],
     "bottomCTA": {

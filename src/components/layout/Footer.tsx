@@ -1,5 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
+import { footerNavigation } from '@/config/navigation';
+import { siteConfig } from '@/config/site';
+import { assetUrl } from '@/lib/utils';
 
 export default function Footer() {
   return (
@@ -10,82 +13,46 @@ export default function Footer() {
           {/* Col 1: Brand Info */}
           <div className="space-y-4">
             <img
-              src="/assets/logo_rocky_white.png"
-              alt="Rocky Lens"
+              src={assetUrl('/assets/logo_rocky_white.png')}
+              alt={siteConfig.name}
               className="h-10 w-auto object-contain"
             />
             <p className="text-slate-400 font-medium text-base leading-relaxed">
-              Thương hiệu tròng kính quang học Canada, phân phối độc quyền tại Việt Nam bởi Công ty Cổ phần Clearly Vietnam.
+              Thương hiệu tròng kính quang học Canada, phân phối độc quyền tại Việt Nam bởi {siteConfig.legalName}.
             </p>
             <div className="text-base text-slate-400 font-medium">
               Giấy phép kinh doanh số: 0316499823 do Sở Kế hoạch và Đầu tư TP.HCM cấp.
             </div>
           </div>
 
-          {/* Col 2: Solutions */}
+          {/* Col 2: Solutions (wired to footerNavigation + catalog filters) */}
           <div className="space-y-3">
             <span className="text-white font-bold text-lg block">Danh Mục Tròng Kính</span>
             <ul className="space-y-2 text-base">
-              <li>
-                <Link href="/trong-kinh/" className="text-slate-400 font-medium hover:text-white transition-colors">
-                  Khi Lái Xe Ban Đêm
-                </Link>
-              </li>
-              <li>
-                <Link href="/trong-kinh/" className="text-slate-400 font-medium hover:text-white transition-colors">
-                  Khi Làm Việc Màn Hình Số
-                </Link>
-              </li>
-              <li>
-                <Link href="/trong-kinh/" className="text-slate-400 font-medium hover:text-white transition-colors">
-                  Tròng Kính Đổi Màu Ngoài Trời
-                </Link>
-              </li>
-              <li>
-                <Link href="/trong-kinh/" className="text-slate-400 font-medium hover:text-white transition-colors">
-                  Tròng Kính Mỏng Nhẹ Chịu Lực
-                </Link>
-              </li>
-              <li>
-                <Link href="/trong-kinh/" className="text-slate-400 font-medium hover:text-white transition-colors">
-                  Tròng Kính Nhìn Rõ Xa Và Gần
-                </Link>
-              </li>
-              <li>
-                <Link href="/trong-kinh/" className="text-slate-400 font-medium hover:text-white transition-colors">
-                  Chăm Sóc Thị Lực Trẻ Em
-                </Link>
-              </li>
+              {footerNavigation.products.map((item) => (
+                <li key={item.title}>
+                  <Link href={item.href} className="text-slate-400 font-medium hover:text-white transition-colors">
+                    {item.title}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Col 3: Technology & Exploration */}
+          {/* Col 3: Knowledge & Technology */}
           <div className="space-y-3">
-            <span className="text-white font-bold text-lg block">Công Nghệ &amp; Khám Phá</span>
+            <span className="text-white font-bold text-lg block">Kiến Thức &amp; Công Nghệ</span>
             <ul className="space-y-2 text-base">
-              <li>
-                <Link href="/cong-nghe/" className="text-slate-400 font-medium hover:text-white transition-colors">
-                  Lựa chọn vật liệu phù hợp
-                </Link>
-              </li>
+              {footerNavigation.knowledge.map((item) => (
+                <li key={item.title}>
+                  <Link href={item.href} className="text-slate-400 font-medium hover:text-white transition-colors">
+                    {item.title}
+                  </Link>
+                </li>
+              ))}
               <li>
                 <Link href="/rx-lab/" className="text-slate-400 font-medium hover:text-white transition-colors">
                   Gia công Lab RX kỹ thuật số
-                </Link>
-              </li>
-              <li>
-                <Link href="/cong-nghe/" className="text-slate-400 font-medium hover:text-white transition-colors">
-                  Lớp phủ hạn chế bám bẩn
-                </Link>
-              </li>
-              <li>
-                <Link href="/trong-kinh/" className="text-slate-400 font-medium hover:text-white transition-colors">
-                  Tìm hiểu các lựa chọn độ mỏng
-                </Link>
-              </li>
-              <li>
-                <Link href="/ve-chung-toi/" className="text-slate-400 font-medium hover:text-white transition-colors">
-                  Tiêu chuẩn quản lý y tế ISO 13485
                 </Link>
               </li>
             </ul>
@@ -95,10 +62,10 @@ export default function Footer() {
           <div className="space-y-3">
             <span className="text-white font-bold text-lg block">Tiếp Nhận Đại Lý &amp; B2B</span>
             <div className="space-y-2 text-base text-slate-400 font-medium">
-              <p><strong>Hotline B2B:</strong> 0933 102 653</p>
-              <p><strong>Email Đại Lý:</strong> b2b@rockylens.com</p>
-              <p><strong>Zalo Hợp Tác:</strong> 0933 102 653</p>
-              <p><strong>Trung Tâm Kho:</strong> TP. Hồ Chí Minh &amp; Hà Nội</p>
+              <p><strong>Hotline B2B:</strong> {siteConfig.phones.hotlineDisplay}</p>
+              <p><strong>Email Đại Lý:</strong> {siteConfig.emails.b2b}</p>
+              <p><strong>Zalo Hợp Tác:</strong> {siteConfig.phones.hotlineDisplay}</p>
+              <p><strong>Trung Tâm Kho:</strong> {siteConfig.addresses[0]?.street || 'TP. Hồ Chí Minh & Hà Nội'}</p>
               <p className="text-base text-slate-400 font-medium pt-2">
                 Tiếp nhận yêu cầu đại lý: 8:00 - 18:00 (Thứ 2 - Thứ 7)
               </p>
@@ -109,17 +76,17 @@ export default function Footer() {
 
         <div className="pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-base text-slate-400 font-medium">
           <div>
-            &copy; 2026 Rocky Lens &amp; Clearly Vietnam. Bảo lưu mọi quyền.
+            &copy; 2026 {siteConfig.name} &amp; Clearly Vietnam. Bảo lưu mọi quyền.
           </div>
           <div className="flex items-center gap-6">
-            <Link href="#" className="text-slate-400 font-medium hover:text-white transition-colors">
-              Chính sách bảo mật
+            <Link href="/ve-chung-toi/" className="text-slate-400 font-medium hover:text-white transition-colors">
+              Về chúng tôi
             </Link>
-            <Link href="#" className="text-slate-400 font-medium hover:text-white transition-colors">
-              Quy định bảo hành
-            </Link>
-            <Link href="#" className="text-slate-400 font-medium hover:text-white transition-colors">
+            <Link href="/cong-nghe/" className="text-slate-400 font-medium hover:text-white transition-colors">
               Tiêu chuẩn kỹ thuật
+            </Link>
+            <Link href="/danh-cho-doi-tac/" className="text-slate-400 font-medium hover:text-white transition-colors">
+              Chính sách đối tác
             </Link>
           </div>
         </div>

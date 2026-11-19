@@ -1,11 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-RockyLens Instant Local Dev Server
-Serves Rocky workspace directly:
-- / -> index.html (Master landing page, hot-updated in 0.2s)
-- /assets, /images, /uploads -> static media
-- /trong-kinh, /san-pham, /ve-chung-toi -> out/ prebuilt static pages
+RockyLens Local Static Preview Server
+Serves compiled Next.js static export (`out/`) and `public/` assets on http://localhost:3000.
 """
 
 import http.server
@@ -17,55 +14,45 @@ PORT = 3000
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "out")
 
+
 class RockyDevHandler(http.server.SimpleHTTPRequestHandler):
     def translate_path(self, path):
         path = path.split('?', 1)[0].split('#', 1)[0]
         clean_path = path.lstrip('/')
-        
-        # 1. Root index.html
+
         if not clean_path or clean_path == 'index.html':
-            return os.path.join(ROOT, "index.html")
-            
-        # 2. Files in workspace root or public/ (assets, images, uploads, documents, etc.)
+            out_index = os.path.join(OUT, "index.html")
+            if os.path.exists(out_index):
+                return out_index
+
         rel_path = clean_path.replace('/', os.sep)
-        for base in (ROOT, os.path.join(ROOT, "public")):
+        for base in (OUT, os.path.join(ROOT, "public")):
             candidate = os.path.join(base, rel_path)
-            if os.path.exists(candidate) and not os.path.isdir(candidate):
-                return candidate
-            if os.path.isdir(candidate):
-                idx_file = os.path.join(candidate, "index.html")
-                if os.path.exists(idx_file):
-                    return idx_file
-
-        # 4. Files in out/ (Next.js prebuilt pages)
-        local_out = os.path.join(OUT, clean_path.replace('/', os.sep))
-        if os.path.exists(local_out):
-            if os.path.isdir(local_out):
-                idx_file = os.path.join(local_out, "index.html")
-                if os.path.exists(idx_file):
-                    return idx_file
-            return local_out
-
-        # 5. Check if out/<clean_path>/index.html exists
-        idx_candidate = os.path.join(OUT, clean_path.replace('/', os.sep), "index.html")
-        if os.path.exists(idx_candidate):
-            return idx_candidate
+            if os.path.exists(candidate):
+                if os.path.isdir(candidate):
+                    idx = os.path.join(candidate, "index.html")
+                    if os.path.exists(idx):
+                        return idx
+                else:
+                    return candidate
+            idx = os.path.join(candidate, "index.html")
+            if os.path.exists(idx):
+                return idx
 
         return super().translate_path(path)
 
     def end_headers(self):
-        # Disable browser caching for instant preview
         self.send_header('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0')
         self.send_header('Pragma', 'no-cache')
         self.send_header('Expires', '0')
         super().end_headers()
 
+
 if __name__ == '__main__':
-    # Allow port reuse
     socketserver.TCPServer.allow_reuse_address = True
     with socketserver.TCPServer(("", PORT), RockyDevHandler) as httpd:
-        print(f"🚀 RockyLens Instant Dev Server is LIVE at http://localhost:{PORT}")
-        print(f"   Root: {ROOT}")
+        print(f"🚀 RockyLens Static Preview Server is LIVE at http://localhost:{PORT}")
+        print(f"   Serving: {OUT}")
         sys.stdout.flush()
         try:
             httpd.serve_forever()

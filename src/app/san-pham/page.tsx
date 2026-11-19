@@ -1,6 +1,6 @@
 import React from 'react';
 import { Metadata } from 'next';
-import ProductsPage, { metadata as trongKinhMetadata } from '@/app/trong-kinh/page';
+import CatalogPageShell from '@/components/products/CatalogPageShell';
 import { constructMetadata } from '@/lib/seo/metadata';
 
 export const metadata: Metadata = constructMetadata({
@@ -10,5 +10,5 @@ export const metadata: Metadata = constructMetadata({
 });
 
 export default function SanPhamPage() {
-  return <ProductsPage />;
+  return <CatalogPageShell breadcrumbHref="/san-pham/" />;
 }

@@ -7,7 +7,7 @@ import {
   getAllProducts,
   getProductBySlug,
   getRelatedProducts,
-} from '@/features/products/product-service';
+} from '@/lib/content/load-products';
 import Breadcrumbs from '@/components/shared/Breadcrumbs';
 import ProductSpecifications from '@/components/products/ProductSpecifications';
 import ProductGrid from '@/components/products/ProductGrid';
@@ -16,6 +16,7 @@ import ShopeeProductSelector from '@/components/products/ShopeeProductSelector';
 import { getProductTheme } from '@/features/products/pricing-matrix';
 import { constructMetadata } from '@/lib/seo/metadata';
 import { productSchema } from '@/lib/seo/structured-data';
+import { assetUrl } from '@/lib/utils';
 
 interface ProductDetailPageProps {
   params: Promise<{ slug: string }>;
@@ -96,7 +97,7 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
 
                 <div className="relative w-full h-full flex items-center justify-center">
                   <Image
-                    src={product.featuredImage || product.images[0]}
+                    src={assetUrl(product.featuredImage || product.images[0])}
                     alt={product.name}
                     fill
                     priority

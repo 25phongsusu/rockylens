@@ -3,23 +3,49 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { ChevronLeft, ChevronRight, X, ZoomIn } from 'lucide-react';
+import homeContent from '@/../content/home_content.json';
+import { assetUrl } from '@/lib/utils';
 
 const allCerts = [
-  // Group 1: Canada
-  { src: '/images/bangkhen/11.jpg', title: 'The College of Opticians of Ontario - Chứng chỉ hành nghề Optician Canada (Thao Nguyen)', group: 'Đội ngũ chuyên gia Canada' },
-  { src: '/images/bangkhen/12.jpg', title: 'The College of Opticians of Ontario - Chứng chỉ hành nghề Optician Canada (Ha Vu)', group: 'Đội ngũ chuyên gia Canada' },
-  { src: '/images/bangkhen/13.jpg', title: 'The College of Opticians of Ontario - Chứng chỉ hành nghề Optician Canada (Tan Dang)', group: 'Đội ngũ chuyên gia Canada' },
-  { src: '/images/bangkhen/14.jpg', title: 'The College of Opticians of Ontario - Chứng chỉ hành nghề Optician Canada (Tiep Truong)', group: 'Đội ngũ chuyên gia Canada' },
-  { src: '/images/bangkhen/15.jpg', title: 'Georgian College of Applied Arts and Technology - Bằng tốt nghiệp Optician Canada', group: 'Đội ngũ chuyên gia Canada' },
-  { src: '/images/bangkhen/16.jpg', title: 'National Association of Canadian Optician Regulators (NACOR Certificate)', group: 'Đội ngũ chuyên gia Canada' },
-  // Group 2: International & Asia
-  { src: '/images/bangkhen/1.jpg', title: 'Giấy chứng nhận ISO 13485:2016 - Hệ thống quản lý chất lượng thiết bị y tế quốc tế', group: 'Tiêu chuẩn quốc tế' },
-  { src: '/images/bangkhen/2.jpg', title: 'Diễn đàn hợp tác kinh tế Việt Nam - Asia 2024: Thương hiệu uy tín hội nhập Châu Á', group: 'Giải thưởng chất lượng Châu Á' },
-  { src: '/images/bangkhen/3.jpg', title: 'Chứng nhận Sản phẩm & Dịch vụ chất lượng Châu Á 2024 (Asia Quality Products & Services)', group: 'Giải thưởng chất lượng Châu Á' },
-  { src: '/images/bangkhen/4.jpg', title: 'The Best of Vietnam 2024 - Top 20 Sản phẩm dịch vụ chất lượng tốt nhất Việt Nam', group: 'Giải thưởng Việt Nam' },
-  // Group 3: Community
-  { src: '/images/bangkhen/31.jpg', title: 'Giấy khen Hội cứu trợ trẻ em tàn tật Việt Nam - Tích cực vì sức khỏe thị lực trẻ em', group: 'Hoạt động cộng đồng' },
-  { src: '/images/bangkhen/32.jpg', title: 'Giấy khen Hội nạn nhân chất độc da cam / Dioxin Việt Nam - Hoạt động thiện nguyện', group: 'Hoạt động cộng đồng' },
+  { src: '/images/bangkhen/11.jpg', title: 'The College of Opticians of Ontario - Chứng chỉ hành nghề Optician Canada (Thao Nguyen)' },
+  { src: '/images/bangkhen/12.jpg', title: 'The College of Opticians of Ontario - Chứng chỉ hành nghề Optician Canada (Ha Vu)' },
+  { src: '/images/bangkhen/13.jpg', title: 'The College of Opticians of Ontario - Chứng chỉ hành nghề Optician Canada (Tan Dang)' },
+  { src: '/images/bangkhen/14.jpg', title: 'The College of Opticians of Ontario - Chứng chỉ hành nghề Optician Canada (Tiep Truong)' },
+  { src: '/images/bangkhen/15.jpg', title: 'Georgian College of Applied Arts and Technology - Bằng tốt nghiệp Optician Canada' },
+  { src: '/images/bangkhen/16.jpg', title: 'National Association of Canadian Optician Regulators (NACOR Certificate)' },
+  { src: '/images/bangkhen/1.jpg', title: 'Giấy chứng nhận ISO 13485:2016 - Hệ thống quản lý chất lượng thiết bị y tế quốc tế' },
+  { src: '/images/bangkhen/2.jpg', title: 'Diễn đàn hợp tác kinh tế Việt Nam - Asia 2024: Thương hiệu uy tín hội nhập Châu Á' },
+  { src: '/images/bangkhen/3.jpg', title: 'Chứng nhận Sản phẩm & Dịch vụ chất lượng Châu Á 2024 (Asia Quality Products & Services)' },
+  { src: '/images/bangkhen/4.jpg', title: 'The Best of Vietnam 2024 - Top 20 Sản phẩm dịch vụ chất lượng tốt nhất Việt Nam' },
+  { src: '/images/bangkhen/31.jpg', title: 'Giấy khen Hội cứu trợ trẻ em tàn tật Việt Nam - Tích cực vì sức khỏe thị lực trẻ em' },
+  { src: '/images/bangkhen/32.jpg', title: 'Giấy khen Hội nạn nhân chất độc da cam / Dioxin Việt Nam - Hoạt động thiện nguyện' },
+];
+
+const CERT_GROUPS = [
+  {
+    start: 0,
+    end: 6,
+    caption: 'Đội ngũ nhân sự tốt nghiệp và có chứng chỉ hành nghề tại Canada (Bấm vào để xem lớn)',
+    gridClass: 'grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3',
+    aspectClass: 'aspect-[3/4]',
+    sizes: '(max-width: 768px) 50vw, 16vw',
+  },
+  {
+    start: 6,
+    end: 10,
+    caption: 'Sản phẩm đạt Tiêu chuẩn quốc tế và vinh dự đạt giải thưởng chất lượng châu Á',
+    gridClass: 'grid-cols-2 sm:grid-cols-4 gap-4',
+    aspectClass: 'aspect-[3/4]',
+    sizes: '(max-width: 768px) 50vw, 25vw',
+  },
+  {
+    start: 10,
+    end: 12,
+    caption: 'Tích cực tham gia hoạt động vì cộng đồng',
+    gridClass: 'grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto',
+    aspectClass: 'aspect-[4/3]',
+    sizes: '(max-width: 768px) 100vw, 50vw',
+  },
 ];
 
 const partnerLogos = [
@@ -35,38 +61,24 @@ const partnerLogos = [
   { src: '/uploads/partners/partner_10.png', alt: 'Đối tác Nhãn Khoa Đối Tác' },
 ];
 
-const brandValues = [
-  'Tính năng ưu việt bảo vệ mắt toàn diện',
-  'Đáp ứng toàn diện mọi nhu cầu thị lực',
-  'Giải pháp thị lực ở mọi phân khúc giá',
-  'Sản phẩm đạt chất lượng quốc tế',
-];
-
 export default function WhyRockySection() {
   const [selectedCertIndex, setSelectedCertIndex] = useState<number | null>(null);
+  const { whyRocky } = homeContent;
 
-  const handlePrev = (e?: React.MouseEvent) => {
-    if (e) e.stopPropagation();
-    if (selectedCertIndex !== null) {
-      setSelectedCertIndex((selectedCertIndex - 1 + allCerts.length) % allCerts.length);
-    }
-  };
-
-  const handleNext = (e?: React.MouseEvent) => {
-    if (e) e.stopPropagation();
-    if (selectedCertIndex !== null) {
-      setSelectedCertIndex((selectedCertIndex + 1) % allCerts.length);
-    }
+  const stepCert = (delta: number, e?: React.MouseEvent) => {
+    e?.stopPropagation();
+    setSelectedCertIndex((prev) =>
+      prev === null ? null : (prev + delta + allCerts.length) % allCerts.length
+    );
   };
 
   useEffect(() => {
+    if (selectedCertIndex === null) return;
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (selectedCertIndex === null) return;
       if (e.key === 'Escape') setSelectedCertIndex(null);
-      if (e.key === 'ArrowLeft') handlePrev();
-      if (e.key === 'ArrowRight') handleNext();
+      if (e.key === 'ArrowLeft') stepCert(-1);
+      if (e.key === 'ArrowRight') stepCert(1);
     };
-
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [selectedCertIndex]);
@@ -74,27 +86,20 @@ export default function WhyRockySection() {
   return (
     <section id="vi-sao-rocky" className="relative py-20 px-6 bg-transparent overflow-hidden">
       <div className="max-w-7xl mx-auto space-y-16 relative z-10">
-        
-        {/* Part A: Rocky Canada Opticians & Bằng chứng thương hiệu */}
+        {/* Part A: Brand Story & Certificates */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
-          
-          {/* Left Column: Brand Story & Values */}
           <div className="lg:col-span-5 space-y-6">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-heading tracking-tight">
-              Rocky Canada Opticians
+              {whyRocky.title}
             </h2>
             <div className="space-y-4 text-slate-700 text-base leading-relaxed">
-              <p>
-                Được phát triển bởi đội ngũ chuyên gia khúc xạ tại Canada, Rocky mang tinh hoa quang học Canada về phục vụ cộng đồng Việt Nam. Chúng tôi kết hợp nền tảng chuyên môn vững chắc với khát vọng nâng cao sức khỏe thị lực, mang đến những giải pháp tròng kính đạt chuẩn quốc tế, phù hợp với nhu cầu và điều kiện sống của người Việt.
-              </p>
-              <p>
-                Hiện Rocky đã có mặt tại 34 tỉnh thành với hệ thống phân phối rộng khắp, cam kết mang lại trải nghiệm dịch vụ nhanh chóng, chính xác và tận tâm.
-              </p>
+              {whyRocky.paragraphs.map((p, idx) => (
+                <p key={idx}>{p}</p>
+              ))}
             </div>
 
-            {/* 4 Value Points */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-              {brandValues.map((val, idx) => (
+              {whyRocky.values.map((val, idx) => (
                 <div key={idx} className="p-4 rounded-2xl card-surface flex items-center gap-3 shadow-xs">
                   <span className="w-2.5 h-2.5 rounded-full bg-[var(--button-middle)] shrink-0" />
                   <span className="text-sm font-bold text-heading">{val}</span>
@@ -103,98 +108,35 @@ export default function WhyRockySection() {
             </div>
           </div>
 
-          {/* Right Column: Certificates & Awards */}
           <div className="lg:col-span-7 space-y-8">
-            
-            {/* Group 1: Canada Optician Certificates (Indices 0 - 5) */}
-            <div className="space-y-3">
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">
-                {allCerts.slice(0, 6).map((cert, idx) => (
-                  <div
-                    key={idx}
-                    onClick={() => setSelectedCertIndex(idx)}
-                    className="rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100"
-                  >
-                    <Image
-                      src={cert.src}
-                      alt={cert.title}
-                      fill
-                      className="object-cover rounded-xl group-hover:scale-105 transition-transform duration-300"
-                      sizes="(max-width: 768px) 50vw, 16vw"
-                    />
-                    <div className="absolute inset-0 bg-[var(--b2b-end)]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
-                      <div className="w-9 h-9 rounded-full bg-white/95 text-primary flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
-                        <ZoomIn className="w-5 h-5 text-primary" />
+            {CERT_GROUPS.map((group) => (
+              <div key={group.caption} className="space-y-3">
+                <div className={`grid ${group.gridClass}`}>
+                  {allCerts.slice(group.start, group.end).map((cert, idx) => (
+                    <div
+                      key={cert.src}
+                      onClick={() => setSelectedCertIndex(group.start + idx)}
+                      className={`rounded-2xl shadow-xs ${group.aspectClass} overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100`}
+                    >
+                      <Image
+                        src={assetUrl(cert.src)}
+                        alt={cert.title}
+                        fill
+                        className="object-cover rounded-xl group-hover:scale-105 transition-transform duration-300"
+                        sizes={group.sizes}
+                      />
+                      <div className="absolute inset-0 bg-[var(--b2b-end)]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
+                        <div className="w-9 h-9 rounded-full bg-white/95 text-primary flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
+                          <ZoomIn className="w-5 h-5 text-primary" />
+                        </div>
                       </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
+                <p className="text-center text-sm font-bold text-heading">{group.caption}</p>
               </div>
-              <p className="text-center text-sm font-bold text-heading">
-                Đội ngũ nhân sự tốt nghiệp và có chứng chỉ hành nghề tại Canada (Bấm vào để xem lớn)
-              </p>
-            </div>
-
-            {/* Group 2: International & Asia Awards (Indices 6 - 9) */}
-            <div className="space-y-3">
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-                {allCerts.slice(6, 10).map((cert, idx) => (
-                  <div
-                    key={idx}
-                    onClick={() => setSelectedCertIndex(idx + 6)}
-                    className="rounded-2xl shadow-xs aspect-[3/4] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100"
-                  >
-                    <Image
-                      src={cert.src}
-                      alt={cert.title}
-                      fill
-                      className="object-cover rounded-xl group-hover:scale-105 transition-transform duration-300"
-                      sizes="(max-width: 768px) 50vw, 25vw"
-                    />
-                    <div className="absolute inset-0 bg-[var(--b2b-end)]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
-                      <div className="w-10 h-10 rounded-full bg-white/95 text-primary flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
-                        <ZoomIn className="w-5 h-5 text-primary" />
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <p className="text-center text-sm font-bold text-heading">
-                Sản phẩm đạt Tiêu chuẩn quốc tế và vinh dự đạt giải thưởng chất lượng châu Á
-              </p>
-            </div>
-
-            {/* Group 3: Community Activities (Indices 10 - 11) */}
-            <div className="space-y-3">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
-                {allCerts.slice(10, 12).map((cert, idx) => (
-                  <div
-                    key={idx}
-                    onClick={() => setSelectedCertIndex(idx + 10)}
-                    className="rounded-2xl shadow-xs aspect-[4/3] overflow-hidden group relative cursor-pointer hover:shadow-md transition-all duration-300 bg-slate-100"
-                  >
-                    <Image
-                      src={cert.src}
-                      alt={cert.title}
-                      fill
-                      className="object-cover rounded-xl group-hover:scale-105 transition-transform duration-300"
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                    />
-                    <div className="absolute inset-0 bg-[var(--b2b-end)]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl pointer-events-none">
-                      <div className="w-10 h-10 rounded-full bg-white/95 text-primary flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
-                        <ZoomIn className="w-5 h-5 text-primary" />
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <p className="text-center text-sm font-bold text-heading">
-                Tích cực tham gia hoạt động vì cộng đồng
-              </p>
-            </div>
-
+            ))}
           </div>
-
         </div>
 
         {/* Part B: Đối tác của chúng tôi */}
@@ -208,50 +150,32 @@ export default function WhyRockySection() {
             </p>
           </div>
 
-          {/* Infinite Marquee Track Moving Slowly from Right to Left */}
           <div className="relative w-full overflow-hidden py-6 sm:py-8">
             <div className="pointer-events-none absolute inset-y-0 left-0 w-20 sm:w-36 bg-gradient-to-r from-[var(--site-bg-start)] to-transparent z-10" />
             <div className="pointer-events-none absolute inset-y-0 right-0 w-20 sm:w-36 bg-gradient-to-l from-[var(--site-bg-start)] to-transparent z-10" />
 
             <div className="flex items-center gap-6 sm:gap-8 w-max animate-marquee hover:[animation-play-state:paused]">
-              {/* Set 1 */}
-              {partnerLogos.map((p, idx) => (
-                <div
-                  key={`p1-${idx}`}
-                  className="bg-white/95 p-2 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-28 sm:h-36 min-w-[260px] sm:min-w-[320px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer"
-                >
-                  <div className="relative w-56 sm:w-72 h-24 sm:h-28">
-                    <Image
-                      src={p.src}
-                      alt={p.alt}
-                      fill
-                      className="object-contain grayscale opacity-85 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300"
-                      sizes="(max-width: 768px) 260px, 320px"
-                    />
+              {[0, 1].map((dup) =>
+                partnerLogos.map((p, idx) => (
+                  <div
+                    key={`p${dup}-${idx}`}
+                    className="bg-white/95 p-2 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-28 sm:h-36 min-w-[260px] sm:min-w-[320px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer"
+                  >
+                    <div className="relative w-56 sm:w-72 h-24 sm:h-28">
+                      <Image
+                        src={assetUrl(p.src)}
+                        alt={p.alt}
+                        fill
+                        className="object-contain grayscale opacity-85 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300"
+                        sizes="(max-width: 768px) 260px, 320px"
+                      />
+                    </div>
                   </div>
-                </div>
-              ))}
-              {/* Set 2 (Duplicate for seamless infinite loop) */}
-              {partnerLogos.map((p, idx) => (
-                <div
-                  key={`p2-${idx}`}
-                  className="bg-white/95 p-2 rounded-2xl shadow-xs border border-slate-200/80 flex items-center justify-center h-28 sm:h-36 min-w-[260px] sm:min-w-[320px] group hover:shadow-md hover:border-[var(--button-middle)]/50 transition-all shrink-0 cursor-pointer"
-                >
-                  <div className="relative w-56 sm:w-72 h-24 sm:h-28">
-                    <Image
-                      src={p.src}
-                      alt={p.alt}
-                      fill
-                      className="object-contain grayscale opacity-85 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300"
-                      sizes="(max-width: 768px) 260px, 320px"
-                    />
-                  </div>
-                </div>
-              ))}
+                ))
+              )}
             </div>
           </div>
         </div>
-
       </div>
 
       {/* Interactive Lightbox Modal */}
@@ -261,7 +185,6 @@ export default function WhyRockySection() {
           style={{ backgroundColor: 'rgba(3, 14, 26, 0.94)' }}
           onClick={() => setSelectedCertIndex(null)}
         >
-          {/* Close Button */}
           <button
             type="button"
             onClick={() => setSelectedCertIndex(null)}
@@ -271,34 +194,31 @@ export default function WhyRockySection() {
             <X className="w-6 h-6 sm:w-7 sm:h-7 stroke-[2.5]" />
           </button>
 
-          {/* Prev Button */}
           <button
             type="button"
-            onClick={handlePrev}
+            onClick={(e) => stepCert(-1, e)}
             className="absolute left-3 sm:left-8 top-1/2 -translate-y-1/2 w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-slate-900/90 hover:bg-[var(--button-middle)] text-white border-2 border-white/40 shadow-2xl flex items-center justify-center transition-all duration-200 z-50 hover:scale-110 active:scale-95 cursor-pointer"
             aria-label="Bằng khen trước"
           >
             <ChevronLeft className="w-7 h-7 sm:w-9 sm:h-9 stroke-[2.5]" />
           </button>
 
-          {/* Next Button */}
           <button
             type="button"
-            onClick={handleNext}
+            onClick={(e) => stepCert(1, e)}
             className="absolute right-3 sm:right-8 top-1/2 -translate-y-1/2 w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-slate-900/90 hover:bg-[var(--button-middle)] text-white border-2 border-white/40 shadow-2xl flex items-center justify-center transition-all duration-200 z-50 hover:scale-110 active:scale-95 cursor-pointer"
             aria-label="Bằng khen tiếp theo"
           >
             <ChevronRight className="w-7 h-7 sm:w-9 sm:h-9 stroke-[2.5]" />
           </button>
 
-          {/* Modal Content */}
           <div
             className="max-w-4xl w-full flex flex-col items-center justify-center space-y-4 max-h-full"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="relative max-h-[75vh] w-auto max-w-full rounded-2xl overflow-hidden bg-black/60 flex items-center justify-center p-2 shadow-2xl border border-white/10">
               <img
-                src={allCerts[selectedCertIndex].src}
+                src={assetUrl(allCerts[selectedCertIndex].src)}
                 alt={allCerts[selectedCertIndex].title}
                 className="max-h-[72vh] w-auto max-w-full object-contain rounded-xl shadow-lg"
               />

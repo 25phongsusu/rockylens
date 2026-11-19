@@ -37,11 +37,6 @@ export function getProductBySlug(slug: string): Product | null {
   return found || null;
 }
 
-export function getProductById(id: string): Product | null {
-  const products = getAllProducts(true);
-  return products.find((p) => p.id === id) || null;
-}
-
 export function getRelatedProducts(product: Product, limit = 4): Product[] {
   const allProducts = getAllProducts(false);
 

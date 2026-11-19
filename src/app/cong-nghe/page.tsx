@@ -11,6 +11,7 @@ import {
 import Breadcrumbs from '@/components/shared/Breadcrumbs';
 import ContactCTA from '@/components/shared/ContactCTA';
 import { constructMetadata } from '@/lib/seo/metadata';
+import { assetUrl } from '@/lib/utils';
 
 export const metadata: Metadata = constructMetadata({
   title: 'Công Nghệ Tròng Kính & Kiến Thức Quang Học - Rocky Lens Canada',
@@ -248,7 +249,7 @@ export default function CongNghePage() {
                   {/* Visual Technology Diagram Asset */}
                   <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden bg-slate-50/80 border border-slate-200/80 p-2 flex items-center justify-center">
                     <Image
-                      src={tech.image}
+                      src={assetUrl(tech.image)}
                       alt={tech.imageAlt}
                       fill
                       className="object-contain p-2 group-hover:scale-105 transition-transform duration-500"

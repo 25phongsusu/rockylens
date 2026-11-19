@@ -2,7 +2,7 @@ import React from 'react';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { BookOpen, Sparkles, Clock, Calendar, ArrowRight, ShieldCheck, Eye, Layers } from 'lucide-react';
-import { getAllArticles } from '@/features/articles/article-service';
+import { getAllArticles } from '@/lib/content/load-articles';
 import Breadcrumbs from '@/components/shared/Breadcrumbs';
 import ContactCTA from '@/components/shared/ContactCTA';
 import ArticleCard from '@/components/content/ArticleCard';

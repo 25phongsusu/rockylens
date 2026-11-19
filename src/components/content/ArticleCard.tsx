@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Calendar, Clock, ArrowRight } from 'lucide-react';
 import { ArticleMeta } from '@/features/articles/article-types';
-import { formatDate } from '@/lib/utils';
+import { assetUrl, formatDate } from '@/lib/utils';
 
 interface ArticleCardProps {
   article: ArticleMeta;
@@ -18,7 +18,7 @@ export default function ArticleCard({ article }: ArticleCardProps) {
           className="relative aspect-[16/10] bg-slate-100 overflow-hidden block"
         >
           <img
-            src={article.coverImage || '/images/articles/blog_sec6_1.jpg'}
+            src={assetUrl(article.coverImage || '/images/articles/blog_sec6_1.jpg')}
             alt={article.title}
             loading="lazy"
             decoding="async"

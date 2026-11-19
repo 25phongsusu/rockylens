@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 import { siteConfig } from '@/config/site';
-import { getAllProducts } from '@/features/products/product-service';
-import { getAllArticles } from '@/features/articles/article-service';
+import { getAllProducts } from '@/lib/content/load-products';
+import { getAllArticles } from '@/lib/content/load-articles';
 
 export const dynamic = 'force-static';
 

@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-import ThemeCustomizer from '@/components/common/ThemeCustomizer';
 import { constructMetadata } from '@/lib/seo/metadata';
 import { organizationSchema, websiteSchema } from '@/lib/seo/structured-data';
 
@@ -34,7 +33,6 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
-        <ThemeCustomizer />
       </body>
     </html>
   );

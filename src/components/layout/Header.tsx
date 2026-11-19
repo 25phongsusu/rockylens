@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X, ChevronRight, Phone, MessageSquare } from 'lucide-react';
 import { mainNavigation } from '@/config/navigation';
+import { assetUrl } from '@/lib/utils';
 
 export default function Header() {
   const pathname = usePathname();
@@ -49,12 +50,12 @@ export default function Header() {
           {/* Brand Logo with Real Rocky Image */}
           <Link href="/" className="flex items-center gap-3 group">
             <img
-              src="/assets/logo_rocky_transparent.png"
+              src={assetUrl('/assets/logo_rocky_transparent.png')}
               alt="Rocky Lens Canada"
               className="h-16 sm:h-[76px] w-auto object-contain transition-transform group-hover:scale-105 logo-default"
             />
             <img
-              src="/assets/logo_rocky_white.png"
+              src={assetUrl('/assets/logo_rocky_white.png')}
               alt="Rocky Lens Canada"
               className="h-16 sm:h-[76px] w-auto object-contain transition-transform group-hover:scale-105 logo-dark hidden"
             />
