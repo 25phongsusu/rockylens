@@ -238,15 +238,6 @@ export default function AboutUsPage() {
           4. GIÁ TRỊ CỐT LÕI CỦA R-O-C-K-Y
           ========================================================= */}
       <section className="py-12 sm:py-16 px-4 sm:px-6 relative overflow-hidden">
-        <div className="hidden lg:block absolute -right-10 bottom-0 w-72 h-72 opacity-80 pointer-events-none select-none">
-          <Image
-            src={assetUrl('/assets/h-lens3.png')}
-            alt=""
-            fill
-            className="object-contain drop-shadow-2xl"
-          />
-        </div>
-
         <div className="max-w-6xl mx-auto relative z-10">
           <h2 className="text-2xl sm:text-3xl font-black text-[#12566A] mb-8 tracking-tight">
             Giá trị cốt lõi của <span className="tracking-wider">R-O-C-K-Y</span>
