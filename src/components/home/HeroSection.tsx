@@ -105,11 +105,6 @@ export default function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
           {/* Left Column */}
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
-            <div className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full text-xs font-bold shadow-xs liquid-pill text-primary">
-              <span className="w-2 h-2 rounded-full bg-[var(--button-middle)]" />
-              <span className="tracking-wide uppercase font-semibold">{hero.badge}</span>
-            </div>
-
             <h1 className="text-3xl sm:text-5xl lg:text-[52px] font-black tracking-tight leading-[1.15] text-heading">
               {hero.headlinePrefix} <br className="hidden sm:inline" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--button-start)] via-[var(--button-middle)] to-[var(--button-end)]">
