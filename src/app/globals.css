@@ -11,25 +11,25 @@
 :root {
   /* A. Website Background Tokens — Clean White & Soft Ice-Sky (Mio Smart BlueSelect Palette) */
   --site-bg-start: #FFFFFF;
-  --site-bg-middle: #F1FAFD;
+  --site-bg-middle: #EFF8FC;
   --site-bg-end: #D8EFF6;
 
-  /* B. Button Colors Tokens — Sky Cyan to Petrol Teal */
-  --button-start: #4EC3DF;
-  --button-middle: #1E88A4;
-  --button-end: #145E73;
+  /* B. Button Colors Tokens — Sky Cyan to Deep Petrol Teal */
+  --button-start: #4DC4E2;
+  --button-middle: #1D7E9A;
+  --button-end: #0F4C5E;
 
   /* C. B2B / Deep Brand Tokens — Petrol Teal Band */
-  --b2b-start: #238CA7;
-  --b2b-middle: #156074;
-  --b2b-end: #0D4657;
+  --b2b-start: #248BA8;
+  --b2b-middle: #15637A;
+  --b2b-end: #0F4C5E;
 
   /* D. Semantic Tokens */
-  --color-heading: #12566A;
-  --color-text: #1E3A44;
-  --color-muted: #4A6873;
+  --color-heading: #12586D;
+  --color-text: #1F353D;
+  --color-muted: #4B6670;
   --color-surface: #FFFFFF;
-  --color-border: #CBE7F0;
+  --color-border: #CEE8F2;
 
   /* Primary Brand Shortcuts */
   --color-primary: var(--button-middle);
@@ -517,9 +517,9 @@ body {
   border-radius: 9999px;
   font-size: 0.8125rem;
   font-weight: 700;
-  color: #00A2CC;
-  background: rgba(0, 162, 204, 0.08);
-  border: 1px solid rgba(0, 162, 204, 0.25);
+  color: var(--button-middle);
+  background: rgba(29, 126, 154, 0.08);
+  border: 1px solid rgba(29, 126, 154, 0.25);
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   cursor: pointer;
   text-decoration: none;

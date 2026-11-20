@@ -141,18 +141,12 @@ export default function AboutUsPage() {
       <section className="py-12 sm:py-16 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            <div className="lg:col-span-5 space-y-5">
-              <div className="flex items-center gap-4">
-                <img
-                  src={assetUrl('/assets/logo_rocky_transparent.png')}
-                  alt="Rocky Lens Canada Opticians"
-                  className="h-20 sm:h-24 w-auto object-contain"
-                />
-                <div className="flex items-center gap-1.5 text-sm font-semibold text-[#12566A]">
-                  <span>Canada Opticians</span>
-                  <MapleLeafIcon className="w-4 h-4 text-[#D81E27]" />
-                </div>
-              </div>
+            <div className="lg:col-span-5 flex items-center justify-center lg:justify-start">
+              <img
+                src={assetUrl('/assets/logo_rocky_transparent.png')}
+                alt="Rocky Lens Canada Opticians"
+                className="h-24 sm:h-28 w-auto object-contain"
+              />
             </div>
 
             <div className="lg:col-span-7 space-y-4 text-base sm:text-[17px] leading-relaxed text-slate-700">

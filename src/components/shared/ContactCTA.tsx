@@ -139,7 +139,7 @@ export default function ContactCTA({
           {/* Right Column: B2B Stores & Lab RX */}
           <div className="b2b-gradient rounded-3xl p-6 sm:p-8 lg:p-9 border border-[#00516c]/40 shadow-sm flex flex-col justify-between hover:shadow-md transition-all duration-300 relative overflow-hidden group text-white">
             {/* Ambient soft glow */}
-            <div className="absolute -bottom-12 -right-12 w-48 h-48 bg-[#00A2CC]/15 rounded-full blur-2xl pointer-events-none group-hover:bg-[#00A2CC]/25 transition-colors" />
+            <div className="absolute -bottom-12 -right-12 w-48 h-48 bg-[var(--button-start)]/15 rounded-full blur-2xl pointer-events-none group-hover:bg-[var(--button-start)]/25 transition-colors" />
 
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold text-teal-300 bg-teal-950/60 border border-teal-500/30 w-fit mb-4">
@@ -170,7 +170,7 @@ export default function ContactCTA({
             <div className="flex flex-wrap items-center gap-3 pt-5 border-t border-white/10 relative z-10">
               <Link
                 href="/danh-cho-doi-tac/"
-                className="px-6 py-3 rounded-full text-xs sm:text-sm font-bold bg-[#00A2CC] hover:bg-[#00b4e3] text-slate-950 transition-all shadow-xs flex items-center gap-2 cursor-pointer"
+                className="px-6 py-3 rounded-full text-xs sm:text-sm font-bold bg-[var(--button-middle)] hover:bg-[var(--b2b-middle)] text-white transition-all shadow-xs flex items-center gap-2 cursor-pointer"
               >
                 <span>Xem Chính Sách Đại Lý</span>
                 <ArrowRight className="w-4 h-4" />

@@ -1,109 +1,31 @@
-'use client';
-
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
-import {
-  ArrowRight,
-  Sparkles,
-  Image as ImageIcon,
-} from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import homeContent from '@/../content/home_content.json';
 import { assetUrl } from '@/lib/utils';
 
 export default function HeroSection() {
-  const [mode, setMode] = useState<'standard' | 'banner'>('banner');
   const hero = homeContent.hero;
-
-  useEffect(() => {
-    try {
-      const params = new URLSearchParams(window.location.search);
-      const modeParam = params.get('mode') || params.get('view');
-      const saved = localStorage.getItem('rocky_hero_mode');
-      if (modeParam === 'standard' || (saved === 'standard' && modeParam !== 'banner')) {
-        setMode('standard');
-      } else {
-        setMode('banner');
-      }
-    } catch {}
-  }, []);
-
-  const switchMode = (newMode: 'standard' | 'banner') => {
-    setMode(newMode);
-    try {
-      localStorage.setItem('rocky_hero_mode', newMode);
-      const url = new URL(window.location.href);
-      if (newMode === 'standard') {
-        url.searchParams.set('mode', 'standard');
-      } else {
-        url.searchParams.set('mode', 'banner');
-      }
-      url.searchParams.delete('view');
-      window.history.replaceState({}, '', url.toString());
-    } catch {}
-  };
-
-  const isBanner = mode === 'banner';
 
   return (
     <section
       id="brand-hero"
-      className="relative overflow-hidden py-10 sm:py-14 lg:py-16 min-h-[420px] lg:min-h-[460px] flex flex-col justify-center site-background text-slate-800 transition-all duration-700"
+      className="relative overflow-hidden py-12 sm:py-16 lg:py-20 min-h-[420px] lg:min-h-[460px] flex flex-col justify-center site-background text-slate-800"
     >
-      {/* Banner Mode Background */}
+      {/* Banner Background */}
       <div
-        className={`absolute inset-0 z-0 bg-cover bg-center transition-opacity duration-700 pointer-events-none contrast-[1.08] brightness-[0.95] ${
-          isBanner ? 'opacity-100' : 'opacity-0'
-        }`}
+        className="absolute inset-0 z-0 bg-cover bg-center pointer-events-none contrast-[1.08] brightness-[0.95]"
         style={{
           backgroundImage: `url('${assetUrl('/images/banners/banner_hero_mode.jpg')}')`,
           backgroundPosition: 'right 20% center',
         }}
       >
-        {/* Soft gradient overlay on left for typography readability, keeping right side rich, dark and clear */}
+        {/* Soft gradient overlay on left for typography readability, keeping right side rich and clear */}
         <div className="absolute inset-0 bg-gradient-to-r from-[var(--site-bg-start)] via-[var(--site-bg-start)]/80 sm:via-[var(--site-bg-start)]/60 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-[var(--site-bg-middle)]/20 via-transparent to-[var(--site-bg-start)]/20" />
       </div>
 
-      {/* Liquid Caustic Light Orbs */}
-      {!isBanner && (
-        <>
-          <div className="absolute -top-32 -left-32 w-[400px] h-[400px] bg-gradient-to-tr from-[var(--site-bg-end)]/40 via-[var(--site-bg-middle)]/30 to-[var(--button-start)]/30 rounded-full blur-[100px] liquid-morph-1 pointer-events-none" />
-          <div className="absolute top-1/4 -right-32 w-[380px] h-[380px] bg-gradient-to-bl from-[var(--site-bg-middle)]/35 via-[var(--site-bg-start)]/30 to-[var(--site-bg-end)]/30 rounded-full blur-[110px] liquid-morph-2 pointer-events-none" />
-        </>
-      )}
-
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
-        {/* Segmented Mode Switcher */}
-        <div className="flex items-center justify-center lg:justify-start mb-4">
-          <div className="inline-flex items-center p-1 rounded-full bg-white/90 backdrop-blur-md border border-slate-300/80 shadow-xs transition-all">
-            <button
-              type="button"
-              onClick={() => switchMode('standard')}
-              className={`px-4 py-1.5 rounded-full text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer ${
-                !isBanner
-                  ? 'bg-[var(--b2b-end)] text-white shadow-xs'
-                  : 'text-slate-600 hover:text-heading'
-              }`}
-            >
-              <Sparkles className="w-3.5 h-3.5" />
-              <span>Chế độ 1: Tối giản</span>
-            </button>
-            <button
-              type="button"
-              onClick={() => switchMode('banner')}
-              className={`px-4 py-1.5 rounded-full text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer ${
-                isBanner
-                  ? 'bg-[var(--b2b-end)] text-white shadow-xs'
-                  : 'text-slate-600 hover:text-heading'
-              }`}
-            >
-              <ImageIcon className="w-3.5 h-3.5" />
-              <span>Chế độ 2: Nền Banner</span>
-            </button>
-          </div>
-        </div>
-
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
           {/* Left Column */}
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
@@ -137,31 +59,6 @@ export default function HeroSection() {
               </Link>
             </div>
           </div>
-
-          {/* Right Column: chỉ hiển thị ở Chế độ 1 (Tối giản) */}
-          {!isBanner && (
-            <div className="lg:col-span-5 relative flex items-center justify-center lg:justify-start lg:-ml-4">
-              <div
-                className="w-72 h-72 sm:w-[360px] sm:h-[360px] rounded-full blur-3xl absolute liquid-morph-1 pointer-events-none transition-opacity duration-700 bg-gradient-to-tr from-teal-200/50 via-cyan-100/40 to-sky-200/50"
-              />
-
-              <div
-                id="hero-lens-wrap"
-                className="relative z-10 w-full max-w-xs sm:max-w-sm lg:max-w-[380px] aspect-square flex items-center justify-center transition-all duration-700"
-              >
-                <div className="relative w-full h-full flex items-center justify-center transition-all duration-700">
-                  <Image
-                    src={assetUrl(hero.heroImage)}
-                    alt="Tròng kính quang học Rocky Lens Canada"
-                    fill
-                    priority
-                    className="object-contain p-2 transition-transform duration-700 hover:scale-105 drop-shadow-[0_25px_45px_rgba(11,123,138,0.28)]"
-                    sizes="(max-width: 1024px) 100vw, 580px"
-                  />
-                </div>
-              </div>
-            </div>
-          )}
         </div>
       </div>
     </section>

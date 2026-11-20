@@ -36,7 +36,7 @@ export default function PartnerSection() {
           <div className="shrink-0 pb-1">
             <Link
               href="/danh-cho-doi-tac/"
-              className="group inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-white text-[#003B50] font-bold text-sm hover:bg-cyan-50 hover:shadow-xl hover:scale-[1.02] active:scale-95 transition-all shadow-md"
+              className="group inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-white text-[var(--b2b-end)] font-bold text-sm hover:bg-cyan-50 hover:shadow-xl hover:scale-[1.02] active:scale-95 transition-all shadow-md"
             >
               <span>{partner.cta}</span>
               <svg className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
