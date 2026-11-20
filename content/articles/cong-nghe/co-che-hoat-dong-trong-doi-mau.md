@@ -42,10 +42,11 @@ Các hạt phân tử đổi màu được trộn đều vào khối nhựa mono
 - **Nhược điểm:** Do tròng kính cận có rìa dày tâm mỏng, nồng độ phân tử ở rìa nhiều hơn ở tâm nên khi ra nắng, mép kính sẽ đậm màu hơn ở giữa (hiệu ứng mắt gấu trúc Panda).
 
 ### B. Công Nghệ Phủ Xoay Bề Mặt (Spin-Coating Technology)
-Đây là công nghệ tiên tiến áp dụng trên dòng tròng **Rocky Trendy Smart**:
+Đây là công nghệ tiên tiến áp dụng trên các dòng tròng đổi màu Rocky:
 - Lớp phân tử đổi màu chỉ dày vài micromet được phủ xoay đều tuyệt đối trên bề mặt trước của tròng kính.
 - **Độ đậm màu đồng nhất 100%** trên toàn bộ diện tích tròng, bất kể độ cận cao hay thấp.
 - Tốc độ nhả màu về trạng thái trong suốt nhanh hơn gấp 2 lần so với tròng trộn phôi truyền thống.
+- Hai gam màu được ưa chuộng nhất hiện nay là [tròng kính đổi màu khói Rocky Trendy Photochromic Grey](/trong-kinh/rocky-trendy-photochromic-grey/) (tạo phong cách hiện đại, giảm chói gắt sắc nét) và [tròng kính đổi màu trà Rocky Trendy Photochromic Brown](/trong-kinh/rocky-trendy-photochromic-brown/) (tông màu ấm áp, tăng độ tương phản hình ảnh dịu mắt).
 
 ---
 
@@ -53,4 +54,4 @@ Các hạt phân tử đổi màu được trộn đều vào khối nhựa mono
 
 Kính chắn gió của xe hơi hiện đại được tráng một lớp màng ngăn tia UV (lên đến 98-99%) để bảo vệ nội thất và tài xế. Do tròng kính đổi màu tiêu chuẩn cần tia UV để kích hoạt phản ứng, tròng sẽ chỉ đổi màu nhẹ khi ngồi trong cabin xe.
 
-Nếu bạn cần tròng kính đổi màu chuyên dụng khi lái xe trong cabin, giải pháp là dòng tròng kết hợp phân cực hoặc tròng chuyên lái xe **Rocky DriveShield**.
+Nếu bạn cần tròng kính đổi màu chuyên dụng khi lái xe trong cabin, giải pháp là dòng tròng kết hợp phân cực hoặc [tròng kính chuyên lái xe Rocky DriveShield Night Vision](/trong-kinh/rocky-driveshield-night-vision/) tối ưu hóa theo quang phổ ánh sáng đường phố.

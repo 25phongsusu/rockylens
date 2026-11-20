@@ -20,7 +20,7 @@ tags:
 
 # 6 Nguyên Tắc Vàng Bảo Quản Tròng Kính
 
-Tròng kính cao cấp được cấu tạo bởi hơn 10 lớp màng phủ nano quang học siêu mỏng (lớp chống trầy, lớp chống phản quang AR, lớp chống tĩnh điện, lớp siêu kỵ nước). Việc bảo quản sai cách có thể làm bong tróc lớp váng phủ chỉ sau vài tháng sử dụng.
+Tròng kính cao cấp được cấu tạo bởi hơn 10 lớp màng phủ nano quang học siêu mỏng (lớp chống trầy, lớp chống phản quang AR, lớp chống tĩnh điện, lớp siêu kỵ nước). Điển hình như trên các dòng [tròng kính phủ nano siêu kỵ nước Rocky 1.56 BlueCut SHMC](/trong-kinh/rocky-156-bluecut-shmc/) hay dòng [tròng kính dẻo dai chịu lực Rocky 1.60 MR-8 Aspheric](/trong-kinh/rocky-160-mr8-aspheric/), việc bảo quản đúng cách sẽ giúp kính giữ được độ trong vắt suốt 2 - 3 năm mà không lo bong tróc váng dầu.
 
 ---
 

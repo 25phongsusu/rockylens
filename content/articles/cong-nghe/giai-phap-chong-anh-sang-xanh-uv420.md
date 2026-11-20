@@ -47,3 +47,13 @@ Do đó, một tròng kính chống ánh sáng xanh chuẩn y khoa **phải cắ
   1. Hấp thụ triệt để đến 99% bước sóng nguy hiểm 400 - 420nm.
   2. Tròng kính trong suốt tự nhiên, **hạn chế tối đa hiện tượng ám vàng**.
   3. Bề mặt không bị phản chiếu ánh xanh tím lòe loẹt, đem lại vẻ ngoài thanh lịch khi giao tiếp và lên hình.
+
+---
+
+## 3. Gợi Ý Dòng Tròng Chống Ánh Sáng Xanh Rocky Phù Hợp
+
+Tùy theo nhu cầu và độ cận, bạn có thể lựa chọn giải pháp quang học tối ưu:
+
+- **Độ cận phổ thông (dưới -3.00 Diop):** Lựa chọn dòng [tròng kính Rocky 1.56 BlueCut SHMC](/trong-kinh/rocky-156-bluecut-shmc/) — giải pháp bảo vệ mắt toàn diện cho học sinh, sinh viên và nhân viên văn phòng với chi phí tối ưu nhất.
+- **Công việc máy tính liên tục & chuyên sâu:** Tham khảo dòng [tròng kính chống ánh sáng xanh Rocky Smart BlueControl](/trong-kinh/rocky-smart-bluecontrol/) giúp cân bằng sắc độ tự nhiên, giảm khô mắt và nhức mỏi sau nhiều giờ làm việc.
+- **Độ cận vừa đến nặng (-3.50 đến -8.00 Diop):** Khuyến nghị nâng cấp lên [tròng kính siêu mỏng Rocky 1.67 BlueCut UV420](/trong-kinh/rocky-167-ultra-thin-bluecut/) để giảm 35% bề dày mép kính, vừa chống ánh sáng xanh vừa giữ nét thanh mảnh cho gương mặt.

@@ -47,21 +47,21 @@ Chiết suất là đại lượng quang học đặc trưng cho khả năng b�
 
 ---
 
-## 3. Phân Tích Từng Loại Chiết Suất
+## 3. Phân Tích Từng Loại Chiết Suất & Gợi Ý Sản Phẩm
 
 ### Chiết Suất 1.56 — Giải Pháp Phổ Thông Kinh Tế
-Tròng 1.56 là dòng tròng phổ biến nhất hiện nay tại các tiệm kính mắt. Tròng có mức giá dễ tiếp cận, độ truyền quang ổn định. Với những người có độ cận nhẹ (dưới -3.00 Diop), tròng 1.56 đã đảm bảo được tính thẩm mỹ vừa phải nếu lắp vào gọng nhựa có viền dày che được mép tròng.
+Tròng 1.56 là dòng tròng phổ biến nhất hiện nay tại các tiệm kính mắt. Tròng có mức giá dễ tiếp cận, độ truyền quang ổn định. Với những người có độ cận nhẹ (dưới -3.00 Diop), [tròng kính Rocky 1.56 BlueCut SHMC](/trong-kinh/rocky-156-bluecut-shmc/) đã đảm bảo được tính thẩm mỹ vừa phải kết hợp khả năng lọc ánh sáng xanh hữu hiệu nếu lắp vào gọng nhựa có viền dày che được mép tròng.
 
 ### Chiết Suất 1.60 (Vật Liệu MR-8) — Sự Lựa Chọn Hoàn Hảo Nhất
-Được sản xuất từ Monomer polyurethane MR-8 phát minh bởi Mitsui Chemicals (Nhật Bản), tròng 1.60 là sự cân bằng tuyệt hảo nhất trong ngành kính:
+Được sản xuất từ Monomer polyurethane MR-8 phát minh bởi Mitsui Chemicals (Nhật Bản), dòng [tròng kính Rocky 1.60 MR-8 Aspheric chuyên gọng khoan](/trong-kinh/rocky-160-mr8-aspheric/) là sự cân bằng tuyệt hảo nhất trong ngành kính:
 - Chỉ số Abbe cao đạt **41**, cho hình ảnh trong suốt tự nhiên, triệt tiêu viền cầu vồng quang sai.
 - Độ dẻo dai cơ học cực cao, là tiêu chuẩn bắt buộc khi lắp **gọng kính khoan không vành (rimless)** hoặc gọng xẻ cước bắt vít.
 
 ### Chiết Suất 1.67 — Cứu Tinh Cho Người Cận Vừa & Nặng
-Khi độ cận vượt mốc -4.50 Diop, rìa tròng 1.56 bắt đầu dày cộm và nặng nề, làm biến dạng khuôn mặt khi nhìn từ góc nghiêng. Tròng 1.67 giảm tới 35% độ dày, cho phép người dùng tự tin diện các gọng kim loại thời trang thanh mảnh.
+Khi độ cận vượt mốc -4.50 Diop, rìa tròng 1.56 bắt đầu dày cộm và nặng nề, làm biến dạng khuôn mặt khi nhìn từ góc nghiêng. Dòng [tròng kính siêu mỏng Rocky 1.67 Aspheric BlueCut](/trong-kinh/rocky-167-ultra-thin-bluecut/) giảm tới 35% độ dày, cho phép người dùng tự tin diện các gọng kim loại thời trang thanh mảnh.
 
 ### Chiết Suất 1.74 — Đỉnh Cao Công Nghệ Siêu Mỏng
-1.74 là chiết suất cao cấp nhất của vật liệu nhựa hữu cơ hiện nay. Dành riêng cho độ cận cực nặng (-7.00 đến -15.00 Diop), tròng 1.74 Aspheric giảm đến 45% bề dày mép kính, loại bỏ hoàn toàn cảm giác kính đè nặng sống mũi gây vết hằn đỏ khó chịu.
+1.74 là chiết suất cao cấp nhất của vật liệu nhựa hữu cơ hiện nay. Dành riêng cho độ cận cực nặng (-7.00 đến -15.00 Diop), dòng [tròng kính siêu mỏng cực độ Rocky 1.74 Ultra High-Index](/trong-kinh/rocky-174-ultra-high-index/) với thiết kế Aspheric phẳng hai mặt giúp giảm đến 45% bề dày mép kính, loại bỏ hoàn toàn cảm giác kính đè nặng sống mũi gây vết hằn đỏ khó chịu.
 
 ---
 

@@ -34,8 +34,13 @@ Khi đeo kính đơn tròng truyền thống:
 
 ## 2. Công Nghệ Đột Phá D.I.M.S (Defocus Incorporated Multiple Segments)
 
-Tròng kính **Rocky MyoControl D.I.M.S**:
-- **Khu vực trung tâm (đường kính 9mm):** Cung cấp công suất điều chỉnh độ cận chính xác, đảm bảo thị lực nhìn xa đạt 10/10 khi học tập.
-- **Vùng chu biên:** Tích hợp hàng trăm vi thấu kính hình tổ ong với công suất thặng dư +3.50 Diop, tạo ra tiêu điểm liên tục nằm **phía trước võng mạc chu biên**.
-- Tín hiệu này đóng vai trò như chiếc phanh hãm sinh học, ngăn cản trục nhãn cầu dài ra.
-- Các nghiên cứu lâm sàng đa trung tâm cho thấy công nghệ này giúp **làm chậm tiến triển tăng độ cận trung bình từ 50% đến 60%** so với kính đơn tròng thông thường.
+Tại Việt Nam, Rocky giới thiệu hai giải pháp quang học chuyên biệt cho các lứa tuổi học đường:
+
+1. **[Thấu kính vi điểm Rocky MyoControl D.I.M.S Kids](/trong-kinh/rocky-myopia-control-dims-kids/):**
+   - **Khu vực trung tâm (đường kính 9mm):** Cung cấp công suất điều chỉnh độ cận chính xác, đảm bảo thị lực nhìn xa đạt 10/10 khi học tập.
+   - **Vùng chu biên:** Tích hợp hàng trăm vi thấu kính hình tổ ong với công suất thặng dư +3.50 Diop, tạo ra tiêu điểm liên tục nằm **phía trước võng mạc chu biên**.
+   - Tín hiệu này đóng vai trò như chiếc phanh hãm sinh học, ngăn cản trục nhãn cầu dài ra.
+   - Các nghiên cứu lâm sàng đa trung tâm cho thấy công nghệ này giúp **làm chậm tiến triển tăng độ cận trung bình từ 50% đến 60%** so với kính đơn tròng thông thường.
+
+2. **[Tròng kính kiểm soát cận thị Rocky Myopia Control](/trong-kinh/rocky-myopia-control/):**
+   - Ứng dụng thiết kế giảm tải điều tiết sinh lý cho mắt khi đọc sách và nhìn gần trong thời gian dài, bảo vệ thị lực bền vững cho thanh thiếu niên trong giai đoạn tăng trưởng thể chất.

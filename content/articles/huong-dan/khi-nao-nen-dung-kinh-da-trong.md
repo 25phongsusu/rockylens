@@ -48,7 +48,10 @@ Lão thị không phải là bệnh lý, mà là quá trình lão hóa sinh họ
 Kính hai tròng kiểu cũ có một vạch kẻ ngang chia đôi tròng mắt (Bifocal):
 - **Nhược điểm:** Nhảy ảnh (Image Jump) gây chóng mặt khi bước xuống cầu thang, hoàn toàn không có vùng nhìn trung gian cho màn hình máy tính (60-80cm), và làm người đeo cảm thấy già đi trước tuổi.
 
-Ngược lại, **Kính Đa Tròng Freeform Kỹ Thuật Số** của Rocky Lens:
+Ngược lại, các dòng tròng đa tròng kỹ thuật số của Rocky mang đến sự thích nghi dễ dàng:
+
+- **Dành cho sinh hoạt hằng ngày & di chuyển:** [Kính đa tròng hành lang ngắn Rocky Progressive Short Corridor](/trong-kinh/rocky-progressive-short-corridor/) với thiết kế vùng chuyển tiếp êm ái, tối ưu góc nhìn rộng cho người mới bắt đầu đeo đa tròng lần đầu, loại bỏ cảm giác bồng bềnh hay choáng ngợp khi đi lại.
+- **Dành cho chuyên gia & làm việc bàn giấy:** [Tròng kính văn phòng Rocky Freeform Office & Reading](/trong-kinh/rocky-freeform-office-reading/) mở rộng tối đa vùng nhìn trung gian từ màn hình máy tính (60 - 80cm) đến cự ly đọc tài liệu (40cm), chấm dứt hoàn toàn tình trạng đau mỏi cổ vai gáy.
 - **Tầm nhìn liền mạch:** Chuyển đổi công suất mềm mại từ xa (phần trên) qua cự ly làm việc máy tính (hành lang giữa) đến đọc sách (phần dưới).
 - **Thẩm mỹ hiện đại:** Mặt tròng trơn bóng không có vạch phân cách, giữ trọn nét trẻ trung phong độ cho người đeo.
 - **Cá nhân hóa:** Công nghệ phay Freeform 3D tối ưu theo thông số gọng và cự ly đồng tử của từng người, giúp việc thích nghi trở nên êm ái chỉ sau 24-48 giờ.

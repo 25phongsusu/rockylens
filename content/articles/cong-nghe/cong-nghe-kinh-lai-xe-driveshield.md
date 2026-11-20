@@ -34,7 +34,9 @@ Lái xe ban đêm trên quốc lộ hoặc đường cao tốc tại Việt Nam 
 
 ## 2. Công Nghệ Lọc Chọn Lọc DriveShield Multi-Matrix
 
-Tròng kính **Rocky DriveShield**:
+Để khắc phục hiện tượng lóa mắt nguy hiểm này, dòng [tròng kính lái xe ban đêm Rocky DriveShield Night Vision](/trong-kinh/rocky-driveshield-night-vision/):
 - Được phát triển với màng phủ quang học lọc dải bước sóng chói gắt 440 - 460nm đặc trưng của đèn LED pha.
 - Cho phép 92% ánh sáng khả kiến an toàn đi qua để đảm bảo tài xế vẫn quan sát rõ vạch kẻ đường, người đi bộ và biển báo giao thông.
 - Lớp phủ chống bám nước mưa siêu trơn Nano SHMC giúp giọt nước trôi tuột ngay khi tiếp xúc, không để lại màng nước làm nhòe hình ảnh khi điều khiển xe máy hoặc nhìn qua kính chắn gió.
+
+Ngoài ra, đối với các hành trình lái xe ban ngày kết hợp thể thao tốc độ dưới ánh nắng gay gắt, người lái có thể nâng cấp lên dòng [tròng kính phân cực thể thao Rocky Polarized Driving & Sports](/trong-kinh/rocky-polarized-driving-sports/) để triệt tiêu hoàn toàn tia sáng phản xạ từ mặt đường nhựa hoặc nắp ca-pô xe hơi. Với nhu cầu thời trang chống chói cao cấp trong mọi cung đường, dòng [tròng kính chống chói lái xe Rocky DriveShield Ruby](/trong-kinh/rocky-driveshield-ruby/) mang lại độ sắc nét và tông màu hổ phách sang trọng cho người điều khiển phương tiện.
