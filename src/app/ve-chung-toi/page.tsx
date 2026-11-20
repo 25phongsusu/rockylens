@@ -136,30 +136,51 @@ export default function AboutUsPage() {
       </section>
 
       {/* =========================================================
-          2. KHỞI NGUỒN & HÀNH TRÌNH PHÁT TRIỂN TẠI VIỆT NAM
+          2. KHỞI NGUỒN & HÀNH TRÌNH PHÁT TRIỂN TẠI VIỆT NAM (ROCKY CANADA OPTICIANS)
           ========================================================= */}
       <section className="py-12 sm:py-16 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            <div className="lg:col-span-5 flex items-center justify-center lg:justify-center lg:pl-8">
+            {/* Logo Rocky Canada Opticians */}
+            <div className="lg:col-span-4 flex items-center justify-center lg:justify-end lg:pr-4">
               <img
                 src={assetUrl('/assets/logo_rocky_transparent.png')}
-                alt="Rocky Lens Canada Opticians"
-                className="h-24 sm:h-28 w-auto object-contain"
+                alt="Rocky Canada Opticians"
+                className="h-28 sm:h-36 w-auto object-contain drop-shadow-sm"
               />
             </div>
 
-            <div className="lg:col-span-7 space-y-4 text-base sm:text-[17px] leading-relaxed text-slate-700">
-              <h2 className="text-2xl sm:text-3xl font-black text-[#12566A] tracking-tight">
-                Hành Trình Mang Chuẩn Mực Quang Học Canada Đến Người Việt
+            {/* Narrative & 4 Feature Cards */}
+            <div className="lg:col-span-8 space-y-4 sm:space-y-5 text-base sm:text-[17px] leading-relaxed text-slate-700">
+              <h2 className="text-3xl sm:text-4xl font-black text-[#12566A] tracking-tight">
+                Rocky Canada Opticians
               </h2>
               <p>
-                <strong className="text-[#12566A] font-bold">Rocky Lens</strong> được phát triển bởi đội ngũ chuyên gia nhãn khoa và kỹ sư khúc xạ tại Canada, phân phối độc quyền tại Việt Nam bởi{' '}
-                <strong className="text-[#12566A] font-bold">Công ty Cổ phần Clearly Vietnam</strong>. Từ những ngày đầu thành lập, chúng tôi mang theo khát vọng thu hẹp khoảng cách công nghệ thị giác giữa Bắc Mỹ và Việt Nam.
+                Được phát triển bởi đội ngũ chuyên gia khúc xạ tại Canada, Rocky mang tinh hoa quang học Canada về phục vụ cộng đồng Việt Nam. Chúng tôi kết hợp nền tảng chuyên môn vững chắc với khát vọng nâng cao sức khỏe thị lực, mang đến những giải pháp tròng kính đạt chuẩn quốc tế, phù hợp với nhu cầu và điều kiện sống của người Việt.
               </p>
               <p>
-                Không chỉ tập trung vào độ chính xác của từng thấu kính, Rocky tiên phong kết nối các công nghệ sản xuất hiện đại và cá nhân hóa tròng kính — giúp từng khách hàng Việt được trải nghiệm tầm nhìn sắc nét, dễ chịu và an toàn dài lâu, đồng thời trở thành điểm tựa tin cậy cho hơn 500 cửa hàng kính mắt và phòng khám nhãn khoa trên cả nước.
+                Hiện Rocky đã có mặt tại 34 tỉnh thành với hệ thống phân phối rộng khắp, cam kết mang lại trải nghiệm dịch vụ nhanh chóng, chính xác và tận tâm.
               </p>
+
+              {/* 4 Feature Cards Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-3.5 pt-2">
+                {[
+                  'Tính năng ưu việt bảo vệ mắt toàn diện',
+                  'Đáp ứng toàn diện mọi nhu cầu thị lực',
+                  'Giải pháp thị lực ở mọi phân khúc giá',
+                  'Sản phẩm đạt chất lượng quốc tế',
+                ].map((item, idx) => (
+                  <div
+                    key={idx}
+                    className="flex items-center gap-3.5 px-4 py-3.5 rounded-2xl border border-[#BEE1EC] bg-white/80 backdrop-blur-sm shadow-[0_2px_8px_rgba(18,86,106,0.04)] hover:border-[#12566A]/40 transition-colors"
+                  >
+                    <span className="w-2.5 h-2.5 rounded-full bg-[#12566A] shrink-0" />
+                    <span className="text-[15px] sm:text-[16px] font-bold text-[#12566A] leading-snug">
+                      {item}
+                    </span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
