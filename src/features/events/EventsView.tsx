@@ -7,15 +7,12 @@ import {
   Calendar,
   MapPin,
   Building,
-  Users,
   Award,
   Sparkles,
   ChevronRight,
   X,
   ChevronLeft,
   CheckCircle2,
-  Phone,
-  MessageSquare,
   Maximize2,
   Filter,
 } from 'lucide-react';
@@ -264,54 +261,6 @@ export default function EventsView() {
               </div>
             </div>
           ))}
-        </div>
-      </section>
-
-      {/* ========================================================= */}
-      {/* 4. CO-HOST & PARTNERSHIP B2B CARD                         */}
-      {/* ========================================================= */}
-      <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[var(--b2b-end)] via-[#002433] to-[#001722] text-white p-8 sm:p-12 border border-slate-700/50 shadow-xl">
-        <div className="absolute -right-20 -top-20 w-80 h-80 bg-[var(--button-start)]/20 rounded-full blur-3xl pointer-events-none" />
-        <div className="relative z-10 max-w-3xl space-y-6">
-          <span className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-cyan-300 text-xs font-semibold">
-            <Users className="w-3.5 h-3.5" />
-            <span>Đồng Hành Phụng Sự &amp; Hợp Tác Chuyên Môn</span>
-          </span>
-
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight leading-tight">
-            Bạn Muốn Phối Hợp Tổ Chức Sự Kiện Cùng Rocky Lens?
-          </h2>
-
-          <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-            Chúng tôi luôn sẵn sàng hỗ trợ phôi tròng kính, trang thiết bị đo khám thị lực và tài liệu chuyên môn cho các bệnh viện mắt, phòng khám khúc xạ, chuỗi mắt kính đại lý và các đơn vị thiện nguyện tổ chức chương trình cộng đồng hoặc hội thảo khoa học.
-          </p>
-
-          <div className="flex flex-wrap items-center gap-4 pt-2">
-            <Link
-              href="/lien-he/"
-              className="button-primary px-6 py-3 rounded-full font-bold text-sm shadow-md transition-all cursor-pointer inline-flex items-center"
-            >
-              Đăng Ký Phối Hợp Tổ Chức
-            </Link>
-
-            <a
-              href="tel:0933102653"
-              className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-white/10 hover:bg-white/20 text-white font-semibold text-sm transition-colors border border-white/20"
-            >
-              <Phone className="w-4 h-4 text-cyan-300" />
-              <span>Hotline: 0933 102 653</span>
-            </a>
-
-            <a
-              href="https://zalo.me/0933102653"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-[#0088cc]/80 hover:bg-[#0088cc] text-white font-semibold text-sm transition-colors"
-            >
-              <MessageSquare className="w-4 h-4" />
-              <span>Zalo Trao Đổi Sự Kiện</span>
-            </a>
-          </div>
         </div>
       </section>
 
