@@ -14,9 +14,15 @@ import { constructMetadata } from '@/lib/seo/metadata';
 import { assetUrl } from '@/lib/utils';
 
 export const metadata: Metadata = constructMetadata({
-  title: 'Công Nghệ Tròng Kính & Kiến Thức Quang Học - Rocky Lens Canada',
+  title: 'Công Nghệ Tròng Kính Freeform & Lớp Phủ SHMC',
   description: 'Khám phá 4 công nghệ quang học Rocky Lens: Thiết kế phi cầu Aspheric, Màng phủ chống chói đa tầng SHMC, Lớp siêu trượt nước Super Hydrophobic và Khử bức xạ EMI BlueCut.',
   path: '/cong-nghe/',
+  keywords: [
+    'công nghệ tròng kính Freeform',
+    'lớp phủ SHMC chống bám nước',
+    'thiết kế phi cầu Aspheric',
+    'công nghệ lọc ánh sáng xanh BlueCut',
+  ],
 });
 
 interface CorePillarItem {

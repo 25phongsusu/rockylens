@@ -4,9 +4,15 @@ import CatalogPageShell from '@/components/products/CatalogPageShell';
 import { constructMetadata } from '@/lib/seo/metadata';
 
 export const metadata: Metadata = constructMetadata({
-  title: 'Catalogue Tròng Kính Quang Học RockyLens Canada',
-  description: 'Khám phá toàn bộ catalogue tròng kính đơn tròng, đa tròng Freeform, tròng đổi màu, kính lái xe và tròng kiểm soát cận thị phân phối bởi Rocky Lens Canada.',
+  title: 'Bảng Giá & Các Loại Tròng Kính Chính Hãng',
+  description: 'Catalogue và bảng giá tròng kính Rocky Lens: đơn tròng, đa tròng Freeform, chống ánh sáng xanh UV420, đổi màu, lái xe ban đêm DriveShield và kiểm soát cận thị.',
   path: '/trong-kinh/',
+  keywords: [
+    'bảng giá tròng kính',
+    'các loại tròng kính cận',
+    'tròng kính Rocky',
+    'catalogue tròng kính',
+  ],
 });
 
 export default function ProductsPage() {

@@ -21,10 +21,16 @@ import Breadcrumbs from '@/components/shared/Breadcrumbs';
 import { constructMetadata } from '@/lib/seo/metadata';
 
 export const metadata: Metadata = constructMetadata({
-  title: 'Trung Tâm Gia Công Lab Kỹ Thuật Số & Tròng Kính Đặt Đánh RX - Rocky Lens Canada',
+  title: 'Trung Tâm Gia Công Lab RX Freeform & Đặt Đánh Theo Đơn',
   description:
-    'Trung tâm gia công Lab tròng kính kỹ thuật số Freeform RX tiêu chuẩn quốc tế. Nhận đặt đánh độ cao (-20.00D đến +10.00D), độ loạn đến -6.00D, lăng kính Prism, mài lắp gọng khoan chính xác. Thời gian giao hàng hỏa tốc 24-48h cho đại lý toàn quốc.',
+    'Trung tâm gia công Lab tròng kính kỹ thuật số CanRx Freeform tiêu chuẩn quốc tế. Nhận đặt đánh độ cao (-20.00D đến +10.00D), độ loạn đến -6.00D, giao hàng 24-48h toàn quốc.',
   path: '/rx-lab/',
+  keywords: [
+    'gia công tròng kính kỹ thuật số CanRx',
+    'đánh tròng theo đơn bác sĩ',
+    'Lab RX Freeform',
+    'gia công tròng cận độ cao',
+  ],
 });
 
 const rxCapabilities = [

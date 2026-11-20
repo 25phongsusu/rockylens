@@ -26,9 +26,15 @@ import { CATEGORIES } from '@/features/products/product-types';
 import { assetUrl } from '@/lib/utils';
 
 export const metadata: Metadata = constructMetadata({
-  title: 'Dành Cho Đối Tác & Đại Lý Kính Mắt B2B',
-  description: 'Giải pháp cung ứng tròng kính quang học toàn diện cho cửa hàng kính mắt, phòng khám nhãn khoa và chuỗi bán lẻ. Gia công Lab RX Freeform, hỗ trợ POSM và chiết khấu hấp dẫn.',
+  title: 'Nhà Phân Phối & Nguồn Hàng Tròng Kính B2B Cho Đại Lý',
+  description: 'Cung cấp sỉ tròng kính chính hãng Rocky Lens cho cửa hàng kính mắt, phòng khám nhãn khoa và chuỗi bán lẻ. Gia công Lab RX Freeform, hỗ trợ POSM và chiết khấu B2B.',
   path: '/danh-cho-doi-tac/',
+  keywords: [
+    'nhà phân phối tròng kính',
+    'nguồn hàng tròng kính cho cửa hàng',
+    'cung cấp sỉ tròng kính',
+    'đối tác B2B Rocky Lens',
+  ],
 });
 
 const partnerFaqs = [

@@ -10,9 +10,17 @@ import PartnerSection from '@/components/home/PartnerSection';
 import BlogSection from '@/components/home/BlogSection';
 
 export const metadata: Metadata = constructMetadata({
-  title: 'Rocky Lens - Nhà phân phối tròng kính từ Canada',
-  description: 'Rocky Lens – Trung tâm phân phối tròng kính B2B & gia công Lab công nghệ quốc tế tại Việt Nam. Cung cấp sỉ tròng cận, đổi màu, chống ánh sáng xanh cho cửa hàng kính.',
+  title: 'Tròng Kính Chuẩn Canada • Giải Pháp Thị Lực Toàn Diện',
+  description: 'Tròng kính Rocky Lens chuẩn Canada chính hãng tại Việt Nam: chống ánh sáng xanh UV420, đổi màu, lái xe chống chói DriveShield, kiểm soát cận thị và đa tròng Freeform.',
   path: '/',
+  keywords: [
+    'Rocky Lens',
+    'Rocky Canada Opticians',
+    'tròng kính chính hãng',
+    'tròng kính chuẩn Canada',
+    'tròng kính chống ánh sáng xanh',
+    'tròng kính đổi màu',
+  ],
 });
 
 export default function HomePage() {

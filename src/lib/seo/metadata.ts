@@ -5,6 +5,7 @@ interface MetadataProps {
   title?: string;
   description?: string;
   path?: string;
+  canonicalPath?: string;
   image?: string;
   keywords?: string[];
   noIndex?: boolean;
@@ -14,6 +15,7 @@ export function constructMetadata({
   title,
   description = siteConfig.description,
   path = '',
+  canonicalPath,
   image = '/images/banners/hero-banner.png',
   keywords = [
     'tròng kính rocky lens',
@@ -29,7 +31,8 @@ export function constructMetadata({
   noIndex = false,
 }: MetadataProps = {}): Metadata {
   const fullTitle = title ? `${title} | ${siteConfig.name}` : `${siteConfig.name} - ${siteConfig.slogan}`;
-  const canonicalUrl = `${siteConfig.url}${path.startsWith('/') ? path : `/${path}`}`;
+  const targetPath = canonicalPath ?? path;
+  const canonicalUrl = `${siteConfig.url}${targetPath.startsWith('/') ? targetPath : `/${targetPath}`}`;
 
   return {
     title: fullTitle,

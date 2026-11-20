@@ -8,9 +8,15 @@ import { constructMetadata } from '@/lib/seo/metadata';
 import { siteConfig } from '@/config/site';
 
 export const metadata: Metadata = constructMetadata({
-  title: 'Liên Hệ Hệ Thống Rocky Lens Việt Nam | Hỗ Trợ & Tìm Đại Lý',
-  description: 'Trung tâm hỗ trợ khách hàng, tra cứu cửa hàng mắt kính ủy quyền Rocky Lens gần nhất và kênh kết nối kỹ thuật Lab RX cho đối tác trên toàn quốc.',
+  title: 'Tìm Đại Lý Chính Hãng & Cửa Hàng Mắt Kính Rocky Lens',
+  description: 'Tra cứu cửa hàng mắt kính ủy quyền Rocky Lens chính hãng gần bạn nhất, hệ thống tổng kho Hà Nội – TP.HCM và kênh hỗ trợ kỹ thuật Lab RX toàn quốc.',
   path: '/lien-he/',
+  keywords: [
+    'đại lý tròng kính Rocky chính hãng',
+    'cửa hàng bán tròng Rocky gần đây',
+    'tổng kho Rocky Lens',
+    'liên hệ Rocky Lens',
+  ],
 });
 
 export default function ContactPage() {
