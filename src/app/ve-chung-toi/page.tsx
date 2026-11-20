@@ -141,7 +141,7 @@ export default function AboutUsPage() {
       <section className="py-12 sm:py-16 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            <div className="lg:col-span-5 flex items-center justify-center lg:justify-start">
+            <div className="lg:col-span-5 flex items-center justify-center lg:justify-center lg:pl-8">
               <img
                 src={assetUrl('/assets/logo_rocky_transparent.png')}
                 alt="Rocky Lens Canada Opticians"
