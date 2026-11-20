@@ -46,9 +46,7 @@ export default function HeroSection() {
   return (
     <section
       id="brand-hero"
-      className={`relative overflow-hidden py-10 sm:py-14 lg:py-16 min-h-[420px] lg:min-h-[460px] flex flex-col justify-center transition-all duration-700 ${
-        isBanner ? 'bg-[#001722] text-white' : 'site-background text-slate-800'
-      }`}
+      className="relative overflow-hidden py-10 sm:py-14 lg:py-16 min-h-[420px] lg:min-h-[460px] flex flex-col justify-center site-background text-slate-800 transition-all duration-700"
     >
       {/* Banner Mode Background */}
       <div
@@ -57,11 +55,12 @@ export default function HeroSection() {
         }`}
         style={{
           backgroundImage: `url('${assetUrl('/images/banners/banner_hero_mode.jpg')}')`,
-          backgroundPosition: 'right 30% center',
+          backgroundPosition: 'right 20% center',
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-[#001722]/98 via-[#002433]/85 to-transparent sm:to-[#002433]/40" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#001722] via-transparent to-[#001722]/60" />
+        {/* Harmonious light gradient overlays matching page colors (--site-bg-start, --site-bg-middle) */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[var(--site-bg-start)] via-[var(--site-bg-start)]/90 sm:via-[var(--site-bg-start)]/80 to-transparent sm:to-[var(--site-bg-start)]/15" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[var(--site-bg-middle)]/40 via-transparent to-[var(--site-bg-start)]/60" />
       </div>
 
       {/* Liquid Caustic Light Orbs */}
@@ -75,7 +74,7 @@ export default function HeroSection() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
         {/* Segmented Mode Switcher */}
         <div className="flex items-center justify-center lg:justify-start mb-4">
-          <div className="inline-flex items-center p-1 rounded-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border border-slate-300/70 shadow-sm transition-all">
+          <div className="inline-flex items-center p-1 rounded-full bg-white/90 backdrop-blur-md border border-slate-300/80 shadow-xs transition-all">
             <button
               type="button"
               onClick={() => switchMode('standard')}
@@ -93,7 +92,7 @@ export default function HeroSection() {
               onClick={() => switchMode('banner')}
               className={`px-4 py-1.5 rounded-full text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer ${
                 isBanner
-                  ? 'bg-gradient-to-r from-cyan-500 to-teal-400 text-slate-950 font-black shadow-md'
+                  ? 'bg-[var(--b2b-end)] text-white shadow-xs'
                   : 'text-slate-600 hover:text-heading'
               }`}
             >
@@ -106,22 +105,12 @@ export default function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
           {/* Left Column */}
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
-            <div
-              className={`inline-flex items-center space-x-2 px-4 py-1.5 rounded-full text-xs font-bold shadow-xs transition-colors ${
-                isBanner
-                  ? 'bg-white/10 text-cyan-300 border border-white/20 backdrop-blur-md'
-                  : 'liquid-pill text-primary'
-              }`}
-            >
+            <div className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full text-xs font-bold shadow-xs liquid-pill text-primary">
               <span className="w-2 h-2 rounded-full bg-[var(--button-middle)]" />
               <span className="tracking-wide uppercase font-semibold">{hero.badge}</span>
             </div>
 
-            <h1
-              className={`text-3xl sm:text-5xl lg:text-[52px] font-black tracking-tight leading-[1.15] transition-colors ${
-                isBanner ? 'text-white' : 'text-heading'
-              }`}
-            >
+            <h1 className="text-3xl sm:text-5xl lg:text-[52px] font-black tracking-tight leading-[1.15] text-heading">
               {hero.headlinePrefix} <br className="hidden sm:inline" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--button-start)] via-[var(--button-middle)] to-[var(--button-end)]">
                 {hero.headlineHighlight}
@@ -129,7 +118,7 @@ export default function HeroSection() {
             </h1>
 
             {hero.subheadline && (
-              <p className={`text-sm sm:text-base max-w-2xl mx-auto lg:mx-0 leading-relaxed ${isBanner ? 'text-slate-200' : 'text-brand-muted'}`}>
+              <p className="text-sm sm:text-base max-w-2xl mx-auto lg:mx-0 leading-relaxed text-brand-muted">
                 {hero.subheadline}
               </p>
             )}
@@ -145,11 +134,7 @@ export default function HeroSection() {
 
               <Link
                 href={hero.ctaSecondary.link}
-                className={`px-6 py-3.5 text-xs sm:text-sm font-bold flex items-center space-x-2 cursor-pointer transition-all rounded-full ${
-                  isBanner
-                    ? 'bg-white/15 hover:bg-white/25 text-white border border-white/30 backdrop-blur-md'
-                    : 'liquid-btn-secondary'
-                }`}
+                className="liquid-btn-secondary px-6 py-3.5 text-xs sm:text-sm font-bold flex items-center space-x-2 cursor-pointer transition-all rounded-full"
               >
                 <span>{hero.ctaSecondary.text}</span>
               </Link>
@@ -159,11 +144,7 @@ export default function HeroSection() {
           {/* Right Column */}
           <div className="lg:col-span-5 relative flex items-center justify-center lg:justify-start lg:-ml-4">
             <div
-              className={`w-72 h-72 sm:w-[360px] sm:h-[360px] rounded-full blur-3xl absolute liquid-morph-1 pointer-events-none transition-opacity duration-700 ${
-                isBanner
-                  ? 'bg-gradient-to-tr from-cyan-500/20 via-teal-500/20 to-blue-500/10'
-                  : 'bg-gradient-to-tr from-teal-200/50 via-cyan-100/40 to-sky-200/50'
-              }`}
+              className="w-72 h-72 sm:w-[360px] sm:h-[360px] rounded-full blur-3xl absolute liquid-morph-1 pointer-events-none transition-opacity duration-700 bg-gradient-to-tr from-teal-200/50 via-cyan-100/40 to-sky-200/50"
             />
 
             <div
