@@ -9,15 +9,16 @@ import {
   ShieldCheck,
   Award,
   FileCheck,
+  Calendar,
 } from 'lucide-react';
 import Breadcrumbs from '@/components/shared/Breadcrumbs';
 import { constructMetadata } from '@/lib/seo/metadata';
 import { assetUrl } from '@/lib/utils';
 
 export const metadata: Metadata = constructMetadata({
-  title: 'Về Chúng Tôi — Rocky - Canada Opticians',
+  title: 'Về Chúng Tôi — Hành Trình Rocky - Canada Opticians',
   description:
-    'Rocky – Thương hiệu tròng kính phát triển bởi chuyên gia khúc xạ Canada, mang đến giải pháp thị lực chất lượng cao cho người Việt và giá trị cốt lõi R-O-C-K-Y.',
+    'Khám phá hành trình thương hiệu tròng kính Rocky (Canada Opticians) tại Việt Nam, các cột mốc hợp tác chiến lược cùng Satisloh (EssilorLuxottica) và IOVES (Italy), cùng 5 giá trị cốt lõi R-O-C-K-Y.',
   path: '/ve-chung-toi/',
 });
 
@@ -62,18 +63,32 @@ const rockyValues = [
   },
 ];
 
-const strategicPartnerships = [
+const journeyStories = [
   {
-    src: '/images/company/partner-satisloh-canrx-2026.jpg',
-    badge: 'Wetzlar, Germany • 26/10/2026',
-    title: 'Hợp Tác Chiến Lược Satisloh (EssilorLuxottica) & Rocky',
-    desc: 'Chuyển giao công nghệ sản xuất tròng kính và ra mắt Trung tâm Công nghệ Canada RX Freeform (CanRx).',
+    chapter: 'CÂU CHUYỆN 01',
+    location: 'Wetzlar, Germany • 26/10/2026',
+    title: 'Bước Ngoặt Công Nghệ Cùng Satisloh (EssilorLuxottica) — Ra Mắt Trung Tâm CanRx',
+    paragraphs: [
+      'Không dừng lại ở việc phân phối tròng kính chất lượng cao, hành trình của Rocky luôn hướng tới mục tiêu đưa công nghệ gia công quang học đỉnh cao thế giới về phục vụ trực tiếp cho thị lực người Việt.',
+      'Tại thành phố Wetzlar (Đức) — cái nôi của ngành công nghệ quang học chính xác toàn cầu, Rocky (Canada Opticians) đã chính thức ký kết hợp tác chiến lược và chuyển giao công nghệ sản xuất tròng kính cùng Satisloh (thuộc tập đoàn EssilorLuxottica), đánh dấu sự ra đời của Trung tâm Công nghệ Canada RX Freeform (CanRx).',
+      'Cột mốc này mở ra kỷ nguyên mới cho tròng kính cá nhân hóa tại Việt Nam: mỗi cặp tròng được tính toán và mài phay kỹ thuật số theo từng thông số độ khúc xạ, độ cong gọng và thói quen nhìn riêng biệt của từng người đeo.',
+    ],
+    image: '/images/company/partner-satisloh-canrx-2026.jpg',
+    imageAlt: 'Lễ ký kết hợp tác chiến lược và chuyển giao công nghệ giữa Satisloh (EssilorLuxottica) và Rocky (Canada Opticians)',
+    reverse: false,
   },
   {
-    src: '/images/company/partner-ioves-2026.jpg',
-    badge: 'TP. Hồ Chí Minh • 2026',
-    title: 'Lễ Ký Kết Hợp Tác Chiến Lược Rocky & IOVES (Italy)',
-    desc: 'Hợp tác sản xuất & mang tinh hoa kính mắt Châu Âu đến thị trường Việt Nam.',
+    chapter: 'CÂU CHUYỆN 02',
+    location: 'TP. Hồ Chí Minh • 2026',
+    title: 'Kết Nối Tinh Hoa Kính Mắt Châu Âu Cùng IOVES (Italy)',
+    paragraphs: [
+      'Một cặp kính hoàn hảo là sự kết hợp hài hòa giữa thấu kính chuẩn xác và chiếc gọng kính tinh tế, bền bỉ. Trên hành trình hoàn thiện trải nghiệm thị giác toàn diện, Rocky đã chính thức ký kết hợp tác chiến lược cùng IOVES — nhà thiết kế và sản xuất mắt kính danh tiếng từ Ý.',
+      'Sự đồng hành này đưa những dòng gọng kính mang đậm tinh thần chế tác Châu Âu như Orisee, Ossé, Mustang, Amarcord và West hòa quyện cùng công nghệ tròng kính Rocky chuẩn Canada tại thị trường Việt Nam.',
+      'Đây không chỉ là bước tiến mở rộng hệ sinh thái sản phẩm cho hệ thống 500+ đối tác cửa hàng mắt kính trên toàn quốc, mà còn là cam kết của Rocky trong việc mang đến những sản phẩm chuẩn quốc tế với giá trị bền vững cho người tiêu dùng Việt.',
+    ],
+    image: '/images/company/partner-ioves-2026.jpg',
+    imageAlt: 'Lễ ký kết hợp tác chiến lược giữa Rocky (Canada Opticians) và IOVES (Italy) tại TP. Hồ Chí Minh',
+    reverse: true,
   },
 ];
 
@@ -93,10 +108,9 @@ export default function AboutUsPage() {
           1. HERO BANNER: ROCKY - CANADA OPTICIANS + MOUNTAINS
           ========================================================= */}
       <section className="relative overflow-hidden bg-gradient-to-b from-[#EBF8FC] via-[#F4FCFE] to-white">
-        {/* Top Title Area */}
         <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-8 sm:pt-12 pb-4 relative z-20">
           <div className="flex flex-wrap items-center gap-2.5 sm:gap-3">
-            <h1 className="text-2xl sm:text-4xl lg:text-[42px] font-black tracking-tight text-[#165166] uppercase">
+            <h1 className="text-2xl sm:text-4xl lg:text-[42px] font-black tracking-tight text-[#12566A] uppercase">
               ROCKY - CANADA OPTICIANS
             </h1>
             <MapleLeafIcon className="w-6 h-6 sm:w-8 sm:h-8 text-[#D81E27] shrink-0" />
@@ -106,7 +120,6 @@ export default function AboutUsPage() {
           </p>
         </div>
 
-        {/* Panoramic Mountain + Maple Leaf + 7 Colorful Lenses Banner */}
         <div className="relative w-full max-w-7xl mx-auto px-0 sm:px-6 -mt-4 sm:-mt-8">
           <div className="relative w-full aspect-[16/8.2] sm:aspect-[16/7.2] overflow-hidden sm:rounded-3xl">
             <Image
@@ -117,84 +130,126 @@ export default function AboutUsPage() {
               className="object-cover object-center"
               sizes="(max-width: 1280px) 100vw, 1280px"
             />
-            {/* Soft top & bottom blend */}
             <div className="absolute inset-x-0 top-0 h-14 sm:h-20 bg-gradient-to-b from-[#EBF8FC] to-transparent pointer-events-none" />
-            <div className="absolute inset-x-0 bottom-0 h-16 sm:h-24 bg-gradient-to-t from-[#F4FCFE] via-[#F4FCFE]/60 to-transparent pointer-events-none" />
+            <div className="absolute inset-x-0 bottom-0 h-16 sm:h-24 bg-gradient-to-t from-white via-white/60 to-transparent pointer-events-none" />
           </div>
         </div>
       </section>
 
       {/* =========================================================
-          2. BRAND STORY & 2x2 PHOTO COLLAGE
+          2. KHỞI NGUỒN & HÀNH TRÌNH PHÁT TRIỂN TẠI VIỆT NAM
           ========================================================= */}
-      <section className="py-10 sm:py-16 px-4 sm:px-6 relative overflow-hidden">
+      <section className="py-12 sm:py-16 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            {/* Left Column: Logo + Brand Introduction */}
-            <div className="lg:col-span-5 space-y-6">
+            <div className="lg:col-span-5 space-y-5">
               <div className="flex items-center gap-4">
                 <img
                   src={assetUrl('/assets/logo_rocky_transparent.png')}
                   alt="Rocky Lens Canada Opticians"
                   className="h-20 sm:h-24 w-auto object-contain"
                 />
-                <div className="flex items-center gap-1.5 text-sm font-semibold text-[#165166]">
+                <div className="flex items-center gap-1.5 text-sm font-semibold text-[#12566A]">
                   <span>Canada Opticians</span>
                   <MapleLeafIcon className="w-4 h-4 text-[#D81E27]" />
                 </div>
               </div>
 
-              <div className="space-y-4 text-base sm:text-[17px] leading-relaxed text-slate-700 font-medium">
-                <p>
-                  <strong className="text-[#165166] font-bold">Rocky</strong> – Thương hiệu tròng kính phát triển bởi chuyên gia khúc xạ Canada, mang đến giải pháp thị lực chất lượng cao cho người Việt.
-                </p>
-                <p>
-                  Tiên phong ứng dụng công nghệ sản xuất hiện đại và cá nhân hóa tròng kính, hướng đến trải nghiệm thị giác tối ưu cho từng khách hàng.
-                </p>
+              <div className="grid grid-cols-3 gap-3 pt-2">
+                <div className="p-3.5 rounded-2xl bg-white/80 border border-[var(--color-border)] text-center">
+                  <div className="text-xl sm:text-2xl font-black text-[#12566A]">500+</div>
+                  <div className="text-[11px] font-semibold text-slate-600 mt-0.5">Đại lý toàn quốc</div>
+                </div>
+                <div className="p-3.5 rounded-2xl bg-white/80 border border-[var(--color-border)] text-center">
+                  <div className="text-xl sm:text-2xl font-black text-[#12566A]">2 Kho</div>
+                  <div className="text-[11px] font-semibold text-slate-600 mt-0.5">Hà Nội & TP.HCM</div>
+                </div>
+                <div className="p-3.5 rounded-2xl bg-white/80 border border-[var(--color-border)] text-center">
+                  <div className="text-xl sm:text-2xl font-black text-[#12566A]">±0.01D</div>
+                  <div className="text-[11px] font-semibold text-slate-600 mt-0.5">Độ chính xác Lab</div>
+                </div>
               </div>
             </div>
 
-            {/* Right Column: 2 Strategic Partnership Photos */}
-            <div className="lg:col-span-7">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
-                {strategicPartnerships.map((item, idx) => (
-                  <div
-                    key={idx}
-                    className="rounded-2xl sm:rounded-3xl overflow-hidden bg-white/90 backdrop-blur-md shadow-[0_12px_32px_rgba(11,123,138,0.12)] border border-white/90 flex flex-col group"
-                  >
-                    <div className="relative aspect-[16/10] overflow-hidden bg-slate-100">
-                      <Image
-                        src={assetUrl(item.src)}
-                        alt={item.title}
-                        fill
-                        className="object-cover transition-transform duration-500 group-hover:scale-105"
-                        sizes="(max-width: 1024px) 100vw, 380px"
-                      />
-                    </div>
-                    <div className="p-4 flex-1 flex flex-col">
-                      <span className="text-[11px] font-bold uppercase tracking-wider text-primary mb-1">
-                        {item.badge}
-                      </span>
-                      <h3 className="text-sm font-extrabold text-[#165166] leading-snug mb-1.5">
-                        {item.title}
-                      </h3>
-                      <p className="text-xs text-slate-600 leading-relaxed">
-                        {item.desc}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
+            <div className="lg:col-span-7 space-y-4 text-base sm:text-[17px] leading-relaxed text-slate-700">
+              <h2 className="text-2xl sm:text-3xl font-black text-[#12566A] tracking-tight">
+                Hành Trình Mang Chuẩn Mực Quang Học Canada Đến Người Việt
+              </h2>
+              <p>
+                <strong className="text-[#12566A] font-bold">Rocky Lens</strong> được phát triển bởi đội ngũ chuyên gia nhãn khoa và kỹ sư khúc xạ tại Canada, phân phối độc quyền tại Việt Nam bởi{' '}
+                <strong className="text-[#12566A] font-bold">Công ty Cổ phần Clearly Vietnam</strong>. Từ những ngày đầu thành lập, chúng tôi mang theo khát vọng thu hẹp khoảng cách công nghệ thị giác giữa Bắc Mỹ và Việt Nam.
+              </p>
+              <p>
+                Không chỉ tập trung vào độ chính xác của từng thấu kính, Rocky tiên phong kết nối các công nghệ sản xuất hiện đại và cá nhân hóa tròng kính — giúp từng khách hàng Việt được trải nghiệm tầm nhìn sắc nét, dễ chịu và an toàn dài lâu, đồng thời trở thành điểm tựa tin cậy cho hơn 500 cửa hàng kính mắt và phòng khám nhãn khoa trên cả nước.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
       {/* =========================================================
-          3. GIÁ TRỊ CỐT LÕI CỦA R-O-C-K-Y
+          3. MỖI HÌNH ẢNH LÀ MỘT CÂU CHUYỆN CHIẾN LƯỢC (LARGE FORMAT)
           ========================================================= */}
-      <section className="py-10 sm:py-16 px-4 sm:px-6 relative overflow-hidden">
-        {/* Decorative background optical lens on bottom-right */}
+      <section className="py-10 sm:py-16 px-4 sm:px-6 space-y-16 sm:space-y-24">
+        <div className="max-w-6xl mx-auto space-y-16 sm:space-y-24">
+          {journeyStories.map((story, idx) => (
+            <div
+              key={idx}
+              className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center"
+            >
+              {/* Large Standalone Image (No Card Wrapper) */}
+              <div
+                className={`lg:col-span-7 ${
+                  story.reverse ? 'lg:order-2' : 'lg:order-1'
+                }`}
+              >
+                <div className="relative aspect-[16/10] rounded-2xl sm:rounded-3xl overflow-hidden shadow-[0_18px_45px_rgba(13,70,87,0.16)]">
+                  <Image
+                    src={assetUrl(story.image)}
+                    alt={story.imageAlt}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 720px"
+                  />
+                </div>
+              </div>
+
+              {/* Story Narrative */}
+              <div
+                className={`lg:col-span-5 space-y-4 ${
+                  story.reverse ? 'lg:order-1' : 'lg:order-2'
+                }`}
+              >
+                <div className="flex flex-wrap items-center gap-3">
+                  <span className="text-xs font-black uppercase tracking-widest text-[var(--color-primary)]">
+                    {story.chapter}
+                  </span>
+                  <span className="text-slate-300">•</span>
+                  <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-500">
+                    <Calendar className="w-3.5 h-3.5 text-[var(--color-primary)]" />
+                    {story.location}
+                  </span>
+                </div>
+
+                <h3 className="text-2xl sm:text-[26px] font-black text-[#12566A] leading-snug">
+                  {story.title}
+                </h3>
+
+                <div className="space-y-3.5 text-sm sm:text-base text-slate-700 leading-relaxed">
+                  {story.paragraphs.map((p, pIdx) => (
+                    <p key={pIdx}>{p}</p>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* =========================================================
+          4. GIÁ TRỊ CỐT LÕI CỦA R-O-C-K-Y
+          ========================================================= */}
+      <section className="py-12 sm:py-16 px-4 sm:px-6 relative overflow-hidden">
         <div className="hidden lg:block absolute -right-10 bottom-0 w-72 h-72 opacity-80 pointer-events-none select-none">
           <Image
             src={assetUrl('/assets/h-lens3.png')}
@@ -205,7 +260,7 @@ export default function AboutUsPage() {
         </div>
 
         <div className="max-w-6xl mx-auto relative z-10">
-          <h2 className="text-2xl sm:text-3xl font-black text-[#165166] mb-8 tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-black text-[#12566A] mb-8 tracking-tight">
             Giá trị cốt lõi của <span className="tracking-wider">R-O-C-K-Y</span>
           </h2>
 
@@ -213,12 +268,12 @@ export default function AboutUsPage() {
             {rockyValues.map((item) => (
               <div
                 key={item.letter}
-                className="rounded-2xl bg-white/85 backdrop-blur-md border border-cyan-100/90 shadow-[0_12px_32px_rgba(0,115,153,0.08)] p-5 sm:p-6 flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(0,115,153,0.14)]"
+                className="rounded-2xl bg-white/85 backdrop-blur-md border border-[var(--color-border)] shadow-[0_12px_32px_rgba(13,70,87,0.07)] p-5 sm:p-6 flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(13,70,87,0.12)]"
               >
-                <div className="text-4xl sm:text-5xl font-black text-[#1A627D] leading-none mb-2">
+                <div className="text-4xl sm:text-5xl font-black text-[#156074] leading-none mb-2">
                   {item.letter}
                 </div>
-                <div className="text-sm sm:text-[15px] font-extrabold text-[#0B3B4E] mb-3 min-h-[2.25rem] flex items-center justify-center">
+                <div className="text-sm sm:text-[15px] font-extrabold text-[#0D4657] mb-3 min-h-[2.25rem] flex items-center justify-center">
                   {item.title}
                 </div>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-medium">
@@ -231,25 +286,25 @@ export default function AboutUsPage() {
       </section>
 
       {/* =========================================================
-          4. CHỨNG NHẬN CHẤT LƯỢNG QUỐC TẾ (GỌN GÀNG, ĐỒNG BỘ)
+          5. CHỨNG NHẬN CHẤT LƯỢNG QUỐC TẾ
           ========================================================= */}
-      <section id="chung-nhan" className="py-12 sm:py-16 px-4 sm:px-6 bg-white/70 border-t border-cyan-100/70">
+      <section id="chung-nhan" className="py-12 sm:py-16 px-4 sm:px-6 bg-white/75 border-t border-[var(--color-border)]">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
             <div>
-              <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-primary mb-2">
+              <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[var(--color-primary)] mb-2">
                 <FileCheck className="w-4 h-4" />
                 <span>Chứng Nhận Chất Lượng</span>
               </div>
-              <h2 className="text-2xl sm:text-3xl font-black text-[#165166]">
+              <h2 className="text-2xl sm:text-3xl font-black text-[#12566A]">
                 Tiêu Chuẩn Quang Học Quốc Tế
               </h2>
             </div>
             <div className="flex flex-wrap gap-2 text-xs font-semibold text-slate-600">
-              <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-cyan-50 border border-cyan-100 text-[#165166]">
+              <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-[#F1FAFD] border border-[var(--color-border)] text-[#12566A]">
                 <Award className="w-3.5 h-3.5" /> ISO 9001:2015
               </span>
-              <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-cyan-50 border border-cyan-100 text-[#165166]">
+              <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-[#F1FAFD] border border-[var(--color-border)] text-[#12566A]">
                 <ShieldCheck className="w-3.5 h-3.5" /> CE & FDA Standard
               </span>
             </div>
@@ -271,7 +326,7 @@ export default function AboutUsPage() {
                   />
                 </div>
                 <div className="p-3.5 border-t border-slate-100 text-center">
-                  <div className="text-sm font-bold text-[#165166]">{cert.title}</div>
+                  <div className="text-sm font-bold text-[#12566A]">{cert.title}</div>
                   <div className="text-xs text-slate-500 mt-0.5">{cert.desc}</div>
                 </div>
               </div>
@@ -281,9 +336,9 @@ export default function AboutUsPage() {
       </section>
 
       {/* =========================================================
-          5. CTA FOOTER BANNER
+          6. CTA FOOTER BANNER
           ========================================================= */}
-      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-gradient-to-r from-[#007A99] to-[#003B50] text-white">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-gradient-to-r from-[#156074] to-[#0D4657] text-white">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
           <div className="space-y-2">
             <h2 className="text-xl sm:text-2xl font-black">
@@ -296,7 +351,7 @@ export default function AboutUsPage() {
           <div className="flex flex-wrap items-center justify-center gap-3 shrink-0">
             <Link
               href="/trong-kinh/"
-              className="px-6 py-3 rounded-full bg-white text-[#003B50] font-bold text-sm hover:bg-cyan-50 transition-all flex items-center gap-2"
+              className="px-6 py-3 rounded-full bg-white text-[#0D4657] font-bold text-sm hover:bg-[#F1FAFD] transition-all flex items-center gap-2"
             >
               <Store className="w-4 h-4" />
               <span>Xem Sản Phẩm</span>
