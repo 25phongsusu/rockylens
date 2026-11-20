@@ -12,7 +12,7 @@ import homeContent from '@/../content/home_content.json';
 import { assetUrl } from '@/lib/utils';
 
 export default function HeroSection() {
-  const [mode, setMode] = useState<'standard' | 'banner'>('standard');
+  const [mode, setMode] = useState<'standard' | 'banner'>('banner');
   const hero = homeContent.hero;
 
   useEffect(() => {
@@ -20,7 +20,9 @@ export default function HeroSection() {
       const params = new URLSearchParams(window.location.search);
       const modeParam = params.get('mode') || params.get('view');
       const saved = localStorage.getItem('rocky_hero_mode');
-      if (modeParam === 'banner' || (!modeParam && saved === 'banner')) {
+      if (modeParam === 'standard' || (saved === 'standard' && modeParam !== 'banner')) {
+        setMode('standard');
+      } else {
         setMode('banner');
       }
     } catch {}
@@ -31,12 +33,12 @@ export default function HeroSection() {
     try {
       localStorage.setItem('rocky_hero_mode', newMode);
       const url = new URL(window.location.href);
-      if (newMode === 'banner') {
-        url.searchParams.set('mode', 'banner');
+      if (newMode === 'standard') {
+        url.searchParams.set('mode', 'standard');
       } else {
-        url.searchParams.delete('mode');
-        url.searchParams.delete('view');
+        url.searchParams.set('mode', 'banner');
       }
+      url.searchParams.delete('view');
       window.history.replaceState({}, '', url.toString());
     } catch {}
   };
@@ -50,7 +52,7 @@ export default function HeroSection() {
     >
       {/* Banner Mode Background */}
       <div
-        className={`absolute inset-0 z-0 bg-cover bg-center transition-opacity duration-700 pointer-events-none ${
+        className={`absolute inset-0 z-0 bg-cover bg-center transition-opacity duration-700 pointer-events-none contrast-[1.08] brightness-[0.95] ${
           isBanner ? 'opacity-100' : 'opacity-0'
         }`}
         style={{
@@ -58,9 +60,9 @@ export default function HeroSection() {
           backgroundPosition: 'right 20% center',
         }}
       >
-        {/* Harmonious light gradient overlays matching page colors (--site-bg-start, --site-bg-middle) */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[var(--site-bg-start)] via-[var(--site-bg-start)]/90 sm:via-[var(--site-bg-start)]/80 to-transparent sm:to-[var(--site-bg-start)]/15" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[var(--site-bg-middle)]/40 via-transparent to-[var(--site-bg-start)]/60" />
+        {/* Soft gradient overlay on left for typography readability, keeping right side rich, dark and clear */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[var(--site-bg-start)] via-[var(--site-bg-start)]/80 sm:via-[var(--site-bg-start)]/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[var(--site-bg-middle)]/20 via-transparent to-[var(--site-bg-start)]/20" />
       </div>
 
       {/* Liquid Caustic Light Orbs */}
@@ -136,34 +138,30 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Right Column */}
-          <div className="lg:col-span-5 relative flex items-center justify-center lg:justify-start lg:-ml-4">
-            <div
-              className="w-72 h-72 sm:w-[360px] sm:h-[360px] rounded-full blur-3xl absolute liquid-morph-1 pointer-events-none transition-opacity duration-700 bg-gradient-to-tr from-teal-200/50 via-cyan-100/40 to-sky-200/50"
-            />
-
-            <div
-              id="hero-lens-wrap"
-              className={`relative z-10 w-full max-w-xs sm:max-w-sm lg:max-w-[380px] aspect-square flex items-center justify-center transition-all duration-700 ${
-                isBanner ? 'lg:-translate-x-3 lg:-translate-y-2 scale-[1.02]' : ''
-              }`}
-            >
+          {/* Right Column: chỉ hiển thị ở Chế độ 1 (Tối giản) */}
+          {!isBanner && (
+            <div className="lg:col-span-5 relative flex items-center justify-center lg:justify-start lg:-ml-4">
               <div
-                className={`relative w-full h-full flex items-center justify-center transition-all duration-700 ${
-                  isBanner ? 'drop-shadow-[0_25px_50px_rgba(0,162,204,0.45)]' : ''
-                }`}
+                className="w-72 h-72 sm:w-[360px] sm:h-[360px] rounded-full blur-3xl absolute liquid-morph-1 pointer-events-none transition-opacity duration-700 bg-gradient-to-tr from-teal-200/50 via-cyan-100/40 to-sky-200/50"
+              />
+
+              <div
+                id="hero-lens-wrap"
+                className="relative z-10 w-full max-w-xs sm:max-w-sm lg:max-w-[380px] aspect-square flex items-center justify-center transition-all duration-700"
               >
-                <Image
-                  src={assetUrl(hero.heroImage)}
-                  alt="Tròng kính quang học Rocky Lens Canada"
-                  fill
-                  priority
-                  className="object-contain p-2 transition-transform duration-700 hover:scale-105 drop-shadow-[0_25px_45px_rgba(11,123,138,0.28)]"
-                  sizes="(max-width: 1024px) 100vw, 580px"
-                />
+                <div className="relative w-full h-full flex items-center justify-center transition-all duration-700">
+                  <Image
+                    src={assetUrl(hero.heroImage)}
+                    alt="Tròng kính quang học Rocky Lens Canada"
+                    fill
+                    priority
+                    className="object-contain p-2 transition-transform duration-700 hover:scale-105 drop-shadow-[0_25px_45px_rgba(11,123,138,0.28)]"
+                    sizes="(max-width: 1024px) 100vw, 580px"
+                  />
+                </div>
               </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
     </section>
