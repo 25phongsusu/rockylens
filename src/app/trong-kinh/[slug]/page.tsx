@@ -13,6 +13,7 @@ import ProductSpecifications from '@/components/products/ProductSpecifications';
 import ProductGrid from '@/components/products/ProductGrid';
 import ContactCTA from '@/components/shared/ContactCTA';
 import ShopeeProductSelector from '@/components/products/ShopeeProductSelector';
+import LazyVideoPlayer from '@/components/products/LazyVideoPlayer';
 import { getProductTheme } from '@/features/products/pricing-matrix';
 import { constructMetadata } from '@/lib/seo/metadata';
 import { productSchema } from '@/lib/seo/structured-data';
@@ -211,6 +212,15 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
 
             {/* Shopee-style Variant Selector & Pricing Box */}
             <ShopeeProductSelector product={product} />
+
+            {/* Lazy-loaded Product Video Demo (Drive / YouTube Facade) */}
+            {product.videoUrl && (
+              <LazyVideoPlayer
+                videoUrl={product.videoUrl}
+                title={product.videoTitle || `Video Thực Tế ${product.name}`}
+                posterImage={product.images?.[1] || product.featuredImage}
+              />
+            )}
           </div>
         </div>
 
