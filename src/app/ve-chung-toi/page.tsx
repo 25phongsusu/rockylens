@@ -9,7 +9,6 @@ import {
   ShieldCheck,
   Award,
   FileCheck,
-  Calendar,
 } from 'lucide-react';
 import Breadcrumbs from '@/components/shared/Breadcrumbs';
 import { constructMetadata } from '@/lib/seo/metadata';
@@ -154,21 +153,6 @@ export default function AboutUsPage() {
                   <MapleLeafIcon className="w-4 h-4 text-[#D81E27]" />
                 </div>
               </div>
-
-              <div className="grid grid-cols-3 gap-3 pt-2">
-                <div className="p-3.5 rounded-2xl bg-white/80 border border-[var(--color-border)] text-center">
-                  <div className="text-xl sm:text-2xl font-black text-[#12566A]">500+</div>
-                  <div className="text-[11px] font-semibold text-slate-600 mt-0.5">Đại lý toàn quốc</div>
-                </div>
-                <div className="p-3.5 rounded-2xl bg-white/80 border border-[var(--color-border)] text-center">
-                  <div className="text-xl sm:text-2xl font-black text-[#12566A]">2 Kho</div>
-                  <div className="text-[11px] font-semibold text-slate-600 mt-0.5">Hà Nội & TP.HCM</div>
-                </div>
-                <div className="p-3.5 rounded-2xl bg-white/80 border border-[var(--color-border)] text-center">
-                  <div className="text-xl sm:text-2xl font-black text-[#12566A]">±0.01D</div>
-                  <div className="text-[11px] font-semibold text-slate-600 mt-0.5">Độ chính xác Lab</div>
-                </div>
-              </div>
             </div>
 
             <div className="lg:col-span-7 space-y-4 text-base sm:text-[17px] leading-relaxed text-slate-700">
@@ -220,17 +204,6 @@ export default function AboutUsPage() {
                   story.reverse ? 'lg:order-1' : 'lg:order-2'
                 }`}
               >
-                <div className="flex flex-wrap items-center gap-3">
-                  <span className="text-xs font-black uppercase tracking-widest text-[var(--color-primary)]">
-                    {story.chapter}
-                  </span>
-                  <span className="text-slate-300">•</span>
-                  <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-500">
-                    <Calendar className="w-3.5 h-3.5 text-[var(--color-primary)]" />
-                    {story.location}
-                  </span>
-                </div>
-
                 <h3 className="text-2xl sm:text-[26px] font-black text-[#12566A] leading-snug">
                   {story.title}
                 </h3>
