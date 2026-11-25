@@ -53,7 +53,7 @@ python scripts/deploy_to_github.py --push
 - **Sửa Trang Chủ:** Chỉnh trực tiếp `content/home_content.json` (`src/components/home/*.tsx` tự đọc JSON khi build).
 - **Sửa Hotline / Email / Địa chỉ:** Sửa tại `src/config/site.ts` (`Header`, `Footer`, `PartnerSection`, `ContactCTA` dùng chung).
 - **Sửa Menu / Footer links:** Sửa tại `src/config/navigation.ts`.
-- **Thêm Sản phẩm mới:** Tạo `content/products/<slug>.json`, đặt ảnh vào `public/images/products/` (hoặc `public/uploads/solutions/`), thêm vào `NEED_CATALOG` / `TECH_CATALOG` trong `src/features/products/ProductCatalogView.tsx` (và `pricing-matrix.ts` nếu có bảng biến thể giá riêng).
+- **Thêm Sản phẩm mới:** Tạo `content/products/<slug>.json`, đặt ảnh vào `public/images/products/` (hoặc `public/uploads/solutions/`), thêm vào `NEED_CATALOG` / `TECH_CATALOG` trong `src/features/products/catalog-config.ts` (và `src/features/products/pricing/{feature-pricing,need-pricing}.ts`, `product-themes.ts` nếu có bảng biến thể giá/theme riêng — re-export qua `pricing-matrix.ts`).
 - **Thêm Bài viết mới:** Tạo file `.md` trong `content/articles/kien-thuc/` (hoặc `cong-nghe/`, `huong-dan/`) kèm frontmatter đầy đủ.
 - **Kiểm tra sau khi sửa:** Chạy `npm.cmd run check` và `npm.cmd run build`.
 

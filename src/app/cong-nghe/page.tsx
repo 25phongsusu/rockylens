@@ -10,7 +10,9 @@ import {
 } from 'lucide-react';
 import Breadcrumbs from '@/components/shared/Breadcrumbs';
 import ContactCTA from '@/components/shared/ContactCTA';
+import FaqAccordion from '@/components/shared/FaqAccordion';
 import { constructMetadata } from '@/lib/seo/metadata';
+import { FAQItem } from '@/lib/seo/structured-data';
 import { assetUrl } from '@/lib/utils';
 
 export const metadata: Metadata = constructMetadata({
@@ -153,7 +155,7 @@ const refractiveIndexTable = [
   },
 ];
 
-const faqs = [
+const faqs: FAQItem[] = [
   {
     question: 'Chiết suất tròng kính bao nhiêu là phù hợp với độ cận của tôi?',
     answer:
@@ -386,24 +388,7 @@ export default function CongNghePage() {
             </p>
           </div>
 
-          <div className="space-y-3">
-            {faqs.map((faq, idx) => (
-              <details
-                key={idx}
-                className="group p-4 sm:p-5 rounded-2xl bg-white border border-[var(--color-border)]/70 shadow-2xs open:shadow-sm transition-all"
-              >
-                <summary className="font-bold text-heading text-sm sm:text-base cursor-pointer list-none flex items-center justify-between">
-                  <span>{faq.question}</span>
-                  <span className="text-[var(--color-primary)] font-black text-lg group-open:rotate-45 transition-transform duration-200">
-                    +
-                  </span>
-                </summary>
-                <p className="mt-3 text-xs sm:text-sm text-brand-muted leading-relaxed pl-1">
-                  {faq.answer}
-                </p>
-              </details>
-            ))}
-          </div>
+          <FaqAccordion items={faqs} variant="card" />
         </section>
 
         {/* ========================================================= */}

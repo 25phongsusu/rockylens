@@ -18,7 +18,9 @@ import {
   HelpCircle,
 } from 'lucide-react';
 import Breadcrumbs from '@/components/shared/Breadcrumbs';
+import FaqAccordion from '@/components/shared/FaqAccordion';
 import { constructMetadata } from '@/lib/seo/metadata';
+import { FAQItem } from '@/lib/seo/structured-data';
 
 export const metadata: Metadata = constructMetadata({
   title: 'Trung Tâm Gia Công Lab RX Freeform & Đặt Đánh Theo Đơn',
@@ -32,6 +34,24 @@ export const metadata: Metadata = constructMetadata({
     'gia công tròng cận độ cao',
   ],
 });
+
+const rxFaqs: FAQItem[] = [
+  {
+    question: 'Cửa hàng kính chưa từng hợp tác có thể gửi đơn Lab thử nghiệm không?',
+    answer:
+      'Hoàn toàn có thể. Rocky Lens hỗ trợ tiếp nhận đơn đặt đánh thử nghiệm cho các cửa hàng mắt kính và phòng khám khúc xạ toàn quốc với chính sách chiết khấu đại lý ưu đãi ngay từ đơn hàng đầu tiên.',
+  },
+  {
+    question: 'Đại lý ở tỉnh xa gửi gọng kính về Lab mài lắp bằng cách nào?',
+    answer:
+      'Đại lý có thể gửi gọng trực tiếp qua bưu điện/chuyển phát hỏa tốc về văn phòng Lab tại TP.HCM hoặc Hà Nội. Nếu đại lý đã có sẵn máy quét 3D hoặc gửi số đo khung gọng chuẩn (chiều rộng mắt, cầu mũi, chiều cao), Rocky có thể gia công mài cạnh sẵn theo kích thước để đại lý tự lắp ráp tại tiệm.',
+  },
+  {
+    question: 'Tròng RX đặt đánh có được áp dụng đầy đủ tính năng BlueCut và DriveShield không?',
+    answer:
+      'Có. Toàn bộ các dòng tròng đặt đánh Freeform RX của Rocky Lens đều có tùy chọn phôi lọc ánh sáng xanh BlueCut UV420, phủ chống chói chuyên dụng lái xe ban đêm DriveShield, hoặc đổi màu thông minh Photochromic.',
+  },
+];
 
 const rxCapabilities = [
   {
@@ -515,37 +535,7 @@ export default function RxLabPage() {
           </h2>
         </div>
 
-        <div className="space-y-3">
-          <details className="group p-4 sm:p-5 rounded-2xl bg-white border border-[var(--color-border)]/70 shadow-2xs open:shadow-sm transition-all">
-            <summary className="font-bold text-heading text-sm sm:text-base cursor-pointer list-none flex items-center justify-between">
-              <span>Cửa hàng kính chưa từng hợp tác có thể gửi đơn Lab thử nghiệm không?</span>
-              <span className="text-[var(--color-primary)] font-black text-lg group-open:rotate-45 transition-transform duration-200">+</span>
-            </summary>
-            <p className="mt-3 text-xs sm:text-sm text-brand-muted leading-relaxed pl-1">
-              Hoàn toàn có thể. Rocky Lens hỗ trợ tiếp nhận đơn đặt đánh thử nghiệm cho các cửa hàng mắt kính và phòng khám khúc xạ toàn quốc với chính sách chiết khấu đại lý ưu đãi ngay từ đơn hàng đầu tiên.
-            </p>
-          </details>
-
-          <details className="group p-4 sm:p-5 rounded-2xl bg-white border border-[var(--color-border)]/70 shadow-2xs open:shadow-sm transition-all">
-            <summary className="font-bold text-heading text-sm sm:text-base cursor-pointer list-none flex items-center justify-between">
-              <span>Đại lý ở tỉnh xa gửi gọng kính về Lab mài lắp bằng cách nào?</span>
-              <span className="text-[var(--color-primary)] font-black text-lg group-open:rotate-45 transition-transform duration-200">+</span>
-            </summary>
-            <p className="mt-3 text-xs sm:text-sm text-brand-muted leading-relaxed pl-1">
-              Đại lý có thể gửi gọng trực tiếp qua bưu điện/chuyển phát hỏa tốc về văn phòng Lab tại TP.HCM hoặc Hà Nội. Nếu đại lý đã có sẵn máy quét 3D hoặc gửi số đo khung gọng chuẩn (chiều rộng mắt, cầu mũi, chiều cao), Rocky có thể gia công mài cạnh sẵn theo kích thước để đại lý tự lắp ráp tại tiệm.
-            </p>
-          </details>
-
-          <details className="group p-4 sm:p-5 rounded-2xl bg-white border border-[var(--color-border)]/70 shadow-2xs open:shadow-sm transition-all">
-            <summary className="font-bold text-heading text-sm sm:text-base cursor-pointer list-none flex items-center justify-between">
-              <span>Tròng RX đặt đánh có được áp dụng đầy đủ tính năng BlueCut và DriveShield không?</span>
-              <span className="text-[var(--color-primary)] font-black text-lg group-open:rotate-45 transition-transform duration-200">+</span>
-            </summary>
-            <p className="mt-3 text-xs sm:text-sm text-brand-muted leading-relaxed pl-1">
-              Có. Toàn bộ các dòng tròng đặt đánh Freeform RX của Rocky Lens đều có tùy chọn phôi lọc ánh sáng xanh BlueCut UV420, phủ chống chói chuyên dụng lái xe ban đêm DriveShield, hoặc đổi màu thông minh Photochromic.
-            </p>
-          </details>
-        </div>
+        <FaqAccordion items={rxFaqs} variant="card" />
       </section>
 
       {/* Navigation link to other pages */}

@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { Calendar, Clock, Tag, ArrowLeft, Share2, ArrowRight, Sparkles, HelpCircle, CheckCircle2 } from 'lucide-react';
+import { Calendar, Clock, Tag, ArrowLeft, Share2, ArrowRight, Sparkles, HelpCircle } from 'lucide-react';
 import {
   getAllArticles,
   getArticleBySlug,
@@ -11,12 +11,13 @@ import {
 } from '@/lib/content/load-articles';
 import { getAllProducts } from '@/lib/content/load-products';
 import Breadcrumbs from '@/components/shared/Breadcrumbs';
+import FaqAccordion from '@/components/shared/FaqAccordion';
 import MarkdownContent from '@/components/content/MarkdownContent';
 import ProductGrid from '@/components/products/ProductGrid';
 import RelatedArticles from '@/components/content/RelatedArticles';
 import ContactCTA from '@/components/shared/ContactCTA';
 import { constructMetadata } from '@/lib/seo/metadata';
-import { articleSchema, faqPageSchema } from '@/lib/seo/structured-data';
+import { articleSchema } from '@/lib/seo/structured-data';
 import { getArticleFaqs } from '@/features/articles/article-faqs';
 import { assetUrl, formatDate } from '@/lib/utils';
 
@@ -66,7 +67,6 @@ export default async function BlogArticleDetailPage({ params }: BlogArticlePageP
 
   const faqs = getArticleFaqs(article.slug);
   const jsonLd = articleSchema(article);
-  const faqJsonLd = faqs.length > 0 ? faqPageSchema(faqs) : null;
 
   return (
     <div className="bg-white min-h-screen">
@@ -74,12 +74,6 @@ export default async function BlogArticleDetailPage({ params }: BlogArticlePageP
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      {faqJsonLd && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-        />
-      )}
 
       <Breadcrumbs
         items={[
@@ -166,27 +160,7 @@ export default async function BlogArticleDetailPage({ params }: BlogArticlePageP
                   Câu Hỏi Thường Gặp Về Chủ Đề Này (FAQ)
                 </h3>
               </div>
-              <div className="space-y-3">
-                {faqs.map((faq, idx) => (
-                  <details
-                    key={idx}
-                    className="group rounded-2xl border border-slate-200/90 bg-slate-50/60 p-4 transition-all duration-200 open:bg-white open:shadow-xs open:border-[#BEE1EC]"
-                  >
-                    <summary className="flex items-center justify-between font-bold text-sm sm:text-base text-slate-800 cursor-pointer list-none select-none">
-                      <span className="flex items-center gap-2">
-                        <CheckCircle2 className="w-4 h-4 text-[#1D7E9A] shrink-0" />
-                        <span>{faq.question}</span>
-                      </span>
-                      <span className="text-slate-400 group-open:rotate-180 transition-transform ml-2 shrink-0">
-                        ▼
-                      </span>
-                    </summary>
-                    <p className="mt-3 pl-6 text-sm leading-relaxed text-slate-600 border-l-2 border-[#1D7E9A]/40 font-medium">
-                      {faq.answer}
-                    </p>
-                  </details>
-                ))}
-              </div>
+              <FaqAccordion items={faqs} variant="blog" />
             </div>
           )}
 

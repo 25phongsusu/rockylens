@@ -15,7 +15,7 @@ import ProductGrid from '@/components/products/ProductGrid';
 import ContactCTA from '@/components/shared/ContactCTA';
 import ShopeeProductSelector from '@/components/products/ShopeeProductSelector';
 import LazyVideoPlayer from '@/components/products/LazyVideoPlayer';
-import { getProductTheme } from '@/features/products/pricing-matrix';
+import { getProductTheme } from '@/features/products/product-themes';
 import { constructMetadata } from '@/lib/seo/metadata';
 import { productSchema } from '@/lib/seo/structured-data';
 import { assetUrl } from '@/lib/utils';

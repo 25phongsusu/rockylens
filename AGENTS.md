@@ -31,8 +31,8 @@ Tất cả các AI Agent (Claude, Cursor, Copilot, Gemini, GPT...) khi tiếp nh
 | Route URL | File Component / Page chính | File Dữ liệu / Nội dung liên quan |
 | :--- | :--- | :--- |
 | **Trang chủ (`/`)** | `src/app/page.tsx`, `src/components/home/*.tsx` | `content/home_content.json` |
-| **Catalogue Sản phẩm (`/san-pham`, `/trong-kinh`)** | `src/components/products/CatalogPageShell.tsx`, `src/features/products/ProductCatalogView.tsx` | `content/products/*.json`, `pricing-matrix.ts` |
-| **Chi tiết sản phẩm (`/trong-kinh/[slug]`)** | `src/app/trong-kinh/[slug]/page.tsx` | `content/products/<slug>.json`, `pricing-matrix.ts` |
+| **Catalogue Sản phẩm (`/san-pham`, `/trong-kinh`)** | `src/components/products/CatalogPageShell.tsx`, `src/features/products/ProductCatalogView.tsx` | `content/products/*.json`, `catalog-config.ts`, `product-themes.ts` |
+| **Chi tiết sản phẩm (`/trong-kinh/[slug]`)** | `src/app/trong-kinh/[slug]/page.tsx` | `content/products/<slug>.json`, `src/features/products/pricing/*`, `product-themes.ts` |
 | **Công nghệ (`/cong-nghe`)** | `src/app/cong-nghe/page.tsx` | Dữ liệu trong page |
 | **RX Lab (`/rx-lab`)** | `src/app/rx-lab/page.tsx` | Dữ liệu trong page |
 | **Blog & Cẩm nang (`/blog`, `/kham-pha-trong-kinh`)** | `src/app/blog/page.tsx`, `[slug]/page.tsx` | `content/articles/**/*.md` |
