@@ -11,15 +11,21 @@ import BlogSection from '@/components/home/BlogSection';
 
 export const metadata: Metadata = constructMetadata({
   title: 'Tròng Kính Chuẩn Canada • Giải Pháp Thị Lực Toàn Diện',
-  description: 'Tròng kính Rocky Lens chuẩn Canada chính hãng tại Việt Nam: chống ánh sáng xanh UV420, đổi màu, lái xe chống chói DriveShield, kiểm soát cận thị và đa tròng Freeform.',
+  description:
+    'Tròng kính Rocky Lens chuẩn Canada - Giải pháp thị lực toàn diện: lọc ánh sáng xanh, đổi màu Trendy, lái xe đêm DriveShield, kiểm soát cận thị MyoControl.',
+  ogDescription:
+    'Thương hiệu tròng kính quang học Canada, phân phối độc quyền bởi Clearly Vietnam. Hotline B2B: 0933 102 653.',
   path: '/',
+  image: '/assets/og-banner.jpg',
   keywords: [
+    'tròng kính rocky lens',
+    'tròng kính canada',
+    'kính lái xe ban đêm',
+    'tròng đổi màu',
+    'tròng kiểm soát cận thị',
     'Rocky Lens',
     'Rocky Canada Opticians',
     'tròng kính chính hãng',
-    'tròng kính chuẩn Canada',
-    'tròng kính chống ánh sáng xanh',
-    'tròng kính đổi màu',
   ],
 });
 

@@ -4,6 +4,7 @@ export interface SiteConfig {
   shortName: string;
   domain: string;
   url: string;
+  taxId: string;
   slogan: string;
   description: string;
   emails: {
@@ -38,12 +39,19 @@ export interface SiteConfig {
   };
 }
 
+const resolvedUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  (process.env.NEXT_PUBLIC_BASE_PATH === '/rockylens' || process.env.NODE_ENV === 'production'
+    ? 'https://25phongsusu.github.io/rockylens'
+    : 'https://rockylens.com');
+
 export const siteConfig: SiteConfig = {
   name: 'Rocky Lens',
   legalName: 'Công ty Cổ phần Clearly Vietnam',
   shortName: 'Rocky Lens',
   domain: 'rockylens.com',
-  url: 'https://rockylens.com',
+  url: resolvedUrl,
+  taxId: '0316499823',
   slogan: 'Nhà phân phối tròng kính từ Canada',
   description: 'Rocky Lens – Trung tâm phân phối tròng kính B2B & gia công Lab công nghệ quốc tế tại Việt Nam. Cung cấp sỉ tròng cận, đổi màu, chống ánh sáng xanh cho cửa hàng kính.',
   emails: {

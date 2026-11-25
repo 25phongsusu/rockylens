@@ -4,6 +4,8 @@ import { siteConfig } from '@/config/site';
 interface MetadataProps {
   title?: string;
   description?: string;
+  ogTitle?: string;
+  ogDescription?: string;
   path?: string;
   canonicalPath?: string;
   image?: string;
@@ -14,6 +16,8 @@ interface MetadataProps {
 export function constructMetadata({
   title,
   description = siteConfig.description,
+  ogTitle,
+  ogDescription,
   path = '',
   canonicalPath,
   image = '/assets/og-banner.jpg',
@@ -33,6 +37,8 @@ export function constructMetadata({
   const fullTitle = title
     ? (title.includes(siteConfig.name) ? title : `${title} | ${siteConfig.name}`)
     : `${siteConfig.name} - ${siteConfig.slogan}`;
+  const effectiveOgTitle = ogTitle || fullTitle;
+  const effectiveOgDescription = ogDescription || description;
   const targetPath = canonicalPath ?? path;
   const canonicalUrl = `${siteConfig.url}${targetPath.startsWith('/') ? targetPath : `/${targetPath}`}`;
   const absoluteImageUrl = image.startsWith('http')
@@ -51,8 +57,8 @@ export function constructMetadata({
       canonical: canonicalUrl,
     },
     openGraph: {
-      title: fullTitle,
-      description,
+      title: effectiveOgTitle,
+      description: effectiveOgDescription,
       url: canonicalUrl,
       siteName: siteConfig.name,
       images: [
@@ -60,7 +66,7 @@ export function constructMetadata({
           url: absoluteImageUrl,
           width: 1200,
           height: 630,
-          alt: fullTitle,
+          alt: effectiveOgTitle,
           type: 'image/jpeg',
         },
       ],
@@ -69,8 +75,8 @@ export function constructMetadata({
     },
     twitter: {
       card: 'summary_large_image',
-      title: fullTitle,
-      description,
+      title: effectiveOgTitle,
+      description: effectiveOgDescription,
       images: [absoluteImageUrl],
     },
     robots: noIndex
