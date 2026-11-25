@@ -1,0 +1,55 @@
+# ==============================================================================
+# ROCKY LENS (CANARX / CLEARLY VIETNAM) - PRODUCTION 301 REDIRECTION & SEO RULES
+# Domain: https://rockylens.com
+# ==============================================================================
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # 1. FORCE HTTPS
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://rockylens.com/$1 [R=301,L]
+
+  # 2. FORCE NON-WWW (Canonicalize www.rockylens.com -> rockylens.com)
+  RewriteCond %{HTTP_HOST} ^www\.rockylens\.com$ [NC]
+  RewriteRule ^(.*)$ https://rockylens.com/$1 [R=301,L]
+
+  # 3. 301 PERMANENT REDIRECTS FOR LEGACY / MIGRATED PATHS
+  # Redirect old /san-pham/ to /trong-kinh/
+  RewriteRule ^san-pham/?$ /trong-kinh/ [R=301,L]
+  RewriteRule ^san-pham/(.*)$ /trong-kinh/$1 [R=301,L]
+  RewriteRule ^danh-muc-san-pham/?(.*)$ /trong-kinh/ [R=301,L]
+  RewriteRule ^product/?(.*)$ /trong-kinh/$1 [R=301,L]
+  RewriteRule ^products/?(.*)$ /trong-kinh/$1 [R=301,L]
+
+  # Redirect old blog / knowledge paths to /blog/
+  RewriteRule ^kham-pha-trong-kinh/?$ /blog/ [R=301,L]
+  RewriteRule ^kham-pha-trong-kinh/bai-viet/(.*)$ /blog/$1/ [R=301,L]
+  RewriteRule ^tin-tuc/?(.*)$ /blog/ [R=301,L]
+  RewriteRule ^news/?(.*)$ /blog/ [R=301,L]
+  RewriteRule ^category/?(.*)$ /blog/ [R=301,L]
+
+  # Redirect legacy corporate & service pages
+  RewriteRule ^about/?$ /ve-chung-toi/ [R=301,L]
+  RewriteRule ^about-us/?$ /ve-chung-toi/ [R=301,L]
+  RewriteRule ^gioi-thieu/?$ /ve-chung-toi/ [R=301,L]
+  RewriteRule ^contact/?$ /lien-he/ [R=301,L]
+  RewriteRule ^lien-he-chung-toi/?$ /lien-he/ [R=301,L]
+  RewriteRule ^doi-tac/?$ /danh-cho-doi-tac/ [R=301,L]
+  RewriteRule ^b2b/?$ /danh-cho-doi-tac/ [R=301,L]
+  RewriteRule ^chinh-sach-dai-ly/?$ /danh-cho-doi-tac/ [R=301,L]
+  RewriteRule ^lab/?$ /rx-lab/ [R=301,L]
+  RewriteRule ^canrx/?$ /rx-lab/ [R=301,L]
+  RewriteRule ^freeform-lab/?$ /rx-lab/ [R=301,L]
+  RewriteRule ^technology/?$ /cong-nghe/ [R=301,L]
+  RewriteRule ^cong-nghe-quang-hoc/?$ /cong-nghe/ [R=301,L]
+
+  # 4. STATIC HTML ROUTING & 404 FALLBACK
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^(.*)$ $1.html [L]
+
+  ErrorDocument 404 /404.html
+</IfModule>
