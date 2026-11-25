@@ -5,11 +5,17 @@ Disallow: /_next/
 
 User-Agent: GPTBot
 User-Agent: ChatGPT-User
-User-Agent: Google-Extended
+User-Agent: OAI-SearchBot
 User-Agent: PerplexityBot
 User-Agent: ClaudeBot
-User-Agent: CCBot
+User-Agent: anthropic-ai
+User-Agent: Google-Extended
 User-Agent: Applebot-Extended
+User-Agent: cohere-ai
+User-Agent: Bytespider
+User-Agent: Diffbot
+User-Agent: FacebookBot
+User-Agent: CCBot
 Allow: /
 
 Sitemap: https://rockylens.com/sitemap.xml
