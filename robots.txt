@@ -18,5 +18,5 @@ User-Agent: FacebookBot
 User-Agent: CCBot
 Allow: /
 
-Sitemap: https://rockylens.com/sitemap.xml
+Sitemap: https://25phongsusu.github.io/rockylens/sitemap.xml
 Sitemap: https://25phongsusu.github.io/rockylens/sitemap.xml
