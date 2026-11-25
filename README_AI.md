@@ -56,3 +56,27 @@ python scripts/deploy_to_github.py --push
 - **Thêm Sản phẩm mới:** Tạo `content/products/<slug>.json`, đặt ảnh vào `public/images/products/` (hoặc `public/uploads/solutions/`), thêm vào `NEED_CATALOG` / `TECH_CATALOG` trong `src/features/products/ProductCatalogView.tsx` (và `pricing-matrix.ts` nếu có bảng biến thể giá riêng).
 - **Thêm Bài viết mới:** Tạo file `.md` trong `content/articles/kien-thuc/` (hoặc `cong-nghe/`, `huong-dan/`) kèm frontmatter đầy đủ.
 - **Kiểm tra sau khi sửa:** Chạy `npm.cmd run check` và `npm.cmd run build`.
+
+---
+
+## 5. CODE QUALITY & ARCHITECTURE RULES
+
+Trong suốt quá trình phát triển dự án, hãy tuân thủ các nguyên tắc:
+
+1. **Modularization:** Chia code thành các module nhỏ, mỗi module đảm nhiệm một trách nhiệm cụ thể.
+2. **Code Reusability:** Tái sử dụng các hàm, component và service thay vì viết code trùng lặp.
+3. **Separation of Concerns:** Tách biệt Business Logic, UI, Database và API.
+4. **Maintainability:** Ưu tiên code dễ đọc, dễ bảo trì và dễ mở rộng.
+5. **File Size Management:** Tránh để một file chứa quá nhiều logic. Chủ động đề xuất tách file khi cần thiết.
+6. **Backward Compatibility:** Khi refactor, phải đảm bảo không làm thay đổi hành vi hiện tại của ứng dụng.
+7. **Testing:** Kiểm tra các chức năng liên quan sau mỗi lần refactor.
+8. **Documentation:** Cập nhật cấu trúc thư mục và tài liệu khi có thay đổi kiến trúc.
+
+> **Lưu ý:** Không refactor một cách máy móc. Chỉ tách module khi thực sự có lợi. Tránh tạo quá nhiều file nhỏ gây phức tạp không cần thiết.
+
+### Trước khi refactor:
+* Phân tích cấu trúc hiện tại.
+* Xác định các đoạn code trùng lặp.
+* Đề xuất phương án tổ chức lại.
+* Đánh giá rủi ro ảnh hưởng đến chức năng cũ.
+

@@ -46,3 +46,27 @@ Tất cả các AI Agent (Claude, Cursor, Copilot, Gemini, GPT...) khi tiếp nh
 - **Phạm vi sửa đổi:** Tập trung chính xác vào component đích được yêu cầu, không sửa lan man sang các component khác nếu không có chỉ định.
 - **Tối ưu thời gian phản hồi:** Với các chỉnh sửa CSS, HTML, text hoặc link đơn giản, không tự ý chạy full `npm run build` (tốn 20-30s build 53 trang tĩnh) trừ khi người dùng yêu cầu build/deploy hoặc sửa logic phức tạp.
 
+---
+
+### 🏛️ CODE QUALITY & ARCHITECTURE RULES
+
+Trong suốt quá trình phát triển dự án, hãy tuân thủ các nguyên tắc:
+
+1. **Modularization:** Chia code thành các module nhỏ, mỗi module đảm nhiệm một trách nhiệm cụ thể.
+2. **Code Reusability:** Tái sử dụng các hàm, component và service thay vì viết code trùng lặp.
+3. **Separation of Concerns:** Tách biệt Business Logic, UI, Database và API.
+4. **Maintainability:** Ưu tiên code dễ đọc, dễ bảo trì và dễ mở rộng.
+5. **File Size Management:** Tránh để một file chứa quá nhiều logic. Chủ động đề xuất tách file khi cần thiết.
+6. **Backward Compatibility:** Khi refactor, phải đảm bảo không làm thay đổi hành vi hiện tại của ứng dụng.
+7. **Testing:** Kiểm tra các chức năng liên quan sau mỗi lần refactor (`npm.cmd run check`, `npm.cmd run build`).
+8. **Documentation:** Cập nhật cấu trúc thư mục và tài liệu khi có thay đổi kiến trúc.
+
+> **Lưu ý:** Không refactor một cách máy móc. Chỉ tách module khi thực sự có lợi. Tránh tạo quá nhiều file nhỏ gây phức tạp không cần thiết.
+
+#### Quy trình chuẩn trước khi refactor:
+* Phân tích cấu trúc hiện tại.
+* Xác định các đoạn code trùng lặp.
+* Đề xuất phương án tổ chức lại.
+* Đánh giá rủi ro ảnh hưởng đến chức năng cũ.
+
+
