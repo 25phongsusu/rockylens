@@ -7,6 +7,7 @@
     "dev": "next dev",
     "check": "node scripts/check_site.mjs",
     "build": "next build",
+    "build:directadmin": "python scripts/build_for_directadmin.py",
     "deploy": "python scripts/deploy_to_github.py --push",
     "build:all": "python scripts/deploy_to_github.py",
     "start": "next start",
