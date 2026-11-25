@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import { Sparkles, ShieldCheck } from 'lucide-react';
 import {
   getAllProducts,
   getProductBySlug,
@@ -185,9 +186,30 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
                 </p>
               ) : null}
 
-              {/* Mô tả ngắn dễ hiểu */}
-              <div className="mt-4 p-4 rounded-xl bg-slate-50 border border-slate-200/80 text-xs sm:text-sm text-slate-700 leading-relaxed">
-                {product.shortDescription}
+              {/* GEO Definition Snippet: AI Quick Overview / Định nghĩa chuẩn quang học */}
+              <div className="mt-4 p-4 sm:p-5 rounded-2xl bg-gradient-to-br from-[#EFF8FC] via-white to-[#F0FAFD] border border-[#BEE1EC] shadow-[0_3px_15px_rgba(18,86,106,0.05)] space-y-2.5">
+                <div className="flex items-center gap-1.5 text-[#12586D] font-black text-xs uppercase tracking-wider">
+                  <Sparkles className="w-3.5 h-3.5 text-[#1D7E9A]" />
+                  <span>Tóm Tắt Định Nghĩa & Chuẩn Y Khoa (AI Overview)</span>
+                </div>
+                <p className="text-xs sm:text-sm text-slate-700 leading-relaxed font-medium">
+                  <strong>{product.name}</strong> là dòng tròng kính thuốc chuẩn quang học Bắc Mỹ phát triển bởi <strong>Rocky Canada Opticians</strong>, phân phối chính hãng tại Việt Nam qua <strong>Clearly Vietnam</strong>. {product.shortDescription}
+                </p>
+                <div className="flex flex-wrap items-center gap-2 pt-1 text-[11px] font-bold text-[#12586D]">
+                  <span className="inline-flex items-center gap-1 bg-white px-2.5 py-1 rounded-md border border-[#BEE1EC]">
+                    <ShieldCheck className="w-3 h-3 text-[#1D7E9A]" /> Chuẩn y khoa CE & FDA
+                  </span>
+                  {product.refractiveIndex && (
+                    <span className="bg-white px-2.5 py-1 rounded-md border border-[#BEE1EC]">
+                      Chiết suất: Index {product.refractiveIndex}
+                    </span>
+                  )}
+                  {product.specifications.coating && (
+                    <span className="bg-white px-2.5 py-1 rounded-md border border-[#BEE1EC]">
+                      Màng phủ: {product.specifications.coating}
+                    </span>
+                  )}
+                </div>
               </div>
 
               {/* Tag nhỏ tính năng nổi bật theo Bảng giá */}

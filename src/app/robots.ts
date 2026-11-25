@@ -13,9 +13,23 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
         disallow: ['/api/', '/_next/'],
       },
-      // Generative Engine Optimization (GEO): Grant access to AI Search Engines
+      // Generative Engine Optimization (GEO): Explicitly grant access to AI Search Engines & LLM Crawlers
       {
-        userAgent: ['GPTBot', 'ChatGPT-User', 'Google-Extended', 'PerplexityBot', 'ClaudeBot', 'CCBot', 'Applebot-Extended'],
+        userAgent: [
+          'GPTBot',
+          'ChatGPT-User',
+          'OAI-SearchBot',
+          'PerplexityBot',
+          'ClaudeBot',
+          'anthropic-ai',
+          'Google-Extended',
+          'Applebot-Extended',
+          'cohere-ai',
+          'Bytespider',
+          'Diffbot',
+          'FacebookBot',
+          'CCBot',
+        ],
         allow: '/',
       },
     ],
