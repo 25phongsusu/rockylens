@@ -2,7 +2,7 @@
 id: "art-007"
 slug: "huong-dan-ve-sinh-bao-quan-trong-kinh"
 title: "6 Nguyên Tắc Vàng Bảo Quản Tròng Kính Chống Trầy & Duy Trì Độ Trong Suốt"
-description: "Cẩm nang hướng dẫn vệ sinh mắt kính đúng cách, bảo vệ lớp váng phủ nano khỏi nhiệt độ cao và hóa chất gia dụng ăn mòn."
+description: "6 nguyên tắc vàng vệ sinh mắt kính đúng cách, bảo vệ lớp váng phủ nano SHMC khỏi nhiệt độ cao và hóa chất ăn mòn. Đọc hướng dẫn chuẩn tại Rocky Lens!"
 category: "huong-dan"
 categoryName: "Hướng dẫn & Tư vấn"
 coverImage: "/images/articles/blog_b2b_policy.png"

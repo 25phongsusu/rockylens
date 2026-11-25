@@ -48,6 +48,8 @@ DEPLOY_FILES = [
     "404.html",
     "robots.txt",
     "sitemap.xml",
+    ".htaccess",
+    "_redirects",
 ]
 
 

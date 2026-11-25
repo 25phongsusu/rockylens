@@ -2,7 +2,7 @@
 id: "art-003"
 slug: "khi-nao-nen-dung-kinh-da-trong"
 title: "Khi Nào Nên Bắt Đầu Dùng Kính Đa Tròng? 5 Dấu Hiệu Lão Thị Sớm Bạn Cần Biết"
-description: "Giải thích cơ chế lão thị sau tuổi 40, ưu điểm vượt trội của đa tròng kỹ thuật số Freeform so với kính hai tròng có lằn ngấn cổ điển."
+description: "5 dấu hiệu lão thị sau tuổi 40 và ưu điểm vượt trội của kính đa tròng kỹ thuật số Freeform HD so với hai tròng cổ điển. Tìm hiểu ngay tại Rocky Lens!"
 category: "huong-dan"
 categoryName: "Hướng dẫn & Tư vấn"
 coverImage: "/images/articles/blog_freeform_lab.png"

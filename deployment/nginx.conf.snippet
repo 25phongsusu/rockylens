@@ -1,0 +1,90 @@
+# ==============================================================================
+# NGINX PRODUCTION CONFIGURATION SNIPPET — ROCKY LENS (https://rockylens.com)
+# Place inside your /etc/nginx/sites-available/rockylens.conf
+# ==============================================================================
+
+# 1. REDIRECT HTTP -> HTTPS
+server {
+    listen 80;
+    listen [::]:80;
+    server_name rockylens.com www.rockylens.com;
+    return 301 https://rockylens.com$request_uri;
+}
+
+# 2. REDIRECT WWW -> NON-WWW
+server {
+    listen 443 ssl http2;
+    listen [::]:443 ssl http2;
+    server_name www.rockylens.com;
+
+    # SSL Certificates (Let's Encrypt / Cloudflare)
+    # ssl_certificate /etc/letsencrypt/live/rockylens.com/fullchain.pem;
+    # ssl_certificate_key /etc/letsencrypt/live/rockylens.com/privkey.pem;
+
+    return 301 https://rockylens.com$request_uri;
+}
+
+# 3. MAIN PRODUCTION SERVER BLOCK
+server {
+    listen 443 ssl http2;
+    listen [::]:443 ssl http2;
+    server_name rockylens.com;
+
+    root /var/www/rockylens;
+    index index.html;
+
+    # 301 MIGRATION REDIRECTS TABLE
+    rewrite ^/san-pham/?$ /trong-kinh/ permanent;
+    rewrite ^/san-pham/(.*)$ /trong-kinh/$1 permanent;
+    rewrite ^/danh-muc-san-pham/?(.*)$ /trong-kinh/ permanent;
+    rewrite ^/product/(.*)$ /trong-kinh/$1 permanent;
+    rewrite ^/products/(.*)$ /trong-kinh/$1 permanent;
+
+    rewrite ^/kham-pha-trong-kinh/?$ /blog/ permanent;
+    rewrite ^/kham-pha-trong-kinh/bai-viet/(.*)$ /blog/$1/ permanent;
+    rewrite ^/tin-tuc/?(.*)$ /blog/ permanent;
+    rewrite ^/news/?(.*)$ /blog/ permanent;
+    rewrite ^/category/?(.*)$ /blog/ permanent;
+
+    rewrite ^/about/?$ /ve-chung-toi/ permanent;
+    rewrite ^/about-us/?$ /ve-chung-toi/ permanent;
+    rewrite ^/gioi-thieu/?$ /ve-chung-toi/ permanent;
+    rewrite ^/contact/?$ /lien-he/ permanent;
+    rewrite ^/lien-he-chung-toi/?$ /lien-he/ permanent;
+    rewrite ^/doi-tac/?$ /danh-cho-doi-tac/ permanent;
+    rewrite ^/b2b/?$ /danh-cho-doi-tac/ permanent;
+    rewrite ^/chinh-sach-dai-ly/?$ /danh-cho-doi-tac/ permanent;
+    rewrite ^/lab/?$ /rx-lab/ permanent;
+    rewrite ^/canrx/?$ /rx-lab/ permanent;
+    rewrite ^/freeform-lab/?$ /rx-lab/ permanent;
+    rewrite ^/technology/?$ /cong-nghe/ permanent;
+    rewrite ^/cong-nghe-quang-hoc/?$ /cong-nghe/ permanent;
+
+    # GZIP COMPRESSION
+    gzip on;
+    gzip_vary on;
+    gzip_min_length 1024;
+    gzip_proxied expired no-cache no-store private auth;
+    gzip_types text/plain text/css text/xml text/javascript application/x-javascript application/xml application/javascript application/json image/svg+xml;
+
+    # STATIC CACHING
+    location ~* \.(?:jpg|jpeg|gif|png|ico|cur|gz|svg|svgz|mp4|ogg|ogv|webm|htc|webp|woff|woff2)$ {
+        expires 1y;
+        add_header Cache-Control "public, max-age=31536000, immutable";
+        try_files $uri =404;
+    }
+
+    # CSS and JS
+    location ~* \.(?:css|js)$ {
+        expires 1y;
+        add_header Cache-Control "public, max-age=31536000, immutable";
+        try_files $uri =404;
+    }
+
+    # SSG ROUTING
+    location / {
+        try_files $uri $uri/ $uri.html /index.html =404;
+    }
+
+    error_page 404 /404.html;
+}

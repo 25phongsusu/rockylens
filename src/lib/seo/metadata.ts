@@ -16,7 +16,7 @@ export function constructMetadata({
   description = siteConfig.description,
   path = '',
   canonicalPath,
-  image = '/images/banners/hero-banner.png',
+  image = '/assets/og-banner.jpg',
   keywords = [
     'tròng kính rocky lens',
     'canada opticians',
@@ -30,9 +30,14 @@ export function constructMetadata({
   ],
   noIndex = false,
 }: MetadataProps = {}): Metadata {
-  const fullTitle = title ? `${title} | ${siteConfig.name}` : `${siteConfig.name} - ${siteConfig.slogan}`;
+  const fullTitle = title
+    ? (title.includes(siteConfig.name) ? title : `${title} | ${siteConfig.name}`)
+    : `${siteConfig.name} - ${siteConfig.slogan}`;
   const targetPath = canonicalPath ?? path;
   const canonicalUrl = `${siteConfig.url}${targetPath.startsWith('/') ? targetPath : `/${targetPath}`}`;
+  const absoluteImageUrl = image.startsWith('http')
+    ? image
+    : `${siteConfig.url}${image.startsWith('/') ? image : `/${image}`}`;
 
   return {
     title: fullTitle,
@@ -52,10 +57,11 @@ export function constructMetadata({
       siteName: siteConfig.name,
       images: [
         {
-          url: image.startsWith('http') ? image : `${siteConfig.url}${image}`,
+          url: absoluteImageUrl,
           width: 1200,
           height: 630,
           alt: fullTitle,
+          type: 'image/jpeg',
         },
       ],
       locale: 'vi_VN',
@@ -65,7 +71,7 @@ export function constructMetadata({
       card: 'summary_large_image',
       title: fullTitle,
       description,
-      images: [image.startsWith('http') ? image : `${siteConfig.url}${image}`],
+      images: [absoluteImageUrl],
     },
     robots: noIndex
       ? { index: false, follow: false }

@@ -2,7 +2,7 @@
 id: "art-004"
 slug: "giai-phap-chong-anh-sang-xanh-uv420"
 title: "Ánh Sáng Xanh Từ Màn Hình: Những Điều Cần Hiểu & Giải Pháp UV420"
-description: "Bản chất ánh sáng xanh có lợi và có hại, cơ chế bảo vệ hoàng điểm mắt bằng phôi monomer BlueCut UV420 không gây ám vàng hình ảnh."
+description: "Phân biệt ánh sáng xanh có hại và có lợi, cơ chế bảo vệ hoàng điểm mắt bằng phôi monomer BlueCut UV420 chuẩn y khoa. Xem hướng dẫn tại Rocky Lens!"
 category: "cong-nghe"
 categoryName: "Kiến thức quang học"
 coverImage: "/images/articles/blog_sec6_1.jpg"

@@ -2,7 +2,7 @@
 id: "art-005"
 slug: "kiem-soat-can-thi-tre-em-myocontrol"
 title: "Giải Pháp Quang Học Kiểm Soát Cận Thị Ở Trẻ Em Bằng Thấu Kính D.I.M.S"
-description: "Cơ chế quang học hãm trục nhãn cầu kéo dài, giảm tới 60% tốc độ tiến triển cận thị học đường mà không cần dùng thuốc hay phẫu thuật."
+description: "Cơ chế thấu kính vi điểm D.I.M.S hãm trục nhãn cầu dài ra, giảm 60% tốc độ tăng độ cận học đường ở trẻ em. Đọc phân tích chuyên sâu tại Rocky Lens!"
 category: "kien-thuc"
 categoryName: "Trẻ em & Thị lực"
 coverImage: "/images/articles/blog_sec6_3.jpg"

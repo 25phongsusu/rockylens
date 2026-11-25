@@ -2,7 +2,7 @@
 id: "art-002"
 slug: "co-che-hoat-dong-trong-doi-mau"
 title: "Tròng Kính Đổi Màu Hoạt Động Thế Nào? Cơ Chế Phân Tử & Tiêu Chuẩn Hiện Đại"
-description: "Tìm hiểu nguyên lý chuyển màu quang hóa dưới tia UV, so sánh công nghệ trộn phôi và phủ xoay Spin-Coating trên dòng tròng Rocky Trendy."
+description: "Nguyên lý chuyển màu quang hóa dưới tia UV, so sánh công nghệ trộn phôi và phủ xoay Spin-Coating Rocky Trendy. Đọc cẩm nang chi tiết tại Rocky Lens!"
 category: "cong-nghe"
 categoryName: "Công nghệ tròng kính"
 coverImage: "/images/articles/blog_genting_cruise.png"

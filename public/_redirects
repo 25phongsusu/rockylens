@@ -1,0 +1,33 @@
+# ==============================================================================
+# ROCKY LENS — 301 REDIRECTS FOR CLOUDFLARE PAGES / NETLIFY / FASTLY
+# Format: <old-path> <new-path> <status-code>
+# ==============================================================================
+
+# Catalog & Products 301 Redirects
+/san-pham                /trong-kinh/              301!
+/san-pham/*              /trong-kinh/:splat        301!
+/danh-muc-san-pham/*     /trong-kinh/              301!
+/product/*               /trong-kinh/:splat        301!
+/products/*              /trong-kinh/:splat        301!
+
+# Blog & Articles 301 Redirects
+/kham-pha-trong-kinh                    /blog/                     301!
+/kham-pha-trong-kinh/bai-viet/:slug     /blog/:slug/               301!
+/tin-tuc/*                              /blog/                     301!
+/news/*                                 /blog/                     301!
+/category/*                             /blog/                     301!
+
+# Legacy Brand & B2B Pages 301 Redirects
+/about                  /ve-chung-toi/            301!
+/about-us               /ve-chung-toi/            301!
+/gioi-thieu             /ve-chung-toi/            301!
+/contact                /lien-he/                 301!
+/lien-he-chung-toi      /lien-he/                 301!
+/doi-tac                /danh-cho-doi-tac/        301!
+/b2b                    /danh-cho-doi-tac/        301!
+/chinh-sach-dai-ly      /danh-cho-doi-tac/        301!
+/lab                    /rx-lab/                  301!
+/canrx                  /rx-lab/                  301!
+/freeform-lab           /rx-lab/                  301!
+/technology             /cong-nghe/               301!
+/cong-nghe-quang-hoc    /cong-nghe/               301!

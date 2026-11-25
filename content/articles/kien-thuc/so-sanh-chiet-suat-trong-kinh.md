@@ -2,7 +2,7 @@
 id: "art-001"
 slug: "so-sanh-chiet-suat-trong-kinh"
 title: "So Sánh Chiết Suất Tròng Kính 1.56, 1.60, 1.67 và 1.74: Nên Chọn Loại Nào?"
-description: "Phân tích chi tiết độ dày, trọng lượng, độ quang sai Abbe và khuyến nghị chọn chiết suất phù hợp nhất với từng khoảng độ cận viễn."
+description: "So sánh chi tiết độ dày, độ nét Abbe và bảng chọn chiết suất 1.56, 1.60 MR-8, 1.67, 1.74 theo từng độ cận viễn. Xem cẩm nang quang học tại Rocky Lens!"
 category: "kien-thuc"
 categoryName: "Kiến thức quang học"
 coverImage: "/images/articles/blog_b2b_policy.png"
