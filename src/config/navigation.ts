@@ -48,7 +48,6 @@ export const mainNavigation: NavItem[] = [
 export const footerNavigation = {
   products: [
     { title: 'Tất cả tròng kính', href: '/trong-kinh/' },
-    { title: 'Tìm Kính Phù Hợp AI', href: '/tim-kinh-phu-hop/' },
     { title: 'Tròng đơn tròng', href: '/trong-kinh/?category=don-trong' },
     { title: 'Tròng đa tròng Freeform', href: '/trong-kinh/?category=da-trong' },
     { title: 'Tròng đổi màu Trendy', href: '/trong-kinh/?category=doi-mau' },

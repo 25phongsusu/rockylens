@@ -33,7 +33,6 @@ DEPLOY_FOLDERS = [
     "rx-lab",
     "san-pham",
     "su-kien",
-    "tim-kinh-phu-hop",
     "trong-kinh",
     "lien-he",
     "ve-chung-toi",
@@ -41,7 +40,6 @@ DEPLOY_FOLDERS = [
     "assets",
     "images",
     "documents",
-    "mediapipe",
     "uploads",
 ]
 
@@ -134,7 +132,7 @@ def main():
     print("  ✓ Created .nojekyll")
 
     print("  ✓ Patching any unprefixed asset paths in HTML/TXT payloads...")
-    asset_only = {"_next", "assets", "images", "documents", "mediapipe", "uploads"}
+    asset_only = {"_next", "assets", "images", "documents", "uploads"}
     for folder in DEPLOY_FOLDERS:
         if folder not in asset_only:
             patch_html_txt(os.path.join(DEPLOY_DIR, folder))

@@ -47,3 +47,11 @@ desktop.ini
 *.pdf
 *.zip
 *.tsbuildinfo
+
+# In-development AI Try-On feature (kept local only, not pushed to Git)
+FEATURE_TIM_KINH_PHU_HOP.md
+src/app/tim-kinh-phu-hop/
+src/features/face-finder/
+public/mediapipe/
+public/models/
+public/images/frames/
