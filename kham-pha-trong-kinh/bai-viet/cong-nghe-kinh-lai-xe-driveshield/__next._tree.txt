@@ -1,8 +1,8 @@
-:HL["/rockylens/_next/static/chunks/17hex1_fspd-1.css","style"]
+:HL["/rockylens/_next/static/chunks/38umujdzvmkm_.css","style"]
 :HL["/rockylens/assets/logo_rocky_white.png","image"]
 :HL["/rockylens/images/articles/blog_sec6_2.jpg","image"]
 4:[["children",{"s":"__PAGE__","h":160}]]
 3:[["children",{"s":{"n":"slug","t":"d","k":"cong-nghe-kinh-lai-xe-driveshield","s":[]},"h":96,"c":"$Q4"}]]
 2:[["children",{"s":"bai-viet","h":96,"c":"$Q3"}]]
 1:[["children",{"s":"kham-pha-trong-kinh","h":64,"c":"$Q2"}]]
-0:{"b":"xzlN8AYldLHWWXhGfH1ls","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
+0:{"b":"pD4TgoY7GYFlQ-pbFK6_F","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
