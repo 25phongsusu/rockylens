@@ -43,7 +43,7 @@
     "tag": "DANH MỤC SẢN PHẨM",
     "title": "Khám phá các giải pháp",
     "highlight": "tròng kính",
-    "suffix": "RockyLens.",
+    "suffix": "RockyLens",
     "desc": "Từ nhu cầu nhìn thường ngày đến những yêu cầu chuyên biệt, mỗi nhóm tròng kính có những đặc điểm và công nghệ riêng.",
     "linkTop": {
       "text": "Xem các nhóm sản phẩm",
@@ -226,12 +226,12 @@
   },
   "technologies": {
     "tag": "KHÁM PHÁ CÔNG NGHỆ ROCKYLENS",
-    "title": "Công nghệ phía sau mỗi tầm nhìn.",
+    "title": "Công nghệ phía sau mỗi tầm nhìn",
     "desc": "Từ vật liệu quang học, công nghệ lớp phủ đến thiết kế bề mặt, mỗi yếu tố đều góp phần tạo nên đặc điểm và trải nghiệm riêng của từng dòng tròng kính.",
     "cards": [
       {
         "category": "VẬT LIỆU & CHIẾT SUẤT",
-        "title": "Độ mỏng bắt đầu từ sự lựa chọn phù hợp.",
+        "title": "Độ mỏng bắt đầu từ sự lựa chọn phù hợp",
         "desc": "Chiết suất, độ kính và kích thước gọng đều ảnh hưởng đến độ dày thực tế của tròng. Hiểu rõ từng yếu tố giúp lựa chọn chính xác hơn.",
         "image": "/images/technologies/tech_sec3_1.jpg",
         "linkText": "Tìm hiểu chiết suất",
@@ -239,7 +239,7 @@
       },
       {
         "category": "CÔNG NGHỆ LỚP PHỦ",
-        "title": "Tối ưu trải nghiệm sử dụng hằng ngày.",
+        "title": "Tối ưu trải nghiệm sử dụng hằng ngày",
         "desc": "Các công nghệ lớp phủ có thể giúp giảm phản xạ, hạn chế bám bẩn và hỗ trợ vệ sinh tròng kính, tùy theo từng sản phẩm.",
         "image": "/images/technologies/tech_sec3_2.jpg",
         "linkText": "Khám phá lớp phủ",
@@ -247,7 +247,7 @@
       },
       {
         "category": "THIẾT KẾ QUANG HỌC FREEFORM",
-        "title": "Thiết kế hướng đến từng nhu cầu thị giác.",
+        "title": "Thiết kế hướng đến từng nhu cầu thị giác",
         "desc": "Công nghệ Freeform cho phép gia công các bề mặt quang học phức tạp, hỗ trợ nhiều thiết kế tròng kính đáp ứng các nhu cầu nhìn khác nhau.",
         "image": "/images/technologies/tech_sec3_3.jpg",
         "linkText": "Tìm hiểu Freeform",
@@ -274,8 +274,8 @@
   },
   "blog": {
     "tag": "GÓC NHÌN & KIẾN THỨC",
-    "title": "Hiểu đúng công nghệ.",
-    "highlight": "Lựa chọn sáng suốt hơn.",
+    "title": "Hiểu đúng công nghệ",
+    "highlight": "Lựa chọn sáng suốt hơn",
     "desc": "Những bài giải thích dễ hiểu cho người đeo kính và cũng là tài liệu tham khảo hữu ích cho cửa hàng mắt kính.",
     "articles": [
       {
@@ -302,7 +302,7 @@
     ]
   },
   "partner": {
-    "title": "Cùng RockyLens mở rộng giá trị cho cửa hàng mắt kính.",
+    "title": "Cùng RockyLens mở rộng giá trị cho cửa hàng mắt kính",
     "desc": "Hợp tác cung cấp các giải pháp tròng kính chất lượng, thông tin minh bạch và dịch vụ hỗ trợ đồng hành lâu dài cùng hệ thống đại lý.",
     "features": [
       {
