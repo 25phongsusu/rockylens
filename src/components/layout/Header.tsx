@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, X, ChevronRight, Phone, MessageSquare } from 'lucide-react';
+import { Menu, X, ChevronRight, Phone, MessageSquare, Sparkles } from 'lucide-react';
 import { mainNavigation } from '@/config/navigation';
 import { assetUrl } from '@/lib/utils';
 
@@ -62,7 +62,7 @@ export default function Header() {
           </Link>
 
           {/* Primary Multi-Page Navigation Items */}
-          <nav className="hidden lg:flex items-center gap-8 text-base font-semibold text-slate-800 dark:text-white">
+          <nav className="hidden lg:flex items-center gap-5 xl:gap-7 text-base font-semibold text-slate-800 dark:text-white">
             {mainNavigation.map((item) => {
               const active = isActive(item.href);
               return (
@@ -79,11 +79,27 @@ export default function Header() {
             })}
           </nav>
 
-          {/* Action Button: Tìm Đại Lý Gần Nhất */}
-          <div className="flex items-center gap-3">
+          {/* Action Buttons: Tìm Kính AI & Tìm Đại Lý Gần Nhất */}
+          <div className="flex items-center gap-2.5">
+            <Link
+              href="/tim-kinh-phu-hop/"
+              className={`hidden sm:inline-flex items-center gap-1.5 px-4 py-2.5 rounded-full text-sm xl:text-base font-bold border transition-all cursor-pointer active:scale-95 whitespace-nowrap ${
+                isActive('/tim-kinh-phu-hop/')
+                  ? 'bg-[var(--color-primary)] text-white border-[var(--color-primary)] shadow-sm'
+                  : 'bg-[var(--site-bg-middle)] text-[var(--color-heading)] border-[var(--color-primary)]/35 hover:border-[var(--color-primary)] hover:bg-[var(--site-bg-end)]'
+              }`}
+            >
+              <Sparkles
+                className={`w-4 h-4 shrink-0 ${
+                  isActive('/tim-kinh-phu-hop/') ? 'text-white' : 'text-[var(--color-primary)]'
+                }`}
+              />
+              <span>Tìm Kính AI</span>
+            </Link>
+
             <Link
               href="/lien-he/"
-              className="button-primary hidden sm:inline-block px-5 py-2.5 rounded-full text-base transition-all text-center cursor-pointer active:scale-95"
+              className="button-primary hidden sm:inline-block px-5 py-2.5 rounded-full text-base transition-all text-center cursor-pointer active:scale-95 whitespace-nowrap"
             >
               Tìm Đại Lý Gần Nhất
             </Link>
@@ -124,6 +140,14 @@ export default function Header() {
             </nav>
 
             <div className="pt-3 border-t border-[var(--color-border)] space-y-3">
+              <Link
+                href="/tim-kinh-phu-hop/"
+                onClick={() => setIsMobileOpen(false)}
+                className="w-full py-3 rounded-full text-base font-bold text-center transition-all cursor-pointer flex items-center justify-center gap-2 bg-[var(--site-bg-middle)] text-[var(--color-heading)] border border-[var(--color-primary)]/40"
+              >
+                <Sparkles className="w-4 h-4 text-[var(--color-primary)]" />
+                <span>Tìm Kính AI</span>
+              </Link>
               <Link
                 href="/lien-he/"
                 onClick={() => setIsMobileOpen(false)}
