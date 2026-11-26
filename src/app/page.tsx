@@ -35,8 +35,8 @@ export default function HomePage() {
       {/* SECTION 1 — BRAND HERO */}
       <HeroSection />
 
-      {/* SECTION 2 — EXPLORE ROCKY LENSES (SẢN PHẨM TRÒNG KÍNH) */}
-      <ProductCategories />
+      {/* SECTION 2 — WHY ROCKY & BẰNG KHEN / CHỨNG NHẬN */}
+      <WhyRockySection />
 
       {/* SECTION 3 — BRAND PHILOSOPHY (HIỂU TỪNG NHU CẦU) */}
       <BrandPhilosophy />
@@ -44,8 +44,8 @@ export default function HomePage() {
       {/* SECTION 4 — TECHNOLOGY & QUALITY */}
       <TechnologyHighlights />
 
-      {/* SECTION 5 — WHY ROCKY */}
-      <WhyRockySection />
+      {/* SECTION 5 — EXPLORE ROCKY LENSES (SẢN PHẨM TRÒNG KÍNH) */}
+      <ProductCategories />
 
       {/* SECTION 6 — BLOG & CUSTOMER INSIGHTS */}
       <BlogSection />
